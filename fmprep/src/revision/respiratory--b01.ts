@@ -610,4 +610,205 @@ revision["respiratory-abg-interpretation"] = {
   },
 };
 
+revision["respiratory-chest-imaging"] = {
+  checked: "2026-10",
+  updated: [
+    "ATS/ERS/JRS/ALAT 2022: four HRCT categories, probable UIP accepted, progressive pulmonary fibrosis defined.",
+    "Fleischner Society glossary 2024 update of thoracic imaging terms.",
+    "BTS Pleural Disease Guideline 2023: ultrasound guidance for all pleural procedures; symptom-based pneumothorax care.",
+    "International lung ultrasound consensus 2023: standard B-line and consolidation definitions.",
+    "ACR Lung-RADS v2022 and ACS 2023 screening eligibility (50-80 years, 20 pack-years, no quit-time limit).",
+    "WHO 2021 CAD for TB screening; AI-assisted handheld X-ray in the 2024-2025 TB Mukt Bharat campaign.",
+  ],
+  master: {
+    heading: "Chest X-ray and CT - what to write",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Quality", "Details, PA/AP, RIPE: rotation, inspiration (6 anterior ribs), projection, exposure"],
+      ["Systematic read", "ABCDE: airway, bones, cardiac/mediastinum/hila, diaphragm, everything; then hidden areas"],
+      ["Silhouette sign", "RML right heart border; lingula left heart border; RLL/LLL hemidiaphragms; LUL aortic knob"],
+      ["Collapse", "Fissure shift, volume loss; Golden S (RUL), sail sign (LLL), luftsichel (LUL)"],
+      ["Consolidation", "Homogeneous opacity, air bronchogram, no volume loss"],
+      ["Effusion / pneumothorax", "Blunting needs about 200 mL; meniscus; pleural line with no markings; deep sulcus supine"],
+      ["Cavity and miliary", "Wall 4 mm or less benign, 15 mm or more malignant; miliary 1-3 mm - TB first"],
+      ["Nodule", "Up to 3 cm; mass over 3 cm; Fleischner 2017 for incidental; Lung-RADS for screening"],
+      ["HRCT", "UIP, NSIP, GGO, crazy paving, tree-in-bud, mosaic, nodule distribution, cysts"],
+      ["CTPA / PET-CT", "CTPA after Wells/D-dimer; V/Q in pregnancy, CKD, allergy; PET for staging, TB false positives"],
+      ["Lung ultrasound", "Sliding, A-lines, B-lines (3+), lung point, spine sign, BLUE protocol"],
+      ["Safety", "CXR 0.02 mSv, CT 5-7, LDCT 1-1.5; contrast AKI risk at eGFR under 30; hold metformin"],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Reading a chest X-ray",
+      caption: "Same order every time, then compare with old films.",
+      steps: [
+        { label: "Patient details, date, PA or AP", detail: "AP magnifies the heart" },
+        { label: "Quality: RIPE", detail: "Clavicles equidistant; 6 anterior ribs; vertebrae just visible behind heart", tone: "decision" },
+        { label: "Airway and bones", detail: "Trachea, carina, ribs, clavicles, soft tissue" },
+        { label: "Cardiac, mediastinum, hila", detail: "CTR under 0.5 on PA; hilar size and density" },
+        { label: "Diaphragm and angles", detail: "Free gas, blunting, height" },
+        { label: "Lung fields, zone by zone", detail: "Silhouette sign, air bronchogram, volume loss" },
+        { label: "Hidden areas and lines", detail: "Apices, retrocardiac, below diaphragm; ETT 5 cm above carina", tone: "warn" },
+        { label: "Summarise and compare with old films", tone: "good" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "White hemithorax - which way is the mediastinum?",
+      root: "Opaque hemithorax",
+      arms: [
+        { label: "Shifted away", tone: "warn", steps: ["Massive effusion", "Ultrasound and diagnostic tap", "Large tumour mass"] },
+        { label: "Shifted towards", steps: ["Whole-lung collapse", "Pneumonectomy", "Post-TB destroyed lung"] },
+        { label: "Central", steps: ["Consolidation", "Collapse plus effusion", "Mesothelioma fixing the mediastinum"] },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "UIP versus NSIP on HRCT",
+      columns: ["Feature", "UIP", "NSIP"],
+      rows: [
+        ["Main finding", "Reticulation with honeycombing", "Ground glass with fine reticulation"],
+        ["Distribution", "Subpleural, basal, heterogeneous", "Basal, symmetric, subpleural sparing"],
+        ["Honeycombing", "Present", "Little or none"],
+        ["Typical cause", "IPF, RA-ILD, asbestosis", "Connective tissue disease, drugs"],
+        ["Prognosis", "Worse", "Better, steroid-responsive"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Standard film is **PA erect** at full inspiration; AP magnifies the heart.",
+          "Doses: **CXR 0.02 mSv**, CT chest 5-7 mSv, low-dose CT 1-1.5 mSv.",
+          "NTEP uses **CXR with NAAT**; any TB-like shadow needs sputum testing.",
+          "WHO 2021 allows **AI (CAD)** reading of CXR for TB screening at 15 years and over.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "**Silhouette sign**: a lesion hides the border it touches.",
+          "**Air bronchogram** means airspaces are filled; the opacity is in the lung.",
+          "**Collapse** shows volume loss: fissure shift, mediastinal pull, raised diaphragm.",
+          "**Kerley B lines** are thickened septa: oedema, lymphangitis, pneumoconiosis.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "**RUL collapse**: raised horizontal fissure; Golden reverse S with a central mass.",
+          "**RML**: right heart border lost. **RLL**: right hemidiaphragm lost, heart border kept.",
+          "**LUL**: veil-like haze and **luftsichel** crescent around the aortic knob.",
+          "**LLL**: **sail sign** behind the heart; left hemidiaphragm lost.",
+          "Collapse causes: **tumour, mucus plug, endobronchial TB**; foreign body in children.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "Effusion blunts the angle at about **200 mL** on PA; ultrasound sees 20 mL.",
+          "Cavity wall **4 mm or less** usually benign; **15 mm or more** often malignant.",
+          "**Miliary** 1-3 mm nodules: TB first, then metastases, silicosis, sarcoid.",
+          "Nodule up to 3 cm; **mass over 3 cm** is malignant until proved otherwise.",
+          "Pneumonia may take **6 weeks or more** to clear on film.",
+        ],
+      },
+      {
+        title: "Differential diagnosis",
+        points: [
+          "**UIP**: subpleural basal honeycombing; IPF in the right setting.",
+          "**NSIP**: ground glass with subpleural sparing; connective tissue disease.",
+          "**Tree-in-bud**: active TB or bronchiolitis.",
+          "**Mosaic attenuation**: small airway disease, HP or CTEPH; check expiratory images.",
+          "**Crazy paving**: alveolar proteinosis, PCP, ARDS.",
+          "**Halo sign** in neutropenia suggests invasive aspergillosis.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "**HRCT** for suspected ILD or bronchiectasis.",
+          "**CTPA** for suspected PE after Wells and D-dimer; V/Q if pregnant with normal CXR.",
+          "**PET-CT** for staging and nodules 8 mm or more; TB gives false positives.",
+          "**Contrast CT** for mass, empyema, haemoptysis and mediastinum.",
+          "**Lung ultrasound**: lung point for pneumothorax, B-lines for oedema.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Pregnancy**: CXR fetal dose under 0.01 mGy; never withhold a needed film.",
+          "**Children**: use ALARA and ultrasound; look for foreign body air trapping.",
+          "**HIV**: a normal CXR does not exclude PCP or TB.",
+          "**CKD**: contrast AKI risk mainly at eGFR under 30; hold metformin.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "**Lobar collapse** in an adult smoker means endobronchial tumour until proved otherwise.",
+          "**Widened mediastinum** with chest pain needs dissection excluded.",
+          "**Free gas** under the diaphragm needs surgical review.",
+          "Have **adrenaline 0.5 mg IM** ready for contrast anaphylaxis.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**2022 IPF guideline**: probable UIP accepted; progressive pulmonary fibrosis defined.",
+          "**BTS 2023**: ultrasound guidance for all pleural procedures.",
+          "**Lung-RADS v2022** and **ACS 2023** screening rules.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs and agents in chest imaging",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Iodinated contrast", "About 50-100 mL IV (1-1.5 mL/kg)", "Single dose", "Reactions; AKI risk at eGFR under 30"],
+          ["Prednisolone premedication", "50 mg oral at 13, 7 and 1 h before", "Single course", "Hyperglycaemia"],
+          ["Pheniramine premedication", "22.75 mg IV 1 h before", "Single dose", "Sedation"],
+          ["Adrenaline", "0.5 mg IM thigh", "Repeat every 5 min if needed", "Arrhythmia; never withhold in anaphylaxis"],
+          ["0.9% saline", "1 mL/kg/h IV for 6-12 h before and after", "Only if eGFR under 30 or AKI", "Fluid overload"],
+          ["Metformin", "Hold at time of contrast", "Restart after 48 h if renal function stable", "Lactic acidosis with AKI"],
+        ],
+      },
+      {
+        heading: "Silhouette sign map",
+        columns: ["Border lost", "Lobe"],
+        rows: [
+          ["Right heart border", "Right middle lobe"],
+          ["Right hemidiaphragm", "Right lower lobe"],
+          ["Ascending aorta / SVC", "Right upper lobe"],
+          ["Left heart border", "Lingula"],
+          ["Aortic knob", "Left upper lobe"],
+          ["Left hemidiaphragm / descending aorta", "Left lower lobe"],
+        ],
+      },
+      {
+        heading: "HRCT nodule distribution",
+        columns: ["Distribution", "Look", "Causes"],
+        rows: [
+          ["Perilymphatic", "Along fissures, septa, bronchovascular bundles", "Sarcoidosis, lymphangitis, silicosis"],
+          ["Centrilobular", "Spare the pleura; may be tree-in-bud", "HP, TB, bronchiolitis, RB-ILD"],
+          ["Random", "Uniform, touch fissures", "Miliary TB, metastases, fungal"],
+        ],
+      },
+    ],
+    remember: [
+      "**RIPE**: rotation, inspiration, projection, exposure.",
+      "**Sail sign** = LLL collapse; **luftsichel** = LUL collapse; **Golden S** = RUL collapse with mass.",
+      "Fissure shift is the **most reliable** sign of collapse.",
+      "Heart failure **ABCDE**: alveolar oedema, B lines, cardiomegaly, dilated upper veins, effusion.",
+      "**Lung point** is about 100% specific for pneumothorax.",
+      "Always check the **hidden areas**: apices, behind heart, below diaphragm, hila.",
+    ],
+  },
+};
+
 export default revision;

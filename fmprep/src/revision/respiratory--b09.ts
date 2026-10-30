@@ -588,6 +588,215 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-tropical-pneumonias": {
+    checked: "2026-10",
+    updated: [
+      "WHO Clinical Practice Guidelines for Influenza (2024): oseltamivir for severe/high-risk, baloxavir option",
+      "INTREST trial (NEJM 2023): IV doxycycline plus azithromycin for severe scrub typhus",
+      "H5N1 clade 2.3.4.4b in mammals and US dairy cattle (2024); intensified One Health surveillance",
+      "Kerala Nipah outbreaks 2023-2025: NIV Kerala RT-PCR, contact tracing for 21 days",
+      "Darwin melioidosis guideline 2020 revision: weight-based cotrimoxazole",
+      "MoHFW seasonal influenza A/B/C categorisation retained",
+    ],
+    master: {
+      heading: "Tropical and zoonotic pneumonias on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Pneumonias from soil, water, animals or vectors that standard CAP regimens miss"],
+        ["Melioidosis", "B. pseudomallei; diabetic, monsoon, coastal; pneumonia, sepsis, splenic/prostatic abscess; TB mimic"],
+        ["Melioidosis treatment", "Ceftazidime 40 mg/kg 6-hourly or meropenem 25 mg/kg 8-hourly 10-14+ days, then cotrimoxazole 3 months"],
+        ["Leptospirosis", "Rat urine, floods; conjunctival suffusion, calf pain; Weil's; pulmonary haemorrhage mortality over 50%"],
+        ["Lepto tests and drugs", "PCR week 1, IgM after day 5, MAT; doxycycline mild; penicillin or ceftriaxone severe"],
+        ["Scrub typhus", "Chigger bite; eschar; vasculitis, ARDS, myocarditis, encephalitis, AKI"],
+        ["Scrub treatment", "Doxycycline 100 mg twice daily 7 days or azithromycin; severe IV doxy + IV azithro (INTREST)"],
+        ["Influenza", "MoHFW A/B/C; oseltamivir 75 mg twice daily 5 days; any time if hospitalised; H5N1 CFR about 50%"],
+        ["Nipah", "Fruit bat, raw date-palm sap, droplets; encephalitis plus ARDS; CFR 40-75%; isolate, 21-day tracing"],
+        ["Hantavirus", "Rodent excreta; capillary leak, shock; supportive, ECMO"],
+        ["Q fever", "Cattle/goat birth products; atypical pneumonia, hepatitis; doxycycline 14 days; chronic endocarditis"],
+        ["Investigations", "Malaria and dengue tests always; culture for melioidosis; eschar PCR; RT-PCR for viruses"],
+        ["Prevention", "Boots and gloves, rodent control, weekly doxycycline 200 mg, oseltamivir prophylaxis, One Health, IDSP"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Fever with pneumonia in the monsoon: approach",
+        steps: [
+          { label: "Fever with cough or breathlessness", detail: "Ask about farm, flood, animals, poultry, travel", tone: "neutral" },
+          { label: "Malaria test and dengue NS1/IgM for all", tone: "decision" },
+          { label: "Search for eschar, suffusion, calf pain, abscesses", tone: "decision" },
+          { label: "Diabetic with sepsis or abscess: melioidosis", detail: "Cultures; ceftazidime or meropenem", tone: "warn" },
+          { label: "Eschar or AUFI: doxycycline", detail: "Severe: IV doxycycline + IV azithromycin", tone: "neutral" },
+          { label: "Flood exposure with haemoptysis: leptospirosis", detail: "Penicillin or ceftriaxone; ICU", tone: "warn" },
+          { label: "Fever settles in 48 h: complete course", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Melioidosis treatment phases",
+        steps: [
+          { label: "Resuscitate, cultures, alert the lab", tone: "neutral" },
+          { label: "Intensive: ceftazidime or meropenem IV", detail: "10-14 days; 4-8 weeks for deep foci", tone: "warn" },
+          { label: "Drain abscesses, control sugar", tone: "neutral" },
+          { label: "Eradication: cotrimoxazole + folic acid", detail: "3 months; 6 for CNS or bone", tone: "good" },
+          { label: "Follow-up for relapse", detail: "CBC, creatinine, potassium monthly", tone: "decision" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Scrub typhus vs leptospirosis vs melioidosis",
+        columns: ["Feature", "Scrub typhus", "Leptospirosis", "Melioidosis"],
+        rows: [
+          ["Source", "Chigger mite", "Rat urine, water", "Soil and water"],
+          ["Key sign", "Eschar", "Conjunctival suffusion, calf pain", "Abscesses in diabetic"],
+          ["Lung", "ARDS, interstitial", "Alveolar haemorrhage", "Consolidation, cavities"],
+          ["Test", "IgM ELISA, eschar PCR", "PCR, IgM, MAT", "Culture"],
+          ["Drug", "Doxycycline / azithromycin", "Doxycycline; penicillin severe", "Ceftazidime/meropenem, then cotrimoxazole"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "These pneumonias come from **soil, water, animals or vectors** and escape CAP regimens.",
+            "India has the world's largest predicted **melioidosis** burden.",
+            "**Scrub typhus** is a leading cause of acute undifferentiated fever in India.",
+            "**Nipah** recurs in Kerala; **H5N1** human cases are sporadic since 2021.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Melioidosis**: diabetes, alcohol, CKD; paddy work and monsoon storms.",
+            "**Leptospirosis**: rat urine, floods, paddy and sewer work.",
+            "**Scrub typhus**: chigger bites in grass and farmland.",
+            "**Nipah**: fruit bats, raw date-palm sap, close patient contact.",
+            "**Q fever**: cattle and goat birth products; **H5N1**: sick poultry.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Melioidosis lives **inside macrophages**, forms abscesses and can reactivate years later.",
+            "It is naturally **resistant to gentamicin**, colistin and early cephalosporins.",
+            "Scrub typhus causes **endothelial vasculitis** and leaky capillaries, hence ARDS.",
+            "Leptospirosis injures alveolar capillaries, causing **pulmonary haemorrhage**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Melioidosis: pneumonia, shock, **splenic and prostatic abscesses**, TB-like cavities.",
+            "Leptospirosis: **conjunctival suffusion**, calf pain, jaundice with AKI, haemoptysis.",
+            "Scrub typhus: **eschar**, lymph nodes, breathlessness, confusion.",
+            "Nipah: **encephalitis** with myoclonus, often with ARDS.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Always test for **malaria and dengue** first.",
+            "Melioidosis: **culture** and alert the lab; serology is unreliable.",
+            "Leptospirosis: **PCR in week 1**, IgM after day 5, MAT to confirm.",
+            "Scrub typhus: **IgM ELISA** or eschar PCR; Weil-Felix is insensitive.",
+            "Influenza and Nipah: **RT-PCR** of throat or nasopharyngeal swab.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "AUFI: **doxycycline 100 mg twice daily**; azithromycin in pregnancy.",
+            "Mild scrub typhus: doxycycline 7 days or **azithromycin 500 mg** for 5 days.",
+            "Influenza category B: **oseltamivir 75 mg twice daily** for 5 days without testing.",
+            "Acute Q fever: **doxycycline 14 days**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Melioidosis: **ceftazidime or meropenem** IV, then cotrimoxazole for 3 months.",
+            "Severe scrub typhus: **IV doxycycline plus IV azithromycin** for 7 days.",
+            "Severe leptospirosis: **penicillin or ceftriaxone**, early dialysis, protective ventilation.",
+            "Hospitalised influenza: oseltamivir **at any time**, longer for H5N1.",
+            "Nipah: **isolation**, full PPE, supportive care; no proven antiviral.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Leptospiral pulmonary haemorrhage mortality is **over 50%**.",
+            "Melioidosis mortality **10-50%**; relapse if eradication is short.",
+            "H5N1 kills about **half** of reported cases; Nipah 40-75%.",
+            "Fever beyond **48 hours** on doxycycline means rethink the diagnosis.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Notify H5N1, Nipah and clusters to **IDSP/IHIP** the same day.",
+            "During cotrimoxazole, check **CBC, creatinine and potassium** monthly.",
+            "Leptospirosis prophylaxis: **doxycycline 200 mg weekly** during high-risk exposure.",
+            "Nipah contacts are followed for **21 days**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**INTREST 2023**: combination therapy beats single drugs in severe scrub typhus.",
+            "**WHO influenza guideline 2024** adds baloxavir for non-severe high-risk patients.",
+            "**H5N1 2.3.4.4b** has spread to mammals and US dairy cattle.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ceftazidime", "40 mg/kg up to 2 g IV 6-hourly", "10-14 days or more", "C. difficile; adjust in CKD"],
+            ["Meropenem", "25 mg/kg up to 1 g IV 8-hourly", "10-14 days or more", "Seizures at high dose"],
+            ["Cotrimoxazole + folic acid", "240/1200 to 320/1600 mg twice daily by weight", "3 months", "Hyperkalaemia, rash, marrow suppression"],
+            ["Doxycycline", "100 mg twice daily", "7 days (14 for Q fever)", "Oesophagitis; avoid in pregnancy"],
+            ["Azithromycin", "500 mg once daily", "5-7 days", "QT prolongation"],
+            ["Ceftriaxone / penicillin G", "1-2 g IV daily / 1.5 MU IV 6-hourly", "7 days", "Jarisch-Herxheimer reaction"],
+            ["Oseltamivir", "75 mg twice daily", "5 days; 10 if severe", "Nausea; dose cut in CKD"],
+          ],
+        },
+        {
+          heading: "Exposure and clue",
+          columns: ["Infection", "Exposure", "Clue"],
+          rows: [
+            ["Melioidosis", "Diabetic, monsoon, paddy", "Abscesses, gentamicin-resistant rods"],
+            ["Leptospirosis", "Flood, rats", "Suffusion, calf pain, haemoptysis"],
+            ["Scrub typhus", "Grass, farm", "Eschar"],
+            ["Nipah", "Bats, date-palm sap", "Encephalitis with ARDS"],
+            ["H5N1", "Sick poultry", "Rapid ARDS"],
+            ["Q fever", "Goats, cattle births", "Hepatitis, endocarditis"],
+          ],
+        },
+        {
+          heading: "MoHFW influenza categories",
+          columns: ["Category", "Who", "Action"],
+          rows: [
+            ["A", "Mild, no risk factor", "Symptomatic, no test, no oseltamivir"],
+            ["B", "High fever or high-risk group", "Oseltamivir, no test, home isolation"],
+            ["C", "Red flags", "Test, admit, oseltamivir"],
+          ],
+        },
+      ],
+      remember: [
+        "Melioidosis = **diabetes + monsoon + abscesses**.",
+        "**Gentamicin-resistant** bipolar rods point to Burkholderia.",
+        "**Look for the eschar** under clothes.",
+        "**Doxycycline** for AUFI after malaria and dengue tests.",
+        "Lepto kills by **pulmonary haemorrhage**.",
+        "Nipah: **bats, sap, 21 days**.",
+        "Oseltamivir in hospital **regardless of 48 hours**.",
+      ],
+    },
+  },
 };
 
 export default revision;

@@ -616,6 +616,223 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-severe-cap-icu": {
+    checked: "2026-10",
+    updated: [
+      "CAPE COD (NEJM 2023): hydrocortisone 200 mg/day cut 28-day mortality in ICU severe CAP",
+      "ATS 2024 guideline on corticosteroids in CAP: suggest for severe CAP, not for non-severe",
+      "SCCM 2024 focused update on corticosteroids in sepsis, ARDS and CAP",
+      "ERS/ESICM/ESCMID/ALAT severe CAP guideline 2023: macrolide combination, HFNO, steroids with shock",
+      "Surviving Sepsis Campaign 2021: no qSOFA alone for screening; 1-hour antibiotics in shock",
+      "INTREST (NEJM 2025): IV doxycycline plus azithromycin for severe scrub typhus",
+    ],
+    master: {
+      heading: "Severe CAP and sepsis on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "1 major (shock on vasopressors, mechanical ventilation) or 3 or more of 9 minor IDSA/ATS criteria"],
+        ["Sepsis-3", "Sepsis: SOFA rise 2 or more; shock: vasopressor for MAP 65 plus lactate over 2 after fluids"],
+        ["Organisms", "Pneumococcus, influenza, S aureus, Legionella, Klebsiella; India: scrub typhus, melioidosis, leptospira, TB"],
+        ["Pathophysiology", "Cytokine storm, capillary leak, vasodilatation, microthrombosis; cardiac events in about 1 in 5"],
+        ["Scores", "Minor criteria, SMART-COP 3 or more, NEWS2 7 or more; qSOFA not for screening alone"],
+        ["Tests", "Blood and sputum cultures, urinary antigens, MRSA nasal PCR, flu PCR, lactate, ABG, CBNAAT, tropical serology"],
+        ["Hour-1 bundle", "Lactate, cultures, antibiotics, 30 mL/kg balanced crystalloid, norepinephrine for MAP 65"],
+        ["Antibiotics", "Ceftriaxone 2 g + azithromycin 500 mg; MRSA/Pseudomonas cover only with risk; doxycycline for scrub"],
+        ["Steroids", "Hydrocortisone 200 mg/day in severe CAP (CAPE COD, ATS 2024); not in influenza"],
+        ["Influenza", "Oseltamivir 75 mg bd 5 days for all hospitalised, any day of illness"],
+        ["Respiratory support", "HFNO; intubate if failing; 6 mL/kg PBW, plateau under 30"],
+        ["Melioidosis", "Ceftazidime or meropenem 10-14 days, then co-trimoxazole 3-6 months"],
+        ["Stability", "Halm criteria for oral switch; minimum 5 days of antibiotics"],
+        ["Pitfalls", "Quinolone before TB excluded; routine broad MRSA/Pseudomonas cover; steroids in influenza"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Recognising severe CAP and sepsis",
+        steps: [
+          { label: "CAP confirmed on X-ray or ultrasound", detail: "Fever, cough, new infiltrate" },
+          { label: "Screen with NEWS2, lactate, vitals", detail: "qSOFA alone is not a screen (SSC 2021)" },
+          { label: "Any major criterion?", detail: "Shock on vasopressors or invasive ventilation", tone: "decision" },
+          { label: "3 or more minor criteria?", detail: "RR 30, P/F 250, multilobar, confusion, urea, WBC, platelets, temp, BP" },
+          { label: "Severe CAP: ICU or HDU", detail: "Start hour-1 bundle now", tone: "warn" },
+          { label: "Otherwise ward care with review", detail: "Reassess at 6-12 hours", tone: "good" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "Hour-1 bundle and ICU management",
+        steps: [
+          { label: "Lactate and 2 blood cultures", detail: "Repeat lactate in 2-4 hours if over 2" },
+          { label: "Antibiotics within 1 hour", detail: "Ceftriaxone 2 g + azithromycin 500 mg; doxycycline if scrub possible", tone: "warn" },
+          { label: "30 mL/kg balanced crystalloid", detail: "For hypotension or lactate 4 or more; reassess dynamically" },
+          { label: "Norepinephrine to MAP 65", detail: "Add vasopressin at NE 0.25-0.5 microgram/kg/min", tone: "decision" },
+          { label: "Hydrocortisone 200 mg/day", detail: "Severe CAP (CAPE COD); septic shock on NE 0.25 for 4 hours" },
+          { label: "Oxygen, HFNO, lung-protective ventilation", detail: "6 mL/kg PBW, plateau under 30 cmH2O" },
+          { label: "De-escalate at 48-72 hours", detail: "Minimum 5 days, stable 48 hours", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Add-on therapy by clue",
+        root: "Severe CAP on ceftriaxone plus azithromycin",
+        arms: [
+          { label: "Influenza positive", tone: "warn", steps: ["Oseltamivir 75 mg bd 5 days", "No corticosteroids", "Add MRSA cover if cavities"] },
+          { label: "Eschar or scrub-endemic", tone: "decision", steps: ["Doxycycline 100 mg bd 7 days", "Severe: IV doxycycline plus azithromycin"] },
+          { label: "Diabetic farmer, abscesses", tone: "warn", steps: ["Ceftazidime or meropenem 10-14 days", "Co-trimoxazole 3-6 months"] },
+          { label: "Prior Pseudomonas or MRSA", tone: "neutral", steps: ["Pip-taz or cefepime", "Vancomycin or linezolid", "Stop if cultures negative"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Severe CAP**: 1 major or 3 or more minor IDSA/ATS criteria.",
+            "**Major**: septic shock on vasopressors, or invasive mechanical ventilation.",
+            "**Sepsis-3**: infection with an acute SOFA rise of 2 or more.",
+            "**Septic shock**: vasopressors for MAP 65 plus lactate over 2 after fluids.",
+            "Pneumonia causes about **half of all sepsis**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Pneumococcus** is commonest; influenza and SARS-CoV-2 often contribute.",
+            "**S aureus** after influenza causes necrotising pneumonia.",
+            "**Legionella**: diarrhoea, confusion, low sodium.",
+            "India: **scrub typhus, melioidosis, leptospirosis and TB** mimic or cause severe CAP.",
+            "Risks: age, COPD, **diabetes**, alcohol, CKD, heart failure.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Minor criteria**: RR 30, P/F 250, multilobar, confusion, BUN 20.",
+            "Also **WBC under 4000, platelets under 100 000**, temperature under 36, fluid-needing hypotension.",
+            "**SMART-COP 3 or more** predicts need for intensive support.",
+            "**qSOFA** predicts death but should not be used alone to screen.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Blood and sputum cultures** before antibiotics, without delay.",
+            "**Urinary pneumococcal and Legionella antigens**; nasal MRSA PCR.",
+            "**Influenza and COVID PCR**, sputum CBNAAT.",
+            "**Lactate**, ABG, troponin, renal and liver tests.",
+            "Tropical tests: **scrub IgM**, leptospira, dengue, malaria, melioidosis culture.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Antibiotics within 1 hour** in shock.",
+            "**Ceftriaxone 2 g plus azithromycin 500 mg** daily.",
+            "Avoid empirical **fluoroquinolones** until TB is excluded.",
+            "Add **doxycycline** where scrub typhus is possible.",
+            "MRSA or Pseudomonas cover **only with prior isolation** or validated risk.",
+            "**Oseltamivir** for all hospitalised influenza, any day of illness.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "**30 mL/kg balanced crystalloid** for hypotension or lactate 4 or more.",
+            "**Norepinephrine** first; add vasopressin as dose rises.",
+            "**Hydrocortisone 200 mg/day** in severe CAP (CAPE COD).",
+            "**No steroids in influenza** pneumonia.",
+            "**HFNO** for hypoxaemia; intubate early if failing.",
+            "Ventilate at **6 mL/kg** predicted body weight, plateau under 30.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: ceftriaxone, azithromycin and oseltamivir are safe.",
+            "**Diabetes**: think Klebsiella, melioidosis and TB.",
+            "**CKD**: oseltamivir 30 mg bd if CrCl 30-60.",
+            "**District hospital**: first antibiotic dose before referral.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**ARDS, AKI, DIC** and multi-organ failure.",
+            "**Empyema** if fever persists beyond 72 hours.",
+            "**Cardiac events** in about one in five admissions.",
+            "No improvement at 72 hours: think **TB, scrub, melioidosis**, resistance, empyema.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Oral switch at **Halm stability**: HR 100, RR 24, SBP 90, afebrile, SpO2 90%.",
+            "Minimum **5 days** of antibiotics; 7 for MRSA or Pseudomonas.",
+            "**X-ray at 6-8 weeks** only in smokers over 50 or persistent symptoms.",
+            "**Vaccinate**: influenza, pneumococcal, RSV for older adults.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**CAPE COD 2023**: hydrocortisone mortality 6.2% vs 11.9%.",
+            "**ATS 2024**: steroids for severe CAP only.",
+            "**ERS/ESICM 2023**: macrolide combination and HFNO in severe CAP.",
+            "**INTREST 2025**: doxycycline plus azithromycin for severe scrub typhus.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Severe CAP drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ceftriaxone", "2 g IV once daily", "Minimum 5 days", "Biliary sludge"],
+            ["Azithromycin", "500 mg IV/oral daily", "3-5 days", "QT prolongation"],
+            ["Doxycycline", "100 mg oral/IV bd", "7 days", "Avoid in pregnancy"],
+            ["Oseltamivir", "75 mg oral bd", "5 days", "Nausea; renal dose adjustment"],
+            ["Hydrocortisone", "200 mg/day IV infusion", "8 or 14 days with taper", "Hyperglycaemia; not in influenza"],
+            ["Norepinephrine", "0.05-0.5 microgram/kg/min IV", "Titrate to MAP 65", "Ischaemia, arrhythmia"],
+            ["Meropenem (melioidosis)", "1 g IV 8-hourly", "10-14 days, then co-trimoxazole", "Seizures, C difficile"],
+          ],
+        },
+        {
+          heading: "IDSA/ATS severity criteria",
+          columns: ["Type", "Criterion", "Cut-off"],
+          rows: [
+            ["Major", "Septic shock", "Vasopressors"],
+            ["Major", "Respiratory failure", "Mechanical ventilation"],
+            ["Minor", "Respiratory rate", "30 or more"],
+            ["Minor", "PaO2/FiO2", "250 or less"],
+            ["Minor", "Multilobar, confusion, BUN", "BUN 20 mg/dL or more"],
+            ["Minor", "WBC, platelets, temperature", "Under 4000, under 100 000, under 36"],
+            ["Minor", "Hypotension", "Needs aggressive fluids"],
+          ],
+        },
+        {
+          heading: "Indian severe CAP mimics",
+          columns: ["Infection", "Clue", "Treatment"],
+          rows: [
+            ["Scrub typhus", "Eschar, thrombocytopenia", "Doxycycline +/- azithromycin"],
+            ["Melioidosis", "Diabetic farmer, abscesses", "Ceftazidime or meropenem"],
+            ["Leptospirosis", "Jaundice, AKI, pulmonary haemorrhage", "Penicillin or ceftriaxone"],
+            ["Pulmonary TB", "Subacute, cavity", "ATT after CBNAAT"],
+          ],
+        },
+      ],
+      remember: [
+        "**1 major or 3 minor** means severe CAP and ICU.",
+        "**Hour-1**: lactate, cultures, antibiotics, fluid, vasopressor.",
+        "**Beta-lactam plus macrolide** is the severe CAP backbone.",
+        "**CAPE COD**: hydrocortisone halves mortality, but **not in influenza**.",
+        "**Norepinephrine first, vasopressin second.**",
+        "**No quinolone before CBNAAT** in India.",
+        "**Oseltamivir for every inpatient** with flu, whatever the day.",
+      ],
+    },
+  },
 };
 
 export default revision;

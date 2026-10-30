@@ -669,6 +669,7 @@ topics.push({
         "**Fibrotic HP** has a prognosis approaching IPF when a UIP-like pattern or extensive honeycombing is present. [Harrison 22e]",
         "**Poor prognostic factors**: fibrosis, honeycombing, **unidentified antigen**, continued exposure, low BAL lymphocytes, older age and clubbing. [ATS/JRS/ALAT 2020]",
         "Complications: pulmonary hypertension, respiratory failure, emphysema (farmer's lung in non-smokers) and steroid toxicity. [Harrison 22e]",
+        "**Acute exacerbation of fibrotic HP** carries a high short-term mortality, similar to acute exacerbation of IPF. [ATS/ERS/JRS/ALAT 2022]",
       ],
     },
     {
@@ -688,6 +689,7 @@ topics.push({
         "**Public-health message in cities**: discourage feeding pigeons at balconies; use netting to stop roosting; clean droppings wet, wearing a mask. [Indian practice]",
         "**Cooler hygiene** each summer and repair of damp walls and leaking AC units. [Indian practice]",
         "Workplace controls in farms and sugar mills: **dry storage of hay and bagasse**, ventilation and respiratory protection. [Harrison 22e]",
+        "Counsel that **re-exposure can trigger relapse years later**, so avoidance is lifelong, and recheck the home if symptoms return. [ATS/JRS/ALAT 2020]",
       ],
     },
     {
@@ -1453,6 +1455,493 @@ topics.push({
     "Birnie DH et al. HRS Expert Consensus Statement on the Diagnosis and Management of Arrhythmias Associated With Cardiac Sarcoidosis, 2014",
     "Judson MA et al. The WASOG Sarcoidosis Organ Assessment Instrument, 2014",
     "National TB Elimination Programme (NTEP), Training Modules and Guidelines for Programmatic Management, MoHFW 2024",
+  ],
+});
+
+topics.push({
+  id: "respiratory-ctd-drug-ild",
+  title: "Connective-tissue disease ILD and drug-induced lung disease",
+  frequency: "less-common",
+  oneLiner:
+    "**CTD-ILD** is interstitial lung disease caused by a systemic autoimmune rheumatic disease - most often **systemic sclerosis (NSIP pattern, anti-Scl-70), rheumatoid arthritis (UIP pattern) and inflammatory myositis (anti-synthetase, anti-MDA5)** - screened for with **HRCT and PFT** (ACR/CHEST 2023) and treated with **mycophenolate first line, plus tocilizumab, rituximab or nintedanib**; **drug-induced ILD** (amiodarone, methotrexate, nitrofurantoin, bleomycin, checkpoint inhibitors) is diagnosed by timing and exclusion and managed by **stopping the drug and giving steroids** by severity.",
+  keywords: [
+    "CTD-ILD",
+    "SSc-ILD",
+    "RA-ILD",
+    "anti-synthetase syndrome",
+    "anti-MDA5",
+    "rapidly progressive ILD",
+    "NSIP",
+    "mycophenolate",
+    "tocilizumab",
+    "rituximab",
+    "cyclophosphamide",
+    "nintedanib",
+    "amiodarone lung",
+    "methotrexate pneumonitis",
+    "nitrofurantoin lung",
+    "bleomycin toxicity",
+    "checkpoint inhibitor pneumonitis",
+    "pneumotox",
+    "IPAF",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**CTD-ILD** is ILD occurring in systemic autoimmune rheumatic diseases (SARDs): systemic sclerosis (SSc), rheumatoid arthritis (RA), idiopathic inflammatory myopathy (IIM), Sjogren disease, SLE and mixed CTD (MCTD). [ACR/CHEST 2023]",
+        "**SSc**: ILD on HRCT in about **50-65%**, clinically significant in about 25-40%; ILD is now the **leading cause of SSc death**. [EULAR 2023]",
+        "**RA**: clinically evident ILD in about **5-10%**, subclinical HRCT changes in up to 30%; RA-ILD shortens survival, especially with UIP. [Harrison 22e]",
+        "**Myositis**: ILD in about **20-80%** depending on antibody - near-universal in anti-synthetase syndrome and frequent rapidly progressive ILD with **anti-MDA5**, especially in Asians. [Harrison 22e]",
+        "In the **ILD-India registry CTD-ILD was about 14%** of ILD, the second commonest after HP; RA and SSc were the main causes. [Singh S, AJRCCM 2017]",
+        "**Interstitial pneumonia with autoimmune features (IPAF)** describes ILD with some autoimmune clinical, serological or morphological features that do not meet any CTD criteria. [ERS/ATS 2015]",
+        "**Drug-induced ILD (DI-ILD)** accounts for about **3-5% of ILD**; the **Pneumotox** database (pneumotox.com) lists well over 1,000 culprit drugs. [Pneumotox 2024]",
+        "Drug toxicity is rising with **anticancer therapies**: checkpoint inhibitor pneumonitis occurs in about **3-5%** (higher with combinations and in lung cancer) and trastuzumab deruxtecan ILD in about 10-15%. [ASCO 2021]",
+      ],
+    },
+    {
+      heading: "Aetiology and risk factors",
+      points: [
+        "**SSc-ILD risk**: **diffuse cutaneous SSc, anti-Scl-70 (topoisomerase I)**, anti-Th/To, early disease (first 3-5 years), male sex and African ancestry; **anti-centromere is protective**. [EULAR 2023]",
+        "**RA-ILD risk**: **older age, male sex, smoking, high-titre RF and anti-CCP**, and the **MUC5B promoter variant** (shared with IPF). [ACR/CHEST 2023]",
+        "**Myositis-ILD antibodies**: **anti-Jo-1** (commonest anti-synthetase), PL-7, PL-12 (ILD-dominant), EJ, OJ; **anti-MDA5** (amyopathic dermatomyositis with rapidly progressive ILD); anti-Ro52 adds risk. [ACR/CHEST 2023]",
+        "**Sjogren**: NSIP, **lymphocytic interstitial pneumonia (LIP)**, cysts and follicular bronchiolitis; risk of MALT lymphoma. [Harrison 22e]",
+        "**SLE**: ILD less common; acute lupus pneumonitis, **diffuse alveolar haemorrhage**, pleuritis and **shrinking lung syndrome** (diaphragm dysfunction). [Harrison 22e]",
+        "**Drug toxicity risk factors**: high cumulative dose (bleomycin, amiodarone), older age, renal impairment, pre-existing ILD, oxygen and radiotherapy, combination therapy and **Japanese ancestry for EGFR-TKI ILD**. [Pneumotox 2024]",
+      ],
+    },
+    {
+      heading: "Pathophysiology",
+      points: [
+        "**SSc-ILD**: endothelial injury and autoimmunity drive TGF-beta and **IL-6** signalling with fibroblast activation - the rationale for **tocilizumab (anti-IL-6R)** and **nintedanib**. [EULAR 2023]",
+        "Most CTD-ILD shows **NSIP**, a homogeneous (temporally uniform) cellular or fibrotic pattern that is more steroid- and immunosuppressant-responsive than UIP. [Harrison 22e]",
+        "**RA-ILD** is the exception: **UIP is the commonest pattern** and behaves like IPF, so antifibrotics are used in progressive cases. [ACR/CHEST 2023]",
+        "**Anti-MDA5** disease is an interferon-driven vasculopathy with macrophage activation (very high **ferritin**), causing diffuse alveolar damage and rapidly progressive ILD. [Harrison 22e]",
+        "**Drugs injure the lung** by direct cytotoxicity (bleomycin free radicals, busulfan), **phospholipidosis** (amiodarone foamy macrophages), immune hypersensitivity (methotrexate, nitrofurantoin) and **T-cell disinhibition** (checkpoint inhibitors). [Harrison 22e]",
+        "**Bleomycin** is inactivated by bleomycin hydrolase, which is scarce in lung and skin - so those organs are hit; it is renally cleared, so **renal impairment raises toxicity**. [Harrison 22e]",
+        "Drugs produce **any histological pattern**: NSIP, organising pneumonia, HP-like, DAD, eosinophilic pneumonia, alveolar haemorrhage and pulmonary oedema. [Pneumotox 2024]",
+      ],
+    },
+    {
+      heading: "Classification that matters",
+      points: [
+        "**HRCT/histology patterns by CTD**: SSc - fibrotic NSIP; RA - UIP more than NSIP; myositis - NSIP with organising pneumonia (NSIP-OP); Sjogren - NSIP, LIP; SLE - acute pneumonitis, DAH. [ACR/CHEST 2023]",
+        "**SSc-ILD extent** (Goh staging): **extensive disease if HRCT extent over 20%**, or 10-30% with FVC under 70% - predicts mortality. [Goh, AJRCCM 2008]",
+        "**Rapidly progressive ILD (RP-ILD)**: worsening over days to weeks to respiratory failure - the anti-MDA5 emergency. [ACR/CHEST 2023]",
+        "**Drug-induced ILD is graded by CTCAE v5**: grade 1 asymptomatic (radiological only); grade 2 symptomatic, limiting instrumental ADL; grade 3 severe, needs oxygen; grade 4 life-threatening; grade 5 death. [CTCAE v5]",
+        "**Drug-induced lung patterns**: **acute** (hypersensitivity, eosinophilic, DAD, oedema) versus **chronic** (fibrosing NSIP/UIP-like) - nitrofurantoin shows both. [Pneumotox 2024]",
+        "**Progressive pulmonary fibrosis** criteria (ATS/ERS/JRS/ALAT 2022) apply to CTD-ILD and fibrotic DI-ILD (see the ILD and IPF topic). [ATS/ERS/JRS/ALAT 2022]",
+      ],
+    },
+    {
+      heading: "Clinical features - history",
+      points: [
+        "Exertional breathlessness and **dry cough**, often masked by reduced activity from joint or muscle disease - **ask about stairs and walking pace**. [ACR/CHEST 2023]",
+        "**ILD may precede the CTD** by years, especially in anti-synthetase syndrome and RA - ask about Raynaud, dry eyes and mouth, joint swelling, rash, muscle weakness. [Harrison 22e]",
+        "**Anti-synthetase syndrome**: ILD, myositis, **mechanic's hands**, inflammatory arthritis, Raynaud and fever. [Harrison 22e]",
+        "**Anti-MDA5**: little or no muscle weakness, **painful palmar papules, skin ulcers** over knuckles and elbows, alopecia, and breathlessness worsening over weeks. [Harrison 22e]",
+        "**Drug history in time order**: start dates, cumulative dose, recent cancer cycles (bleomycin, immunotherapy), long-term nitrofurantoin prophylaxis, amiodarone, methotrexate, leflunomide, biologics. [Pneumotox 2024]",
+        "**Methotrexate pneumonitis**: subacute fever, dry cough and breathlessness, usually in the **first year** of treatment, not dose related. [Harrison 22e]",
+        "**Amiodarone toxicity**: insidious breathlessness, cough, weight loss and fever after months, typically at **over 400 mg/day** or high cumulative dose. [Harrison 22e]",
+        "**Checkpoint inhibitor pneumonitis**: new cough or breathlessness, median onset about **2-3 months** after starting, but can occur any time, including after stopping. [ASCO 2021]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Bibasal fine crackles** in CTD-ILD; **clubbing is uncommon** except in RA-ILD with UIP. [Harrison 22e]",
+        "**SSc**: sclerodactyly, puffy fingers, digital pits and ulcers, telangiectasia, microstomia, calcinosis; **abnormal nailfold capillaries**. [EULAR 2023]",
+        "**RA**: symmetrical small-joint synovitis or deformity, rheumatoid nodules. [Harrison 22e]",
+        "**Dermatomyositis**: **heliotrope rash, Gottron papules**, V-sign, shawl sign; **mechanic's hands** (cracked lateral fingers) in anti-synthetase. [Harrison 22e]",
+        "**Sjogren**: dry eyes and mouth, parotid swelling; **SLE**: malar rash, oral ulcers, serositis. [Harrison 22e]",
+        "**Pulmonary hypertension** signs (especially SSc): loud P2, RV heave - SSc patients need annual PH screening. [ESC/ERS 2022]",
+        "**Drug clues**: blue-grey skin and thyroid dysfunction (amiodarone), skin hyperpigmentation and flagellate rash (bleomycin), rash and eosinophilia (hypersensitivity). [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Infection** in an immunosuppressed patient - **Pneumocystis**, CMV, bacterial pneumonia and **TB** - must be excluded before calling it ILD flare or drug toxicity. [ATS 2020]",
+        "**Methotrexate pneumonitis vs PJP**: both cause fever, dry cough and ground-glass; do **induced sputum/BAL for Pneumocystis PCR** and check beta-D-glucan and LDH. [Harrison 22e]",
+        "**Heart failure** (amiodarone is given for heart disease): raised NT-proBNP, effusions, response to diuretics. [Harrison 22e]",
+        "**Aspiration pneumonia** in SSc with oesophageal dysmotility and myositis with pharyngeal weakness. [EULAR 2023]",
+        "**Lymphangitis carcinomatosa or cancer progression** in a patient on cancer therapy. [ASCO 2021]",
+        "**IPF and fibrotic HP** in RA-ILD-like UIP - serology and exposure history separate them. [ATS/ERS/JRS/ALAT 2022]",
+        "**Diffuse alveolar haemorrhage** (SLE, vasculitis): falling Hb, haemoptysis, rising DLCO. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**Screening for CTD-ILD**: **HRCT plus PFT (spirometry, lung volumes, DLCO)** in SSc, RA, IIM, MCTD and Sjogren patients at increased risk; **chest X-ray, 6MWD or ambulatory desaturation alone are not adequate screens**. [ACR/CHEST 2023]",
+        "**Serology**: ANA (IIF pattern), anti-Scl-70, anti-centromere, anti-RNA polymerase III, RF, anti-CCP, anti-Ro/SSA (Ro52), anti-La, dsDNA, **extended myositis panel** (Jo-1, PL-7, PL-12, MDA5, EJ, OJ), CK and aldolase. [ACR/CHEST 2023]",
+        "**PFT**: restrictive pattern with **reduced DLCO**; in SSc an isolated low DLCO (with FVC/DLCO ratio over 1.6) suggests **pulmonary hypertension**. [ESC/ERS 2022]",
+        "**Anti-MDA5 RP-ILD work-up**: **ferritin** (high levels predict mortality), LDH, CRP, ABG, and exclusion of infection. [Harrison 22e]",
+        "**Drug-induced ILD**: HRCT pattern, CBC with **eosinophils**, LFT (nitrofurantoin hepatitis), and **BAL** to exclude infection; BAL lymphocytosis in methotrexate/nitrofurantoin, **foamy macrophages** in amiodarone (exposure, not proof). [Pneumotox 2024]",
+        "**Amiodarone**: CT may show **high-attenuation consolidation and liver** (iodine); a fall in **DLCO of 15-20% or more** from baseline supports toxicity. [Harrison 22e]",
+        "**Bleomycin**: baseline and serial **DLCO** before each cycle; a significant fall (about 25% or more from baseline) prompts stopping. [Harrison 22e]",
+        "**Echocardiography** yearly in SSc (PH screening, DETECT algorithm) and **cardiac MRI** if myocarditis is suspected in myositis. [ESC/ERS 2022]",
+      ],
+    },
+    {
+      heading: "Management in OPD - CTD-ILD",
+      points: [
+        "**SSc-ILD first line**: **mycophenolate mofetil** - start 500 mg twice daily, increase to **1-1.5 g twice daily** (target 2-3 g/day); SLS-II showed it equal to cyclophosphamide with less toxicity. [ACR/CHEST 2023]",
+        "**SSc-ILD other first-line options**: **tocilizumab 162 mg SC weekly** (FOCUSSED; FDA approved 2021 for SSc-ILD) and **rituximab 1 g IV x 2, two weeks apart**, repeated every 6 months; **cyclophosphamide** when others fail. [ACR/CHEST 2023]",
+        "**Nintedanib 150 mg twice daily** slowed FVC decline by about 44% in SSc-ILD (SENSCIS) and is used for progressive disease, often added to MMF. [Distler O, NEJM 2019]",
+        "**Avoid prednisolone over 15 mg/day in SSc** - it precipitates **scleroderma renal crisis**; check BP and creatinine regularly. [EULAR 2023]",
+        "**RA-ILD**: mycophenolate, azathioprine, rituximab or cyclophosphamide for inflammatory/NSIP disease; **nintedanib for progressive fibrotic (UIP) disease**. [ACR/CHEST 2023]",
+        "**Methotrexate in RA-ILD**: recent data do not show that MTX causes RA-ILD; stable ILD is not an absolute reason to stop it, but decide with the rheumatologist and watch for pneumonitis. [ACR/CHEST 2023]",
+        "**Myositis-ILD**: glucocorticoids plus a steroid-sparing agent (**MMF, azathioprine, rituximab, tacrolimus**); IVIG and JAK inhibitors in refractory cases. [ACR/CHEST 2023]",
+        "**Supportive care**: PJP prophylaxis with **cotrimoxazole 960 mg three times weekly** on combined immunosuppression, bone protection, vaccination, rehabilitation, oxygen and reflux treatment in SSc. [ACR 2022]",
+      ],
+    },
+    {
+      heading: "Management in OPD/IPD - drug-induced lung disease",
+      points: [
+        "**Step 1 for all**: stop the suspected drug, exclude infection and other causes, then grade severity; **rechallenge is usually not advised**. [Pneumotox 2024]",
+        "**Checkpoint inhibitor pneumonitis grade 1**: consider holding the drug, repeat imaging in 3-4 weeks. [ASCO 2021]",
+        "**Grade 2**: **hold the drug, prednisolone 1-2 mg/kg/day**, reassess in 48-72 hours, taper over **4-6 weeks**; resume only if back to grade 0-1. [ASCO 2021]",
+        "**Grade 3-4**: **permanently discontinue**, admit, IV **methylprednisolone 1-2 mg/kg/day**; if no improvement in 48 hours add **infliximab, mycophenolate, IVIG or cyclophosphamide**; empirical antibiotics. [ASCO 2021]",
+        "**Amiodarone**: stop the drug (it persists for months because of its **half-life of about 50-100 days**), **prednisolone 40-60 mg/day tapered over 4-12 months**; disease may worsen initially after stopping. [Harrison 22e]",
+        "**Methotrexate pneumonitis**: stop methotrexate, prednisolone **about 1 mg/kg/day** with taper, cover PJP if not excluded; **do not rechallenge**. [Harrison 22e]",
+        "**Nitrofurantoin**: acute form resolves within days of stopping; the chronic fibrotic form may need steroids and may not fully reverse. [Harrison 22e]",
+        "**Bleomycin**: stop permanently; steroids are commonly used though evidence is weak; during later anaesthesia **avoid high FiO2** (target SpO2 88-92%) and limit fluids. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Management in IPD - rapidly progressive CTD-ILD",
+      points: [
+        "**Admit** for SpO2 under 90%, worsening over days, anti-MDA5 with breathlessness, or suspected infection on immunosuppression. [ACR/CHEST 2023]",
+        "**Exclude infection first** with blood cultures, sputum and BAL (PJP PCR, CMV, bacterial cultures, **CBNAAT**). [ACR/CHEST 2023]",
+        "**IV methylprednisolone 500-1,000 mg daily for 3 days**, then prednisolone 1 mg/kg/day. [ACR/CHEST 2023]",
+        "**Anti-MDA5 RP-ILD**: **combination therapy** - high-dose steroids plus a **calcineurin inhibitor (tacrolimus)** plus **IV cyclophosphamide**, with rituximab, IVIG, JAK inhibitors (tofacitinib) or plasma exchange in refractory cases. [ACR/CHEST 2023]",
+        "**IV cyclophosphamide** 500-750 mg/m2 monthly (or 500 mg every 2 weeks) with hydration and mesna as indicated; check counts at day 10-14. [ACR/CHEST 2023]",
+        "Discuss **ICU care and ECMO** only as a bridge to recovery or transplant; mortality of anti-MDA5 RP-ILD remains around 30-50%. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Pregnancy**: MMF, methotrexate, leflunomide, cyclophosphamide and nintedanib are **teratogenic** - switch to azathioprine, hydroxychloroquine or low-dose steroids before conception. [BSR 2022]",
+        "**SSc with PH or severe ILD** has high maternal risk - pre-conception counselling at a tertiary centre. [EULAR 2023]",
+        "**Elderly**: nitrofurantoin long-term prophylaxis is best avoided (**Beers criteria**), particularly with CrCl under 30 mL/min. [AGS Beers 2023]",
+        "**Renal impairment**: reduce bleomycin and methotrexate; methotrexate is **contraindicated at eGFR under 30**. [BNF 2024]",
+        "**India**: screen for **latent TB (IGRA or TST) and hepatitis B** before rituximab, tocilizumab, anti-TNF or JAK inhibitors; TB preventive treatment when positive. [NTEP 2024]",
+        "**Cost**: generic MMF, cyclophosphamide and nintedanib reduce cost; tocilizumab and rituximab biosimilars are available in India. [Indian practice]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**SSc-ILD**: about 40% have progressive disease; **10-year mortality is higher with extensive (over 20%) HRCT disease** or FVC under 70%. [EULAR 2023]",
+        "**RA-ILD with UIP** has a median survival of about **3-5 years**, similar to IPF. [Harrison 22e]",
+        "**Anti-MDA5 RP-ILD**: very high early mortality, but survivors often remain in remission. [Harrison 22e]",
+        "**Drug-induced ILD** usually improves after withdrawal; **DAD-pattern** toxicity (bleomycin, high-grade checkpoint pneumonitis) carries high mortality. [Pneumotox 2024]",
+        "Complications: **pulmonary hypertension**, infection from immunosuppression, aspiration, lung cancer and steroid toxicity. [ACR/CHEST 2023]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up, monitoring and counselling",
+      points: [
+        "**SSc and myositis**: **PFT every 3-6 months in the first year**, then less often if stable; HRCT when clinically indicated. [ACR/CHEST 2023]",
+        "**RA, Sjogren, MCTD**: PFT every 3-12 months in the first year, then less often if stable. [ACR/CHEST 2023]",
+        "**Joint chest-rheumatology clinic** decisions; refer progressive disease for antifibrotics and transplant assessment. [ACR/CHEST 2023]",
+        "**MMF monitoring**: CBC and LFT every 2 weeks while titrating, then every 1-3 months. [BSR 2022]",
+        "**Amiodarone**: baseline CXR and PFT with DLCO, TFT and LFT every 6 months. [Harrison 22e]",
+        "**Checkpoint inhibitors**: ask about cough and breathlessness at every cycle; low threshold for CT. [ASCO 2021]",
+        "**Stop smoking** - it worsens RA, RA-ILD and drug toxicity. [ACR/CHEST 2023]",
+        "Report **new cough, breathlessness or fever immediately** when on methotrexate, amiodarone or cancer immunotherapy. [ASCO 2021]",
+        "Use the **lowest effective amiodarone dose** (200 mg/day maintenance) and review the indication. [Harrison 22e]",
+        "**Vaccinate** before immunosuppression (influenza, pneumococcal, COVID-19, hepatitis B; avoid live vaccines). [ACIP 2024]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates",
+      points: [
+        "**ACR/CHEST 2023 screening and monitoring guideline**: HRCT and PFT to screen at-risk SARD patients; against CXR or 6MWD as screens; defined PFT intervals. [ACR/CHEST 2023]",
+        "**ACR/CHEST 2023 treatment guideline**: **MMF first line** for SSc, RA, myositis, MCTD and Sjogren ILD; **against glucocorticoids first line in SSc-ILD**; combination therapy for RP-ILD. [ACR/CHEST 2023]",
+        "**EULAR 2023 SSc update** (published 2024-25): MMF, cyclophosphamide, rituximab, tocilizumab and nintedanib all recommended for SSc-ILD. [EULAR 2023]",
+        "**RECITAL (2023)**: rituximab was **not superior to cyclophosphamide** in severe CTD-ILD but caused fewer adverse events. [Maher TM, Lancet Respir Med 2023]",
+        "**FIBRONEER-ILD (2025)**: nerandomilast slowed FVC decline in PPF including CTD-ILD. [Maher TM, NEJM 2025]",
+        "**ASCO 2021 irAE guideline** (with later living updates) remains the standard for checkpoint pneumonitis grading and steroid dosing. [ASCO 2021]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Viva: '**Which CTD causes UIP?**' - RA; most others cause NSIP.",
+        "Viva: '**Why avoid high-dose steroids in SSc?**' - scleroderma renal crisis.",
+        "Short note: **amiodarone lung** - dose, high-attenuation CT, foamy macrophages, DLCO fall, stop drug and steroids.",
+        "**Methotrexate pneumonitis vs PJP** is a favourite case discussion - always do BAL or induced sputum.",
+        "**Common mistake**: escalating immunosuppression for 'ILD flare' without excluding infection or TB.",
+        "Know **anti-MDA5 = amyopathic DM + RP-ILD + high ferritin + skin ulcers**.",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs for CTD-ILD",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Mycophenolate mofetil", "500 mg BD rising to 1-1.5 g BD orally", "At least 2 years", "Diarrhoea, cytopenia, infection; teratogenic"],
+        ["Tocilizumab", "162 mg SC weekly", "Long term", "Infection, neutropenia, raised lipids and ALT, bowel perforation; masks CRP"],
+        ["Rituximab", "1 g IV on day 1 and 15, repeat every 6 months", "Long term", "Infusion reactions, hypogammaglobulinaemia, HBV reactivation"],
+        ["Cyclophosphamide", "500-750 mg/m2 IV monthly x 6 (or oral 1-2 mg/kg/day)", "6-12 months then switch to MMF", "Marrow suppression, haemorrhagic cystitis, infertility, malignancy"],
+        ["Nintedanib", "150 mg BD orally with food", "Long term", "Diarrhoea, raised ALT, bleeding; not in pregnancy"],
+        ["Tacrolimus (myositis RP-ILD)", "0.075 mg/kg/day orally in 2 doses, trough 5-10 ng/mL", "Long term", "Nephrotoxicity, hypertension, tremor, diabetes"],
+        ["Prednisolone", "0.5-1 mg/kg/day (avoid over 15 mg in SSc)", "Taper over months", "Renal crisis in SSc, diabetes, osteoporosis"],
+      ],
+    },
+    {
+      heading: "CTD and their lung patterns",
+      columns: ["Disease", "Key antibody", "Usual ILD pattern", "Other lung features"],
+      rows: [
+        ["Systemic sclerosis", "Anti-Scl-70 (high risk), anti-centromere (low risk)", "Fibrotic NSIP", "Pulmonary hypertension, aspiration"],
+        ["Rheumatoid arthritis", "RF, anti-CCP (high titre)", "UIP more than NSIP", "Nodules, effusion, bronchiectasis, Caplan syndrome"],
+        ["Anti-synthetase syndrome", "Anti-Jo-1, PL-7, PL-12", "NSIP with organising pneumonia", "Mechanic's hands, arthritis"],
+        ["Anti-MDA5 dermatomyositis", "Anti-MDA5", "Rapidly progressive ILD, DAD", "High ferritin, skin ulcers, pneumomediastinum"],
+        ["Sjogren disease", "Anti-Ro/SSA, anti-La", "NSIP, LIP, cysts", "Follicular bronchiolitis, lymphoma"],
+        ["SLE", "dsDNA, anti-Sm", "Uncommon NSIP", "Pleuritis, lupus pneumonitis, DAH, shrinking lung"],
+      ],
+    },
+    {
+      heading: "Important drug-induced lung diseases",
+      columns: ["Drug", "Pattern and timing", "Risk factors / clue", "Management"],
+      rows: [
+        ["Amiodarone", "NSIP, OP; months to years", "Over 400 mg/day, older age; high-attenuation CT, DLCO fall", "Stop; prednisolone 40-60 mg tapered over months"],
+        ["Methotrexate", "Hypersensitivity pneumonitis; first year", "Not dose related; fever, eosinophils; exclude PJP", "Stop; steroids; no rechallenge"],
+        ["Nitrofurantoin", "Acute (days, eosinophilia, effusion) or chronic (fibrosis)", "Long-term prophylaxis, older women, hepatitis", "Stop; steroids for chronic form"],
+        ["Bleomycin", "DAD, fibrosis; during or after therapy", "Cumulative dose over 400 units, age over 70, renal failure, oxygen, radiation", "Stop permanently; steroids; low FiO2 later"],
+        ["Checkpoint inhibitors", "OP, NSIP, HP-like; median 2-3 months", "Combination therapy, NSCLC, prior ILD or radiation", "Grade-based: hold and steroids; stop for grade 3-4"],
+        ["EGFR TKIs, trastuzumab deruxtecan", "ILD/DAD; weeks to months", "Japanese ancestry, pre-existing ILD", "Stop; steroids"],
+      ],
+    },
+    {
+      heading: "Checkpoint inhibitor pneumonitis grading (CTCAE v5 / ASCO 2021)",
+      columns: ["Grade", "Features", "Action"],
+      rows: [
+        ["1", "Radiological only, asymptomatic", "Consider holding; repeat CT in 3-4 weeks"],
+        ["2", "Symptomatic, limits instrumental ADL", "Hold; prednisolone 1-2 mg/kg/day; taper over 4-6 weeks"],
+        ["3", "Severe symptoms, limits self-care, needs oxygen", "Stop permanently; admit; IV methylprednisolone 1-2 mg/kg"],
+        ["4", "Life-threatening respiratory compromise", "As grade 3, ICU; add infliximab, MMF or IVIG if no response in 48 h"],
+      ],
+    },
+    {
+      heading: "Screening and monitoring for CTD-ILD (ACR/CHEST 2023)",
+      columns: ["Disease", "Screen with", "PFT monitoring in first year"],
+      rows: [
+        ["Systemic sclerosis", "HRCT + PFT at diagnosis", "Every 3-6 months"],
+        ["Inflammatory myositis", "HRCT + PFT at diagnosis", "Every 3-6 months"],
+        ["RA (with risk factors)", "HRCT + PFT", "Every 3-12 months"],
+        ["Sjogren, MCTD", "HRCT + PFT if risk factors", "Every 3-12 months"],
+        ["Not recommended alone", "Chest X-ray, 6MWD, ambulatory desaturation", "Not applicable"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Breathlessness worsening over days with dermatomyositis skin signs or anti-MDA5 - rapidly progressive ILD",
+    "SpO2 under 90% or need for oxygen in a patient on immunotherapy (grade 3-4 pneumonitis)",
+    "Fever, dry cough and ground-glass on methotrexate or immunosuppression - PJP vs drug pneumonitis",
+    "New hypertension or rising creatinine in SSc on steroids - scleroderma renal crisis",
+    "Haemoptysis with falling haemoglobin in SLE or vasculitis - alveolar haemorrhage",
+    "FVC fall of 10% or more in 6-12 months in CTD-ILD",
+  ],
+  pearls: [
+    "**RA = UIP; most other CTDs = NSIP.**",
+    "**Anti-Scl-70 predicts SSc-ILD; anti-centromere protects.**",
+    "**MMF is first line for CTD-ILD; steroids over 15 mg/day in SSc risk renal crisis.**",
+    "**Anti-MDA5: amyopathic DM, skin ulcers, high ferritin, RP-ILD - treat with triple therapy early.**",
+    "**Screen with HRCT and PFT, not chest X-ray** (ACR/CHEST 2023).",
+    "**Amiodarone: high-attenuation CT, foamy macrophages, DLCO falls; worsens after stopping because of long half-life.**",
+    "**Methotrexate pneumonitis: first year, not dose-related - always exclude PJP.**",
+    "**Bleomycin: keep FiO2 low for life.**",
+    "**Checkpoint pneumonitis grade 2 = hold + prednisolone 1-2 mg/kg; grade 3-4 = stop for good.**",
+  ],
+  mcqs: [
+    {
+      id: "respiratory-ctd-drug-ild-q1",
+      stem: "A 38-year-old woman with diffuse cutaneous systemic sclerosis and anti-Scl-70 antibody has an FVC of 68% predicted and fibrotic NSIP involving 25% of the lungs on HRCT. What is the preferred first-line treatment?",
+      options: [
+        "Prednisolone 1 mg/kg/day",
+        "Mycophenolate mofetil titrated to 1-1.5 g twice daily",
+        "Pirfenidone",
+        "Observation with yearly PFT",
+      ],
+      answer: 1,
+      explanation:
+        "Extensive SSc-ILD (over 20% on HRCT, FVC under 70%) needs treatment, and ACR/CHEST 2023 recommends mycophenolate first line, based on SLS-II. High-dose prednisolone is advised against as first line in SSc because it can precipitate scleroderma renal crisis. Pirfenidone lacks supportive trial evidence in SSc-ILD, and observation is unsafe in extensive disease.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-ctd-drug-ild-q2",
+      stem: "Which connective tissue disease most often shows a usual interstitial pneumonia (UIP) pattern on HRCT?",
+      options: [
+        "Systemic sclerosis",
+        "Sjogren disease",
+        "Rheumatoid arthritis",
+        "Anti-synthetase syndrome",
+      ],
+      answer: 2,
+      explanation:
+        "RA-ILD is the CTD most commonly associated with a UIP pattern, especially in older male smokers with high-titre anti-CCP, and it behaves much like IPF. Systemic sclerosis typically gives fibrotic NSIP, Sjogren disease gives NSIP or LIP with cysts, and anti-synthetase syndrome gives NSIP with organising pneumonia.",
+      difficulty: "easy",
+    },
+    {
+      id: "respiratory-ctd-drug-ild-q3",
+      stem: "A 68-year-old man on amiodarone 400 mg/day for 18 months develops progressive breathlessness and weight loss. CT shows peripheral consolidation of high attenuation and a dense liver. DLCO has fallen by 30% from baseline. The best management is:",
+      options: [
+        "Stop amiodarone and start prednisolone 40-60 mg/day tapered over several months",
+        "Continue amiodarone and add an inhaled steroid",
+        "Reduce amiodarone to 200 mg/day and recheck in 6 months",
+        "Start antitubercular treatment empirically",
+      ],
+      answer: 0,
+      explanation:
+        "High-attenuation consolidation (iodine), a dense liver and a large DLCO fall in a patient on high-dose amiodarone indicate amiodarone pulmonary toxicity; the drug must be stopped and systemic steroids given over months because of its very long half-life. Continuing the drug at any dose risks progression, inhaled steroids are ineffective, and empirical ATT is unjustified.",
+      difficulty: "moderate",
+    },
+    {
+      id: "respiratory-ctd-drug-ild-q4",
+      stem: "A patient on pembrolizumab for lung cancer has new cough and breathlessness on walking around the house, with SpO2 95% on air and bilateral ground-glass on CT. Infection has been excluded. The correct management is:",
+      options: [
+        "Continue pembrolizumab and give antibiotics",
+        "Stop pembrolizumab permanently and give IV infliximab immediately",
+        "Hold pembrolizumab and start prednisolone 1-2 mg/kg/day with taper over 4-6 weeks",
+        "Continue pembrolizumab with inhaled budesonide",
+      ],
+      answer: 2,
+      explanation:
+        "Symptomatic pneumonitis limiting instrumental ADL without oxygen need is grade 2: ASCO advises holding the checkpoint inhibitor and giving prednisolone 1-2 mg/kg/day with a 4-6 week taper, resuming only if it settles to grade 1 or less. Continuing the drug ignores the toxicity; permanent discontinuation and infliximab are for grade 3-4 or steroid-refractory disease; inhaled steroids are not adequate.",
+      difficulty: "hard",
+    },
+    {
+      id: "respiratory-ctd-drug-ild-q5",
+      stem: "A woman with amyopathic dermatomyositis, painful palmar papules and skin ulcers develops breathlessness over 3 weeks with serum ferritin of 2,500 ng/mL. Which antibody is most likely?",
+      options: [
+        "Anti-Mi-2",
+        "Anti-TIF1-gamma",
+        "Anti-Jo-1",
+        "Anti-MDA5",
+      ],
+      answer: 3,
+      explanation:
+        "Anti-MDA5 dermatomyositis is typically clinically amyopathic, with palmar papules and skin ulcers, very high ferritin and rapidly progressive ILD needing early combination immunosuppression. Anti-Mi-2 gives classic DM with good prognosis, anti-TIF1-gamma is linked to cancer, and anti-Jo-1 causes anti-synthetase syndrome with myositis and more chronic ILD.",
+      difficulty: "moderate",
+    },
+  ],
+  theory: [
+    {
+      id: "respiratory-ctd-drug-ild-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "less-common",
+      question:
+        "Discuss interstitial lung disease in connective tissue diseases with emphasis on screening and management of systemic sclerosis-associated ILD.",
+      openingLines: [
+        "CTD-ILD is ILD occurring in systemic autoimmune rheumatic diseases, and in systemic sclerosis it is now the leading cause of death.",
+        "ACR/CHEST 2023 recommends HRCT and PFT screening of at-risk patients and mycophenolate as first-line treatment.",
+      ],
+      answer: [
+        {
+          heading: "Spectrum",
+          points: [
+            "SSc (NSIP), RA (UIP), myositis (NSIP-OP, anti-MDA5 RP-ILD), Sjogren (LIP), SLE (pneumonitis, DAH), IPAF.",
+          ],
+        },
+        {
+          heading: "Risk factors and pathogenesis",
+          points: [
+            "Diffuse SSc, anti-Scl-70, early disease; IL-6 and TGF-beta driven fibrosis.",
+          ],
+        },
+        {
+          heading: "Screening and evaluation",
+          points: [
+            "HRCT plus PFT with DLCO at diagnosis; not CXR or 6MWD; PFT every 3-6 months in first year.",
+            "Goh staging: extensive if over 20% or 10-30% with FVC under 70%; echo for PH.",
+          ],
+        },
+        {
+          heading: "Treatment of SSc-ILD",
+          points: [
+            "MMF 1-1.5 g BD first line; tocilizumab 162 mg SC weekly; rituximab; cyclophosphamide; nintedanib 150 mg BD for progression.",
+            "Avoid prednisolone over 15 mg/day (renal crisis); PJP prophylaxis; reflux control; rehab, oxygen.",
+          ],
+        },
+        {
+          heading: "Other CTDs and RP-ILD",
+          points: [
+            "RA-ILD: MMF/rituximab, nintedanib for UIP progression; anti-MDA5: steroid pulse + tacrolimus + cyclophosphamide.",
+          ],
+        },
+        {
+          heading: "Monitoring and prognosis",
+          points: [
+            "PFT, HRCT when needed; transplant referral; extensive disease and FVC under 70% predict death.",
+          ],
+        },
+      ],
+      mustDraw: ["Table: CTD vs ILD pattern vs antibody", "Treatment ladder for SSc-ILD"],
+      markSplit: [
+        { part: "Spectrum and risk factors", marks: 2 },
+        { part: "Screening and evaluation", marks: 3 },
+        { part: "Treatment", marks: 4 },
+        { part: "Prognosis", marks: 1 },
+      ],
+      keywords: ["SSc-ILD", "MMF", "tocilizumab", "nintedanib", "ACR/CHEST 2023", "scleroderma renal crisis"],
+    },
+    {
+      id: "respiratory-ctd-drug-ild-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Write a short note on drug-induced lung disease.",
+      openingLines: [
+        "Drug-induced lung disease is injury to the airways, interstitium, pleura or vessels caused by a drug; over 1,000 drugs are listed on pneumotox.com.",
+        "Diagnosis rests on timing, compatible pattern, exclusion of infection and improvement on withdrawal.",
+      ],
+      answer: [
+        {
+          heading: "Common culprits",
+          points: [
+            "Amiodarone, methotrexate, nitrofurantoin, bleomycin, busulfan, checkpoint inhibitors, EGFR TKIs, trastuzumab deruxtecan.",
+          ],
+        },
+        {
+          heading: "Diagnosis",
+          points: [
+            "Temporal link, HRCT pattern (NSIP, OP, HP-like, DAD), BAL to exclude infection, DLCO fall.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Stop drug; steroids by severity (CTCAE grade); no rechallenge in severe cases; low FiO2 after bleomycin.",
+          ],
+        },
+      ],
+      mustDraw: ["Table: drug, pattern, risk factor, management"],
+      markSplit: [
+        { part: "Definition and culprits", marks: 2 },
+        { part: "Diagnosis", marks: 1 },
+        { part: "Management", marks: 2 },
+      ],
+      keywords: ["pneumotox", "amiodarone", "methotrexate", "bleomycin", "checkpoint inhibitor"],
+    },
+  ],
+  references: [
+    "Johnson SR et al. 2023 ACR/CHEST Guideline for the Screening and Monitoring of Interstitial Lung Disease in People with Systemic Autoimmune Rheumatic Diseases. Arthritis Rheumatol 2024",
+    "Johnson SR et al. 2023 ACR/CHEST Guideline for the Treatment of Interstitial Lung Disease in People with Systemic Autoimmune Rheumatic Diseases. Arthritis Rheumatol 2024",
+    "Del Galdo F et al. EULAR Recommendations for the Treatment of Systemic Sclerosis: 2023 Update. Ann Rheum Dis 2025",
+    "Schneider BJ et al. Management of Immune-Related Adverse Events in Patients Treated With Immune Checkpoint Inhibitor Therapy: ASCO Guideline Update 2021",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Interstitial lung diseases and drug-induced lung disease",
+    "Pneumotox Online: The Drug-Induced Respiratory Disease Website (pneumotox.com), Camus P, accessed 2024",
+    "Distler O et al. Nintedanib for Systemic Sclerosis-Associated Interstitial Lung Disease (SENSCIS). N Engl J Med 2019",
   ],
 });
 

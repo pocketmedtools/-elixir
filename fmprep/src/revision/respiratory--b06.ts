@@ -609,6 +609,208 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-ctd-drug-ild": {
+    checked: "2026-10",
+    updated: [
+      "ACR/CHEST 2023: screen at-risk SARD patients with HRCT and PFT; not CXR or 6MWD",
+      "ACR/CHEST 2023: mycophenolate first line; against first-line steroids in SSc-ILD",
+      "EULAR 2023 SSc update: MMF, cyclophosphamide, rituximab, tocilizumab, nintedanib for SSc-ILD",
+      "RECITAL 2023: rituximab not superior to cyclophosphamide but fewer adverse events",
+      "ASCO 2021 irAE guideline: grade-based checkpoint pneumonitis management",
+    ],
+    master: {
+      heading: "CTD-ILD and drug-induced lung disease on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "ILD in systemic autoimmune rheumatic disease; DI-ILD from drugs (over 1,000 on pneumotox)"],
+        ["Burden", "SSc 50-65% on HRCT; RA 5-10% clinical; myositis 20-80%; India CTD-ILD 14% of ILD"],
+        ["Patterns", "SSc NSIP; RA UIP; myositis NSIP-OP; anti-MDA5 RP-ILD; Sjogren LIP"],
+        ["Risk", "Anti-Scl-70, diffuse SSc; RA older male smoker with high anti-CCP"],
+        ["Screening", "HRCT + PFT with DLCO; PFT every 3-6 months in first year (SSc, myositis)"],
+        ["SSc-ILD treatment", "MMF first line; tocilizumab, rituximab, cyclophosphamide; nintedanib if progressive"],
+        ["SSc caution", "Avoid prednisolone over 15 mg/day - renal crisis"],
+        ["Anti-MDA5 RP-ILD", "Steroid pulse + tacrolimus + cyclophosphamide; ferritin predicts death"],
+        ["Amiodarone", "Over 400 mg/day; high-attenuation CT; DLCO fall; stop + steroids for months"],
+        ["Methotrexate", "First year; hypersensitivity; exclude PJP; stop, steroids, no rechallenge"],
+        ["Nitrofurantoin and bleomycin", "Acute/chronic forms; bleomycin over 400 units, renal failure, oxygen"],
+        ["Checkpoint inhibitors", "Grade 1 watch; 2 hold + prednisolone 1-2 mg/kg; 3-4 stop + IV steroids"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected drug-induced ILD",
+        steps: [
+          { label: "New ILD shadows on a potentially toxic drug", tone: "neutral" },
+          { label: "Check timing, dose and pneumotox.com", detail: "Amiodarone, MTX, nitrofurantoin, bleomycin, ICI", tone: "decision" },
+          { label: "Exclude infection, heart failure, cancer", detail: "BAL: PJP PCR, cultures, CBNAAT; NT-proBNP", tone: "warn" },
+          { label: "Grade severity (CTCAE)", detail: "Grade 1-4 by symptoms and oxygen need" },
+          { label: "Stop drug; steroids by grade", detail: "Prednisolone 1-2 mg/kg for grade 2 or more" },
+          { label: "Follow CT and DLCO; avoid rechallenge", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment ladder for SSc-ILD",
+        steps: [
+          { label: "Screen: HRCT + PFT at diagnosis", tone: "neutral" },
+          { label: "Mycophenolate first line", detail: "Up to 1-1.5 g BD", tone: "good" },
+          { label: "Add or switch: tocilizumab or rituximab", detail: "Tocilizumab 162 mg SC weekly; rituximab 1 g x 2" },
+          { label: "Add nintedanib if progressive", detail: "150 mg BD; PPF criteria" },
+          { label: "Cyclophosphamide for severe or refractory", detail: "500-750 mg/m2 IV monthly", tone: "decision" },
+          { label: "Transplant referral", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "SSc-ILD vs RA-ILD vs anti-MDA5 ILD",
+        columns: ["Feature", "SSc-ILD", "RA-ILD", "Anti-MDA5 ILD"],
+        rows: [
+          ["Pattern", "Fibrotic NSIP", "UIP", "RP-ILD, DAD"],
+          ["Antibody", "Anti-Scl-70", "RF, anti-CCP", "Anti-MDA5"],
+          ["Tempo", "Years", "Years", "Weeks"],
+          ["First treatment", "MMF", "MMF/rituximab; nintedanib if UIP progresses", "Steroid pulse + tacrolimus + cyclophosphamide"],
+          ["Caution", "Steroids over 15 mg: renal crisis", "Behaves like IPF", "High early mortality"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**CTD-ILD** is ILD in systemic sclerosis, RA, myositis, Sjogren, SLE or MCTD.",
+            "ILD is the **leading cause of death in systemic sclerosis**.",
+            "In India **CTD-ILD is about 14%** of all ILD.",
+            "Over **1,000 drugs** can injure the lung; check pneumotox.com.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "SSc: **diffuse skin disease and anti-Scl-70**; anti-centromere protects.",
+            "RA: **older male smoker** with high-titre RF and anti-CCP.",
+            "Myositis: **anti-Jo-1** (anti-synthetase) and **anti-MDA5** (rapidly progressive).",
+            "Drug risk: high dose, old age, **renal failure**, oxygen, radiation.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**RA gives UIP**; most other CTDs give **NSIP**.",
+            "SSc-ILD is **extensive** when HRCT extent is over 20%.",
+            "Checkpoint pneumonitis is graded **1-4 by CTCAE**.",
+            "Nitrofurantoin causes **acute and chronic** lung reactions.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Dry cough and breathlessness, often hidden by **joint or muscle disease**.",
+            "Look for **mechanic's hands**, Gottron papules, sclerodactyly and synovitis.",
+            "**Anti-MDA5**: palmar papules, skin ulcers, high ferritin, little weakness.",
+            "Methotrexate pneumonitis: fever, dry cough, usually in the **first year**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Screen with **HRCT and PFT with DLCO**, not chest X-ray.",
+            "Send ANA, Scl-70, RF, anti-CCP, Ro and **extended myositis panel**.",
+            "**BAL** excludes PJP and TB before calling it drug toxicity.",
+            "Amiodarone: **high-attenuation CT** and DLCO fall of 15-20% or more.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Mycophenolate 1-1.5 g BD** is first line for CTD-ILD.",
+            "**Avoid prednisolone over 15 mg/day in SSc**: renal crisis risk.",
+            "For drug ILD, **stop the drug first** and exclude infection.",
+            "Checkpoint grade 2: **hold drug, prednisolone 1-2 mg/kg**, taper over 4-6 weeks.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Tocilizumab, rituximab or cyclophosphamide** when MMF fails.",
+            "**Nintedanib 150 mg BD** for progressive fibrotic CTD-ILD.",
+            "Anti-MDA5: **steroid pulse plus tacrolimus plus cyclophosphamide** early.",
+            "Checkpoint grade 3-4: **stop permanently**, IV methylprednisolone, infliximab if no response.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: MMF, methotrexate, cyclophosphamide and nintedanib are teratogenic.",
+            "Screen **latent TB and hepatitis B** before biologics in India.",
+            "Avoid long-term **nitrofurantoin** in the elderly (Beers criteria).",
+            "After bleomycin, keep **oxygen low** during anaesthesia.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "SSc and myositis: **PFT every 3-6 months** in the first year.",
+            "RA and Sjogren: PFT every 3-12 months in the first year.",
+            "Amiodarone: **TFT and LFT every 6 months**, baseline PFT and CXR.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ACR/CHEST 2023** set screening, monitoring and treatment for CTD-ILD.",
+            "**RECITAL 2023**: rituximab equal to cyclophosphamide with fewer side effects.",
+            "**EULAR 2023**: five drug options for SSc-ILD including tocilizumab and nintedanib.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for CTD-ILD",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Mycophenolate mofetil", "1-1.5 g oral BD", "At least 2 years", "Diarrhoea, cytopenia; teratogenic"],
+            ["Tocilizumab", "162 mg SC weekly", "Long term", "Infection, neutropenia; masks CRP"],
+            ["Rituximab", "1 g IV day 1 and 15, every 6 months", "Long term", "Infusion reaction, HBV reactivation"],
+            ["Cyclophosphamide", "500-750 mg/m2 IV monthly", "6 doses then MMF", "Cytopenia, cystitis, infertility"],
+            ["Nintedanib", "150 mg oral BD", "Long term", "Diarrhoea, raised ALT"],
+          ],
+        },
+        {
+          heading: "CTD and lung pattern",
+          columns: ["Disease", "Antibody", "Pattern"],
+          rows: [
+            ["Systemic sclerosis", "Anti-Scl-70", "Fibrotic NSIP"],
+            ["Rheumatoid arthritis", "RF, anti-CCP", "UIP"],
+            ["Anti-synthetase", "Anti-Jo-1", "NSIP with OP"],
+            ["Dermatomyositis", "Anti-MDA5", "Rapidly progressive ILD"],
+            ["Sjogren", "Anti-Ro, anti-La", "LIP, NSIP, cysts"],
+          ],
+        },
+        {
+          heading: "Drug-induced lung disease",
+          columns: ["Drug", "Clue", "Action"],
+          rows: [
+            ["Amiodarone", "Over 400 mg/day, high-attenuation CT", "Stop; prednisolone for months"],
+            ["Methotrexate", "First year, fever; exclude PJP", "Stop; steroids; no rechallenge"],
+            ["Nitrofurantoin", "Long-term prophylaxis, eosinophilia", "Stop; steroids if chronic"],
+            ["Bleomycin", "Over 400 units, renal failure", "Stop; low FiO2 for life"],
+            ["Checkpoint inhibitor", "2-3 months after start", "Grade-based steroids"],
+          ],
+        },
+      ],
+      remember: [
+        "**RA = UIP; others = NSIP.**",
+        "**MMF first; no high-dose steroids in SSc.**",
+        "**Anti-MDA5 = ulcers, ferritin, RP-ILD.**",
+        "**Screen with HRCT and PFT, not chest X-ray.**",
+        "**Amiodarone lung worsens after stopping** - long half-life.",
+        "**MTX pneumonitis: always exclude PJP.**",
+        "**Bleomycin: low oxygen for life.**",
+      ],
+    },
+  },
 };
 
 export default revision;

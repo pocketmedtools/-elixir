@@ -605,6 +605,195 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-mediastinal-masses": {
+    checked: "2026-10",
+    updated: [
+      "ITMIG 2014 CT compartments (prevascular, visceral, paravertebral) used as the reporting standard",
+      "WHO 2021 (5th edition) thymic epithelial tumour classification: thymoma A, AB, B1, B2, B3 and thymic carcinoma",
+      "NCCN Thymomas and Thymic Carcinomas 2026: no biopsy of resectable thymoma; CAP for advanced disease",
+      "MGFA 2020 update: thymectomy for AChR-positive generalised MG; complement and FcRn inhibitors approved 2021-2024",
+      "CIRSE 2022 and current practice: endovascular stenting increasingly first-line for severe malignant SVCO",
+    ],
+    master: {
+      heading: "Master revision table - Mediastinal masses and SVCO",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Compartments (ITMIG 2014)", "**Prevascular, visceral, paravertebral**; visceral-paravertebral line 1 cm behind the front of the vertebral bodies."],
+        ["Prevascular", "**4 Ts**: thymoma, teratoma/germ-cell, terrible lymphoma, thyroid; plus thymic cyst, parathyroid, lipoma."],
+        ["Visceral", "**Lymph nodes (TB in India, sarcoid, lymphoma, metastases)**, bronchogenic/oesophageal cysts, pericardial cyst, aneurysm, hiatus hernia."],
+        ["Paravertebral", "**Neurogenic tumours** (commonest), **Pott's abscess**, extramedullary haematopoiesis (thalassaemia), meningocele."],
+        ["Clinical", "Half asymptomatic; cough, stridor, **orthopnoea**, dysphagia, hoarseness, SVCO, B symptoms, **myasthenia**, testicular mass."],
+        ["Signs", "Non-pulsatile neck veins, chest collaterals, **Pemberton sign**, nodes, testes, fatigable ptosis, Horner."],
+        ["Imaging", "CXR **hilum overlay** and cervicothoracic signs; **contrast CT** (key); MRI (cyst, thymic hyperplasia, spinal extension); PET-CT."],
+        ["Labs", "**AFP, beta-hCG, LDH** in young men; AChR antibodies; TSH; CBC; immunoglobulins."],
+        ["Tissue", "**No biopsy of resectable thymoma**; core/excision for lymphoma; EBUS-TBNA with NAAT; mediastinoscopy, Chamberlain, VATS."],
+        ["Anaesthesia risk", "Orthopnoea, stridor, **tracheal narrowing over 50%**: local anaesthesia, spontaneous breathing, ECMO standby."],
+        ["Thymoma", "WHO A-B3; **Masaoka-Koga I-IVb**; MG in 30-50%; **resection**, PORT for stage III/incomplete, **CAP** if advanced; CT follow-up 10 years."],
+        ["Germ-cell and lymphoma", "Seminoma: BEP or EP, cure about 90%; NSGCT: **BEP x4 then resect residual**; Hodgkin: ABVD PET-adapted; PMBCL: DA-EPOCH-R."],
+        ["SVCO", "Lung cancer and NHL most; catheters rising; **Yu grade 0-5**; head up, **biopsy before steroids**, **stent for grade 4**, chemo/RT for cause, anticoagulate catheter thrombosis."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Anterior mediastinal mass - work-up",
+        caption: "Keep the airway safe while getting the diagnosis.",
+        steps: [
+          { label: "Check airway: orthopnoea, stridor, SpO2 lying", detail: "If present - no GA; local anaesthesia only", tone: "warn" },
+          { label: "Contrast CT chest", detail: "Compartment, fat, calcium, cyst, invasion, vessels" },
+          { label: "AFP, beta-hCG, LDH, AChR antibodies, TSH", detail: "High AFP = non-seminomatous GCT", tone: "decision" },
+          { label: "Looks like resectable thymoma?", detail: "Yes - resect without needle biopsy", tone: "decision" },
+          { label: "Otherwise get tissue", detail: "Peripheral node first; CT-guided core, mediastinoscopy, Chamberlain, VATS" },
+          { label: "Treat by histology", detail: "Thymectomy, BEP, ABVD or DA-EPOCH-R, thyroidectomy", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "SVC obstruction - escalation",
+        steps: [
+          { label: "Head elevation, oxygen", detail: "Avoid arm IV lines and over-hydration" },
+          { label: "Contrast CT and tissue diagnosis", detail: "Biopsy before steroids if stable (grade 0-2)" },
+          { label: "Treat the cause", detail: "Chemo for SCLC, lymphoma, GCT; radiotherapy for NSCLC" },
+          { label: "Steroids for responsive tumours", detail: "Dexamethasone 4 mg 6-hourly after biopsy (lymphoma, thymoma)", tone: "decision" },
+          { label: "Endovascular stent", detail: "Grade 3-4 or recurrent; relief in 24-72 h in 90-95%", tone: "warn" },
+          { label: "Catheter thrombosis", detail: "LMWH then oral anticoagulant 3 months; remove line; thrombolysis if severe", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Mediastinal mass by compartment",
+        root: "Mediastinal mass on contrast CT",
+        arms: [
+          { label: "Prevascular", steps: ["Thymoma", "Lymphoma", "Germ-cell tumour", "Retrosternal goitre"] },
+          { label: "Visceral", steps: ["TB nodes", "Sarcoid, metastatic nodes", "Bronchogenic cyst", "Aneurysm, hiatus hernia"] },
+          { label: "Paravertebral", tone: "warn", steps: ["Neurogenic tumour", "Pott's abscess", "Extramedullary haematopoiesis"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**ITMIG 2014** splits the mediastinum into **prevascular, visceral and paravertebral** compartments on CT.",
+            "About half of adult mediastinal masses are **prevascular (anterior)**.",
+            "**Thymoma** is the commonest primary anterior tumour in adults.",
+            "In children, **neurogenic tumours** are commonest.",
+            "In India, **TB nodes** lead the middle compartment.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Anterior **4 Ts**: thymoma, teratoma, terrible lymphoma, thyroid.",
+            "Middle: **lymph nodes**, duplication cysts, aneurysm, hiatus hernia.",
+            "Posterior: **neurogenic tumour**, Pott's abscess, extramedullary haematopoiesis.",
+            "**SVCO**: lung cancer and lymphoma most; catheter thrombosis increasingly.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Half are **asymptomatic**; symptoms suggest malignancy.",
+            "**Orthopnoea or stridor** means airway compression.",
+            "SVCO: facial swelling, **non-pulsatile neck veins**, chest wall collaterals.",
+            "**Pemberton sign**: raised arms cause facial plethora or stridor.",
+            "Thymoma: **myasthenia** in 30-50%, pure red cell aplasia, Good syndrome.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "CXR: **hilum overlay sign** shows the mass is not hilar.",
+            "**Contrast CT** defines compartment, contents and invasion.",
+            "Young man: **AFP, beta-hCG and LDH**; raised AFP excludes pure seminoma.",
+            "**Do not biopsy a resectable thymoma**; resect it.",
+            "Lymphoma needs **core or excision biopsy**, not FNA alone.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Thymoma: **complete thymectomy**; radiotherapy for stage III or incomplete resection.",
+            "Stabilise **myasthenia** before surgery to prevent crisis.",
+            "Germ-cell tumours: **BEP chemotherapy**; resect any residual NSGCT.",
+            "Hodgkin lymphoma: **ABVD**, PET-adapted.",
+            "Retrosternal goitre: **thyroidectomy** through the neck.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "SVCO: **head up, oxygen**, and biopsy before steroids if stable.",
+            "**Stridor or confusion**: emergency SVC stent.",
+            "Anterior mass with orthopnoea: **no general anaesthesia** without an airway plan.",
+            "Catheter thrombosis: **LMWH** then oral anticoagulant for 3 months.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**WHO thymoma** types A, AB, B1, B2, B3, plus thymic carcinoma.",
+            "**Masaoka-Koga**: I encapsulated, II capsular invasion, III organs, IV spread.",
+            "**Yu SVCO grade** 0-5; grade 4 is stridor, confusion or shock.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer **same day** for stridor, orthopnoea, syncope or confusion.",
+            "After thymoma: **CT every 6 months for 2 years**, then yearly to 10 years.",
+            "After germ-cell tumour: markers and CT; watch **bleomycin lung**.",
+            "Avoid drugs that worsen **myasthenia**: aminoglycosides, fluoroquinolones, magnesium.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in mediastinal masses and SVCO",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Dexamethasone", "4 mg every 6 hours IV or oral", "Short course, taper", "Spoils lymphoma biopsy; hyperglycaemia"],
+            ["Enoxaparin", "1 mg/kg SC twice daily", "Bridge; at least 3 months anticoagulation", "Bleeding, HIT"],
+            ["Pyridostigmine", "30-60 mg orally every 4-6 hours", "Long-term, titrate", "Diarrhoea, cramps, salivation"],
+            ["IVIG", "2 g/kg IV over 2-5 days", "Single course", "Headache, renal injury, thrombosis"],
+            ["BEP", "Bleomycin, etoposide, cisplatin every 21 days", "3-4 cycles", "Bleomycin lung, nephrotoxicity"],
+            ["CAP", "Cisplatin, doxorubicin, cyclophosphamide every 3 weeks", "4-6 cycles", "Cardiotoxicity, myelosuppression"],
+          ],
+        },
+        {
+          heading: "Compartments and lesions",
+          columns: ["Compartment", "Common lesions", "Clue"],
+          rows: [
+            ["Prevascular", "Thymoma, lymphoma, germ-cell tumour, goitre", "4 Ts; hilum overlay sign"],
+            ["Visceral", "TB and other nodes, cysts, aneurysm", "Necrotic nodes = TB"],
+            ["Paravertebral", "Neurogenic tumour, Pott's abscess, haematopoiesis", "Foramen widening, vertebral destruction"],
+          ],
+        },
+        {
+          heading: "Anterior mass - telling them apart",
+          columns: ["Lesion", "Patient", "Clue"],
+          rows: [
+            ["Thymoma", "40-60 years", "Myasthenia, AChR antibodies"],
+            ["Lymphoma", "Young adult", "B symptoms, high LDH, nodes elsewhere"],
+            ["Seminoma", "Young man", "AFP normal"],
+            ["NSGCT", "Young man", "AFP and/or beta-hCG high"],
+            ["Teratoma", "Young adult", "Fat, fluid, calcium, teeth"],
+            ["Goitre", "Older woman", "Continuous with neck thyroid"],
+          ],
+        },
+      ],
+      remember: [
+        "4 Ts: thymoma, teratoma, terrible lymphoma, thyroid.",
+        "Posterior mass: neurogenic tumour - and in India, Pott's abscess.",
+        "Raised AFP rules out pure seminoma.",
+        "Resectable thymoma: resect, do not needle.",
+        "Biopsy before steroids in SVCO, unless stridor.",
+        "Stridor in SVCO: stent first, histology later.",
+        "Anterior mass plus orthopnoea: no GA without an airway plan.",
+      ],
+    },
+  },
 };
 
 export default revision;

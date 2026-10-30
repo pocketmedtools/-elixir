@@ -616,6 +616,200 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "respiratory-end-stage-lung-palliation": {
+    checked: "2026-10",
+    updated: [
+      "ISHLT 2021 consensus: refer IPF at diagnosis; COPD referral at BODE 5-6 and listing at BODE 7 or more; more contraindications treated as relative risk factors",
+      "GOLD 2025: fan, rehabilitation, opioids considered for severe breathlessness, and advance care planning in advanced COPD",
+      "BEAMS trial (JAMA 2022): regular low-dose morphine did not beat placebo in COPD breathlessness - opioids now an individualised trial with a stop rule",
+      "NOTTO 2023: upper age limit of 65 and domicile requirement removed for deceased-donor waiting lists",
+      "Supreme Court 2023: simplified advance medical directive procedure; MoHFW draft guidelines on withdrawal of life support 2024",
+    ],
+    master: {
+      heading: "Master revision table - End-stage lung disease: palliation and transplant",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "**Chronic breathlessness syndrome**: persists despite optimal treatment of the cause and causes disability; **palliative care is need-based**, alongside active treatment (WHO)"],
+        ["Burden", "Chronic respiratory disease about **11% of deaths in India (2016)**; only **1-4%** needing palliative care receive it; post-TB lung disease and biomass COPD"],
+        ["Diseases", "COPD, fibrotic ILD (IPF median 3-5 years), bronchiectasis, post-TB, CF, PAH/CTEPH, neuromuscular, obesity hypoventilation"],
+        ["Mechanism", "**Drive-ventilation mismatch**; dynamic hyperinflation; limbic perception - **total dyspnoea**; anxiety-deconditioning spiral; **fan cools trigeminal receptors**"],
+        ["Recognising the phase", "**Surprise question**, SPICT, GSF: FEV1 under 30%, **3 or more admissions/year**, LTOT, NIV, BMI under 21; **BODE 7-10 about 80% 4-year mortality**"],
+        ["Assessment", "mMRC, Borg/NRS; anxiety and depression (PHQ-9, GAD-7); carer, finances, spiritual; SpO2 rest and exertion; ABG if SpO2 92% or less"],
+        ["Non-drug care", "**Optimise disease**, **pulmonary rehabilitation**, **handheld fan**, pursed-lip and recovery breathing, forward-lean positioning, pacing, CBT (**Cambridge BTF**)"],
+        ["Drugs", "**Morphine MR 5 mg BD or IR 1-2.5 mg as needed**, titrate to about 30 mg/day, **laxative**, stop if no benefit (BEAMS negative); **benzodiazepines not first-line**; oxygen only if PaO2 55 mmHg or less"],
+        ["ACP", "Start early (after hypercapnic admission): ceiling of treatment, NIV as ceiling, CPR, place of death, surrogate; **living will - Common Cause 2018, simplified 2023**"],
+        ["End of life", "Stop non-essentials; **SC morphine 2.5 mg, midazolam 2.5 mg, glycopyrronium 200 microgram** or hyoscine butylbromide 20 mg; syringe driver; family support"],
+        ["Transplant referral (ISHLT 2021)", "COPD: **BODE 5-6**, FEV1 under 25%, PaCO2 over 50; list **BODE 7+**, FEV1 15-20%, 3 severe exacerbations; **IPF at diagnosis**, FVC under 80% or DLCO under 40%; CF FEV1 under 30%"],
+        ["Contraindications", "Recent cancer, **active smoking**, BMI 35 or more, active TB or sepsis, other-organ failure, no support; relative - age over 70, BMI 30-34.9"],
+        ["Outcomes", "1-year survival about 85%, median about 6-7 years; **CLAD** in half by 5 years"],
+        ["India", "**NPPC 2012** with NP-NCD and Ayushman Arogya Mandir; **NDPS 2014** essential narcotic drugs, RMIs; morphine in NLEM; Kerala model; THOTA and NOTTO"],
+      ],
+    },
+    flows: [
+      {
+        kind: "ladder",
+        heading: "Ladder of chronic breathlessness management",
+        caption: "Each step is added to, not replaces, the one below",
+        steps: [
+          { label: "Optimise the underlying disease", detail: "Inhalers and technique, antifibrotic, PH therapy, NIV for hypercapnia" },
+          { label: "Pulmonary rehabilitation", detail: "mMRC 2 or more; best evidence", tone: "good" },
+          { label: "Fan, breathing techniques, positioning, pacing", detail: "Cambridge Breathing Thinking Functioning" },
+          { label: "Treat anxiety and depression", detail: "CBT; sertraline 50 mg" },
+          { label: "Oxygen only if hypoxaemic", detail: "PaO2 55 mmHg or less, 15 h/day or more", tone: "decision" },
+          { label: "Trial of low-dose morphine", detail: "MR 5 mg BD, max about 30 mg/day, laxative, stop if no benefit", tone: "warn" },
+          { label: "Terminal phase", detail: "SC morphine and midazolam by syringe driver" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "From recognising decline to end-of-life care",
+        steps: [
+          { label: "Trigger", detail: "Surprise question no; hypercapnic admission; LTOT; BODE 7 or more", tone: "decision" },
+          { label: "Holistic needs assessment", detail: "Physical, psychological, social, spiritual; carer" },
+          { label: "Transplant eligible?", detail: "ISHLT 2021 criteria, no contraindication: refer", tone: "decision" },
+          { label: "Advance care planning", detail: "Ceiling of treatment, CPR, place of death, surrogate, living will" },
+          { label: "Shared care with palliative team", detail: "Community or home-based, NPPC" },
+          { label: "Last days of life", detail: "Anticipatory SC drugs, stop non-essentials", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "ISHLT 2021 - refer versus list",
+        columns: ["Disease", "Refer", "List"],
+        rows: [
+          ["COPD", "BODE 5-6; FEV1 under 25%; PaCO2 over 50 mmHg", "BODE 7 or more; FEV1 15-20%; 3 severe exacerbations a year"],
+          ["IPF / ILD", "At diagnosis; FVC under 80% or DLCO under 40%", "FVC fall 10% in 6 months; 6MWT under 250 m or SpO2 under 88%"],
+          ["Cystic fibrosis", "FEV1 under 30%", "Rapid decline, hypercapnia, PH"],
+          ["PAH", "Intermediate-high risk despite therapy", "High risk despite parenteral prostanoid"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Chronic breathlessness syndrome** persists despite optimal treatment and causes disability.",
+            "**Palliative care** is based on need, not prognosis, and runs alongside treatment.",
+            "Chronic respiratory disease causes about **11% of deaths in India**.",
+            "Only **1-4%** of Indians needing palliative care receive it.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Breathlessness is a **mismatch** between breathing drive and achieved ventilation.",
+            "**Dynamic hyperinflation** drives exertional breathlessness in COPD.",
+            "Anxiety amplifies perception - the idea of **total dyspnoea**.",
+            "A **fan** cools trigeminal receptors on the face and eases breathlessness.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Surprise question**: not surprised by death within 12 months.",
+            "GSF COPD markers: **FEV1 under 30%**, 3 or more admissions a year, LTOT.",
+            "**BODE 7-10** means about 80% mortality at 4 years.",
+            "**BMI under 21** predicts death in COPD.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Optimise the disease** and offer pulmonary rehabilitation.",
+            "Use a **handheld fan**, pursed-lip breathing and forward-lean positions.",
+            "**Oxygen only for hypoxaemia** (PaO2 55 mmHg or less).",
+            "Screen and treat **anxiety and depression**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Trial **morphine MR 5 mg twice daily**, maximum about 30 mg/day.",
+            "Always give a **laxative** with morphine.",
+            "Stop morphine if no benefit; **BEAMS 2022** found no gain over placebo.",
+            "**Benzodiazepines** are for panic or the terminal phase only.",
+            "In **CKD**, reduce morphine or switch to oxycodone.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Start **advance care planning** after a hypercapnic admission.",
+            "Agree a **ceiling of treatment**, CPR decision and place of death.",
+            "Last days: **SC morphine 2.5 mg** and **midazolam 2.5 mg** as needed.",
+            "Death rattle: reposition, then **glycopyrronium 200 microgram SC**.",
+            "Stop **NIV** when it no longer helps comfort.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**ISHLT 2021**: refer IPF at diagnosis, regardless of lung function.",
+            "Refer COPD at **BODE 5-6**; list at BODE 7 or more.",
+            "Absolute bars include **active smoking**, BMI 35 or more and active TB.",
+            "Transplant survival: about **85% at 1 year**, median 6-7 years.",
+            "Review every **1-3 months** with symptoms, mood and carer strain.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**NOTTO 2023** removed the age 65 cap and domicile rule for organ lists.",
+            "**Supreme Court 2023** simplified living wills (Common Cause 2018).",
+            "**NDPS 2014** made morphine easier to stock through RMIs.",
+            "**GOLD 2025** includes palliative care in advanced COPD.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for breathlessness and end-of-life care",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Morphine IR", "1-2.5 mg oral 4-hourly as needed", "Review at 1 week", "Constipation, drowsiness"],
+            ["Morphine MR", "5 mg oral twice daily", "Titrate to about 30 mg/day", "Always with laxative"],
+            ["Morphine SC", "2.5 mg SC as needed (naive)", "Last days; driver = oral dose divided by 2", "Accumulates in CKD"],
+            ["Lorazepam", "0.5-1 mg sublingual", "As needed for panic", "Sedation, falls"],
+            ["Midazolam", "2.5 mg SC as needed", "Terminal distress", "Sedation"],
+            ["Glycopyrronium", "200 microgram SC 4-hourly", "Last days", "Dry mouth"],
+            ["Hyoscine butylbromide", "20 mg SC 4-hourly", "Last days, max 120 mg/24 h", "Dry mouth, tachycardia"],
+            ["Oxygen (LTOT)", "1-4 L/min, SpO2 88-92% in COPD", "15 hours a day or more", "Fire risk with smoking"],
+          ],
+        },
+        {
+          heading: "ISHLT 2021 referral criteria",
+          columns: ["Disease", "Refer", "List"],
+          rows: [
+            ["COPD", "BODE 5-6, FEV1 under 25%", "BODE 7 or more, 3 severe exacerbations a year"],
+            ["IPF / ILD", "At diagnosis; FVC under 80% or DLCO under 40%", "FVC fall 10% in 6 months; 6MWT under 250 m"],
+            ["Cystic fibrosis", "FEV1 under 30%", "Rapid decline, hypercapnia"],
+            ["PAH", "Intermediate-high risk on therapy", "High risk on maximal therapy"],
+          ],
+        },
+        {
+          heading: "Breathlessness measures and evidence",
+          columns: ["Measure", "Works?", "Note"],
+          rows: [
+            ["Pulmonary rehabilitation", "Yes, strongest evidence", "COPD and ILD"],
+            ["Handheld fan", "Yes", "Cheap, safe"],
+            ["Oxygen", "Only if hypoxaemic", "Air equal if normoxaemic"],
+            ["Low-dose morphine", "Inconsistent in COPD", "Trial with stop rule"],
+            ["Benzodiazepines", "No consistent benefit", "Panic and terminal phase only"],
+          ],
+        },
+      ],
+      remember: [
+        "Chronic breathlessness syndrome: persists despite optimal treatment, causes disability.",
+        "Oxygen treats hypoxaemia, not breathlessness.",
+        "Fan to face - trigeminal relief.",
+        "Morphine 10 mg/day, max about 30, always a laxative.",
+        "ISHLT: IPF refer at diagnosis; COPD refer BODE 5-6, list 7 or more.",
+        "Common Cause 2018: living wills legal in India.",
+        "Death rattle: reposition, then glycopyrronium.",
+      ],
+    },
+  },
 };
 
 export default revision;
