@@ -1503,4 +1503,487 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "endocrine-steroid-induced-hyperglycaemia",
+  title: "Steroid-induced hyperglycaemia and diabetes in special settings",
+  frequency: "common",
+  oneLiner:
+    "**Steroid-induced hyperglycaemia** is a rise in glucose caused by glucocorticoids through **hepatic gluconeogenesis, peripheral insulin resistance and beta-cell suppression**; with **once-daily morning prednisolone** it produces **normal fasting but high afternoon-evening glucose**, so it is detected by **pre-lunch or pre-dinner testing** and treated with **morning NPH insulin matched to the steroid dose** (about 0.1 U/kg per 10 mg prednisolone) or gliclazide, tapered with the steroid; the same drug-driven logic applies to **post-transplant diabetes, HIV-associated and antipsychotic-induced diabetes**.",
+  keywords: [
+    "glucocorticoid-induced hyperglycaemia",
+    "steroid-induced diabetes",
+    "prednisolone",
+    "dexamethasone",
+    "methylprednisolone pulse",
+    "NPH insulin",
+    "afternoon hyperglycaemia",
+    "post-transplant diabetes mellitus",
+    "PTDM",
+    "NODAT",
+    "tacrolimus",
+    "calcineurin inhibitor",
+    "HIV diabetes",
+    "dolutegravir",
+    "protease inhibitor",
+    "antipsychotic-induced diabetes",
+    "olanzapine",
+    "clozapine",
+    "drug-induced diabetes",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**Glucocorticoid-induced hyperglycaemia** is new or worsened hyperglycaemia during glucocorticoid therapy; **steroid-induced diabetes** is hyperglycaemia meeting diagnostic thresholds, which may resolve or persist after stopping. [JBDS 2023]",
+        "A meta-analysis of non-diabetic patients on systemic steroids found **hyperglycaemia in about 32%** and **diabetes in about 19%**. [Liu, Endocr Pract 2014]",
+        "In hospital, more than half of patients without known diabetes on high-dose steroids develop at least one glucose above 200 mg/dL. [ADA 2026]",
+        "India uses steroids widely - asthma/COPD exacerbations, autoimmune disease, TB meningitis and pericarditis, oncology, transplant, and over-the-counter misuse in 'quack' prescriptions. [ICMR STW 2023]",
+        "The **COVID-19 second wave (2021)** showed the danger: dexamethasone-driven hyperglycaemia contributed to the epidemic of **COVID-associated mucormycosis** in India (see the infections in diabetes topic). [ICMR advisory 2021]",
+        "**Post-transplant diabetes (PTDM)** affects about **10-40% of kidney transplant recipients**, mostly in the first year. [International PTDM consensus 2014/2024]",
+        "**Antipsychotics** (clozapine, olanzapine) roughly double diabetes risk; people with severe mental illness have 2-3 times the diabetes prevalence of the general population. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Causes and risk factors",
+      points: [
+        "**Dose and potency**: risk rises with prednisolone-equivalent dose (above about **20 mg/day**), pulses (methylprednisolone 500-1000 mg) and long-acting agents (dexamethasone). [JBDS 2023]",
+        "**Patient factors**: pre-existing diabetes or prediabetes, **HbA1c 6% or more**, older age, obesity, family history, past GDM, South Asian ethnicity. [JBDS 2023]",
+        "**Route**: systemic oral/IV highest; **intra-articular and epidural** injections cause transient hyperglycaemia for 2-3 days; high-dose inhaled steroids have a small effect; topical rarely. [ADA 2026]",
+        "**Transplant drugs**: **tacrolimus** (more than cyclosporine), glucocorticoids, sirolimus/everolimus; plus hepatitis C, CMV, obesity and older age. [International PTDM consensus 2024]",
+        "**HIV**: older **protease inhibitors** (insulin resistance), **thymidine NRTIs** (stavudine, zidovudine - lipodystrophy), **integrase inhibitors** (dolutegravir - weight gain and rare early hyperglycaemia), plus hepatitis C coinfection. [ADA 2026 / NACO 2021]",
+        "**Antipsychotics**: highest risk **clozapine and olanzapine**, intermediate **quetiapine, risperidone, paliperidone**, lowest **aripiprazole, ziprasidone, lurasidone**. [ADA/APA consensus 2004 / ADA 2026]",
+        "**Other drugs**: thiazides, beta-blockers, statins (small), **immune checkpoint inhibitors** (insulin-deficient diabetes), alpelisib, L-asparaginase, pentamidine, somatostatin analogues, fluoroquinolones (dysglycaemia). [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Pathophysiology",
+      points: [
+        "Glucocorticoids induce **PEPCK and glucose-6-phosphatase** in the liver, increasing **gluconeogenesis**, and supply substrate by **muscle proteolysis and lipolysis**. [Harrison 22e]",
+        "They cause **peripheral insulin resistance** - reduced IRS-1/PI3K signalling and **GLUT4 translocation** in muscle - the dominant post-meal effect. [Williams Endocrinology 15e]",
+        "They **suppress beta-cell insulin secretion** and increase glucagon - so people with limited beta-cell reserve decompensate. [Williams Endocrinology 15e]",
+        "**Prednisolone pattern**: a single morning dose peaks in effect at **4-8 hours**, so glucose rises from **late morning, peaks in the afternoon-evening** and returns towards normal overnight - **fasting glucose may be normal**. [JBDS 2023]",
+        "**Dexamethasone** (half-life 36-54 hours) and **twice-daily or split doses** cause hyperglycaemia across 24 hours, including fasting. [JBDS 2023]",
+        "**Calcineurin inhibitors** (tacrolimus) inhibit the **calcineurin-NFAT pathway** in beta cells, reducing insulin gene transcription and beta-cell mass - partly reversible on dose reduction. [International PTDM consensus 2024]",
+        "**Antipsychotics** cause weight gain through **H1 and 5-HT2C** antagonism and also have direct effects on insulin sensitivity and beta cells - DKA can occur even without weight gain. [ADA 2026]",
+        "**Checkpoint inhibitor (anti-PD-1/PD-L1) diabetes** is autoimmune beta-cell destruction - abrupt, often with DKA, low C-peptide and permanent insulin need. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Classification that matters",
+      points: [
+        "**Pre-existing diabetes worsened by steroids** vs **new steroid-induced hyperglycaemia** vs **unmasked pre-existing undiagnosed diabetes** (HbA1c 6.5% or more before or at start). [JBDS 2023]",
+        "**By steroid pattern**: once-daily morning (prednisolone, methylprednisolone) - afternoon peak; twice-daily or long-acting (dexamethasone) - all-day hyperglycaemia; pulses - 24-48-hour spike. [JBDS 2023]",
+        "**Glucocorticoid potency equivalence** (anti-inflammatory): hydrocortisone 20 mg = **prednisolone 5 mg** = methylprednisolone 4 mg = **dexamethasone 0.75 mg**. [BNF 2025]",
+        "**PTDM** (replaces the old term NODAT) is diagnosed once the patient is stable on maintenance immunosuppression without acute infection; hyperglycaemia in the early weeks is **transient post-transplant hyperglycaemia**. [International PTDM consensus 2014/2024]",
+        "**Antipsychotic metabolic risk tiers**: high (clozapine, olanzapine), moderate (quetiapine, risperidone), low (aripiprazole, lurasidone, ziprasidone). [ADA/APA consensus 2004]",
+        "**ADA classification**: all of these fall under **'specific types of diabetes - drug- or chemical-induced'**. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Clinical features - history",
+      points: [
+        "Often **asymptomatic** - detected by monitoring; symptomatic patients have polyuria, thirst and fatigue in the afternoon and evening. [JBDS 2023]",
+        "Ask **steroid name, dose, timing, route and planned duration and taper**, and whether pulses or injections were given. [JBDS 2023]",
+        "Ask about **diabetes or prediabetes, family history and past GDM** - predicts who will need treatment. [JBDS 2023]",
+        "Ask about **over-the-counter or traditional medicines** - unlabelled steroids in some ayurvedic or 'joint pain' preparations cause Cushingoid features and hyperglycaemia. [ICMR STW 2023]",
+        "In **transplant recipients**: date of transplant, immunosuppressive regimen, tacrolimus levels, rejection episodes, CMV and hepatitis C status. [International PTDM consensus 2024]",
+        "In **HIV**: ART regimen and changes, duration, weight gain after switching to dolutegravir-based regimen, hepatitis B/C coinfection. [NACO 2021]",
+        "In **severe mental illness**: antipsychotic, duration, weight gain, smoking, diet and whether the patient can self-manage medicines. [ADA 2026]",
+        "**Hyperglycaemic crisis**: HHS can follow high-dose steroids in the elderly, and DKA can occur with clozapine, olanzapine or checkpoint inhibitors. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Cushingoid features** with long-term steroids: moon face, dorsocervical fat pad, purple striae, thin skin, proximal myopathy - these also raise insulin resistance. [Harrison 22e]",
+        "**Weight, BMI, waist and BP** - steroids and antipsychotics raise both, and weight-based insulin dosing needs actual weight. [ADA 2026]",
+        "**Hydration and conscious level** in elderly patients on high-dose steroids - HHS presents with confusion and dehydration. [ADA/JBDS 2024 consensus]",
+        "**HIV lipodystrophy**: facial and limb lipoatrophy, central fat gain, buffalo hump - markers of insulin resistance. [Harrison 22e]",
+        "**Acanthosis nigricans** suggests underlying insulin resistance that steroids or antipsychotics unmask. [Harrison 22e]",
+        "**Infections**: oral candidiasis, skin infections, and in India **rhino-orbital-cerebral mucormycosis** (facial pain, black eschar, proptosis) in steroid-treated diabetics. [ICMR advisory 2021]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Unmasked type 2 diabetes** - HbA1c 6.5% or more before or soon after starting steroids; hyperglycaemia persists after the steroid is stopped. [ADA 2026]",
+        "**Stress hyperglycaemia** from the illness being treated (pneumonia, sepsis) - fasting and daytime values both raised; settles with recovery. [ADA 2026]",
+        "**Endogenous Cushing syndrome** - hyperglycaemia with Cushingoid features without exogenous steroid exposure (see the Cushing and adrenal topic). [Endocrine Society 2008]",
+        "**Checkpoint-inhibitor diabetes** - abrupt onset, DKA, low C-peptide, often antibody negative, permanent - unlike steroid hyperglycaemia given for checkpoint toxicity. [ADA 2026]",
+        "**Antipsychotic-associated DKA** - can occur within weeks of starting clozapine/olanzapine, even in non-obese patients. [ADA 2026]",
+        "**Pancreatic diabetes** - pancreatitis (L-asparaginase, alcohol), pancreatectomy, fibrocalculous disease. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**Before starting steroids** (expected over a few days): HbA1c and fasting glucose to identify unknown diabetes or prediabetes. [JBDS 2023]",
+        "**Monitoring on morning prednisolone**: capillary glucose **once daily before lunch or before the evening meal** (or 2 hours after lunch) - fasting tests alone miss it. [JBDS 2023]",
+        "**Treatment threshold (JBDS)**: capillary glucose **above 12 mmol/L (about 216 mg/dL) on two occasions** in 24 hours; ADA uses persistent values 180 mg/dL or more in hospital. [JBDS 2023 / ADA 2026]",
+        "**Target**: **6-10 mmol/L (108-180 mg/dL)**, acceptable 4-12 mmol/L; looser in end-of-life care. [JBDS 2023]",
+        "If glucose is above **20 mmol/L (360 mg/dL)**, check **ketones** (DKA) and osmolality (HHS). [JBDS 2023]",
+        "**PTDM diagnosis**: **OGTT is the gold standard**; HbA1c is unreliable in the first year (anaemia, transfusion, erythropoietin) - a normal HbA1c does not exclude PTDM. [International PTDM consensus 2024]",
+        "**HIV**: screen with **fasting glucose before starting ART, when switching ART and 3-6 months after**, then yearly if normal; HbA1c may underestimate glycaemia in HIV. [ADA 2026]",
+        "**Antipsychotics**: baseline weight, waist, BP, fasting glucose or HbA1c, lipids; weight at **4, 8 and 12 weeks**; glucose and lipids at **12 weeks**, then yearly. [ADA/APA consensus 2004]",
+      ],
+    },
+    {
+      heading: "Management in OPD - steroid-induced hyperglycaemia",
+      points: [
+        "**Mild hyperglycaemia on once-daily prednisolone**: **gliclazide 40 mg in the morning**, increased by 40 mg every day or two to **240 mg/day** (up to 320 mg in two doses) - its daytime action fits the steroid curve. [JBDS 2023]",
+        "**Insulin of choice for morning prednisolone: NPH (isophane) once in the morning with the steroid** - its 4-8-hour peak matches the steroid effect. [JBDS 2023 / ADA 2026]",
+        "**Weight-based NPH dose**: about **0.1 U/kg per 10 mg prednisolone** (0.1 at 10 mg, 0.2 at 20 mg, 0.3 at 30 mg), maximum **0.4 U/kg at 40 mg or more**. [ADA 2026]",
+        "**JBDS alternative**: start NPH **10 units** (or 0.1 U/kg) in the morning in the insulin-naive and increase by **10-20% daily** until pre-evening glucose is in target. [JBDS 2023]",
+        "**Already on insulin**: increase the dose covering the afternoon (morning NPH or premix morning dose, or lunch/dinner bolus) by **10-20% daily**; basal-bolus users need larger prandial doses at lunch and dinner. [JBDS 2023]",
+        "**Dexamethasone or twice-daily steroids**: use **basal insulin (glargine) or twice-daily NPH**, as fasting glucose is also high. [JBDS 2023]",
+        "**Metformin, DPP-4 inhibitors and GLP-1 RAs** have modest effect on steroid hyperglycaemia; **SGLT2 inhibitors** raise DKA risk in the acutely ill - insulin or sulfonylurea is preferred in short courses. [JBDS 2023]",
+        "**Taper the glucose-lowering drug with the steroid**: reduce insulin or gliclazide in proportion to each steroid reduction, and stop when glucose normalises - **hypoglycaemia risk is highest during taper**. [JBDS 2023]",
+        "Avoid **evening insulin or long-acting sulfonylureas (glibenclamide)** for a morning steroid - they act overnight when steroid effect has worn off. [JBDS 2023]",
+      ],
+    },
+    {
+      heading: "Management in IPD - high-dose and pulse steroids",
+      points: [
+        "Inpatients on steroids: monitor glucose **before meals and at bedtime**; start insulin when persistently **180 mg/dL or more**. [ADA 2026]",
+        "**Hospital NPH regimen** for morning prednisolone: NPH 0.1 U/kg per 10 mg prednisolone in the morning, plus correction insulin; ADA notes that **prandial insulin needs often exceed basal needs** with steroids. [ADA 2026]",
+        "**Methylprednisolone pulses** (500-1000 mg IV): expect a 24-48-hour rise; use correction plus NPH on pulse days, or **IV insulin** if glucose is persistently above 300 mg/dL. [JBDS 2023]",
+        "**Dexamethasone 6 mg daily (as in COVID-19)**: basal glargine plus prandial insulin, as hyperglycaemia lasts through the day and night. [ADA 2026]",
+        "**HHS risk**: elderly on high-dose steroids with infection - check osmolality and hydration; treat as per HHS protocol. [ADA/JBDS 2024 consensus]",
+        "**Type 1 diabetes on steroids**: increase basal and bolus doses (often 20-40% or more), monitor ketones, and never stop basal insulin. [JBDS 2023]",
+      ],
+    },
+    {
+      heading: "Special settings - post-transplant, HIV and antipsychotics",
+      points: [
+        "**PTDM early (first weeks)**: hyperglycaemia is common and managed with **basal insulin** - early insulin may protect beta cells; avoid labelling as PTDM until stable. [International PTDM consensus 2024]",
+        "**PTDM later**: lifestyle, **metformin** if eGFR allows, **DPP-4 inhibitors** (no interaction with tacrolimus), GLP-1 RAs; **SGLT2 inhibitors** are increasingly used in stable kidney transplant recipients with care for UTI. [International PTDM consensus 2024 / KDIGO 2022]",
+        "**Immunosuppression changes** (tacrolimus dose reduction, steroid minimisation) are decided by the transplant team - never altered by the primary physician alone. [KDIGO 2022]",
+        "**HIV - metformin with dolutegravir**: dolutegravir raises metformin levels (AUC up by about **79%**), so **limit metformin to 1 g/day** and monitor; NACO first-line is **TLD (tenofovir, lamivudine, dolutegravir)**. [NACO 2021]",
+        "**HIV - other choices**: DPP-4 inhibitors, GLP-1 RAs, SGLT2 inhibitors and insulin can all be used; check interactions with **ritonavir- or cobicistat-boosted** regimens, which alter levels of several sulfonylureas and statins. [ADA 2026]",
+        "**Antipsychotic-induced diabetes**: switch to a lower-risk antipsychotic **only with the psychiatrist**; **metformin 500 mg BD to 1 g BD** limits antipsychotic weight gain; GLP-1 RAs are effective. [ADA 2026 / NICE 2014]",
+        "**Severe mental illness**: integrated care, simple regimens, supervised medication and carers; screen yearly for diabetes and CV risk. [ADA 2026]",
+        "**Checkpoint-inhibitor diabetes**: **insulin for life**; teach DKA warning signs to all patients on anti-PD-1 therapy. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Other special situations",
+      points: [
+        "**Pregnancy**: antenatal steroids for fetal lung maturity (betamethasone 12 mg IM x2, 24 hours apart) raise glucose for about 72 hours - increase insulin and monitor closely, using a VRIII if needed. [JBDS 2023 / NICE NG3]",
+        "**Elderly**: prefer gliclazide or NPH with conservative titration; hypoglycaemia during taper is the main hazard. [JBDS 2023]",
+        "**CKD**: lower insulin doses and avoid sulfonylureas in advanced CKD; prefer NPH or basal insulin. [KDIGO 2022]",
+        "**End of life** (palliative steroids): relax targets to about **108-270 mg/dL (6-15 mmol/L)** and avoid symptomatic hyperglycaemia; once-daily morning NPH or gliclazide. [JBDS 2023]",
+        "**Intra-articular injections**: warn people with diabetes of a rise for **2-3 days** and to check glucose. [ADA 2026]",
+        "**Resource-limited setting**: human NPH in the morning with afternoon capillary checks, or gliclazide, is cheap, effective and available under NP-NCD and Jan Aushadhi. [ICMR STW 2023]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**HHS and DKA** with high-dose steroids, especially in the elderly and in undiagnosed diabetes. [ADA/JBDS 2024 consensus]",
+        "**Infections**: mucormycosis, TB reactivation, candidiasis, poor wound healing - hyperglycaemia and steroids impair immunity together. [ICMR advisory 2021]",
+        "**Hypoglycaemia during steroid taper** if insulin or sulfonylurea is not reduced. [JBDS 2023]",
+        "Steroid-induced hyperglycaemia usually **resolves within 24-48 hours** of stopping short courses, but many patients have underlying prediabetes and later develop diabetes. [JBDS 2023]",
+        "**PTDM** increases **graft loss, cardiovascular events and mortality** after kidney transplant. [International PTDM consensus 2024]",
+        "**Severe mental illness with diabetes** carries 10-20 years lower life expectancy, mostly from cardiovascular disease. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and prevention",
+      points: [
+        "Give every patient starting steroids **written advice** on symptoms of hyperglycaemia and when to test; diabetics get a **steroid sick-day plan**. [JBDS 2023]",
+        "After steroids stop, recheck **HbA1c at 3 months** (or fasting glucose/OGTT) in anyone who developed hyperglycaemia. [JBDS 2023]",
+        "Use the **lowest steroid dose for the shortest time**; consider steroid-sparing agents and inhaled/topical routes. [ADA 2026]",
+        "Refer: glucose persistently above 360 mg/dL, ketones, HHS, type 1 on steroids, PTDM, checkpoint-inhibitor diabetes, pregnancy. [JBDS 2023]",
+        "Link to **NP-NCD** screening at the Ayushman Arogya Mandir; **NTEP** bidirectional TB-diabetes screening in steroid-treated diabetics. [MoHFW NP-NCD 2023 / NTEP 2024]",
+        "Transplant and HIV patients: **shared care** with transplant team or ART centre; yearly diabetes screening. [NACO 2021 / KDIGO 2022]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates",
+      points: [
+        "**JBDS-IP 'Management of hyperglycaemia and steroid (glucocorticoid) therapy' (2023 update)** keeps gliclazide or morning NPH as first choices and the 12 mmol/L treatment threshold. [JBDS 2023]",
+        "**ADA Standards of Care 2026 Section 16** retains weight-based NPH dosing for steroids and notes prandial needs exceed basal. [ADA 2026]",
+        "**ADA 2026 Section 2** lists drug-induced diabetes (glucocorticoids, calcineurin inhibitors, antipsychotics, checkpoint inhibitors) and HIV screening with fasting glucose around ART changes. [ADA 2026]",
+        "**International PTDM consensus update (2024)** reaffirmed OGTT-based diagnosis after stabilisation and supports newer agents (SGLT2 inhibitors, GLP-1 RAs) in stable recipients. [International PTDM consensus 2024]",
+        "**India**: ICMR COVID-19 advisories (2021) on judicious steroid use and glucose control to prevent mucormycosis remain the reference lesson. [ICMR advisory 2021]",
+        "Sources differ on the treatment threshold - **JBDS 216 mg/dL x2** vs **ADA 180 mg/dL persistently** in hospital; both accept a 140-180 working target. [JBDS 2023 vs ADA 2026]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Classic question: **'Steroid-induced diabetes - pathogenesis and management'** - draw the afternoon glucose curve against prednisolone timing. [DNB pattern]",
+        "Viva: why is fasting glucose normal? - **single morning prednisolone dose wears off overnight**. [JBDS 2023]",
+        "Viva: which insulin and when? - **NPH in the morning with the steroid**. [JBDS 2023]",
+        "**Common mistake**: adding bedtime insulin or glibenclamide - causes nocturnal hypoglycaemia. [JBDS 2023]",
+        "**Common mistake**: not reducing insulin as the steroid is tapered. [JBDS 2023]",
+        "Viva: why is HbA1c unreliable after transplant? - anaemia, transfusions and erythropoietin; use OGTT. [International PTDM consensus 2024]",
+        "Viva: metformin dose limit with dolutegravir? - **1 g/day**. [NACO 2021]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs for steroid-induced and drug-induced hyperglycaemia",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Gliclazide", "40 mg oral in the morning with steroid", "Increase 40 mg every 1-2 days to 240 mg (max 320 mg in two doses); taper with steroid", "Hypoglycaemia during taper; avoid advanced CKD"],
+        ["NPH (isophane) insulin", "0.1 U/kg per 10 mg prednisolone SC in the morning (max 0.4 U/kg); or 10 U start", "Increase 10-20% daily; reduce with steroid taper", "Hypoglycaemia if steroid stopped or reduced"],
+        ["Basal glargine or NPH BD", "0.1-0.2 U/kg/day SC for dexamethasone or BD steroids", "Titrate daily", "Nocturnal hypoglycaemia once steroid stops"],
+        ["Metformin (with dolutegravir)", "500 mg BD, maximum 1 g/day", "Long term", "GI upset, B12 deficiency; lactic acidosis in AKI"],
+        ["Metformin (antipsychotic weight gain)", "500 mg BD up to 1 g BD", "Long term", "GI upset; hold in AKI"],
+        ["DPP-4 inhibitor (PTDM)", "Sitagliptin 100 mg OD (renal dose 25-50 mg)", "Long term", "Rare pancreatitis; no tacrolimus interaction"],
+      ],
+    },
+    {
+      heading: "Steroid type and glucose pattern",
+      columns: ["Steroid regimen", "Glucose pattern", "Best monitoring time", "Preferred treatment"],
+      rows: [
+        ["Prednisolone once in the morning", "Normal fasting, peak afternoon-evening", "Before lunch or before evening meal", "Morning NPH or gliclazide"],
+        ["Prednisolone twice daily", "Raised through day, partly overnight", "Pre-meal and fasting", "NPH BD or basal-bolus"],
+        ["Dexamethasone (any timing)", "Raised all 24 hours", "Fasting and pre-meal", "Basal glargine plus prandial"],
+        ["Methylprednisolone pulse", "Spike for 24-48 hours", "4-6 hourly", "NPH plus correction or IV insulin"],
+        ["Intra-articular injection", "Rise for 2-3 days", "Daily pre-dinner", "Temporary dose increase"],
+      ],
+    },
+    {
+      heading: "Drug-induced diabetes - special settings compared",
+      columns: ["Setting", "Culprit drugs", "Mechanism", "Diagnosis tip", "Management tip"],
+      rows: [
+        ["Glucocorticoids", "Prednisolone, dexamethasone", "Gluconeogenesis, insulin resistance, beta-cell suppression", "Test afternoon, not fasting", "Morning NPH, taper with steroid"],
+        ["Post-transplant", "Tacrolimus, steroids, mTOR inhibitors", "Calcineurin-NFAT beta-cell toxicity", "OGTT; HbA1c unreliable first year", "Early insulin; DPP-4i, metformin later"],
+        ["HIV", "Old PIs, stavudine, zidovudine, dolutegravir", "Insulin resistance, lipodystrophy, weight gain", "FPG before and 3-6 months after ART change", "Metformin max 1 g with dolutegravir"],
+        ["Antipsychotics", "Clozapine, olanzapine", "Weight gain (H1, 5-HT2C), direct effects", "Weight at 4, 8, 12 weeks; glucose at 12 weeks", "Metformin; switch drug with psychiatrist"],
+        ["Checkpoint inhibitors", "Anti-PD-1, anti-PD-L1", "Autoimmune beta-cell destruction", "Abrupt DKA, low C-peptide", "Lifelong insulin"],
+      ],
+    },
+    {
+      heading: "Monitoring thresholds and targets",
+      columns: ["Item", "Cut-off", "Source"],
+      rows: [
+        ["Start treatment (outpatient)", "Capillary glucose above 216 mg/dL (12 mmol/L) twice in 24 h", "JBDS 2023"],
+        ["Start insulin (inpatient)", "Persistently 180 mg/dL or more", "ADA 2026"],
+        ["Target range", "108-180 mg/dL (6-10 mmol/L), acceptable 72-216", "JBDS 2023"],
+        ["Check ketones", "Glucose above 360 mg/dL (20 mmol/L)", "JBDS 2023"],
+        ["End-of-life target", "108-270 mg/dL (6-15 mmol/L)", "JBDS 2023"],
+        ["Steroid equivalence", "Prednisolone 5 mg = hydrocortisone 20 mg = dexamethasone 0.75 mg", "BNF 2025"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Glucose above 360 mg/dL with ketones, vomiting or drowsiness - DKA.",
+    "Elderly patient on high-dose steroids with confusion, dehydration and glucose over 600 mg/dL - HHS.",
+    "Facial pain, nasal black eschar, proptosis or vision loss in a steroid-treated diabetic - mucormycosis; emergency referral.",
+    "Sudden DKA in a patient on anti-PD-1 therapy - checkpoint-inhibitor diabetes.",
+    "DKA within weeks of starting clozapine or olanzapine.",
+    "Hypoglycaemia after steroid stopped or tapered without reducing insulin or sulfonylurea.",
+    "Rising creatinine or rejection signs in a transplant recipient with new hyperglycaemia - transplant team review.",
+  ],
+  pearls: [
+    "**Morning steroid, afternoon sugar** - test before lunch or dinner, not fasting.",
+    "**NPH with the prednisolone, at the same time** - 0.1 U/kg per 10 mg, max 0.4 U/kg.",
+    "**Taper the insulin with the steroid** - or meet hypoglycaemia.",
+    "**Dexamethasone = all-day sugar** - needs basal insulin.",
+    "**Prednisolone 5 = hydrocortisone 20 = dexamethasone 0.75**.",
+    "**PTDM: OGTT, not HbA1c**, in the first year.",
+    "**Dolutegravir + metformin = cap at 1 g/day**.",
+    "**Clozapine and olanzapine** top the antipsychotic risk list; aripiprazole is the safest.",
+  ],
+  mcqs: [
+    {
+      id: "endocrine-steroid-induced-hyperglycaemia-q1",
+      stem: "A 60-year-old woman without known diabetes is started on prednisolone 40 mg each morning for polymyalgia-like illness. Which glucose test is most likely to detect steroid-induced hyperglycaemia?",
+      options: [
+        "Fasting plasma glucose at 7 am",
+        "Capillary glucose at 3 am",
+        "Capillary glucose before the evening meal",
+        "HbA1c after one week",
+      ],
+      answer: 2,
+      explanation:
+        "A single morning prednisolone dose raises glucose from late morning, peaking in the afternoon and evening, and the effect wanes overnight, so pre-evening-meal (or pre-lunch) testing is recommended. Fasting and 3 am values are often normal, and HbA1c changes too slowly to reflect a week of steroid exposure.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-steroid-induced-hyperglycaemia-q2",
+      stem: "A 70 kg man on prednisolone 30 mg every morning has pre-dinner glucose of 280-320 mg/dL and fasting 105 mg/dL. Which insulin regimen fits best?",
+      options: [
+        "Glargine 20 units at bedtime",
+        "NPH about 21 units in the morning with the prednisolone",
+        "Regular insulin sliding scale at bedtime",
+        "Premixed 30/70 insulin before dinner",
+      ],
+      answer: 1,
+      explanation:
+        "Weight-based dosing is about 0.1 U/kg per 10 mg prednisolone, giving 0.3 U/kg (about 21 units) of NPH in the morning, whose 4-8-hour peak matches the afternoon steroid effect. Bedtime glargine or a dinner premix would act overnight when glucose is already normal and cause nocturnal hypoglycaemia, and bedtime sliding scale misses the daytime peak.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-steroid-induced-hyperglycaemia-q3",
+      stem: "A kidney transplant recipient 5 months after surgery on tacrolimus has HbA1c 6.1%, mild anaemia and fasting glucose 118 mg/dL. What is the best test to diagnose post-transplant diabetes?",
+      options: [
+        "Repeat HbA1c in 3 months",
+        "Random capillary glucose",
+        "Serum fructosamine",
+        "75 g oral glucose tolerance test",
+      ],
+      answer: 3,
+      explanation:
+        "The international PTDM consensus regards the OGTT as the gold standard because HbA1c is unreliable in the first year after transplant due to anaemia, transfusions and erythropoietin, and HbA1c under 6.5% does not exclude PTDM. Random capillary glucose and fructosamine lack diagnostic validation here.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-steroid-induced-hyperglycaemia-q4",
+      stem: "A man with HIV on tenofovir, lamivudine and dolutegravir is newly diagnosed with type 2 diabetes. What is the key prescribing point for metformin?",
+      options: [
+        "Metformin is contraindicated with dolutegravir",
+        "Use metformin but limit the total dose to about 1 g/day",
+        "Metformin must be given at a minimum of 2 g/day",
+        "Switch dolutegravir to a protease inhibitor before starting metformin",
+      ],
+      answer: 1,
+      explanation:
+        "Dolutegravir inhibits the OCT2 and MATE transporters, raising metformin exposure by about 79%, so NACO advises limiting metformin to about 1 g/day with monitoring rather than avoiding it. Higher doses increase GI effects and lactic acidosis risk, and switching effective first-line ART to a protease inhibitor would worsen insulin resistance without need.",
+      difficulty: "hard",
+    },
+    {
+      id: "endocrine-steroid-induced-hyperglycaemia-q5",
+      stem: "Which antipsychotic carries the lowest risk of weight gain and diabetes?",
+      options: [
+        "Olanzapine",
+        "Clozapine",
+        "Aripiprazole",
+        "Quetiapine",
+      ],
+      answer: 2,
+      explanation:
+        "Aripiprazole, a partial D2 agonist with little H1 and 5-HT2C blockade, is among the lowest metabolic-risk antipsychotics. Clozapine and olanzapine carry the highest risk of weight gain, diabetes and even DKA, and quetiapine is intermediate.",
+      difficulty: "easy",
+    },
+  ],
+  theory: [
+    {
+      id: "endocrine-steroid-induced-hyperglycaemia-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "common",
+      question:
+        "Discuss the pathogenesis, glucose pattern, monitoring and management of steroid-induced hyperglycaemia. Add a note on post-transplant diabetes.",
+      openingLines: [
+        "Steroid-induced hyperglycaemia is new or worsened hyperglycaemia during glucocorticoid therapy, caused by increased hepatic gluconeogenesis, peripheral insulin resistance and beta-cell suppression.",
+        "With morning prednisolone, fasting glucose is often normal but afternoon-evening glucose is high, so it is detected by pre-lunch or pre-dinner testing and treated with morning NPH or gliclazide tapered with the steroid.",
+      ],
+      answer: [
+        {
+          heading: "Pathogenesis",
+          points: [
+            "PEPCK induction - gluconeogenesis; proteolysis and lipolysis supply substrate.",
+            "Reduced GLUT4 translocation - insulin resistance; beta-cell suppression, raised glucagon.",
+            "Risk: dose above 20 mg prednisolone, prediabetes, age, obesity, family history.",
+          ],
+        },
+        {
+          heading: "Glucose pattern",
+          points: [
+            "Morning prednisolone: peak 4-8 hours, normal fasting.",
+            "Dexamethasone or BD steroids: all-day hyperglycaemia.",
+          ],
+        },
+        {
+          heading: "Monitoring",
+          points: [
+            "Baseline HbA1c; daily pre-lunch or pre-dinner capillary glucose.",
+            "Treat if above 216 mg/dL twice (JBDS) or persistently 180 or more in hospital (ADA); target 108-180.",
+            "Ketones if above 360 mg/dL.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Gliclazide 40 mg morning up to 240-320 mg/day.",
+            "NPH in the morning: 0.1 U/kg per 10 mg prednisolone, max 0.4 U/kg; titrate 10-20% daily.",
+            "Dexamethasone: basal glargine plus prandial.",
+            "Taper insulin with steroid; recheck HbA1c at 3 months after stopping.",
+          ],
+        },
+        {
+          heading: "Post-transplant diabetes",
+          points: [
+            "10-40% after kidney transplant; tacrolimus, steroids.",
+            "OGTT after stabilisation; HbA1c unreliable in year 1.",
+            "Early basal insulin; later metformin, DPP-4 inhibitors, GLP-1 RA, SGLT2 inhibitors with care.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Graph: glucose curve over 24 hours with morning prednisolone vs NPH action profile",
+        "Table: steroid regimen vs glucose pattern vs treatment",
+      ],
+      markSplit: [
+        { part: "Pathogenesis and risk factors", marks: 2 },
+        { part: "Glucose pattern and monitoring", marks: 2.5 },
+        { part: "Management", marks: 3.5 },
+        { part: "Post-transplant diabetes", marks: 2 },
+      ],
+      keywords: ["prednisolone", "NPH", "gliclazide", "JBDS", "PTDM", "tacrolimus"],
+    },
+    {
+      id: "endocrine-steroid-induced-hyperglycaemia-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Write a short note on antipsychotic-induced diabetes and metabolic monitoring.",
+      openingLines: [
+        "Second-generation antipsychotics, especially clozapine and olanzapine, cause weight gain, insulin resistance, dyslipidaemia and diabetes, occasionally presenting as DKA.",
+        "Structured metabolic monitoring from baseline and early intervention reduce the excess cardiovascular mortality of severe mental illness.",
+      ],
+      answer: [
+        {
+          heading: "Risk tiers and mechanism",
+          points: [
+            "High: clozapine, olanzapine; moderate: quetiapine, risperidone; low: aripiprazole, lurasidone, ziprasidone.",
+            "H1 and 5-HT2C antagonism - appetite and weight gain; direct insulin resistance.",
+          ],
+        },
+        {
+          heading: "Monitoring (ADA/APA)",
+          points: [
+            "Baseline weight, waist, BP, FPG or HbA1c, lipids, family history.",
+            "Weight at 4, 8, 12 weeks; glucose and lipids at 12 weeks; then yearly.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Lifestyle; metformin 500 mg BD to 1 g BD for weight gain or hyperglycaemia.",
+            "GLP-1 RA if needed; switch antipsychotic only with the psychiatrist.",
+            "Watch for DKA early in therapy.",
+          ],
+        },
+      ],
+      mustDraw: ["Monitoring timeline table (baseline, 4, 8, 12 weeks, yearly)"],
+      markSplit: [
+        { part: "Risk tiers and mechanism", marks: 1.5 },
+        { part: "Monitoring", marks: 2 },
+        { part: "Management", marks: 1.5 },
+      ],
+      keywords: ["clozapine", "olanzapine", "aripiprazole", "metabolic monitoring", "metformin"],
+    },
+  ],
+  references: [
+    "Joint British Diabetes Societies for Inpatient Care (JBDS-IP). Management of hyperglycaemia and steroid (glucocorticoid) therapy, 2023 update",
+    "American Diabetes Association. Standards of Care in Diabetes - 2026, Sections 2 and 16",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025",
+    "Sharif A et al. International consensus on post-transplantation diabetes mellitus, 2014, with 2024 update",
+    "National AIDS Control Organisation (NACO). National Guidelines for HIV Care and Treatment, 2021",
+    "ADA/APA/AACE/NAASO Consensus Development Conference on Antipsychotic Drugs and Obesity and Diabetes, Diabetes Care 2004",
+    "Liu XX et al. Hyperglycemia induced by glucocorticoids in nondiabetic patients: a meta-analysis, Endocrine Practice 2014",
+    "ICMR Standard Treatment Workflows - Type 2 Diabetes Mellitus, 2023",
+  ],
+});
+
 export default topics;

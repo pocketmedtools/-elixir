@@ -618,6 +618,206 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "endocrine-hypoparathyroidism": {
+    checked: "2026-10",
+    updated: [
+      "First international hypoparathyroidism guidelines (2022): chronic disease after 12 months; low-normal calcium and normal urine calcium targets.",
+      "2022 guidelines list indications for PTH replacement therapy.",
+      "Palopegteriparatide approved by EMA (2023) and FDA (August 2024) after the PaTHway trial.",
+      "rhPTH(1-84) (Natpara) discontinued globally at end of 2024.",
+      "iPPSD terminology for pseudohypoparathyroidism (international consensus 2018).",
+    ],
+    master: {
+      heading: "Hypoparathyroidism and hypocalcaemia on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Low calcium, high phosphate, low or inappropriately normal PTH"],
+        ["Commonest cause", "Post-surgical (about 75%); chronic if beyond 12 months"],
+        ["Other causes", "APS-1, DiGeorge, ADH1, thalassaemia iron overload, hypomagnesaemia"],
+        ["High-PTH hypocalcaemia", "Vitamin D deficiency (commonest in India), CKD, PHP, hungry bone"],
+        ["Signs", "Chvostek (non-specific), Trousseau (specific), prolonged QTc"],
+        ["Acute treatment", "10-20 mL 10% calcium gluconate over 10-20 min, then infusion; magnesium"],
+        ["Chronic treatment", "Calcium carbonate with meals plus calcitriol or alfacalcidol; cholecalciferol"],
+        ["Targets", "Low-normal calcium, normal urine calcium, phosphate, magnesium; 25OHD at least 30"],
+        ["Hypercalciuria", "Lower target, thiazide, low-salt diet"],
+        ["PTH replacement", "Palopegteriparatide 18 mcg SC daily, titrate 6-60 mcg (FDA 2024)"],
+        ["PHP", "GNAS; 1a maternal with AHO and resistance; PPHP paternal, AHO only"],
+        ["Complications", "Stones, nephrocalcinosis, CKD, basal ganglia calcification, cataract"],
+        ["Follow-up", "Calcium, phosphate, Mg, creatinine every 3-6 months; urine calcium yearly"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Work-up of hypocalcaemia",
+        steps: [
+          { label: "Confirm: corrected or ionised calcium", detail: "Exclude low albumin (pseudohypocalcaemia)" },
+          { label: "Symptoms or calcium below 7.5?", detail: "Yes: IV calcium gluconate now", tone: "warn" },
+          { label: "Check magnesium", detail: "Below 1 mg/dL: replace first", tone: "decision" },
+          { label: "Measure PTH", detail: "Low or normal = hypoparathyroidism", tone: "decision" },
+          { label: "PTH high", detail: "Vitamin D deficiency, CKD, PHP, hungry bone" },
+          { label: "Find cause", detail: "Neck surgery, autoimmune, genetic, iron overload", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment ladder",
+        steps: [
+          { label: "IV calcium gluconate for acute symptoms", detail: "10-20 mL 10% over 10-20 min; infusion", tone: "warn" },
+          { label: "Oral calcium plus active vitamin D", detail: "Calcium 0.5-1 g two or three times daily; calcitriol 0.25-0.5 mcg twice daily", tone: "good" },
+          { label: "Cholecalciferol and magnesium", detail: "25OHD at least 30; correct magnesium" },
+          { label: "Hypercalciuria: thiazide", detail: "HCTZ 12.5-50 mg plus low-salt diet" },
+          { label: "PTH replacement", detail: "Palopegteriparatide 18 mcg SC daily, titrate" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Hypoparathyroidism vs vitamin D deficiency vs pseudohypoparathyroidism",
+        columns: ["Feature", "Hypoparathyroidism", "Vitamin D deficiency", "Pseudohypoparathyroidism"],
+        rows: [
+          ["Calcium", "Low", "Low or normal", "Low"],
+          ["Phosphate", "High", "Low", "High"],
+          ["PTH", "Low", "High", "High"],
+          ["ALP", "Normal", "High", "Normal or high"],
+          ["Treatment", "Calcium plus calcitriol", "Cholecalciferol plus calcium", "Calcitriol plus calcium"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Hypoparathyroidism**: low calcium, high phosphate, low or inappropriately normal PTH.",
+            "About **75%** follow neck surgery.",
+            "**Chronic** post-surgical disease means persisting beyond 12 months.",
+            "In India, **vitamin D deficiency** is the commonest cause of hypocalcaemia overall.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Surgery**: total thyroidectomy, neck dissection, re-operation.",
+            "**Autoimmune**: APS-1 with candidiasis and Addison disease.",
+            "**Genetic**: DiGeorge, activating CASR (ADH1), GATA3.",
+            "**Iron overload** in thalassaemia; severe **hypomagnesaemia** from PPIs or alcohol.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "No PTH means **urinary calcium loss**, phosphate retention and low calcitriol.",
+            "Low ionised calcium makes nerves **hyperexcitable**: tetany and seizures.",
+            "Raising calcium to mid-normal causes **hypercalciuria** without PTH.",
+            "**PHP 1a** is maternal GNAS loss with multihormone resistance.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Perioral tingling**, carpopedal spasm, laryngospasm, seizures.",
+            "**Trousseau** sign is more specific than Chvostek sign.",
+            "Chronic: **cataract**, basal ganglia calcification, parkinsonism.",
+            "**AHO**: short stature, round face, short 4th and 5th metacarpals.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Corrected or ionised **calcium, PTH, phosphate, magnesium**, creatinine, 25OHD.",
+            "**ECG** for prolonged QTc.",
+            "**24-h urine calcium**, renal ultrasound, slit lamp, CT head if neurological.",
+            "Post-op **PTH below 10-15 pg/mL** predicts hypocalcaemia.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Treat symptoms or calcium **below 7.5 mg/dL** with IV calcium.",
+            "**10-20 mL of 10% calcium gluconate** over 10-20 minutes with ECG.",
+            "Infusion: 100 mL in 1 litre at **50-100 mL/h**.",
+            "Give **magnesium sulphate 2 g IV** if magnesium is low.",
+            "Never mix calcium with **bicarbonate**; watch digoxin.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Calcium carbonate** 500-1000 mg elemental two or three times daily with meals.",
+            "**Calcitriol** 0.25-0.5 mcg twice daily or alfacalcidol 0.5-4 mcg daily.",
+            "**Cholecalciferol** to keep 25OHD at least 30 ng/mL.",
+            "Target **low-normal calcium** with normal urine calcium.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Thiazide** and low-salt diet for hypercalciuria.",
+            "**Palopegteriparatide** 18 mcg SC daily, titrated, when control fails.",
+            "**Teriparatide** off-label twice daily where unavailable.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: calcitriol needs often fall; check calcium every 3-4 weeks.",
+            "**Lactation** can cause hypercalcaemia from breast PTHrP.",
+            "Check calcium before every **denosumab** dose.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Calcium, phosphate, magnesium, creatinine **every 3-6 months** when stable.",
+            "**24-h urine calcium yearly**; renal imaging if stones suspected.",
+            "Complications: **stones, nephrocalcinosis, CKD**, cataract.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Calcium gluconate 10%", "10-20 mL IV over 10-20 min; infusion 50-100 mL/h", "24-72 h", "Extravasation; not with bicarbonate"],
+            ["Magnesium sulphate", "2 g IV over 10-20 min", "Until Mg normal", "Hypotension; renal caution"],
+            ["Calcium carbonate", "500-1000 mg elemental two or three times daily", "Long term", "Constipation; poor with PPIs"],
+            ["Calcitriol", "0.25-0.5 mcg twice daily", "Long term", "Hypercalcaemia, hypercalciuria"],
+            ["Alfacalcidol", "0.5-4 mcg daily", "Long term", "Hypercalcaemia"],
+            ["Hydrochlorothiazide", "12.5-50 mg daily", "Long term", "Low potassium and magnesium"],
+            ["Palopegteriparatide", "18 mcg SC daily; 6-60 mcg", "Long term", "Calcium swings during titration"],
+          ],
+        },
+        {
+          heading: "Hypocalcaemia by PTH",
+          columns: ["PTH", "Causes"],
+          rows: [
+            ["Low or normal", "Surgery, autoimmune, DiGeorge, ADH1, iron overload, hypomagnesaemia"],
+            ["High", "Vitamin D deficiency, CKD, pseudohypoparathyroidism, hungry bone, pancreatitis"],
+          ],
+        },
+        {
+          heading: "PHP types",
+          columns: ["Type", "Inheritance", "AHO", "Resistance"],
+          rows: [
+            ["PHP 1a", "Maternal GNAS", "Yes", "PTH, TSH, GHRH, gonadotropins"],
+            ["PPHP", "Paternal GNAS", "Yes", "None"],
+            ["PHP 1b", "GNAS methylation", "No", "PTH (renal)"],
+            ["PHP 2", "Unclear", "No", "Post-cAMP renal"],
+          ],
+        },
+      ],
+      remember: [
+        "**Low Ca, high PO4, low PTH** = hypoparathyroidism.",
+        "**Trousseau beats Chvostek** for specificity.",
+        "**Magnesium first** when calcium will not rise.",
+        "Target **low-normal** calcium.",
+        "**Thiazide** cuts urinary calcium.",
+        "**Palopegteriparatide**: FDA 2024.",
+        "Pseudo-pseudo = **looks but no labs**.",
+      ],
+    },
+  },
 };
 
 export default revision;
