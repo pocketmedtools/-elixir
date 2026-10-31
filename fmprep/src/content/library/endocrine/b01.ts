@@ -1506,4 +1506,488 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "endocrine-prediabetes-prevention",
+  title: "Prediabetes and prevention of type 2 diabetes",
+  frequency: "core",
+  oneLiner:
+    "**Prediabetes** (intermediate hyperglycaemia) is glucose above normal but below the diabetes threshold - **IFG 100-125 mg/dL, IGT 140-199 mg/dL at 2 hours or HbA1c 5.7-6.4%** - that progresses to diabetes in about **5-10% a year** and raises cardiovascular risk; **lifestyle change (7% weight loss, 150 minutes a week of activity)** cuts progression by about **58% (DPP) and 28.5% in Indians (IDPP-1)**, with **metformin** for selected high-risk people.",
+  keywords: [
+    "prediabetes",
+    "intermediate hyperglycaemia",
+    "IFG",
+    "IGT",
+    "impaired fasting glucose",
+    "impaired glucose tolerance",
+    "IDRS",
+    "Indian Diabetes Risk Score",
+    "CBAC",
+    "DPP",
+    "Diabetes Prevention Program",
+    "IDPP",
+    "Da Qing",
+    "Finnish DPS",
+    "metformin prevention",
+    "lifestyle modification",
+    "yoga",
+    "NP-NCD",
+    "diabetes remission",
+    "prediabetes remission",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**Prediabetes** is a state of **intermediate hyperglycaemia** - impaired fasting glucose (IFG), impaired glucose tolerance (IGT) or a raised HbA1c - that is a **risk factor**, not a disease label, for diabetes and cardiovascular disease. [ADA 2026]",
+        "Globally about **635 million adults have IGT** and about **488 million have IFG**, most in low- and middle-income countries. [IDF Atlas 2025]",
+        "**ICMR-INDIAB** found prediabetes in **15.3%** of Indian adults (about **136 million**) - more people than have diabetes (11.4%) - with the ratio of prediabetes to diabetes highest in **less-developed states**, signalling the next wave. [ICMR-INDIAB 2023]",
+        "Progression to diabetes is about **5-10% a year**, and up to **70%** of people with prediabetes eventually develop diabetes; risk is highest with **combined IFG plus IGT**. [ADA 2026]",
+        "**Asian Indians progress faster** and at younger age and lower BMI than Europeans - the control arm of IDPP-1 reached a **3-year cumulative incidence of 55%**. [IDPP-1 2006]",
+        "About **5-10% of people with prediabetes revert to normal** each year, especially with weight loss - the basis of the \"prediabetes remission\" concept. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Aetiology and risk factors",
+      points: [
+        "**Non-modifiable**: age **over 30-35**, family history in a first-degree relative, South Asian ethnicity, past **gestational diabetes**, low birth weight (thin-fat baby). [ADA 2026]",
+        "**Modifiable**: **central obesity** (waist **90 cm or more in men, 80 cm or more in women** in Indians), overweight (**BMI 23 or more**), physical inactivity, refined-carbohydrate diet, sugary drinks, poor sleep and **tobacco**. [ICMR 2018]",
+        "**Associated conditions**: hypertension, dyslipidaemia (low HDL, high triglycerides), **PCOS**, **MASLD (fatty liver)**, acanthosis nigricans, obstructive sleep apnoea and HIV. [ADA 2026]",
+        "**Drugs**: glucocorticoids, atypical antipsychotics, thiazides, beta-blockers and statins (small rise in risk, outweighed by CV benefit). [ADA 2026]",
+        "**Developmental origins (DOHaD)**: maternal undernutrition followed by childhood catch-up growth and urban overnutrition programmes the Indian **thin-fat phenotype** (Pune Maternal Nutrition Study). [Williams Endocrinology 15e]",
+        "**Urbanisation**: ICMR-INDIAB shows the highest prediabetes rates in urban and more-developed states, but rural rates are rising fast. [ICMR-INDIAB 2023]",
+      ],
+    },
+    {
+      heading: "Pathophysiology: IFG and IGT are different defects",
+      points: [
+        "**IFG** reflects **hepatic insulin resistance** and loss of **first-phase insulin secretion** - the liver fails to suppress overnight glucose output. [Harrison 22e]",
+        "**IGT** reflects **muscle (peripheral) insulin resistance** and impaired **late-phase secretion** - glucose taken in at a meal is cleared slowly. [Harrison 22e]",
+        "**Combined IFG plus IGT** has both defects and roughly **double the progression risk** of either alone. [Williams Endocrinology 15e]",
+        "Beta-cell function is already reduced by **about 50%** in people with IGT at the upper end of the range - prevention is a race to protect the remaining beta cells. [Harrison 22e]",
+        "**Ectopic fat** in liver and pancreas (the \"twin cycle\" hypothesis) drives both insulin resistance and beta-cell dysfunction; losing about **10-15 kg** removes this fat and can restore normal glucose. [DiRECT 2018]",
+        "**Asian Indians** have more visceral and liver fat and lower muscle mass at the same BMI, and **post-load (IGT) hyperglycaemia predominates** - so fasting glucose alone misses many. [RSSDI 2022]",
+        "IGT carries **cardiovascular risk** through post-prandial spikes, endothelial dysfunction and the accompanying metabolic syndrome. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Classification and diagnostic criteria",
+      points: [
+        "**ADA**: IFG **100-125 mg/dL**, IGT **140-199 mg/dL** 2 hours after 75 g glucose, or **HbA1c 5.7-6.4%** - any one defines prediabetes. [ADA 2026]",
+        "**WHO** defines IFG as **110-125 mg/dL** and does not endorse HbA1c for prediabetes; the WHO term is **intermediate hyperglycaemia**. [WHO 2006]",
+        "**International Expert Committee / NICE**: HbA1c **6.0-6.4% (42-47 mmol/mol)** identifies the highest-risk group. [NICE PH38]",
+        "**IDF 2024**: a **1-hour post-load glucose of 155 mg/dL or more** identifies intermediate hyperglycaemia earlier and more sensitively than the 2-hour value. [IDF 2024]",
+        "**Isolated IFG, isolated IGT and combined IFG/IGT** are the three glucose categories; HbA1c and glucose tests identify **different, partly overlapping people**. [ADA 2026]",
+        "**Risk stratification** within prediabetes: HbA1c 6.0-6.4%, combined IFG and IGT, BMI over 35, age under 60, past GDM and metabolic syndrome mark the **highest risk** (and the best metformin responders). [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Clinical features: history",
+      points: [
+        "Prediabetes is **asymptomatic** - it is found by **screening** or incidentally on a test done for another reason. [ADA 2026]",
+        "Ask about **family history**, past **GDM or a baby over 4 kg**, PCOS, hypertension, and early heart disease in the family. [ICMR 2018]",
+        "Take a **24-hour diet recall** (rice/roti portions, sweets, sugary tea, fried snacks, eating out, late dinners) and a **physical activity** history (steps, occupation, screen time). [ICMR 2018]",
+        "Ask about **sleep duration and snoring** (OSA), stress, **tobacco and alcohol**. [ADA 2026]",
+        "Ask about **drugs** - steroids (including self-medication and Ayurvedic preparations with hidden steroids), antipsychotics, thiazides. [ADA 2026]",
+        "Assess **readiness to change** (stages of change) - prevention depends on behaviour, not prescriptions. [RSSDI 2022]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Weight, height, BMI** with Asian cut-offs: normal **18.5-22.9**, overweight **23-24.9**, obese **25 or more**. [ICMR 2018]",
+        "**Waist circumference** midway between the costal margin and iliac crest: **90 cm or more in men, 80 cm or more in women** = abdominal obesity in Indians. [ICMR 2018]",
+        "**Acanthosis nigricans** (neck, axillae) and **skin tags** indicate hyperinsulinaemia. [Harrison 22e]",
+        "**Blood pressure** - hypertension coexists in about a third. [ICMR-INDIAB 2023]",
+        "**Hirsutism, acne** in women (PCOS); **hepatomegaly** (fatty liver). [ADA 2026]",
+        "Look for **Cushingoid features** if the history suggests steroid use. [Williams Endocrinology 15e]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Early diabetes** - repeat or add an OGTT when values are near cut-offs; a single FPG of 120 can coexist with a 2-hour value over 200. [ADA 2026]",
+        "**Stress hyperglycaemia** during acute illness - re-test after recovery. [ADA 2026]",
+        "**Steroid-induced hyperglycaemia** - typically normal fasting with high afternoon glucose (see the Steroid-induced hyperglycaemia topic). [ADA 2026]",
+        "**GCK-MODY** - lifelong stable fasting glucose 99-144 mg/dL in a young, lean person with a similar parent; needs no treatment (see the Classification topic). [ISPAD 2022]",
+        "**Spurious results**: falsely low glucose from **delayed sample processing** (glycolysis), and falsely high HbA1c from **iron deficiency**. [ADA 2026]",
+        "**Early pancreatic disease** (chronic pancreatitis, FCPD) in a lean person with abdominal pain. [RSSDI 2022]",
+      ],
+    },
+    {
+      heading: "Investigations: screening and confirmation",
+      points: [
+        "**Who to screen (ADA)**: all adults from **age 35**; any adult with **BMI 25 or more (23 or more in Asians)** plus one risk factor; women with past GDM **every 1-3 years lifelong**; people with HIV; children after puberty or age 10 if overweight with risk factors. [ADA 2026]",
+        "**NP-NCD India**: everyone **30 and over** is screened at Ayushman Arogya Mandir using the **CBAC form** and a **random capillary glucose**; 140 mg/dL or more is referred for confirmation. [MoHFW NP-NCD 2023]",
+        "**IDRS (Indian Diabetes Risk Score, MDRF)**: age, waist, physical activity and family history give a score out of 100; **60 or more = high risk** (test now), **30-50 = moderate**, **under 30 = low**. [Mohan 2005]",
+        "**75 g OGTT** is the most sensitive test in Indians because **isolated IGT** is common; fasting glucose and HbA1c miss many. [RSSDI 2022]",
+        "**HbA1c** is convenient but must be interpreted after checking **haemoglobin** (iron deficiency raises it). [ADA 2026]",
+        "**Baseline work-up once prediabetes is found**: lipid profile, BP, ALT and ultrasound for fatty liver if raised, TSH if symptomatic, and a **10-year CV risk** estimate. [ADA 2026]",
+        "**Repeat testing at least yearly** in people with prediabetes, and every **3 years** in people with normal results. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Management in OPD: lifestyle - the first-line treatment",
+      points: [
+        "**Weight loss target**: at least **7% of body weight** (DPP), maintained; **5-10%** gives most of the benefit, and more weight loss gives more prevention. [ADA 2026]",
+        "**Physical activity**: at least **150 minutes a week of moderate activity** (brisk walking) over at least 3 days, plus **resistance training 2-3 times a week**, and break sitting **every 30 minutes**. [ADA 2026]",
+        "**Diet (ICMR-NIN 2024)**: cereals to **no more than about 45% of energy**, more **pulses, vegetables, whole grains and millets**, **added sugar under 5% of energy**, limit fried and ultra-processed food, **salt under 5 g a day**. [ICMR-NIN Dietary Guidelines 2024]",
+        "Use the **Indian plate method**: half the plate vegetables, a quarter protein (dal, paneer, egg, fish), a quarter cereal - and swap white rice for smaller portions or whole grains. [ICMR 2018]",
+        "**Stop smoking** - smoking itself increases diabetes risk; cessation may cause short-term weight gain that should be managed, not feared. [ADA 2026]",
+        "**Sleep 7-8 hours** and treat OSA; manage stress. [ADA 2026]",
+        "**Yoga**: an Indian multicentre cluster-randomised trial of a **yoga-based lifestyle protocol** (2021) reported a substantial reduction in progression from prediabetes; yoga is a culturally accepted way to meet activity targets. [ICMR 2018]",
+        "**Structured programmes** work better than advice alone - group sessions, a coach, and follow-up for at least 6-12 months; **SMS and mobile reminders** cut diabetes incidence by about **36%** in Indian men with IGT (IDPP-3). [IDPP-3 2013]",
+      ],
+    },
+    {
+      heading: "Management in OPD: drugs for prevention",
+      points: [
+        "**Metformin** should be **considered** for prediabetes, especially with **BMI 35 or more, age under 60, past GDM**, HbA1c 6.0% or more, or rising glucose despite lifestyle change. [ADA 2026]",
+        "Dose: **850 mg twice daily** in DPP; Indian IDPP-1 used only **250 mg twice daily** with similar benefit (26.4%) - in practice **500 mg once or twice daily with meals**. [IDPP-1 2006]",
+        "With long-term metformin, check **vitamin B12** periodically, especially with neuropathy or anaemia. [ADA 2026]",
+        "**Acarbose** (STOP-NIDDM, 25% reduction), **pioglitazone** (ACT NOW, 72% reduction) and **orlistat** (XENDOS, 37%) prevent diabetes but are limited by side effects and are **not first-line**. [Harrison 22e]",
+        "**GLP-1 RAs and tirzepatide** for obesity markedly reduce progression (tirzepatide SURMOUNT-1 3-year: about **94% lower risk**); in prediabetes with obesity, **weight-management pharmacotherapy** may be considered (see the Obesity pharmacotherapy topic). [ADA 2026]",
+        "**No drug is approved specifically to prevent diabetes** in India; metformin is the only one with long-term safety and cost data (cheap via Jan Aushadhi). [RSSDI 2022]",
+        "**Vitamin D supplements do not prevent diabetes** in people with normal vitamin D (D2d trial). [ADA 2026]",
+        "Treat **cardiovascular risk factors** - BP and lipids - by standard thresholds; prediabetes alone is not a statin indication but adds to risk. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Bariatric surgery and when hospital care is needed",
+      points: [
+        "Prediabetes itself never needs admission; admit only for a coexisting acute illness or newly found **diabetes with ketosis or hyperosmolar features**. [ADA 2026]",
+        "**Metabolic (bariatric) surgery** reduces incident diabetes by about **75-80%** (Swedish Obese Subjects) in severe obesity; in Asians it is considered at **BMI 35 or more**, or 32.5 with comorbidity. [IFSO-APC 2022]",
+        "Opportunistic testing in hospital (for example an **HbA1c on admission**) identifies prediabetes that should be handed over to primary care for follow-up. [ADA 2026]",
+        "Women with GDM must have a **75 g OGTT 4-12 weeks postpartum** - many are lost to follow-up in India; link them before discharge. [ADA 2026]",
+        "Post-transplant, antipsychotic-treated and steroid-treated patients need **glucose surveillance** because their progression is faster. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Past GDM**: lifelong testing every 1-3 years; lifestyle plus **metformin** reduced progression by about **50%** in women with past GDM in DPP. [ADA 2026]",
+        "**Pregnancy**: prediabetes found early in pregnancy (HbA1c 5.7-6.4%) needs early lifestyle care and GDM testing at 24-28 weeks (see the obstetrics GDM topic). [ADA 2026]",
+        "**Children and adolescents**: screen overweight youth after puberty or from 10 years; family-based lifestyle change; **metformin is not effective** for prevention in youth (RISE). [ADA 2026]",
+        "**Elderly**: prediabetes over 70 progresses slowly and many revert - focus on activity, muscle strength and fall prevention, not drugs. [ADA 2026]",
+        "**PCOS**: screen with OGTT; lifestyle first, metformin often helps menstrual and metabolic features (see the PCOS topic). [ADA 2026]",
+        "**Antipsychotic users**: baseline and 3-monthly glucose for the first year; prefer metabolically neutral agents where possible. [ADA 2026]",
+        "**Resource-limited setting**: use **IDRS or CBAC** to pick who needs a venous test; group lifestyle sessions by ASHAs and CHOs are cheaper than individual counselling. [MoHFW NP-NCD 2023]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**Cardiovascular disease** risk is raised in prediabetes - IGT and HbA1c over 6.0% carry the highest risk. [Harrison 22e]",
+        "**Microvascular changes** begin before diabetes: about **8% of DPP participants** had retinopathy and small-fibre **neuropathy** and **albuminuria** are seen in prediabetes. [ADA 2026]",
+        "**Da Qing 30-year follow-up**: 6 years of lifestyle intervention delayed diabetes by about **4 years** and reduced CV events by about **26%** and all-cause mortality by about **26%**. [Da Qing 2019]",
+        "**DPP Outcomes Study (15 years)**: lifestyle reduced diabetes incidence by **27%** and metformin by **18%**; benefits waned but persisted. [DPPOS 2015]",
+        "**Prediabetes remission** (returning to normal glucose regulation) is linked to lower diabetes risk and, in recent post-hoc analyses of DPPOS and Da Qing (2023-2025), to **fewer cardiovascular events and deaths**. [ADA 2026]",
+        "Associated **MASLD, OSA, cognitive decline and some cancers** share the same insulin-resistant background. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and monitoring",
+      points: [
+        "Review **every 3-6 months** for weight, waist, BP and adherence to the plan; retest glucose or HbA1c **at least yearly**. [ADA 2026]",
+        "Refer to a **dietitian** and a **structured lifestyle programme** where available; refer to an endocrinologist if MODY is suspected or glucose rises despite therapy. [RSSDI 2022]",
+        "Refer for **bariatric assessment** if BMI is 35 or more (32.5 with comorbidity) and lifestyle and drugs fail. [IFSO-APC 2022]",
+        "Screen and treat **BP, lipids and fatty liver**; calculate CV risk annually. [ADA 2026]",
+        "If diabetes develops, switch to the full diabetes care pathway (see the Type 2 diabetes topic). [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Prevention, counselling and national programme link",
+      points: [
+        "**NP-NCD** (renamed from NPCDCS in 2023) runs population-based screening for diabetes, hypertension and common cancers in everyone **30 and over** at Ayushman Arogya Mandir, with treatment at PHC/CHC NCD clinics. [MoHFW NP-NCD 2023]",
+        "The **75/25 initiative** (launched 2023) aims to put **75 million people with hypertension or diabetes** on standard care by 2025 - prediabetes counselling is part of the visit. [MoHFW 2023]",
+        "**Fit India Movement**, **Eat Right India (FSSAI)** and school health under **Ayushman Bharat** support activity, less sugar and less trans fat at population level. [MoHFW 2023]",
+        "Counsel in **plain words**: \"Your sugar is in the danger zone, but this stage can be reversed - losing 5-7 kg and walking 30 minutes 5 days a week halves your risk.\" [RSSDI 2022]",
+        "**Population prevention**: maternal nutrition, breastfeeding, healthy school meals and taxes on sugary drinks address the **thin-fat** origins of Indian diabetes. [ICMR-NIN Dietary Guidelines 2024]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2023-2026)",
+      points: [
+        "**ADA 2026**: lifestyle programme referral for all with prediabetes, metformin for high-risk groups, yearly testing, and attention to **CV risk**; weight-management drugs may be considered with obesity. [ADA 2026]",
+        "**IDF 2024**: 1-hour post-load glucose **155 mg/dL or more** proposed to diagnose intermediate hyperglycaemia. [IDF 2024]",
+        "**ICMR-NIN Dietary Guidelines for Indians 2024**: limit cereals to about 45% of energy, added sugar under 5%, salt under 5 g. [ICMR-NIN Dietary Guidelines 2024]",
+        "**ICMR-INDIAB 2023**: prediabetes **15.3%**, exceeding diabetes in prevalence. [ICMR-INDIAB 2023]",
+        "**Prediabetes remission** is emerging (2023-2025 analyses) as a treatment goal linked to lower CV mortality. [ADA 2026]",
+        "**SURMOUNT-1 3-year (2024)**: tirzepatide reduced progression from prediabetes to diabetes by about 94% in obesity. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Viva: \"**Define prediabetes**\" - give the ADA values, note WHO's 110 for IFG, and say HbA1c 5.7-6.4%.",
+        "Viva: \"**What were the results of the DPP and IDPP?**\" - DPP: lifestyle **58%**, metformin **31%**; IDPP-1: lifestyle **28.5%**, metformin **26.4%**, both 28.2%.",
+        "Viva: \"**What is IDRS?**\" - four items (age, waist, activity, family history), maximum 100, **60 or more high risk**.",
+        "Common mistake: relying on **fasting glucose alone** in Indians - isolated IGT is missed; use OGTT.",
+        "Common mistake: prescribing metformin **instead of** lifestyle - lifestyle is more effective, and drugs are add-ons.",
+        "Remember the **remission** definition for diabetes: HbA1c under 6.5% at least **3 months** after stopping all glucose-lowering drugs (ADA/EASD 2021).",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Criteria for prediabetes by organisation",
+      columns: ["Test", "ADA", "WHO", "IEC / NICE", "IDF 2024"],
+      rows: [
+        ["Fasting plasma glucose (mg/dL)", "100-125", "110-125", "110-125 (NICE)", "-"],
+        ["2-hour OGTT (mg/dL)", "140-199", "140-199", "-", "140-199"],
+        ["HbA1c", "5.7-6.4%", "Not used", "6.0-6.4%", "-"],
+        ["1-hour OGTT (mg/dL)", "Not used", "Not used", "Not used", "155-208"],
+      ],
+    },
+    {
+      heading: "Indian Diabetes Risk Score (IDRS, MDRF)",
+      columns: ["Parameter", "Category", "Score"],
+      rows: [
+        ["Age", "Under 35 / 35-49 / 50 or more", "0 / 20 / 30"],
+        ["Abdominal obesity (waist)", "Women under 80, men under 90 / women 80-89, men 90-99 / women 90 or more, men 100 or more (cm)", "0 / 10 / 20"],
+        ["Physical activity", "Vigorous exercise or strenuous work / moderate / mild / sedentary", "0 / 10 / 20 / 30"],
+        ["Family history of diabetes", "None / one parent / both parents", "0 / 10 / 20"],
+        ["Interpretation", "Under 30 low; 30-50 moderate; 60 or more high risk - test now", "Maximum 100"],
+      ],
+    },
+    {
+      heading: "Landmark prevention trials",
+      columns: ["Trial", "Population", "Intervention", "Reduction in diabetes"],
+      rows: [
+        ["Da Qing (China, 1997; 30-year 2019)", "IGT", "Diet and/or exercise for 6 years", "About 40-50% at 6 years; CV events and death down about 26% at 30 years"],
+        ["Finnish DPS (2001)", "IGT, overweight", "Intensive lifestyle", "58%"],
+        ["DPP (USA, 2002)", "IGT + raised FPG, BMI 24 or more", "Lifestyle (7% weight loss, 150 min) vs metformin 850 mg BD", "Lifestyle 58%, metformin 31%"],
+        ["IDPP-1 (India, 2006)", "IGT, Indians", "Lifestyle, metformin 250 mg BD, or both", "28.5%, 26.4%, 28.2%"],
+        ["IDPP-3 (India, 2013)", "Men with IGT (IT workers)", "Mobile phone SMS lifestyle prompts", "About 36%"],
+        ["D-CLIP (Chennai, 2016)", "Prediabetes, overweight", "Lifestyle plus stepwise metformin", "About 32%"],
+        ["SURMOUNT-1 3-year (2024)", "Obesity with prediabetes", "Tirzepatide weekly", "About 94%"],
+      ],
+    },
+    {
+      heading: "Drugs that reduce progression to diabetes",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Metformin (first choice if drug needed)", "500 mg once or twice daily with meals; DPP used 850 mg twice daily", "Start 500 mg, increase weekly; long term with yearly review", "GI upset, B12 deficiency; avoid eGFR under 30"],
+        ["Acarbose", "25-50 mg three times daily with meals, up to 100 mg TDS", "Titrate every 2-4 weeks", "Flatulence, diarrhoea; avoid in IBD"],
+        ["Pioglitazone", "15-30 mg orally once daily", "Long term", "Weight gain, oedema, heart failure, fractures; avoid in HF"],
+        ["Orlistat", "120 mg orally three times daily with fatty meals", "Up to 4 years in XENDOS", "Oily stools, fat-soluble vitamin deficiency"],
+        ["Semaglutide 2.4 mg (obesity)", "0.25 mg SC weekly, increase monthly to 2.4 mg", "16-20 weeks to full dose; long term", "Nausea, gallstones, pancreatitis; avoid with MTC/MEN2 history"],
+        ["Tirzepatide (obesity)", "2.5 mg SC weekly, increase by 2.5 mg every 4 weeks to 5-15 mg", "Long term", "Nausea, vomiting, gallstones; avoid with MTC/MEN2 history"],
+      ],
+    },
+    {
+      heading: "IFG vs IGT vs raised HbA1c",
+      columns: ["Feature", "IFG", "IGT", "HbA1c 5.7-6.4%"],
+      rows: [
+        ["Main defect", "Hepatic insulin resistance, first-phase loss", "Muscle insulin resistance, late-phase loss", "Mixed; average glycaemia"],
+        ["Test", "Fasting glucose", "75 g OGTT", "HbA1c"],
+        ["CV risk", "Modest", "Higher", "Rises above 6.0%"],
+        ["Common in Indians", "Less", "More - isolated IGT common", "Affected by anaemia"],
+        ["Best evidence for prevention", "Limited", "Strong (DPP, IDPP, Da Qing)", "Moderate"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Glucose in the **diabetic range with ketonuria, weight loss or vomiting** - not prediabetes; manage as new diabetes, consider DKA.",
+    "**Rapid rise** in HbA1c or glucose over a year despite lifestyle change - re-classify and treat.",
+    "Lean young person with prediabetes and **abdominal pain or steatorrhoea** - exclude pancreatic disease.",
+    "Prediabetes with **chest pain on exertion** or claudication - assess for cardiovascular disease now.",
+    "New hyperglycaemia on **antipsychotics or steroids** with polyuria - may already be diabetes.",
+    "Woman with past GDM **planning pregnancy** - test and optimise before conception.",
+  ],
+  pearls: [
+    "Prediabetes: **100-125 fasting, 140-199 at 2 hours, 5.7-6.4% HbA1c** (ADA); WHO IFG starts at **110**.",
+    "**DPP: lifestyle 58%, metformin 31%**; **IDPP-1: 28.5%, 26.4%, 28.2%**.",
+    "**7% weight loss and 150 minutes a week** - the two numbers of prevention.",
+    "In Indians, **OGTT beats FPG** - isolated IGT is common.",
+    "**IDRS 60 or more** = high risk; four items, maximum 100.",
+    "**NP-NCD**: screen everyone 30 and over; CBAC plus random capillary glucose.",
+    "Metformin for prevention works best with **BMI 35 or more, age under 60, past GDM**.",
+    "**Da Qing 30 years**: lifestyle reduced CV events and mortality - prevention saves lives, not just glucose.",
+  ],
+  mcqs: [
+    {
+      id: "endocrine-prediabetes-prevention-q1",
+      stem: "In the Indian Diabetes Prevention Programme (IDPP-1) in people with impaired glucose tolerance, what was the approximate relative risk reduction in incident diabetes with lifestyle modification over 3 years?",
+      options: ["58%", "28.5%", "72%", "10%"],
+      answer: 1,
+      explanation:
+        "IDPP-1 showed relative risk reductions of 28.5% with lifestyle, 26.4% with metformin 250 mg twice daily and 28.2% with both, against a 3-year control incidence of 55%. The 58% figure is from the American DPP and the Finnish DPS; 72% is pioglitazone in ACT NOW; 10% understates the Indian result.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-prediabetes-prevention-q2",
+      stem: "A 42-year-old man has fasting glucose 96 mg/dL and HbA1c 5.6%, but his waist is 98 cm and both parents have diabetes. Which test is most likely to reveal his dysglycaemia?",
+      options: [
+        "Repeat fasting glucose next week",
+        "Random capillary glucose",
+        "75 g oral glucose tolerance test",
+        "Fasting insulin level",
+      ],
+      answer: 2,
+      explanation:
+        "Asian Indians frequently have isolated impaired glucose tolerance with normal fasting glucose and HbA1c, so the 75 g OGTT is the most sensitive test in a high-risk person. Repeating the fasting glucose will miss post-load hyperglycaemia, a random capillary value is only a screening tool, and fasting insulin is not a diagnostic criterion.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-prediabetes-prevention-q3",
+      stem: "According to ADA 2026, in which person with prediabetes is metformin for prevention most strongly supported?",
+      options: [
+        "A 72-year-old man with BMI 24 and HbA1c 5.8%",
+        "A 14-year-old with obesity and IGT",
+        "A 32-year-old woman with past gestational diabetes and BMI 36",
+        "A 50-year-old with isolated IFG of 102 mg/dL and BMI 22",
+      ],
+      answer: 2,
+      explanation:
+        "Metformin prevented diabetes best in DPP participants with BMI 35 or more, age under 60 and women with prior gestational diabetes (about 50% reduction in the GDM subgroup). Older, lean people with mild values gain little; metformin did not prevent progression in youth (RISE). Mild isolated IFG in a lean person is lower risk and lifestyle comes first.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-prediabetes-prevention-q4",
+      stem: "Which item is NOT part of the Indian Diabetes Risk Score (IDRS)?",
+      options: ["Age", "Waist circumference", "Body mass index", "Family history of diabetes"],
+      answer: 2,
+      explanation:
+        "IDRS uses four simple items: age, abdominal obesity measured by waist circumference, physical activity and family history, scored to a maximum of 100 with 60 or more meaning high risk. BMI is deliberately left out because waist captures the visceral adiposity that matters in Asian Indians and needs no weighing scale.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-prediabetes-prevention-q5",
+      stem: "Which long-term outcome was demonstrated by the 30-year follow-up of the Da Qing Diabetes Prevention Study?",
+      options: [
+        "Lifestyle intervention reduced cardiovascular events and all-cause mortality",
+        "Metformin reduced amputations by half",
+        "Vitamin D supplementation prevented diabetes",
+        "Lifestyle intervention had no lasting benefit once it stopped",
+      ],
+      answer: 0,
+      explanation:
+        "Six years of diet and exercise in Chinese adults with IGT delayed diabetes by about 4 years and, at 30 years, reduced cardiovascular events and all-cause mortality by about a quarter - a legacy effect. Da Qing did not test metformin; vitamin D failed to prevent diabetes in the D2d trial; the persistent benefit contradicts the claim of no lasting effect.",
+      difficulty: "hard",
+    },
+  ],
+  theory: [
+    {
+      id: "endocrine-prediabetes-prevention-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "core",
+      question:
+        "Define prediabetes. Discuss the screening, evidence base and strategies for the prevention of type 2 diabetes in India.",
+      openingLines: [
+        "Prediabetes is intermediate hyperglycaemia - IFG 100-125 mg/dL, IGT 140-199 mg/dL at 2 hours or HbA1c 5.7-6.4% (ADA 2026) - that progresses to diabetes at 5-10% a year and raises cardiovascular risk.",
+        "In India it affects 15.3% of adults (ICMR-INDIAB 2023), more than diabetes itself, making prevention a public-health priority.",
+      ],
+      answer: [
+        {
+          heading: "Definition and burden",
+          points: [
+            "ADA vs WHO (IFG 110-125) criteria; IEC HbA1c 6.0-6.4%; IDF 1-hour 155.",
+            "15.3% Indian adults; faster progression in Asian Indians; thin-fat phenotype.",
+          ],
+        },
+        {
+          heading: "Pathophysiology",
+          points: [
+            "IFG - hepatic insulin resistance; IGT - muscle insulin resistance; combined worst.",
+            "Beta-cell loss already about 50% at upper IGT.",
+          ],
+        },
+        {
+          heading: "Screening",
+          points: [
+            "NP-NCD: everyone 30 and over, CBAC plus random capillary glucose at Ayushman Arogya Mandir.",
+            "IDRS 60 or more - high risk; OGTT most sensitive in Indians.",
+            "ADA: from 35, earlier if BMI 23 or more with risk factors; post-GDM every 1-3 years.",
+          ],
+        },
+        {
+          heading: "Evidence",
+          points: [
+            "Da Qing, Finnish DPS, DPP (58%, 31%), IDPP-1 (28.5%, 26.4%), IDPP-3 SMS (36%), D-CLIP (32%).",
+            "Legacy: Da Qing 30-year CV and mortality benefit; DPPOS 27% and 18% at 15 years.",
+          ],
+        },
+        {
+          heading: "Strategies",
+          points: [
+            "Individual: 7% weight loss, 150 min/week activity, resistance training, ICMR-NIN 2024 diet, yoga, sleep, quit tobacco.",
+            "Drugs: metformin 500-850 mg BD for high risk; GLP-1 RA/tirzepatide for obesity; bariatric surgery.",
+            "Population: NP-NCD, 75/25 initiative, Fit India, Eat Right India, maternal nutrition.",
+          ],
+        },
+        {
+          heading: "Follow-up",
+          points: [
+            "Yearly glucose or HbA1c; BP, lipids, fatty liver; aim for prediabetes remission.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Flow chart: screening (CBAC/IDRS) - confirm (OGTT/HbA1c) - lifestyle - metformin - yearly review",
+        "Table of landmark prevention trials",
+      ],
+      markSplit: [
+        { part: "Definition, criteria and burden", marks: 2 },
+        { part: "Screening in India", marks: 2 },
+        { part: "Evidence from trials", marks: 2 },
+        { part: "Prevention strategies with doses", marks: 3 },
+        { part: "Follow-up", marks: 1 },
+      ],
+      keywords: ["prediabetes", "IDRS", "DPP", "IDPP", "NP-NCD", "metformin", "lifestyle"],
+    },
+    {
+      id: "endocrine-prediabetes-prevention-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "common",
+      question: "Indian Diabetes Risk Score (IDRS).",
+      openingLines: [
+        "IDRS is a simple, validated four-item score developed by the Madras Diabetes Research Foundation (Mohan, 2005) to identify Indians at high risk of undiagnosed diabetes without any blood test.",
+        "A score of 60 or more out of 100 indicates high risk and warrants glucose testing.",
+      ],
+      answer: [
+        {
+          heading: "Components and scoring",
+          points: [
+            "Age: under 35 = 0, 35-49 = 20, 50 or more = 30.",
+            "Waist: women under 80/men under 90 = 0; 80-89/90-99 = 10; 90 or more/100 or more = 20.",
+            "Physical activity: vigorous 0, moderate 10, mild 20, sedentary 30.",
+            "Family history: none 0, one parent 10, both 20.",
+          ],
+        },
+        {
+          heading: "Interpretation and use",
+          points: [
+            "Under 30 low, 30-50 moderate, 60 or more high risk.",
+            "Cheap, no lab; used in camps and primary care; CBAC under NP-NCD is a similar tool.",
+            "Limitations: does not replace glucose testing; validated in urban South India first.",
+          ],
+        },
+      ],
+      mustDraw: ["IDRS scoring table"],
+      markSplit: [
+        { part: "Definition and origin", marks: 1 },
+        { part: "Components with scores", marks: 2 },
+        { part: "Interpretation and uses", marks: 2 },
+      ],
+      keywords: ["IDRS", "MDRF", "waist circumference", "CBAC", "risk score"],
+    },
+  ],
+  references: [
+    "American Diabetes Association. Standards of Care in Diabetes - 2026, Sections 2 and 3: Diagnosis and Prevention or Delay of Diabetes",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Diabetes mellitus: diagnosis, classification and pathophysiology",
+    "Diabetes Prevention Program Research Group. Reduction in the incidence of type 2 diabetes with lifestyle intervention or metformin, N Engl J Med 2002",
+    "Ramachandran A et al. The Indian Diabetes Prevention Programme (IDPP-1), Diabetologia 2006; Ramachandran A et al. Mobile phone messaging (IDPP-3), Lancet Diabetes Endocrinol 2013",
+    "Mohan V et al. A simplified Indian Diabetes Risk Score for screening for undiagnosed diabetic subjects, J Assoc Physicians India 2005",
+    "Anjana RM et al. ICMR-INDIAB national cross-sectional study 17, Lancet Diabetes Endocrinol 2023",
+    "ICMR-NIN Dietary Guidelines for Indians, 2024; MoHFW Operational Guidelines, National Programme for Prevention and Control of Non-Communicable Diseases (NP-NCD), 2023",
+    "Gong Q et al. Morbidity and mortality after lifestyle intervention for people with IGT: 30-year results of the Da Qing study, Lancet Diabetes Endocrinol 2019",
+  ],
+});
+
 export default topics;

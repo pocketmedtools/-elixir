@@ -1509,4 +1509,505 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "endocrine-puberty-disorders",
+  title: "Precocious and delayed puberty",
+  frequency: "less-common",
+  oneLiner:
+    "**Precocious puberty** is the onset of secondary sexual characteristics **before 8 years in girls (breast budding) or 9 years in boys (testicular volume 4 mL or more)** - **central (GnRH-dependent, pubertal LH, treated with GnRH agonists)** or **peripheral (GnRH-independent, suppressed LH)**; **delayed puberty** is **no breast development by 13 years in girls or testes under 4 mL by 14 years in boys**, most often **constitutional delay**, which must be separated from **hypogonadotropic (e.g. Kallmann) or hypergonadotropic (Turner, Klinefelter) hypogonadism**.",
+  keywords: [
+    "precocious puberty",
+    "central precocious puberty",
+    "peripheral precocious puberty",
+    "GnRH-dependent",
+    "delayed puberty",
+    "constitutional delay of growth and puberty",
+    "CDGP",
+    "Tanner staging",
+    "sexual maturity rating",
+    "bone age",
+    "GnRH agonist",
+    "leuprolide",
+    "triptorelin",
+    "McCune-Albright syndrome",
+    "Kallmann syndrome",
+    "congenital hypogonadotropic hypogonadism",
+    "Turner syndrome",
+    "premature thelarche",
+    "premature adrenarche",
+    "orchidometer",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**Puberty** begins with reactivation of **pulsatile hypothalamic GnRH secretion**; the first sign is **breast budding (thelarche, B2) in girls** at a mean of about 10-11 years and **testicular volume of 4 mL (G2) in boys** at a mean of about 11.5-12 years. [Harrison 22e]",
+        "**Precocious puberty**: onset **before 8 years in girls** and **before 9 years in boys** (2-2.5 SD below the mean); menarche before 9-10 years is also precocious. [GnRHa Consortium 2019]",
+        "**Delayed puberty**: **no breast development by 13 years** in girls or **testicular volume under 4 mL by 14 years** in boys; also **primary amenorrhoea at 15** or no menarche 3 years after thelarche, and **arrested puberty** (no progress for over 2 years). [Harrison 22e]",
+        "**Central precocious puberty (CPP)** is **about 10 times commoner in girls**, and in girls **about 90% is idiopathic**; in boys a pathological (often CNS) cause is found in a large minority, so boys need fuller evaluation. [GnRHa Consortium 2019]",
+        "**Constitutional delay of growth and puberty (CDGP)** is the commonest cause of delayed puberty - about **60-65% of boys** and about 30% of girls with delay; there is usually a **family history of late bloomers**. [Harrison 22e]",
+        "**Secular trend**: age at thelarche has fallen in many populations, including Indian urban girls, linked to childhood obesity; **menarche in Indian girls** averages about 12-13 years. Clinics worldwide, including India, reported a **rise in CPP referrals during the COVID-19 lockdowns**. [Indian paediatric endocrine series]",
+      ],
+    },
+    {
+      heading: "Aetiology and risk factors",
+      points: [
+        "**CPP - idiopathic**: most girls; **genetic** causes include loss-of-function **MKRN3** (paternally inherited, the commonest familial cause) and **DLK1**, and rare gain-of-function **KISS1/KISS1R**. [Harrison 22e]",
+        "**CPP - organic CNS**: **hypothalamic hamartoma** (commonest lesion, may cause gelastic seizures), gliomas (optic glioma in **NF1**), hydrocephalus, cranial irradiation, head injury, **post-meningitic, including tuberculous meningitis** in India, and arachnoid cysts. [Harrison 22e]",
+        "**Secondary CPP**: prolonged exposure to sex steroids (late-treated **CAH**, McCune-Albright) matures the hypothalamus and switches on central puberty. [Harrison 22e]",
+        "**Peripheral precocious puberty (PPP) - girls**: **functional ovarian cysts**, **McCune-Albright syndrome** (GNAS mutation), granulosa cell tumour, **exogenous oestrogen** (creams, contaminated food, lavender/tea-tree oils), and severe **primary hypothyroidism** (Van Wyk-Grumbach syndrome). [Harrison 22e]",
+        "**PPP - boys**: **congenital adrenal hyperplasia** (21-hydroxylase - see the CAH topic), adrenal or **Leydig cell tumour**, **hCG-secreting tumours** (hepatoblastoma, intracranial or mediastinal germ cell tumour), **familial male-limited precocious puberty (testotoxicosis, activating LHCGR)**, and exposure to a parent's **testosterone gel**. [Harrison 22e]",
+        "**Delayed puberty - functional hypogonadotropic**: **chronic illness** (coeliac disease, IBD, CKD, thalassaemia, TB, poorly controlled type 1 diabetes, HIV), **undernutrition**, anorexia, excessive exercise, hypothyroidism, hyperprolactinaemia and steroids. [Harrison 22e]",
+        "**Delayed puberty - permanent hypogonadotropic**: **congenital hypogonadotropic hypogonadism (CHH)** - **Kallmann syndrome** when anosmic (ANOS1, FGFR1, PROKR2, CHD7 in CHARGE); **craniopharyngioma** and other sellar tumours; cranial irradiation; transfusional iron overload in thalassaemia. [ESPE CHH Consensus 2015]",
+        "**Delayed puberty - hypergonadotropic**: **Turner syndrome (45,X and variants)** in girls, **Klinefelter** in boys (usually starts but stalls), gonadal damage from **chemotherapy or radiotherapy**, bilateral torsion or anorchia, galactosaemia, autoimmune ovarian failure. [Turner Guideline 2024]",
+      ],
+    },
+    {
+      heading: "Pathophysiology",
+      points: [
+        "The hypothalamic **GnRH pulse generator** is active in fetal life and **'mini-puberty'** (first 3-6 months after birth), then restrained through childhood by **inhibitory signals (MKRN3, GABA)** and released at puberty by **kisspeptin, neurokinin B** and nutritional signals such as **leptin**. [Harrison 22e]",
+        "**Pubertal GnRH pulses** begin at night, raise **LH more than FSH**, and drive gonadal sex steroids - so a **pubertal (raised) LH** separates **central** from **peripheral** puberty, where LH is suppressed by feedback. [Harrison 22e]",
+        "**Oestrogen** causes breast development, the growth spurt and **epiphyseal fusion** in both sexes (testosterone acts on the plate after aromatisation) - early puberty gives a tall child but a **short adult** because bone age advances faster than height. [Harrison 22e]",
+        "**Adrenarche** (adrenal androgen rise, DHEAS) is independent of gonadarche and causes pubic and axillary hair, body odour and acne - so pubic hair alone does not mean true puberty. [Harrison 22e]",
+        "**GnRH agonists** work by **continuous receptor stimulation** - after an initial flare, pituitary GnRH receptors downregulate and LH and FSH fall; they treat only GnRH-dependent (central) puberty. [GnRHa Consortium 2019]",
+        "**Kallmann syndrome**: GnRH neurons fail to migrate from the olfactory placode with olfactory axons during fetal life, explaining the combination of **anosmia and hypogonadotropic hypogonadism**. [Harrison 22e]",
+        "**McCune-Albright**: post-zygotic activating **GNAS** mutation makes Gs-alpha constitutively active - autonomous ovarian (or testicular), thyroid, adrenal and GH hypersecretion with **cafe-au-lait macules (coast of Maine)** and **polyostotic fibrous dysplasia**. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Classification and Tanner staging",
+      points: [
+        "**Tanner (sexual maturity rating) - girls breast**: **B1** prepubertal; **B2** breast bud with areolar enlargement; **B3** breast and areola enlarge without contour separation; **B4** areola and papilla form a **secondary mound**; **B5** adult contour with recession of the areola. [Tanner 1969]",
+        "**Tanner - boys genital**: **G1** prepubertal, testes under 4 mL; **G2** testes **4 mL or more**, scrotal reddening and thinning; **G3** penile lengthening; **G4** penile breadth and glans development, scrotal darkening; **G5** adult; adult testes about **15-25 mL**. [Tanner 1969]",
+        "**Pubic hair (both sexes)**: **PH1** none; **PH2** sparse long hair at the base of penis or labia; **PH3** darker, coarser, curlier over pubis; **PH4** adult type but limited area; **PH5** adult with spread to medial thighs. [Tanner 1969]",
+        "**Sequence**: girls - thelarche, pubarche, **peak height velocity early (B2-B3)**, **menarche about 2-2.5 years after thelarche (at B4)**; boys - testicular enlargement, pubarche, **peak height velocity late (G4)**, voice break and facial hair. [Harrison 22e]",
+        "**Precocious puberty classification**: **central (GnRH-dependent)**, **peripheral (GnRH-independent)**, and **benign variants** - isolated premature thelarche, premature adrenarche and isolated premature menarche. [GnRHa Consortium 2019]",
+        "**Delayed puberty classification**: **CDGP**, **functional hypogonadotropic** (illness, nutrition), **permanent hypogonadotropic** (CHH, Kallmann, tumours), and **hypergonadotropic** (Turner, Klinefelter, gonadal failure). [Harrison 22e]",
+        "**Isosexual vs contrasexual**: virilisation of a girl or feminisation of a boy is **contrasexual** and always pathological (CAH or androgen tumour in girls; oestrogen tumour or aromatase excess in boys). [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Clinical features - history",
+      points: [
+        "**Precocious puberty**: age at first sign, **tempo of progression**, growth spurt (outgrowing clothes and shoes), vaginal bleeding, body odour, acne, and behavioural change. [GnRHa Consortium 2019]",
+        "**CNS clues**: headache, vomiting, visual disturbance, **gelastic (laughing) seizures** (hamartoma), polyuria (germinoma with diabetes insipidus), previous meningitis, head injury or cranial radiotherapy. [Harrison 22e]",
+        "**Exposure history**: parental **testosterone gel or oestrogen creams**, lavender or tea-tree oil products, contraceptive pills in the house, and unlabelled 'tonics'. [Harrison 22e]",
+        "**Delayed puberty**: family history of **late puberty in parents** (mother's menarche, father's growth spurt), **sense of smell**, chronic diarrhoea, weight loss, abdominal pain (coeliac, IBD), diet, exercise, eating behaviour, and previous chemotherapy or radiotherapy. [Harrison 22e]",
+        "**Neonatal clues to CHH**: **micropenis and cryptorchidism** in boys, previous surgery for undescended testes, cleft lip or palate, deafness, and **mirror movements (synkinesia)** in Kallmann. [ESPE CHH Consensus 2015]",
+        "**Psychosocial**: early puberty causes embarrassment, early menstruation hygiene problems and risk of abuse; late puberty causes bullying, low self-esteem and school avoidance - both deserve treatment for distress alone. [GnRHa Consortium 2019]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Accurate height, weight and BMI** plotted on **IAP 2015 growth charts** (5-18 years) with **parental target height** (mid-parental height plus 6.5 cm for boys, minus 6.5 cm for girls); **height velocity** over 4-6 months is the key dynamic sign. [IAP 2015]",
+        "**Tanner staging** of breast or genitals and pubic hair; **testicular volume by Prader orchidometer** - **4 mL or more = central puberty** in a boy; **small testes with virilisation = adrenal or exogenous androgen (peripheral)**. [Harrison 22e]",
+        "**Asymmetric testicular enlargement** suggests a **Leydig cell tumour**; bilateral modest enlargement with marked virilisation suggests testotoxicosis or hCG-secreting tumour. [Harrison 22e]",
+        "**Skin**: **cafe-au-lait macules** - smooth-edged 'coast of California' in **NF1**, irregular 'coast of Maine' in **McCune-Albright**; acne, oily skin, axillary hair. [Harrison 22e]",
+        "**Fundoscopy and visual fields** for papilloedema or a chiasmal lesion; **smell testing** (anosmia in Kallmann); neurological signs. [Harrison 22e]",
+        "**Turner stigmata**: short stature, **webbed neck, low posterior hairline, wide-spaced nipples, cubitus valgus, short 4th metacarpal**, lymphoedema history, and coarctation (absent femoral pulses). [Turner Guideline 2024]",
+        "**Body proportions**: **eunuchoid** (arm span exceeding height) suggests long-standing hypogonadism; **thyroid signs**, goitre, and signs of chronic illness (pallor, wasting, clubbing). [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Premature thelarche**: isolated breast development, usually **under 2-3 years**, non-progressive, **normal height velocity and bone age**, prepubertal LH - observe; a minority progress to CPP. [GnRHa Consortium 2019]",
+        "**Premature adrenarche**: pubic or axillary hair and body odour from **age 6-8 years**, **no breast or testicular development**, DHEAS raised for age, bone age slightly advanced - benign but linked to later PCOS and insulin resistance. [Harrison 22e]",
+        "**Non-classic CAH**: looks like premature adrenarche but with **rapid growth, clitoromegaly or markedly advanced bone age** - check **17-hydroxyprogesterone**. [Harrison 22e]",
+        "**Primary hypothyroidism (Van Wyk-Grumbach)**: breast development or menstrual bleeding with **delayed bone age and slow growth** - the only precocious puberty with retarded bone age; it reverses with levothyroxine. [Harrison 22e]",
+        "**CDGP vs CHH** (the hardest distinction): CDGP has **delayed bone age matching height age, normal growth for bone age, family history** and spontaneous start by about 18 years; CHH suggests itself with **anosmia, micropenis, cryptorchidism or very low inhibin B**. [ESPE CHH Consensus 2015]",
+        "**Turner syndrome** in any girl with **short stature and delayed puberty**, even without stigmata - only a karyotype excludes it. [Turner Guideline 2024]",
+        "**Obesity in girls (lipomastia)** mimics breast development - palpate for glandular tissue; **obesity in boys** buries a normal penis (concealed penis) and is mistaken for hypogonadism. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**Bone age** (X-ray of the left hand and wrist, Greulich-Pyle or TW3): **advanced over 1-2 years** in precocious puberty, **delayed** in CDGP, hypothyroidism and hypogonadism. [GnRHa Consortium 2019]",
+        "**Basal LH by an ultrasensitive assay (ICMA/ECLIA)**: **above about 0.3 IU/L** strongly suggests **central** puberty; a prepubertal LH does not exclude it in early stages. [GnRHa Consortium 2019]",
+        "**GnRH or GnRH-agonist stimulation test** (for example leuprolide 20 mcg/kg SC, LH at 30-60 minutes): **peak LH above about 5 IU/L** confirms central puberty; **LH:FSH ratio above about 0.66** supports it. [GnRHa Consortium 2019]",
+        "**Sex steroids and adrenal markers**: oestradiol, testosterone, **17-OHP** (CAH), **DHEAS** (adrenal tumour or adrenarche), **beta-hCG** in boys with PPP, **TSH and free T4**. [Harrison 22e]",
+        "**Pelvic ultrasound in girls**: **uterine length above about 3.5 cm**, a pear shape, endometrial echo and **ovarian volume above 2 mL** indicate oestrogen exposure; also shows ovarian cysts or tumours; **testicular ultrasound** in boys with asymmetric testes. [Harrison 22e]",
+        "**MRI brain (hypothalamic-pituitary)** in **all boys with CPP**, **girls with onset under 6 years**, and any child with neurological signs; it is debated in girls aged 6-8 years without features (yield under 5%). [GnRHa Consortium 2019]",
+        "**Delayed puberty screen**: **LH, FSH, testosterone or oestradiol**, **karyotype** if gonadotrophins are high or the girl is short, CBC, ESR, creatinine, LFT, **tTG-IgA** (coeliac), TSH, free T4, prolactin, IGF-1, and MRI for suspected CHH or a sellar tumour. [Harrison 22e]",
+        "**CDGP vs CHH tests**: **basal inhibin B** (very low in CHH boys - about 35 pg/mL or less), GnRH-agonist stimulated LH and smell testing; often only **time or a short course of sex steroids** separates them. [ESPE CHH Consensus 2015]",
+      ],
+    },
+    {
+      heading: "Management in OPD / primary care",
+      points: [
+        "**Benign variants** (premature thelarche, premature adrenarche): **reassure** and review height velocity and Tanner stage every **3-6 months**; refer if progression or growth acceleration appears. [GnRHa Consortium 2019]",
+        "**Indications for GnRH agonist in CPP**: **progressive puberty** (advancing Tanner stage and bone age over 3-6 months), **predicted adult height loss**, and **psychosocial distress** or developmental delay where early menarche will be hard to manage; height gain is greatest when treatment starts **before 6 years in girls**. [GnRHa Consortium 2019]",
+        "**Leuprolide acetate depot**: **3.75-7.5 mg IM every 4 weeks** (or 0.3 mg/kg), **11.25 or 22.5 mg IM every 3 months**, or **45 mg SC every 6 months**; **triptorelin 3.75 mg IM monthly, 11.25 mg 3-monthly or 22.5 mg 6-monthly**; **histrelin 50 mg implant yearly**. [GnRHa Consortium 2019]",
+        "**When to stop GnRH agonist**: individualised, usually around a **chronological age of about 11 years in girls and 12 years in boys** or bone age about 12-12.5 years; menarche typically follows **12-18 months after stopping**. [GnRHa Consortium 2019]",
+        "**CDGP in boys**: watchful waiting with reassurance, or a **'jump start' of testosterone enanthate 50-100 mg IM every 4 weeks for 3-6 months** (from about 14 years) - it improves self-esteem and does not compromise adult height; **letrozole** (off-label) is an alternative under specialist care. [Harrison 22e]",
+        "**CDGP or hypogonadism in girls**: **low-dose oestradiol** - transdermal **3.1-6.2 mcg/day** (a fraction of a 25 mcg patch) or **oral 17-beta-oestradiol about 5 mcg/kg/day** - increased every 6 months towards adult doses over 2-3 years; add a **progestogen** after about 2 years or when breakthrough bleeding occurs. [Turner Guideline 2024]",
+        "**Treat functional causes**: gluten-free diet in coeliac disease, nutrition and calorie repletion, control of IBD, CKD, thalassaemia (iron chelation) and diabetes - puberty often follows. [Harrison 22e]",
+        "**Peripheral precocious puberty** is treated by its cause: hydrocortisone for CAH, levothyroxine for hypothyroidism, removal of exogenous sex steroids or tumours; **aromatase inhibitors (letrozole) or tamoxifen** for McCune-Albright, and **bicalutamide plus anastrozole** for testotoxicosis. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Specialist, IPD and emergency care",
+      points: [
+        "**Admission is uncommon**; admit for **raised intracranial pressure**, visual loss or seizures from an intracranial lesion, **adrenal crisis in salt-wasting CAH**, or tumour surgery. [Harrison 22e]",
+        "**Hypothalamic hamartoma** with only CPP is treated medically with GnRH agonists; surgery or laser ablation is reserved for **intractable gelastic seizures**. [Harrison 22e]",
+        "**Craniopharyngioma and germinoma** need neurosurgery, oncology and lifelong pituitary replacement - check cortisol, thyroid and **AVP deficiency (diabetes insipidus)** before and after surgery. [Harrison 22e]",
+        "**Permanent hypogonadism in boys**: **testosterone enanthate 50 mg IM monthly**, increased by about 50 mg every 6-12 months to the **adult dose over 2-3 years**; **FSH priming followed by hCG** can induce testicular growth and later fertility in CHH. [ESPE CHH Consensus 2015]",
+        "**Fertility in adults with CHH**: men - **hCG plus FSH**; women - **gonadotrophins or pulsatile GnRH** for ovulation induction (see the Male hypogonadism topic). [ESPE CHH Consensus 2015]",
+        "**Turner syndrome**: **growth hormone** from early childhood for height, **oestrogen induction at 11-12 years**, cardiac (MRI/echo for bicuspid valve and coarctation), renal ultrasound, hearing and thyroid screening - multidisciplinary care. [Turner Guideline 2024]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Children with neurodevelopmental disability or prior CNS insult (hydrocephalus, cerebral palsy)** have higher rates of CPP - treatment eases menstrual hygiene and care burden. [GnRHa Consortium 2019]",
+        "**Childhood cancer survivors**: cranial radiotherapy causes CPP (low dose) or hypogonadotropic hypogonadism (high dose); alkylating chemotherapy and gonadal radiation cause hypergonadotropic failure - long-term follow-up. [Harrison 22e]",
+        "**Thalassaemia major** (common in India): delayed puberty from **pituitary iron overload** - optimise chelation and induce puberty with sex steroids. [Harrison 22e]",
+        "**Adopted children and migrants** (from low- to high-income settings) have a higher risk of early puberty after catch-up growth. [Harrison 22e]",
+        "**Girls with obesity**: earlier thelarche is common; distinguish lipomastia by palpation and use bone age and LH before diagnosing CPP. [Harrison 22e]",
+        "**Resource-limited setting**: Tanner staging, height velocity, bone age X-ray and basal LH/oestradiol are enough to refer; do not start GnRH agonists without confirming central puberty. [GnRHa Consortium 2019]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**Untreated progressive CPP**: **short adult height** (from early epiphyseal fusion), early menarche, psychosocial stress, and possibly higher later risk of metabolic disease and breast cancer. [GnRHa Consortium 2019]",
+        "**GnRH agonist adverse effects**: **withdrawal vaginal bleed after the first dose** (flare), injection-site reactions and **sterile abscess**, headache, hot flushes, mood change, and rarely **idiopathic intracranial hypertension** and slipped capital femoral epiphysis. [FDA 2022]",
+        "**Long-term outcomes after GnRH agonists**: reproductive function, **bone density** and BMI are normal in adulthood; treatment does **not** increase PCOS or obesity. [GnRHa Consortium 2019]",
+        "**CDGP**: puberty eventually completes spontaneously; **adult height is usually within the genetic range**, sometimes slightly below target. [Harrison 22e]",
+        "**Untreated hypogonadism**: **osteoporosis**, eunuchoid habitus, infertility and psychosocial harm - timely induction protects bone. [Harrison 22e]",
+        "**CHH reversal**: about **10-20%** of men with CHH recover reproductive function after stopping treatment - retest off therapy in adulthood. [ESPE CHH Consensus 2015]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and monitoring",
+      points: [
+        "**Refer to a paediatric endocrinologist**: any girl with breast development before 8 years or menarche before 9-10, any boy with pubertal signs before 9, contrasexual signs, and delayed puberty at 13 (girls) or 14 (boys). [GnRHa Consortium 2019]",
+        "**On GnRH agonist**: clinical review every **3-6 months** (Tanner stage, height velocity), **LH (basal or 30-60 minutes after the depot dose) to confirm suppression**, and **bone age every 6-12 months**. [GnRHa Consortium 2019]",
+        "**Signs of inadequate suppression**: progressing breasts or testes, continuing fast growth or bone age advance, or menses - shorten the interval or increase the dose. [GnRHa Consortium 2019]",
+        "**CDGP**: review every **6 months** - if no spontaneous progress after a testosterone or oestrogen course, investigate for permanent hypogonadism. [Harrison 22e]",
+        "**Puberty induction**: monitor height, Tanner stage, bone age, uterine size (girls) and haemoglobin and lipids (boys on testosterone). [Turner Guideline 2024]",
+      ],
+    },
+    {
+      heading: "Prevention, counselling and programme links",
+      points: [
+        "**Prevent childhood obesity** (diet, activity, screen time) - linked with earlier thelarche in girls. [IAP 2015]",
+        "**Store testosterone gels and oestrogen creams safely** and wash hands after applying; avoid unprescribed tonics. [Harrison 22e]",
+        "**RBSK** screens children for defects, deficiencies, diseases and developmental delays at Anganwadi and school level - early growth and pubertal concerns can be referred to **District Early Intervention Centres**. [RBSK, MoHFW]",
+        "**Rashtriya Kishor Swasthya Karyakram (RKSK)** adolescent-friendly health clinics provide counselling on puberty, menstruation and body image. [RKSK, MoHFW]",
+        "**Counselling for CPP**: explain menstrual hygiene, appropriate sex education for the child's developmental age, and protection from abuse. [GnRHa Consortium 2019]",
+        "**Newborn screening for CAH** (17-OHP, being expanded in some Indian states) prevents salt-wasting crisis and later peripheral precocity. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates",
+      points: [
+        "**International Consortium update on GnRH analogue use in children (2019)** remains the reference: basal ultrasensitive LH as the first test, long-acting 3- and 6-monthly depots acceptable, MRI for all boys and girls under 6. [GnRHa Consortium 2019]",
+        "**FDA 2022 safety labelling**: GnRH agonists used for CPP now carry a warning for **pseudotumour cerebri (idiopathic intracranial hypertension)** - ask about headache and visual symptoms and check fundi. [FDA 2022]",
+        "**Six-monthly depots** (leuprolide 45 mg SC and triptorelin 22.5 mg IM) are now standard options, cutting injection burden. [GnRHa Consortium 2019]",
+        "**International Turner syndrome guideline (2024)**: start **transdermal oestradiol at 11-12 years**, increase to adult dose over 2-3 years, karyotype for any girl with unexplained short stature or delayed puberty. [Turner Guideline 2024]",
+        "**European consensus on CHH and Kallmann** guides genetic testing, **FSH priming before hCG** in boys, and retesting for reversal. [ESPE CHH Consensus 2015]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Classic short note: **'Tanner staging'** - draw the B1-5, G1-5 and PH1-5 table, and give the onset ages (8 girls, 9 boys; delay at 13 and 14). [Exam pattern]",
+        "**Viva**: 'Precocious puberty with delayed bone age?' - **primary hypothyroidism (Van Wyk-Grumbach)**. [Harrison 22e]",
+        "**Viva**: 'Precocious puberty, cafe-au-lait macules and fractures?' - **McCune-Albright syndrome** (peripheral; GnRH agonists do not work initially). [Harrison 22e]",
+        "**Viva**: 'Delayed puberty with anosmia?' - **Kallmann syndrome**; 'short girl with delayed puberty?' - **Turner until karyotype says otherwise**. [Harrison 22e]",
+        "**Testicular volume rule in boys**: **enlarged testes = central** (or hCG/testotoxicosis); **prepubertal testes with virilisation = adrenal or exogenous androgen**. [Harrison 22e]",
+        "**Common mistakes**: calling isolated pubic hair 'precocious puberty' (it is usually adrenarche), starting GnRH agonists for peripheral puberty, and not doing MRI in a boy with CPP. [GnRHa Consortium 2019]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs for puberty disorders",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Leuprolide acetate depot (CPP)", "3.75-7.5 mg IM every 4 weeks; 11.25 or 22.5 mg IM every 3 months; 45 mg SC every 6 months", "Until about 11 years (girls) / 12 years (boys); check LH suppression", "Withdrawal bleed after first dose, sterile abscess, headache, IIH (rare)"],
+        ["Triptorelin (CPP)", "3.75 mg IM monthly, 11.25 mg 3-monthly or 22.5 mg 6-monthly", "As above", "As above"],
+        ["Histrelin implant (CPP)", "50 mg SC implant", "Replace every 12 months", "Implant breakage, local reactions"],
+        ["Testosterone enanthate (boys, CDGP)", "50-100 mg IM every 4 weeks", "3-6 months; may repeat once", "Acne, mood change; check bone age before"],
+        ["Testosterone enanthate (permanent hypogonadism)", "Start 50 mg IM monthly, raise 50 mg every 6-12 months", "Adult dose over 2-3 years", "Erythrocytosis, priapism (rare), early epiphyseal fusion if too fast"],
+        ["Oestradiol (girls)", "Transdermal 3.1-6.2 mcg/day or oral 17-beta-oestradiol about 5 mcg/kg/day", "Increase every 6 months to adult dose over 2-3 years; add progestogen after about 2 years", "Breast tenderness, nausea, VTE (rare); avoid ethinyl oestradiol"],
+        ["Letrozole (off-label; McCune-Albright, CDGP boys)", "2.5 mg oral daily", "Specialist-guided", "Vertebral changes, raised testosterone in boys"],
+        ["Bicalutamide plus anastrozole (testotoxicosis)", "Bicalutamide 50 mg plus anastrozole 1 mg oral daily", "Until central puberty takes over", "Gynaecomastia, liver enzyme rise"],
+      ],
+    },
+    {
+      heading: "Tanner staging",
+      columns: ["Stage", "Girls - breast", "Boys - genitalia", "Pubic hair (both)"],
+      rows: [
+        ["1", "Prepubertal, papilla elevation only", "Prepubertal; testes under 4 mL", "None (vellus only)"],
+        ["2", "Breast bud, areola enlarges", "Testes 4 mL or more, scrotal reddening and thinning", "Sparse long hair at base of penis or labia"],
+        ["3", "Breast and areola enlarge, single contour", "Penis lengthens; testes 8-12 mL", "Darker, coarser, curly over pubis"],
+        ["4", "Areola and papilla form secondary mound", "Penis broadens, glans develops, scrotum darkens; testes 12-15 mL", "Adult type, smaller area, not on thighs"],
+        ["5", "Adult contour, areola recedes", "Adult size; testes 15-25 mL", "Adult, spreads to medial thighs"],
+      ],
+    },
+    {
+      heading: "Central vs peripheral precocious puberty vs benign variants",
+      columns: ["Feature", "Central (GnRH-dependent)", "Peripheral (GnRH-independent)", "Premature thelarche / adrenarche"],
+      rows: [
+        ["Mechanism", "Early activation of GnRH pulse generator", "Autonomous gonadal/adrenal steroids or exogenous", "Isolated breast or adrenal androgen effect"],
+        ["Basal / stimulated LH", "Pubertal (basal over 0.3; peak over 5 IU/L)", "Suppressed", "Prepubertal"],
+        ["Testes (boys)", "Enlarged bilaterally", "Small (adrenal/exogenous); asymmetric (Leydig tumour)", "Prepubertal"],
+        ["Bone age", "Advanced", "Advanced (delayed in hypothyroidism)", "Normal or slightly advanced"],
+        ["Height velocity", "Accelerated", "Accelerated", "Normal"],
+        ["Consonance", "Normal sequence", "Often out of sequence or contrasexual", "Single feature only"],
+        ["Treatment", "GnRH agonist", "Treat cause; aromatase inhibitor or anti-androgen", "Observe"],
+      ],
+    },
+    {
+      heading: "Causes of delayed puberty and how to tell them apart",
+      columns: ["Category", "Examples", "LH / FSH", "Clues"],
+      rows: [
+        ["Constitutional delay (CDGP)", "Familial late bloomer", "Low (prepubertal)", "Family history, delayed bone age matching height age, healthy"],
+        ["Functional hypogonadotropic", "Coeliac, IBD, CKD, malnutrition, anorexia, hypothyroidism, thalassaemia", "Low", "Weight loss, chronic illness, abnormal screening tests"],
+        ["Permanent hypogonadotropic", "Kallmann/CHH, craniopharyngioma, irradiation", "Low", "Anosmia, micropenis, cryptorchidism, headache, visual loss, low inhibin B"],
+        ["Hypergonadotropic - girls", "Turner, chemotherapy, autoimmune ovarian failure, galactosaemia", "High", "Short stature, Turner stigmata, karyotype 45,X"],
+        ["Hypergonadotropic - boys", "Klinefelter, anorchia, chemotherapy, orchitis", "High", "Small firm testes, karyotype 47,XXY"],
+      ],
+    },
+    {
+      heading: "Investigations and cut-offs",
+      columns: ["Test", "Cut-off / finding", "Use"],
+      rows: [
+        ["Bone age (left hand-wrist)", "Advanced over 1-2 years vs delayed", "Precocious vs delayed; growth prediction"],
+        ["Basal LH (ultrasensitive)", "Above about 0.3 IU/L", "Suggests central puberty"],
+        ["GnRH/GnRH-agonist stimulation", "Peak LH above about 5 IU/L", "Confirms central puberty"],
+        ["Pelvic ultrasound", "Uterus above about 3.5 cm, ovarian volume above 2 mL", "Oestrogen exposure; cysts and tumours"],
+        ["17-OHP, DHEAS, hCG", "Raised for age", "CAH, adrenal tumour, hCG-secreting tumour"],
+        ["TSH, free T4", "High TSH, low FT4", "Van Wyk-Grumbach; delayed puberty screen"],
+        ["Karyotype", "45,X or 47,XXY", "High gonadotrophins; short girl with delay"],
+        ["Inhibin B (boys)", "About 35 pg/mL or less", "Suggests CHH rather than CDGP"],
+        ["MRI hypothalamic-pituitary", "Hamartoma, glioma, tumour, absent olfactory bulbs", "All boys with CPP, girls under 6, CHH, neurological signs"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Pubertal signs in a boy before 9 years (high chance of CNS or tumour cause)",
+    "Breast development or vaginal bleeding in a girl under 6 years, or rapid progression at any age",
+    "Headache, vomiting, visual loss, polyuria or gelastic seizures with abnormal puberty (intracranial lesion)",
+    "Contrasexual signs - virilisation in a girl or feminisation in a boy (CAH or tumour)",
+    "Asymmetric testicular enlargement or an abdominal mass (Leydig or adrenal tumour)",
+    "Delayed puberty with short stature in a girl (Turner) or with anosmia, micropenis or cryptorchidism in a boy (CHH)",
+    "Delayed puberty with weight loss, diarrhoea or poor growth (chronic disease such as coeliac or IBD)",
+  ],
+  pearls: [
+    "**8 for girls, 9 for boys** = precocious; **13 for girls, 14 for boys** = delayed.",
+    "**First sign**: breast bud in girls, **testes 4 mL** in boys - not pubic hair.",
+    "**Pubertal LH = central; suppressed LH = peripheral** - GnRH agonists treat only central.",
+    "**Precocious puberty with delayed bone age = hypothyroidism (Van Wyk-Grumbach).**",
+    "**Every boy with CPP gets an MRI brain.**",
+    "**Big testes = central; small testes with virilisation = adrenal or exogenous androgen.**",
+    "**Short girl with delayed puberty = karyotype for Turner.**",
+    "**Kallmann = hypogonadotropic hypogonadism + anosmia** (failed GnRH neuron migration).",
+    "**CDGP**: family history, delayed bone age, normal growth for bone age - reassure or short testosterone course.",
+  ],
+  mcqs: [
+    {
+      id: "endocrine-puberty-disorders-q1",
+      stem: "A 6.5-year-old girl has Tanner B3 breasts, pubic hair and height velocity of 9 cm/year. Bone age is 9 years. Ultrasensitive basal LH is 1.2 IU/L. The most appropriate treatment after confirming the diagnosis is:",
+      options: [
+        "Letrozole 2.5 mg daily",
+        "Medroxyprogesterone injections",
+        "Leuprolide depot 11.25 mg IM every 3 months",
+        "Observation with review in 1 year",
+      ],
+      answer: 2,
+      explanation:
+        "Progressive breast development, rapid growth, advanced bone age and a pubertal basal LH above 0.3 IU/L indicate central precocious puberty; a GnRH agonist such as 3-monthly leuprolide depot suppresses the axis and preserves adult height. Letrozole is used for peripheral causes such as McCune-Albright, medroxyprogesterone does not protect height, and observing a rapidly progressive case loses growth potential.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-puberty-disorders-q2",
+      stem: "A 7-year-old boy has pubic hair, penile enlargement and rapid growth. Both testes measure 2 mL. Bone age is 11 years. Which test is most likely to be diagnostic?",
+      options: [
+        "Serum 17-hydroxyprogesterone",
+        "GnRH stimulation test",
+        "MRI of the pituitary",
+        "Testicular biopsy",
+      ],
+      answer: 0,
+      explanation:
+        "Virilisation with prepubertal (2 mL) testes means the androgens are not coming from gonadotrophin-driven testes, so this is peripheral precocious puberty, most commonly from non-classic or simple virilising 21-hydroxylase CAH, diagnosed by a raised 17-OHP. A GnRH test and pituitary MRI investigate central puberty, where both testes would be enlarged, and biopsy has no role.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-puberty-disorders-q3",
+      stem: "A 15-year-old boy has testes of 3 mL and no pubic hair. He has never been able to smell coffee and had orchidopexy for an undescended testis. LH and FSH are low. The most likely diagnosis is:",
+      options: [
+        "Klinefelter syndrome",
+        "Kallmann syndrome",
+        "Constitutional delay of growth and puberty",
+        "Primary hypothyroidism",
+      ],
+      answer: 1,
+      explanation:
+        "Absent puberty with low gonadotrophins and anosmia is Kallmann syndrome, in which GnRH neurons fail to migrate with olfactory neurons; cryptorchidism further supports congenital hypogonadotropic hypogonadism. Klinefelter gives high LH and FSH and usually starts puberty; constitutional delay has a normal sense of smell and often a family history; hypothyroidism would show other features and abnormal thyroid tests.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-puberty-disorders-q4",
+      stem: "A 7-year-old girl has breast development and occasional vaginal bleeding. She is short, has gained weight and her bone age is 5 years. Which investigation will most likely explain the findings?",
+      options: [
+        "Pelvic ultrasound for ovarian tumour",
+        "MRI brain for hypothalamic hamartoma",
+        "Serum DHEAS",
+        "Serum TSH and free T4",
+      ],
+      answer: 3,
+      explanation:
+        "Precocious puberty with delayed bone age, slow growth and weight gain is the hallmark of severe primary hypothyroidism (Van Wyk-Grumbach syndrome), where very high TSH acts on FSH receptors and stimulates the ovaries; TSH and free T4 make the diagnosis, and levothyroxine reverses it. Ovarian tumours, hamartomas and adrenal causes all advance rather than delay bone age.",
+      difficulty: "hard",
+    },
+    {
+      id: "endocrine-puberty-disorders-q5",
+      stem: "A healthy 14.5-year-old boy is the shortest in his class with testes of 3 mL. His father had his growth spurt at 17. Height velocity is normal for bone age, which is 12 years. Smell is normal, and blood tests are normal. The best management is:",
+      options: [
+        "Pituitary MRI and GH stimulation test",
+        "Lifelong testosterone undecanoate",
+        "Reassurance, or a short course of testosterone enanthate 50-100 mg IM monthly for 3-6 months",
+        "Karyotype and hCG stimulation test",
+      ],
+      answer: 2,
+      explanation:
+        "A healthy boy with a family history of late puberty, delayed bone age matching his height and normal smell and screening tests has constitutional delay of growth and puberty. Management is reassurance or, for distress, a short 'jump start' of low-dose testosterone, which does not harm adult height. MRI and GH testing, lifelong testosterone and karyotype are for permanent or hypergonadotropic causes not suggested here.",
+      difficulty: "easy",
+    },
+  ],
+  theory: [
+    {
+      id: "endocrine-puberty-disorders-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "less-common",
+      question:
+        "Define precocious puberty. Classify its causes. Describe the evaluation and management of central precocious puberty.",
+      openingLines: [
+        "Precocious puberty is the onset of secondary sexual characteristics before 8 years in girls or 9 years in boys.",
+        "It is central (GnRH-dependent, pubertal LH) or peripheral (GnRH-independent, suppressed LH), and must be separated from benign variants such as premature thelarche and adrenarche.",
+      ],
+      answer: [
+        {
+          heading: "Physiology and Tanner staging",
+          points: [
+            "Kisspeptin-driven GnRH pulses raise LH and FSH; first sign is thelarche (B2) or testes 4 mL (G2).",
+            "Tanner staging of breast, genitals and pubic hair.",
+          ],
+        },
+        {
+          heading: "Classification",
+          points: [
+            "**Central**: idiopathic (most girls), MKRN3, hypothalamic hamartoma, tumours, hydrocephalus, post-meningitis, irradiation, secondary to CAH.",
+            "**Peripheral**: ovarian cyst, McCune-Albright, granulosa tumour, CAH, Leydig tumour, hCG tumour, testotoxicosis, exogenous steroids, hypothyroidism.",
+            "**Benign variants**: premature thelarche, adrenarche, isolated menarche.",
+          ],
+        },
+        {
+          heading: "Evaluation",
+          points: [
+            "History: age of onset, tempo, CNS symptoms, exposures, family history.",
+            "Examination: height velocity, Tanner stage, testicular volume, cafe-au-lait spots, fundi, neurological signs.",
+            "**Bone age**, **basal ultrasensitive LH (over 0.3 IU/L)**, GnRH stimulation (**peak LH over 5**), oestradiol/testosterone, TSH, 17-OHP, hCG.",
+            "Pelvic ultrasound; **MRI brain for all boys and girls under 6**.",
+          ],
+        },
+        {
+          heading: "Management of CPP",
+          points: [
+            "Indications: progressive puberty, height loss, psychosocial distress.",
+            "**Leuprolide 3.75-7.5 mg IM monthly or 11.25 mg 3-monthly**, triptorelin 3.75/11.25/22.5 mg, histrelin implant.",
+            "Treat cause: hamartoma, tumours.",
+            "Monitor every 3-6 months: Tanner, growth, LH suppression; bone age yearly; stop at about 11 years (girls), 12 (boys).",
+          ],
+        },
+        {
+          heading: "Prognosis",
+          points: [
+            "Treatment preserves adult height when started early; adult fertility and bone density are normal.",
+            "Adverse effects: withdrawal bleed, sterile abscess, IIH (FDA 2022).",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Hypothalamic-pituitary-gonadal axis showing site of central vs peripheral puberty",
+        "Flow chart: early puberty - bone age and LH - central vs peripheral vs benign variant",
+      ],
+      markSplit: [
+        { part: "Definition and classification", marks: 3 },
+        { part: "Evaluation", marks: 3 },
+        { part: "Management and monitoring", marks: 3 },
+        { part: "Prognosis", marks: 1 },
+      ],
+      keywords: ["precocious puberty", "GnRH agonist", "bone age", "LH", "hamartoma", "McCune-Albright", "Tanner"],
+    },
+    {
+      id: "endocrine-puberty-disorders-t2",
+      paper: "I",
+      kind: "chart-flow",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Draw a flow chart for the evaluation of delayed puberty in a boy.",
+      openingLines: [
+        "Delayed puberty in a boy is testicular volume under 4 mL at 14 years.",
+        "Constitutional delay is commonest, but chronic illness, hypogonadotropic and hypergonadotropic hypogonadism must be excluded.",
+      ],
+      answer: [
+        {
+          heading: "Step 1 - clinical",
+          points: [
+            "Height, velocity, target height, Tanner stage, testicular volume, smell, micropenis, cryptorchidism, chronic illness signs.",
+          ],
+        },
+        {
+          heading: "Step 2 - first tests",
+          points: [
+            "Bone age, LH, FSH, testosterone, CBC, ESR, creatinine, LFT, tTG-IgA, TSH, prolactin.",
+          ],
+        },
+        {
+          heading: "Step 3 - branch on LH/FSH",
+          points: [
+            "**High**: primary - karyotype (Klinefelter), history of chemotherapy or orchitis.",
+            "**Low with abnormal screen**: functional - treat illness.",
+            "**Low with normal screen**: CDGP vs CHH - family history, inhibin B, smell; MRI if CHH suspected.",
+          ],
+        },
+        {
+          heading: "Step 4 - treat",
+          points: [
+            "CDGP: reassure or testosterone 50-100 mg IM monthly for 3-6 months.",
+            "Permanent hypogonadism: escalating testosterone over 2-3 years, or hCG plus FSH for fertility.",
+          ],
+        },
+      ],
+      mustDraw: ["Flow chart branching on LH/FSH into hypergonadotropic, functional, CDGP and CHH"],
+      markSplit: [
+        { part: "Definition and clinical step", marks: 1 },
+        { part: "Investigations", marks: 2 },
+        { part: "Branching and treatment", marks: 2 },
+      ],
+      keywords: ["delayed puberty", "CDGP", "Kallmann", "Klinefelter", "inhibin B", "testosterone"],
+    },
+  ],
+  references: [
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - Disorders of Puberty; Disorders of the Testes and Female Reproductive System",
+    "Bangalore Krishna K et al. Use of Gonadotropin-Releasing Hormone Analogs in Children: Update by an International Consortium, Horm Res Paediatr 2019",
+    "Boehm U et al. Expert consensus document: European Consensus Statement on congenital hypogonadotropic hypogonadism, Nat Rev Endocrinol 2015",
+    "Clinical Practice Guidelines for the Care of Girls and Women with Turner Syndrome (International Turner Syndrome Consensus Group), Eur J Endocrinol 2024",
+    "US FDA Drug Safety Labeling Change: GnRH agonists for central precocious puberty - pseudotumor cerebri warning, 2022",
+    "Indian Academy of Pediatrics revised growth charts for height, weight and BMI for 5-18 year old Indian children, Indian Pediatrics 2015",
+    "Tanner JM. Growth at Adolescence, and Marshall WA, Tanner JM. Variations in the pattern of pubertal changes, Arch Dis Child 1969-1970",
+  ],
+});
+
 export default topics;

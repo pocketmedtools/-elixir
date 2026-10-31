@@ -641,4 +641,209 @@ revision["endocrine-glucocorticoid-therapy"] = {
   },
 };
 
+revision["endocrine-dynamic-endocrine-tests"] = {
+  checked: "2026-10",
+  updated: [
+    "ESE/ES 2024: assay-specific short Synacthen cut-offs (about 420-450 nmol/L with newer assays) and morning cortisol thresholds.",
+    "ESE/ENSAT 2023 adrenal incidentaloma: mild autonomous cortisol secretion (MACS) when 1 mg DST cortisol is over 50 nmol/L.",
+    "2022 nomenclature: AVP deficiency and AVP resistance replace central and nephrogenic diabetes insipidus.",
+    "Copeptin-based tests (hypertonic saline 2018, arginine 2023) preferred over classic water deprivation where available.",
+    "Endocrine Society 2025 primary aldosteronism: screen all hypertensives; confirmatory test may be skipped when biochemistry is unequivocal.",
+    "AACE 2019 GH deficiency: BMI-adjusted glucagon stimulation test cut-offs.",
+  ],
+  master: {
+    heading: "Master revision table - Dynamic endocrine function tests",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Principle", "**Low - stimulate; high - suppress**; biochemistry before imaging."],
+      ["Morning cortisol", "Under **100 nmol/L** suggests AI; over about 450 excludes; between - SST."],
+      ["Short Synacthen", "**250 microgram** IV/IM; cortisol 0, 30, 60 min; peak 500 classic, about 420-450 newer assays."],
+      ["SST pitfall", "Falsely normal **within 4-6 weeks** of pituitary insult; oral oestrogen raises CBG."],
+      ["ITT", "Insulin **0.1-0.15 U/kg IV**; glucose under 40 mg/dL; cortisol about 500, GH under 3 microgram/L = GHD."],
+      ["1 mg DST", "11 pm dose, 8 am cortisol **under 50 nmol/L** normal; over 50 in incidentaloma = MACS."],
+      ["LDDST / HDDST", "0.5 mg 6-hourly 48 h (under 50 normal); 2 mg 6-hourly - **over 50% suppression** favours Cushing disease."],
+      ["OGTT-GH", "75 g glucose; GH nadir **not below 1 microgram/L** = acromegaly."],
+      ["Glucagon test", "1 mg IM; GH peak 3 or less (BMI under 25), **1 or less** if BMI over 30 = GHD."],
+      ["Water deprivation", "Stop at **3% weight loss** or sodium 150; desmopressin 2 microgram; under 300 then over 50% rise = AVP deficiency."],
+      ["Copeptin", "Hypertonic saline: **over 4.9 pmol/L** = primary polydipsia; baseline over 21.4 = AVP resistance."],
+      ["Saline infusion", "2 L over 4 h; aldosterone **over 10 ng/dL** (6 seated) confirms PA; under 5 unlikely."],
+      ["Other tests", "Clomiphene 100 mg 7 days; TRH 200 microgram; GnRH-agonist LH over 5; 72-hour fast."],
+      ["Pitfalls", "Oestrogen, enzyme inducers, spironolactone, beta-blockers, biotin, hypokalaemia, CBG changes."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Suspected adrenal insufficiency: testing pathway",
+      steps: [
+        { label: "Unwell, vomiting or hypotensive?", detail: "Take cortisol and ACTH, then treat at once", tone: "warn" },
+        { label: "Stable: 8-9 am cortisol with ACTH", detail: "Withhold hydrocortisone 12-24 h; stop oral oestrogen if possible" },
+        { label: "Cortisol under 100 nmol/L", detail: "AI very likely - replace and confirm", tone: "decision" },
+        { label: "Cortisol 100-450 nmol/L", detail: "Short Synacthen test 250 microgram" },
+        { label: "Peak below assay cut-off (about 420-500)", detail: "AI confirmed; ACTH decides primary or secondary", tone: "warn" },
+        { label: "Peak above cut-off", detail: "AI excluded unless pituitary insult under 6 weeks", tone: "good" },
+      ],
+    },
+    {
+      kind: "flow",
+      heading: "Suspected Cushing syndrome: dynamic testing",
+      steps: [
+        { label: "Exclude exogenous steroid use", detail: "Oral, injected, inhaled, topical, traditional remedies", tone: "warn" },
+        { label: "Screen with two tests", detail: "1 mg DST, late-night salivary cortisol, 24-h UFC" },
+        { label: "Abnormal results?", detail: "DST cortisol over 50 nmol/L; check for oestrogen and enzyme inducers", tone: "decision" },
+        { label: "Confirm with LDDST if unclear", detail: "0.5 mg 6-hourly for 48 h" },
+        { label: "Measure ACTH", detail: "Under 10 pg/mL adrenal - CT; over 20 pg/mL - pituitary MRI" },
+        { label: "Localise ACTH source", detail: "CRH/desmopressin test, IPSS if MRI negative", tone: "good" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Stimulation vs suppression tests",
+      columns: ["Feature", "Stimulation tests", "Suppression tests"],
+      rows: [
+        ["Used when", "Deficiency suspected", "Excess suspected"],
+        ["Examples", "SST, ITT, glucagon, water deprivation, clomiphene, TRH", "DST, OGTT-GH, saline infusion, captopril"],
+        ["Abnormal result", "Failure to rise", "Failure to fall"],
+        ["Main risks", "Hypoglycaemia, dehydration", "Volume overload, false positives"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Dynamic tests check an axis by its **response to a stimulus** or suppressant.",
+          "**Low - stimulate; high - suppress**.",
+          "Do **biochemistry first**, imaging last.",
+          "Primary aldosteronism affects **5-10% of hypertensives** - the commonest reason to test.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "Dexamethasone suppresses ACTH but is **not measured** in cortisol assays.",
+          "Atrophied adrenals cannot respond to **Synacthen**; atrophy takes 4-6 weeks.",
+          "**Hypoglycaemia** stresses the hypothalamus, releasing ACTH and GH.",
+          "Glucose suppresses GH through **somatostatin**; adenomas do not suppress.",
+          "**Copeptin** is released one-to-one with AVP and is stable.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "**Stimulation**: SST, ITT, glucagon, clonidine, water deprivation, copeptin, clomiphene, TRH.",
+          "**Suppression**: dexamethasone tests, OGTT-GH, saline infusion, salt loading, captopril.",
+          "**Provocation**: 72-hour fast, calcium-calcitonin, mixed-meal test.",
+          "**Localisation**: IPSS and adrenal venous sampling in tertiary centres.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "**SST**: tetracosactide 250 microgram; cortisol at 0, 30, 60 minutes.",
+          "SST peak **500 nmol/L** classic; about 420-450 with newer assays.",
+          "**1 mg DST**: 8 am cortisol under 50 nmol/L is normal.",
+          "**OGTT-GH**: nadir under 1 microgram/L excludes acromegaly.",
+          "**ITT**: glucose under 40 mg/dL; GH under 3 microgram/L means GHD.",
+          "**Saline infusion**: aldosterone over 10 ng/dL confirms primary aldosteronism.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "Preparation: stop **oral oestrogen** 6 weeks before cortisol tests if possible.",
+          "Withhold **hydrocortisone 12-24 hours**; cover with dexamethasone if needed.",
+          "Stop **spironolactone 4-6 weeks** and correct potassium before aldosterone tests.",
+          "Stop **biotin 2-3 days** before immunoassays.",
+          "Insert the cannula **30 minutes** before baseline sampling.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "Water deprivation: stop at **3% weight loss** or sodium over 150.",
+          "Then **desmopressin 2 microgram**; under 300 then over 50% rise means AVP deficiency.",
+          "Hypertonic saline copeptin **over 4.9 pmol/L** means primary polydipsia.",
+          "Baseline copeptin **over 21.4 pmol/L** means AVP resistance.",
+          "Glucagon test cut-off: **1 microgram/L** if BMI over 30.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "Pregnancy: use **24-hour urine cortisol**; avoid ITT and deprivation.",
+          "Critical illness: random cortisol under **275 nmol/L** suggests insufficiency.",
+          "Children: two failed GH tests, **sex-steroid priming**; avoid ITT in the young.",
+          "India: **8 am cortisol, 1 mg DST and OGTT** are cheap and widely available.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "**ITT** contraindicated in IHD, epilepsy, elderly, cortisol under 100.",
+          "Severe neuroglycopenia: **IV dextrose**, keep sampling.",
+          "Water deprivation can cause **dangerous hypernatraemia**.",
+          "Saline infusion risks **volume overload** in heart failure.",
+          "Never delay treatment of **adrenal crisis** for a Synacthen test.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**ESE/ES 2024**: assay-specific SST cut-offs.",
+          "**ESE/ENSAT 2023**: MACS for DST cortisol over 50 nmol/L.",
+          "**2022**: AVP deficiency and AVP resistance replace DI names.",
+          "**Endocrine Society 2025**: screen all hypertensives for aldosteronism.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Test agents",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Tetracosactide", "250 microgram IV or IM", "Samples at 0, 30, 60 min", "False normal early after pituitary insult"],
+          ["Dexamethasone", "1 mg orally at 11 pm; or 0.5 mg 6-hourly", "Overnight; or 48 hours", "Enzyme inducers, oestrogen give false positives"],
+          ["Soluble insulin (ITT)", "0.1-0.15 U/kg IV", "120 minutes", "Contraindicated in IHD, epilepsy, elderly"],
+          ["Glucagon", "1 mg IM (1.5 mg over 90 kg)", "240 minutes", "Nausea, late hypoglycaemia"],
+          ["Desmopressin", "2 microgram IM or SC", "Urine osmolality over 2-4 h", "Hyponatraemia if drinking freely"],
+          ["0.9% saline", "2 L IV over 4 hours", "Aldosterone at 0 and 4 h", "Avoid in heart failure"],
+        ],
+      },
+      {
+        heading: "Key cut-offs",
+        columns: ["Test", "Normal", "Abnormal"],
+        rows: [
+          ["Short Synacthen", "Peak at or above cut-off (500; about 450 newer assays)", "Below cut-off - AI"],
+          ["1 mg overnight DST", "Cortisol under 50 nmol/L", "Over 50 - Cushing or MACS"],
+          ["OGTT-GH", "Nadir under 1 microgram/L", "Not suppressed - acromegaly"],
+          ["ITT GH (adult)", "Peak 3 microgram/L or more", "Under 3 - GHD"],
+          ["Saline infusion", "Aldosterone under 5 ng/dL", "Over 10 (6 seated) - PA"],
+          ["Hypertonic saline copeptin", "Over 4.9 pmol/L - primary polydipsia", "4.9 or less - AVP deficiency"],
+        ],
+      },
+      {
+        heading: "Water deprivation interpretation",
+        columns: ["Diagnosis", "Urine osmolality after deprivation", "After desmopressin"],
+        rows: [
+          ["Normal or primary polydipsia", "Over 600-800", "Little change"],
+          ["AVP deficiency", "Under 300", "Rises over 50%"],
+          ["Partial AVP deficiency", "300-800", "Rises 10-50%"],
+          ["AVP resistance", "Under 300", "Little or no rise"],
+        ],
+      },
+    ],
+    remember: [
+      "**Low - stimulate, high - suppress**.",
+      "SST: **250 microgram, 0-30-60**, peak about 450-500.",
+      "DST: cortisol **under 50 nmol/L** is normal.",
+      "OGTT-GH: nadir **under 1** excludes acromegaly.",
+      "Deprivation: **under 300, then over 50%** rise means AVP deficiency.",
+      "Normal SST does not exclude AI **within 6 weeks** of pituitary insult.",
+      "Dexamethasone is used because it is **not measured** in cortisol assays.",
+    ],
+  },
+};
+
 export default revision;

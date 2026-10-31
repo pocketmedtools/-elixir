@@ -1633,16 +1633,14 @@ topics.push({
     {
       heading: "Management in IPD / emergency - hypercalcaemic crisis and pituitary apoplexy",
       points: [
-        "**Hypercalcaemia step 1 - rehydrate**: **0.9% saline 200-300 mL/h** (or 1-2 L in the first hours if very dry), adjusted to keep **urine output 100-150 mL/h**; caution in heart failure and CKD. [Endocrine Society 2023]",
-        "**Loop diuretics are not routine** - use furosemide only **after volume repletion** to treat fluid overload. [Endocrine Society 2023]",
+        "**Hypercalcaemia step 1 - rehydrate**: **0.9% saline 200-300 mL/h** (or 1-2 L in the first hours if very dry), adjusted to keep **urine output 100-150 mL/h**; caution in heart failure and CKD; **loop diuretics are not routine** - furosemide only **after volume repletion** for fluid overload. [Endocrine Society 2023]",
         "**Step 2 - calcitonin 4 IU/kg SC/IM every 12 hours** (increase to 8 IU/kg every 6-12 h if needed) for **calcium over 14 mg/dL** or symptoms - lowers calcium by about 1-2 mg/dL within 4-6 hours; stop after **48 hours** (tachyphylaxis). [Endocrine Society 2023]",
         "**Step 3 - antiresorptive**: **zoledronic acid 4 mg IV over at least 15 minutes** (dose-reduce for CrCl 30-60; avoid if CrCl below 30 or creatinine over 4.5 mg/dL) or **pamidronate 60-90 mg IV over 2-4 hours**; effect starts in 2-4 days and lasts 2-4 weeks. [Endocrine Society 2023]",
         "**Denosumab 120 mg SC** - the Endocrine Society 2023 guideline **suggests denosumab over bisphosphonate** in hypercalcaemia of malignancy, and it is the choice when **bisphosphonates fail or renal function is poor** (start 60 mg or less in severe CKD with close monitoring - severe hypocalcaemia risk). [Endocrine Society 2023]",
         "**Cause-specific**: **glucocorticoids** (prednisolone 40-60 mg/day) for **calcitriol-mediated** hypercalcaemia (lymphoma, TB, sarcoidosis, vitamin D toxicity); **cinacalcet** for parathyroid carcinoma; **urgent parathyroidectomy** for PHPT crisis once stable; treat the cancer. [Endocrine Society 2023]",
         "**Haemodialysis** with low or zero calcium dialysate for **calcium over 18 mg/dL with neurological signs**, or severe hypercalcaemia with **renal failure or heart failure** precluding saline. [Endocrine Society 2023]",
         "**Pituitary apoplexy**: **hydrocortisone 100-200 mg IV bolus** then **50-100 mg IV/IM every 6 hours** (or 2-4 mg/h infusion) **in any patient with haemodynamic instability, altered consciousness, reduced vision or severe hypopituitarism** - after drawing cortisol. [UK Pituitary Apoplexy Guidelines 2011]",
-        "**Apoplexy surgery vs conservative**: **urgent transsphenoidal decompression** (ideally within 7 days) for **severely reduced acuity, persistent or worsening field defects, or deteriorating consciousness**; isolated **ocular palsy** usually recovers with **conservative care**; decision by a pituitary multidisciplinary team, monitoring visual fields and acuity daily. [UK Pituitary Apoplexy Guidelines 2011]",
-        "**Monitor sodium** in apoplexy - **SIADH or diabetes insipidus** may follow; fluid balance charting. [UK Pituitary Apoplexy Guidelines 2011]",
+        "**Apoplexy surgery vs conservative**: **urgent transsphenoidal decompression** (ideally within 7 days) for **severely reduced acuity, persistent or worsening field defects, or deteriorating consciousness**; isolated **ocular palsy** usually recovers with **conservative care**; decision by a pituitary multidisciplinary team, monitoring visual fields, acuity and **sodium (SIADH or diabetes insipidus may follow)** daily. [UK Pituitary Apoplexy Guidelines 2011]",
         "**Pointer - thyroid storm**: propranolol 60-80 mg 4-hourly, **PTU 200 mg 4-hourly** (or methimazole 20 mg 4-6-hourly), **iodine 1 hour after thionamide**, **hydrocortisone 100 mg 8-hourly** - full details in the Thyroid storm topic. [ATA 2016]",
       ],
     },
@@ -1672,24 +1670,18 @@ topics.push({
       ],
     },
     {
-      heading: "Referral, follow-up and monitoring",
+      heading: "Referral, follow-up, prevention and counselling",
       points: [
         "**Admit immediately**: suspected adrenal crisis, corrected calcium **over 14 mg/dL or symptomatic at any level**, and every suspected pituitary apoplexy (with neurosurgery and ophthalmology input). [Endocrine Society 2023]",
         "After adrenal crisis: **endocrine review**, confirm diagnosis (Synacthen test when stable, unless already known), re-teach sick-day rules, prescribe the **IM hydrocortisone kit**, and issue a **steroid card**. [Society for Endocrinology 2020]",
         "After hypercalcaemia: calcium and creatinine **daily in hospital**, then weekly; repeat antiresorptive no sooner than **7 days** after the first dose if calcium remains high. [Endocrine Society 2023]",
         "After apoplexy: **dynamic pituitary testing at 4-8 weeks**, **MRI at 3-6 months** then yearly for 5 years if conservative (tumour regrowth), and visual field checks. [UK Pituitary Apoplexy Guidelines 2011]",
         "**Annual review** of adrenal insufficiency: weight, BP, electrolytes, symptoms of over- or under-replacement, emergency kit expiry date. [Endocrine Society 2016]",
-      ],
-    },
-    {
-      heading: "Prevention, counselling and programme link",
-      points: [
         "**Steroid emergency card** (NHS England national card 2020): carries diagnosis, daily dose and the instruction to give **hydrocortisone 100 mg IV/IM** in emergencies; Indian patients can carry an equivalent hospital-issued card and medical alert bracelet. [Society for Endocrinology 2020]",
         "**Educate family members** to give IM hydrocortisone; most crisis deaths are in patients who never self-injected. [ESE/Endocrine Society 2024]",
         "**Rational steroid use** - counter over-the-counter and quack steroid use (including **steroid-laced 'herbal' preparations**), an important cause of iatrogenic Cushing and withdrawal crisis in India. [ICMR STW 2023]",
         "**Vitamin D safety**: avoid repeated **600,000 IU injections**; use oral cholecalciferol 60,000 IU weekly for 8 weeks for deficiency and check levels before repeating courses - see the Vitamin D topic. [Endocrine Society 2024]",
         "**TB control** under **NTEP** prevents adrenal TB; remember **rifampicin** when dosing hydrocortisone in TB patients. [NTEP 2024]",
-        "Teach **BP control and careful anticoagulation** in known pituitary macroadenomas. [UK Pituitary Apoplexy Guidelines 2011]",
       ],
     },
     {

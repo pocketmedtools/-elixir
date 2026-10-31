@@ -622,4 +622,203 @@ revision["endocrine-inpatient-hyperglycaemia"] = {
   },
 };
 
+revision["endocrine-steroid-induced-hyperglycaemia"] = {
+  checked: "2026-10",
+  updated: [
+    "JBDS-IP steroid (glucocorticoid) hyperglycaemia guideline 2023 update: gliclazide or morning NPH; treat above 12 mmol/L twice.",
+    "ADA Standards of Care 2026 Section 16: weight-based NPH 0.1 U/kg per 10 mg prednisolone, max 0.4 U/kg.",
+    "ADA 2026 Section 2: HIV screening with fasting glucose before ART, at switch and 3-6 months after.",
+    "International PTDM consensus 2024 update: OGTT after stabilisation; newer agents in stable recipients.",
+    "NACO 2021: dolutegravir-based first-line ART; limit metformin to 1 g/day.",
+  ],
+  master: {
+    heading: "Master revision table - steroid-induced and drug-induced hyperglycaemia",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "New or worsened hyperglycaemia on **glucocorticoids**; hyperglycaemia in about **32%**, diabetes in **19%** of non-diabetics on steroids."],
+      ["Risk factors", "Prednisolone **over 20 mg/day**, pulses, dexamethasone, **HbA1c 6% or more**, age, obesity, family history, past GDM."],
+      ["Pathophysiology", "**PEPCK - gluconeogenesis**, reduced **GLUT4** (insulin resistance), beta-cell suppression, raised glucagon."],
+      ["Pattern", "Morning prednisolone - **normal fasting, afternoon-evening peak (4-8 h)**; dexamethasone - all-day hyperglycaemia."],
+      ["Monitoring", "Baseline HbA1c; **pre-lunch or pre-dinner** capillary glucose daily; ketones if above **360 mg/dL**."],
+      ["Thresholds", "Treat if **above 216 mg/dL twice** (JBDS) or **persistently 180+** in hospital (ADA); target **108-180**."],
+      ["OPD treatment", "**Gliclazide 40 mg morning**, up to 240-320 mg; or **NPH morning 0.1 U/kg per 10 mg prednisolone** (max 0.4 U/kg); titrate 10-20% daily."],
+      ["Dexamethasone / pulses", "**Basal glargine plus prandial**; pulses - correction plus NPH or IV insulin if over 300."],
+      ["Taper", "**Reduce insulin/SU with each steroid step**; recheck **HbA1c at 3 months** after stopping."],
+      ["Post-transplant (PTDM)", "**10-40%** after kidney transplant; **tacrolimus** (calcineurin-NFAT); **OGTT**, HbA1c unreliable year 1; early insulin, then DPP-4i, metformin."],
+      ["HIV", "Old PIs, stavudine, **dolutegravir**; FPG before and 3-6 months after ART change; **metformin max 1 g with dolutegravir**."],
+      ["Antipsychotics", "**Clozapine, olanzapine** highest, aripiprazole lowest; weight at 4, 8, 12 weeks, glucose and lipids at 12 weeks; metformin."],
+      ["Checkpoint inhibitors", "Anti-PD-1: abrupt **autoimmune diabetes with DKA**, low C-peptide, **lifelong insulin**."],
+      ["Exam pitfalls", "Testing only fasting glucose; **bedtime insulin for morning steroid**; forgetting to taper insulin."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Patient starting prednisolone",
+      caption: "Detect and treat afternoon hyperglycaemia.",
+      steps: [
+        { label: "Baseline HbA1c and fasting glucose", detail: "6.5% or more = unmasked diabetes" },
+        { label: "Daily pre-lunch or pre-dinner glucose", detail: "Fasting values may be normal", tone: "decision" },
+        { label: "Above 216 mg/dL twice in 24 h?", detail: "Above 360: check ketones", tone: "warn" },
+        { label: "Gliclazide 40 mg or morning NPH", detail: "NPH 0.1 U/kg per 10 mg prednisolone" },
+        { label: "Titrate 10-20% daily to 108-180 mg/dL", detail: "Max NPH 0.4 U/kg" },
+        { label: "Taper with steroid; HbA1c at 3 months", detail: "Avoid hypoglycaemia on taper", tone: "good" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Which regimen for which steroid?",
+      root: "Steroid-induced hyperglycaemia",
+      arms: [
+        { label: "Morning prednisolone", tone: "good", steps: ["Morning NPH or gliclazide", "Test before dinner"] },
+        { label: "Dexamethasone or BD steroid", tone: "decision", steps: ["Basal glargine plus prandial", "Test fasting and pre-meal"] },
+        { label: "Methylprednisolone pulse", tone: "warn", steps: ["NPH plus correction", "IV insulin if over 300"] },
+        { label: "Already on insulin", steps: ["Raise afternoon-covering dose 10-20% daily", "Cut back on taper"] },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Drug-induced diabetes in special settings",
+      columns: ["Setting", "Culprit", "Key test", "Key treatment point"],
+      rows: [
+        ["Steroids", "Prednisolone, dexamethasone", "Pre-dinner glucose", "Morning NPH"],
+        ["Transplant", "Tacrolimus, steroids", "OGTT", "Early insulin; DPP-4 inhibitor"],
+        ["HIV", "Dolutegravir, old PIs, stavudine", "FPG around ART change", "Metformin max 1 g/day"],
+        ["Antipsychotic", "Clozapine, olanzapine", "Weight 4-8-12 weeks", "Metformin; switch with psychiatrist"],
+        ["Checkpoint inhibitor", "Anti-PD-1", "C-peptide, ketones", "Lifelong insulin"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Steroids cause **hyperglycaemia in about a third** of non-diabetics.",
+          "About **one in five** reach diabetic levels.",
+          "Most resolve within **24-48 hours** of stopping a short course.",
+          "PTDM affects **10-40%** of kidney transplant recipients.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "Steroids raise **gluconeogenesis** in the liver.",
+          "They cause **muscle insulin resistance** by reducing GLUT4.",
+          "They **suppress insulin secretion** and raise glucagon.",
+          "Morning prednisolone peaks at **4-8 hours**; fasting glucose is often normal.",
+          "**Tacrolimus** damages beta cells through calcineurin-NFAT blockade.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "Baseline **HbA1c** before steroids.",
+          "Test **before lunch or dinner**, not just fasting.",
+          "Treat if **above 216 mg/dL twice** in a day (JBDS).",
+          "Above **360 mg/dL**: check ketones and osmolality.",
+          "**PTDM**: use OGTT; HbA1c is unreliable in the first year.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "**Gliclazide 40 mg** each morning, up to 240-320 mg/day.",
+          "Or **NPH in the morning** with the steroid.",
+          "NPH dose: **0.1 U/kg per 10 mg** prednisolone, maximum 0.4 U/kg.",
+          "Titrate by **10-20% daily** to 108-180 mg/dL.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "**Dexamethasone**: basal glargine plus mealtime insulin.",
+          "**Pulses**: NPH plus correction; IV insulin if over 300.",
+          "Already on insulin: raise the **afternoon-covering** dose.",
+          "**Taper insulin** with every steroid reduction.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Transplant**: early basal insulin, then DPP-4 inhibitor or metformin.",
+          "**HIV on dolutegravir**: keep metformin at **1 g/day** or less.",
+          "**Antipsychotics**: clozapine and olanzapine are worst; aripiprazole safest.",
+          "Antipsychotic monitoring: weight at **4, 8, 12 weeks**, glucose at 12 weeks.",
+          "**Checkpoint inhibitors**: sudden DKA, lifelong insulin.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "**HHS** in elderly on high-dose steroids.",
+          "**Mucormycosis**: facial pain, black nasal eschar, proptosis.",
+          "**Hypoglycaemia** if insulin is not cut during taper.",
+          "**DKA** early with clozapine or olanzapine.",
+        ],
+      },
+      {
+        title: "Referral and follow-up",
+        points: [
+          "Recheck **HbA1c 3 months** after steroids stop.",
+          "Use the **lowest steroid dose** for the shortest time.",
+          "Shared care with **transplant team or ART centre**.",
+          "Refer ketones, HHS, type 1, PTDM or pregnancy.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**JBDS 2023**: gliclazide or morning NPH; threshold 12 mmol/L.",
+          "**ADA 2026**: weight-based NPH for steroid hyperglycaemia.",
+          "**ADA 2026**: fasting glucose screening around ART changes.",
+          "**PTDM consensus 2024**: OGTT after stabilisation.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs for steroid and drug-induced hyperglycaemia",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Gliclazide", "40 mg oral each morning, up to 240-320 mg/day", "While on steroid; taper with it", "Hypoglycaemia on taper"],
+          ["NPH insulin", "0.1 U/kg per 10 mg prednisolone SC in the morning", "Titrate daily; taper with steroid", "Hypoglycaemia if steroid cut"],
+          ["Glargine", "0.1-0.2 U/kg/day SC for dexamethasone", "While on steroid", "Night hypoglycaemia after stopping"],
+          ["Metformin with dolutegravir", "500 mg BD, maximum 1 g/day", "Long term", "GI upset, B12 deficiency"],
+          ["Metformin for antipsychotic weight", "500 mg BD to 1 g BD", "Long term", "GI upset; hold in AKI"],
+        ],
+      },
+      {
+        heading: "Steroid and glucose pattern",
+        columns: ["Steroid", "Pattern", "Treatment"],
+        rows: [
+          ["Morning prednisolone", "Afternoon-evening peak", "Morning NPH or gliclazide"],
+          ["Dexamethasone", "All day", "Basal plus prandial"],
+          ["Pulse methylprednisolone", "24-48 hour spike", "NPH plus correction or IV"],
+          ["Joint injection", "2-3 day rise", "Temporary dose increase"],
+        ],
+      },
+      {
+        heading: "Special settings compared",
+        columns: ["Setting", "Culprit", "Diagnosis tip"],
+        rows: [
+          ["Transplant", "Tacrolimus", "OGTT after stabilisation"],
+          ["HIV", "Dolutegravir, old PIs", "FPG before and after ART change"],
+          ["Antipsychotics", "Clozapine, olanzapine", "Weight and glucose at 12 weeks"],
+          ["Checkpoint inhibitors", "Anti-PD-1", "DKA with low C-peptide"],
+        ],
+      },
+    ],
+    remember: [
+      "**Morning steroid, afternoon sugar.**",
+      "**NPH with the prednisolone** - 0.1 U/kg per 10 mg.",
+      "**Taper insulin with the steroid.**",
+      "**Dexamethasone = all-day sugar.**",
+      "**PTDM: OGTT, not HbA1c.**",
+      "**Dolutegravir caps metformin at 1 g.**",
+      "**Clozapine and olanzapine** worst; aripiprazole best.",
+    ],
+  },
+};
+
 export default revision;

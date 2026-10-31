@@ -1551,4 +1551,505 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "endocrine-dynamic-endocrine-tests",
+  title: "Dynamic endocrine function tests: how to do and interpret them",
+  oneLiner:
+    "**Dynamic endocrine tests** challenge a hormonal axis because single basal levels fluctuate: **stimulate when deficiency is suspected** (short Synacthen, insulin tolerance, glucagon, water deprivation with desmopressin) and **suppress when excess is suspected** (dexamethasone suppression for cortisol, **OGTT for GH**, saline infusion for aldosterone) - each with a fixed protocol, drug preparation, safety precautions and assay-specific cut-offs.",
+  frequency: "less-common",
+  keywords: [
+    "dynamic function tests",
+    "short Synacthen test",
+    "ACTH stimulation test",
+    "tetracosactide",
+    "overnight dexamethasone suppression test",
+    "LDDST",
+    "HDDST",
+    "OGTT GH suppression",
+    "insulin tolerance test",
+    "glucagon stimulation test",
+    "water deprivation test",
+    "copeptin",
+    "saline infusion test",
+    "clomiphene stimulation test",
+    "TRH test",
+    "72-hour fast",
+    "aldosterone-renin ratio",
+    "biotin interference",
+  ],
+  sections: [
+    {
+      heading: "Definition, principles and epidemiology of the conditions tested",
+      points: [
+        "**Dynamic testing** measures a hormone's response to a stimulus or suppressant, because basal levels are pulsatile, diurnal or affected by stress and binding proteins - a single random value often cannot confirm or exclude disease. [Williams Endocrinology 15e]",
+        "**Rule of thumb**: **'If it is low, stimulate it; if it is high, suppress it'** - deficiency is confirmed by a failed response to stimulation, excess by failure to suppress. [Harrison 22e]",
+        "**Sequence**: clinical suspicion first, then basal screening test, then a dynamic confirmatory test, and only then **imaging** - imaging first finds incidentalomas and misleads. [Harrison 22e]",
+        "**Adrenal insufficiency** affects about 100-140 per million (primary) and 150-280 per million (secondary), plus a far larger number with glucocorticoid-induced AI - see the Glucocorticoid therapy topic. [Endocrine Society 2016]",
+        "**Endogenous Cushing syndrome** is rare (about 2-3 per million per year) but **mild autonomous cortisol secretion** is found in up to a third of adrenal incidentalomas. [ESE/ENSAT 2023]",
+        "**Primary aldosteronism** is present in about **5-10% of all hypertensives** and up to 20% of resistant hypertension - the commonest endocrine cause of hypertension and the main reason for dynamic tests in primary care. [Endocrine Society 2025]",
+        "**Acromegaly** (about 60-80 per million) and **AVP deficiency** (diabetes insipidus, about 1 in 25,000) are uncommon, but their diagnosis rests entirely on dynamic tests. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Indications - when to order a dynamic test",
+      points: [
+        "**Suspected adrenal insufficiency** with an indeterminate morning cortisol (roughly 100-450 nmol/L, assay-dependent) - short Synacthen test. [Endocrine Society 2016]",
+        "**Suspected Cushing syndrome** (purple striae, proximal myopathy, easy bruising, unexplained osteoporosis or diabetes in the young) and every **adrenal incidentaloma** - 1 mg overnight dexamethasone suppression test. [Endocrine Society 2008]",
+        "**Suspected acromegaly** with raised or equivocal IGF-1 - OGTT with GH suppression. [Endocrine Society 2014]",
+        "**Suspected GH deficiency** in adults with pituitary disease, or children with short stature and low height velocity - ITT, glucagon, clonidine or arginine tests. [AACE 2019]",
+        "**Polyuria over 3 L/day** (adults) with dilute urine after excluding diabetes mellitus, hypercalcaemia and hypokalaemia - water deprivation or copeptin-based tests. [Endocrine Society 2022]",
+        "**Positive aldosterone-renin ratio** in a hypertensive - confirmatory saline infusion, oral salt loading, captopril or fludrocortisone suppression test. [Endocrine Society 2025]",
+        "**Fasting hypoglycaemia in a non-diabetic** (Whipple triad documented) - supervised 72-hour fast. [Endocrine Society 2009]",
+        "**Hypogonadism, puberty disorders and TSH-secreting tumour vs thyroid hormone resistance** - clomiphene, GnRH/GnRH-agonist and TRH tests in specialist centres. [Williams Endocrinology 15e]",
+      ],
+    },
+    {
+      heading: "Physiology - why each test works",
+      points: [
+        "**Negative feedback** underlies suppression tests: dexamethasone (not measured in cortisol assays) suppresses pituitary ACTH, so cortisol falls in normal people but not with autonomous secretion. [Harrison 22e]",
+        "**Cushing disease keeps partial feedback**: a pituitary corticotroph adenoma suppresses with **high-dose** dexamethasone, while ectopic ACTH and adrenal tumours do not - the logic of the HDDST. [Williams Endocrinology 15e]",
+        "**Synacthen (tetracosactide, ACTH 1-24)** stimulates the adrenal directly; a chronically ACTH-deprived adrenal (secondary AI) atrophies and cannot respond - but **within 4-6 weeks of a pituitary insult** the adrenal has not yet atrophied, so the test can be falsely normal. [Endocrine Society 2016]",
+        "**Hypoglycaemia (ITT)** is a powerful stress acting at the hypothalamus, releasing CRH-ACTH-cortisol and GHRH-GH - so it tests the whole axis, making it the gold standard. [Williams Endocrinology 15e]",
+        "**Glucose suppresses GH** via somatostatin release; autonomous somatotroph adenomas fail to suppress - and may show a paradoxical rise. [Endocrine Society 2014]",
+        "**Water deprivation** raises plasma osmolality, which normally releases AVP and concentrates urine; failure to concentrate that is corrected by **desmopressin** means AVP deficiency, while no correction means **AVP resistance** (renal). [Endocrine Society 2022]",
+        "**Copeptin** is the stable C-terminal fragment of pre-pro-AVP, released 1:1 with AVP - a reliable surrogate for the unstable AVP molecule. [Fenske NEJM 2018]",
+        "**Sodium loading** normally suppresses renin and aldosterone; autonomous aldosterone production (adenoma, bilateral hyperplasia) fails to suppress. [Endocrine Society 2025]",
+        "**Clomiphene** blocks hypothalamic oestrogen receptors, removing negative feedback so GnRH, LH and FSH rise - an intact response shows the hypothalamic-pituitary axis works. [Williams Endocrinology 15e]",
+      ],
+    },
+    {
+      heading: "Classification of dynamic tests",
+      points: [
+        "**Stimulation tests (suspected deficiency)**: short Synacthen, insulin tolerance, glucagon stimulation, clonidine and arginine (GH), macimorelin, GnRH/GnRH agonist, clomiphene, TRH, hCG stimulation (testes), water deprivation with desmopressin, arginine- or hypertonic saline-stimulated copeptin. [Williams Endocrinology 15e]",
+        "**Suppression tests (suspected excess)**: 1 mg overnight, low-dose 48-hour and high-dose dexamethasone suppression; OGTT for GH; saline infusion, oral salt loading, captopril and fludrocortisone tests for aldosterone. [Harrison 22e]",
+        "**Provocation tests for neoplasia**: 72-hour fast (insulinoma), calcium stimulation of calcitonin (MTC), CRH or desmopressin stimulation of ACTH (Cushing disease), mixed-meal test (post-bariatric hypoglycaemia). [Williams Endocrinology 15e]",
+        "**Localisation dynamic tests** (tertiary centres): **bilateral inferior petrosal sinus sampling** with CRH or desmopressin (central-to-peripheral ACTH ratio 2 or more basal, 3 or more after stimulation = pituitary source) and **adrenal venous sampling** (lateralisation of aldosterone). [Endocrine Society 2025]",
+        "**By axis**: adrenal cortex (SST, DST, ITT), GH (OGTT, ITT, glucagon), posterior pituitary (water deprivation, copeptin), mineralocorticoid (saline infusion), gonadal (clomiphene, GnRH, hCG), thyroid (TRH), pancreas (72-h fast). [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Clinical preparation - history before the test",
+      points: [
+        "**Drug history is the commonest cause of a wrong result**: steroids by any route, oral oestrogen (raises CBG), enzyme inducers, CYP3A4 inhibitors, antihypertensives, diuretics, biotin. [Endocrine Society 2008]",
+        "**Hydrocortisone**: omit for at least 12-24 hours before an SST or morning cortisol; **prednisolone** cross-reacts in assays and suppresses the axis - withhold longer; **dexamethasone** does not cross-react and can be used as cover while testing. [ESE/ES 2024]",
+        "**Oral oestrogen** (combined pill, HRT) raises cortisol-binding globulin and total cortisol - stop for **6 weeks** before cortisol tests, or interpret with caution; transdermal oestrogen does not. [Endocrine Society 2008]",
+        "**Aldosterone tests**: correct hypokalaemia; stop **spironolactone and eplerenone for 4-6 weeks**; ACE inhibitors, ARBs, diuretics and dihydropyridine CCBs raise renin (false negative); beta-blockers and clonidine lower renin (false positive) - switch to **verapamil SR, hydralazine, prazosin or doxazosin**. [Endocrine Society 2025]",
+        "**Biotin** (hair and nail supplements) interferes with streptavidin-biotin immunoassays for TSH, thyroid hormones, cortisol, PTH and others - stop it at least **2-3 days** before testing. [FDA 2019]",
+        "**Comorbidity screen for ITT**: ischaemic heart disease, abnormal ECG, epilepsy, age over 60-65, untreated hypothyroidism, and morning cortisol under 100 nmol/L are contraindications. [Williams Endocrinology 15e]",
+        "**Timing and stress**: acute illness, night shifts, alcohol excess, depression and severe obesity alter cortisol rhythm - delay elective cortisol testing until recovery. [Endocrine Society 2008]",
+      ],
+    },
+    {
+      heading: "Patient preparation, consent and safety",
+      points: [
+        "**Explain the purpose, duration and risks** and obtain consent; many tests need fasting from midnight and a supine rest of 30 minutes before baseline sampling. [Williams Endocrinology 15e]",
+        "**Cannula placed 30 minutes before baseline** to avoid stress-related cortisol and GH rise; label every sample with time. [Williams Endocrinology 15e]",
+        "**Weigh the patient** (water deprivation, ITT and glucagon dosing depend on weight). [Endocrine Society 2022]",
+        "**Bedside resuscitation equipment, 10% and 25% dextrose, and hydrocortisone** must be ready for ITT, glucagon and Synacthen tests. [Williams Endocrinology 15e]",
+        "**Doctor present throughout** an insulin tolerance test and at intervals in water deprivation - these tests can be dangerous. [Williams Endocrinology 15e]",
+        "**Sample handling**: ACTH in **chilled EDTA tube on ice** and separated quickly; renin and aldosterone at room temperature (cold activates prorenin); copeptin and cortisol are stable. [Harrison 22e]",
+        "**After the test**: give a meal (ITT, glucagon, 72-h fast), resume withheld drugs, and give a glucocorticoid stress dose if adrenal insufficiency is likely. [Williams Endocrinology 15e]",
+      ],
+    },
+    {
+      heading: "Pitfalls and differential interpretation",
+      points: [
+        "**Cortisol-binding globulin (CBG)**: high in pregnancy and oral oestrogen (falsely high cortisol, missed AI); low in nephrotic syndrome, cirrhosis, critical illness (falsely low cortisol, overdiagnosed AI). [Endocrine Society 2016]",
+        "**Assay-specific cut-offs**: newer monoclonal immunoassays and LC-MS/MS read cortisol about 20% lower than older polyclonal assays - the classic 500 nmol/L SST cut-off overcalls AI with them. [ESE/ES 2024]",
+        "**False-positive dexamethasone suppression**: enzyme inducers (rifampicin, phenytoin, carbamazepine) speed dexamethasone breakdown; oral oestrogen; non-adherence; **pseudo-Cushing states** (depression, alcohol, severe obesity, uncontrolled diabetes). [Endocrine Society 2008]",
+        "**False-negative dexamethasone suppression**: CYP3A4 inhibitors (itraconazole, ritonavir) and liver failure slow dexamethasone clearance; cyclical Cushing syndrome tested in a quiet phase. [Endocrine Society 2008]",
+        "**OGTT-GH pitfalls**: GH may fail to suppress in uncontrolled diabetes, liver or renal failure, anorexia, adolescence and with oral oestrogen - false positives for acromegaly. [Endocrine Society 2014]",
+        "**Water deprivation pitfalls**: chronic polyuria washes out the renal medullary gradient, so even normal or primary polydipsia patients may concentrate poorly - accuracy of the classic test is only about **70%**. [Fenske NEJM 2018]",
+        "**Aldosterone-renin ratio pitfalls**: hypokalaemia lowers aldosterone (false negative); age, CKD and beta-blockers lower renin (false positive); the ratio is meaningless without minimum aldosterone levels. [Endocrine Society 2025]",
+      ],
+    },
+    {
+      heading: "Adrenal tests - morning cortisol, short Synacthen and ITT",
+      points: [
+        "**8-9 am serum cortisol**: under **100 nmol/L (about 3 microgram/dL)** strongly suggests AI; over about **400-450 nmol/L (15 microgram/dL)** makes it unlikely; values between need a stimulation test. [Endocrine Society 2016]",
+        "**Paired ACTH** distinguishes primary AI (ACTH over 2 times upper limit, high renin) from secondary AI (low or inappropriately normal ACTH). [Endocrine Society 2016]",
+        "**Short Synacthen test (SST)**: **tetracosactide 250 microgram IV or IM**, cortisol at **0, 30 and 60 minutes**; can be done any time of day; normal if peak cortisol is at or above the cut-off. [Endocrine Society 2016]",
+        "**SST cut-off**: classic **500 nmol/L (18 microgram/dL)**; with newer immunoassays or LC-MS/MS, about **420-450 nmol/L (14-15 microgram/dL)** at 30 minutes - use the local laboratory's assay-specific value. [ESE/ES 2024]",
+        "**Low-dose (1 microgram) SST** may detect milder secondary AI but dilution and adsorption to plastic make it less reliable; the 250 microgram test is standard. [Endocrine Society 2016]",
+        "**Insulin tolerance test**: soluble insulin **0.1-0.15 U/kg IV** (0.05 U/kg if hypopituitarism likely, 0.2-0.3 U/kg if insulin resistant); adequate hypoglycaemia = glucose **under 40 mg/dL (2.2 mmol/L) with symptoms**; samples at 0, 30, 45, 60, 90, 120 min. [Williams Endocrinology 15e]",
+        "**ITT interpretation**: peak cortisol at or above about **500 nmol/L (assay-dependent)** excludes AI; peak GH under **3 microgram/L** in adults (under 10, or 7 in some protocols, in children) indicates GH deficiency. [AACE 2019]",
+        "**Stopping an ITT**: if severe neuroglycopenia (seizure, unconsciousness) - give **IV dextrose (e.g. 10% 100-150 mL or 25% 50 mL)** but continue sampling; finish with a meal and observe. [Williams Endocrinology 15e]",
+      ],
+    },
+    {
+      heading: "Cushing tests - dexamethasone suppression and localisation",
+      points: [
+        "**1 mg overnight DST**: dexamethasone **1 mg orally at 11 pm-midnight**, serum cortisol at **8-9 am**; cortisol **under 50 nmol/L (1.8 microgram/dL)** is normal suppression and excludes Cushing syndrome with high sensitivity. [Endocrine Society 2008]",
+        "**Adrenal incidentaloma (ESE/ENSAT 2023)**: 1 mg DST cortisol **over 50 nmol/L without overt Cushing features = mild autonomous cortisol secretion (MACS)**; screen for hypertension, diabetes and osteoporosis rather than labelling by a higher threshold. [ESE/ENSAT 2023]",
+        "**Measure serum dexamethasone with the post-DST cortisol** where available to confirm adequate absorption and exclude rapid metabolism. [Endocrine Society 2008]",
+        "**Low-dose 48-hour DST (LDDST)**: **0.5 mg every 6 hours for 48 hours** (eight doses, e.g. 9 am day 1 to 3 am day 3), cortisol at 48 hours; under 50 nmol/L is normal - more specific than the overnight test and less affected by pseudo-Cushing. [Endocrine Society 2008]",
+        "**Other first-line screens**: **late-night salivary cortisol** (two samples above the assay's upper limit) and **24-hour urinary free cortisol** (two collections, over 3 times upper limit strongly positive); two abnormal tests are needed for diagnosis. [Endocrine Society 2008]",
+        "**High-dose DST** (2 mg every 6 hours for 48 hours, or 8 mg overnight): cortisol suppression **over 50%** of baseline favours pituitary Cushing disease over ectopic ACTH - poor accuracy, now largely replaced by CRH/desmopressin tests and IPSS. [Williams Endocrinology 15e]",
+        "**ACTH after confirmation**: under 10 pg/mL (2 pmol/L) means adrenal cause - adrenal CT; over 20 pg/mL means ACTH-dependent - pituitary MRI, then IPSS if the MRI is negative or the adenoma under 6 mm. [Pituitary Society 2021]",
+      ],
+    },
+    {
+      heading: "GH axis tests - OGTT suppression and stimulation tests",
+      points: [
+        "**Acromegaly**: measure **IGF-1 first** (age- and sex-adjusted); if raised or equivocal, do a **75 g OGTT** with GH at 0, 30, 60, 90 and 120 minutes. [Endocrine Society 2014]",
+        "**OGTT-GH interpretation**: failure of GH to fall **below 1 microgram/L** (below 0.4 microgram/L with ultrasensitive assays) confirms acromegaly; a paradoxical rise is seen in some. [Endocrine Society 2014]",
+        "**Glucagon stimulation test** (when ITT is contraindicated): **glucagon 1 mg IM** (1.5 mg if over 90 kg), GH and glucose every 30 min for 240 min; peak GH **3 microgram/L or less** in BMI under 25 (or 25-30 with high pre-test probability), **1 microgram/L or less** in BMI over 30 indicates GHD. [AACE 2019]",
+        "**Macimorelin oral test** (ghrelin agonist, 0.5 mg/kg): peak GH under **2.8 microgram/L** indicates adult GHD; simple and safe but costly and not widely available in India. [AACE 2019]",
+        "**Children**: two different stimulation tests (clonidine **0.15 mg/m2 orally**, glucagon, arginine, ITT) must both fail, with peak GH under **10 microgram/L** (7 in many guidelines) - **sex-steroid priming** before testing peripubertal children avoids false positives. [PES 2016]",
+        "**Clonidine test side effects**: drowsiness and hypotension for several hours - monitor BP and keep the child lying down. [PES 2016]",
+        "**Adults with three or more other pituitary deficiencies and low IGF-1** have GHD without a stimulation test. [AACE 2019]",
+      ],
+    },
+    {
+      heading: "Posterior pituitary - water deprivation and copeptin tests",
+      points: [
+        "**First confirm polyuria**: 24-hour urine over 3 L (adults) with osmolality under 300 mOsm/kg; exclude hyperglycaemia, hypercalcaemia, hypokalaemia and lithium. [Endocrine Society 2022]",
+        "**Water deprivation protocol**: fluids withheld (from early morning; overnight only if polyuria is mild); hourly weight, urine volume and osmolality; plasma sodium and osmolality every 1-2 hours; maximum about **8 hours**. [Endocrine Society 2022]",
+        "**Stop deprivation** if weight falls **over 3%**, plasma sodium exceeds **145-150 mmol/L** or osmolality over 300-305 mOsm/kg, or urine osmolality reaches **over 600-800 mOsm/kg** (normal concentrating ability). [Endocrine Society 2022]",
+        "**Desmopressin phase**: give **desmopressin 2 microgram IM or SC (or 10-20 microgram intranasal)**, allow limited drinking, and measure urine osmolality over the next 2-4 hours. [Endocrine Society 2022]",
+        "**Interpretation**: urine osmolality stays **under 300** after deprivation then rises **over 50%** with desmopressin = **AVP deficiency** (central DI); stays under 300 with little rise = **AVP resistance** (nephrogenic); **over 800** after deprivation = normal or primary polydipsia; 300-800 is indeterminate. [Endocrine Society 2022]",
+        "**Hypertonic saline-stimulated copeptin**: 3% saline infused to plasma sodium **150 mmol/L or more**; copeptin **over 4.9 pmol/L** = primary polydipsia, lower = AVP deficiency (accuracy about 97%); needs sodium monitoring every 30 minutes. [Fenske NEJM 2018]",
+        "**Arginine-stimulated copeptin**: arginine infusion over 30 min, copeptin at 60 min **over 3.8 pmol/L** favours primary polydipsia - simpler and safer but less accurate than hypertonic saline. [Refardt Lancet 2023]",
+        "**Baseline copeptin over 21.4 pmol/L** without prior fluid restriction indicates **AVP resistance** - no deprivation test needed. [Endocrine Society 2022]",
+      ],
+    },
+    {
+      heading: "Aldosterone tests - screening and confirmation",
+      points: [
+        "**Screen** with a morning **aldosterone-renin ratio (ARR)** after 2 hours upright and 5-15 minutes seated, potassium corrected; a raised ARR with aldosterone over about 10 ng/dL (277 pmol/L) and suppressed renin is positive. [Endocrine Society 2025]",
+        "**Saline infusion test (SIT)**: **2 L of 0.9% saline over 4 hours** (8 am to 12 noon), seated preferred to recumbent; aldosterone at 0 and 4 h; post-infusion aldosterone **under 5 ng/dL makes PA unlikely**, **over 10 ng/dL (recumbent) or over 6 ng/dL (seated) confirms it**. [Endocrine Society 2016]",
+        "**SIT contraindications**: uncontrolled severe hypertension, heart failure, renal insufficiency, severe hypokalaemia, arrhythmia - monitor BP and potassium during the infusion. [Endocrine Society 2016]",
+        "**Oral salt loading test**: over 200 mmol sodium/day for 3 days with potassium replacement; 24-hour urine aldosterone **over 12 microgram/day** (with urine sodium over 200 mmol/day) confirms PA. [Endocrine Society 2016]",
+        "**Captopril challenge**: 25-50 mg orally seated; aldosterone normally falls by over 30% at 1-2 hours - persistent high aldosterone with suppressed renin confirms PA; safe in heart failure and CKD. [Endocrine Society 2016]",
+        "**Confirmation can be skipped** with spontaneous hypokalaemia, undetectable renin and aldosterone over 20 ng/dL - proceed to CT and adrenal venous sampling if surgery is considered. [Endocrine Society 2025]",
+      ],
+    },
+    {
+      heading: "Other stimulation and provocation tests",
+      points: [
+        "**Clomiphene stimulation test (men)**: clomiphene **100 mg (or up to 3 mg/kg, maximum 200 mg) daily for 7 days**; a rise (roughly doubling) of LH, FSH and testosterone shows an intact hypothalamic-pituitary axis - a failed response suggests hypogonadotropic hypogonadism. [Williams Endocrinology 15e]",
+        "**Clomiphene citrate challenge test (women)**: 100 mg on days 5-9 with FSH on day 3 and day 10; a raised day-10 FSH indicated poor ovarian reserve - now replaced by **AMH and antral follicle count**. [ASRM 2020]",
+        "**TRH test**: **TRH 200 microgram IV**, TSH at 0, 20 and 60 minutes; a normal rise at 20 min; a **delayed 60-minute peak** suggests hypothalamic disease; **TSH rises in thyroid hormone resistance but not in TSH-secreting adenoma** - TRH is rarely available in India. [Williams Endocrinology 15e]",
+        "**GnRH or GnRH-agonist stimulation** for precocious puberty: LH peak **over 5 IU/L** indicates central (gonadotropin-dependent) puberty; leuprolide is used where gonadorelin is unavailable - see the Precocious puberty topic. [ESPE 2019]",
+        "**hCG stimulation test** in boys with undescended testes or ambiguous genitalia: testosterone rise shows functioning Leydig cells; a raised testosterone-to-DHT ratio suggests 5-alpha-reductase deficiency. [Williams Endocrinology 15e]",
+        "**Supervised 72-hour fast** for suspected insulinoma: end when glucose is **55 mg/dL (3.0 mmol/L) or less** with symptoms; insulin **3 microU/mL or more**, C-peptide **0.6 ng/mL or more**, proinsulin 5 pmol/L or more, beta-hydroxybutyrate 2.7 mmol/L or less, negative sulfonylurea screen = endogenous hyperinsulinism; glucagon 1 mg IV at the end raises glucose by 25 mg/dL or more. [Endocrine Society 2009]",
+        "**Mixed-meal test** (not OGTT) is used to provoke **post-bariatric hypoglycaemia**, because the OGTT itself causes dumping and false positives. [Endocrine Society 2009]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Pregnancy**: CBG and total cortisol rise 2-3 fold and DST suppression is blunted - **24-hour urinary free cortisol** (with trimester-specific cut-offs) is preferred for Cushing; avoid ITT, water deprivation and saline loading. [Endocrine Society 2008]",
+        "**Critical illness**: avoid formal dynamic tests; a random cortisol under about **275 nmol/L (10 microgram/dL)** or a rise under 250 nmol/L (9 microgram/dL) after Synacthen suggests critical illness-related corticosteroid insufficiency - but treatment of shock should not wait. [SCCM/ESICM 2024]",
+        "**Children**: weight-based doses, sex-steroid priming for GH tests, and avoid ITT in young children because of seizure risk; use glucagon or clonidine. [PES 2016]",
+        "**Elderly and cardiac patients**: ITT is contraindicated; use SST for the adrenal axis and glucagon or macimorelin for GH. [AACE 2019]",
+        "**CKD and liver disease**: low CBG and altered dexamethasone and GH handling give false results - prefer late-night salivary cortisol in CKD with caution, and interpret OGTT-GH with care. [Endocrine Society 2008]",
+        "**Resource-limited settings in India**: Synacthen supply is intermittent and TRH and GnRH are hard to obtain; a well-timed **8 am cortisol**, the **1 mg overnight DST** and the **75 g OGTT** are cheap, available everywhere and answer most primary-care questions. [ESI 2023]",
+      ],
+    },
+    {
+      heading: "Complications of testing, referral and follow-up",
+      points: [
+        "**ITT**: severe neuroglycopenia, seizures, arrhythmia and myocardial ischaemia; deaths have occurred in children given excessive dextrose rescue (cerebral oedema) - do it only in experienced units. [Williams Endocrinology 15e]",
+        "**Water deprivation**: dangerous dehydration and hypernatraemia in true AVP deficiency - stop at 3% weight loss; never leave the patient unsupervised (risk of secret drinking falsifying the result as well). [Endocrine Society 2022]",
+        "**Hypertonic saline test**: osmotic symptoms, and risk of overshooting sodium - check sodium every 30 minutes and stop at 150 mmol/L. [Fenske NEJM 2018]",
+        "**Saline infusion test**: volume overload, hypertension and hypokalaemia in susceptible patients. [Endocrine Society 2016]",
+        "**Synacthen and glucagon**: rare allergy to tetracosactide (more with atopy); nausea, vomiting and late hypoglycaemia after glucagon. [Williams Endocrinology 15e]",
+        "**Referral**: primary care can do the 8 am cortisol, 1 mg DST, ARR and OGTT; **refer ITT, water deprivation, copeptin, LDDST/HDDST, IPSS and adrenal venous sampling** to an endocrinology unit. [ESI 2023]",
+        "**Follow-up**: repeat an abnormal screening test before acting, interpret with the clinical picture, and repeat dynamic tests after treatment (e.g. OGTT-GH after acromegaly surgery, SST months after pituitary surgery). [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2023-2026) and exam angle",
+      points: [
+        "**ESE/ES 2024 glucocorticoid-induced AI guideline** endorses lower, **assay-specific SST cut-offs** and morning cortisol thresholds (150/300 nmol/L) for deciding whether to stop steroids. [ESE/ES 2024]",
+        "**ESE/ENSAT 2023 adrenal incidentaloma update** replaced 'possible autonomous cortisol secretion' with **MACS** for 1 mg DST cortisol over 50 nmol/L without overt Cushing features. [ESE/ENSAT 2023]",
+        "**2022 international nomenclature** renamed central DI as **AVP deficiency** and nephrogenic DI as **AVP resistance**; copeptin-based tests (hypertonic saline, arginine) are preferred over classic water deprivation where available. [Endocrine Society 2022]",
+        "**Endocrine Society 2025 primary aldosteronism guideline** recommends screening all adults with hypertension with ARR and allows skipping confirmatory tests when the biochemistry is unequivocal. [Endocrine Society 2025]",
+        "**Exam favourite**: 'If it is low, stimulate; if high, suppress' and the cut-off list - SST peak 500 (or assay-specific about 450) nmol/L, 1 mg DST under 50 nmol/L, OGTT-GH under 1 microgram/L, SIT aldosterone over 10 ng/dL. [Exam pattern]",
+        "**Viva trap**: a normal SST does not exclude secondary AI within 4-6 weeks of pituitary surgery or apoplexy - the adrenal has not yet atrophied. [Endocrine Society 2016]",
+        "**Viva trap 2**: dexamethasone, not prednisolone, is used in suppression tests because it is potent and **not measured in cortisol assays**. [Harrison 22e]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Test agents: dose, protocol and cautions",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Tetracosactide (Synacthen)", "250 microgram IV or IM (1 microgram in low-dose test)", "Cortisol at 0, 30, 60 min", "Rare allergy; false normal within 4-6 weeks of pituitary insult"],
+        ["Dexamethasone (overnight DST)", "1 mg orally at 11 pm-midnight", "Cortisol at 8-9 am next day", "Enzyme inducers and oral oestrogen cause false positives"],
+        ["Dexamethasone (LDDST / HDDST)", "0.5 mg 6-hourly (LDDST) or 2 mg 6-hourly (HDDST) orally", "48 hours; cortisol at 48 h", "Adherence; same drug interactions"],
+        ["Soluble insulin (ITT)", "0.1-0.15 U/kg IV (0.05 if hypopituitary; 0.2-0.3 if insulin resistant)", "Samples 0-120 min; target glucose under 40 mg/dL", "Contraindicated in IHD, epilepsy, elderly, cortisol under 100 nmol/L"],
+        ["Glucagon (GH stimulation)", "1 mg IM (1.5 mg if over 90 kg)", "GH every 30 min for 240 min", "Nausea, vomiting, late hypoglycaemia"],
+        ["Glucose 75 g (OGTT-GH)", "75 g anhydrous glucose orally in 250-300 mL water", "GH at 0, 30, 60, 90, 120 min", "False positive in diabetes, liver or renal failure, adolescence"],
+        ["Desmopressin (water deprivation)", "2 microgram IM/SC or 10-20 microgram intranasal", "Urine osmolality over 2-4 h", "Hyponatraemia if patient drinks freely after"],
+        ["0.9% saline (SIT)", "2 L IV over 4 h", "Aldosterone at 0 and 4 h", "Avoid in heart failure, uncontrolled hypertension, severe hypokalaemia"],
+        ["Clomiphene citrate", "100 mg (up to 200 mg) orally daily", "7 days; LH, FSH, testosterone before and after", "Visual disturbance, mood change, hot flushes"],
+        ["TRH (protirelin)", "200 microgram IV", "TSH at 0, 20, 60 min", "Flushing, nausea, urge to micturate; poor availability"],
+      ],
+    },
+    {
+      heading: "Which test for which question",
+      columns: ["Clinical question", "Screening test", "Dynamic confirmatory test", "Abnormal result"],
+      rows: [
+        ["Adrenal insufficiency", "8 am cortisol with ACTH", "Short Synacthen test (ITT gold standard)", "Peak cortisol under 500 nmol/L (assay-specific about 420-450)"],
+        ["Cushing syndrome", "1 mg DST, late-night salivary cortisol, 24-h UFC", "LDDST 48 h", "Cortisol over 50 nmol/L after dexamethasone"],
+        ["Acromegaly", "IGF-1", "75 g OGTT with GH", "GH nadir not below 1 microgram/L"],
+        ["Adult GH deficiency", "IGF-1 (often normal)", "ITT, glucagon or macimorelin", "ITT peak GH under 3; glucagon 3 or less (1 if obese) microgram/L"],
+        ["AVP deficiency vs primary polydipsia", "24-h urine volume and osmolality, plasma sodium", "Hypertonic saline-copeptin or water deprivation with desmopressin", "Copeptin 4.9 pmol/L or less at sodium 150"],
+        ["Primary aldosteronism", "Aldosterone-renin ratio", "Saline infusion, salt loading or captopril test", "Post-saline aldosterone over 10 (recumbent) or 6 (seated) ng/dL"],
+        ["Insulinoma", "Glucose, insulin, C-peptide during symptoms", "Supervised 72-hour fast", "Glucose 55 or less with insulin 3 or more and C-peptide 0.6 or more"],
+      ],
+    },
+    {
+      heading: "Water deprivation test interpretation",
+      columns: ["Diagnosis", "Urine osmolality after deprivation (mOsm/kg)", "Rise after desmopressin", "Plasma osmolality at end"],
+      rows: [
+        ["Normal", "Over 800", "Under 10%", "Normal"],
+        ["Primary polydipsia", "Usually over 600 (may be lower from medullary washout)", "Under 10%", "Normal or low"],
+        ["Complete AVP deficiency (central DI)", "Under 300", "Over 50%", "High"],
+        ["Partial AVP deficiency", "300-800", "10-50%", "High-normal"],
+        ["AVP resistance (nephrogenic DI)", "Under 300", "Under 10-50%, often none", "High"],
+      ],
+    },
+    {
+      heading: "Common interferences and pitfalls",
+      columns: ["Factor", "Test affected", "Effect", "What to do"],
+      rows: [
+        ["Oral oestrogen (pill, HRT), pregnancy", "Cortisol (SST, DST)", "Raised CBG - falsely high cortisol, false-positive DST, missed AI", "Stop oral oestrogen 6 weeks or use urinary/salivary tests"],
+        ["Rifampicin, phenytoin, carbamazepine", "DST", "Fast dexamethasone clearance - false failure to suppress", "Measure dexamethasone level or use other tests"],
+        ["Hydrocortisone, prednisolone", "Cortisol assays", "Cross-reactivity and HPA suppression", "Withhold 12-24 h or more; cover with dexamethasone"],
+        ["Spironolactone, diuretics, ACEi/ARB, DHP-CCB", "ARR", "Renin raised - false negative", "Switch to verapamil SR, hydralazine, alpha-blockers"],
+        ["Beta-blockers, clonidine, NSAIDs", "ARR", "Renin lowered - false positive", "Switch where safe or interpret with caution"],
+        ["Biotin supplements", "Immunoassays (TSH, FT4, cortisol, PTH)", "Spuriously high or low values", "Stop 2-3 days before testing"],
+        ["Hypokalaemia", "ARR, aldosterone tests", "Aldosterone suppressed - false negative", "Correct potassium first"],
+      ],
+    },
+    {
+      heading: "Differential diagnosis of ACTH-dependent Cushing syndrome by dynamic tests",
+      columns: ["Test", "Cushing disease (pituitary)", "Ectopic ACTH", "Adrenal tumour"],
+      rows: [
+        ["Plasma ACTH", "Normal or mildly raised", "Often very high", "Suppressed (under 10 pg/mL)"],
+        ["High-dose DST", "Suppresses over 50% (most)", "Usually no suppression", "No suppression"],
+        ["CRH or desmopressin test", "ACTH and cortisol rise", "Usually no rise", "No rise"],
+        ["IPSS central-to-peripheral ACTH ratio", "2 or more basal, 3 or more after CRH/desmopressin", "Under 2 / under 3", "Not indicated"],
+        ["Hypokalaemia", "Uncommon", "Common, severe", "Occasional"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Morning cortisol under 100 nmol/L with vomiting or hypotension - treat as adrenal crisis, do not wait for a Synacthen test",
+    "Seizure or unconsciousness during an insulin tolerance test",
+    "Weight loss over 3% or plasma sodium over 150 mmol/L during water deprivation",
+    "Hypernatraemia with altered sensorium in a polyuric patient who cannot drink",
+    "Chest pain or arrhythmia during ITT or saline infusion",
+    "Severe hypokalaemia (under 3.0 mmol/L) found during aldosterone work-up",
+    "Glucose 55 mg/dL or less with neuroglycopenia during a supervised fast",
+  ],
+  pearls: [
+    "If it is low, stimulate it; if it is high, suppress it.",
+    "Biochemistry first, imaging last - or you will find incidentalomas.",
+    "SST: 250 microgram tetracosactide, cortisol at 0, 30, 60 min; peak 500 nmol/L classic, about 450 with newer assays.",
+    "1 mg overnight DST: cortisol under 50 nmol/L (1.8 microgram/dL) is normal.",
+    "OGTT-GH: nadir under 1 microgram/L excludes acromegaly.",
+    "ITT is the gold standard for both cortisol and GH, but contraindicated in IHD and epilepsy.",
+    "Water deprivation: under 300 then over 50% rise with desmopressin means AVP deficiency.",
+    "Copeptin over 4.9 pmol/L after hypertonic saline means primary polydipsia.",
+    "Stop spironolactone 4-6 weeks and correct potassium before the aldosterone-renin ratio.",
+  ],
+  mcqs: [
+    {
+      id: "endocrine-dynamic-endocrine-tests-q1",
+      stem: "A 45-year-old woman with an incidental 2.5 cm adrenal adenoma has an 8 am cortisol of 95 nmol/L after 1 mg dexamethasone at midnight. She has hypertension but no Cushingoid features. How is this best classified under the ESE/ENSAT 2023 guideline?",
+      options: [
+        "Normal suppression - no further evaluation",
+        "Overt Cushing syndrome needing urgent adrenalectomy",
+        "Mild autonomous cortisol secretion",
+        "Primary aldosteronism",
+      ],
+      answer: 2,
+      explanation:
+        "A post-dexamethasone cortisol above 50 nmol/L (1.8 microgram/dL) without overt clinical Cushing features is termed mild autonomous cortisol secretion (MACS) in the 2023 ESE/ENSAT update, and should prompt screening for hypertension, diabetes and osteoporosis. Normal suppression requires under 50 nmol/L; overt Cushing needs clinical features and further confirmation; the DST says nothing about aldosterone.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-dynamic-endocrine-tests-q2",
+      stem: "Ten days after transsphenoidal surgery for a pituitary macroadenoma, a patient has a normal short Synacthen test. What is the correct interpretation?",
+      options: [
+        "The test may be falsely normal because the adrenals have not yet atrophied; cover with glucocorticoid and retest after 6 weeks",
+        "Secondary adrenal insufficiency is excluded permanently",
+        "The test proves primary adrenal insufficiency",
+        "An insulin tolerance test is contraindicated for life",
+      ],
+      answer: 0,
+      explanation:
+        "The SST tests adrenal responsiveness to ACTH; after acute loss of pituitary ACTH, the adrenal cortex takes about 4-6 weeks to atrophy, so the response can still be normal early on. A morning cortisol or glucocorticoid cover with later retesting is advised. It neither excludes secondary AI permanently nor indicates primary AI, and ITT can be used later if there are no contraindications.",
+      difficulty: "hard",
+    },
+    {
+      id: "endocrine-dynamic-endocrine-tests-q3",
+      stem: "A patient with polyuria undergoes water deprivation. Urine osmolality reaches only 210 mOsm/kg with plasma sodium 148 mmol/L; after desmopressin it rises to 520 mOsm/kg. The diagnosis is:",
+      options: [
+        "Primary polydipsia",
+        "Arginine vasopressin resistance (nephrogenic diabetes insipidus)",
+        "Normal response",
+        "Arginine vasopressin deficiency (central diabetes insipidus)",
+      ],
+      answer: 3,
+      explanation:
+        "Failure to concentrate urine (under 300 mOsm/kg) despite rising plasma sodium, followed by a rise of over 50% after desmopressin, shows the kidney responds to AVP but none is being secreted - AVP deficiency. In AVP resistance the urine does not concentrate after desmopressin; in primary polydipsia and normal people urine concentrates well during deprivation itself.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-dynamic-endocrine-tests-q4",
+      stem: "A hypertensive man with a raised aldosterone-renin ratio is due for a saline infusion test. Which preparation is most appropriate?",
+      options: [
+        "Continue spironolactone to protect against hypokalaemia",
+        "Correct hypokalaemia and stop spironolactone 4-6 weeks before, switching to verapamil SR or an alpha-blocker if needed",
+        "Start a beta-blocker to control BP during the test",
+        "Restrict dietary salt for a week before the test",
+      ],
+      answer: 1,
+      explanation:
+        "Spironolactone raises renin and invalidates aldosterone testing, and hypokalaemia suppresses aldosterone, so both must be dealt with first; verapamil SR, hydralazine and alpha-blockers have minimal effect on the axis. Beta-blockers suppress renin and give false positives, and salt restriction stimulates renin-aldosterone - the opposite of the liberal sodium intake required.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-dynamic-endocrine-tests-q5",
+      stem: "Which finding during a 75 g OGTT supports a diagnosis of acromegaly in a patient with a raised IGF-1?",
+      options: [
+        "GH nadir of 0.2 microgram/L",
+        "Glucose at 2 hours of 150 mg/dL",
+        "GH failing to fall below 1 microgram/L",
+        "Insulin level rising fivefold",
+      ],
+      answer: 2,
+      explanation:
+        "Glucose normally suppresses GH via somatostatin; failure of GH to fall below 1 microgram/L (below 0.4 with ultrasensitive assays) confirms autonomous secretion in acromegaly. A nadir of 0.2 microgram/L is normal suppression; the 2-hour glucose shows impaired tolerance, common in acromegaly but not diagnostic; insulin rise is not a criterion.",
+      difficulty: "easy",
+    },
+  ],
+  theory: [
+    {
+      id: "endocrine-dynamic-endocrine-tests-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "less-common",
+      question:
+        "What are dynamic endocrine function tests? Describe the procedure, interpretation and pitfalls of the short Synacthen test, the dexamethasone suppression tests and the water deprivation test.",
+      openingLines: [
+        "Dynamic endocrine tests assess a hormonal axis by its response to a stimulus or suppressant, because basal hormone levels fluctuate.",
+        "The principle is to stimulate a gland suspected to be deficient and to suppress a gland suspected to be overactive, using standard protocols and assay-specific cut-offs.",
+      ],
+      answer: [
+        {
+          heading: "1. Principles and classification",
+          points: [
+            "Stimulation vs suppression vs provocation tests; biochemistry before imaging. [Harrison 22e]",
+          ],
+        },
+        {
+          heading: "2. Short Synacthen test",
+          points: [
+            "Tetracosactide 250 microgram IV/IM, cortisol 0, 30, 60 min; peak 500 nmol/L classic, about 420-450 with newer assays. [ESE/ES 2024]",
+            "Pitfalls: oral oestrogen, recent pituitary insult, steroid cross-reactivity, low CBG. [Endocrine Society 2016]",
+          ],
+        },
+        {
+          heading: "3. Dexamethasone suppression tests",
+          points: [
+            "1 mg overnight: cortisol under 50 nmol/L normal; LDDST 0.5 mg 6-hourly 48 h; HDDST 2 mg 6-hourly - over 50% suppression favours Cushing disease. [Endocrine Society 2008]",
+            "Pitfalls: enzyme inducers, oestrogen, pseudo-Cushing, non-adherence; MACS in incidentaloma. [ESE/ENSAT 2023]",
+          ],
+        },
+        {
+          heading: "4. Water deprivation test",
+          points: [
+            "Protocol with stopping rules (3% weight loss, sodium over 145-150); desmopressin 2 microgram. [Endocrine Society 2022]",
+            "Interpretation table; copeptin tests as preferred alternatives. [Fenske NEJM 2018]",
+          ],
+        },
+        {
+          heading: "5. Safety and general pitfalls",
+          points: [
+            "Drug history, biotin, timing, supervision, emergency drugs. [Williams Endocrinology 15e]",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Table: test, protocol, normal response, abnormal response",
+        "Water deprivation interpretation table",
+      ],
+      markSplit: [
+        { part: "Definition and principles", marks: 1.5 },
+        { part: "Short Synacthen test", marks: 2.5 },
+        { part: "Dexamethasone suppression tests", marks: 3 },
+        { part: "Water deprivation test", marks: 2.5 },
+        { part: "Pitfalls and safety", marks: 0.5 },
+      ],
+      keywords: ["Synacthen", "dexamethasone suppression", "water deprivation", "copeptin", "MACS", "assay cut-off"],
+    },
+    {
+      id: "endocrine-dynamic-endocrine-tests-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Write a short note on the insulin tolerance test.",
+      openingLines: [
+        "The insulin tolerance test uses insulin-induced hypoglycaemia as a central stress to test the whole hypothalamic-pituitary-adrenal and GH axes.",
+        "It is the gold standard for both, but needs strict supervision and has firm contraindications.",
+      ],
+      answer: [
+        {
+          heading: "1. Indications and contraindications",
+          points: [
+            "Suspected secondary AI or adult GHD; contraindicated in IHD, abnormal ECG, epilepsy, elderly, cortisol under 100 nmol/L, untreated hypothyroidism. [Williams Endocrinology 15e]",
+          ],
+        },
+        {
+          heading: "2. Procedure",
+          points: [
+            "Fasting, cannula, doctor present; soluble insulin 0.1-0.15 U/kg IV; samples 0-120 min; target glucose under 40 mg/dL with symptoms. [Williams Endocrinology 15e]",
+          ],
+        },
+        {
+          heading: "3. Interpretation",
+          points: [
+            "Peak cortisol about 500 nmol/L or more (assay-dependent) normal; peak GH under 3 microgram/L = adult GHD. [AACE 2019]",
+          ],
+        },
+        {
+          heading: "4. Safety",
+          points: [
+            "Dextrose for severe neuroglycopenia, continue sampling; meal after; alternatives glucagon test or SST. [AACE 2019]",
+          ],
+        },
+      ],
+      mustDraw: ["Timeline of sampling with glucose curve"],
+      markSplit: [
+        { part: "Indications and contraindications", marks: 1.5 },
+        { part: "Procedure", marks: 1.5 },
+        { part: "Interpretation", marks: 1 },
+        { part: "Safety and alternatives", marks: 1 },
+      ],
+      keywords: ["ITT", "hypoglycaemia", "GH deficiency", "cortisol peak", "glucagon test"],
+    },
+  ],
+  references: [
+    "Williams Textbook of Endocrinology, 15th edition, 2024 - Endocrine testing",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025",
+    "Bornstein SR et al. Diagnosis and treatment of primary adrenal insufficiency: Endocrine Society Clinical Practice Guideline, 2016",
+    "Nieman LK et al. The diagnosis of Cushing's syndrome: Endocrine Society Clinical Practice Guideline, 2008",
+    "Fassnacht M et al. ESE clinical practice guideline on the management of adrenal incidentalomas, in collaboration with ENSAT, 2023 update",
+    "Beuschlein F et al. ESE/Endocrine Society guideline on glucocorticoid-induced adrenal insufficiency, 2024",
+    "Fenske W et al. A copeptin-based approach in the diagnosis of diabetes insipidus - NEJM, 2018; Arima H et al. Changing the name of diabetes insipidus, 2022",
+    "Endocrine Society Clinical Practice Guideline on Primary Aldosteronism, 2025; Yuen KCJ et al. AACE Clinical Practice Guidelines for Growth Hormone Deficiency in Adults, 2019",
+  ],
+});
+
 export default topics;

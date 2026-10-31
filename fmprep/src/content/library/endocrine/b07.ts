@@ -80,7 +80,7 @@ topics.push({
       ],
     },
     {
-      heading: "Clinical features - history",
+      heading: "Clinical features - history and examination",
       points: [
         "**Abrupt onset** of polyuria, nocturia and thirst, with a **craving for ice-cold water**, points to **AVP-D**; gradual onset with fluctuating intake and drinking during the day only suggests **primary polydipsia**. [Williams Endocrinology 15e]",
         "**Nocturia** waking the patient 3-4 times a night is typical of AVP-D and AVP-R; primary polydipsia patients often sleep through. [Harrison 22e]",
@@ -88,12 +88,6 @@ topics.push({
         "In a child, **bed-wetting, irritability, failure to thrive and fever from dehydration** may be the only clues; check for **skin rash, bone lesions and ear discharge** (Langerhans cell histiocytosis). [Nelson 22e]",
         "Ask for **psychiatric history**, anticholinergic drugs and **diet fads** ('drink 5 litres a day') before labelling AVP-D. [Williams Endocrinology 15e]",
         "Elderly patients, unconscious or post-operative patients and infants **cannot drink to thirst** - they present with **hypernatraemia, confusion and seizures** rather than polyuria. [Harrison 22e]",
-      ],
-    },
-    {
-      heading: "Examination findings",
-      points: [
-        "Assess **volume status**: postural fall in BP, dry mucosa and tachycardia mean intake is not keeping up - check sodium urgently. [Harrison 22e]",
         "Examine **visual fields by confrontation** (bitemporal hemianopia from a sellar or suprasellar mass) and **fundi** (optic atrophy in Wolfram syndrome or chronic compression). [Harrison 22e]",
         "Look for features of **hypopituitarism**: pale smooth skin, loss of body hair, small testes, short stature in children. [Williams Endocrinology 15e]",
         "Look for **Langerhans cell histiocytosis** clues: seborrhoeic scalp rash, gum disease with loose teeth, lytic skull lesions, proptosis. [Nelson 22e]",
@@ -1189,22 +1183,16 @@ topics.push({
       ],
     },
     {
-      heading: "Complications and prognosis",
+      heading: "Complications, prognosis, referral and follow-up",
       points: [
         "Untreated: **recurrent stones, CKD, fractures, pancreatitis**, neurocognitive decline and possibly increased cardiovascular risk. [5th International Workshop 2022]",
         "After successful surgery, **BMD rises 5-12%** over 1-4 years (spine and hip most), **stone recurrence falls**, and fracture risk drops. [5th International Workshop 2022]",
         "**Persistent PHPT** (hypercalcaemia within 6 months of surgery) occurs in about **2-5%** and **recurrence** (after 6 months of normocalcaemia) in about 1-10%; higher in MEN1 and multigland disease. [AAES 2016]",
         "About **25-40%** of asymptomatic patients followed without surgery show **progression** (calcium rise, BMD loss or stones) over 10-15 years. [5th International Workshop 2022]",
         "**Parathyroid carcinoma** has a **5-year survival of about 80-85%**; death usually comes from uncontrolled hypercalcaemia. [Williams Endocrinology 15e]",
-      ],
-    },
-    {
-      heading: "Referral, follow-up and monitoring",
-      points: [
         "**Refer** to an endocrinologist every patient with PTH-dependent hypercalcaemia, and to an **experienced endocrine surgeon** once surgery is indicated. [5th International Workshop 2022]",
         "**Non-operated patients**: serum calcium and creatinine **every year**; **DXA every 1-2 years** (three sites); renal imaging if stones are suspected; 24-h urine calcium if clinically indicated. [5th International Workshop 2022]",
         "**Post-op**: calcium at 1-2 weeks and **6 months** (cure defined as normocalcaemia at 6 months), then yearly; DXA at 1-2 years. [AAES 2016]",
-        "**MEN1 or hereditary disease**: lifelong annual calcium and screening of relatives. [Harrison 22e]",
         "Counsel: **adequate fluid**, normal dietary calcium, avoid thiazides and dehydration, report vomiting or confusion. [5th International Workshop 2022]",
         "Consider PHPT when a primary care physician sees **recurrent stones, low BMD at a young age or pancreatitis** - a single serum calcium in the NP-NCD OPD can pick it up. [Indian PHPT Registry]",
       ],
