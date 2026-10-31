@@ -211,6 +211,394 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "endocrine-male-hypogonadism": {
+    checked: "2026-10",
+    updated: [
+      "TRAVERSE 2023: testosterone non-inferior for MACE; more AF, AKI, PE",
+      "TRAVERSE substudies 2023-2024: no excess high-grade prostate cancer, more fractures, no effect on depression",
+      "FDA 2025 class labelling: TRAVERSE added, blood pressure warning for all testosterone products",
+      "AUA testosterone deficiency guideline amended 2024; EAU Sexual and Reproductive Health 2025 thresholds",
+      "WHO semen manual 2021 reference limits",
+    ],
+    master: {
+      heading: "Master revision table - male hypogonadism and testosterone therapy",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Symptoms of androgen deficiency plus **unequivocally low morning fasting testosterone on two occasions** (below 264 ES / 300 AUA / 350 ng/dL EAU)."],
+        ["Burden", "Symptomatic LOH about **2% of men 40-79 (EMAS)**; Klinefelter **1 in 500-1000**; low testosterone common in Indian men with obesity and T2DM."],
+        ["Classification", "**Primary** (high LH/FSH) vs **secondary** (low/normal LH/FSH); organic vs **functional**; pre- vs post-pubertal onset."],
+        ["Causes", "Primary: **Klinefelter**, mumps, chemoradiation, cryptorchidism; secondary: **Kallmann**, prolactinoma, haemochromatosis, obesity, opioids, steroids."],
+        ["Pathophysiology", "Intratesticular testosterone 100x serum; **exogenous testosterone suppresses LH/FSH and sperm**; SHBG alters total testosterone."],
+        ["Clinical", "**Low libido, fewer morning erections**, gynaecomastia, loss of body hair, small testes, infertility, fractures."],
+        ["Examination", "**Orchidometer** (normal 15-25 mL), eunuchoid proportions, gynaecomastia, smell, visual fields, DRE."],
+        ["Investigations", "Two 7-10 am fasting testosterone, free T if SHBG altered, **LH/FSH**; primary - **karyotype**; secondary - **prolactin, ferritin**, pituitary axes, MRI if under 150 ng/dL."],
+        ["Treatment - functional", "Weight loss, CPAP, stop opioids, steroids and anabolic agents first."],
+        ["Treatment - testosterone", "**Enanthate 100-200 mg IM 1-2 weekly**, **undecanoate 1000 mg IM 0, 6 wk then 10-14 weekly**, **gel 50-100 mg daily**; target mid-normal."],
+        ["Contraindications", "Prostate/breast cancer, **PSA over 4**, **Hct over 48%**, untreated OSA, MI/stroke within 6 months, **fertility wish**."],
+        ["Fertility", "Secondary: **hCG 1500-2000 IU 2-3x weekly plus FSH**; primary: **micro-TESE with ICSI**."],
+        ["Monitoring", "At 3-6 months then yearly: **testosterone, haematocrit (stop over 54%), PSA** (refer if over 4 or rise over 1.4 in a year)."],
+        ["Latest", "**TRAVERSE 2023**: MACE 7.0% vs 7.3%, more AF, AKI, PE, fractures; FDA 2025 labelling change."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Work-up of suspected male hypogonadism",
+        steps: [
+          { label: "Specific symptoms or signs", detail: "Low libido, fewer morning erections, gynaecomastia, small testes" },
+          { label: "Fasting total testosterone 7-10 am, twice", detail: "Avoid acute illness; free T if obese or diabetic", tone: "decision" },
+          { label: "Confirmed low: measure LH and FSH", tone: "decision" },
+          { label: "High LH/FSH: primary", detail: "Karyotype, semen analysis" },
+          { label: "Low/normal LH/FSH: secondary", detail: "Prolactin, ferritin, cortisol, TSH/FT4" },
+          { label: "Testosterone under 150 ng/dL or mass symptoms", detail: "Pituitary MRI", tone: "warn" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Management ladder",
+        steps: [
+          { label: "Treat functional causes", detail: "Weight loss, CPAP, stop opioids, steroids, anabolic agents", tone: "good" },
+          { label: "Fertility wanted?", detail: "Secondary: hCG plus FSH; primary: micro-TESE with ICSI", tone: "decision" },
+          { label: "Screen contraindications", detail: "PSA, Hct over 48%, OSA, recent MI/stroke, cancer", tone: "warn" },
+          { label: "Start testosterone", detail: "Gel 50-100 mg daily, or IM enanthate or undecanoate" },
+          { label: "Review 3-6 months", detail: "Level mid-normal, Hct, PSA, symptoms" },
+          { label: "Hct over 54% or PSA rise", detail: "Stop or reduce; refer urology", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Primary vs secondary hypogonadism",
+        columns: ["Feature", "Primary", "Secondary"],
+        rows: [
+          ["Site", "Testis", "Hypothalamus or pituitary"],
+          ["LH / FSH", "High", "Low or normal"],
+          ["Examples", "Klinefelter, mumps orchitis", "Kallmann, prolactinoma, obesity"],
+          ["Key test", "Karyotype", "Prolactin, ferritin, MRI"],
+          ["Fertility with hormones", "No", "Yes - hCG plus FSH"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Hypogonadism needs **symptoms plus low morning testosterone** on two occasions.",
+            "Cut-offs: **264 ng/dL** (Endocrine Society), **300** (AUA), **12 nmol/L** (EAU).",
+            "Symptomatic late-onset hypogonadism affects only about **2%** of men aged 40-79.",
+            "**Klinefelter (47,XXY)** is the commonest chromosomal cause of primary hypogonadism.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Primary**: testis fails, LH and FSH high.",
+            "**Secondary**: hypothalamus or pituitary fails, LH and FSH low or normal.",
+            "**Functional** secondary: obesity, diabetes, sleep apnoea, opioids, steroids; reversible.",
+            "Pre-pubertal onset gives **eunuchoid** build; post-pubertal gives low libido and ED.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "LH drives Leydig testosterone; FSH plus testicular testosterone drives sperm.",
+            "**Exogenous testosterone** suppresses LH and FSH and causes azoospermia.",
+            "**SHBG** falls in obesity and diabetes, so total testosterone looks falsely low.",
+            "Testosterone suppresses **hepcidin**, causing erythrocytosis.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Specific: **low libido**, fewer morning erections, gynaecomastia, small testes, infertility.",
+            "Non-specific: fatigue, low mood, poor concentration.",
+            "Klinefelter: tall, **small firm testes**, gynaecomastia, azoospermia.",
+            "Kallmann: absent puberty with **anosmia**.",
+            "Measure testes with a **Prader orchidometer**; normal adult 15-25 mL.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Fasting 7-10 am testosterone**, repeated; free testosterone if SHBG altered.",
+            "**LH and FSH** decide primary versus secondary.",
+            "Primary: **karyotype** and semen analysis.",
+            "Secondary: **prolactin, ferritin**, cortisol, thyroid; MRI if testosterone under 150 ng/dL.",
+            "Before treatment: **haematocrit, PSA**, DXA if fractures.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Functional causes first: **weight loss**, CPAP, stop opioids and anabolic steroids.",
+            "**Testosterone gel** 50-100 mg daily gives the steadiest levels.",
+            "**Enanthate** 100-200 mg IM every 1-2 weeks; **undecanoate** 1000 mg IM every 10-14 weeks.",
+            "Aim for **mid-normal** testosterone.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Fertility in secondary hypogonadism: **hCG**, then add FSH.",
+            "Primary hypogonadism fertility: **micro-TESE with ICSI**.",
+            "Prolactinoma: **cabergoline** restores testosterone.",
+            "Do not start if **PSA over 4**, haematocrit over 48% or fertility wanted.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Commonest adverse effect: **erythrocytosis**; stop if haematocrit over 54%.",
+            "Others: acne, OSA worsening, gynaecomastia, testicular atrophy, **infertility**.",
+            "Red flags: **visual loss**, severe headache, testicular mass, thrombosis.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Review at **3-6 months**, then yearly: level, haematocrit, PSA, symptoms.",
+            "Refer urology if **PSA rises over 1.4 ng/mL** in a year or exceeds 4.",
+            "Refer endocrinology for secondary, Klinefelter, Kallmann or fertility cases.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**TRAVERSE 2023**: no excess MACE; more AF, AKI, PE and fractures.",
+            "**FDA 2025**: labels updated with TRAVERSE and a blood pressure warning.",
+            "**EAU 2025** keeps 12 nmol/L threshold and stresses functional causes and fertility.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Testosterone enanthate", "100-200 mg IM every 1-2 weeks", "Long term", "Erythrocytosis, mood swings"],
+            ["Testosterone undecanoate depot", "1000 mg IM at 0, 6 weeks", "Then every 10-14 weeks", "POME, observe 30 minutes"],
+            ["Testosterone gel 1%", "50-100 mg daily on skin", "Long term", "Transfer to partner or child"],
+            ["hCG", "1500-2000 IU SC/IM 2-3 times weekly", "6-24 months", "Gynaecomastia; secondary only"],
+            ["FSH / hMG", "75-150 IU SC 3 times weekly", "Added after 6 months", "Cost"],
+          ],
+        },
+        {
+          heading: "Primary vs secondary",
+          columns: ["Feature", "Primary", "Secondary"],
+          rows: [
+            ["LH / FSH", "High", "Low or normal"],
+            ["Examples", "Klinefelter, mumps", "Kallmann, prolactinoma, obesity"],
+            ["Test", "Karyotype", "Prolactin, ferritin, MRI"],
+            ["Fertility", "Micro-TESE", "hCG plus FSH"],
+          ],
+        },
+        {
+          heading: "Monitoring cut-offs",
+          columns: ["Parameter", "Action threshold"],
+          rows: [
+            ["Testosterone", "Aim mid-normal (about 400-700 ng/dL)"],
+            ["Haematocrit", "Do not start over 48%; stop over 54%"],
+            ["PSA", "Refer over 4 ng/mL or rise over 1.4 in a year"],
+            ["IPSS", "Avoid if over 19"],
+          ],
+        },
+      ],
+      remember: [
+        "**Two morning fasting samples** before any diagnosis.",
+        "**LH/FSH high = testis; low = brain.**",
+        "**Testosterone is a contraceptive**: fertility needs hCG.",
+        "**Tall + small firm testes + gynaecomastia = Klinefelter.**",
+        "**Monitoring triad**: level, haematocrit, PSA.",
+        "Secondary hypogonadism: always check **prolactin and ferritin**.",
+        "**TRAVERSE**: safe for MACE, but watch AF, PE and fractures.",
+      ],
+    },
+  },
+  "endocrine-gynaecomastia": {
+    checked: "2026-10",
+    updated: [
+      "EAA 2019 gynaecomastia guideline: hormone panel with hCG, tamoxifen for recent disease, no aromatase inhibitors",
+      "ACR Appropriateness Criteria 2021: ultrasound under 25, mammography 25 and over for indeterminate masses",
+      "NACO 2021 dolutegravir-based TLD replaces efavirenz, reducing drug-induced cases",
+      "EAU prostate cancer guideline 2024: tamoxifen prophylaxis with bicalutamide",
+    ],
+    master: {
+      heading: "Master revision table - gynaecomastia",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Benign **glandular** breast proliferation in males: **rubbery concentric subareolar disc**; pseudogynaecomastia is fat only."],
+        ["Burden", "Trimodal: **neonatal 60-90%, pubertal up to 50-60%, older men 25-65%**; pubertal regresses in 90% within 2 years."],
+        ["Mechanism", "**Oestrogen-to-androgen ratio rises**: more oestrogen, less androgen, receptor block, raised SHBG."],
+        ["Causes", "Physiological, **drugs (spironolactone, anti-androgens, isoniazid, efavirenz)**, cirrhosis, hypogonadism, hyperthyroidism, CKD, **hCG/testicular/adrenal tumours**."],
+        ["Classification", "**Simon I, IIa, IIb, III**; under vs over 12 months (florid vs fibrotic)."],
+        ["History", "Duration, pain, **drug and supplement history**, hypogonadal symptoms, systemic disease."],
+        ["Examination", "Pinch test, disc size, cancer signs, **testes** (mass, small firm), liver and thyroid signs."],
+        ["Investigations", "Normal pubertal boy: none; adult: **testosterone, oestradiol, LH, FSH, SHBG, hCG**, TSH, LFT, creatinine; testicular US if abnormal."],
+        ["Interpretation", "High hCG = germ cell tumour; high E2 low LH = Leydig/adrenal tumour; low T high LH = Klinefelter."],
+        ["Treatment - first line", "Reassure pubertal; **stop or switch drug**; treat cause."],
+        ["Treatment - medical", "**Tamoxifen 10-20 mg daily for 3-6 months** if under 12 months and painful; aromatase inhibitors ineffective."],
+        ["Treatment - surgery", "**Subcutaneous mastectomy plus liposuction** for fibrotic, persistent or Simon IIb-III."],
+        ["Red flags", "Hard eccentric mass, bloody discharge, nodes, **testicular mass**, high hCG."],
+        ["Exam pearl", "Always examine testes and check hCG in unexplained adult gynaecomastia."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Evaluating gynaecomastia",
+        steps: [
+          { label: "Confirm glandular disc with pinch test", detail: "Soft fat only: pseudogynaecomastia" },
+          { label: "Suspicious for cancer?", detail: "Hard, eccentric, fixed, bloody discharge: imaging and biopsy", tone: "warn" },
+          { label: "Pubertal with normal testes?", detail: "Reassure, review in 6 months", tone: "good" },
+          { label: "Drug or systemic cause?", detail: "Stop or switch drug; treat liver, thyroid, renal disease", tone: "decision" },
+          { label: "Hormone panel", detail: "Testosterone, oestradiol, LH, FSH, SHBG, hCG, TSH" },
+          { label: "High hCG or oestradiol", detail: "Testicular ultrasound, then CT chest/abdomen or adrenal CT", tone: "warn" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment ladder",
+        steps: [
+          { label: "Reassure and observe", detail: "Pubertal; idiopathic with normal tests", tone: "good" },
+          { label: "Remove cause", detail: "Spironolactone to eplerenone or amiloride; efavirenz to TLD" },
+          { label: "Tamoxifen 10-20 mg daily", detail: "3-6 months if under 12 months and painful" },
+          { label: "Surgery", detail: "Mastectomy and liposuction for fibrotic or Simon IIb-III", tone: "decision" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Hormone patterns and causes",
+        root: "Adult gynaecomastia with abnormal hormones",
+        arms: [
+          { label: "High hCG", tone: "warn", steps: ["Testicular germ cell tumour", "Extragonadal hCG tumour", "Scrotal ultrasound first"] },
+          { label: "High oestradiol, low LH", tone: "warn", steps: ["Leydig or Sertoli tumour", "Feminising adrenal tumour", "DHEAS, adrenal CT"] },
+          { label: "Low T, high LH", steps: ["Primary hypogonadism", "Klinefelter: karyotype"] },
+          { label: "High T, high LH", steps: ["Hyperthyroidism", "Androgen resistance"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Gynaecomastia** is benign glandular breast growth in males, felt as a subareolar disc.",
+            "**Pseudogynaecomastia** is fat only, with no disc on pinch test.",
+            "Common in **newborns, puberty and old age**.",
+            "Pubertal cases regress in **90%** within 2 years.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Drugs: **spironolactone**, bicalutamide, finasteride, isoniazid, efavirenz, cimetidine, anabolic steroids.",
+            "Systemic: **cirrhosis**, hyperthyroidism, CKD, refeeding.",
+            "Hypogonadism: **Klinefelter** and pituitary disease.",
+            "Tumours: **hCG-secreting germ cell**, Leydig cell, adrenal carcinoma.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Oestrogen stimulates and androgen inhibits breast tissue; the **ratio** matters.",
+            "**hCG** stimulates testicular aromatase, raising oestradiol.",
+            "Under 12 months the tissue is **florid**; after that it becomes **fibrotic**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Tender, rubbery, **concentric** disc, usually bilateral.",
+            "Cancer signs: **hard, eccentric, fixed**, bloody discharge, axillary nodes.",
+            "Always examine the **testes** for a mass or small firm testes.",
+            "Look for liver, thyroid and renal disease.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Normal pubertal boy: **no tests**.",
+            "Adult: **testosterone, oestradiol, LH, FSH, SHBG, hCG**, TSH, LFT, creatinine.",
+            "High hCG or oestradiol: **testicular ultrasound**.",
+            "Suspected cancer: ultrasound under 25, **mammography** at 25 or over, then biopsy.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Reassure** pubertal boys.",
+            "**Stop or switch** the offending drug; review in 1 month.",
+            "Treat the cause: thyroid, liver, hypogonadism, tumour.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Tamoxifen 10-20 mg daily** for 3-6 months for recent painful disease.",
+            "**Aromatase inhibitors** do not work.",
+            "Surgery for **fibrotic** or large disease: subcutaneous mastectomy plus liposuction.",
+            "Tamoxifen prophylaxis for men on **bicalutamide**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Urgent referral for **suspected cancer** or a testicular mass.",
+            "Endocrinology for abnormal hormones or prepubertal gynaecomastia.",
+            "Re-measure disc every **3-6 months**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**EAA 2019** guideline: hCG in panel, tamoxifen for recent disease, no aromatase inhibitors.",
+            "**ACR**: imaging only for suspicious masses.",
+            "**NACO TLD** first line has cut efavirenz-related cases.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Tamoxifen", "10-20 mg oral daily", "3-6 months", "Hot flushes, VTE"],
+            ["Raloxifene", "60 mg oral daily", "3-6 months", "Leg cramps, VTE"],
+            ["Eplerenone (instead of spironolactone)", "25-50 mg oral daily", "Long term", "Hyperkalaemia"],
+            ["Amiloride (cirrhosis)", "5-10 mg oral daily", "Long term", "Hyperkalaemia"],
+          ],
+        },
+        {
+          heading: "Differential diagnosis",
+          columns: ["Feature", "Gynaecomastia", "Pseudogynaecomastia", "Breast cancer"],
+          rows: [
+            ["Feel", "Rubbery disc", "Soft fat", "Hard, irregular"],
+            ["Position", "Central", "Diffuse", "Eccentric"],
+            ["Side", "Bilateral", "Bilateral", "Unilateral"],
+            ["Skin/nodes", "Normal", "Normal", "Retraction, nodes"],
+          ],
+        },
+        {
+          heading: "Simon classification",
+          columns: ["Grade", "Description"],
+          rows: [
+            ["I", "Small, no skin excess"],
+            ["IIa", "Moderate, no skin excess"],
+            ["IIb", "Moderate with skin excess"],
+            ["III", "Marked with skin excess"],
+          ],
+        },
+      ],
+      remember: [
+        "**Ratio, not level**: oestrogen up or androgen down.",
+        "**Examine testes, check hCG** in every unexplained adult case.",
+        "**Spironolactone** is the classic drug cause.",
+        "**Under 12 months tamoxifen, over 12 months surgery.**",
+        "**Aromatase inhibitors fail** in gynaecomastia.",
+        "**Pinch test** separates gland from fat.",
+      ],
+    },
+  },
 };
 
 export default revision;

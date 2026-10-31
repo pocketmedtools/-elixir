@@ -208,4 +208,418 @@ revision["endocrine-injectables-glp1-tirzepatide"] = {
   },
 };
 
+revision["endocrine-insulin-intensification"] = {
+  checked: "2026-10",
+  updated: [
+    "ADA Standards of Care 2026 Section 9: GLP-1 RA or FRC before prandial insulin; overbasalisation signs defined.",
+    "ADA 2026 Section 7: CGM for all on insulin; AID to be considered in type 2 diabetes on multiple daily injections.",
+    "FITTER Forward 2024: 4 mm needle at 90 degrees, no reuse, structured rotation, routine site checks.",
+    "Once-weekly insulin icodec approved in EU 2024; efsitora phase 3 (QWINT) completed.",
+    "NLEM 2022: insulin glargine added to India's essential medicines list.",
+  ],
+  master: {
+    heading: "Master revision table - intensifying insulin",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "Adding **prandial cover** when **fasting is at target on basal but HbA1c is not**, or basal exceeds **0.5 U/kg/day**."],
+      ["Overbasalisation", "Basal over **0.5 U/kg**, **bedtime-morning fall 50 mg/dL or more**, hypoglycaemia, high variability - stop raising basal."],
+      ["Exclude first", "Missed doses, **lipohypertrophy**, poor technique, heat-damaged insulin, U-40/U-100 mix-up, steroids."],
+      ["Option 1", "**GLP-1 RA** or **FRC** - iGlarLixi start 15-30 U (max 60); IDegLira start 16 steps (max 50)."],
+      ["Option 2", "**Basal-plus**: **4 U or 10% of basal** before the largest meal; then basal-plus-two, then **basal-bolus**."],
+      ["Option 3", "**Premix BD**: basal split **2/3 morning, 1/3 evening**; or **IDegAsp** once daily with main meal, unit-for-unit."],
+      ["Basal-bolus de novo", "**0.4-0.5 U/kg/day**, half basal, half split over three meals."],
+      ["Titration", "Prandial **+1-2 U or 10-15% twice weekly**; hypoglycaemia - cut **10-20%**; premix - morning by pre-dinner, evening by fasting."],
+      ["Other drugs", "Keep **metformin**, SGLT2i/GLP-1 RA; **stop sulfonylurea** once prandial insulin starts."],
+      ["Technique (FITTER)", "**4 mm, 90 degrees, no fold, hold 10 s**, prime 2 U, roll and invert cloudy insulin 10 times, rotate 1 cm apart, never reuse."],
+      ["Storage", "Unopened **2-8 degrees C**; in-use **28 days** (glargine/human), 42 (detemir), 56 (degludec); matka cooling in heat."],
+      ["Pumps / AID", "CSII basal 40-50% of TDD; **AID for type 1 and considered for MDI type 2**; pump failure means DKA in hours."],
+      ["Complications", "Hypoglycaemia, weight gain 2-4 kg, **lipohypertrophy** (cut dose 10-20% when moving), insulin oedema, early retinopathy worsening."],
+      ["India", "Human insulin and glargine on **NLEM 2022**; free human insulin under **NP-NCD**; premix BD commonest regimen."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "HbA1c above target on basal insulin - work-up",
+      caption: "Find the reason before adding insulin.",
+      steps: [
+        { label: "Check technique, sites, adherence, storage", detail: "Lipohypertrophy, needle reuse, heat", tone: "warn" },
+        { label: "Fasting glucose above 130 mg/dL?", detail: "Yes: titrate basal 2 U every 3 days", tone: "decision" },
+        { label: "Overbasalisation signs?", detail: "Over 0.5 U/kg, night lows, 50 mg/dL fall", tone: "warn" },
+        { label: "Find the meal with highest post-meal value", detail: "SMBG 7-point profile or CGM" },
+        { label: "Add GLP-1 RA, FRC or prandial insulin", detail: "Choose by weight, cost, meals", tone: "good" },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "Stepwise intensification ladder",
+      caption: "Climb one step at a time, reviewing every 3 months.",
+      steps: [
+        { label: "Optimised basal plus metformin", detail: "Fasting 80-130 mg/dL" },
+        { label: "Add GLP-1 RA or switch to FRC", detail: "iGlarLixi 15-30 U; IDegLira 16 steps" },
+        { label: "Basal-plus", detail: "4 U or 10% of basal before largest meal" },
+        { label: "Basal-plus-two", detail: "Add next largest meal" },
+        { label: "Basal-bolus", detail: "Prandial with all meals; stop sulfonylurea" },
+        { label: "Pump or AID", detail: "Selected motivated patients", tone: "good" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Which intensified regimen?",
+      root: "Basal insulin optimised, HbA1c still high",
+      arms: [
+        { label: "Obese, hypoglycaemia-prone", tone: "good", steps: ["Add GLP-1 RA", "Or switch to FRC"] },
+        { label: "Regular meals, cost-sensitive", steps: ["Premix 30/70 BD", "Split basal 2/3 and 1/3"] },
+        { label: "Fewer injections, can afford", steps: ["IDegAsp once daily", "With the largest meal"] },
+        { label: "Irregular meals or insulin-deficient", tone: "decision", steps: ["Basal-bolus", "No meal, no bolus"] },
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Intensify when **fasting is at target but HbA1c is not**.",
+          "Basal insulin controls fasting glucose; meals need **prandial cover**.",
+          "Most people on basal insulin need **more** within a few years.",
+          "**Premix BD** is the commonest intensified regimen in India.",
+        ],
+      },
+      {
+        title: "Causes and risk factors",
+        points: [
+          "**Post-meal hyperglycaemia** with a normal fasting value.",
+          "**Overbasalisation**: over 0.5 U/kg, night lows, 50 mg/dL overnight fall.",
+          "Correctable causes: **lipohypertrophy**, missed doses, heat-damaged insulin.",
+          "Steroids, infection and weight gain raise insulin needs.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "Rapid analogues act in **10-15 minutes**; regular insulin in 30 minutes.",
+          "Premix human **30/70**; analogue premix aspart 30/70, lispro 25/75.",
+          "**IDegAsp** is a clear co-formulation; no mixing needed.",
+          "**FRCs**: iGlarLixi and IDegLira combine basal insulin with a GLP-1 RA.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "**7-point SMBG profile** or CGM shows which meal drives the excess.",
+          "CGM target: **time in range over 70%**, below 70 under 4%.",
+          "HbA1c every **3 months**; check haemoglobin if readings disagree.",
+          "C-peptide and GAD antibody if LADA is suspected.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "First choice: add a **GLP-1 RA** or switch to an FRC.",
+          "**Basal-plus**: 4 U or 10% of basal before the largest meal.",
+          "Reduce basal by the same amount if HbA1c is under 8%.",
+          "**Stop the sulfonylurea** once prandial insulin starts; keep metformin.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "Add prandial insulin to more meals, then **basal-bolus**.",
+          "Or **premix BD**: two-thirds before breakfast, one-third before dinner.",
+          "Premix: **morning dose** by pre-dinner sugar; **evening dose** by fasting sugar.",
+          "Prandial titration: **+1-2 U or 10-15%** twice weekly.",
+          "**Pump or AID** for selected patients on multiple injections.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Elderly**: keep it simple; target HbA1c under 7.5-8%.",
+          "**CKD**: lower doses; insulin is cleared less.",
+          "**Ramadan**: morning premix dose at Iftar; cut Suhoor dose 25-50%.",
+          "**Low-resource**: human premix 30/70 BD with syringes works well.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "**Hypoglycaemia**: treat with 15 g glucose, recheck at 15 minutes.",
+          "Weight gain of **2-4 kg**; add a GLP-1 RA to limit it.",
+          "**Lipohypertrophy**: move to healthy skin and cut dose 10-20%.",
+          "Pump failure can cause **DKA within hours**.",
+        ],
+      },
+      {
+        title: "Referral and follow-up",
+        points: [
+          "**FITTER**: 4 mm needle, 90 degrees, hold 10 seconds, never reuse.",
+          "Store unopened at **2-8 degrees C**; in-use pens 28 days at room temperature.",
+          "Check **injection sites at every visit**.",
+          "Refer severe hypoglycaemia, unawareness or need over **1.5-2 U/kg/day**.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**ADA 2026**: GLP-1 RA or FRC before prandial insulin.",
+          "**ADA 2026**: consider AID in type 2 diabetes on multiple injections.",
+          "**FITTER Forward 2024** reaffirms 4 mm needles and no reuse.",
+          "Weekly insulin **icodec** approved in EU 2024.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Insulins for intensification",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Rapid analogue (aspart, lispro)", "4 U or 10% of basal SC 0-15 min before largest meal", "Acts 3-5 h; titrate twice weekly", "Hypoglycaemia if meal skipped"],
+          ["Regular human insulin", "SC 30 min before meals", "Acts 6-8 h", "Late hypoglycaemia"],
+          ["Premix 30/70", "SC BD before breakfast and dinner; 2/3 and 1/3 split", "Adjust every 3-4 days", "Hypoglycaemia, needs regular meals"],
+          ["IDegAsp 70/30", "SC once daily with largest meal, or BD", "Adjust weekly", "Hypoglycaemia; costlier"],
+          ["iGlarLixi", "SC 15-30 U once daily before first meal", "Max 60 U", "Nausea; MTC/MEN2, pancreatitis"],
+          ["IDegLira", "SC 16 dose steps once daily", "Max 50 steps", "Nausea; MTC/MEN2, pancreatitis"],
+        ],
+      },
+      {
+        heading: "Regimens compared",
+        columns: ["Regimen", "Injections", "Best for", "Drawback"],
+        rows: [
+          ["Basal + GLP-1 RA/FRC", "1", "Obese, hypoglycaemia-prone", "Nausea, cost"],
+          ["Basal-plus", "2", "One big meal", "Other meals uncovered"],
+          ["Premix BD", "2", "Regular meals, low cost", "Rigid meals, post-lunch high"],
+          ["Basal-bolus", "4", "Insulin-deficient, irregular meals", "Complex"],
+          ["Pump / AID", "Continuous", "Type 1, selected type 2", "Cost, DKA on failure"],
+        ],
+      },
+      {
+        heading: "High HbA1c on basal - what is it?",
+        columns: ["Cause", "Clue", "Action"],
+        rows: [
+          ["Under-titrated basal", "Fasting above 130", "Titrate basal"],
+          ["Post-meal excess", "Fasting normal, post-meal over 180", "Add prandial or GLP-1 RA"],
+          ["Overbasalisation", "Over 0.5 U/kg, night lows", "Cut basal, add prandial"],
+          ["Lipohypertrophy", "Rubbery lump, erratic sugars", "Rotate, cut dose 10-20%"],
+        ],
+      },
+    ],
+    remember: [
+      "**Fasting right, HbA1c wrong - fix the meals.**",
+      "**4 U or 10%** before the biggest meal = basal-plus.",
+      "Premix: **morning by evening, evening by morning** sugar.",
+      "**No meal, no bolus.**",
+      "**FITTER five**: 4 mm, 90 degrees, 10 seconds, rotate, never reuse.",
+      "**U-40 vial in U-100 syringe** = 2.5-fold error.",
+      "Prandial insulin in, **sulfonylurea out**.",
+    ],
+  },
+};
+
+revision["endocrine-inpatient-hyperglycaemia"] = {
+  checked: "2026-10",
+  updated: [
+    "ADA Standards of Care 2026 Section 16: target 140-180 mg/dL; CGM in hospital in selected patients with point-of-care confirmation.",
+    "ADA 2025-2026: SGLT2 inhibitors stopped 3 days before surgery (ertugliflozin 4 days).",
+    "JBDS-IP perioperative guideline 2023: SGLT2 inhibitor omitted day before and day of surgery; VRIII substrate 0.45% saline with 5% glucose.",
+    "Multisociety 2024: weekly GLP-1 RAs continued perioperatively in most, with 24-hour liquid diet if high risk.",
+    "Hyperglycaemic crises consensus 2024 (ADA/EASD/JBDS/AACE/DTS): new DKA definition used for inpatient ketone checks.",
+  ],
+  master: {
+    heading: "Master revision table - hospital and perioperative hyperglycaemia",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "Hospital glucose **above 140 mg/dL**; treat when **persistently 180 or more**; hypoglycaemia **under 70**, level 2 **under 54**."],
+      ["Categories", "Known diabetes; new diabetes (**HbA1c 6.5% or more**); **stress hyperglycaemia** (HbA1c under 6.5%)."],
+      ["Targets", "**140-180 mg/dL** ICU and ward; perioperative **100-180**; JBDS 108-180; **NICE-SUGAR** - avoid 81-108."],
+      ["Pathophysiology", "Stress hormones and cytokines - **gluconeogenesis + insulin resistance**; neutrophil dysfunction; SGLT2i plus fasting - **euglycaemic DKA**."],
+      ["Monitoring", "POC glucose **before meals and bedtime**; **4-6 hourly** if NPO; **1-2 hourly** on IV insulin; HbA1c on admission."],
+      ["Ward regimen", "**Basal-bolus 0.3-0.5 U/kg/day** (0.2-0.3 elderly/CKD), 50:50; **basal + correction** if poor intake; no sliding scale alone (**RABBIT 2**)."],
+      ["ICU regimen", "**VRIII 50 U in 49.5 mL saline = 1 U/mL**; substrate 0.45% saline + 5% glucose + KCl; **keep basal running**; overlap SC basal 2 h."],
+      ["Perioperative drugs", "**SGLT2i stop 3 days** (ertugliflozin 4); metformin, SU, DPP-4i hold on day; **basal 75-80%**, NPH 50%; GLP-1 RA continue, liquid diet 24 h if high risk."],
+      ["Surgery logistics", "Postpone elective if **HbA1c above 8.5%**; **first on list**; minor - SC adjustment; major or 2+ missed meals - **VRIII**."],
+      ["Feeding", "Continuous enteral: **basal 30-50% of TDD + regular 6-hourly**; feed stops - **10% dextrose at feed rate**; TPN: **1 U per 10 g dextrose** in bag."],
+      ["Hypoglycaemia", "**15-20 g glucose** or **25 mL 50% dextrose IV** or glucagon 1 mg IM; recheck 15 min; review regimen after any value under 70."],
+      ["Discharge", "HbA1c **under 7% - home regimen**; **7-9% - add basal 50%**; **over 9% - basal-bolus 80%**; follow-up 1-4 weeks."],
+      ["Exam pitfalls", "Sliding scale alone; **stopping basal in type 1**; forgetting SGLT2i hold; writing 'U' for units."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Admitted patient with high glucose",
+      caption: "From the first high reading to a scheduled regimen.",
+      steps: [
+        { label: "Glucose above 140 mg/dL", detail: "Send HbA1c if none in 3 months" },
+        { label: "Ketones, acidosis or osmolality high?", detail: "DKA, euglycaemic DKA or HHS protocol", tone: "warn" },
+        { label: "Persistently 180 or more?", detail: "Start insulin; stop most oral agents", tone: "decision" },
+        { label: "Critically ill?", detail: "IV insulin infusion, hourly checks", tone: "decision" },
+        { label: "Eating: basal-bolus 0.3-0.5 U/kg/day", detail: "NPO or poor intake: basal + correction" },
+        { label: "Target 140-180 mg/dL", detail: "Adjust daily by 10-20%", tone: "good" },
+      ],
+    },
+    {
+      kind: "flow",
+      heading: "Perioperative pathway",
+      caption: "Elective surgery in a person with diabetes.",
+      steps: [
+        { label: "Pre-assessment: HbA1c, heart, kidney, feet", detail: "Postpone if HbA1c above 8.5% and safe", tone: "decision" },
+        { label: "Stop SGLT2 inhibitor 3 days before", detail: "Ertugliflozin 4 days", tone: "warn" },
+        { label: "Day before: basal 75-80%", detail: "NPH 50% on the morning" },
+        { label: "Day of surgery: hold orals; first on list", detail: "Glucose 1-2 hourly" },
+        { label: "Minor surgery: SC adjustment; major: VRIII", detail: "Keep basal insulin running", tone: "decision" },
+        { label: "Eating again: SC regimen, restart drugs", detail: "HbA1c-guided discharge", tone: "good" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Sliding scale vs basal-bolus",
+      columns: ["Feature", "Sliding scale alone", "Basal-bolus + correction"],
+      rows: [
+        ["Approach", "Reactive", "Scheduled and physiological"],
+        ["Basal cover", "None", "50% of daily dose"],
+        ["Glucose control", "Roller-coaster", "Better (RABBIT 2)"],
+        ["Type 1 risk", "DKA", "Safe"],
+        ["Guideline status", "Discouraged", "Recommended"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Hospital hyperglycaemia is glucose **above 140 mg/dL**.",
+          "Treat when glucose is **persistently 180 mg/dL or more**.",
+          "Target **140-180 mg/dL** for most ward and ICU patients.",
+          "Check **HbA1c on admission**: 6.5% or more means diabetes was already there.",
+          "**Hypoglycaemia** is under 70; under 54 is clinically significant.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "**Stress hormones** raise liver glucose output and cause insulin resistance.",
+          "High glucose weakens **neutrophils**, raising infection risk.",
+          "SGLT2 inhibitor plus fasting can cause **euglycaemic DKA**.",
+          "**Sliding scale** ignores basal needs, so glucose swings up and down.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "Capillary glucose **before meals and bedtime** if eating.",
+          "Every **4-6 hours** if NPO; every **1-2 hours** on IV insulin.",
+          "Check **ketones** if over 250, type 1, vomiting, or on an SGLT2 inhibitor.",
+          "Meters mislead in **shock, hypoxia and severe anaemia**; confirm with lab glucose.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "Eating: **basal-bolus 0.3-0.5 U/kg/day**, half basal, half before meals.",
+          "Elderly or CKD: use **0.2-0.3 U/kg/day**.",
+          "Poor intake or NPO: **basal plus correction** insulin.",
+          "**Never sliding scale alone** for persistent hyperglycaemia.",
+          "Hypoglycaemia: **15-20 g glucose** or 25 mL of 50% dextrose IV.",
+        ],
+      },
+      {
+        title: "Inpatient / emergency care",
+        points: [
+          "**IV insulin** for critical illness, DKA, HHS and major surgery.",
+          "**VRIII**: 50 units in 49.5 mL saline, giving **1 unit per mL**.",
+          "Run **0.45% saline with 5% glucose** and potassium alongside.",
+          "**Keep basal insulin** going during the infusion.",
+          "Give SC basal **2 hours before** stopping the infusion.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "**SGLT2 inhibitor**: stop 3 days before surgery; ertugliflozin 4 days.",
+          "Hold metformin, sulfonylurea and DPP-4 inhibitor **on the day** of surgery.",
+          "Give **75-80% of basal** insulin; 50% of morning NPH.",
+          "Postpone elective surgery if **HbA1c above 8.5%** and delay is safe.",
+          "Major surgery or two missed meals: use **VRIII**.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Continuous feeds**: basal 30-50% of daily dose plus regular insulin 6-hourly.",
+          "Feeds stopped: start **10% dextrose** at the feed rate.",
+          "**TPN**: regular insulin in the bag, about 1 unit per 10 g dextrose.",
+          "**Type 1**: never omit basal insulin, even when NPO.",
+          "**Labour**: target 72-126 mg/dL; halve insulin after delivery.",
+        ],
+      },
+      {
+        title: "Referral and follow-up",
+        points: [
+          "HbA1c **under 7%**: go home on the old regimen.",
+          "HbA1c **7-9%**: add basal insulin at about half the hospital dose.",
+          "HbA1c **over 9%**: basal-bolus at about 80% of hospital dose.",
+          "Review in **1-2 weeks** if insulin changed; link to NP-NCD clinic.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**ADA 2026**: CGM allowed in hospital with fingerstick confirmation.",
+          "**JBDS 2023**: omit SGLT2 inhibitor the day before and day of surgery.",
+          "**Multisociety 2024**: continue GLP-1 RA; liquid diet 24 hours if high risk.",
+          "**2024 crisis consensus** updated the DKA definition.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Insulin and drug handling in hospital",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Basal-bolus SC", "0.3-0.5 U/kg/day; 50% basal, 50% with meals", "Daily adjustment", "Hypoglycaemia if meals missed"],
+          ["Basal + correction SC", "Basal 0.1-0.25 U/kg/day + correction", "While intake is poor", "Under-treatment if eating fully"],
+          ["VRIII IV", "1 U/mL; rate by hourly glucose", "Until eating; overlap 2 h", "Hypokalaemia, hypoglycaemia"],
+          ["SGLT2 inhibitor", "Stop before surgery", "3 days (ertugliflozin 4)", "Euglycaemic DKA"],
+          ["Metformin", "Hold on day of surgery", "Restart when eGFR stable", "Lactic acidosis in AKI or sepsis"],
+          ["50% dextrose IV", "25 mL for hypoglycaemia", "Recheck at 15 minutes", "Phlebitis; review insulin"],
+        ],
+      },
+      {
+        heading: "Targets and checks",
+        columns: ["Setting", "Target (mg/dL)", "Check"],
+        rows: [
+          ["Ward, eating", "140-180", "Before meals and bedtime"],
+          ["NPO or feeds", "140-180", "4-6 hourly"],
+          ["IV insulin", "140-180", "1-2 hourly"],
+          ["Surgery", "100-180", "1-2 hourly"],
+          ["Labour", "72-126", "Hourly"],
+        ],
+      },
+      {
+        heading: "High glucose on admission - what is it?",
+        columns: ["Condition", "Clue", "Test"],
+        rows: [
+          ["Stress hyperglycaemia", "Acute illness, HbA1c under 6.5%", "Repeat after recovery"],
+          ["Undiagnosed diabetes", "HbA1c 6.5% or more", "HbA1c"],
+          ["DKA", "Ketones, acidosis", "Ketones 3 or more, pH under 7.3"],
+          ["Euglycaemic DKA", "SGLT2 inhibitor, glucose under 250", "Ketones, gas"],
+          ["HHS", "Glucose 600 or more, dehydration", "Osmolality over 300"],
+        ],
+      },
+    ],
+    remember: [
+      "**140-180** - not 80-110 (NICE-SUGAR).",
+      "**No sliding scale alone** (RABBIT 2).",
+      "**0.3-0.5 U/kg/day, half and half**.",
+      "**SGLT2 inhibitor off 3 days** before surgery.",
+      "**Type 1 never without basal**.",
+      "**VRIII: 50 in 50, basal stays on**.",
+      "Discharge by **admission HbA1c**: under 7, 7-9, over 9.",
+      "Write **'units'** in full.",
+    ],
+  },
+};
+
 export default revision;

@@ -198,6 +198,599 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "endocrine-prolactinoma": {
+    checked: "2026-10",
+    updated: [
+      "Pituitary Society 2023 international consensus (Petersenn et al.) used as the main reference in place of Endocrine Society 2011",
+      "Pituitary Society 2023: surgery an alternative first-line option for selected prolactinomas in expert centres",
+      "Pituitary Society 2023: screen for impulse control disorders at start and during dopamine agonist therapy",
+      "SfE/BSE 2019 echo schedule (baseline, then 5-yearly up to 2 mg/week, yearly above) noted alongside the 2023 dose-targeted approach",
+      "ESE 2021 pregnancy guideline: visual fields each trimester for macroprolactinoma",
+    ],
+    master: {
+      heading: "Master revision table - hyperprolactinaemia and prolactinoma",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Prolactin above sex-specific limit (about **25 ng/mL women, 20 ng/mL men**); **prolactinoma** is the commonest functioning pituitary tumour (40-50%)."],
+        ["Causes", "**Pregnancy**, **drugs** (levosulpiride, metoclopramide, domperidone, risperidone, amisulpride), **hypothyroidism, CKD**, cirrhosis, chest wall lesions, **stalk effect**, prolactinoma, **macroprolactin**."],
+        ["Pathophysiology", "Dopamine tonically inhibits lactotroph **D2**; prolactin suppresses **kisspeptin and GnRH** - low LH/FSH - amenorrhoea, infertility, low libido, **bone loss**."],
+        ["Clinical features", "Women: **amenorrhoea, galactorrhoea, infertility**; men: **low libido, ED**, late macroadenomas with visual loss; postmenopausal women present with mass effect."],
+        ["Investigations", "**hCG, TSH, creatinine, LFT**, drug history; **single prolactin** enough; PEG if asymptomatic; **MRI**; **1:100 dilution** if macro with modest prolactin; fields; DXA."],
+        ["Interpreting the level", "**Over 250 = prolactinoma**; **under 100 with large mass = stalk effect**; drugs usually 25-100 (risperidone higher)."],
+        ["Treatment - first line", "Stop the drug; **cabergoline 0.25-0.5 mg once or twice weekly**, titrate monthly, most need **2 mg/week or less**; asymptomatic micro - no treatment; OCP for micro not wanting pregnancy."],
+        ["Macroprolactinoma", "**Cabergoline first even with visual loss**; fields at 2-4 weeks; MRI at 3-6 months."],
+        ["Resistance and surgery", "Escalate to **3.5 mg/week**; then **transsphenoidal surgery**, RT, temozolomide; surgery now **first-line option** in expert centres (2023)."],
+        ["Pregnancy", "Stop agonist on confirmation; growth risk **micro 2-3%, unoperated macro 20-30%**; **no prolactin in pregnancy**; fields each trimester for macro."],
+        ["Adverse effects", "Nausea, postural drop, **impulse control disorders**, **valvulopathy** at high dose, **CSF leak** after shrinkage."],
+        ["Monitoring", "Prolactin 1-3 monthly while titrating; echo baseline and periodic per dose; impulse control questions every visit."],
+        ["Stopping therapy", "After **2 years normal prolactin and no visible tumour**; taper; **recurrence 50-65%**; prolactin 3-monthly for a year."],
+        ["Latest updates", "**Pituitary Society 2023**: surgery option, impulse control screening, resistance definition, dose-targeted echo."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Evaluation of a raised prolactin",
+        caption: "Exclude the common non-tumour causes before ordering an MRI.",
+        steps: [
+          { label: "Prolactin above upper limit", detail: "Repeat if borderline or stressful venepuncture" },
+          { label: "Pregnancy test", detail: "Positive - physiological", tone: "decision" },
+          { label: "Drug history", detail: "Levosulpiride, antipsychotics, metoclopramide - stop or switch", tone: "decision" },
+          { label: "TSH, creatinine, LFT", detail: "Hypothyroidism, CKD, cirrhosis", tone: "decision" },
+          { label: "Asymptomatic, mild rise?", detail: "PEG precipitation for macroprolactin", tone: "decision" },
+          { label: "Gadolinium MRI pituitary", detail: "Macro with prolactin under 250 - dilute 1:100", tone: "warn" },
+          { label: "Prolactinoma confirmed", detail: "Cabergoline if symptomatic or macro", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment ladder for prolactinoma",
+        steps: [
+          { label: "Observe asymptomatic microprolactinoma", detail: "Or OCP if amenorrhoeic, no fertility wish", tone: "neutral" },
+          { label: "Cabergoline 0.25-0.5 mg once or twice weekly", detail: "Titrate monthly; most need 2 mg/week or less", tone: "good" },
+          { label: "Escalate cabergoline", detail: "Up to 3.5 mg/week; switch from bromocriptine", tone: "decision" },
+          { label: "Transsphenoidal surgery", detail: "Resistance, intolerance, CSF leak, apoplexy, or patient choice", tone: "decision" },
+          { label: "Radiotherapy, then temozolomide", detail: "Aggressive or resistant residual tumour", tone: "warn" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Prolactinoma in pregnancy",
+        root: "Pregnancy confirmed in a woman with prolactinoma",
+        arms: [
+          { label: "Microprolactinoma", tone: "good", steps: ["Stop cabergoline", "Growth risk 2-3%", "Clinical review each trimester", "No prolactin checks"] },
+          { label: "Macroprolactinoma", tone: "warn", steps: ["Growth risk 20-30% if unoperated", "Consider continuing agonist", "Visual fields each trimester", "MRI without gadolinium if symptoms"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Upper limit of prolactin is about **25 ng/mL in women** and 20 ng/mL in men.",
+            "**Prolactinoma** is the commonest functioning pituitary tumour.",
+            "Women present early with **micro**; men present late with **macro**.",
+            "**Macroprolactin** causes 10-25% of high readings without symptoms.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Pregnancy** and lactation come first.",
+            "Drugs: **levosulpiride**, metoclopramide, domperidone, risperidone, amisulpride, haloperidol.",
+            "Systemic: **primary hypothyroidism**, CKD, cirrhosis, chest wall lesions.",
+            "**Stalk effect** from any large sellar mass.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "**Dopamine** from the hypothalamus tonically inhibits prolactin.",
+            "Prolactin suppresses **kisspeptin and GnRH**, so LH and FSH fall.",
+            "Result: anovulation, low testosterone and **bone loss**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Women: **amenorrhoea, galactorrhoea**, infertility.",
+            "Men: **low libido**, erectile dysfunction, late headache and visual loss.",
+            "Bloody or single-duct discharge is **breast disease**, not prolactin.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Check **hCG, TSH, creatinine and drugs** before MRI.",
+            "One raised prolactin without stress is enough.",
+            "**PEG precipitation** for macroprolactin if symptoms are absent.",
+            "Macroadenoma with modest prolactin: ask for **1:100 dilution**.",
+            "Over 250 ng/mL is almost always **prolactinoma**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Stop or switch the **offending drug**.",
+            "**Cabergoline 0.25-0.5 mg** once or twice weekly, titrated monthly.",
+            "Macroprolactinoma with visual loss: **cabergoline first**, not surgery.",
+            "Asymptomatic micro needs **no treatment**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Escalate cabergoline to **3.5 mg/week** for resistance.",
+            "Then **surgery**, radiotherapy and temozolomide.",
+            "Surgery is now a **first-line option** in expert centres.",
+            "Ask about **impulse control** problems at every visit.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: **stop cabergoline** for micro; do not measure prolactin.",
+            "Macro in pregnancy: **visual fields** each trimester.",
+            "Antipsychotic users: switch to or add **aripiprazole** with the psychiatrist.",
+            "Postmenopausal micro: usually **no treatment**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer every **macroprolactinoma**, men, children and pregnant patients.",
+            "Stop drug after **2 years** of normal prolactin and no visible tumour.",
+            "About **half recur**; check prolactin 3-monthly for a year.",
+            "Echo per dose: **5-yearly** up to 2 mg/week, yearly above.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for prolactinoma",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Cabergoline", "0.25-0.5 mg orally once or twice weekly", "At least 2 years, then try withdrawal", "Nausea, impulse control disorder, valvulopathy at high dose"],
+            ["Bromocriptine", "1.25 mg at night up to 2.5 mg TDS orally", "As for cabergoline", "More nausea and dizziness"],
+            ["Oral contraceptive", "Low-dose pill daily", "Long-term (micro, no fertility wish)", "VTE risk"],
+            ["Aripiprazole", "5 mg orally daily", "Long-term, with psychiatrist", "Akathisia"],
+            ["Testosterone", "Undecanoate 1000 mg IM every 10-14 weeks", "If hypogonadism persists", "Polycythaemia"],
+          ],
+        },
+        {
+          heading: "Causes by prolactin level",
+          columns: ["Level (ng/mL)", "Likely causes", "Next step"],
+          rows: [
+            ["25-100", "Drugs, stalk effect, micro, hypothyroidism, CKD, PCOS", "Review drugs, TSH, creatinine, MRI"],
+            ["100-250", "Risperidone, amisulpride, microprolactinoma", "MRI if no drug cause"],
+            ["Over 250", "Prolactinoma", "MRI, cabergoline"],
+            ["High, no symptoms", "Macroprolactin", "PEG precipitation"],
+          ],
+        },
+        {
+          heading: "Lab pitfalls",
+          columns: ["Pitfall", "Clue", "Test", "Meaning"],
+          rows: [
+            ["Macroprolactin", "High prolactin, no symptoms", "PEG recovery under 40%", "No treatment"],
+            ["Hook effect", "Giant tumour, low prolactin", "1:100 dilution rises", "Prolactinoma - cabergoline"],
+            ["Stalk effect", "Large mass, prolactin under 100", "Dilution unchanged", "Non-functioning tumour - surgery"],
+          ],
+        },
+      ],
+      remember: [
+        "Before MRI: **pregnancy, drugs, TSH, creatinine**.",
+        "**Levosulpiride** galactorrhoea is common in Indian OPDs.",
+        "**Over 250** = prolactinoma; **under 100 with a big mass** = stalk effect.",
+        "Giant tumour, modest prolactin: **dilute**.",
+        "Prolactinoma: **tablets before the knife**, even with visual loss.",
+        "**No prolactin checks** in pregnancy.",
+        "Stop after **2 years** normal; **half recur**.",
+        "Mnemonic **PRL HIGH**: Pregnancy, Renal, Liver, Hypothyroid, Idiopathic, Growth, Heavy drugs.",
+      ],
+    },
+  },
+  "endocrine-acromegaly": {
+    checked: "2026-10",
+    updated: [
+      "Acromegaly Consensus Conference 2024 (Giustina et al., Pituitary 2024): clearly raised IGF-1 with typical features confirms diagnosis; OGTT only if IGF-1 equivocal",
+      "Acromegaly Consensus 2024: normal IGF-1 is the primary remission target; random GH under 1 ng/mL supportive",
+      "Personalised second-line choice by T2 MRI signal, granulation and glucose status (consensus 2020-2024)",
+      "WHO 2022 lineage classification: densely vs sparsely granulated somatotroph PitNET",
+    ],
+    master: {
+      heading: "Master revision table - acromegaly and gigantism",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "GH/IGF-1 excess **after epiphyseal fusion** (acromegaly) or **before fusion** (gigantism); prevalence about **3-14 per 100,000**; diagnostic delay **5-10 years**."],
+        ["Causes", "**Somatotroph adenoma over 95%** (GNAS 40%); **MEN1, AIP, Carney, McCune-Albright, X-LAG**; ectopic **GHRH** from NET under 1%."],
+        ["Pathophysiology", "GH - hepatic **IGF-1** - periosteal bone and soft tissue growth; **anti-insulin** - diabetes; sodium retention - hypertension; cardiomyopathy; OSA."],
+        ["History", "Ring and shoe size, **sweating**, headache, snoring, joint pain, **carpal tunnel**, hypogonadism, old photographs."],
+        ["Examination", "Frontal bossing, **prognathism, interdental spacing**, macroglossia, **spade hands**, skin tags, goitre, BP, visual fields; **ABCDEF**."],
+        ["Differential", "Pachydermoperiostosis, hypothyroidism, insulin-resistance pseudoacromegaly; gigantism - Marfan, Klinefelter, Sotos."],
+        ["Investigations", "**IGF-1** (age-adjusted) to screen; **OGTT GH nadir 1 ng/mL or more** (0.4 sensitive) if IGF-1 equivocal; MRI; prolactin, pituitary function, fields."],
+        ["Comorbidity screen", "HbA1c, lipids, **ECG and echo**, **sleep study**, **colonoscopy at diagnosis**, thyroid ultrasound, spine X-ray."],
+        ["Treatment - surgery", "**Endoscopic transsphenoidal surgery** first; remission **micro 80-90%, macro 40-60%**; reassess IGF-1 at 12 weeks."],
+        ["Treatment - drugs", "**Octreotide LAR 20 mg IM 4-weekly** or **lanreotide 120 mg SC 4-weekly**; **pasireotide** 40-60 mg (hyperglycaemia); **pegvisomant 10-30 mg SC daily** (IGF-1, LFT); **cabergoline** for mild."],
+        ["Radiotherapy", "Radiosurgery or fractionated RT for residue; GH falls over **5-10 years**; **hypopituitarism up to 50%**."],
+        ["Complications", "**Cardiovascular (leading cause of death)**, diabetes, OSA, arthropathy, vertebral fractures, **colonic polyps**, thyroid nodules."],
+        ["Follow-up", "IGF-1 3-6 monthly while titrating; MRI; colonoscopy 5-yearly if polyp or active disease; LFT monthly for 6 months on pegvisomant."],
+        ["Latest updates", "**2024 Consensus**: IGF-1 clearly high plus features is enough; OGTT for equivocal cases; **normal IGF-1 = remission target**."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Diagnosis of acromegaly",
+        caption: "Acromegaly Consensus 2024 sequence.",
+        steps: [
+          { label: "Clinical suspicion", detail: "Acral growth, sweating, diabetes plus hypertension, OSA" },
+          { label: "Age- and sex-adjusted IGF-1", detail: "Normal - acromegaly excluded", tone: "decision" },
+          { label: "IGF-1 clearly raised with typical features", detail: "About 1.3 x ULN or more - diagnosis made", tone: "decision" },
+          { label: "IGF-1 equivocal", detail: "75 g OGTT: GH nadir 1 ng/mL or more confirms", tone: "decision" },
+          { label: "Gadolinium MRI pituitary", detail: "No tumour - serum GHRH, chest and abdominal imaging", tone: "warn" },
+          { label: "Full work-up", detail: "Prolactin, pituitary function, fields, echo, sleep study, colonoscopy", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment ladder for acromegaly",
+        steps: [
+          { label: "Transsphenoidal surgery", detail: "First line; debulk if not resectable", tone: "good" },
+          { label: "Cabergoline", detail: "Mild disease, IGF-1 up to 2.5 x ULN; 0.5 mg twice weekly", tone: "neutral" },
+          { label: "Octreotide LAR or lanreotide", detail: "20 mg IM or 120 mg SC every 4 weeks", tone: "neutral" },
+          { label: "Pasireotide LAR or pegvisomant", detail: "Pasireotide if glucose normal; pegvisomant if diabetic", tone: "decision" },
+          { label: "Radiotherapy", detail: "Residual growing tumour or drug failure; bridge with drugs", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Second-line drugs compared",
+        columns: ["Feature", "Pasireotide LAR", "Pegvisomant"],
+        rows: [
+          ["Action", "Multireceptor somatostatin ligand", "GH receptor antagonist"],
+          ["Dose", "40-60 mg IM every 4 weeks", "10-30 mg SC daily"],
+          ["Tumour shrinkage", "Yes", "No - monitor MRI"],
+          ["Glucose", "Raises (over 50% hyperglycaemia)", "Lowers"],
+          ["Monitoring", "IGF-1, GH, glucose", "IGF-1 only, liver enzymes"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Acromegaly is **GH excess after epiphyseal fusion**; gigantism is before fusion.",
+            "Over 95% are **somatotroph pituitary adenomas**.",
+            "Diagnosis is delayed **5-10 years**; most are macroadenomas.",
+            "Untreated, mortality is about **double**, mainly cardiovascular.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "GH drives liver **IGF-1**, which grows bone and soft tissue.",
+            "GH opposes insulin, causing **diabetes** in about 30%.",
+            "Sodium retention causes **hypertension**; GH causes cardiomyopathy.",
+            "Soft tissue in the airway causes **sleep apnoea**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Rings and shoes stop fitting; **sweating** is early.",
+            "Coarse face, **prognathism**, spaced teeth, big tongue, spade hands.",
+            "Carpal tunnel, arthropathy, headache, visual field loss.",
+            "**Skin tags** suggest colonic polyps.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Screen with **age-adjusted IGF-1**.",
+            "Clearly high IGF-1 with features **confirms** the diagnosis.",
+            "If equivocal, OGTT: **GH nadir 1 ng/mL or more** confirms.",
+            "**Random GH** is useless because GH is pulsatile.",
+            "MRI pituitary, prolactin, pituitary function, fields, echo, sleep study, **colonoscopy**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Transsphenoidal surgery** by an expert surgeon.",
+            "Cure: **micro 80-90%**, macro 40-60%.",
+            "Check IGF-1 **12 weeks** after surgery.",
+            "Treat diabetes, hypertension and OSA in parallel.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Octreotide LAR 20 mg IM** or lanreotide 120 mg SC every 4 weeks.",
+            "**Pasireotide** for resistance; watch glucose.",
+            "**Pegvisomant** 10-30 mg SC daily; follow IGF-1 and liver tests.",
+            "**Cabergoline** for mild disease; radiotherapy for residual tumour.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: stop SRLs and pegvisomant; **IGF-1 unreliable**.",
+            "Children with gigantism: test **AIP, MEN1, GPR101**.",
+            "Uncontrolled diabetes can make IGF-1 **falsely low**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Cardiovascular disease** is the leading cause of death.",
+            "Diabetes, OSA, arthropathy, **vertebral fractures**, colonic polyps.",
+            "Red flags: visual loss, apoplexy, heart failure, severe OSA.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer every suspected case to a **pituitary centre**.",
+            "IGF-1 every **3-6 months** while adjusting drugs.",
+            "Colonoscopy repeated at **5 years** if polyp or active disease.",
+            "**2024 consensus**: normal IGF-1 is the remission target.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for acromegaly",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Octreotide LAR", "20 mg IM every 4 weeks (10-40 mg)", "Long-term; adjust at 3 months", "Gallstones, diarrhoea, bradycardia"],
+            ["Lanreotide autogel", "90-120 mg deep SC every 4 weeks", "Long-term", "Gallstones, injection nodules"],
+            ["Pasireotide LAR", "40-60 mg IM every 4 weeks", "Long-term", "Hyperglycaemia, QT prolongation"],
+            ["Pegvisomant", "10-30 mg SC daily after loading", "Long-term", "Raised liver enzymes; GH rises"],
+            ["Cabergoline", "0.5 mg orally twice weekly, up to 3.5 mg/week", "Long-term", "Nausea, impulse control disorder"],
+          ],
+        },
+        {
+          heading: "Diagnostic and remission cut-offs",
+          columns: ["Test", "Acromegaly", "Controlled"],
+          rows: [
+            ["IGF-1", "Raised for age and sex", "Normal for age and sex"],
+            ["OGTT GH nadir", "1 ng/mL or more (0.4 sensitive assay)", "Under 1 ng/mL"],
+            ["Random GH", "Not diagnostic", "Under 1 ng/mL"],
+          ],
+        },
+        {
+          heading: "Differential of acromegalic features",
+          columns: ["Condition", "Clue", "IGF-1"],
+          rows: [
+            ["Acromegaly", "Progressive change, sweating, diabetes", "High"],
+            ["Pachydermoperiostosis", "Clubbing, skin folds", "Normal"],
+            ["Hypothyroidism", "High TSH, bradycardia", "Low or normal"],
+            ["Pseudoacromegaly", "Severe insulin resistance", "Normal"],
+          ],
+        },
+      ],
+      remember: [
+        "**IGF-1 screens, OGTT confirms, IGF-1 follows.**",
+        "OGTT normal: GH **under 1 ng/mL** (0.4 sensitive assay).",
+        "On **pegvisomant**, follow IGF-1, not GH.",
+        "**Pasireotide raises glucose**, pegvisomant lowers it.",
+        "**Skin tags** predict colonic polyps.",
+        "Mnemonic **ABCDEF**: Arthropathy, BP, Carpal tunnel, Diabetes, Enlarged organs, Fields.",
+        "Death is mostly **cardiovascular**.",
+      ],
+    },
+  },
+  "endocrine-hypopituitarism": {
+    checked: "2026-10",
+    updated: [
+      "ESE/Endocrine Society 2024 adrenal insufficiency guideline: lower Synacthen cut-offs (about 14-15 microgram/dL) with modern assays; structured sick-day and stress-dose education",
+      "AACE 2019 GH guideline: BMI-adjusted glucagon stimulation test cut-offs and macimorelin test",
+      "Endocrine Society 2016 hypopituitarism guideline confirmed current for replacement targets",
+      "AVP nomenclature 2022: diabetes insipidus renamed arginine vasopressin deficiency",
+    ],
+    master: {
+      heading: "Master revision table - hypopituitarism and Sheehan syndrome",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Deficiency of one or more pituitary hormones; prevalence about **45 per 100,000**; **Sheehan in 3.1% of parous women** in Kashmir (Zargar 2005)."],
+        ["Causes", "**9 Is**: Invasive (adenoma), Infarction (**Sheehan, apoplexy, viper bite**), Infiltrative (TB), Injury (**TBI 25-30%**), Immunological, Iatrogenic (surgery, RT, ipilimumab), Infectious, Idiopathic, Isolated."],
+        ["Pathophysiology", "Gland 2-fold larger in pregnancy; **PPH shock - ischaemic necrosis**; over 70% destroyed before symptoms; loss order **GH, LH/FSH, TSH, ACTH**; aldosterone spared."],
+        ["History", "Fatigue, postural dizziness, cold intolerance, amenorrhoea, low libido; **Sheehan - PPH, failed lactation, no menses**; apoplexy - thunderclap headache."],
+        ["Examination", "**Pale alabaster skin**, sparse hair, postural hypotension, bradycardia, fields and eye movements; no pigmentation."],
+        ["Differential", "**Addison** (pigmentation, hyperkalaemia, high ACTH), primary hypothyroidism (high TSH), menopause (high FSH), exogenous steroids, SIADH."],
+        ["Investigations", "**8-9 am cortisol (under 3 deficient, over 15 normal)**; Synacthen peak 14-18 by assay; **free T4 with TSH**; LH/FSH with sex steroid; IGF-1; GST/ITT; MRI."],
+        ["Treatment order", "**Hydrocortisone first**, then levothyroxine, then sex steroids, then GH; desmopressin for AVP deficiency."],
+        ["Doses", "**Hydrocortisone 15-20 mg/day** in 2-3 doses (or prednisolone 3-5 mg); **levothyroxine 1.6 microgram/kg** to free T4 upper half; GH 0.2-0.4 mg/day SC to IGF-1."],
+        ["Sick-day rules", "**Fever - double**; **vomiting - 100 mg IM and hospital**; major surgery 100 mg IV then 200 mg/24 h; card and kit; **double with rifampicin**."],
+        ["Adrenal crisis", "**Hydrocortisone 100 mg IV/IM stat**, then 200 mg/24 h; 1 L saline in first hour; glucose; never wait for results."],
+        ["Pituitary apoplexy", "Thunderclap headache, visual loss, CN III palsy; **IV hydrocortisone**, MRI; **surgery if severe acuity loss, field defect or falling consciousness**; ocular palsy alone - conservative."],
+        ["Follow-up", "6-12 monthly review; free T4; IGF-1 on GH; DXA; yearly pituitary tests after RT; check sick-day knowledge."],
+        ["Prevention and updates", "Prevent PPH: institutional delivery, **oxytocin 10 IU IM**; **ESE 2024** lower cortisol cut-offs; **AACE 2019** GST cut-offs."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Diagnosing hypopituitarism",
+        caption: "Paired basal tests first; dynamic tests only when values are equivocal.",
+        steps: [
+          { label: "Suspect: tumour, PPH, TBI, RT, unexplained hyponatraemia", detail: "Fatigue, amenorrhoea, pale skin" },
+          { label: "8-9 am cortisol", detail: "Under 3 deficient; over 15 normal; between - Synacthen or ITT", tone: "decision" },
+          { label: "Free T4 with TSH", detail: "Low free T4 with non-raised TSH = central", tone: "decision" },
+          { label: "LH/FSH with testosterone or oestradiol", detail: "Low sex steroid, non-raised gonadotrophins" },
+          { label: "IGF-1 and GH stimulation", detail: "Glucagon test cut-off 3 or 1 ng/mL by BMI" },
+          { label: "MRI pituitary", detail: "Tumour, thick stalk, haemorrhage, empty sella", tone: "warn" },
+          { label: "Replace: hydrocortisone first", detail: "Then levothyroxine, sex steroids, GH", tone: "good" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "Pituitary apoplexy - emergency management",
+        steps: [
+          { label: "Thunderclap headache, vomiting, visual loss, ophthalmoplegia", detail: "Exclude SAH and meningitis", tone: "warn" },
+          { label: "Bloods for cortisol, sodium, glucose", detail: "Do not wait for results" },
+          { label: "Hydrocortisone 100-200 mg IV", detail: "Then 2-4 mg/h or 50-100 mg IM 6-hourly", tone: "good" },
+          { label: "MRI pituitary (CT if unavailable)", detail: "Acuity, fields, eye movements" },
+          { label: "Severe acuity loss, field defect or falling GCS?", detail: "Urgent transsphenoidal decompression", tone: "decision" },
+          { label: "Ocular palsy only, stable vision", detail: "Conservative: daily vision and electrolytes", tone: "neutral" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Secondary vs primary adrenal insufficiency",
+        columns: ["Feature", "Pituitary (secondary)", "Addison (primary)"],
+        rows: [
+          ["ACTH", "Low or normal", "High"],
+          ["Skin", "Pale", "Pigmented"],
+          ["Potassium", "Normal", "High"],
+          ["Fludrocortisone", "Not needed", "Needed"],
+          ["Other axes", "Often lost", "Usually intact"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Hypopituitarism is loss of **one or more pituitary hormones**.",
+            "Commonest cause is a **pituitary tumour** or its treatment.",
+            "In India **Sheehan syndrome** after PPH remains common.",
+            "Kashmir study: Sheehan in **3.1%** of parous women.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Tumours, **surgery and radiotherapy**.",
+            "Vascular: **Sheehan, apoplexy**, viper bite with DIC.",
+            "**Head injury**: deficits in about a quarter after moderate-severe TBI.",
+            "Hypophysitis, TB, **checkpoint inhibitors**.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Pregnancy enlarges the gland; **PPH shock causes infarction**.",
+            "Over 70% must be destroyed before symptoms appear.",
+            "Hormones fail in order: **GH, LH/FSH, TSH, ACTH**.",
+            "Aldosterone is spared, so **no hyperkalaemia**.",
+            "Cortisol lack raises AVP, causing **hyponatraemia**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Sheehan: **failed lactation**, no menses after delivery, hair loss.",
+            "Fatigue, postural dizziness, hypoglycaemia, cold intolerance.",
+            "**Pale skin**, not pigmented as in Addison.",
+            "Apoplexy: **thunderclap headache**, visual loss, ptosis.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Morning cortisol**: under 3 deficient, over 15 normal.",
+            "Synacthen peak about **14-18** depending on assay; falsely normal early.",
+            "**Free T4 with TSH**: low free T4, normal TSH is central.",
+            "Glucagon test for GH: cut-off **3 or 1 ng/mL** by BMI.",
+            "**MRI**: tumour, thick stalk, haemorrhage or empty sella.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Hydrocortisone first**, 15-20 mg/day in 2-3 doses.",
+            "Then **levothyroxine** 1.6 microgram/kg; target free T4 upper half.",
+            "Sex steroids: transdermal oestradiol plus progestogen; **testosterone** in men.",
+            "**GH** 0.2-0.4 mg/day if deficient and symptomatic.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Adrenal crisis: **hydrocortisone 100 mg IV** then 200 mg/24 h, saline.",
+            "Apoplexy: **steroids first**, then MRI and surgical decision.",
+            "Surgery if **severe acuity loss**, field defect or falling consciousness.",
+            "Correct sodium **no faster than 8-10 mmol/L** per day.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: raise hydrocortisone **20-40%** in third trimester; stress dose at labour.",
+            "**Rifampicin** doubles hydrocortisone needs.",
+            "Test pituitary function **3-12 months after TBI**.",
+            "Elderly: lower doses; avoid **insulin tolerance test**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Teach **sick-day rules**: fever double; vomiting 100 mg IM.",
+            "Give a **steroid card** and IM kit to every patient.",
+            "Review **6-12 monthly**: free T4, IGF-1, BP, weight, DXA.",
+            "Prevent Sheehan by preventing **PPH** with oxytocin.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ESE/Endocrine Society 2024**: lower cortisol cut-offs with new assays.",
+            "**AACE 2019**: BMI-adjusted glucagon test cut-offs.",
+            "Diabetes insipidus renamed **AVP deficiency** (2022).",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Hormone replacement",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Hydrocortisone", "15-20 mg/day orally in 2-3 doses", "Lifelong; double when ill", "Over-replacement: weight, bone loss"],
+            ["Levothyroxine", "1.6 microgram/kg/day orally", "Lifelong", "Start after steroid; monitor free T4"],
+            ["Oestradiol plus progestogen", "Patch 50-100 microgram/24 h plus progesterone", "Until about 50", "VTE (less transdermal)"],
+            ["Testosterone undecanoate", "1000 mg IM every 10-14 weeks", "Lifelong", "Polycythaemia"],
+            ["Growth hormone", "0.2-0.4 mg SC daily", "Titrate to IGF-1", "Oedema, arthralgia"],
+            ["Desmopressin", "100-200 microgram orally 1-3 times daily", "Lifelong if AVP deficient", "Hyponatraemia"],
+          ],
+        },
+        {
+          heading: "Axis testing cut-offs",
+          columns: ["Axis", "Test", "Deficient if"],
+          rows: [
+            ["ACTH", "8-9 am cortisol", "Under 3 microgram/dL"],
+            ["ACTH", "Synacthen 250 microgram", "Peak under 14-18 (assay-dependent)"],
+            ["TSH", "Free T4 with TSH", "Low free T4, non-raised TSH"],
+            ["GH", "Glucagon stimulation", "Peak under 3 (BMI under 25) or under 1 (BMI over 30)"],
+            ["GH", "Insulin tolerance test", "Peak under 5 ng/mL"],
+          ],
+        },
+        {
+          heading: "Secondary vs primary adrenal insufficiency",
+          columns: ["Feature", "Secondary", "Primary"],
+          rows: [
+            ["ACTH", "Low or normal", "High"],
+            ["Skin", "Pale", "Pigmented"],
+            ["Potassium", "Normal", "High"],
+            ["Mineralocorticoid", "Not needed", "Fludrocortisone"],
+          ],
+        },
+      ],
+      remember: [
+        "**Steroids before thyroxine**, always.",
+        "**Free T4, not TSH**, in central hypothyroidism.",
+        "Sheehan: **failed lactation** first; pale skin, normal potassium.",
+        "Cortisol **under 3 confirms, over 15 excludes**.",
+        "**Synacthen** is falsely normal early after acute ACTH loss.",
+        "Sick day: **fever double, vomiting inject**.",
+        "Causes mnemonic: **the 9 Is**.",
+        "**DI may appear** after hydrocortisone starts.",
+      ],
+    },
+  },
 };
 
 export default revision;
