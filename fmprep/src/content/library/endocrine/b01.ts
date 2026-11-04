@@ -1685,18 +1685,13 @@ topics.push({
       ],
     },
     {
-      heading: "Referral, follow-up and monitoring",
+      heading: "Referral, follow-up and national programme link",
       points: [
         "Review **every 3-6 months** for weight, waist, BP and adherence to the plan; retest glucose or HbA1c **at least yearly**. [ADA 2026]",
         "Refer to a **dietitian** and a **structured lifestyle programme** where available; refer to an endocrinologist if MODY is suspected or glucose rises despite therapy. [RSSDI 2022]",
         "Refer for **bariatric assessment** if BMI is 35 or more (32.5 with comorbidity) and lifestyle and drugs fail. [IFSO-APC 2022]",
         "Screen and treat **BP, lipids and fatty liver**; calculate CV risk annually. [ADA 2026]",
         "If diabetes develops, switch to the full diabetes care pathway (see the Type 2 diabetes topic). [ADA 2026]",
-      ],
-    },
-    {
-      heading: "Prevention, counselling and national programme link",
-      points: [
         "**NP-NCD** (renamed from NPCDCS in 2023) runs population-based screening for diabetes, hypertension and common cancers in everyone **30 and over** at Ayushman Arogya Mandir, with treatment at PHC/CHC NCD clinics. [MoHFW NP-NCD 2023]",
         "The **75/25 initiative** (launched 2023) aims to put **75 million people with hypertension or diabetes** on standard care by 2025 - prediabetes counselling is part of the visit. [MoHFW 2023]",
         "**Fit India Movement**, **Eat Right India (FSSAI)** and school health under **Ayushman Bharat** support activity, less sugar and less trans fat at population level. [MoHFW 2023]",

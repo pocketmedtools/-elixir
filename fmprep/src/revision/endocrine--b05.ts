@@ -656,6 +656,229 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "endocrine-drug-induced-thyroid": {
+    checked: "2026-10",
+    updated: [
+      "ETA 2018 amiodarone guideline: Doppler typing, prednisolone for type 2, methimazole plus perchlorate for type 1, amiodarone may continue in type 2",
+      "ETA 2021 iodinated contrast guideline: TSH before contrast and selective prophylaxis in high-risk patients",
+      "ASCO 2021 and ESMO 2022 irAE guidelines: beta-blocker for ICI thyroiditis, hydrocortisone before levothyroxine in hypophysitis",
+      "FDA 2022: thyroid tests within 3 weeks in children 3 years or younger after iodinated contrast",
+      "FDA 2019: biotin interference with thyroid immunoassays",
+    ],
+    master: {
+      heading: "Drug-induced thyroid dysfunction on one page",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Mechanisms", "Iodine load, release block, autoimmunity, destruction, TSH suppression, absorption and clearance"],
+        ["Amiodarone facts", "37% iodine; 75 mg iodine per 200 mg tablet; half-life 50-100 days; dysfunction in 15-20%"],
+        ["Euthyroid pattern", "T4 up, T3 down, TSH normal or briefly up - not disease"],
+        ["AIH", "Wolff-Chaikoff failure in TPO-positive gland; levothyroxine, continue amiodarone"],
+        ["AIT type 1", "Abnormal gland, Doppler flow present; methimazole 40-60 mg plus perchlorate"],
+        ["AIT type 2", "Normal gland, absent flow; prednisolone 0.5-0.7 mg/kg tapered over 3 months"],
+        ["Refractory AIT", "Total thyroidectomy, especially with poor ejection fraction"],
+        ["Lithium", "Goitre 40-50%, hypothyroidism about 20%; levothyroxine, do not stop lithium"],
+        ["ICIs", "PD-1: thyroiditis then hypothyroidism; CTLA-4: hypophysitis; hydrocortisone before levothyroxine"],
+        ["TKIs", "Sunitinib and others: hypothyroidism 20-50%; levothyroxine, continue TKI"],
+        ["Others", "Interferon, alemtuzumab (Graves), bexarotene (central), contrast (Jod-Basedow)"],
+        ["Levothyroxine absorption", "Calcium, iron, PPIs, sequestrants; separate by 4 hours; enzyme inducers raise dose"],
+        ["Monitoring", "Amiodarone 3-6 monthly, lithium 6-12 monthly, ICI each cycle, TKI monthly at first"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Abnormal thyroid tests on amiodarone",
+        steps: [
+          { label: "TSH, free T4, free T3", detail: "Baseline, 3 months, then every 3-6 months" },
+          { label: "High TSH", tone: "decision", detail: "AIH: levothyroxine, continue amiodarone" },
+          { label: "Suppressed TSH with high free T3", tone: "warn", detail: "AIT: type with Doppler, TRAb, ultrasound" },
+          { label: "Type 1 (nodular, vascular)", detail: "Methimazole 40-60 mg/day plus perchlorate 1 g/day" },
+          { label: "Type 2 (normal, avascular)", detail: "Prednisolone 0.5-0.7 mg/kg/day, taper over 3 months" },
+          { label: "Refractory or failing heart", tone: "warn", detail: "Urgent total thyroidectomy" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Abnormal thyroid tests on an immune checkpoint inhibitor",
+        root: "Abnormal TSH or free T4 on ICI",
+        arms: [
+          {
+            label: "Low TSH, high free T4",
+            tone: "decision",
+            steps: ["Painless thyroiditis at 4-8 weeks", "Beta-blocker only", "Repeat tests every 2-3 weeks", "Expect hypothyroid phase"],
+          },
+          {
+            label: "High TSH, low free T4",
+            tone: "good",
+            steps: ["Primary hypothyroidism", "Levothyroxine if TSH over 10 or symptoms", "Continue ICI"],
+          },
+          {
+            label: "Low or normal TSH, low free T4",
+            tone: "warn",
+            steps: ["Hypophysitis (CTLA-4)", "Morning cortisol, ACTH, MRI", "Hydrocortisone first", "Levothyroxine after 2-3 days"],
+          },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "AIT type 1 versus type 2",
+        columns: ["Feature", "Type 1", "Type 2"],
+        rows: [
+          ["Mechanism", "Excess synthesis from iodine", "Destructive thyroiditis"],
+          ["Gland", "Nodular or latent Graves", "Normal"],
+          ["Doppler", "Flow present or increased", "Absent flow"],
+          ["Uptake", "Low to raised", "Very low"],
+          ["Treatment", "Methimazole plus perchlorate", "Prednisolone"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Always take a **drug history** with an abnormal TSH.",
+            "**Amiodarone** causes dysfunction in about 15-20% of users.",
+            "**Lithium** causes goitre in up to half and hypothyroidism in about 20%.",
+            "**ICIs** cause thyroid dysfunction in roughly 10-20%.",
+            "**VEGF TKIs** raise TSH in about 20-50%.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Amiodarone is **37% iodine**; 75 mg iodine per 200 mg tablet.",
+            "It blocks **deiodinase**: T4 rises, T3 falls, TSH briefly rises.",
+            "**AIH**: failure to escape Wolff-Chaikoff in TPO-positive glands.",
+            "**Lithium** blocks thyroid hormone release.",
+            "**PD-1 blockers** cause T-cell thyroiditis; **CTLA-4** blockers cause hypophysitis.",
+            "**TKIs** cause capillary regression and thyroiditis.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**AIT type 1**: excess synthesis in an abnormal gland.",
+            "**AIT type 2**: destructive thyroiditis in a normal gland.",
+            "**Mixed** forms need combined therapy.",
+            "Primary pattern: **high TSH**; central pattern: **low free T4 with low or normal TSH**.",
+          ],
+        },
+        {
+          title: "Clinical features and differential",
+          points: [
+            "AIT presents as **worsening arrhythmia** or weight loss.",
+            "ICI thyroiditis causes palpitations at **4-8 weeks**.",
+            "Hypophysitis: **headache, hypotension, hyponatraemia**.",
+            "**Biotin** mimics Graves on immunoassays.",
+            "High T4 with normal TSH on amiodarone is **not thyrotoxicosis**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Baseline TSH** before amiodarone, lithium, ICIs and TKIs.",
+            "Amiodarone: TSH, FT4, FT3 at **3 months**, then every 3-6 months.",
+            "**Colour Doppler** separates AIT type 1 from type 2.",
+            "ICI: TFTs **before each cycle**; cortisol if central pattern.",
+            "Lithium: TSH, calcium and creatinine every **6-12 months**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Treat the thyroid, keep the essential drug** where possible.",
+            "AIH: **levothyroxine**, continue amiodarone.",
+            "Lithium hypothyroidism: **levothyroxine**, continue lithium.",
+            "ICI thyrotoxic phase: **propranolol**, no thionamides.",
+            "Separate levothyroxine from **calcium and iron** by 4 hours.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "AIT type 1: **methimazole 40-60 mg/day** plus perchlorate.",
+            "AIT type 2: **prednisolone 0.5-0.7 mg/kg**, tapered over 3 months.",
+            "Refractory AIT or failing heart: **total thyroidectomy**.",
+            "Hypophysitis: **hydrocortisone first**, then levothyroxine.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Avoid **amiodarone in pregnancy** (fetal goitre).",
+            "Infants after contrast: **TFTs within 3 weeks**.",
+            "Elderly cardiac patients: levothyroxine **12.5-25 microgram** to start.",
+            "**DR-TB** drugs (ethionamide, PAS) cause hypothyroidism.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "AIT with **poor ejection fraction** has high mortality.",
+            "Levothyroxine before hydrocortisone can cause **adrenal crisis**.",
+            "Sore throat on methimazole means possible **agranulocytosis**.",
+            "Contrast in nodular goitre can cause **Jod-Basedow** thyrotoxicosis.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ETA 2018**: Doppler typing; steroids for type 2.",
+            "**ETA 2021**: TSH before contrast in high-risk patients.",
+            "**ASCO 2021, ESMO 2022**: continue ICIs for most thyroid toxicity.",
+            "**FDA 2019**: biotin interference warning.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs used in treatment",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Levothyroxine", "1.6 microgram/kg/day orally; 12.5-25 in elderly", "Titrate every 6-8 weeks", "After hydrocortisone in hypophysitis"],
+            ["Methimazole", "40-60 mg orally daily", "Until euthyroid (AIT type 1)", "Agranulocytosis, hepatitis"],
+            ["Potassium perchlorate", "1 g orally daily, divided", "4-6 weeks maximum", "Aplastic anaemia"],
+            ["Prednisolone", "0.5-0.7 mg/kg orally daily", "2-4 weeks, taper over 3 months", "Hyperglycaemia, infection"],
+            ["Propranolol", "10-40 mg orally every 6-8 hours", "Thyrotoxic phase", "Asthma, heart block"],
+            ["Hydrocortisone", "15-25 mg orally daily in divided doses", "Lifelong if ACTH deficient", "Sick-day rules, steroid card"],
+          ],
+        },
+        {
+          heading: "Drugs that cause thyroid dysfunction",
+          columns: ["Drug", "Effect", "Monitoring"],
+          rows: [
+            ["Amiodarone", "Hypo or hyperthyroidism", "3 months, then 3-6 monthly"],
+            ["Lithium", "Goitre, hypothyroidism", "6-12 monthly"],
+            ["Anti-PD-1 / PD-L1", "Thyroiditis then hypothyroidism", "Each cycle"],
+            ["Ipilimumab", "Hypophysitis", "TFTs and cortisol"],
+            ["Sunitinib and VEGF TKIs", "Hypothyroidism", "Monthly for 4-6 months"],
+            ["Alemtuzumab", "Graves disease", "3-monthly for 4 years"],
+            ["Iodinated contrast", "Thyrotoxicosis or hypothyroidism", "TSH at 3-4 weeks if high risk"],
+          ],
+        },
+        {
+          heading: "AIT type 1 versus type 2",
+          columns: ["Feature", "Type 1", "Type 2"],
+          rows: [
+            ["Gland", "Nodular or latent Graves", "Normal"],
+            ["Doppler", "Flow present", "Absent flow"],
+            ["Uptake", "Low to raised", "Very low"],
+            ["Treatment", "Methimazole plus perchlorate", "Prednisolone"],
+          ],
+        },
+      ],
+      remember: [
+        "**Amiodarone is 37% iodine.**",
+        "**Type 1 = Iodine, thionamide; type 2 = Inflammation, steroid.**",
+        "**Doppler decides** the AIT type.",
+        "**Do not stop lithium** for hypothyroidism.",
+        "**PD-1 hits the thyroid, CTLA-4 hits the pituitary.**",
+        "**Hydrocortisone before thyroxine** in central hypothyroidism.",
+        "**Biotin fakes Graves.**",
+      ],
+    },
+  },
 };
 
 export default revision;

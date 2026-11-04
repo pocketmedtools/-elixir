@@ -1505,4 +1505,496 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "endocrine-thyroid-emergencies",
+  title: "Thyroid storm and myxoedema coma",
+  frequency: "less-common",
+  oneLiner:
+    "**Thyroid storm** is life-threatening decompensated thyrotoxicosis with **fever, tachycardia or AF, heart failure, GI-hepatic dysfunction and CNS change** (diagnosed clinically by **Burch-Wartofsky score 45 or more** or **JTA criteria**) and **myxoedema coma** is decompensated hypothyroidism with **altered sensorium, hypothermia, hypoventilation and hyponatraemia**; both are ICU emergencies treated before results return - storm with **beta-blocker, PTU or methimazole, iodine 1 hour later, hydrocortisone and cooling**, and coma with **IV levothyroxine, hydrocortisone and supportive care** - plus treatment of the precipitant.",
+  keywords: [
+    "thyroid storm",
+    "thyrotoxic crisis",
+    "Burch-Wartofsky point scale",
+    "BWPS",
+    "JTA criteria",
+    "propylthiouracil",
+    "methimazole",
+    "Lugol iodine",
+    "SSKI",
+    "hydrocortisone",
+    "esmolol",
+    "landiolol",
+    "cholestyramine",
+    "plasmapheresis",
+    "myxoedema coma",
+    "myxedema crisis",
+    "IV levothyroxine",
+    "liothyronine",
+    "hypothermia",
+    "Popoveniuc score",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**Thyroid storm (thyrotoxic crisis)** is an acute, life-threatening exacerbation of thyrotoxicosis with **multi-organ decompensation**; there is **no biochemical cut-off** - FT4 and FT3 are no higher than in uncomplicated thyrotoxicosis. [ATA 2016]",
+        "Storm occurs in about **1-2% of hospitalised thyrotoxic patients**; Japanese nationwide data give an incidence of about **0.2 per 100,000 per year** and mortality of **about 10%**, higher with multi-organ failure. [JTA 2016]",
+        "**Myxoedema coma** is severe decompensated hypothyroidism with **altered mental status and impaired thermoregulation**; most patients are not actually in coma. [ATA 2014]",
+        "Myxoedema coma is rare (about **0.2 per million per year** in European data), mostly affects **elderly women in winter**, and has a mortality of about **25-30%** even with modern ICU care (historically up to 60%). [Williams 15e]",
+        "**India**: storm is seen mainly in young women with **undiagnosed or poorly adherent Graves disease** and infection; myxoedema coma in elderly people with untreated or abandoned hypothyroidism, often in rural areas without regular TSH monitoring. [API Textbook of Medicine 12e]",
+        "Both are **clinical diagnoses**: treatment must begin on suspicion, before TFT results return. [ATA 2016; ATA 2014]",
+      ],
+    },
+    {
+      heading: "Precipitants",
+      points: [
+        "**Storm precipitants**: **infection (commonest)**, abrupt **stopping of antithyroid drugs**, thyroid or non-thyroid surgery, **radioiodine**, iodinated contrast or amiodarone, trauma, DKA, labour and delivery, MI, PE and stroke. [JTA 2016]",
+        "**Irregular or stopped antithyroid drugs** was the single commonest precipitant in the Japanese nationwide survey. [JTA 2016]",
+        "**Myxoedema coma precipitants**: **cold exposure**, **infection (pneumonia, UTI, sepsis)**, **sedatives, opioids and anaesthetics**, stroke, heart failure, GI bleeding, trauma and surgery, and stopping levothyroxine. [ATA 2014]",
+        "**Drugs that unmask myxoedema coma**: amiodarone, lithium, beta-blockers, diuretics (hyponatraemia), phenytoin and rifampicin (faster T4 clearance). [Williams 15e]",
+        "**Salicylates** in storm displace T4 from TBG and raise free hormone - use paracetamol for fever instead. [ATA 2016]",
+        "**Under-recognised in India**: missed levothyroxine after hospital discharge, and post-thyroidectomy or post-RAI patients lost to follow-up. [API Textbook of Medicine 12e]",
+      ],
+    },
+    {
+      heading: "Pathophysiology",
+      points: [
+        "Storm reflects a **rapid rise in free hormone** (release, falling binding proteins in illness) plus **increased tissue sensitivity to catecholamines** and decompensation of an already stressed heart. [Harrison 22e]",
+        "Excess T3 increases **thermogenesis and oxygen demand**, causing **hyperpyrexia**, tachyarrhythmia and **high-output then low-output heart failure** (thyrotoxic cardiomyopathy). [Williams 15e]",
+        "**Hepatic hypoperfusion and congestion** cause jaundice - a bad prognostic sign; GI hypermotility causes diarrhoea and vomiting, worsening volume depletion. [JTA 2016]",
+        "Thyrotoxicosis **accelerates cortisol clearance** and may coexist with autoimmune adrenal insufficiency - the rationale for **stress-dose hydrocortisone**, which also blocks T4 to T3 conversion. [ATA 2016]",
+        "**Myxoedema coma**: severe T3 deficiency reduces **thermogenesis**, hypoxic and hypercapnic **ventilatory drive**, cardiac contractility and heart rate, and free-water clearance. [Harrison 22e]",
+        "**Hyponatraemia** arises from raised **ADH** and reduced GFR; **hypoglycaemia** from reduced gluconeogenesis and coexisting adrenal insufficiency. [ATA 2014]",
+        "**Diastolic hypertension** in compensated hypothyroidism gives way to **hypotension and shock** in coma; low cardiac output and vasoconstriction mean **catecholamines work poorly until thyroid hormone is given**. [Williams 15e]",
+        "Reduced drug metabolism makes **sedatives and opioids** accumulate, which can tip hypothyroidism into coma. [ATA 2014]",
+      ],
+    },
+    {
+      heading: "Diagnostic scoring: Burch-Wartofsky and JTA criteria",
+      points: [
+        "**Burch-Wartofsky Point Scale (BWPS)** scores **temperature (5-30), CNS effects (0-30), GI-hepatic dysfunction (0-20), heart rate (5-25), heart failure (0-15), AF (0 or 10) and a precipitant (0 or 10)**. [Burch-Wartofsky 1993]",
+        "**BWPS 45 or more** is highly suggestive of storm, **25-44 suggests impending storm**, and **below 25** makes storm unlikely; patients with 25-44 need clinical judgement for aggressive therapy. [ATA 2016]",
+        "Selected BWPS items: temperature **40 C or more scores 30**; **seizure or coma 30**; **unexplained jaundice 20**; heart rate **140 or more scores 25**; **pulmonary oedema 15**; AF 10. [Burch-Wartofsky 1993]",
+        "**JTA criteria** require thyrotoxicosis (raised FT3 or FT4) plus **CNS manifestations** with at least one of fever 38 C or more, tachycardia **130/min or more**, heart failure or GI-hepatic features - or at least three non-CNS features - for **definite storm (TS1)**. [JTA 2016]",
+        "**JTA TS2 (suspected storm)**: two non-CNS features, or criteria met in a patient with known thyroid disease when FT3/FT4 results are not yet available. [JTA 2016]",
+        "**BWPS is more sensitive, JTA more specific** - BWPS tends to over-diagnose; using both is reasonable. [ATA 2016]",
+        "**Myxoedema coma diagnostic score (Popoveniuc 2014)** adds points for hypothermia, CNS depression, GI hypomotility, bradycardia and other cardiac findings, metabolic disturbance (hyponatraemia, hypoglycaemia, hypoxaemia, hypercapnia, low GFR) and a precipitant; **60 or more** is highly suggestive, **25-59** suggests risk. [Popoveniuc, Endocr Pract 2014]",
+      ],
+    },
+    {
+      heading: "Clinical features: history",
+      points: [
+        "**Storm**: a known or suspected thyrotoxic patient with **high fever, profuse sweating, palpitations, vomiting, diarrhoea, agitation, delirium or psychosis**, often days after an infection or surgery. [ATA 2016]",
+        "**Apathetic storm** in the elderly: lethargy, weakness and heart failure with modest fever - easily mistaken for sepsis alone. [Harrison 22e]",
+        "Ask about **missed carbimazole**, recent **iodinated contrast or amiodarone**, recent RAI, and pregnancy or delivery. [JTA 2016]",
+        "**Myxoedema coma**: progressive lethargy, confusion, **cold intolerance**, constipation, weight gain and hoarseness over weeks, then **drowsiness or coma**, often after a cold spell, infection or sedative. [ATA 2014]",
+        "Ask relatives about **previous thyroid surgery or RAI**, missed levothyroxine, and recent sedatives, opioids or anaesthesia. [ATA 2014]",
+        "**Myxoedema madness** - psychosis, hallucinations - can precede coma; seizures occur in about a quarter. [Williams 15e]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Storm**: temperature often **above 39-40 C**, tachycardia out of proportion to fever (**often above 140**), **AF**, wide pulse pressure, heart failure, jaundice, tremor, goitre with bruit and eye signs. [ATA 2016]",
+        "**Storm CNS**: agitation, delirium, psychosis, seizures and coma - CNS involvement is the strongest predictor of death. [JTA 2016]",
+        "**Myxoedema coma**: **hypothermia** (often below 35 C - use a low-reading thermometer), **bradycardia**, hypotension, **hypoventilation**, periorbital and non-pitting oedema, dry coarse skin, **macroglossia**, sparse hair. [ATA 2014]",
+        "**Neck scar** of thyroidectomy is a vital clue in an unconscious hypothermic patient. [Williams 15e]",
+        "**Delayed relaxation of reflexes**, ileus with abdominal distension, urinary retention, and **pericardial or pleural effusions**. [Harrison 22e]",
+        "**Infection may be silent**: absent fever and leucocytosis in myxoedema coma - a 'normal' temperature is effectively a fever. [ATA 2014]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Storm vs sepsis**: both have fever and tachycardia; storm has **suppressed TSH with high FT4/FT3**, goitre or eye signs, and often AF - they frequently coexist, so treat both. [ATA 2016]",
+        "**Storm vs other hyperthermic states**: **neuroleptic malignant syndrome**, serotonin syndrome, malignant hyperthermia, anticholinergic and sympathomimetic poisoning (cocaine, amphetamine), heat stroke and **phaeochromocytoma crisis**. [Harrison 22e]",
+        "**Storm vs alcohol or benzodiazepine withdrawal**: tremor, tachycardia and delirium overlap; TFT discriminates. [Harrison 22e]",
+        "**Myxoedema coma vs other causes of hypothermia and coma**: environmental hypothermia, **adrenal crisis**, hypopituitary coma (low TSH with low FT4), hypoglycaemia, sepsis, stroke and drug overdose. [ATA 2014]",
+        "**Hypopituitary coma** (Sheehan, apoplexy) presents similarly but TSH is low or normal - give hydrocortisone first. [Harrison 22e]",
+        "**Severe non-thyroidal illness** gives low T3 and T4 but **TSH is not markedly raised** and there is no prior thyroid history. [Williams 15e]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**Send TSH, FT4, FT3 and random cortisol** before giving hydrocortisone, but **do not wait for results** to treat. [ATA 2016; ATA 2014]",
+        "**Storm**: CBC (leucocytosis even without infection), blood and urine cultures, **LFT (bilirubin)**, electrolytes, glucose (hyperglycaemia), calcium (mild hypercalcaemia), ECG (AF), chest X-ray, echo for LV function. [ATA 2016]",
+        "**Myxoedema coma**: **TSH usually very high** (low or normal in central disease), low FT4; **sodium, glucose, ABG (hypercapnia)**, CK (raised), creatinine, cultures, ECG (bradycardia, low voltage, prolonged QT), chest X-ray and echo for effusion. [ATA 2014]",
+        "**Cortisol** must be measured in both - coexisting **adrenal insufficiency** (autoimmune or pituitary) changes outcome. [ATA 2014]",
+        "**TRAb** and ultrasound later establish the cause of storm and guide definitive therapy. [ATA 2016]",
+        "**Monitoring in storm**: FT4 and FT3 every **1-2 days**, LFT, glucose, electrolytes and fluid balance; in coma: FT4 and T3 every **1-2 days**, sodium, ABG, temperature and glucose. [ATA 2014; ATA 2016]",
+      ],
+    },
+    {
+      heading: "Management of thyroid storm (ICU)",
+      points: [
+        "**Admit to ICU or HDU**; airway, oxygen, IV fluids with **dextrose**, cardiac monitoring; treat the **precipitant** (cultures and empirical antibiotics if infection is possible). [ATA 2016]",
+        "**Step 1 - beta-blockade**: **propranolol 60-80 mg orally every 4 hours** (also lowers T4 to T3 conversion), or **IV esmolol 250-500 mcg/kg loading then 50-100 mcg/kg/min**; JTA prefers **beta-1-selective landiolol or esmolol** with heart failure. [ATA 2016; JTA 2016]",
+        "**Caution**: in **decompensated heart failure (Killip III-IV) or low LV ejection fraction**, high-dose non-selective beta-blockers can cause cardiovascular collapse - use short-acting esmolol or landiolol with echo guidance. [JTA 2016]",
+        "**Step 2 - block synthesis**: **PTU 500-1000 mg loading then 250 mg every 4 hours** (preferred by ATA because it also blocks T4 to T3), or **methimazole 60-80 mg/day** in divided doses; give by NG tube or rectally if needed. [ATA 2016]",
+        "**Step 3 - block release with iodine at least 1 hour after the thionamide**: **SSKI 5 drops (250 mg) every 6 hours** or **Lugol iodine 4-8 drops every 6-8 hours**; giving iodine first fuels new hormone synthesis. [ATA 2016]",
+        "**Step 4 - glucocorticoid**: **hydrocortisone 300 mg IV loading then 100 mg every 8 hours** (or dexamethasone 2 mg every 6 hours) - treats relative adrenal insufficiency and inhibits conversion. [ATA 2016]",
+        "**Supportive**: **paracetamol and cooling blankets** (avoid aspirin), fluids 3-5 L/day if no heart failure, thiamine, **rate control and anticoagulation for AF**, treat heart failure; **cholestyramine 4 g four times daily** to reduce enterohepatic recycling. [ATA 2016]",
+        "**Refractory storm (no improvement in 24-48 hours)**: **therapeutic plasma exchange**, **emergency thyroidectomy** after brief preparation, and ECMO for cardiogenic shock; **lithium 300 mg every 8 hours** if iodine or thionamides cannot be used. [ATA 2016; ASFA 2023]",
+      ],
+    },
+    {
+      heading: "Management of myxoedema coma (ICU)",
+      points: [
+        "**Admit to ICU**; secure the airway early - **hypercapnic respiratory failure, macroglossia and laryngeal oedema** often need **mechanical ventilation**. [ATA 2014]",
+        "**Hydrocortisone 100 mg IV every 8 hours** (after drawing cortisol) until adrenal insufficiency is excluded - give **before or with thyroid hormone**. [ATA 2014]",
+        "**IV levothyroxine 200-400 mcg loading** (lower end for small, elderly or cardiac patients), then **1.6 mcg/kg/day reduced by 25% (about 50-100 mcg) IV daily** until oral intake is possible. [ATA 2014]",
+        "**Liothyronine (T3)** may be added: **5-20 mcg IV loading, then 2.5-10 mcg every 8 hours**, lower in the elderly and cardiac patients, because T4 to T3 conversion is impaired in illness. [ATA 2014]",
+        "**India**: IV levothyroxine is often unavailable - give **levothyroxine tablets 300-500 mcg by NG tube** as loading then 50-100 mcg daily, accepting erratic absorption with ileus; oral liothyronine where obtainable. [API Textbook of Medicine 12e]",
+        "**Hypothermia**: **passive rewarming** with blankets and a warm room; **avoid active external rewarming**, which causes vasodilatation and cardiovascular collapse; core rewarming only if severe arrhythmia. [ATA 2014]",
+        "**Hyponatraemia**: restrict free water and avoid hypotonic fluids; **hypertonic saline (3%) for sodium below 120 mmol/L with seizures or deep coma**, correcting by **no more than 8-10 mmol/L in 24 hours**. [ATA 2014]",
+        "**Supportive**: dextrose for hypoglycaemia, cautious isotonic fluids for hypotension (vasopressors work poorly until hormone is given), **empirical antibiotics after cultures**, and **avoid sedatives**; reduce doses of all renally or hepatically cleared drugs. [ATA 2014]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Pregnancy - storm**: use **PTU**, beta-blocker (propranolol or labetalol), iodine and steroids as above; fetal monitoring; storm may be triggered by labour, caesarean section or eclampsia. [ATA 2017]",
+        "**Elderly**: lower levothyroxine loading (closer to 200 mcg) and **cautious T3** in myxoedema coma because of ischaemia and arrhythmia risk; apathetic storm may be missed. [ATA 2014]",
+        "**Heart failure and AF**: echo before high-dose beta-blockade in storm; use **diltiazem** cautiously if beta-blockers are contraindicated; anticoagulate AF by **CHA2DS2-VA** risk. [JTA 2016; ESC 2024 AF]",
+        "**Asthma or COPD**: use **beta-1-selective esmolol or landiolol**, or diltiazem for rate control. [ATA 2016]",
+        "**CKD and liver disease**: PTU and methimazole need no renal dose change; avoid PTU if the liver is failing from storm - use methimazole; treat hepatic congestion. [JTA 2016]",
+        "**Diabetes**: hyperglycaemia and DKA may precipitate storm; hydrocortisone raises glucose - insulin infusion as needed. [ATA 2016]",
+        "**Children**: methimazole preferred over PTU; weight-based dosing; storm is rare and usually neonatal from maternal TRAb. [ETA 2022 paediatric Graves]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**Storm mortality about 10%**, mostly from **multi-organ failure, heart failure, arrhythmia, DIC and hypoxic brain injury**. [JTA 2016]",
+        "**Predictors of death in storm**: **CNS involvement (coma), shock, DIC, jaundice (bilirubin above 3 mg/dL)**, older age and multi-organ failure. [JTA 2016]",
+        "**Thyroid hormone over-replacement in myxoedema coma** can cause **MI, arrhythmia** and death - balance against the higher risk of under-treatment. [ATA 2014]",
+        "**Myxoedema coma mortality about 25-30%**; predictors are **advanced age, persistent hypothermia, bradycardia, low GCS, sepsis and high SOFA/APACHE scores**. [Williams 15e]",
+        "**Rhabdomyolysis, GI bleeding, ileus and respiratory failure** complicate myxoedema coma. [Harrison 22e]",
+        "**Antithyroid drug toxicity** (PTU hepatitis, agranulocytosis) must be watched for during high-dose storm therapy. [ATA 2016]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and step-down",
+      points: [
+        "**Refer every suspected storm or myxoedema coma** from primary care to a centre with ICU - start a beta-blocker or hydrocortisone and thionamide or levothyroxine before transfer if possible. [ATA 2016]",
+        "**Storm step-down**: stop iodine and steroids progressively once FT4 normalises; continue thionamide; plan **definitive therapy** - thyroidectomy or **RAI after iodine washout (weeks to months)**. [ATA 2016]",
+        "**Myxoedema coma step-down**: switch to **oral levothyroxine** once alert and absorbing (IV dose divided by about 0.75), taper hydrocortisone once cortisol is normal, and check TSH and FT4 at **4-6 weeks**. [ATA 2014]",
+        "**Prevent recurrence**: adherence counselling, written medication plans, regular TFT under **NP-NCD** follow-up at Ayushman Arogya Mandir level, and medical alert cards. [MoHFW NP-NCD operational guidelines]",
+        "**Graves patients** should never stop carbimazole abruptly; patients should be warned to seek care for fever or infection. [ATA 2016]",
+        "**Elderly hypothyroid patients** should keep warm in winter and avoid sedatives; families should know the warning signs. [ATA 2014]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2023-2026)",
+      points: [
+        "**No new major storm or myxoedema coma guideline** has replaced ATA 2016, JTA 2016 and ATA 2014; these remain the reference standards. [ATA 2016; JTA 2016; ATA 2014]",
+        "**ASFA 2023** lists thyroid storm as a **category II** indication for therapeutic plasma exchange - second-line when standard therapy fails. [ASFA 2023]",
+        "**Landiolol** (ultra-short-acting beta-1 blocker) received US FDA approval in **2024** for rate control in supraventricular tachyarrhythmia, widening its availability beyond Japan and Europe for storm with heart failure. [FDA landiolol approval 2024]",
+        "**Guideline conflict**: ATA 2016 prefers **PTU** in storm (it blocks T4 to T3 conversion), whereas JTA 2016 found no mortality difference and accepts **methimazole** as first choice; both agree iodine must follow the thionamide. [ATA 2016; JTA 2016]",
+        "**ESC 2024 AF guideline** introduced **CHA2DS2-VA** (sex removed) for anticoagulation decisions in thyrotoxic AF. [ESC 2024 AF]",
+        "**Surviving Sepsis Campaign 2021** principles (early cultures and antibiotics within 1 hour) apply because infection is the leading precipitant of both emergencies. [SSC 2021]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "**Classic viva**: 'Why is iodine given an hour after PTU?' - to prevent the iodine being used as substrate for new hormone synthesis (**Jod-Basedow**). [ATA 2016]",
+        "**Classic viva**: 'Why hydrocortisone in both?' - relative adrenal insufficiency, coexisting autoimmune or pituitary disease, and in storm inhibition of T4 to T3 conversion. [ATA 2016; ATA 2014]",
+        "**Classic viva**: 'Why not aspirin in storm?' - displaces T4 from TBG and raises free hormone. [ATA 2016]",
+        "**Classic viva**: 'Why passive rewarming in myxoedema coma?' - active external warming causes vasodilatation and collapse. [ATA 2014]",
+        "**Mnemonic for storm therapy - 'Block, Block, Block, Beta, Bile, Body'**: block synthesis (thionamide), block release (iodine), block conversion (steroid, PTU, propranolol), beta-blocker, bile-acid sequestrant, treat the body (precipitant, cooling, fluids). [ATA 2016]",
+        "**Common mistake**: waiting for TFT results, or giving thyroxine before hydrocortisone in suspected pituitary coma. [ATA 2014]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs in thyroid storm and myxoedema coma",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Propranolol", "60-80 mg oral/NG every 4 hours (IV 0.5-1 mg slowly, repeat)", "Titrate to HR below 100-110", "Cardiovascular collapse in severe LV dysfunction; asthma"],
+        ["Esmolol", "250-500 mcg/kg IV load, then 50-100 mcg/kg/min", "Short-acting; titrate", "Hypotension; preferred with heart failure or asthma"],
+        ["Propylthiouracil", "500-1000 mg load, then 250 mg every 4 hours oral/NG/rectal", "Until FT4 normal, then taper", "Hepatotoxicity, agranulocytosis"],
+        ["Methimazole", "60-80 mg/day oral/NG in divided doses", "Alternative to PTU (JTA preference)", "Agranulocytosis, cholestasis"],
+        ["SSKI or Lugol iodine", "SSKI 5 drops every 6 hours or Lugol 4-8 drops every 6-8 hours", "Start at least 1 hour after thionamide; about 1-2 weeks", "Fuels synthesis if given first; rash"],
+        ["Hydrocortisone (storm)", "300 mg IV load, then 100 mg every 8 hours", "Taper as storm resolves", "Hyperglycaemia, infection"],
+        ["Cholestyramine", "4 g oral four times daily", "Until FT4 falls", "Constipation; separate other drugs"],
+        ["Levothyroxine IV (coma)", "200-400 mcg IV load, then 50-100 mcg IV daily", "Until oral intake; then oral", "Ischaemia, arrhythmia; lower dose in elderly/cardiac"],
+        ["Liothyronine (coma)", "5-20 mcg IV load, then 2.5-10 mcg every 8 hours", "Until clinical improvement", "Arrhythmia, MI; caution in elderly"],
+        ["Hydrocortisone (coma)", "100 mg IV every 8 hours", "Until cortisol shown normal", "Hyperglycaemia"],
+      ],
+    },
+    {
+      heading: "Burch-Wartofsky Point Scale (summary)",
+      columns: ["Parameter", "Range of findings", "Points"],
+      rows: [
+        ["Temperature", "37.2 C to 40 C or more", "5-30"],
+        ["CNS effects", "Absent; mild agitation; delirium or psychosis; seizure or coma", "0, 10, 20, 30"],
+        ["GI-hepatic", "Absent; diarrhoea, vomiting, pain; unexplained jaundice", "0, 10, 20"],
+        ["Heart rate", "90-109 to 140 or more per minute", "5-25"],
+        ["Heart failure", "Absent; pedal oedema; bibasal crepitations; pulmonary oedema", "0, 5, 10, 15"],
+        ["Atrial fibrillation", "Absent or present", "0 or 10"],
+        ["Precipitating event", "Absent or present", "0 or 10"],
+        ["Interpretation", "45 or more storm; 25-44 impending; below 25 unlikely", "Total"],
+      ],
+    },
+    {
+      heading: "Thyroid storm vs myxoedema coma",
+      columns: ["Feature", "Thyroid storm", "Myxoedema coma"],
+      rows: [
+        ["Typical patient", "Young woman with Graves, missed drugs", "Elderly woman, winter, untreated hypothyroidism"],
+        ["Temperature", "Hyperpyrexia, often above 40 C", "Hypothermia, often below 35 C"],
+        ["Heart", "Tachycardia above 140, AF, high-output failure", "Bradycardia, low voltage ECG, effusion"],
+        ["CNS", "Agitation, delirium, psychosis, seizure", "Lethargy, confusion, coma, seizure"],
+        ["Respiration", "Tachypnoea", "Hypoventilation, hypercapnia"],
+        ["Labs", "TSH suppressed, high FT4/FT3, high bilirubin, hyperglycaemia", "TSH high, low FT4, hyponatraemia, hypoglycaemia, high CK"],
+        ["Scoring", "BWPS 45 or more; JTA TS1/TS2", "Popoveniuc score 60 or more"],
+        ["Mortality", "About 10%", "About 25-30%"],
+      ],
+    },
+    {
+      heading: "Differential diagnosis of fever with tachycardia and delirium",
+      columns: ["Condition", "Key discriminating feature", "Confirmatory test"],
+      rows: [
+        ["Thyroid storm", "Goitre, eye signs, AF, jaundice", "Suppressed TSH, high FT4/FT3"],
+        ["Sepsis", "Source of infection; may coexist", "Cultures, lactate, procalcitonin"],
+        ["Neuroleptic malignant syndrome", "Antipsychotic, lead-pipe rigidity", "Very high CK"],
+        ["Serotonin syndrome", "Serotonergic drugs, clonus, hyperreflexia", "Clinical (Hunter criteria)"],
+        ["Phaeochromocytoma crisis", "Paroxysmal hypertension, pallor", "Plasma metanephrines"],
+        ["Sympathomimetic toxicity", "Cocaine or amphetamine use, mydriasis", "Urine toxicology"],
+        ["Heat stroke", "Exposure, anhidrosis", "History; TFT normal"],
+      ],
+    },
+    {
+      heading: "Monitoring in the ICU",
+      columns: ["Parameter", "Storm", "Myxoedema coma"],
+      rows: [
+        ["Vital signs", "Continuous HR, BP, temperature", "Continuous core temperature, HR, BP"],
+        ["Thyroid tests", "FT4, FT3 every 1-2 days", "FT4, T3 every 1-2 days"],
+        ["Electrolytes", "K, Ca, glucose daily", "Sodium every 4-6 hours initially, glucose"],
+        ["Organ function", "LFT, bilirubin, creatinine", "ABG for CO2, CK, creatinine"],
+        ["Cardiac", "ECG, echo for LV function", "ECG for ischaemia and QT, echo for effusion"],
+        ["Drug safety", "LFT and CBC on thionamides", "Watch for angina or arrhythmia on T4/T3"],
+      ],
+    },
+  ],
+  redFlags: [
+    "**Fever with tachycardia above 130, AF or delirium in a thyrotoxic patient** - suspected storm; ICU admission.",
+    "**Jaundice in storm** - poor prognosis; avoid PTU if liver failure, intensify care.",
+    "**Hypothermia below 35 C with drowsiness in an elderly patient with a thyroidectomy scar** - myxoedema coma.",
+    "**Hypercapnia, macroglossia or stridor** in myxoedema coma - early intubation.",
+    "**Sodium below 120 mmol/L with seizures** - hypertonic saline in ICU.",
+    "**Hypotension not responding to vasopressors** in a hypothyroid patient - give hydrocortisone and thyroid hormone urgently.",
+    "**Cardiogenic shock in storm** - stop non-selective beta-blocker; consider ECMO and plasma exchange.",
+  ],
+  pearls: [
+    "**Storm is clinical** - FT4 is no higher than in ordinary thyrotoxicosis.",
+    "**BWPS 45 or more = storm; 25-44 = impending**.",
+    "**Thionamide first, iodine 1 hour later** - never the reverse.",
+    "**PTU in storm** for its extra block of T4 to T3 conversion (ATA); JTA accepts methimazole.",
+    "**Paracetamol, not aspirin** - aspirin raises free T4.",
+    "**Myxoedema coma: steroid before or with thyroxine**, and passive rewarming only.",
+    "**IV T4 200-400 mcg load, then 50-100 mcg daily**; add small-dose T3 if young without heart disease.",
+    "**A 'normal' temperature in myxoedema coma is a fever** - look for infection.",
+    "**Mnemonic storm - 'Block, Block, Block, Beta, Bile, Body'**.",
+  ],
+  mcqs: [
+    {
+      id: "endocrine-thyroid-emergencies-q1",
+      stem: "A 30-year-old woman with known Graves disease who stopped carbimazole 2 months ago presents with pneumonia, temperature 40.2 C, heart rate 150/min in AF, agitation and bibasal crepitations. In what order should storm-specific drugs be started?",
+      options: [
+        "Lugol iodine, then PTU after 1 hour",
+        "Beta-blocker and PTU, then iodine at least 1 hour after the PTU",
+        "Radioiodine after stabilisation with propranolol",
+        "Levothyroxine with hydrocortisone",
+      ],
+      answer: 1,
+      explanation:
+        "Thyroid storm is treated with beta-blockade and a thionamide (PTU preferred by ATA) first, then iodine at least 1 hour later to block release, plus hydrocortisone and treatment of the precipitant. Giving iodine before the thionamide supplies substrate for new hormone synthesis and can worsen thyrotoxicosis. Radioiodine is never used in storm, and levothyroxine is for myxoedema coma.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-thyroid-emergencies-q2",
+      stem: "On the Burch-Wartofsky Point Scale, which total score is regarded as highly suggestive of thyroid storm?",
+      options: [
+        "15 or more",
+        "25 or more",
+        "35 or more",
+        "45 or more",
+      ],
+      answer: 3,
+      explanation:
+        "A BWPS of 45 or more is highly suggestive of thyroid storm, 25-44 indicates impending storm needing clinical judgement, and below 25 makes storm unlikely. A threshold of 25 identifies impending, not established, storm, and lower values such as 15 or 35 are not validated cut-offs. The JTA criteria are more specific and can be used alongside.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-thyroid-emergencies-q3",
+      stem: "A 74-year-old woman is brought in January with drowsiness, temperature 33.5 C, pulse 44/min, sodium 118 mmol/L, PaCO2 62 mmHg and a thyroidectomy scar. Which is the most appropriate initial management after securing the airway?",
+      options: [
+        "Active external rewarming with heating pads and oral levothyroxine 50 mcg",
+        "Normal saline, vasopressors and wait for TSH result",
+        "IV hydrocortisone 100 mg, then IV levothyroxine 200-400 mcg loading, passive rewarming",
+        "Rapid correction of sodium to 135 mmol/L with 3% saline",
+      ],
+      answer: 2,
+      explanation:
+        "This is myxoedema coma: give stress-dose hydrocortisone (covering possible adrenal insufficiency) with an IV levothyroxine load of 200-400 mcg, use passive rewarming, and ventilate for hypercapnia. Active external rewarming causes vasodilatation and collapse, and a small oral dose is inadequate. Waiting for TSH delays life-saving treatment, and sodium must not be raised more than 8-10 mmol/L in 24 hours because of osmotic demyelination.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-thyroid-emergencies-q4",
+      stem: "Why is aspirin avoided for fever in thyroid storm?",
+      options: [
+        "It displaces thyroid hormone from binding proteins, raising free T4 and T3",
+        "It blocks the action of propylthiouracil on thyroid peroxidase",
+        "It causes hypothermia when combined with cooling blankets",
+        "It increases iodine uptake by the thyroid",
+      ],
+      answer: 0,
+      explanation:
+        "Salicylates displace T4 and T3 from TBG and transthyretin, increasing free hormone and potentially worsening storm, so paracetamol and physical cooling are used instead. Aspirin does not interfere with thyroid peroxidase inhibition by PTU, does not specifically cause hypothermia with cooling, and does not increase iodine uptake.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-thyroid-emergencies-q5",
+      stem: "A patient in thyroid storm has an echocardiogram showing LV ejection fraction 20% and is hypotensive. Heart rate is 150/min. Which rate-control strategy is most appropriate?",
+      options: [
+        "Oral propranolol 80 mg every 4 hours",
+        "IV verapamil bolus",
+        "Short-acting beta-1-selective blocker such as esmolol or landiolol with careful titration",
+        "IV atropine",
+      ],
+      answer: 2,
+      explanation:
+        "In storm with severe LV dysfunction, high-dose long-acting non-selective propranolol can precipitate cardiovascular collapse; JTA 2016 recommends ultra-short-acting beta-1-selective agents (landiolol, esmolol) titrated under monitoring, which can be stopped quickly if blood pressure falls. Verapamil is a negative inotrope dangerous in hypotension and heart failure, and atropine would worsen tachycardia.",
+      difficulty: "hard",
+    },
+  ],
+  theory: [
+    {
+      id: "endocrine-thyroid-emergencies-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "less-common",
+      question:
+        "Define thyroid storm. Describe its precipitating factors, diagnostic criteria and step-wise management.",
+      openingLines: [
+        "Thyroid storm is a life-threatening exacerbation of thyrotoxicosis with multi-organ decompensation - hyperpyrexia, tachyarrhythmia, heart failure, GI-hepatic dysfunction and CNS disturbance - with a mortality of about 10%.",
+        "It is a clinical diagnosis supported by the Burch-Wartofsky Point Scale (45 or more) or the Japan Thyroid Association criteria, and treatment begins before laboratory confirmation.",
+      ],
+      answer: [
+        {
+          heading: "Precipitants",
+          points: [
+            "Infection, stopping antithyroid drugs, surgery, RAI, iodine contrast, amiodarone, trauma, DKA, labour, MI, PE.",
+          ],
+        },
+        {
+          heading: "Pathophysiology",
+          points: [
+            "Rapid rise in free hormone plus catecholamine sensitivity; thermogenesis, high-output then low-output failure; hepatic congestion.",
+          ],
+        },
+        {
+          heading: "Clinical features and diagnosis",
+          points: [
+            "Fever above 39-40 C, HR above 140, AF, heart failure, vomiting, diarrhoea, jaundice, agitation, delirium, coma.",
+            "BWPS: 45 or more storm, 25-44 impending; JTA TS1 (CNS plus one, or three non-CNS) and TS2.",
+            "Labs: low TSH, high FT4/FT3, LFT, glucose, cultures, ECG, echo, cortisol.",
+          ],
+        },
+        {
+          heading: "Management - specific",
+          points: [
+            "Propranolol 60-80 mg every 4 hours or esmolol (landiolol if heart failure).",
+            "PTU 500-1000 mg load then 250 mg every 4 hours, or methimazole 60-80 mg/day.",
+            "Iodine (SSKI 5 drops every 6 hours or Lugol) at least 1 hour after thionamide.",
+            "Hydrocortisone 300 mg load then 100 mg every 8 hours; cholestyramine 4 g four times daily.",
+          ],
+        },
+        {
+          heading: "Management - supportive and refractory",
+          points: [
+            "ICU, fluids with dextrose, paracetamol and cooling (no aspirin), treat precipitant, AF anticoagulation.",
+            "Refractory: plasma exchange (ASFA 2023 category II), emergency thyroidectomy, ECMO.",
+          ],
+        },
+        {
+          heading: "After recovery",
+          points: [
+            "Taper iodine and steroids; continue thionamide; definitive therapy by surgery or RAI after iodine washout.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Flow chart of step-wise storm management with timing of iodine",
+        "BWPS table",
+      ],
+      markSplit: [
+        { part: "Definition and precipitants", marks: 2 },
+        { part: "Diagnostic criteria (BWPS, JTA)", marks: 2 },
+        { part: "Specific drug therapy", marks: 4 },
+        { part: "Supportive, refractory and follow-up", marks: 2 },
+      ],
+      keywords: ["Burch-Wartofsky", "JTA", "PTU", "iodine timing", "hydrocortisone", "esmolol", "plasma exchange"],
+    },
+    {
+      id: "endocrine-thyroid-emergencies-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Write a short note on the management of myxoedema coma.",
+      openingLines: [
+        "Myxoedema coma is decompensated severe hypothyroidism presenting with altered sensorium, hypothermia, bradycardia, hypoventilation and hyponatraemia, with mortality of about 25-30%.",
+        "Treatment starts on clinical suspicion with hydrocortisone, intravenous thyroid hormone and intensive supportive care.",
+      ],
+      answer: [
+        {
+          heading: "Recognition",
+          points: [
+            "Elderly woman, winter, precipitant (infection, sedative); hypothermia, bradycardia, macroglossia, effusions.",
+            "Labs: high TSH, low FT4, hyponatraemia, hypoglycaemia, hypercapnia, high CK; draw cortisol.",
+          ],
+        },
+        {
+          heading: "Specific therapy",
+          points: [
+            "Hydrocortisone 100 mg IV every 8 hours.",
+            "IV levothyroxine 200-400 mcg load, then 50-100 mcg daily; add T3 5-20 mcg load then 2.5-10 mcg every 8 hours in selected patients.",
+            "Where IV T4 is unavailable: NG levothyroxine 300-500 mcg load.",
+          ],
+        },
+        {
+          heading: "Supportive",
+          points: [
+            "Ventilation for hypercapnia; passive rewarming; fluid restriction or 3% saline (rise under 8-10 mmol/L/day); dextrose; antibiotics; avoid sedatives.",
+          ],
+        },
+      ],
+      mustDraw: ["Management flow chart for myxoedema coma"],
+      markSplit: [
+        { part: "Recognition and investigations", marks: 1 },
+        { part: "Hormone and steroid therapy", marks: 2 },
+        { part: "Supportive care", marks: 2 },
+      ],
+      keywords: ["IV levothyroxine", "liothyronine", "hydrocortisone", "passive rewarming", "hyponatraemia", "hypercapnia"],
+    },
+  ],
+  references: [
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025",
+    "Williams Textbook of Endocrinology, 15th edition, 2024",
+    "2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis",
+    "2016 Guidelines for the management of thyroid storm from the Japan Thyroid Association and Japan Endocrine Society (Satoh et al., Endocrine Journal 2016)",
+    "Guidelines for the Treatment of Hypothyroidism: American Thyroid Association, 2014 (myxoedema coma section)",
+    "Burch HB, Wartofsky L. Life-threatening thyrotoxicosis: thyroid storm. Endocrinol Metab Clin North Am 1993",
+    "Popoveniuc G et al. A diagnostic scoring system for myxedema coma. Endocrine Practice 2014",
+    "Guidelines on the Use of Therapeutic Apheresis in Clinical Practice, American Society for Apheresis, 9th special issue, 2023",
+  ],
+});
+
 export default topics;

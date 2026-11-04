@@ -1537,4 +1537,503 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "endocrine-diabetes-special-situations",
+  title: "Diabetes in special situations: Ramadan and fasting, elderly, travel, driving and sick days",
+  frequency: "common",
+  oneLiner:
+    "Diabetes care must be **adapted to the situation, not the textbook regimen**: **risk-stratify before religious fasting (IDF-DAR 2021 score)** and shift or reduce sulfonylureas and insulin, **break the fast if glucose is under 70 or over 300 mg/dL**; **relax targets and deprescribe in older adults** (HbA1c under 8.0% if complex); plan insulin storage and time zones for **travel**; check glucose before **driving** ('five to drive'); follow **sick-day SADMANS rules** with ketone checks; and in **end-of-life care** aim only to prevent symptomatic hypo- and hyperglycaemia.",
+  keywords: [
+    "Ramadan",
+    "IDF-DAR 2021",
+    "Suhoor",
+    "Iftar",
+    "Navratri fasting",
+    "Karva Chauth",
+    "religious fasting",
+    "elderly diabetes",
+    "deprescribing",
+    "deintensification",
+    "Beers criteria",
+    "travel and insulin",
+    "time zones",
+    "driving and hypoglycaemia",
+    "five to drive",
+    "sick-day rules",
+    "SADMANS",
+    "ketone monitoring",
+    "end-of-life diabetes",
+    "euglycaemic DKA",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**Special situations** are circumstances - fasting, ageing, travel, driving, acute illness and terminal illness - in which usual glucose targets and drug schedules become unsafe and must be individualised. [ADA 2026]",
+        "Worldwide over **150 million Muslims with diabetes** may fast in Ramadan; in **EPIDIAR**, about **79% with type 2** and **43% with type 1** fasted, many without medical advice. [IDF-DAR 2021]",
+        "India has the **second-largest Muslim population** and a wide range of Hindu, Jain, Christian and Sikh fasts (Navratri, Ekadashi, Karva Chauth, Shravan, Paryushana, Lent) - asking about fasting is part of every diabetic history. [RSSDI 2022]",
+        "EPIDIAR showed **severe hypoglycaemia rose 4.7-fold in type 2 and 7.5-fold in type 1** during Ramadan, and severe hyperglycaemia/DKA also increased. [IDF-DAR 2021]",
+        "**Older adults** (65 or more) have the highest diabetes prevalence and the most hypoglycaemia-related falls, fractures and admissions; India's **LASI** shows diabetes is among the commonest chronic diseases of older Indians. [ADA 2026]",
+        "**Hypoglycaemia** is the common thread - it causes road accidents, falls, arrhythmias and dementia, and most of it is preventable by dose adjustment. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Who is at risk",
+      points: [
+        "**Drugs that cause hypoglycaemia**: insulin (especially multiple daily injections and premixed) and **sulfonylureas** (glibenclamide worst). [IDF-DAR 2021]",
+        "**Drugs that cause dehydration or ketosis**: SGLT2 inhibitors, diuretics, and metformin/ACEi/ARB/NSAIDs in volume depletion (AKI). [ADA 2026]",
+        "**Patient factors**: type 1 diabetes, **hypoglycaemia unawareness**, recent severe hypo or DKA, CKD (eGFR under 45), pregnancy, frailty, cognitive impairment, heavy manual labour, living alone. [IDF-DAR 2021]",
+        "**Long fasts**: Ramadan fasts of **16 hours or more** (summer, northern latitudes), dry fasts without water (Ramadan, **Karva Chauth**), and multi-day fasts (Jain Paryushana). [IDF-DAR 2021]",
+        "**Older age** adds reduced counter-regulation, polypharmacy, CKD and impaired thirst. [ADA 2026]",
+        "**Occupational risk**: commercial drivers, machine operators, workers at heights - where hypoglycaemia endangers others. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Physiology of fasting and illness",
+      points: [
+        "During a fast, falling insulin and rising **glucagon** switch the liver to **glycogenolysis** for 8-12 hours, then **gluconeogenesis**, and fat breakdown produces ketones. [Harrison 22e]",
+        "In **type 1 diabetes** with too little insulin, unopposed glucagon and lipolysis lead quickly to **DKA**; with too much insulin, fasting causes **hypoglycaemia**. [IDF-DAR 2021]",
+        "In **type 2 diabetes**, sulfonylureas keep driving insulin release regardless of food - the reason they cause fasting hypoglycaemia. [IDF-DAR 2021]",
+        "**Iftar and post-fast feasts** with high-GI foods (sweets, fried snacks, sabudana, potatoes) cause post-meal spikes - hyperglycaemia at night, hypoglycaemia by afternoon. [IDF-DAR 2021]",
+        "**Acute illness** raises cortisol, catecholamines and glucagon, causing **insulin resistance and hyperglycaemia even if the patient is not eating** - the reason insulin must never be stopped on sick days. [ISPAD 2022]",
+        "**SGLT2 inhibitors** lower glucose but raise glucagon and ketogenesis - with fasting, vomiting or surgery they can cause **euglycaemic DKA** (glucose under 250 mg/dL). [ADA 2026]",
+        "**Ageing** blunts adrenergic warning symptoms and thirst, so hypoglycaemia presents as confusion or falls and dehydration develops silently. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Classification: IDF-DAR 2021 Ramadan risk categories",
+      points: [
+        "The **IDF-DAR 2021 risk score** adds points for type and duration of diabetes, hypoglycaemia history, HbA1c, treatment type, SMBG use, acute complications, macrovascular disease, eGFR, pregnancy, frailty/cognition, physical labour, previous Ramadan experience and fasting hours. [IDF-DAR 2021]",
+        "**Low risk (score 0-3)**: fasting is probably safe. [IDF-DAR 2021]",
+        "**Moderate risk (3.5-6)**: fasting safety uncertain - may fast with education, adjusted drugs and monitoring. [IDF-DAR 2021]",
+        "**High risk (over 6)**: fasting is probably unsafe and is **advised against** - e.g. recent severe hypoglycaemia, hypoglycaemia unawareness, DKA/HHS in last 3 months, pregnancy on treatment, eGFR under 30, unstable heart disease, frailty with cognitive impairment. [IDF-DAR 2021]",
+        "The decision is **shared**: the person may choose to fast against advice - then adjust drugs and monitor rather than abandon care. [IDF-DAR 2021]",
+        "**ADA older-adult categories**: healthy, complex/intermediate and very complex/poor health - they set HbA1c, glucose and BP targets (see table). [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Clinical assessment - the pre-fast, pre-travel or annual review",
+      points: [
+        "Do a **pre-Ramadan visit 6-8 weeks before** the fast: risk score, HbA1c, eGFR, drug plan, education ('Ramadan-focused education' halves hypoglycaemia). [IDF-DAR 2021]",
+        "Ask **what kind of fast**: hours, water allowed or not, one meal or fruits-only, foods used (sabudana, kuttu, singhara, potatoes, sweets), and how many days. [RSSDI 2022]",
+        "Ask about **hypoglycaemia frequency and awareness**, previous fasting experience, glucometer availability and who lives with the patient. [IDF-DAR 2021]",
+        "In older adults screen **cognition** (Mini-Cog), **function** (ADL/IADL), **falls**, depression, vision, hearing and polypharmacy at least yearly. [ADA 2026]",
+        "Before travel: destination, duration, **time-zone difference**, climate (heat damages insulin), physical activity (pilgrimages, trekking), access to medical care and insurance. [ADA 2026]",
+        "For drivers: **driving type** (private versus commercial), hypoglycaemia while driving in the last year, awareness, vision and neuropathy. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Examination and investigations",
+      points: [
+        "**Weight, BP (lying and standing)** for postural drop - fasting and SGLT2i worsen orthostasis. [ADA 2026]",
+        "**Feet** before pilgrimages involving long barefoot walking (Hajj, Sabarimala, temple circuits) - loss of protective sensation means special footwear advice. [IWGDF 2023]",
+        "**Visual acuity** (driving standard: read a number plate at 20 m in India's licence test; any proliferative DR or laser affecting fields matters). [ADA 2026]",
+        "**HbA1c, eGFR, potassium, UACR** before fasting and when deprescribing; low HbA1c (under 7% in a frail person on insulin/SU) signals overtreatment. [ADA 2026]",
+        "**SMBG plan**: during Ramadan check at **Suhoor, mid-morning, midday, afternoon, before Iftar, 2 hours after Iftar** and whenever unwell - **finger-prick testing does not break the fast**. [IDF-DAR 2021]",
+        "**CGM** is valuable in fasting, older adults on insulin and drivers - alarms for lows. [ADA 2026]",
+        "**Blood or urine ketones** on sick days in type 1, anyone on SGLT2i, and type 2 with glucose over 250-300 mg/dL. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis - the unwell diabetic during a fast or illness",
+      points: [
+        "**Hypoglycaemia** (sweating, tremor, confusion, abnormal behaviour; glucose under 70 mg/dL) - commonest in the afternoon before Iftar on SU/insulin. [IDF-DAR 2021]",
+        "**Dehydration and postural hypotension** - dizziness, dark urine, rising creatinine; worse with SGLT2i, diuretics and summer dry fasts. [IDF-DAR 2021]",
+        "**DKA** - vomiting, abdominal pain, Kussmaul breathing, ketones 3 mmol/L or more; type 1 who reduced insulin too much. [ADA 2026]",
+        "**Euglycaemic DKA** - same picture with **glucose under 250 mg/dL** on SGLT2 inhibitors - missed if only glucose is checked. [ADA 2026]",
+        "**HHS** - older type 2, glucose often over 600 mg/dL, very dehydrated, confused, no major ketosis. [ADA 2026]",
+        "**Stroke, sepsis, MI** (silent in autonomic neuropathy) and **drug toxicity** - do not attribute confusion in an older diabetic only to sugar. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Management in OPD - Ramadan drug adjustment",
+      points: [
+        "**Break the fast immediately** if glucose is **under 70 mg/dL**, **over 300 mg/dL**, or there are symptoms of hypoglycaemia, hyperglycaemia, dehydration or acute illness; recheck within 1 hour if glucose is under 90 mg/dL early in the day. [IDF-DAR 2021]",
+        "**Metformin**: once daily - take at Iftar; twice daily - at Iftar and Suhoor; three times daily - morning dose at Suhoor and combine afternoon and evening doses at Iftar. [IDF-DAR 2021]",
+        "**Sulfonylureas**: switch glibenclamide to **gliclazide or glimepiride**; once-daily dose at Iftar (reduce if well controlled); twice-daily gliclazide - usual dose at Iftar, **halve the Suhoor dose**. [IDF-DAR 2021]",
+        "**DPP-4 inhibitors, pioglitazone, GLP-1RA**: no dose change (take at Iftar); start GLP-1RA at least **6 weeks before** Ramadan so nausea has settled. [IDF-DAR 2021]",
+        "**SGLT2 inhibitors**: take at Iftar, increase fluids between Iftar and Suhoor; start at least **2 weeks before** Ramadan; avoid in the elderly, CKD, on diuretics or with hypotension during long hot fasts. [IDF-DAR 2021]",
+        "**Basal insulin**: reduce by **15-30%** and give at Iftar; **premixed twice daily**: usual morning dose at Iftar and **reduce the evening dose by 25-50%** given at Suhoor. [IDF-DAR 2021]",
+        "**Basal-bolus**: basal reduce 15-30%; Iftar bolus usual; **Suhoor bolus reduce 25-50%**; **omit the lunch bolus**; titrate every 3 days by SMBG. [IDF-DAR 2021]",
+        "**Diet**: delay Suhoor to just before dawn; complex carbohydrates (whole grains, dal) at Suhoor; break the fast with water and 1-3 dates, avoid fried and sugary foods; 2-3 L of water between Iftar and Suhoor. [IDF-DAR 2021]",
+        "**Exercise**: usual light activity; Taraweeh prayers count as exercise; avoid strenuous activity in the fasting hours. [IDF-DAR 2021]",
+      ],
+    },
+    {
+      heading: "Other religious fasts in India - Navratri and beyond",
+      points: [
+        "**Navratri** (9 days, twice a year): patterns vary - one meal a day, fruit and milk only, or 'phalahar' foods (sabudana, potatoes, kuttu, singhara, sweets) that are **high-glycaemic and high-fat**. [RSSDI 2022]",
+        "Apply the **same principles as Ramadan**: risk-stratify, reduce or move sulfonylurea and prandial insulin to the main meal, reduce basal insulin by 15-30% if hypoglycaemia occurs, monitor, and break the fast for under 70 or over 300 mg/dL. [RSSDI 2022]",
+        "Suggest **lower-GI fasting foods**: roasted makhana, paneer, curd, nuts, salads, kuttu or rajgira roti instead of fried puris, sabudana khichdi and potato dishes. [RSSDI 2022]",
+        "**Karva Chauth** (sunrise to moonrise, often no water) and **Nirjala Ekadashi** are **dry fasts** - higher dehydration risk; hold SGLT2i and diuretics that day and reduce SU/insulin. [RSSDI 2022]",
+        "**Jain Paryushana** fasts can last **8-10 days with only boiled water** - insulin users and those on SU should be advised against total fasts or need close daily monitoring. [RSSDI 2022]",
+        "**Weekly fasts** (Monday, Tuesday, Thursday, Saturday) mean a predictable low-intake day - write a **separate fasting-day dose plan** on the prescription. [RSSDI 2022]",
+        "Respect belief: many faiths **exempt the sick, elderly, pregnant and travellers** - religious leaders can help patients accept that exemption. [IDF-DAR 2021]",
+      ],
+    },
+    {
+      heading: "Older adults - targets, deprescribing and hypoglycaemia",
+      points: [
+        "**Healthy older adult** (few comorbidities, intact cognition and function): **HbA1c under 7.0-7.5%**, fasting 80-130 mg/dL, BP under 130/80. [ADA 2026]",
+        "**Complex/intermediate** (multiple chronic illnesses, 2 or more IADL impairments or mild-moderate cognitive impairment): **HbA1c under 8.0%**, fasting 90-150 mg/dL, bedtime 100-180. [ADA 2026]",
+        "**Very complex/poor health** (long-term care, end-stage illness, moderate-severe dementia, 2 or more ADL dependencies): **avoid reliance on HbA1c**; aim to avoid hypoglycaemia and symptomatic hyperglycaemia (fasting 100-180, bedtime 110-200); BP under 140/90. [ADA 2026]",
+        "**Deintensify** when HbA1c is below the individual target or hypoglycaemia occurs: stop or reduce sulfonylurea first, simplify insulin to **once-daily morning basal**, stop prandial insulin if eating is erratic. [ADA 2026]",
+        "**Avoid**: glibenclamide and long-acting sulfonylureas, **sliding-scale insulin alone**, and complex regimens the patient or carer cannot follow. [AGS Beers 2023]",
+        "**Prefer**: metformin (if eGFR allows, check B12), DPP-4 inhibitors (low hypoglycaemia risk), SGLT2i or GLP-1RA for heart/kidney disease if weight and hydration allow, basal insulin analogues. [ADA 2026]",
+        "Deprescribe **statins and antihypertensives** where life expectancy is limited and benefit is unlikely within remaining lifespan. [ADA 2026]",
+        "Screen for **cognitive impairment from 65 yearly**; hypoglycaemia and dementia feed each other. [ADA 2026]",
+        "Use **CGM** in older adults on insulin to cut hypoglycaemia. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Travel",
+      points: [
+        "Carry **double the supply** of insulin, needles, strips and drugs, split between two bags; **insulin always in hand luggage** - the aircraft hold can freeze it. [ADA 2026]",
+        "Carry a **doctor's letter**, prescription with generic names, identification card, glucagon, and fast-acting sugar plus snacks. [ADA 2026]",
+        "**Insulin storage**: unopened at **2-8 degrees C**; in-use pens at room temperature (up to about 25-30 degrees C) for about **4 weeks**; in Indian summer heat use **cooling wallets or earthen pots**, never the freezer or a parked car. [ADA 2026]",
+        "**Time zones**: travelling **east shortens the day** - basal insulin dose may need reducing; travelling **west lengthens it** - an extra small dose or meal may be needed; for once-daily basal adjust gradually by 1-2 hours a day or follow home time on short trips. [ADA 2026]",
+        "**CGM sensors and pumps** should not go through airport body scanners or X-ray - request hand search per manufacturer advice. [ADA 2026]",
+        "**Pilgrimages and treks**: heat, long walks and barefoot walking (Hajj, Sabarimala, Kailash, Amarnath) raise **dehydration, hypoglycaemia and foot ulcer** risk; altitude can affect meter readings. [IWGDF 2023]",
+        "**Traveller's diarrhoea** triggers sick-day rules; carry ORS and know where to seek help. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Driving",
+      points: [
+        "Diabetes alone is **not a bar** to driving; the risk is **hypoglycaemia, hypoglycaemia unawareness, visual loss and severe neuropathy**. [ADA Diabetes and Driving]",
+        "**'Five to drive'**: on insulin or sulfonylurea, check glucose before driving; do not drive if under **90 mg/dL (5 mmol/L)** without a snack, and never under **70 mg/dL**; recheck every **2 hours** on long drives. [DVLA 2024]",
+        "**Hypoglycaemia while driving**: stop safely, switch off, move to the passenger seat, take 15-20 g fast sugar, and **wait 45 minutes after glucose has recovered** before driving again. [DVLA 2024]",
+        "Keep **fast-acting sugar within reach** in the vehicle; CGM with low alerts is ideal. [ADA 2026]",
+        "**Commercial/transport drivers** on insulin need stricter review: no severe hypoglycaemia in 12 months, full awareness, regular monitoring - in India, transport-vehicle licences require a **medical certificate (Form 1-A)** and others a **self-declaration (Form 1)** under the Motor Vehicles rules. [MoRTH CMVR]",
+        "Advise **not to drive** after a severe hypoglycaemia episode until reviewed, with hypoglycaemia unawareness, or with visual field loss after PRP that fails the standard. [ADA Diabetes and Driving]",
+      ],
+    },
+    {
+      heading: "Sick-day rules and emergency care",
+      points: [
+        "**Never stop basal insulin** when ill, even if not eating; illness raises glucose. [ISPAD 2022]",
+        "**SADMANS** - pause **S**ulfonylureas, **A**CE inhibitors, **D**iuretics, **M**etformin, **A**RBs, **N**SAIDs and **S**GLT2 inhibitors during vomiting, diarrhoea, fever or poor intake; restart **24-48 hours after eating and drinking normally**. [Diabetes UK / NICE]",
+        "**Monitor** glucose every **2-4 hours** and ketones every 4-6 hours (type 1, SGLT2i users, or glucose over 250-300 mg/dL). [ADA 2026]",
+        "**Fluids**: at least **100-200 mL every hour** (sugar-free if glucose high; sugary drinks or ORS if not eating and glucose low) to keep carbohydrate and hydration. [ISPAD 2022]",
+        "**Extra rapid-acting insulin** in type 1 with ketones: **10% of total daily dose** if blood ketones 0.6-1.4 mmol/L and glucose high, **up to 20%** if ketones 1.5 mmol/L or more, repeated every 2-4 hours. [ISPAD 2022]",
+        "**Seek urgent care/admit** if vomiting persists over 4-6 hours or fluids cannot be kept down, **blood ketones 3.0 mmol/L or more** (1.5-2.9 with worsening), glucose persistently over 300 mg/dL, drowsiness, breathlessness, abdominal pain, or severe hypoglycaemia. [ISPAD 2022]",
+        "**Severe hypoglycaemia**: if unable to swallow give **IV 25-50 mL of 50% dextrose** (or 100-150 mL of 10% dextrose) or **glucagon 1 mg IM / 3 mg nasal**; admit SU-induced hypoglycaemia for 24-48 hours of observation. [ADA 2026]",
+        "**SGLT2 inhibitors**: stop **3 days before planned surgery** and during acute illness; check ketones even with normal glucose. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "End-of-life diabetes care",
+      points: [
+        "Goal shifts to **comfort**: avoid symptomatic hypoglycaemia and hyperglycaemia (thirst, polyuria, infection), not HbA1c. [Diabetes UK EoL 2021]",
+        "Target capillary glucose roughly **108-270 mg/dL (6-15 mmol/L)**; stop HbA1c checks; reduce glucose checks to once daily or when symptomatic. [Diabetes UK EoL 2021]",
+        "**Type 2**: stop most oral agents as intake falls (sulfonylureas, SGLT2i, metformin), stop statins; small once-daily basal insulin only if glucose stays high with symptoms. [Diabetes UK EoL 2021]",
+        "**Type 1**: **continue low-dose once-daily basal insulin** to prevent DKA until the last days, with family agreement. [Diabetes UK EoL 2021]",
+        "**Steroids in palliative care** cause afternoon hyperglycaemia - use **morning gliclazide or morning NPH insulin** (see Steroid-induced hyperglycaemia topic). [Diabetes UK EoL 2021]",
+        "Discuss plans with the patient and family early, document them, and include **carers in hypoglycaemia recognition**. [ADA 2026]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates and exam angle",
+      points: [
+        "**IDF-DAR Practical Guidelines 2021**: new **point-based risk score** (low 0-3, moderate 3.5-6, high over 6) replacing the 2016 four-tier categories, plus updated drug adjustment tables. [IDF-DAR 2021]",
+        "**ADA Standards 2026 (Older Adults)**: three health-status categories with HbA1c **under 7.0-7.5%, under 8.0% or avoid reliance on HbA1c**; deintensification and CGM for insulin users emphasised. [ADA 2026]",
+        "**AGS Beers Criteria 2023**: avoid sulfonylureas as first- or second-line in older adults (all classes, higher risk with long-acting) and avoid sliding-scale insulin alone. [AGS Beers 2023]",
+        "**Diabetes UK End of Life Diabetes Care (2021 update)**: glucose range 6-15 mmol/L and stepwise withdrawal of drugs. [Diabetes UK EoL 2021]",
+        "Viva: **'When must a fasting diabetic break the fast?'** - glucose under 70 or over 300 mg/dL, or symptoms of hypo, hyper, dehydration or illness. [IDF-DAR 2021]",
+        "Viva: **'What is SADMANS?'** - the seven drugs to pause on sick days; the common mistake is **stopping insulin** instead. [Diabetes UK / NICE]",
+        "Common mistakes: forgetting to **ask about fasting**, keeping **glibenclamide** in an older patient, and checking only glucose (not ketones) in an ill patient on SGLT2i. [ADA 2026]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "IDF-DAR 2021 Ramadan risk categories",
+      columns: ["Category", "Score", "Typical patients", "Advice"],
+      rows: [
+        ["Low risk", "0-3", "Well-controlled T2D on metformin, DPP-4i, GLP-1RA or pioglitazone; no complications", "Probably safe to fast with education and monitoring"],
+        ["Moderate risk", "3.5-6", "T2D on SU or basal insulin, HbA1c 7.5-9%, stable complications, eGFR 45-60", "Safety uncertain; may fast with adjusted drugs and close SMBG"],
+        ["High risk", "Over 6", "Recent severe hypo or DKA/HHS, hypo unawareness, T1D on MDI with poor control, pregnancy, eGFR under 30, frailty with dementia", "Advised not to fast; if insists, intensive monitoring"],
+      ],
+    },
+    {
+      heading: "Drug adjustment for Ramadan (IDF-DAR 2021)",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Metformin", "OD at Iftar; BD at Iftar and Suhoor; TDS: morning dose at Suhoor, combine other two at Iftar", "Throughout Ramadan", "GI upset; hold if dehydrated"],
+        ["Gliclazide / glimepiride", "OD at Iftar (reduce if well controlled); BD gliclazide: usual at Iftar, half at Suhoor", "Review every 3 days by SMBG", "Hypoglycaemia; switch from glibenclamide"],
+        ["DPP-4 inhibitors, pioglitazone", "No change; take at Iftar", "Throughout", "Low hypoglycaemia risk"],
+        ["SGLT2 inhibitors", "No dose change; take at Iftar; extra fluids", "Start 2 or more weeks before Ramadan", "Dehydration, euglycaemic DKA; avoid in elderly, CKD, diuretics"],
+        ["GLP-1RA", "No change", "Start 6 or more weeks before Ramadan", "Nausea, dehydration"],
+        ["Basal insulin", "Reduce 15-30%, give at Iftar", "Titrate every 3 days", "Hypoglycaemia before Iftar"],
+        ["Premixed insulin BD", "Usual morning dose at Iftar; evening dose reduced 25-50% at Suhoor", "Titrate every 3 days", "Afternoon hypoglycaemia"],
+        ["Basal-bolus", "Basal -15-30%; Iftar bolus usual; Suhoor bolus -25-50%; omit lunch bolus", "Titrate every 3 days", "Hypoglycaemia; DKA if over-reduced in T1D"],
+      ],
+    },
+    {
+      heading: "Glycaemic and BP targets in older adults (ADA 2026)",
+      columns: ["Health status", "HbA1c", "Fasting / pre-meal glucose (mg/dL)", "Bedtime glucose (mg/dL)", "BP"],
+      rows: [
+        ["Healthy (few comorbidities, intact cognition)", "Under 7.0-7.5%", "80-130", "80-180", "Under 130/80"],
+        ["Complex/intermediate (multiple illnesses, 2+ IADL loss, mild-moderate cognitive impairment)", "Under 8.0%", "90-150", "100-180", "Under 130/80"],
+        ["Very complex/poor health (LTC, end-stage illness, moderate-severe dementia, 2+ ADL dependency)", "Avoid reliance on HbA1c", "100-180", "110-200", "Under 140/90"],
+      ],
+    },
+    {
+      heading: "Sick-day rules - what to do with each drug",
+      columns: ["Drug", "Action when ill", "Why"],
+      rows: [
+        ["Sulfonylureas", "Pause if not eating", "Hypoglycaemia"],
+        ["ACE inhibitors / ARBs", "Pause", "AKI with dehydration"],
+        ["Diuretics", "Pause", "Dehydration, AKI"],
+        ["Metformin", "Pause", "Lactic acidosis with AKI"],
+        ["NSAIDs", "Pause", "AKI"],
+        ["SGLT2 inhibitors", "Pause; check ketones", "Euglycaemic DKA, dehydration"],
+        ["Basal insulin", "Never stop; adjust by glucose", "Prevents DKA"],
+        ["Rapid insulin (T1D)", "Extra 10-20% of TDD if ketones", "Clears ketones"],
+      ],
+    },
+    {
+      heading: "Unwell diabetic during a fast or illness - differential",
+      columns: ["Condition", "Clue", "Bedside test", "Immediate action"],
+      rows: [
+        ["Hypoglycaemia", "Sweating, confusion before Iftar; on SU/insulin", "Glucose under 70 mg/dL", "15-20 g glucose; break fast"],
+        ["Dehydration", "Dizziness, postural drop, dark urine", "Lying-standing BP, creatinine", "Fluids; stop SGLT2i, diuretics"],
+        ["DKA", "Vomiting, abdominal pain, Kussmaul breathing", "Ketones 3 mmol/L or more, glucose high", "Admit; IV fluids and insulin"],
+        ["Euglycaemic DKA", "As DKA, on SGLT2i", "Ketones high, glucose under 250", "Admit; insulin with dextrose"],
+        ["HHS", "Older, very dry, confused", "Glucose over 600, osmolality over 320", "Admit; slow fluids"],
+      ],
+    },
+    {
+      heading: "Travel and driving checklist",
+      columns: ["Situation", "Key advice"],
+      rows: [
+        ["Packing", "Double supplies in two bags; insulin in hand luggage; doctor's letter; glucagon; snacks"],
+        ["Insulin storage", "Unopened 2-8 degrees C; in-use about 4 weeks at room temperature; cooling wallet in heat"],
+        ["Time zones", "East: shorter day, reduce basal; West: longer day, extra snack or small dose"],
+        ["Devices", "No body scanner or X-ray for CGM/pump; hand search"],
+        ["Before driving", "Check glucose; 'five to drive' (over 90 mg/dL); recheck every 2 hours"],
+        ["Hypo at the wheel", "Stop, keys out, passenger seat, treat, wait 45 minutes after recovery"],
+      ],
+    },
+  ],
+  redFlags: [
+    "**Glucose under 70 or over 300 mg/dL during a fast** - break the fast now",
+    "**Blood ketones 3.0 mmol/L or more**, or vomiting with ketones - DKA, admit",
+    "**Ill patient on SGLT2 inhibitor with ketosis and normal glucose** - euglycaemic DKA",
+    "**Persistent vomiting over 4-6 hours** or inability to keep fluids down",
+    "**Sulfonylurea-induced hypoglycaemia** - admit for 24-48 hours of observation",
+    "**Confusion or a fall in an older diabetic** - check glucose, then look for stroke, sepsis, MI",
+    "**Hypoglycaemia while driving** or loss of awareness - stop driving until reviewed",
+  ],
+  pearls: [
+    "**Under 70 or over 300 - break the fast.** Finger-prick tests do not break a fast.",
+    "**SADMANS**: Sulfonylureas, ACEi, Diuretics, Metformin, ARBs, NSAIDs, SGLT2i - pause on sick days; **never stop basal insulin**.",
+    "**Ramadan insulin**: basal down 15-30%, Suhoor dose down 25-50%, morning dose moves to Iftar.",
+    "**Glibenclamide is never right** in fasting or in the elderly - switch to gliclazide.",
+    "**Older adult HbA1c**: healthy under 7-7.5%, complex under 8%, very complex - do not chase HbA1c.",
+    "**Five to drive**: over 90 mg/dL before driving; wait 45 minutes after a hypo.",
+    "**Insulin in hand luggage, never in the hold.**",
+    "**End of life**: 6-15 mmol/L (108-270 mg/dL), keep basal insulin in type 1.",
+  ],
+  mcqs: [
+    {
+      id: "endocrine-diabetes-special-situations-q1",
+      stem: "A 48-year-old man with type 2 diabetes on metformin 500 mg twice daily and premixed insulin 30/70 (24 units morning, 16 units evening) wishes to fast in Ramadan. Which adjustment follows IDF-DAR guidance?",
+      options: [
+        "24 units at Iftar and about 8-12 units at Suhoor",
+        "24 units at Suhoor and 16 units at Iftar",
+        "Stop insulin during Ramadan and continue metformin",
+        "40 units once daily at Suhoor",
+      ],
+      answer: 0,
+      explanation:
+        "For twice-daily premixed insulin, the usual morning dose is given at Iftar (the main meal) and the evening dose is reduced by 25-50% and given at Suhoor, so 16 units becomes about 8-12. Giving the larger dose at Suhoor causes afternoon hypoglycaemia before Iftar. Stopping insulin risks severe hyperglycaemia and DKA. Combining all insulin at Suhoor maximises daytime hypoglycaemia during the fast.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-diabetes-special-situations-q2",
+      stem: "During a Ramadan fast, a woman on gliclazide checks her glucose at 2 pm and finds 64 mg/dL. She feels well. What should she do?",
+      options: [
+        "Continue fasting and recheck at Iftar",
+        "Break the fast and take fast-acting sugar",
+        "Take her evening gliclazide early",
+        "Continue fasting as she is asymptomatic",
+      ],
+      answer: 1,
+      explanation:
+        "IDF-DAR advises breaking the fast whenever glucose falls below 70 mg/dL, with or without symptoms, because it will fall further before Iftar on a sulfonylurea. Continuing to fast until Iftar, or because she is asymptomatic, risks severe hypoglycaemia. Taking more gliclazide would worsen the low glucose.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-diabetes-special-situations-q3",
+      stem: "An 82-year-old woman with moderate dementia who needs help with bathing and dressing has HbA1c 6.4% on glimepiride 4 mg and metformin. She has had two falls. What is the best step?",
+      options: [
+        "Add a DPP-4 inhibitor to reach HbA1c under 6%",
+        "Switch to basal-bolus insulin",
+        "Continue current therapy as HbA1c is at target",
+        "Stop glimepiride and accept a higher glucose range",
+      ],
+      answer: 3,
+      explanation:
+        "In a very complex older adult with dementia and ADL dependency, ADA advises avoiding reliance on HbA1c and preventing hypoglycaemia; an HbA1c of 6.4% on a sulfonylurea indicates overtreatment and possible hypoglycaemic falls, so deintensify by stopping glimepiride. Adding drugs to push HbA1c lower increases harm. Basal-bolus insulin is too complex and hypoglycaemic. Continuing unchanged ignores the falls and the Beers advice against sulfonylureas.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-diabetes-special-situations-q4",
+      stem: "A 40-year-old with type 2 diabetes on empagliflozin, metformin and ramipril has had vomiting and diarrhoea for a day. Glucose is 180 mg/dL. Which advice is correct?",
+      options: [
+        "Continue all drugs because glucose is not high",
+        "Stop all drugs including any insulin until well",
+        "Pause empagliflozin, metformin and ramipril, keep fluids up and check ketones",
+        "Double the empagliflozin dose to control glucose",
+      ],
+      answer: 2,
+      explanation:
+        "Sick-day (SADMANS) rules pause SGLT2 inhibitors, metformin and ACE inhibitors during dehydrating illness to prevent euglycaemic DKA, lactic acidosis and AKI, with ketone checks because glucose may be near-normal in euglycaemic DKA. Continuing all drugs ignores those risks. Stopping insulin is never advised on sick days. Increasing empagliflozin worsens dehydration and ketosis.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-diabetes-special-situations-q5",
+      stem: "A taxi driver on basal insulin checks his glucose before a shift and finds 82 mg/dL. Following the 'five to drive' rule, what should he do?",
+      options: [
+        "Drive, as the value is above 70 mg/dL",
+        "Take a carbohydrate snack and recheck before driving",
+        "Take an extra unit of insulin and drive",
+        "Drive but check glucose at the end of the shift",
+      ],
+      answer: 1,
+      explanation:
+        "The 'five to drive' rule asks for glucose over 5 mmol/L (about 90 mg/dL) before driving; between 4 and 5 mmol/L the driver should take a snack and recheck before setting off, and recheck every 2 hours on long drives. Driving because the value is above 70 ignores the safety margin. Extra insulin would lower glucose further. A single check at the end of a long shift misses hypoglycaemia while driving.",
+      difficulty: "easy",
+    },
+  ],
+  theory: [
+    {
+      id: "endocrine-diabetes-special-situations-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "common",
+      question:
+        "A 52-year-old man with type 2 diabetes on metformin, glimepiride and basal insulin wants to fast during Ramadan. Describe his pre-Ramadan assessment, risk stratification, drug adjustments, monitoring and education.",
+      openingLines: [
+        "Fasting in Ramadan from dawn to sunset raises the risk of hypoglycaemia, hyperglycaemia, DKA and dehydration (EPIDIAR: severe hypoglycaemia 4.7-fold higher in type 2), so every fasting diabetic needs a structured pre-Ramadan plan.",
+        "The IDF-DAR 2021 guideline stratifies risk with a point score and adjusts drugs so that the hypoglycaemic load falls in the fasting hours and shifts to Iftar.",
+      ],
+      answer: [
+        {
+          heading: "Pre-Ramadan visit (6-8 weeks before)",
+          points: [
+            "History: hypoglycaemia frequency and awareness, previous Ramadan experience, fasting hours, work, complications.",
+            "Examination: BP lying and standing, feet, weight; investigations: HbA1c, eGFR, UACR.",
+          ],
+        },
+        {
+          heading: "Risk stratification (IDF-DAR 2021)",
+          points: [
+            "Score: low 0-3, moderate 3.5-6, high over 6.",
+            "This patient (SU plus basal insulin) is likely moderate risk - may fast with precautions.",
+            "High-risk examples: recent severe hypo, DKA, pregnancy, eGFR under 30, frailty.",
+          ],
+        },
+        {
+          heading: "Drug adjustment",
+          points: [
+            "Metformin: BD at Iftar and Suhoor.",
+            "Glimepiride: switch to or keep once daily at Iftar, reduce dose if well controlled.",
+            "Basal insulin: reduce 15-30%, give at Iftar; titrate every 3 days.",
+          ],
+        },
+        {
+          heading: "Monitoring",
+          points: [
+            "SMBG at Suhoor, mid-morning, midday, afternoon, pre-Iftar, 2 h post-Iftar and when unwell.",
+            "Break fast if under 70 or over 300 mg/dL or symptomatic.",
+          ],
+        },
+        {
+          heading: "Education and diet",
+          points: [
+            "Late Suhoor with complex carbohydrates; break fast with water and dates; avoid fried and sweet foods.",
+            "2-3 L fluid at night; light activity; carry glucose; recognise hypoglycaemia.",
+          ],
+        },
+        {
+          heading: "Post-Ramadan",
+          points: [
+            "Return drugs to usual schedule; review HbA1c and events; plan for Eid feasts.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Risk stratification table (low, moderate, high)",
+        "Drug adjustment table for Ramadan",
+        "Flow chart: SMBG reading - continue fast or break fast",
+      ],
+      markSplit: [
+        { part: "Pre-Ramadan assessment", marks: 2 },
+        { part: "Risk stratification", marks: 2 },
+        { part: "Drug adjustment", marks: 3 },
+        { part: "Monitoring and break-fast rules", marks: 2 },
+        { part: "Education", marks: 1 },
+      ],
+      keywords: ["IDF-DAR 2021", "risk score", "Iftar", "Suhoor", "break the fast", "basal insulin reduction"],
+    },
+    {
+      id: "endocrine-diabetes-special-situations-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "common",
+      question: "Write a short note on sick-day rules in diabetes.",
+      openingLines: [
+        "Sick-day rules are the temporary changes to drugs, monitoring and fluids that a person with diabetes makes during acute illness to prevent DKA, hypoglycaemia and acute kidney injury.",
+        "Illness raises counter-regulatory hormones and glucose even without food, so insulin is never stopped, while dehydration-sensitive drugs are paused (SADMANS).",
+      ],
+      answer: [
+        {
+          heading: "Drugs",
+          points: [
+            "Pause SADMANS: sulfonylureas, ACEi, diuretics, metformin, ARBs, NSAIDs, SGLT2i; restart 24-48 h after eating normally.",
+            "Never stop basal insulin; type 1 with ketones: extra 10-20% of TDD as rapid insulin every 2-4 h.",
+          ],
+        },
+        {
+          heading: "Monitoring and fluids",
+          points: [
+            "Glucose every 2-4 h; ketones every 4-6 h (type 1, SGLT2i, glucose over 250-300).",
+            "100-200 mL fluid every hour; sugary fluids if not eating.",
+          ],
+        },
+        {
+          heading: "When to seek help",
+          points: [
+            "Vomiting over 4-6 h, ketones 3 mmol/L or more, glucose persistently over 300, drowsiness, breathlessness, abdominal pain.",
+          ],
+        },
+      ],
+      mustDraw: ["Table: SADMANS drugs and reason for pausing"],
+      markSplit: [
+        { part: "Definition and principle", marks: 1 },
+        { part: "Drug rules", marks: 2 },
+        { part: "Monitoring and fluids", marks: 1 },
+        { part: "When to seek help", marks: 1 },
+      ],
+      keywords: ["SADMANS", "ketones", "basal insulin", "euglycaemic DKA", "sick-day"],
+    },
+  ],
+  references: [
+    "International Diabetes Federation and DAR International Alliance. Diabetes and Ramadan: Practical Guidelines, 2021",
+    "American Diabetes Association. Standards of Care in Diabetes - 2026 (Section 13: Older Adults; Section 16: Diabetes Care in the Hospital)",
+    "American Geriatrics Society 2023 Updated Beers Criteria for Potentially Inappropriate Medication Use in Older Adults",
+    "ISPAD Clinical Practice Consensus Guidelines 2022: Sick day management in children and adolescents with diabetes",
+    "Diabetes UK / TREND. End of Life Diabetes Care: Clinical Care Recommendations, 3rd edition, 2021",
+    "American Diabetes Association. Diabetes and Driving position statement",
+    "RSSDI Clinical Practice Recommendations for the Management of Type 2 Diabetes Mellitus, 2022",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025",
+  ],
+});
+
 export default topics;
