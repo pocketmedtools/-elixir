@@ -609,6 +609,216 @@ const revision: RevisionSet = {
     },
   },
 
+  "endocrine-congenital-adrenal-hyperplasia": {
+    checked: "2026-10",
+    updated: [
+      "FDA December 2024: crinecerfont (CRF1 receptor antagonist) approved as add-on for classic CAH in adults and children 4 years and older (CAHtalyst trials, NEJM 2024); not yet available in India.",
+      "Endocrine Society 2018 CAH guideline remains current: hydrocortisone in children, no prenatal dexamethasone outside research, shared decisions on genital surgery.",
+      "ICMR multicentre newborn screening study: CAH about 1 in 5,700 Indian newborns; no universal national CAH screening yet.",
+    ],
+    master: {
+      heading: "Master revision table - congenital adrenal hyperplasia",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Autosomal recessive defects of cortisol synthesis; **21-hydroxylase (CYP21A2) deficiency in 95%**; India about **1 in 5,700** newborns (ICMR)."],
+        ["Genetics", "CYP21A2 on **6p21.3 (HLA region)** beside pseudogene; deletion/I2G = salt-wasting, I172N = simple virilising, V281L = non-classic; 25% recurrence."],
+        ["Pathophysiology", "Low cortisol, **high ACTH**, adrenal hyperplasia, **17-OHP shunted to androgens**; low aldosterone causes salt-wasting."],
+        ["Classification", "Classic **salt-wasting (75%)**, classic simple virilising, **non-classic**; Prader I-V virilisation in 46,XX."],
+        ["Presentation", "Virilised **46,XX newborn**; **salt-wasting crisis at 1-3 weeks** (boys missed); boys at 2-4 y with early pubarche and small testes; NCCAH as PCOS mimic."],
+        ["Examination", "Prader stage, **no palpable gonads** in 46,XX, hyperpigmentation, dehydration; BP (high in 11-beta / 17-alpha); TARTs in men."],
+        ["Differentials", "Pyloric stenosis (**hypokalaemic alkalosis**), sepsis, pseudohypoaldosteronism, adrenal hypoplasia congenita, PCOS, androgen-secreting tumour."],
+        ["Investigations", "Newborn **DBS 17-OHP at 48-72 h**; serum 17-OHP **over 10,000 ng/dL** classic; Synacthen-stimulated **over 1,000 ng/dL**; karyotype, pelvic USG, electrolytes, renin."],
+        ["Crisis", "**Saline 20 mL/kg**, 10% dextrose 2-5 mL/kg, **hydrocortisone 50-100 mg/m2 IV** (25/50/100 mg) then 50-100 mg/m2/day; treat hyperkalaemia."],
+        ["Maintenance - children", "**Hydrocortisone 10-15 mg/m2/day in 3 doses**, fludrocortisone 0.05-0.2 mg, **NaCl 1-2 g/day in infants**."],
+        ["Maintenance - adults", "Hydrocortisone 15-25 mg/day, prednisolone 5-7.5 mg/day or dexamethasone 0.25-0.5 mg/day; NCCAH women - COCP plus spironolactone."],
+        ["Sick-day rules", "**Double or triple glucocorticoid**, not fludrocortisone; **IM hydrocortisone 25/50/100 mg** if vomiting; emergency card."],
+        ["Special issues", "DSD team, female rearing for 46,XX, shared surgery decisions; pregnancy - hydrocortisone/prednisolone not dexamethasone; **no prenatal dexamethasone** outside research."],
+        ["Monitoring", "Growth, BP, Cushingoid signs; **17-OHP mildly raised (not normal)**, androstenedione, renin; bone age yearly; testicular USG."],
+        ["Latest update", "**Crinecerfont (FDA 2024)** - CRF1 antagonist, 100 mg BD in adults, lowers androgens and steroid dose."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Newborn with atypical genitalia or a positive screen",
+        caption: "Do not assign sex until evaluation is complete; watch for salt-wasting.",
+        steps: [
+          { label: "Atypical genitalia or high DBS 17-OHP", detail: "Screen at 48-72 h; preterm babies give false positives" },
+          { label: "Gonads palpable?", detail: "Impalpable gonads favour 46,XX CAH", tone: "decision" },
+          { label: "Karyotype / SRY, pelvic USG, serum 17-OHP", detail: "Classic CAH: 17-OHP over 10,000 ng/dL" },
+          { label: "Electrolytes and glucose daily for 2-3 weeks", detail: "Na under 130, K over 6 = salt-wasting", tone: "warn" },
+          { label: "Confirm: Synacthen 17-OHP over 1,000, CYP21A2 genotype", tone: "decision" },
+          { label: "Start hydrocortisone, fludrocortisone, salt; DSD team", detail: "HC 10-15 mg/m2/day in 3 doses", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Glucocorticoid dosing ladder in CAH",
+        caption: "Only the glucocorticoid is raised for stress; fludrocortisone stays the same.",
+        steps: [
+          { label: "Maintenance", detail: "HC 10-15 mg/m2/day in children; 15-25 mg/day adults" },
+          { label: "Minor illness, fever over 38.5 C", detail: "Double or triple oral dose until well" },
+          { label: "Vomiting or unable to take oral", detail: "IM hydrocortisone 25 / 50 / 100 mg by age, then hospital", tone: "warn" },
+          { label: "Adrenal crisis", detail: "HC 50-100 mg/m2 IV bolus, saline 20 mL/kg, dextrose", tone: "warn" },
+          { label: "Surgery or delivery", detail: "HC 50-100 mg/m2 IV at induction, then 50-100 mg/m2/day 24-48 h", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Forms of CAH at a glance",
+        columns: ["Enzyme", "Marker", "BP / K", "Genitalia"],
+        rows: [
+          ["21-hydroxylase (salt-wasting)", "17-OHP", "Low BP, high K", "46,XX virilised"],
+          ["11-beta-hydroxylase", "11-deoxycortisol, DOC", "Hypertension, low K", "46,XX virilised"],
+          ["17-alpha-hydroxylase", "DOC, corticosterone", "Hypertension, low K", "46,XY undervirilised; no puberty"],
+          ["3-beta-HSD2", "17-OH-pregnenolone, DHEA", "Salt-wasting", "Ambiguous in both sexes"],
+          ["StAR (lipoid)", "All steroids low", "Severe salt-wasting", "46,XY female phenotype"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**CAH** is a group of recessive defects in cortisol synthesis.",
+            "**21-hydroxylase deficiency** causes about 95% of cases.",
+            "India: about **1 in 5,700** newborns in the ICMR screening study.",
+            "Commonest cause of **ambiguous genitalia** in a newborn (46,XX DSD).",
+            "Non-classic CAH is found in **2-4% of hirsute women**.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Low cortisol raises **ACTH**, so the adrenals enlarge.",
+            "Built-up **17-OHP** is shunted into androgens.",
+            "Low aldosterone causes **salt loss**, low sodium and high potassium.",
+            "Prenatal androgens virilise girls; **uterus and ovaries are normal**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Salt-wasting** (75% of classic): crisis at 1-3 weeks.",
+            "**Simple virilising**: boys present at 2-4 years with early pubic hair.",
+            "**Non-classic**: hirsutism, acne, irregular periods; mimics PCOS.",
+            "**Prader I-V** stages virilisation of 46,XX genitalia.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Girls: **atypical genitalia** at birth with impalpable gonads.",
+            "Boys: normal genitalia, so **salt-wasting crisis** is the first sign.",
+            "Crisis: vomiting, poor feeding, weight loss, lethargy, shock.",
+            "**Hyperpigmentation** of genitalia and skin creases from high ACTH.",
+            "Hypertension points to **11-beta or 17-alpha** hydroxylase deficiency.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Newborn screen: **17-OHP on dried blood spot** at 48-72 hours.",
+            "Classic CAH: serum 17-OHP **over 10,000 ng/dL**.",
+            "Synacthen-stimulated 17-OHP **over 1,000 ng/dL** confirms classic or non-classic.",
+            "Non-classic screen: morning follicular 17-OHP **over 200 ng/dL**.",
+            "Also karyotype, **pelvic ultrasound**, electrolytes, glucose and renin.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Children: **hydrocortisone 10-15 mg/m2/day** in three doses.",
+            "**Fludrocortisone** 0.05-0.2 mg daily for classic CAH.",
+            "Infants also need **salt 1-2 g/day** with feeds.",
+            "Adults: hydrocortisone 15-25 mg or prednisolone 5-7.5 mg daily.",
+            "Aim for a **mildly raised 17-OHP**, not a normal one.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Crisis: **saline 20 mL/kg** bolus and dextrose for low glucose.",
+            "**Hydrocortisone IV**: 25 mg infant, 50 mg child, 100 mg adult.",
+            "Sick days: **double or triple** the glucocorticoid, not fludrocortisone.",
+            "Vomiting at home: give **IM hydrocortisone** and come to hospital.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: hydrocortisone or prednisolone; avoid dexamethasone.",
+            "**Prenatal dexamethasone** is experimental and not recommended.",
+            "Men: **testicular adrenal rest tumours** cause infertility.",
+            "Genital surgery decisions are shared, by an experienced **DSD team**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer every atypical newborn or positive screen **the same day**.",
+            "Review infants 3-monthly and children **4-monthly**: growth, BP, puberty.",
+            "Check 17-OHP, androstenedione, renin and **yearly bone age**.",
+            "Offer **genetic counselling**: 25% recurrence risk.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**Crinecerfont**, a CRF1 antagonist, approved by FDA in December 2024.",
+            "It lowers androgens and allows **lower glucocorticoid doses**.",
+            "It is an add-on; **steroid replacement and stress dosing continue**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in CAH",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Hydrocortisone (children)", "10-15 mg/m2/day oral in 3 doses", "Lifelong", "Growth suppression if overdosed"],
+            ["Hydrocortisone / prednisolone (adults)", "HC 15-25 mg/day or prednisolone 5-7.5 mg/day oral", "Lifelong", "Weight gain, osteoporosis"],
+            ["Fludrocortisone", "0.05-0.2 mg oral OD", "Lifelong", "Hypertension, hypokalaemia"],
+            ["Sodium chloride", "1-2 g/day oral with feeds", "Infancy", "Vomiting"],
+            ["Hydrocortisone (crisis)", "50-100 mg/m2 IV, then 50-100 mg/m2/day", "Until stable", "Hyperglycaemia"],
+            ["Crinecerfont", "100 mg oral BD with meals (adults)", "Add-on, long-term", "Fatigue, headache; not in India"],
+          ],
+        },
+        {
+          heading: "Differential diagnosis",
+          columns: ["Condition", "Clue", "Key test"],
+          rows: [
+            ["Salt-wasting CAH", "Vomiting at 1-3 weeks", "Low Na, high K, high 17-OHP"],
+            ["Pyloric stenosis", "Projectile vomiting", "Hypokalaemic alkalosis"],
+            ["Pseudohypoaldosteronism", "Salt-wasting, normal genitalia", "Very high aldosterone"],
+            ["PCOS (vs NCCAH)", "Hirsutism, obesity", "Normal 17-OHP"],
+            ["Androgen-secreting tumour", "Rapid virilisation", "Very high DHEAS or testosterone"],
+          ],
+        },
+        {
+          heading: "17-OHP cut-offs",
+          columns: ["Test", "Cut-off", "Meaning"],
+          rows: [
+            ["Random serum 17-OHP", "Over 10,000 ng/dL", "Classic CAH"],
+            ["Morning follicular 17-OHP", "Over 200 ng/dL", "Needs Synacthen test"],
+            ["Stimulated 17-OHP", "Over 1,000 ng/dL", "21-OHD confirmed"],
+            ["On treatment", "Mildly raised", "Good control without over-treatment"],
+          ],
+        },
+      ],
+      remember: [
+        "**21-OHD = 95% of CAH; 17-OHP is the marker.**",
+        "**Vomiting + high K = CAH; vomiting + low K = pyloric stenosis.**",
+        "Salt-wasting arrives at **1-3 weeks**; boys are missed.",
+        "**Hydrocortisone in children**, never long-acting steroids.",
+        "**Sick day: double or triple glucocorticoid, not fludrocortisone.**",
+        "**HTN + virilised = 11-beta; HTN + infantile = 17-alpha.**",
+        "Every hirsute woman: **morning follicular 17-OHP**.",
+      ],
+    },
+  },
+
   // ENTRIES-END
 };
 

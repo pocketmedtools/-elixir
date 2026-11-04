@@ -274,6 +274,7 @@ const LIBRARY_LOADERS: Record<string, () => Promise<{ default: Topic[] }>> = {
   cardiovascular: () => import("./library/cardiovascular"),
   respiratory: () => import("./library/respiratory"),
   endocrine: () => import("./library/endocrine"),
+  "gastro-hepatology": () => import("./library/gastro-hepatology"),
 };
 
 /**

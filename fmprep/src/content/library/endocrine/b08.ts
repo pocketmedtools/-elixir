@@ -1467,4 +1467,497 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "endocrine-congenital-adrenal-hyperplasia",
+  title: "Congenital adrenal hyperplasia",
+  frequency: "less-common",
+  oneLiner:
+    "**Congenital adrenal hyperplasia (CAH)** is a group of **autosomal recessive defects of adrenal steroidogenesis**, **95% from 21-hydroxylase (CYP21A2) deficiency**, in which low cortisol drives **ACTH-mediated adrenal hyperplasia and androgen excess**; it presents as **salt-wasting crisis in the 2nd-3rd week, atypical genitalia in 46,XX girls, early virilisation**, or later as **non-classic CAH mimicking PCOS**, is diagnosed by a **raised 17-hydroxyprogesterone**, and treated with **glucocorticoid (hydrocortisone in children) plus fludrocortisone and salt**, with sick-day stress dosing.",
+  keywords: [
+    "CAH",
+    "21-hydroxylase deficiency",
+    "CYP21A2",
+    "17-hydroxyprogesterone",
+    "17-OHP",
+    "salt-wasting crisis",
+    "simple virilising CAH",
+    "non-classic CAH",
+    "NCCAH",
+    "46,XX DSD",
+    "ambiguous genitalia",
+    "Prader staging",
+    "11-beta-hydroxylase deficiency",
+    "17-alpha-hydroxylase deficiency",
+    "hydrocortisone",
+    "fludrocortisone",
+    "crinecerfont",
+    "testicular adrenal rest tumour",
+    "newborn screening",
+    "ACTH stimulation test",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "**CAH** comprises autosomal recessive enzyme defects in cortisol synthesis; **21-hydroxylase deficiency (21-OHD) causes about 95%**, 11-beta-hydroxylase about 5%, and rarer forms (3-beta-HSD2, 17-alpha-hydroxylase, StAR, POR) the rest. [Endocrine Society 2018]",
+        "**Classic 21-OHD** occurs in about **1 in 10,000-20,000 births** worldwide; about **75% are salt-wasting** and 25% simple virilising. [Endocrine Society 2018]",
+        "**Non-classic CAH (NCCAH)** is far commoner - about **1 in 200-1,000** in general populations and found in about **2-4% of women with hyperandrogenism**. [Endocrine Society 2018]",
+        "**India**: the **ICMR multicentre newborn screening study** found CAH in about **1 in 5,700 newborns** - higher than in the West, reflecting consanguinity in some communities. [ICMR NBS study 2018]",
+        "CAH is the **commonest cause of atypical genitalia in a newborn (46,XX DSD)** and a leading cause of **adrenal insufficiency in childhood**. [Nelson Textbook of Pediatrics 22e]",
+        "Without newborn screening, **boys with salt-wasting CAH die undiagnosed** in the neonatal period because their genitalia look normal - a reason the sex ratio of diagnosed cases in India is skewed toward girls. [Indian J Pediatr]",
+      ],
+    },
+    {
+      heading: "Aetiology and genetics",
+      points: [
+        "**CYP21A2** lies on **chromosome 6p21.3 within the HLA class III region** next to the inactive pseudogene **CYP21A1P**; most mutations arise from **gene conversion or deletion** with the pseudogene. [Williams Endocrinology 15e]",
+        "**Genotype predicts phenotype**: null mutations, large deletions and the **intron 2 splice (I2G)** variant - salt-wasting; **I172N** - simple virilising; **V281L** and P30L - non-classic. [Endocrine Society 2018]",
+        "Patients are often **compound heterozygotes**; phenotype follows the **milder allele**. [Endocrine Society 2018]",
+        "**Carrier frequency** about **1 in 60** for classic and up to 1 in 10-20 for non-classic alleles in some populations. [Williams Endocrinology 15e]",
+        "**Consanguinity** (common in parts of South India and some communities) raises the risk of autosomal recessive CAH; **recurrence risk 25%** in each pregnancy. [Nelson Textbook of Pediatrics 22e]",
+        "**CAH-X syndrome**: contiguous deletion involving CYP21A2 and **TNXB** causes CAH plus a hypermobile Ehlers-Danlos phenotype. [Williams Endocrinology 15e]",
+      ],
+    },
+    {
+      heading: "Pathophysiology",
+      points: [
+        "21-hydroxylase converts **17-OHP to 11-deoxycortisol** (cortisol pathway) and **progesterone to DOC** (aldosterone pathway); its loss reduces **both cortisol and aldosterone**. [Harrison 22e]",
+        "**Low cortisol removes negative feedback**, so **ACTH rises**, the adrenals become hyperplastic, and accumulated precursors (17-OHP) are shunted into the **androgen pathway** (androstenedione, testosterone, **11-oxygenated androgens**). [Harrison 22e]",
+        "**Prenatal androgen excess** virilises the **46,XX fetus** from 8-12 weeks (labioscrotal fusion, clitoromegaly, urogenital sinus) but internal organs (uterus, ovaries) are normal because there is no AMH. [Nelson Textbook of Pediatrics 22e]",
+        "**Aldosterone deficiency** causes renal sodium loss, **hyponatraemia, hyperkalaemia, raised renin**, dehydration and shock - salt-wasting appears after maternal and placental steroids wane, typically **day 7-21**. [Endocrine Society 2018]",
+        "**Cortisol deficiency** adds **hypoglycaemia** and impaired vascular response to catecholamines; adrenal medullary development is also impaired (low adrenaline), worsening hypoglycaemia and shock. [Williams Endocrinology 15e]",
+        "**Postnatal androgen excess** accelerates growth and **bone age**, causing tall childhood but **short adult height** (early epiphyseal fusion), and can trigger **central precocious puberty**. [Endocrine Society 2018]",
+        "**Treatment logic**: glucocorticoid replaces cortisol **and suppresses ACTH** (so lowers androgens); fludrocortisone replaces aldosterone; **CRF1 antagonists (crinecerfont)** lower ACTH directly so less glucocorticoid is needed. [NEJM 2024]",
+        "In **11-beta-hydroxylase** and **17-alpha-hydroxylase** deficiency, **DOC accumulates**, causing **hypertension and hypokalaemia** with suppressed renin - the opposite of 21-OHD salt-wasting. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Classification",
+      points: [
+        "**Classic salt-wasting 21-OHD** (about 75% of classic): atypical genitalia in girls, salt-wasting crisis in both sexes at 1-3 weeks. [Endocrine Society 2018]",
+        "**Classic simple virilising**: enough aldosterone to avoid crisis; girls virilised at birth, boys present at **2-4 years with early pubic hair, growth spurt and advanced bone age**. [Endocrine Society 2018]",
+        "**Non-classic (late-onset)**: normal genitalia at birth; presents with **premature pubarche, hirsutism, acne, oligomenorrhoea, infertility** - often mistaken for PCOS; usually no salt-wasting. [Endocrine Society 2018]",
+        "**Prader staging (I-V)** of virilisation of the external genitalia in 46,XX girls: I clitoromegaly only, through V male-appearing genitalia with penile urethra (impalpable gonads). [Nelson Textbook of Pediatrics 22e]",
+        "**Other enzyme defects**: 11-beta-hydroxylase (virilisation + hypertension), 17-alpha-hydroxylase (hypertension + sexual infantilism / 46,XY undervirilisation), 3-beta-HSD2 (salt-wasting, mild virilisation in girls, undervirilisation in boys), StAR (lipoid CAH - severe salt-wasting, 46,XY female phenotype), POR (skeletal anomalies). [Williams Endocrinology 15e]",
+      ],
+    },
+    {
+      heading: "Clinical features - history",
+      points: [
+        "**Newborn girl**: atypical genitalia noticed at birth - **never assign sex before evaluation**. [Endocrine Society 2018]",
+        "**Salt-wasting crisis at 1-3 weeks**: poor feeding, **vomiting, failure to regain birth weight**, lethargy, dehydration, collapse - often misdiagnosed as **sepsis or pyloric stenosis** (which has hypokalaemic alkalosis, not hyperkalaemia). [Nelson Textbook of Pediatrics 22e]",
+        "**History of previous neonatal deaths or a sibling with atypical genitalia** - recessive inheritance. [Nelson Textbook of Pediatrics 22e]",
+        "**Boy aged 2-6 years**: early pubic hair, rapid growth, penile enlargement with **small (prepubertal) testes**, acne, adult body odour - simple virilising CAH. [Endocrine Society 2018]",
+        "**Adolescent or adult woman (NCCAH)**: hirsutism, acne, irregular periods, subfertility, early pubic hair in childhood; **short stature relative to family**. [Endocrine Society 2018]",
+        "**Adult man with classic CAH**: reduced fertility from **testicular adrenal rest tumours** or gonadotrophin suppression. [Endocrine Society 2018]",
+        "**Known CAH**: ask about **adherence, sick-day episodes, emergency hydrocortisone injection kit**, growth, weight gain and Cushingoid features (over-treatment). [Endocrine Society 2018]",
+      ],
+    },
+    {
+      heading: "Examination findings",
+      points: [
+        "**Genital examination**: clitoral size, labioscrotal fusion and rugosity, single perineal opening, **palpable gonads** (palpable gonads argue against 46,XX CAH) - stage by **Prader**. [Nelson Textbook of Pediatrics 22e]",
+        "**Hyperpigmentation** of genitalia, areolae, skin creases and gums (high ACTH) - also visible in boys with normal genitalia. [Nelson Textbook of Pediatrics 22e]",
+        "**Dehydration and shock** in crisis: sunken fontanelle, poor perfusion, weight loss over 10%. [Nelson Textbook of Pediatrics 22e]",
+        "**Growth**: tall for age with advanced bone age in poorly controlled children; plot on **IAP growth charts** with mid-parental height. [IAP 2015]",
+        "**BP** - **hypertension suggests 11-beta- or 17-alpha-hydroxylase** deficiency (or over-replacement with fludrocortisone). [Harrison 22e]",
+        "**Testicular examination** in males: firm irregular masses suggest **testicular adrenal rest tumours**; small testes with large phallus suggest peripheral precocious puberty. [Endocrine Society 2018]",
+        "**Over-treatment signs**: Cushingoid face, striae, weight gain, growth deceleration. [Endocrine Society 2018]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Atypical genitalia (46,XX DSD)**: maternal androgen exposure (danazol, luteoma), **aromatase deficiency**, ovotesticular DSD - normal 17-OHP. [Nelson Textbook of Pediatrics 22e]",
+        "**Neonatal salt loss**: **pseudohypoaldosteronism** (high aldosterone), adrenal hypoplasia congenita (**NR0B1/DAX1** - boys), renal tubular disorders, obstructive uropathy with UTI. [Nelson Textbook of Pediatrics 22e]",
+        "**Pyloric stenosis**: projectile vomiting with **hypochloraemic hypokalaemic alkalosis** - CAH has **hyperkalaemia and acidosis**. [Nelson Textbook of Pediatrics 22e]",
+        "**Neonatal sepsis**: may coexist; always check electrolytes and glucose in a collapsed neonate. [Nelson Textbook of Pediatrics 22e]",
+        "**Precocious puberty in a boy**: **central** (large testes, LH pubertal) vs **CAH / adrenal tumour / testotoxicosis** (small testes). [Endocrine Society 2018]",
+        "**NCCAH vs PCOS**: NCCAH has **early-morning follicular 17-OHP over 200 ng/dL (6 nmol/L)** and stimulated over 1,000 ng/dL; PCOS has normal 17-OHP, often high LH:FSH - see the PCOS topic. [Endocrine Society 2018]",
+        "**Androgen-secreting adrenal or ovarian tumour**: rapid virilisation, very high DHEAS or testosterone, mass on imaging. [Endocrine Society 2018]",
+      ],
+    },
+    {
+      heading: "Investigations",
+      points: [
+        "**Newborn screening**: **17-OHP on dried blood spot at 48-72 hours**, with **birth-weight and gestation-adjusted cut-offs** (preterm, sick and stressed babies have false positives); **second-tier LC-MS/MS steroid profile** reduces false positives. [Endocrine Society 2018]",
+        "**Diagnostic serum 17-OHP**: in classic CAH random values are typically **over 10,000 ng/dL (300 nmol/L)**; values under 200 ng/dL essentially exclude it. [Endocrine Society 2018]",
+        "**ACTH (Synacthen 250 mcg) stimulation test**: 60-minute **17-OHP over 1,000 ng/dL (30 nmol/L)** diagnoses classic or non-classic 21-OHD. [Endocrine Society 2018]",
+        "**NCCAH screening**: **early-morning 17-OHP in the follicular phase**; over 200 ng/dL (6 nmol/L) needs a Synacthen test. [Endocrine Society 2018]",
+        "**Atypical genitalia work-up**: **karyotype (or rapid QF-PCR / SRY)**, **pelvic ultrasound for uterus**, serum electrolytes daily from day 3, glucose, 17-OHP, cortisol, renin, testosterone. [Endocrine Society 2018]",
+        "**Salt-wasting markers**: **Na under 130, K over 6 mmol/L, raised plasma renin activity**, metabolic acidosis, hypoglycaemia. [Nelson Textbook of Pediatrics 22e]",
+        "**CYP21A2 genotyping** for equivocal results, genetic counselling and prenatal diagnosis. [Endocrine Society 2018]",
+        "**Other forms**: 11-deoxycortisol and DOC (11-beta-hydroxylase), 17-OH-pregnenolone and DHEA (3-beta-HSD2), low 17-OHP with high corticosterone (17-alpha-hydroxylase). [Williams Endocrinology 15e]",
+        "**Monitoring tests**: **bone age** yearly after 2 years, testicular ultrasound for TARTs in males, BMD in adults on long-term steroids. [Endocrine Society 2018]",
+      ],
+    },
+    {
+      heading: "Management in OPD - glucocorticoid and mineralocorticoid regimens",
+      points: [
+        "**Growing children: hydrocortisone only** - **10-15 mg/m2/day in 3 divided doses** (largest dose in the morning); avoid prednisolone and dexamethasone because they **suppress growth**. [Endocrine Society 2018]",
+        "**Fludrocortisone 0.05-0.2 mg/day** for all classic CAH, with **sodium chloride 1-2 g/day (17-34 mmol/day) in infancy** divided across feeds - infants have low renal sodium reabsorption and salt-poor milk. [Endocrine Society 2018]",
+        "**Adults: hydrocortisone 15-25 mg/day in 2-3 doses**, or **prednisolone 5-7.5 mg/day in 2 doses**, or **dexamethasone 0.25-0.5 mg/day** (least preferred - over-treatment, metabolic effects); fludrocortisone 0.05-0.2 mg/day. [Endocrine Society 2018]",
+        "**Aim**: suppress androgens enough to allow normal growth, puberty and fertility while **avoiding Cushingoid over-treatment** - **do not try to normalise 17-OHP** (a mildly raised 17-OHP is the target). [Endocrine Society 2018]",
+        "**Sick-day rules**: fever over 38.5 C, vomiting, diarrhoea or injury - **double or triple the oral glucocorticoid dose** for the illness; **fludrocortisone is not increased**. [Endocrine Society 2018]",
+        "**Emergency IM hydrocortisone kit** at home: **25 mg (infants and under 3 years), 50 mg (3-12 years), 100 mg (adolescents and adults)** if vomiting or unable to take oral doses. [Endocrine Society 2018]",
+        "**NCCAH**: treat only if symptomatic - **children** with advanced bone age or rapid pubarche: hydrocortisone; **women with hirsutism**: **combined oral contraceptive plus spironolactone**; glucocorticoid mainly for **ovulation induction or recurrent miscarriage**. [Endocrine Society 2018]",
+        "**Hydrocortisone tablets in India are 5, 10 and 20 mg** - for infants, compounding of small doses is error-prone; dose by mg/m2 and use a pill cutter or licensed granules where available. [Endocrine Society 2018]",
+      ],
+    },
+    {
+      heading: "Management in IPD / emergency - salt-wasting adrenal crisis",
+      points: [
+        "**Suspect in any collapsed neonate or infant** with hyponatraemia, hyperkalaemia or hypoglycaemia - draw **17-OHP, cortisol, renin and electrolytes** before steroids but **never delay treatment**. [Endocrine Society 2018]",
+        "**Fluids**: **0.9% saline 20 mL/kg bolus** (repeat up to 60 mL/kg for shock), then maintenance with dextrose-saline; correct sodium no faster than **8-10 mmol/L in 24 h**. [Nelson Textbook of Pediatrics 22e]",
+        "**Hypoglycaemia**: **10% dextrose 2-5 mL/kg IV**. [Nelson Textbook of Pediatrics 22e]",
+        "**Hydrocortisone IV bolus 50-100 mg/m2** (practically **25 mg infant, 50 mg child, 100 mg adult**), then **50-100 mg/m2/day** in 4 divided doses or infusion; high-dose hydrocortisone also gives mineralocorticoid effect. [Endocrine Society 2018]",
+        "**Hyperkalaemia**: usually corrects with saline and hydrocortisone; ECG monitoring; calcium gluconate, insulin-dextrose or salbutamol if severe or ECG changes. [Nelson Textbook of Pediatrics 22e]",
+        "**Taper to oral maintenance** over 2-4 days once eating; start **fludrocortisone** when IV hydrocortisone falls below about 50 mg/m2/day. [Endocrine Society 2018]",
+        "**Surgery and procedures**: hydrocortisone **50-100 mg/m2 IV at induction** then 50-100 mg/m2/day for 24-48 h. [Endocrine Society 2018]",
+        "**Newborn with atypical genitalia**: admit, keep under observation for salt-wasting, check electrolytes **daily for 2-3 weeks** until diagnosis is clear, involve a **DSD multidisciplinary team**, and **defer sex registration** until evaluation. [Endocrine Society 2018]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Pregnancy in a woman with CAH**: use **hydrocortisone or prednisolone (inactivated by placental 11-beta-HSD2)**, **not dexamethasone**; increase dose in the **third trimester** as needed; stress-dose **hydrocortisone 100 mg IV at delivery**. [Endocrine Society 2018]",
+        "**Prenatal dexamethasone** to prevent virilisation of an affected female fetus is **experimental** - not recommended outside ethically approved research (7 of 8 treated fetuses are unaffected or male). [Endocrine Society 2018]",
+        "**Genital surgery** (feminising genitoplasty): decisions are made with parents by an experienced DSD team; options include **deferring surgery until the patient can participate**; vaginoplasty is usually deferred to adolescence. [Endocrine Society 2018]",
+        "**Sex of rearing**: 46,XX classic CAH is usually reared **female** (uterus and ovaries normal, fertility possible), even with Prader IV-V virilisation, after counselling. [Endocrine Society 2018]",
+        "**Puberty**: poor control causes **central precocious puberty** (needs GnRH analogue); in adolescents adherence often falls - transition clinics help. [Endocrine Society 2018]",
+        "**Men with classic CAH**: **TARTs** in up to 40% cause infertility; intensified glucocorticoid can shrink them; offer **semen cryopreservation**. [Endocrine Society 2018]",
+        "**Resource-limited setting**: if 17-OHP is unavailable, **electrolytes, glucose, karyotype and pelvic ultrasound** guide initial management; treat suspected salt-wasting empirically with saline and hydrocortisone and refer. [ICMR STW 2023]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**Adrenal crisis** is the main cause of death - mortality in CAH remains higher than in the general population, mostly from crises in infancy and with intercurrent illness. [Endocrine Society 2018]",
+        "**Short adult height** - on average about **10 cm below target height** from early epiphyseal fusion and glucocorticoid over-treatment. [Endocrine Society 2018]",
+        "**Metabolic**: obesity, insulin resistance, hypertension, dyslipidaemia, **osteoporosis** - largely from supraphysiological glucocorticoid. [NEJM 2024]",
+        "**Reproductive**: female subfertility (androgen and progesterone excess, anatomical issues), male **TARTs** and oligospermia. [Endocrine Society 2018]",
+        "**Psychosocial**: gender-related distress, body image, and stigma in families - offer psychological support from diagnosis. [Endocrine Society 2018]",
+        "With good adherence, **normal life expectancy, normal puberty and fertility** are achievable for most. [Endocrine Society 2018]",
+      ],
+    },
+    {
+      heading: "Referral, follow-up and monitoring",
+      points: [
+        "**Refer every newborn with atypical genitalia or positive 17-OHP screen the same day** to a paediatric endocrinologist; refer women with suspected NCCAH for a Synacthen test. [Endocrine Society 2018]",
+        "**Infants every 3 months**, children **every 4 months**, adults **yearly**: growth velocity, weight, BP, pubertal stage, Cushingoid signs. [Endocrine Society 2018]",
+        "**Biochemistry**: **17-OHP and androstenedione** timed in relation to the morning dose (aim 17-OHP mildly raised, androstenedione age-appropriate), **plasma renin** for fludrocortisone dose, testosterone in girls. [Endocrine Society 2018]",
+        "**Bone age yearly** after age 2; **testicular ultrasound** periodically from adolescence; BMD in adults. [Endocrine Society 2018]",
+        "**Steroid emergency card / bracelet** and repeated teaching of sick-day rules to parents and schools. [Endocrine Society 2018]",
+        "**Genetic counselling** for parents (25% recurrence) and cascade carrier testing; prenatal diagnosis by **CVS genotyping** where requested. [Endocrine Society 2018]",
+      ],
+    },
+    {
+      heading: "Prevention, counselling and programme link",
+      points: [
+        "**Newborn screening for CAH** (with congenital hypothyroidism) reduces neonatal deaths and sex misassignment; India has **no universal national programme yet** - some states and institutions screen. [ICMR NBS study 2018]",
+        "**RBSK (Rashtriya Bal Swasthya Karyakram)** screens newborns for **defects at birth** and refers to **District Early Intervention Centres (DEIC)** - atypical genitalia should trigger referral. [MoHFW RBSK]",
+        "Counsel about **consanguinity** and offer genetic counselling to affected families. [Nelson Textbook of Pediatrics 22e]",
+        "**Hydrocortisone** is on the **NLEM**; treatment of children can be covered under **PM-JAY / state schemes** for admissions and surgery. [NLEM 2022]",
+        "Teach families: **never stop steroids**, double or triple in illness, inject IM if vomiting, and attend hospital early. [Endocrine Society 2018]",
+      ],
+    },
+    {
+      heading: "Latest updates (2023-2026)",
+      points: [
+        "**Crinecerfont** (oral **CRF1 receptor antagonist**) - **FDA approved December 2024** for classic CAH in adults and children **4 years and older**, as an **add-on to glucocorticoids**; adult dose **100 mg twice daily with meals**. [FDA 2024]",
+        "**CAHtalyst adult trial**: crinecerfont lowered **androstenedione** and allowed **glucocorticoid dose reduction to physiological range** in many patients vs placebo; the paediatric trial showed similar androgen reduction. [NEJM 2024]",
+        "Crinecerfont is **not yet available in India**; it does not replace glucocorticoid (cortisol replacement and stress dosing are still needed). [FDA 2024]",
+        "**Modified-release hydrocortisone (Efmody)** mimics the circadian rhythm and improves morning androgen control (EMA-licensed). [Williams Endocrinology 15e]",
+        "Other agents in trials: **atumelnant** (MC2R/ACTH receptor antagonist); **tildacerfont** did not meet its primary end-point. [Williams Endocrinology 15e]",
+        "The **Endocrine Society 2018 CAH guideline** remains current: hydrocortisone in children, no prenatal dexamethasone outside research, involvement of the patient in genital surgery decisions. [Endocrine Society 2018]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "Commonest cause of **ambiguous genitalia in a newborn**: **21-OHD CAH (46,XX DSD)**. [Nelson Textbook of Pediatrics 22e]",
+        "**Hyperkalaemia + hyponatraemia + vomiting in a 2-week-old boy with normal genitalia** = salt-wasting CAH until proved otherwise (pyloric stenosis gives hypokalaemia). [Nelson Textbook of Pediatrics 22e]",
+        "**Hypertension with virilisation** = 11-beta-hydroxylase; **hypertension with sexual infantilism** = 17-alpha-hydroxylase. [Harrison 22e]",
+        "Why **hydrocortisone, not prednisolone, in children**? Shortest acting, least growth suppression. [Endocrine Society 2018]",
+        "Why **not normalise 17-OHP**? That requires supraphysiological glucocorticoid and causes Cushingoid side effects and short stature. [Endocrine Society 2018]",
+        "Common mistakes: **assigning sex before karyotype**, forgetting **salt supplements in infants**, and **increasing fludrocortisone during illness** (only glucocorticoid is increased). [Endocrine Society 2018]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs used in CAH",
+      columns: ["Drug", "Dose and route", "Duration / titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Hydrocortisone (children)", "10-15 mg/m2/day oral in 3 divided doses", "Lifelong; adjust by growth, bone age, androgens", "Over-treatment: Cushingoid, growth suppression; under-treatment: virilisation, crisis"],
+        ["Hydrocortisone / prednisolone / dexamethasone (adults)", "HC 15-25 mg/day in 2-3 doses; prednisolone 5-7.5 mg/day in 2 doses; dexamethasone 0.25-0.5 mg/day", "Lifelong", "Weight gain, osteoporosis, diabetes; avoid dexamethasone in pregnancy"],
+        ["Fludrocortisone", "0.05-0.2 mg/day oral", "Lifelong in classic CAH; titrate to renin and BP", "Hypertension, hypokalaemia, oedema if excessive"],
+        ["Sodium chloride (infants)", "1-2 g/day (17-34 mmol) oral, divided with feeds", "First 1-2 years", "Vomiting if concentrated"],
+        ["Hydrocortisone (crisis)", "50-100 mg/m2 IV bolus (25 / 50 / 100 mg), then 50-100 mg/m2/day", "Until stable, taper over 2-4 days", "Hyperglycaemia, fluid retention"],
+        ["Hydrocortisone IM (home emergency)", "25 mg under 3 y, 50 mg 3-12 y, 100 mg adolescents/adults", "Single dose then hospital", "Delay is the danger"],
+        ["Crinecerfont", "Adults 100 mg oral BD with meals; weight-based in children 4+ years", "Add-on to glucocorticoid", "Fatigue, headache; adrenal insufficiency if glucocorticoid cut too far; not in India"],
+        ["COCP plus spironolactone (NCCAH women)", "Ethinylestradiol 20-35 mcg COCP; spironolactone 50-100 mg/day", "6-12 months for hirsutism response", "VTE (COCP); spironolactone teratogenic - needs contraception"],
+      ],
+    },
+    {
+      heading: "Forms of CAH",
+      columns: ["Enzyme defect", "Raised marker", "BP and electrolytes", "Genital phenotype"],
+      rows: [
+        ["21-hydroxylase (classic salt-wasting)", "17-OHP very high", "Low BP, low Na, high K, high renin", "46,XX virilised; 46,XY normal"],
+        ["21-hydroxylase (simple virilising)", "17-OHP high", "Normal", "46,XX virilised; boys early virilisation at 2-4 y"],
+        ["21-hydroxylase (non-classic)", "17-OHP high after ACTH", "Normal", "Normal at birth; hirsutism, PCOS-like later"],
+        ["11-beta-hydroxylase", "11-deoxycortisol, DOC", "Hypertension, low K, low renin", "46,XX virilised"],
+        ["17-alpha-hydroxylase", "DOC, corticosterone", "Hypertension, low K", "46,XY undervirilised; no puberty in both sexes"],
+        ["3-beta-HSD2", "17-OH-pregnenolone, DHEA", "Salt-wasting", "46,XX mildly virilised; 46,XY undervirilised"],
+        ["StAR (lipoid CAH)", "All steroids low", "Severe salt-wasting", "46,XY female phenotype"],
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      columns: ["Condition", "Key clinical clue", "Distinguishing test"],
+      rows: [
+        ["Salt-wasting CAH", "Vomiting at 1-3 weeks, hyperpigmentation", "Na low, K high, 17-OHP very high"],
+        ["Pyloric stenosis", "Projectile vomiting, olive mass", "Hypokalaemic hypochloraemic alkalosis"],
+        ["Neonatal sepsis", "Fever or hypothermia, poor feeding", "CRP, cultures; 17-OHP normal (may be mildly raised by stress)"],
+        ["Pseudohypoaldosteronism", "Salt-wasting, normal genitalia", "Aldosterone very high, 17-OHP normal"],
+        ["Adrenal hypoplasia congenita", "Boy with adrenal failure", "Low 17-OHP, low cortisol; NR0B1 mutation"],
+        ["PCOS (vs NCCAH)", "Hirsutism, oligomenorrhoea", "Morning follicular 17-OHP under 200 ng/dL"],
+        ["Androgen-secreting tumour", "Rapid virilisation", "Very high DHEAS or testosterone; mass on imaging"],
+      ],
+    },
+    {
+      heading: "Diagnostic cut-offs and monitoring targets",
+      columns: ["Test", "Cut-off / target", "Use"],
+      rows: [
+        ["Newborn DBS 17-OHP (48-72 h)", "Gestation and weight-adjusted cut-off", "Screening; LC-MS/MS second tier"],
+        ["Random serum 17-OHP", "Over 10,000 ng/dL (300 nmol/L) in classic", "Diagnosis"],
+        ["Follicular early-morning 17-OHP", "Over 200 ng/dL (6 nmol/L) needs ACTH test", "NCCAH screen"],
+        ["ACTH-stimulated 17-OHP", "Over 1,000 ng/dL (30 nmol/L)", "Diagnosis of classic or non-classic"],
+        ["On-treatment 17-OHP", "Mildly raised, not normal", "Avoid over-treatment"],
+        ["Androstenedione", "Age and sex-appropriate range", "Main control marker"],
+        ["Plasma renin", "Upper-normal range", "Fludrocortisone dose"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Neonate or infant with vomiting, poor feeding, weight loss, hyponatraemia, hyperkalaemia or hypoglycaemia",
+    "Newborn with atypical genitalia - admit, monitor electrolytes daily, do not assign sex before evaluation",
+    "Known CAH child with vomiting or unable to take oral steroids - give IM hydrocortisone and admit",
+    "Shock or altered sensorium in a patient on glucocorticoid replacement - adrenal crisis",
+    "Rapid virilisation or very high DHEAS - exclude an androgen-secreting tumour",
+    "Boy with early pubic hair, growth spurt and small testes",
+    "Hypertension with hypokalaemia in a child with virilisation or delayed puberty",
+  ],
+  pearls: [
+    "**21-OHD = 95% of CAH; 17-OHP is the marker.**",
+    "**Salt-wasting crisis arrives at 1-3 weeks** - boys are missed because their genitalia are normal.",
+    "**Hyperkalaemia + vomiting = CAH; hypokalaemia + vomiting = pyloric stenosis.**",
+    "**Hydrocortisone in children**, never long-acting steroids while growing.",
+    "**Do not normalise 17-OHP** - aim for a mildly raised value and normal androstenedione.",
+    "**Sick day: double or triple glucocorticoid, not fludrocortisone.**",
+    "**Hypertension in CAH**: 11-beta (virilised) or 17-alpha (infantile).",
+    "**Crinecerfont (FDA 2024)** - CRF1 antagonist that lowers ACTH and steroid needs.",
+    "**NCCAH mimics PCOS** - check a morning follicular 17-OHP in every hirsute woman.",
+  ],
+  mcqs: [
+    {
+      id: "endocrine-congenital-adrenal-hyperplasia-q1",
+      stem: "A 14-day-old boy with normal genitalia presents with vomiting, poor weight gain and lethargy. Na 122 mmol/L, K 7.1 mmol/L, glucose 40 mg/dL. The most likely diagnosis is:",
+      options: [
+        "Hypertrophic pyloric stenosis",
+        "Neonatal sepsis",
+        "Salt-wasting 21-hydroxylase deficiency",
+        "Congenital hypothyroidism",
+      ],
+      answer: 2,
+      explanation:
+        "Hyponatraemia, hyperkalaemia and hypoglycaemia at 1-3 weeks in a boy with normal genitalia is classic salt-wasting CAH from combined aldosterone and cortisol deficiency. Pyloric stenosis causes hypokalaemic alkalosis, sepsis does not typically cause marked hyperkalaemia with this pattern, and hypothyroidism causes prolonged jaundice and lethargy rather than salt-wasting.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-congenital-adrenal-hyperplasia-q2",
+      stem: "Which glucocorticoid is preferred for maintenance treatment of classic CAH in a 6-year-old child?",
+      options: [
+        "Dexamethasone 0.25 mg once daily",
+        "Prednisolone 5 mg once daily",
+        "Hydrocortisone 10-15 mg/m2/day in three divided doses",
+        "Methylprednisolone 4 mg twice daily",
+      ],
+      answer: 2,
+      explanation:
+        "Hydrocortisone is short-acting and closest to physiological cortisol, so it causes the least growth suppression and is recommended for growing children. Dexamethasone, prednisolone and methylprednisolone are longer-acting and more potent, and markedly impair linear growth when given before epiphyseal fusion.",
+      difficulty: "easy",
+    },
+    {
+      id: "endocrine-congenital-adrenal-hyperplasia-q3",
+      stem: "A 22-year-old woman has hirsutism and oligomenorrhoea. Early-morning follicular 17-OHP is 640 ng/dL; 60 minutes after 250 mcg Synacthen it is 1,850 ng/dL. The diagnosis is:",
+      options: [
+        "Polycystic ovary syndrome",
+        "Non-classic 21-hydroxylase deficiency",
+        "Androgen-secreting ovarian tumour",
+        "Cushing syndrome",
+      ],
+      answer: 1,
+      explanation:
+        "A basal follicular 17-OHP above 200 ng/dL with a stimulated value above 1,000 ng/dL confirms non-classic 21-hydroxylase deficiency. PCOS has normal 17-OHP, androgen-secreting tumours cause rapid virilisation with very high testosterone, and Cushing syndrome needs evidence of cortisol excess rather than a 17-OHP rise.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-congenital-adrenal-hyperplasia-q4",
+      stem: "A child with known classic CAH on hydrocortisone and fludrocortisone develops fever of 39 C with a cough but is eating normally. What advice is correct?",
+      options: [
+        "Double or triple the hydrocortisone dose until the fever settles; keep fludrocortisone unchanged",
+        "Double both hydrocortisone and fludrocortisone",
+        "Stop fludrocortisone during the fever",
+        "No change is needed unless the child vomits",
+      ],
+      answer: 0,
+      explanation:
+        "Sick-day rules increase only the glucocorticoid two- to three-fold during fever, vomiting or injury, because the stress response needs cortisol; mineralocorticoid needs do not rise. Doubling fludrocortisone risks hypertension and hypokalaemia, stopping it risks salt loss, and waiting for vomiting risks an adrenal crisis.",
+      difficulty: "moderate",
+    },
+    {
+      id: "endocrine-congenital-adrenal-hyperplasia-q5",
+      stem: "Crinecerfont, approved by the FDA in December 2024 for classic CAH, acts by:",
+      options: [
+        "Inhibiting CYP11B2 (aldosterone synthase)",
+        "Blocking the androgen receptor",
+        "Blocking the ACTH (MC2) receptor",
+        "Antagonising the corticotropin-releasing factor type 1 (CRF1) receptor",
+      ],
+      answer: 3,
+      explanation:
+        "Crinecerfont is a CRF1 receptor antagonist that reduces pituitary ACTH, so adrenal androgen production falls and glucocorticoid doses can be reduced toward physiological levels. Aldosterone synthase inhibitors (baxdrostat) are for hypertension, androgen receptor blockers do not lower ACTH, and MC2 receptor antagonism is the mechanism of atumelnant, still in trials.",
+      difficulty: "hard",
+    },
+  ],
+  theory: [
+    {
+      id: "endocrine-congenital-adrenal-hyperplasia-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "less-common",
+      question:
+        "Discuss the pathophysiology, clinical presentation, diagnosis and management of congenital adrenal hyperplasia due to 21-hydroxylase deficiency.",
+      openingLines: [
+        "Congenital adrenal hyperplasia is a group of autosomal recessive defects of cortisol synthesis; 21-hydroxylase (CYP21A2) deficiency causes about 95% and occurs in about 1 in 5,700 Indian newborns (ICMR screening study).",
+        "Cortisol deficiency raises ACTH, causing adrenal hyperplasia and androgen excess, while aldosterone deficiency causes salt-wasting - so it presents as virilised 46,XX girls, salt-wasting crisis at 1-3 weeks, or later as non-classic CAH.",
+      ],
+      answer: [
+        {
+          heading: "Pathophysiology",
+          points: [
+            "Block at 17-OHP to 11-deoxycortisol and progesterone to DOC; low cortisol and aldosterone.",
+            "High ACTH drives precursor shunting to androgens; prenatal virilisation of 46,XX fetus; postnatal accelerated growth and bone age.",
+          ],
+        },
+        {
+          heading: "Classification and presentation",
+          points: [
+            "Salt-wasting (75% of classic): crisis at 1-3 weeks - vomiting, low Na, high K, hypoglycaemia, shock; girls with atypical genitalia (Prader I-V).",
+            "Simple virilising: boys at 2-4 years with pubic hair, growth spurt, small testes.",
+            "Non-classic: hirsutism, acne, oligomenorrhoea, infertility (PCOS mimic).",
+          ],
+        },
+        {
+          heading: "Diagnosis",
+          points: [
+            "Newborn DBS 17-OHP at 48-72 h; serum 17-OHP over 10,000 ng/dL in classic; Synacthen-stimulated over 1,000 ng/dL.",
+            "Karyotype, pelvic USG, electrolytes, renin, glucose; CYP21A2 genotyping.",
+          ],
+        },
+        {
+          heading: "Acute management",
+          points: [
+            "0.9% saline 20 mL/kg, dextrose for hypoglycaemia, hydrocortisone 50-100 mg/m2 IV then 50-100 mg/m2/day; treat hyperkalaemia.",
+          ],
+        },
+        {
+          heading: "Long-term management",
+          points: [
+            "Children: hydrocortisone 10-15 mg/m2/day in 3 doses; fludrocortisone 0.05-0.2 mg; NaCl 1-2 g/day in infants.",
+            "Adults: hydrocortisone 15-25 mg, prednisolone 5-7.5 mg or dexamethasone 0.25-0.5 mg daily.",
+            "Sick-day rules, IM hydrocortisone kit, emergency card.",
+            "Monitor growth, bone age, 17-OHP (mildly raised), androstenedione, renin; TART ultrasound in males.",
+          ],
+        },
+        {
+          heading: "Special issues and updates",
+          points: [
+            "DSD team, sex of rearing (female for 46,XX), shared decisions on surgery; no prenatal dexamethasone outside research.",
+            "Crinecerfont (CRF1 antagonist, FDA 2024) allows glucocorticoid dose reduction.",
+          ],
+        },
+      ],
+      mustDraw: [
+        "Adrenal steroidogenesis pathway showing the 21-hydroxylase block and shunting to androgens",
+        "Flow chart: newborn with atypical genitalia - karyotype, USG, 17-OHP, electrolytes - management",
+      ],
+      markSplit: [
+        { part: "Pathophysiology with pathway diagram", marks: 2 },
+        { part: "Classification and clinical presentation", marks: 2 },
+        { part: "Diagnosis with cut-offs", marks: 2 },
+        { part: "Acute and long-term management", marks: 3 },
+        { part: "Special issues and recent updates", marks: 1 },
+      ],
+      keywords: ["CYP21A2", "17-OHP", "salt-wasting", "Prader", "hydrocortisone", "fludrocortisone", "crinecerfont"],
+    },
+    {
+      id: "endocrine-congenital-adrenal-hyperplasia-t2",
+      paper: "I",
+      kind: "differentiate",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Differentiate non-classic congenital adrenal hyperplasia from polycystic ovary syndrome.",
+      openingLines: [
+        "Non-classic CAH is a mild 21-hydroxylase deficiency presenting after birth with androgen excess; it is found in about 2-4% of hyperandrogenic women and is easily mislabelled as PCOS.",
+        "The discriminating test is an early-morning follicular 17-OHP, confirmed by a Synacthen test.",
+      ],
+      answer: [
+        {
+          heading: "Clinical",
+          points: [
+            "NCCAH: premature pubarche in childhood, family history or consanguinity, shorter stature, may have advanced bone age.",
+            "PCOS: peri-pubertal onset, obesity, acanthosis, insulin resistance.",
+          ],
+        },
+        {
+          heading: "Biochemistry",
+          points: [
+            "NCCAH: basal follicular 17-OHP over 200 ng/dL; stimulated over 1,000 ng/dL.",
+            "PCOS: 17-OHP normal; raised LH:FSH, high AMH, polycystic ovarian morphology.",
+          ],
+        },
+        {
+          heading: "Treatment",
+          points: [
+            "NCCAH: COCP plus anti-androgen for hirsutism; glucocorticoid for ovulation induction or miscarriage; genetic counselling.",
+            "PCOS: lifestyle, COCP, metformin, letrozole for ovulation.",
+          ],
+        },
+      ],
+      mustDraw: ["Two-column comparison table: NCCAH vs PCOS"],
+      markSplit: [
+        { part: "Clinical differences", marks: 2 },
+        { part: "Biochemical differences", marks: 2 },
+        { part: "Treatment differences", marks: 1 },
+      ],
+      keywords: ["NCCAH", "PCOS", "17-OHP", "Synacthen test", "hirsutism"],
+    },
+  ],
+  references: [
+    "Speiser PW, et al. Congenital Adrenal Hyperplasia Due to Steroid 21-Hydroxylase Deficiency: An Endocrine Society Clinical Practice Guideline, 2018",
+    "Auchus RJ, et al. Phase 3 trial of crinecerfont in adult congenital adrenal hyperplasia (CAHtalyst). N Engl J Med, 2024; Sarafoglou K, et al. Paediatric CAHtalyst. N Engl J Med, 2024",
+    "US FDA approval of crinecerfont (Crenessity) for classic congenital adrenal hyperplasia, December 2024",
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025",
+    "Williams Textbook of Endocrinology, 15th edition, 2024",
+    "Nelson Textbook of Pediatrics, 22nd edition, 2024",
+    "ICMR Task Force multicentre newborn screening study for congenital hypothyroidism and congenital adrenal hyperplasia, India, 2018",
+    "MoHFW. Rashtriya Bal Swasthya Karyakram (RBSK) operational guidelines",
+  ],
+});
+
 export default topics;

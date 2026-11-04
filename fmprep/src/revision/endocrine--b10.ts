@@ -648,6 +648,229 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "endocrine-endocrine-emergencies": {
+    checked: "2026-10",
+    updated: [
+      "ESE/Endocrine Society 2024 glucocorticoid-induced adrenal insufficiency guideline: stress dosing and steroid card for all at risk; crisis hydrocortisone 100 mg then 200 mg/24 h",
+      "Endocrine Society 2023 hypercalcaemia of malignancy guideline: denosumab suggested over bisphosphonate",
+      "Society for Endocrinology/NHS England 2020 national steroid emergency card",
+      "UK Pituitary Apoplexy Guidelines 2011 remain current; conservative care for selected patients",
+      "Endocrine Society 2016 primary adrenal insufficiency guideline remains current",
+    ],
+    master: {
+      heading: "Endocrine emergencies - the whole topic in one table",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Adrenal crisis definition", "Hypotension (SBP under 100 or 20 below usual) reversing within 1-2 h of parenteral glucocorticoid"],
+        ["Commonest cause", "Glucocorticoid withdrawal or illness in people on long-term steroids; precipitant usually gastroenteritis"],
+        ["Adrenal crisis labs", "Low Na, high K (primary), low glucose; draw cortisol and ACTH without delaying treatment"],
+        ["Adrenal crisis treatment", "Hydrocortisone 100 mg IV/IM, then 200 mg/24 h; 1 L saline in first hour; dextrose; treat precipitant"],
+        ["Sick-day rules", "Fever: double dose; vomiting: 100 mg IM and go to hospital; steroid card and kit"],
+        ["Pitfalls", "Thyroxine before hydrocortisone; rifampicin doubles dose; no fludrocortisone needed above 50 mg/day"],
+        ["Hypercalcaemic crisis", "Corrected Ca over 14 mg/dL with dehydration, AKI, confusion; malignancy or PHPT; vitamin D toxicity in India"],
+        ["First test for cause", "PTH: high = PHPT; suppressed = PTHrP, metastases, vitamin D, granuloma"],
+        ["Hypercalcaemia treatment", "Saline 200-300 mL/h; calcitonin 4 IU/kg 12-hourly for 48 h; zoledronate 4 mg or denosumab 120 mg"],
+        ["Cause-specific", "Steroids for calcitriol-mediated; cinacalcet for parathyroid carcinoma; dialysis if Ca over 18 or renal failure"],
+        ["Pituitary apoplexy", "Thunderclap headache, visual loss, III nerve palsy, hypotension in macroadenoma"],
+        ["Apoplexy work-up", "MRI pituitary (CT if unavailable), cortisol, sodium, visual fields, Pituitary Apoplexy Score"],
+        ["Apoplexy treatment", "Hydrocortisone 100-200 mg IV first; surgery for falling acuity, fields or consciousness"],
+        ["Thyroid storm pointer", "Propranolol, PTU or methimazole, iodine 1 h later, hydrocortisone 100 mg 8-hourly"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Adrenal crisis protocol",
+        steps: [
+          { label: "Suspect: shock, vomiting, steroid history", detail: "Pressor-resistant hypotension, low Na, high K, low glucose", tone: "decision" },
+          { label: "Draw cortisol and ACTH only if no delay", tone: "warn" },
+          { label: "Hydrocortisone 100 mg IV or IM now", detail: "Child 50 mg/m2" },
+          { label: "0.9% saline 1 L in the first hour", detail: "Child 20 mL/kg; dextrose if glucose under 70" },
+          { label: "Hydrocortisone 200 mg per 24 hours", detail: "Infusion or 50 mg 6-hourly" },
+          { label: "Treat precipitant; monitor in HDU", detail: "Sodium rise no more than 8-10 mmol/L in 24 h" },
+          { label: "Taper over 1-3 days; educate; steroid card", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Hypercalcaemic crisis ladder",
+        steps: [
+          { label: "Stop calcium, vitamin D, thiazide, lithium" },
+          { label: "0.9% saline 200-300 mL/h", detail: "Urine output 100-150 mL/h; furosemide only if overloaded" },
+          { label: "Calcitonin 4 IU/kg 12-hourly", detail: "Works in hours; stop at 48 h" },
+          { label: "Zoledronate 4 mg IV or denosumab 120 mg SC", detail: "Denosumab if renal impairment or bisphosphonate failure" },
+          { label: "Cause-specific treatment", detail: "Steroids, cinacalcet, parathyroidectomy, cancer therapy" },
+          { label: "Haemodialysis", detail: "Ca over 18 mg/dL with neuro signs or renal failure", tone: "warn" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Pituitary apoplexy: surgery or conservative",
+        root: "Apoplexy confirmed on MRI, hydrocortisone given",
+        arms: [
+          {
+            label: "Urgent decompression",
+            tone: "warn",
+            steps: [
+              "Severely reduced visual acuity",
+              "Persistent or worsening field defect",
+              "Falling consciousness",
+              "Transsphenoidal surgery, ideally within 7 days",
+            ],
+          },
+          {
+            label: "Conservative care",
+            tone: "good",
+            steps: [
+              "Isolated ocular palsy or no visual loss",
+              "Daily acuity, fields, sodium",
+              "Pituitary testing at 4-8 weeks",
+              "MRI at 3-6 months",
+            ],
+          },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Adrenal crisis**: shock or hypotension that reverses within 1-2 hours of parenteral steroid.",
+            "About **6-8 crises per 100 patient-years** in known adrenal insufficiency.",
+            "**Hypercalcaemic crisis**: calcium usually over 14 mg/dL with organ dysfunction.",
+            "**Pituitary apoplexy**: sudden bleed or infarct in a pituitary adenoma, often undiagnosed.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Adrenal crisis: **steroid withdrawal**, gastroenteritis, infection, surgery, missed doses.",
+            "Primary causes in India: autoimmune and **adrenal TB**.",
+            "Hypercalcaemia: **PTHrP from cancer**, PHPT, myeloma, granulomas, vitamin D injections.",
+            "Apoplexy triggers: **hypertension**, cardiac surgery, anticoagulants, dopamine agonists, pregnancy.",
+            "**Thyroxine before hydrocortisone** and rifampicin can precipitate a crisis.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Cortisol keeps vessels responsive to catecholamines, so its loss causes **pressor-resistant shock**.",
+            "Aldosterone loss in primary disease causes **hyperkalaemia**.",
+            "High calcium causes **nephrogenic diabetes insipidus**, dehydration and falling GFR.",
+            "Apoplexy compresses the **chiasm and cavernous sinus**, and causes ACTH loss.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Crisis: **vomiting, abdominal pain**, confusion, collapse; pigmentation if primary.",
+            "Hypercalcaemia: **bones, stones, groans, thrones and psychic moans**; short QT.",
+            "Apoplexy: **thunderclap headache**, bitemporal field loss, third nerve palsy.",
+            "Always ask a collapsed patient about **steroid use**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Draw **cortisol and ACTH** but never delay hydrocortisone.",
+            "Random cortisol under **3-5 mcg/dL** in illness strongly supports adrenal insufficiency.",
+            "Hypercalcaemia: corrected calcium, then **PTH first**, then PTHrP and vitamin D metabolites.",
+            "**25-OH vitamin D over 150 ng/mL** means vitamin D toxicity.",
+            "Apoplexy: **MRI pituitary**, cortisol, sodium, formal visual fields.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "**Hydrocortisone 100 mg IV**, then **200 mg per 24 hours**.",
+            "**1 L saline** in the first hour; dextrose for low glucose.",
+            "Hypercalcaemia: **saline 200-300 mL/h**, then calcitonin 4 IU/kg for 48 hours.",
+            "Then **zoledronate 4 mg IV** or **denosumab 120 mg SC**.",
+            "Steroids for calcitriol-mediated disease; **dialysis** for calcium over 18 with coma.",
+            "Apoplexy: **hydrocortisone 100-200 mg IV first**, surgery if vision is falling.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Taper hydrocortisone over **1-3 days** to double oral dose.",
+            "Restart **fludrocortisone** when hydrocortisone is below 50 mg/day.",
+            "Repeat bisphosphonate no sooner than **7 days**.",
+            "After apoplexy: pituitary testing at **4-8 weeks**, MRI at 3-6 months.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Labour**: hydrocortisone 100 mg at active labour, then 200 mg/24 h.",
+            "**Pregnancy hypercalcaemia**: saline and calcitonin; avoid bisphosphonates and denosumab.",
+            "**CKD**: denosumab causes severe hypocalcaemia; dialysis often safest.",
+            "**Children**: crisis presents with hypoglycaemia; hydrocortisone 50 mg/m2.",
+            "No hydrocortisone available: **dexamethasone 4 mg IV**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Admit every suspected crisis, calcium over 14 or symptomatic, and every apoplexy.",
+            "**Sick-day rules**: double dose with fever; inject 100 mg IM if vomiting.",
+            "Issue a **steroid emergency card**, bracelet and IM kit; train the family.",
+            "Avoid repeated **600,000 IU vitamin D injections**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ESE/Endocrine Society 2024**: stress dosing and steroid card for all on long-term steroids.",
+            "**Endocrine Society 2023**: denosumab suggested over bisphosphonate in malignant hypercalcaemia.",
+            "**NHS 2020** national steroid emergency card.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Emergency drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Hydrocortisone", "100 mg IV/IM, then 200 mg/24 h", "Taper over 1-3 days", "Hyperglycaemia; rapid sodium rise"],
+            ["0.9% saline", "1 L in first hour; 200-300 mL/h in hypercalcaemia", "By BP and urine output", "Overload in heart failure or CKD"],
+            ["Calcitonin", "4 IU/kg SC/IM 12-hourly", "48 hours", "Tachyphylaxis, nausea"],
+            ["Zoledronic acid", "4 mg IV over 15 min or more", "Single dose", "Avoid CrCl under 30; acute-phase reaction"],
+            ["Denosumab", "120 mg SC", "Repeat by response", "Severe hypocalcaemia, jaw osteonecrosis"],
+            ["Prednisolone", "40-60 mg/day orally", "Calcitriol-mediated hypercalcaemia", "Hyperglycaemia, infection"],
+          ],
+        },
+        {
+          heading: "Three emergencies compared",
+          columns: ["Feature", "Adrenal crisis", "Hypercalcaemic crisis", "Pituitary apoplexy"],
+          rows: [
+            ["Trigger", "Steroid withdrawal, infection", "Cancer, PHPT, vitamin D", "Hypertension, surgery, anticoagulants"],
+            ["Symptoms", "Vomiting, collapse", "Polyuria, confusion, constipation", "Thunderclap headache, visual loss"],
+            ["Key lab", "Low Na, high K, low glucose", "Ca over 14 mg/dL", "Low cortisol, MRI bleed"],
+            ["First drug", "Hydrocortisone 100 mg IV", "Saline", "Hydrocortisone 100-200 mg IV"],
+          ],
+        },
+        {
+          heading: "Hypercalcaemia by PTH",
+          columns: ["PTH", "Causes"],
+          rows: [
+            ["High or normal", "Primary hyperparathyroidism, FHH, lithium, tertiary"],
+            ["Suppressed", "PTHrP cancer, metastases, myeloma, granulomas, vitamin D toxicity, milk-alkali"],
+          ],
+        },
+      ],
+      remember: [
+        "Never wait: 100 mg hydrocortisone, then 200 mg per 24 hours.",
+        "Pressor-resistant shock means think cortisol.",
+        "Hydrocortisone before thyroxine, always.",
+        "Rifampicin doubles the hydrocortisone dose.",
+        "Fill the tank, then calcitonin, then zoledronate or denosumab.",
+        "Calcitonin escapes in 48 hours.",
+        "Apoplexy: steroid first, scan second, scalpel if sight is going.",
+      ],
+    },
+  },
 };
 
 export default revision;

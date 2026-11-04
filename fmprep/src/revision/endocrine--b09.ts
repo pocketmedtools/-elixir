@@ -599,6 +599,206 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "endocrine-puberty-disorders": {
+    checked: "2026-10",
+    updated: [
+      "International GnRH analogue consortium 2019: basal ultrasensitive LH first, 3- and 6-monthly depots, MRI for all boys and girls under 6",
+      "FDA 2022 labelling: pseudotumour cerebri warning for GnRH agonists in CPP",
+      "International Turner syndrome guideline 2024: transdermal oestradiol from 11-12 years, karyotype for short girls with delay",
+      "European CHH consensus: FSH priming before hCG, retest for reversal",
+    ],
+    master: {
+      heading: "Master revision table - precocious and delayed puberty",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Precocious: before **8 years (girls, breast)** or **9 years (boys, testes 4 mL)**; delayed: no breast by **13** or testes under 4 mL by **14**."],
+        ["Burden", "CPP about **10 times commoner in girls**, 90% idiopathic in girls; **CDGP** is about 60-65% of delayed puberty in boys."],
+        ["Tanner staging", "Breast B1-5, genitals G1-5, pubic hair PH1-5; **G2 = testes 4 mL**; menarche about 2-2.5 years after thelarche."],
+        ["Classification - early", "**Central** (GnRH-dependent), **peripheral** (GnRH-independent), **benign variants** (premature thelarche, adrenarche)."],
+        ["Causes - central", "Idiopathic, **MKRN3**, hypothalamic hamartoma, tumours, hydrocephalus, post-TB meningitis, irradiation, secondary to CAH."],
+        ["Causes - peripheral", "Ovarian cyst, **McCune-Albright**, CAH, Leydig tumour, hCG tumour, testotoxicosis, exogenous steroids, **hypothyroidism**."],
+        ["Causes - delayed", "**CDGP**, chronic illness, **Kallmann/CHH**, craniopharyngioma, **Turner**, Klinefelter, chemotherapy."],
+        ["Examination", "Height velocity on **IAP charts**, target height, Tanner stage, **orchidometer**, cafe-au-lait spots, fundi, smell, Turner stigmata."],
+        ["Investigations", "**Bone age**, ultrasensitive **basal LH over 0.3**, stimulated **peak LH over 5**, sex steroids, 17-OHP, DHEAS, hCG, TSH, pelvic US, MRI, karyotype."],
+        ["Treatment - CPP", "**Leuprolide 3.75-7.5 mg monthly / 11.25 mg 3-monthly / 45 mg 6-monthly** or triptorelin; stop about 11 (girls), 12 (boys)."],
+        ["Treatment - peripheral", "Treat cause: hydrocortisone (CAH), levothyroxine, **letrozole** (McCune-Albright), bicalutamide plus anastrozole (testotoxicosis)."],
+        ["Treatment - delayed", "CDGP: reassure or **testosterone 50-100 mg IM monthly x 3-6 months**; girls: low-dose **oestradiol**, escalate over 2-3 years."],
+        ["Monitoring", "Every 3-6 months: Tanner, growth, LH suppression; **bone age** every 6-12 months."],
+        ["Exam pearls", "Delayed bone age with precocity = **hypothyroidism**; every boy with CPP gets **MRI**; short girl with delay = **karyotype**."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Evaluating early puberty",
+        steps: [
+          { label: "Signs before 8 (girls) or 9 (boys)", detail: "Tanner stage, height velocity, testes, skin, fundi" },
+          { label: "Bone age and ultrasensitive basal LH", detail: "LH over 0.3 IU/L suggests central", tone: "decision" },
+          { label: "Isolated sign, normal growth and bone age", detail: "Premature thelarche or adrenarche: observe", tone: "good" },
+          { label: "Pubertal LH or peak LH over 5", detail: "Central: MRI for boys and girls under 6" },
+          { label: "Suppressed LH", detail: "Peripheral: 17-OHP, DHEAS, hCG, TSH, pelvic or testicular US", tone: "warn" },
+          { label: "Progressive central puberty", detail: "GnRH agonist depot", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Delayed puberty: branch on LH/FSH",
+        root: "No breast by 13 or testes under 4 mL by 14",
+        arms: [
+          { label: "High LH/FSH", tone: "warn", steps: ["Hypergonadotropic", "Turner (girls), Klinefelter (boys)", "Karyotype"] },
+          { label: "Low LH/FSH, abnormal screen", steps: ["Functional", "Coeliac, IBD, CKD, malnutrition, hypothyroidism", "Treat illness"] },
+          { label: "Low LH/FSH, healthy, family history", tone: "good", steps: ["CDGP", "Delayed bone age", "Reassure or short sex-steroid course"] },
+          { label: "Low LH/FSH with anosmia or micropenis", tone: "warn", steps: ["CHH or Kallmann", "Low inhibin B, MRI", "Escalating sex steroids or gonadotrophins"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Central vs peripheral precocious puberty",
+        columns: ["Feature", "Central", "Peripheral"],
+        rows: [
+          ["LH", "Pubertal", "Suppressed"],
+          ["Testes (boys)", "Both enlarged", "Small or asymmetric"],
+          ["Sequence", "Normal order", "Often out of order or contrasexual"],
+          ["Key test", "Stimulated LH, MRI", "17-OHP, DHEAS, hCG, ultrasound"],
+          ["Treatment", "GnRH agonist", "Treat cause"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Precocious: before **8 years in girls** or **9 years in boys**.",
+            "Delayed: no breast by **13** or testes under 4 mL by **14**.",
+            "First sign: **breast bud** in girls, **testes 4 mL** in boys.",
+            "CPP is mostly idiopathic in girls; boys more often have a **CNS cause**.",
+            "**CDGP** is the commonest cause of delayed puberty.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Central: idiopathic, **MKRN3**, hypothalamic hamartoma, tumours, post-meningitis, irradiation.",
+            "Peripheral: **CAH**, McCune-Albright, ovarian cyst, Leydig or hCG tumour, exogenous steroids.",
+            "Delayed: chronic illness, **Kallmann**, craniopharyngioma, **Turner**, Klinefelter, chemotherapy.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "**Kisspeptin** releases pulsatile GnRH, raising LH and FSH.",
+            "Oestrogen closes growth plates, so early puberty means a **short adult**.",
+            "GnRH agonists **downregulate** pituitary receptors after a brief flare.",
+            "Kallmann: GnRH neurons fail to **migrate** with olfactory neurons.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Tanner breast B1-5, genitals G1-5, pubic hair PH1-5.",
+            "**Central** (pubertal LH) versus **peripheral** (suppressed LH) versus benign variants.",
+            "**Contrasexual** signs are always pathological.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Ask tempo, growth spurt, CNS symptoms, **exposure to gels or creams**, family history.",
+            "Measure height velocity on **IAP charts** and testes with an **orchidometer**.",
+            "Look for cafe-au-lait spots, fundi, smell and **Turner stigmata**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Bone age**: advanced in precocity, delayed in CDGP and hypothyroidism.",
+            "Ultrasensitive **basal LH over 0.3 IU/L** suggests central puberty.",
+            "Stimulated **peak LH over 5 IU/L** confirms central puberty.",
+            "Peripheral: **17-OHP, DHEAS, hCG**, TSH, pelvic or testicular ultrasound.",
+            "**MRI brain** for all boys with CPP and girls under 6.",
+            "Delayed: LH, FSH, **karyotype** if high, coeliac serology, TSH, prolactin.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Benign variants: **observe** every 3-6 months.",
+            "CPP: **leuprolide** 3.75-7.5 mg monthly or 11.25 mg 3-monthly, or triptorelin.",
+            "CDGP boys: reassure or **testosterone 50-100 mg IM monthly** for 3-6 months.",
+            "Girls: low-dose **oestradiol**, increased over 2-3 years.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Peripheral: treat cause; **letrozole** for McCune-Albright.",
+            "Hypothyroidism: **levothyroxine** reverses Van Wyk-Grumbach.",
+            "Permanent hypogonadism: escalating sex steroids; **hCG plus FSH** for fertility.",
+            "Turner: growth hormone and oestrogen from **11-12 years**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer every boy under 9 and girl under 8 with pubertal signs.",
+            "On GnRH agonist: Tanner, growth and **LH suppression** every 3-6 months.",
+            "**Bone age** every 6-12 months; stop around 11 (girls) or 12 (boys).",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**FDA 2022**: GnRH agonists carry a pseudotumour cerebri warning.",
+            "**Six-monthly depots** of leuprolide and triptorelin now standard options.",
+            "**Turner 2024** guideline: transdermal oestradiol at 11-12 years.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Leuprolide depot", "3.75-7.5 mg IM monthly; 11.25 mg 3-monthly; 45 mg SC 6-monthly", "Until about 11 (girls) / 12 (boys)", "Withdrawal bleed, sterile abscess, IIH"],
+            ["Triptorelin", "3.75 mg monthly; 11.25 mg 3-monthly; 22.5 mg 6-monthly IM", "As above", "As above"],
+            ["Testosterone enanthate", "50-100 mg IM monthly", "3-6 months (CDGP)", "Acne, mood change"],
+            ["Oestradiol", "Patch 3.1-6.2 mcg/day or oral about 5 mcg/kg/day", "Escalate over 2-3 years", "Breast tenderness; add progestogen later"],
+            ["Letrozole", "2.5 mg oral daily", "Specialist use", "Off-label; bone effects"],
+          ],
+        },
+        {
+          heading: "Central vs peripheral vs benign",
+          columns: ["Feature", "Central", "Peripheral", "Benign variant"],
+          rows: [
+            ["LH", "Pubertal", "Suppressed", "Prepubertal"],
+            ["Bone age", "Advanced", "Advanced (delayed in hypothyroidism)", "Normal"],
+            ["Growth", "Fast", "Fast", "Normal"],
+            ["Treatment", "GnRH agonist", "Treat cause", "Observe"],
+          ],
+        },
+        {
+          heading: "Delayed puberty causes",
+          columns: ["Category", "Examples", "LH / FSH"],
+          rows: [
+            ["CDGP", "Familial late bloomer", "Low"],
+            ["Functional", "Coeliac, IBD, CKD, malnutrition", "Low"],
+            ["Permanent hypogonadotropic", "Kallmann, craniopharyngioma", "Low"],
+            ["Hypergonadotropic", "Turner, Klinefelter, chemotherapy", "High"],
+          ],
+        },
+      ],
+      remember: [
+        "**8 girls, 9 boys** early; **13 girls, 14 boys** late.",
+        "**Testes 4 mL** marks puberty in boys.",
+        "**Pubertal LH = central**; GnRH agonists treat only central.",
+        "Precocity with **delayed bone age = hypothyroidism**.",
+        "**Every boy with CPP gets an MRI.**",
+        "**Short girl with delay = karyotype for Turner.**",
+        "**Kallmann = hypogonadism plus anosmia.**",
+      ],
+    },
+  },
 };
 
 export default revision;

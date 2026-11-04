@@ -718,7 +718,7 @@ topics.push({
       ],
     },
     {
-      heading: "Referral, follow-up and monitoring",
+      heading: "Referral, follow-up, prevention and programme links",
       points: [
         "**Screen** for DSPN **at diagnosis of type 2** and **5 years after type 1**, then **at least yearly**; screen for CAN when microvascular complications or hypoglycaemia unawareness exist. [ADA 2026]",
         "**Foot review frequency by IWGDF risk**: grade 0 yearly, 1 every 6-12 months, 2 every 3-6 months, 3 every 1-3 months. [IWGDF 2023]",
@@ -726,16 +726,10 @@ topics.push({
         "**Refer to gastroenterology** for refractory gastroparesis or weight loss; **urology** for retention or failed PDE5 inhibitor. [ACG 2022]",
         "**Same-day foot clinic referral** for ulcer, infection, ischaemia or a hot swollen foot. [IWGDF 2023]",
         "Review pain treatment every **4-6 weeks** during titration; taper rather than stop gabapentinoids and SNRIs abruptly. [NICE CG173]",
-      ],
-    },
-    {
-      heading: "Prevention, counselling and programme links",
-      points: [
         "**Early glucose, BP and lipid control** and stopping smoking prevent or delay neuropathy; exercise improves small-fibre function. [ADA 2026]",
         "**NP-NCD** foot examination with monofilament at Ayushman Arogya Mandir and NCD clinics; footwear counselling is part of the package. [MoHFW NP-NCD 2023]",
         "Teach **daily foot care**: inspect with a mirror, never walk barefoot (including temples and homes), test water temperature, avoid home remedies for corns. [IWGDF 2023]",
         "**Offloading footwear (MCR insoles, extra-depth shoes)** for LOPS with deformity; avoid tight chappals with toe posts. [IWGDF 2023]",
-        "Counsel about **gabapentinoid misuse** and driving when sedated; pregabalin is a controlled drug in several countries. [NICE CG173]",
       ],
     },
     {

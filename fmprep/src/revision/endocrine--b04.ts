@@ -649,4 +649,226 @@ revision["endocrine-thyroiditis"] = {
   },
 };
 
+revision["endocrine-thyroid-emergencies"] = {
+  checked: "2026-10",
+  updated: [
+    "ATA 2016 and JTA 2016 remain the storm standards; no replacement guideline 2023-2026.",
+    "ASFA 2023: thyroid storm is a category II indication for therapeutic plasma exchange.",
+    "FDA 2024 landiolol approval: ultra-short beta-1 blocker for storm with heart failure.",
+    "ESC 2024 AF: CHA2DS2-VA score for anticoagulation in thyrotoxic AF.",
+    "ATA 2014 hypothyroidism guideline still sets myxoedema coma dosing (IV T4 200-400 mcg load).",
+  ],
+  master: {
+    heading: "Master revision table - Thyroid storm and myxoedema coma",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Storm definition", "Decompensated thyrotoxicosis with **multi-organ failure**; clinical diagnosis; mortality about 10%."],
+      ["Storm precipitants", "**Infection**, stopping antithyroid drugs, surgery, RAI, iodine contrast, labour, DKA."],
+      ["Storm criteria", "**BWPS 45 or more** storm, 25-44 impending; **JTA** TS1 (CNS plus one, or three non-CNS) and TS2."],
+      ["Storm features", "Fever above 40 C, HR above 140, AF, heart failure, vomiting, jaundice, delirium."],
+      ["Storm drugs", "Propranolol 60-80 mg 4-hourly or esmolol; **PTU 500-1000 mg** load then 250 mg 4-hourly; iodine 1 hour later."],
+      ["Storm support", "**Hydrocortisone 300 mg** load then 100 mg 8-hourly; paracetamol not aspirin; cholestyramine; treat precipitant."],
+      ["Refractory storm", "Plasma exchange (ASFA 2023 II), emergency thyroidectomy, ECMO; lithium if no iodine."],
+      ["Coma definition", "Decompensated hypothyroidism: **altered mind, hypothermia**, hypoventilation; mortality 25-30%."],
+      ["Coma precipitants", "**Cold**, infection, sedatives, opioids, stroke, stopping levothyroxine."],
+      ["Coma features", "Hypothermia, bradycardia, macroglossia, hyponatraemia, hypoglycaemia, hypercapnia, high CK."],
+      ["Coma drugs", "**Hydrocortisone 100 mg** 8-hourly; **IV T4 200-400 mcg** load then 50-100 mcg daily; T3 5-20 mcg optional."],
+      ["Coma support", "Ventilate, **passive rewarming**, sodium rise under 8-10 mmol/L/day, dextrose, antibiotics, no sedatives."],
+      ["India", "IV T4 often unavailable: NG levothyroxine 300-500 mcg load; NP-NCD follow-up prevents recurrence."],
+      ["Viva pitfalls", "Iodine before thionamide; aspirin; active rewarming; waiting for TFT; T4 before steroid."],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Thyroid storm: step-wise treatment",
+      steps: [
+        { label: "Suspect storm: score BWPS or JTA", detail: "45 or more, or TS1; send TFT, cortisol, cultures", tone: "decision" },
+        { label: "ICU, fluids with dextrose, cooling", detail: "Paracetamol; no aspirin; treat precipitant" },
+        { label: "Beta-blocker", detail: "Propranolol 60-80 mg 4-hourly; esmolol or landiolol if LV poor", tone: "warn" },
+        { label: "Thionamide", detail: "PTU 500-1000 mg load, 250 mg 4-hourly; or methimazole 60-80 mg/day" },
+        { label: "Iodine at least 1 hour later", detail: "SSKI 5 drops 6-hourly or Lugol 4-8 drops 6-8-hourly", tone: "warn" },
+        { label: "Hydrocortisone", detail: "300 mg IV load, then 100 mg 8-hourly" },
+        { label: "No better in 24-48 hours", detail: "Plasma exchange, thyroidectomy, ECMO", tone: "decision" },
+        { label: "Recovery", detail: "Taper iodine and steroid; plan definitive therapy", tone: "good" },
+      ],
+    },
+    {
+      kind: "flow",
+      heading: "Myxoedema coma: first hours",
+      steps: [
+        { label: "Suspect: hypothermia, drowsiness, bradycardia", detail: "Neck scar, winter, sedative, infection", tone: "decision" },
+        { label: "Airway and ventilation", detail: "Hypercapnia and macroglossia often need intubation", tone: "warn" },
+        { label: "Draw TSH, FT4, cortisol, cultures", detail: "Do not wait for results" },
+        { label: "Hydrocortisone 100 mg IV 8-hourly", detail: "Before or with thyroid hormone" },
+        { label: "IV levothyroxine 200-400 mcg load", detail: "Then 50-100 mcg daily; T3 2.5-10 mcg 8-hourly optional" },
+        { label: "Passive rewarming, correct sodium slowly", detail: "Under 8-10 mmol/L in 24 hours" },
+        { label: "Oral levothyroxine when alert", detail: "TSH and FT4 at 4-6 weeks", tone: "good" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Thyroid storm vs myxoedema coma",
+      columns: ["Feature", "Thyroid storm", "Myxoedema coma"],
+      rows: [
+        ["Temperature", "Above 40 C", "Below 35 C"],
+        ["Pulse", "Above 140, AF", "Bradycardia"],
+        ["Mind", "Agitation, delirium", "Lethargy, coma"],
+        ["Labs", "Low TSH, high FT4, jaundice", "High TSH, low sodium, high CO2"],
+        ["Score", "BWPS 45 or more", "Popoveniuc 60 or more"],
+        ["Key drugs", "Beta-blocker, PTU, iodine, steroid", "Steroid, IV T4 (plus T3)"],
+        ["Mortality", "About 10%", "About 25-30%"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "**Thyroid storm** is thyrotoxicosis with organ failure; mortality about 10%.",
+          "FT4 in storm is **no higher** than in ordinary thyrotoxicosis; diagnosis is clinical.",
+          "**Myxoedema coma** is decompensated hypothyroidism; most patients are not truly comatose.",
+          "Coma mortality is about **25-30%**, mostly elderly women in winter.",
+          "Treat both **before** results return.",
+        ],
+      },
+      {
+        title: "Causes and risk factors",
+        points: [
+          "Storm: **infection**, stopping carbimazole, surgery, radioiodine, iodine contrast, labour.",
+          "Coma: **cold**, infection, sedatives, opioids, stroke, missed levothyroxine.",
+          "Amiodarone and lithium can unmask myxoedema coma.",
+          "**Aspirin** raises free hormone and can worsen storm.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "**BWPS**: 45 or more storm, 25-44 impending, below 25 unlikely.",
+          "BWPS scores fever, CNS, gut and liver, heart rate, failure, AF, precipitant.",
+          "**JTA TS1**: CNS signs plus one other, or three non-CNS signs.",
+          "**Popoveniuc** coma score: 60 or more is highly suggestive.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "Storm: **fever above 40 C**, pulse above 140, AF, vomiting, jaundice, delirium.",
+          "Elderly may have **apathetic storm** with few adrenergic signs.",
+          "Coma: **hypothermia**, bradycardia, macroglossia, non-pitting oedema, slow reflexes.",
+          "Look for a **thyroidectomy scar** in any cold, drowsy patient.",
+          "In coma a normal temperature can mean **infection**.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "Send **TSH, FT4, FT3 and cortisol** before steroids.",
+          "Storm: cultures, LFT, glucose, ECG, echo for LV function.",
+          "Coma: **sodium, glucose, ABG**, CK, ECG for low voltage and effusion.",
+          "Repeat FT4 and T3 every **1-2 days**.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "Storm: **propranolol 60-80 mg** 4-hourly, or esmolol if LV is poor.",
+          "Storm: **PTU 500-1000 mg** load then 250 mg 4-hourly, or methimazole 60-80 mg daily.",
+          "Storm: **iodine at least 1 hour after** the thionamide.",
+          "Storm: **hydrocortisone 300 mg** load, then 100 mg 8-hourly.",
+          "Coma: **hydrocortisone 100 mg** 8-hourly, then IV T4 200-400 mcg load.",
+        ],
+      },
+      {
+        title: "Inpatient / emergency care",
+        points: [
+          "Storm: cool with **paracetamol** and blankets; fluids with dextrose; treat infection.",
+          "Refractory storm: **plasma exchange**, thyroidectomy, ECMO.",
+          "Coma: early **intubation** for high CO2 or big tongue.",
+          "Coma: **passive rewarming** only; active warming causes collapse.",
+          "Coma: raise sodium by **no more than 8-10 mmol/L** a day.",
+          "Coma: avoid all **sedatives**; give antibiotics after cultures.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Pregnancy** storm: PTU, beta-blocker, iodine, steroid; fetal monitoring.",
+          "**Elderly or cardiac**: lower T4 load and cautious T3.",
+          "**Asthma**: use esmolol, landiolol or diltiazem.",
+          "**India**: no IV T4 often; use NG tablets 300-500 mcg.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "Storm death predictors: **coma, shock, jaundice**, DIC.",
+          "High-dose propranolol in poor LV can cause **collapse**.",
+          "Too much T4 or T3 in coma can cause **MI or arrhythmia**.",
+          "Watch PTU for **liver injury** and agranulocytosis.",
+        ],
+      },
+      {
+        title: "Referral and follow-up",
+        points: [
+          "Refer every suspected case to an **ICU**; start drugs before transfer.",
+          "After storm: plan **thyroidectomy or RAI** after iodine washout.",
+          "After coma: oral levothyroxine; TSH and FT4 at **4-6 weeks**.",
+          "Prevent repeats with **adherence** counselling and NP-NCD follow-up.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Emergency drugs",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Propranolol", "60-80 mg oral or NG every 4 hours", "Until HR controlled", "Collapse if LV poor; asthma"],
+          ["Esmolol", "250-500 mcg/kg IV load, then 50-100 mcg/kg/min", "Titrate", "Hypotension"],
+          ["Propylthiouracil", "500-1000 mg load, then 250 mg every 4 hours", "Until FT4 normal", "Liver injury, agranulocytosis"],
+          ["SSKI or Lugol iodine", "SSKI 5 drops 6-hourly; Lugol 4-8 drops 6-8-hourly", "1-2 weeks, after thionamide", "Fuels synthesis if given first"],
+          ["Hydrocortisone (storm)", "300 mg IV load, then 100 mg 8-hourly", "Taper on recovery", "Hyperglycaemia"],
+          ["Levothyroxine IV (coma)", "200-400 mcg load, then 50-100 mcg daily", "Until oral possible", "Ischaemia, arrhythmia"],
+          ["Liothyronine (coma)", "5-20 mcg IV load, then 2.5-10 mcg 8-hourly", "Until improving", "Arrhythmia in elderly"],
+          ["Hydrocortisone (coma)", "100 mg IV every 8 hours", "Until cortisol normal", "Hyperglycaemia"],
+        ],
+      },
+      {
+        heading: "Burch-Wartofsky score",
+        columns: ["Parameter", "Points"],
+        rows: [
+          ["Temperature 37.2 C to 40 C or more", "5-30"],
+          ["CNS: agitation, delirium, seizure or coma", "10, 20, 30"],
+          ["GI: diarrhoea or vomiting; jaundice", "10, 20"],
+          ["Heart rate 90 to 140 or more", "5-25"],
+          ["Heart failure: oedema to pulmonary oedema", "5-15"],
+          ["Atrial fibrillation", "10"],
+          ["Precipitant present", "10"],
+        ],
+      },
+      {
+        heading: "Fever, tachycardia and delirium: differentials",
+        columns: ["Condition", "Clue", "Test"],
+        rows: [
+          ["Thyroid storm", "Goitre, eye signs, AF", "Low TSH, high FT4"],
+          ["Sepsis", "Source of infection", "Cultures, lactate"],
+          ["Neuroleptic malignant syndrome", "Antipsychotic, rigidity", "Very high CK"],
+          ["Serotonin syndrome", "Clonus, serotonergic drugs", "Clinical"],
+          ["Phaeochromocytoma crisis", "Paroxysmal hypertension", "Metanephrines"],
+        ],
+      },
+    ],
+    remember: [
+      "Storm: **'Block, Block, Block, Beta, Bile, Body'**.",
+      "**Thionamide first, iodine 1 hour later**.",
+      "**BWPS 45** means storm; 25-44 impending.",
+      "**Paracetamol, never aspirin**, in storm.",
+      "Coma: **steroid before thyroxine**.",
+      "Coma: **passive rewarming** only.",
+      "IV T4 load **200-400 mcg**, then 50-100 mcg daily.",
+    ],
+  },
+};
+
 export default revision;

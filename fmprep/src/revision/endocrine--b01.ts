@@ -641,6 +641,218 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "endocrine-prediabetes-prevention": {
+    checked: "2026-10",
+    updated: [
+      "ADA 2026: structured lifestyle programme for all with prediabetes, metformin for high-risk groups, yearly testing, CV risk care.",
+      "IDF 2024: 1-hour post-load glucose 155 mg/dL or more proposed for intermediate hyperglycaemia.",
+      "ICMR-NIN Dietary Guidelines for Indians 2024: cereals about 45% of energy, added sugar under 5%, salt under 5 g.",
+      "ICMR-INDIAB 2023: prediabetes 15.3% of Indian adults.",
+      "SURMOUNT-1 3-year (2024): tirzepatide cut progression to diabetes by about 94% in obesity.",
+    ],
+    master: {
+      heading: "Master revision table - prediabetes and prevention of type 2 diabetes",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Intermediate hyperglycaemia: **IFG 100-125**, **IGT 140-199**, **HbA1c 5.7-6.4%** (ADA); WHO IFG **110-125**."],
+        ["Burden", "India **15.3%** (136 million, ICMR-INDIAB 2023); progression **5-10% a year**; IDPP-1 control 55% in 3 years."],
+        ["Risk factors", "Age over 30, family history, **waist 90/80 cm**, BMI 23+, inactivity, past GDM, PCOS, MASLD, steroids, antipsychotics."],
+        ["Pathophysiology", "**IFG = liver** insulin resistance; **IGT = muscle** insulin resistance; combined worst; beta cells about 50% lost."],
+        ["Screening", "**NP-NCD**: all 30+, CBAC + random capillary glucose (140+ refer); **IDRS 60+ high risk**; OGTT best in Indians."],
+        ["Differential", "Early diabetes, stress or steroid hyperglycaemia, **GCK-MODY**, glycolysis or anaemia artefact."],
+        ["Lifestyle", "**7% weight loss**, **150 min/week** activity + resistance 2-3 times, ICMR-NIN 2024 diet, yoga, sleep, quit tobacco."],
+        ["Drugs", "**Metformin 500-850 mg BD** if BMI 35+, age under 60, past GDM; GLP-1 RA or tirzepatide for obesity; no vitamin D."],
+        ["Evidence", "DPP **58% / 31%**; IDPP-1 **28.5% / 26.4% / 28.2%**; IDPP-3 SMS 36%; Da Qing 30-year CV and death down about 26%."],
+        ["Special groups", "Post-GDM test every 1-3 years; youth - metformin ineffective (RISE); elderly - activity, not drugs."],
+        ["Complications", "CV risk (IGT, HbA1c over 6.0%), early retinopathy, neuropathy, albuminuria, MASLD."],
+        ["Follow-up", "Review 3-6 monthly; glucose or HbA1c **yearly**; BP, lipids, liver; aim for **prediabetes remission**."],
+        ["Programme", "NP-NCD at Ayushman Arogya Mandir, **75/25 initiative**, Fit India, Eat Right India."],
+        ["Exam traps", "FPG alone misses isolated IGT; lifestyle beats metformin; IDRS has no BMI."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "From screening to a prevention plan",
+        caption: "NP-NCD pathway with ADA confirmation.",
+        steps: [
+          { label: "Adult 30 or over: CBAC or IDRS", detail: "IDRS 60 or more, or CBAC above 4: test", tone: "decision" },
+          { label: "Random capillary glucose", detail: "140 mg/dL or more: refer for venous test" },
+          { label: "Confirm with OGTT or FPG plus HbA1c", detail: "IFG 100-125, IGT 140-199, HbA1c 5.7-6.4%", tone: "decision" },
+          { label: "Diabetic range?", detail: "Switch to the diabetes pathway", tone: "warn" },
+          { label: "Lifestyle programme", detail: "7% weight loss, 150 min/week, diet, yoga" },
+          { label: "High risk: add metformin", detail: "500-850 mg BD; BMI 35+, under 60, past GDM" },
+          { label: "Yearly retest and CV risk care", detail: "Aim for return to normal glucose", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Prevention ladder",
+        caption: "Add the next step when risk stays high or glucose rises.",
+        steps: [
+          { label: "Population measures", detail: "Maternal nutrition, Eat Right India, Fit India" },
+          { label: "Individual lifestyle advice", detail: "Plate method, walking, sleep, no tobacco" },
+          { label: "Structured lifestyle programme", detail: "Group sessions, coach, SMS prompts (IDPP-3)" },
+          { label: "Metformin", detail: "500 mg BD, up to 850 mg BD; check B12" },
+          { label: "Weight-loss drugs for obesity", detail: "Semaglutide 2.4 mg or tirzepatide 5-15 mg weekly" },
+          { label: "Metabolic surgery", detail: "BMI 35+, or 32.5+ with comorbidity in Asians", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "IFG vs IGT vs raised HbA1c",
+        columns: ["Feature", "IFG", "IGT", "HbA1c 5.7-6.4%"],
+        rows: [
+          ["Main defect", "Liver insulin resistance", "Muscle insulin resistance", "Mixed"],
+          ["Test", "Fasting glucose", "75 g OGTT", "HbA1c"],
+          ["CV risk", "Modest", "Higher", "Rises above 6.0%"],
+          ["In Indians", "Less common", "Isolated IGT common", "Anaemia distorts"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Prediabetes**: IFG 100-125, IGT 140-199, or HbA1c 5.7-6.4%.",
+            "WHO starts IFG at **110**, not 100.",
+            "India: **15.3%** of adults, more than have diabetes.",
+            "Progression is about **5-10% a year**, faster in Indians.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Central obesity**: waist 90 cm in men, 80 cm in women.",
+            "Family history, age over 30, **past GDM**, PCOS.",
+            "Inactivity, refined carbohydrates, sugary drinks, poor sleep, tobacco.",
+            "**Thin-fat** Indian phenotype from early undernutrition.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "**IFG** comes from liver insulin resistance.",
+            "**IGT** comes from muscle insulin resistance.",
+            "Combined IFG and IGT carries **double the risk**.",
+            "Liver and pancreatic fat drive both; **10-15 kg loss** can reverse it.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**NP-NCD** screens everyone 30 and over with CBAC and capillary glucose.",
+            "**IDRS** of 60 or more means high risk.",
+            "**OGTT** is the best test in Indians; fasting glucose misses IGT.",
+            "Check **haemoglobin** before trusting HbA1c.",
+            "Add lipids, BP, liver tests and **CV risk** estimate.",
+          ],
+        },
+        {
+          title: "Differential diagnosis",
+          points: [
+            "**Early diabetes** near the cut-off; repeat or do OGTT.",
+            "**Stress or steroid** hyperglycaemia.",
+            "**GCK-MODY**: lean, young, stable fasting glucose 99-144.",
+            "Lab artefact: **delayed spinning** lowers glucose.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Lose at least **7% of body weight**.",
+            "Walk **150 minutes a week**; resistance training 2-3 times.",
+            "Cereals about **45% of energy**, added sugar under 5% (ICMR-NIN 2024).",
+            "**Yoga** and SMS reminders help Indians keep going.",
+            "Quit tobacco and sleep **7-8 hours**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Metformin 500-850 mg twice daily** for high-risk people.",
+            "Best responders: **BMI 35 or more**, under 60, past GDM.",
+            "Check **vitamin B12** on long-term metformin.",
+            "Obesity: **semaglutide or tirzepatide**; tirzepatide cut progression about 94%.",
+            "**Vitamin D** does not prevent diabetes.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Past GDM**: OGTT 4-12 weeks postpartum, then every 1-3 years.",
+            "**Youth**: lifestyle; metformin did not work in RISE.",
+            "**Elderly**: activity and strength; drugs rarely needed.",
+            "**Antipsychotics**: check glucose 3-monthly in the first year.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**CV risk** is raised, highest with IGT.",
+            "Early **retinopathy, neuropathy and albuminuria** can appear.",
+            "**Da Qing 30 years**: lifestyle cut CV events and deaths by about 26%.",
+            "Ketones or weight loss mean **diabetes**, not prediabetes.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ADA 2026**: lifestyle programme for all, metformin for high risk.",
+            "**IDF 2024**: one-hour glucose 155 mg/dL proposed.",
+            "**Prediabetes remission** linked to fewer CV deaths (2023-2025).",
+            "**ICMR-NIN 2024** diet guidelines set Indian food targets.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for diabetes prevention",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Metformin", "500-850 mg oral twice daily with meals", "Long term, yearly review", "GI upset, B12 deficiency; eGFR under 30"],
+            ["Acarbose", "25-100 mg oral three times daily with meals", "Long term", "Flatulence, diarrhoea"],
+            ["Pioglitazone", "15-30 mg oral once daily", "Long term", "Weight gain, oedema, heart failure"],
+            ["Orlistat", "120 mg oral three times daily", "Up to 4 years", "Oily stools, vitamin loss"],
+            ["Semaglutide 2.4 mg", "0.25 mg SC weekly, up monthly to 2.4 mg", "Long term", "Nausea, gallstones"],
+            ["Tirzepatide", "2.5 mg SC weekly, up 2.5 mg every 4 weeks", "Long term", "Nausea, gallstones"],
+          ],
+        },
+        {
+          heading: "Prevention trials",
+          columns: ["Trial", "Intervention", "Reduction"],
+          rows: [
+            ["DPP (USA)", "Lifestyle vs metformin 850 mg BD", "58% vs 31%"],
+            ["IDPP-1 (India)", "Lifestyle, metformin 250 mg BD, both", "28.5%, 26.4%, 28.2%"],
+            ["IDPP-3 (India)", "SMS prompts", "About 36%"],
+            ["Finnish DPS", "Intensive lifestyle", "58%"],
+            ["Da Qing", "Diet and exercise 6 years", "CV events and deaths down 26% at 30 years"],
+          ],
+        },
+        {
+          heading: "Indian Diabetes Risk Score",
+          columns: ["Item", "Categories", "Score"],
+          rows: [
+            ["Age", "Under 35 / 35-49 / 50+", "0 / 20 / 30"],
+            ["Waist (women/men, cm)", "Under 80/90 / 80-89/90-99 / 90+/100+", "0 / 10 / 20"],
+            ["Physical activity", "Vigorous / moderate / mild / sedentary", "0 / 10 / 20 / 30"],
+            ["Family history", "None / one parent / both", "0 / 10 / 20"],
+          ],
+        },
+      ],
+      remember: [
+        "**100-125, 140-199, 5.7-6.4** define prediabetes (ADA).",
+        "**7% and 150**: weight loss and minutes of activity.",
+        "**DPP 58/31**; **IDPP 28.5/26.4/28.2**.",
+        "**IDRS 60+** means test now; it has no BMI.",
+        "In Indians, **OGTT beats fasting glucose**.",
+        "Metformin best with **BMI 35+, under 60, past GDM**.",
+        "**Da Qing**: lifestyle saves lives 30 years later.",
+      ],
+    },
+  },
 };
 
 export default revision;
