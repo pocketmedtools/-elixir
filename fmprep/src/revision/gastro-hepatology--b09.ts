@@ -649,6 +649,222 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "gastro-hepatology-ascites-approach": {
+    checked: "2026-10",
+    updated: [
+      "AASLD 2021 ascites guidance: SAAG 1.1 g/dL, tap every admitted patient, no routine FFP before paracentesis.",
+      "BSG 2021 cirrhotic ascites guideline: tunnelled drains for palliation only.",
+      "AASLD 2020 vascular liver disorders guidance: stepwise Budd-Chiari ladder; DOACs allowed in selected non-APS patients.",
+      "Baveno VII 2022: porto-sinusoidal vascular disorder (PSVD) replaces idiopathic non-cirrhotic portal hypertension.",
+      "ESC 2025 myocarditis and pericarditis guideline: multimodality imaging for constrictive pericarditis.",
+    ],
+    master: {
+      heading: "Master revision table - approach to ascites (non-cirrhotic causes)",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Pathological peritoneal fluid; **flank dullness needs about 1,500 mL**, ultrasound detects **100 mL**; IAC grades 1-3."],
+        ["Causes", "Cirrhosis **80-85%**, malignancy **10%**, heart failure **3%**, TB **2%** (more in India); **5% mixed**."],
+        ["Pathophysiology", "Starling forces; **SAAG reflects portal pressure**; leaky normal sinusoids give high protein in post-sinusoidal block; VEGF capillary leak in malignancy."],
+        ["SAAG x protein", "High/low = cirrhosis; **high/high = heart, constriction, early Budd-Chiari**; low/high = TB, tumour, pancreas, bile; low/low = nephrotic."],
+        ["History", "Alcohol, hepatitis, orthopnoea, frothy urine, fever and sweats, weight loss, OCP/pregnancy, surgery, filarial area."],
+        ["Examination", "**JVP and Kussmaul sign**, CLD stigmata, tender hepatomegaly, back veins (IVC), Virchow node, **Sister Mary Joseph nodule**, Blumer shelf, anasarca."],
+        ["Paracentesis", "**Every new ascites**; left lower quadrant 3 cm medial and cephalad to ASIS; **no routine FFP**; cells, albumin, protein, culture bottles."],
+        ["Special fluid tests", "**ADA 39+** TB; **cytology x3** (96% for carcinomatosis); **TG over 200** chylous; **amylase over 1,000** pancreatic; bilirubin above serum biliary; creatinine above serum urinary."],
+        ["Secondary peritonitis", "**2 of 3**: protein over 1 g/dL, glucose under 50 mg/dL, LDH above serum ULN; polymicrobial; CEA over 5 or ALP over 240 - perforation."],
+        ["Imaging", "Doppler USG (hepatic veins, IVC, portal vein); echo and **BNP over 364**; CECT; CT/MR venography; laparoscopy for unexplained low SAAG."],
+        ["Management", "**Diuretics only for high SAAG**; cardiac - loop diuretic, pericardiectomy; nephrotic - ACEi, diuretic; TB - 2HRZE/4HRE; malignant - tap, tunnelled catheter, treat primary."],
+        ["Budd-Chiari", "Pain, hepatomegaly, ascites; **caudate hypertrophy**; Asia IVC web, West MPN (JAK2); **anticoagulate, angioplasty/stent, TIPS, transplant**."],
+        ["Chylous / pancreatic", "Chylous - low-fat MCT diet, octreotide, DEC 6 mg/kg/day 12 days if filarial; pancreatic - NJ feed, octreotide, **ERCP duct stent**."],
+        ["Follow-up", "Weight loss 0.5-1 kg/day on diuretics; electrolytes; Budd-Chiari INR, stent Doppler, **6-monthly HCC surveillance**."],
+        ["Exam one-liners", "**Look at the JVP**; SAAG beats exudate/transudate; CA-125 raised in TB too; caudate lobe drains direct to IVC."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "New ascites - diagnostic algorithm",
+        caption: "Tap first; SAAG then protein; then targeted tests.",
+        steps: [
+          { label: "Ascites confirmed clinically or on ultrasound", detail: "Check JVP, CLD stigmata, nodes, pelvic mass" },
+          { label: "Diagnostic paracentesis", detail: "Cells, albumin, protein, culture bottles; no FFP needed" },
+          { label: "SAAG 1.1 g/dL or more?", detail: "Yes = portal hypertension; No = peritoneal or other", tone: "decision" },
+          { label: "High SAAG: protein under 2.5 or 2.5+?", detail: "Low = cirrhosis; high = heart, constriction, Budd-Chiari (BNP, echo, Doppler)" },
+          { label: "Low SAAG: protein high or low?", detail: "High = ADA, cytology x3, amylase, CT; low = urine protein (nephrotic)" },
+          { label: "Still unexplained", detail: "Laparoscopy with peritoneal biopsy; transjugular biopsy with HVPG", tone: "warn" },
+          { label: "Cause found - treat the cause", detail: "Diuretics only if high SAAG", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Budd-Chiari syndrome - stepwise treatment",
+        caption: "Move up a step only if the one below fails.",
+        steps: [
+          { label: "Anticoagulation and treat the cause", detail: "LMWH then warfarin INR 2-3 lifelong; diuretics; MPN therapy" },
+          { label: "Angioplasty or stenting", detail: "Short-segment hepatic vein or IVC stenosis (common in India)" },
+          { label: "TIPS", detail: "If ascites, pain or liver function do not improve" },
+          { label: "Liver transplantation", detail: "Fulminant presentation or TIPS failure", tone: "warn" },
+          { label: "Lifelong follow-up", detail: "Stent Doppler, INR, HCC surveillance every 6 months", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Ascites by SAAG and protein",
+        root: "Diagnostic tap: SAAG and total protein",
+        arms: [
+          { label: "High SAAG, low protein", tone: "neutral", steps: ["Cirrhosis", "Massive liver metastases", "Late Budd-Chiari", "Acute liver failure"] },
+          { label: "High SAAG, high protein", tone: "warn", steps: ["Heart failure", "Constrictive pericarditis", "Early Budd-Chiari, SOS", "Myxoedema"] },
+          { label: "Low SAAG, high protein", tone: "decision", steps: ["Peritoneal carcinomatosis", "TB peritonitis", "Pancreatic or biliary ascites", "Serositis, secondary peritonitis"] },
+          { label: "Low SAAG, low protein", tone: "good", steps: ["Nephrotic syndrome", "Protein-losing enteropathy", "Severe malnutrition"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Ascites** is pathological fluid in the peritoneal cavity.",
+            "Flank dullness needs about **1,500 mL**; ultrasound finds 100 mL.",
+            "Cirrhosis causes **80-85%**; malignancy, heart failure and TB most of the rest.",
+            "About **5%** have two causes at once.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "**SAAG** reflects portal pressure: 1.1 g/dL or more means portal hypertension.",
+            "Normal sinusoids leak protein, so **cardiac and Budd-Chiari** fluid is protein-rich.",
+            "Cirrhotic sinusoids are capillarised, so cirrhotic fluid is **protein-poor**.",
+            "Malignant ascites comes from **VEGF capillary leak** and blocked lymphatics.",
+            "**Caudate lobe** enlarges in Budd-Chiari because it drains straight into the IVC.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Ask about alcohol, orthopnoea, **frothy urine**, fever, weight loss and OCP use.",
+            "**Raised JVP** means cardiac or pericardial ascites.",
+            "**Kussmaul sign** and pericardial knock suggest constriction.",
+            "**Sister Mary Joseph nodule** or Virchow node suggest malignancy.",
+            "Tender hepatomegaly with back veins suggests **Budd-Chiari**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Tap every new ascites**; FFP is not needed first.",
+            "Routine: **cell count, albumin, protein**, culture in blood-culture bottles.",
+            "**ADA 39 or more** suggests TB; cytology three times for malignancy.",
+            "**Triglycerides over 200** means chylous; amylase over 1,000 means pancreatic.",
+            "**BNP over 364** pg/mL favours cardiac ascites.",
+            "**Doppler** hepatic veins and IVC for Budd-Chiari.",
+          ],
+        },
+        {
+          title: "Differential diagnosis",
+          points: [
+            "High SAAG, high protein: **heart, constriction, early Budd-Chiari**.",
+            "Low SAAG, high protein: **TB, tumour, pancreas, bile**.",
+            "Low SAAG, low protein: **nephrotic syndrome**.",
+            "**CA-125** is raised in TB and cancer alike.",
+            "Secondary peritonitis: **2 of 3** - protein over 1, glucose under 50, high LDH.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Diuretics work only for high SAAG** ascites.",
+            "Cardiac: **loop diuretic**, heart failure therapy, pericardiectomy for constriction.",
+            "Nephrotic: treat kidney disease, **ACE inhibitor**, loop diuretic.",
+            "TB: **2HRZE/4HRE** for 6 months.",
+            "Malignant: **therapeutic tap**, tunnelled catheter, treat the primary.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Budd-Chiari: **anticoagulation first**, then angioplasty or stent.",
+            "Then **TIPS**, then liver transplant if needed.",
+            "Chylous: **MCT diet**, octreotide, treat lymphoma, TB or filariasis.",
+            "Pancreatic: bowel rest, octreotide, **ERCP duct stent**.",
+            "Biliary: **ERCP stent** to divert bile.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: think fatty liver, HELLP, Budd-Chiari; use LMWH not warfarin.",
+            "**Children**: nephrotic syndrome and TB lead.",
+            "**Elderly**: malignancy and heart failure lead.",
+            "**HIV**: TB and lymphoma; ADA may be falsely low.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer unexplained, high-SAAG non-cirrhotic, or suspected Budd-Chiari ascites.",
+            "On diuretics: weight, **sodium, potassium, creatinine** at 1 week then monthly.",
+            "Budd-Chiari: INR, stent Doppler and **6-monthly HCC surveillance**.",
+            "Early **palliative care** for malignant ascites.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**AASLD 2021** confirms SAAG 1.1 and no routine FFP before taps.",
+            "**AASLD 2020** endorses the stepwise Budd-Chiari ladder.",
+            "**Baveno VII 2022** introduced the term PSVD.",
+            "**ESC 2025** updated constrictive pericarditis imaging.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in non-cirrhotic ascites",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Spironolactone", "100-400 mg oral daily", "Titrate every 3-5 days", "Hyperkalaemia; high SAAG only"],
+            ["Furosemide", "40-160 mg oral daily", "Titrate to weight", "Hyponatraemia, AKI"],
+            ["Enoxaparin", "1 mg/kg SC twice daily", "Bridge to warfarin", "Bleeding; adjust in CKD"],
+            ["Warfarin", "2.5-5 mg oral daily", "Lifelong in Budd-Chiari, INR 2-3", "Bleeding; teratogenic"],
+            ["Octreotide", "100 micrograms SC three times daily", "2-4 weeks", "Gallstones, hyperglycaemia"],
+            ["Diethylcarbamazine", "6 mg/kg/day oral", "12 days", "Fever, headache"],
+          ],
+        },
+        {
+          heading: "SAAG and protein grid",
+          columns: ["SAAG", "Protein under 2.5 g/dL", "Protein 2.5 g/dL or more"],
+          rows: [
+            ["1.1 or more", "Cirrhosis, liver metastases", "Heart failure, constriction, Budd-Chiari"],
+            ["Under 1.1", "Nephrotic syndrome", "TB, malignancy, pancreatic, biliary"],
+          ],
+        },
+        {
+          heading: "Ascitic fluid cut-offs",
+          columns: ["Test", "Cut-off", "Meaning"],
+          rows: [
+            ["SAAG", "1.1 g/dL or more", "Portal hypertension"],
+            ["Neutrophils", "250/mm3 or more", "Peritonitis"],
+            ["ADA", "39 IU/L or more", "TB"],
+            ["Triglycerides", "Over 200 mg/dL", "Chylous"],
+            ["Amylase", "Over 1,000 IU/L", "Pancreatic"],
+            ["Bilirubin", "Above serum", "Bile leak"],
+            ["Creatinine", "Above serum", "Urine leak"],
+          ],
+        },
+      ],
+      remember: [
+        "**Tap every new ascites.**",
+        "**SAAG 1.1** = portal hypertension; protein **2.5** sorts liver from heart.",
+        "High-high: **'Heart, Hepatic veins, Hypothyroid'**.",
+        "Low-high: **'TB, Tumour, Pancreas, Bile'**.",
+        "**Look at the JVP** in every ascites.",
+        "**Diuretics fail** in low-SAAG ascites.",
+        "**Caudate hypertrophy** means Budd-Chiari.",
+        "Milky fluid: **triglycerides over 200** is chylous.",
+      ],
+    },
+  },
 };
 
 export default revision;

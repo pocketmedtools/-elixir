@@ -1253,20 +1253,13 @@ topics.push({
       ],
     },
     {
-      heading: "Complications and prognosis",
+      heading: "Complications, prognosis and follow-up",
       points: [
         "**Intestinal obstruction** from strictures, adhesions or matted loops - the commonest complication. [Bailey and Love 28e]",
         "**Perforation** (free or contained), **fistulae** (enterocutaneous, entero-enteric), **abscess** and **haemorrhage**. [Bailey and Love 28e]",
         "**Malabsorption** from bacterial overgrowth above strictures (blind loop), bile-salt loss with ileal disease, and lymphatic obstruction - B12 deficiency, steatorrhoea. [Harrison 22e]",
-        "**Obstructive jaundice** from periportal nodes, **female infertility** from associated genital TB, and **adhesive obstruction** years later. [INDEX-TB 2016]",
         "**ATT-related**: DILI in about **5-10%** of Indians on first-line ATT, peripheral neuropathy, optic neuritis (ethambutol), gout (pyrazinamide). [NTEP 2021]",
         "**Prognosis**: with timely ATT, cure exceeds **90%**; mortality rises with **delayed diagnosis, cirrhosis, HIV, old age and surgical complications**. [INDEX-TB 2016]",
-      ],
-    },
-    {
-      heading: "Referral, follow-up and monitoring",
-      points: [
-        "**Refer** for colonoscopy, CECT, laparoscopy or EUS when diagnosis is uncertain, and for any surgical complication. [INDEX-TB 2016]",
         "**Follow-up monthly** during ATT: weight (revise FDC dose by weight band), symptoms, adherence (99DOTS, family DOT, Ni-kshay app), side effects. [NTEP 2021]",
         "**Clinical response** (fever, appetite, weight) is expected within **4-8 weeks**; failure needs drug-resistance testing and re-evaluation for Crohn disease, lymphoma or cancer. [ISG Crohn consensus 2015]",
         "**Repeat colonoscopy at 2-6 months** in intestinal TB (or when Crohn was a differential) to document **mucosal healing**, which confirms the diagnosis. [ISG Crohn consensus 2015]",
@@ -1796,7 +1789,7 @@ topics.push({
       ],
     },
     {
-      heading: "Referral, follow-up and monitoring",
+      heading: "Referral, follow-up and prevention",
       points: [
         "**Refer to gastroenterology/hepatology** for unexplained ascites after the first tap, suspected Budd-Chiari or PSVD, and any high-SAAG ascites without obvious cirrhosis. [AASLD 2021]",
         "**Refer to cardiology** for raised JVP, high-protein high-SAAG fluid or raised BNP; **to gynaecological oncology** for malignant cytology with adnexal mass or raised CA-125. [ESMO 2023]",
@@ -1804,16 +1797,10 @@ topics.push({
         "**Budd-Chiari**: INR monthly on warfarin, Doppler every 6 months for stent patency, and **HCC surveillance with ultrasound and AFP every 6 months**. [AASLD 2020]",
         "**Re-tap** if ascites recurs unexpectedly, or with fever, pain or encephalopathy; repeat cytology up to 3 times if malignancy is suspected. [AASLD 2021]",
         "**Palliative care involvement** early for malignant ascites - drainage plans, symptom control and home catheter care. [ESMO 2023]",
-      ],
-    },
-    {
-      heading: "Prevention, counselling and programme links",
-      points: [
         "**Counsel on salt** (about 5 g/day) only for high-SAAG ascites; avoid NSAIDs, which blunt diuretic response and cause AKI. [EASL 2018]",
         "**Women on combined oral contraceptives** with prothrombotic risk factors should be switched to non-oestrogen methods; Budd-Chiari survivors must avoid oestrogen. [EASL 2016]",
         "**NP-NCD screening** for oral, breast and cervical cancer and for hypertension and diabetes at **Ayushman Arogya Mandir** helps catch cancers and heart disease that cause ascites. [NP-NCD 2023]",
         "**TB detection** under NTEP, and **Mass Drug Administration** under the National Filaria Elimination programme to prevent filarial lymphatic disease. [NCVBDC 2023]",
-        "**Hepatitis B vaccination and NVHCP** testing and treatment prevent cirrhotic ascites; alcohol cessation is the most effective single measure. [NVHCP 2018]",
       ],
     },
     {
