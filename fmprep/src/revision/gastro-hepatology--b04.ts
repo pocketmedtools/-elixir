@@ -221,6 +221,635 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "gastro-hepatology-acute-gi-infections-adult": {
+    checked: "2026-10",
+    updated: [
+      "IDSA/SHEA 2021 focused update: fidaxomicin preferred for initial and recurrent CDI; metronidazole only if others unavailable",
+      "ACG 2021 CDI: FMT after second recurrence and for refractory fulminant CDI; no routine probiotics",
+      "AGA 2024: faecal microbiota-based therapies after antibiotics for recurrent CDI",
+      "FDA 2022-2023: rectal and oral microbiome products licensed for recurrence prevention",
+      "Bezlotoxumab discontinued by manufacturer in 2025",
+      "WHO BPPL 2024: fluoroquinolone-resistant Shigella high priority; azithromycin preferred in India",
+    ],
+    master: {
+      heading: "Master revision table - infective colitis and antibiotic-associated diarrhoea",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Colonic inflammation by invasive or toxigenic organisms: **dysentery** (blood, mucus, tenesmus, fever) vs watery small-bowel diarrhoea."],
+        ["Main organisms", "**C. difficile**, **E. histolytica**, **Shigella**, Campylobacter, non-typhoidal Salmonella, **STEC**, CMV (immunocompromised)."],
+        ["CDI risk", "**Clindamycin, fluoroquinolones, cephalosporins, carbapenems**; age over 65, hospital, **PPI**, IBD; ribotype 027."],
+        ["CDI mechanism", "Microbiome loss, spore germination; **toxins A and B** inactivate Rho GTPases; **pseudomembranes**; spores resist alcohol."],
+        ["CDI severity", "Non-severe; **severe WBC over 15,000 or creatinine over 1.5**; **fulminant: shock, ileus, megacolon**."],
+        ["CDI diagnosis", "Unformed stool, 3+ in 24 h, no laxatives; **GDH plus toxin** or NAAT plus toxin; **no test of cure**; not under 12 months."],
+        ["CDI treatment", "**Fidaxomicin 200 mg BD 10 d** or **vancomycin 125 mg QID 10 d**; fulminant: vancomycin 500 mg QID enteral + IV metronidazole + rectal vancomycin; surgery."],
+        ["Recurrent CDI", "Within 8 weeks; fidaxomicin extended-pulsed or vancomycin taper-pulse; **FMT after 2nd recurrence** (80-90% cure)."],
+        ["Amoebic colitis", "Gradual bloody diarrhoea, flask ulcers; stool antigen/PCR; **metronidazole or tinidazole then paromomycin/diloxanide**; never steroids."],
+        ["Shigella", "Infective dose 10-100; acute febrile dysentery; **azithromycin 500 mg OD 3 d**, ceftriaxone if severe; HUS, reactive arthritis."],
+        ["STEC", "Bloody diarrhoea, little fever; **no antibiotics, no loperamide**; watch for HUS at 5-10 days."],
+        ["Traveller's diarrhoea", "ETEC commonest; loperamide for mild; **azithromycin 1 g single dose** for moderate-severe; rifaximin only non-invasive."],
+        ["Stool PCR panels", "Fast and broad but detect colonisation; no susceptibility; send culture."],
+        ["Prevention", "Antibiotic stewardship, PPI deprescribing, **soap and water**, chlorine cleaning, safe water and sanitation, IDSP reporting."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected C. difficile: test and treat",
+        caption: "Test only the right patient, treat by severity.",
+        steps: [
+          { label: "3+ unformed stools in 24 h, recent antibiotics", detail: "No laxatives in 48 h; age over 12 months" },
+          { label: "GDH plus toxin EIA (NAAT to arbitrate)", detail: "Do not test formed stool; no test of cure", tone: "decision" },
+          { label: "Stop inciting antibiotic and PPI; isolate", detail: "Contact precautions, soap and water" },
+          { label: "Grade severity", detail: "WBC over 15,000 or creatinine over 1.5 = severe", tone: "decision" },
+          { label: "Non-severe or severe", detail: "Fidaxomicin 200 mg BD or vancomycin 125 mg QID for 10 days", tone: "good" },
+          { label: "Fulminant: shock, ileus, megacolon", detail: "Vancomycin 500 mg QID enteral + IV metronidazole + rectal vancomycin; surgery", tone: "warn" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Recurrent CDI ladder",
+        caption: "Recurrence = return within 8 weeks of successful treatment.",
+        steps: [
+          { label: "Initial episode", detail: "Fidaxomicin 10 days (preferred) or oral vancomycin 10 days" },
+          { label: "First recurrence", detail: "Fidaxomicin standard or extended-pulsed; or vancomycin taper-pulse" },
+          { label: "Second recurrence", detail: "Vancomycin taper, vancomycin then rifaximin, or fidaxomicin" },
+          { label: "Then microbiome therapy", detail: "FMT (80-90% cure) or licensed microbiome product", tone: "good" },
+          { label: "Refractory fulminant", detail: "Colectomy or loop ileostomy with lavage; FMT if non-surgical", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Amoebic vs bacillary vs C. difficile colitis",
+        columns: ["Feature", "Amoebic", "Bacillary (Shigella)", "C. difficile"],
+        rows: [
+          ["Onset", "Gradual, 1-3 weeks", "Abrupt", "During or after antibiotics"],
+          ["Fever", "Often absent", "High", "Low-grade"],
+          ["Stool", "Bloody mucoid, offensive", "Many tiny blood-mucus stools", "Watery, rarely bloody"],
+          ["Lesion", "Flask-shaped ulcers", "Diffuse superficial ulcers", "Pseudomembranes"],
+          ["Treatment", "Metronidazole then luminal agent", "Azithromycin or ceftriaxone", "Fidaxomicin or oral vancomycin"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Infective colitis** gives dysentery: small frequent stools with blood, mucus, tenesmus and fever.",
+            "Only **10-25% of antibiotic-associated diarrhoea** is C. difficile, but nearly all antibiotic colitis is.",
+            "**C. difficile** is the commonest healthcare-associated infection; a third are community-onset.",
+            "**Fluoroquinolone-resistant Shigella** is a WHO 2024 high-priority pathogen.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**CDI**: clindamycin, fluoroquinolones, cephalosporins, carbapenems; age over 65, hospital stay, **PPI**.",
+            "**Amoebiasis**: cysts in contaminated water; steroids precipitate fulminant colitis.",
+            "**Shigella**: only 10-100 organisms needed, so household spread is easy.",
+            "**STEC** from undercooked beef; **Campylobacter** from poultry and raw milk.",
+            "Immunocompromised: think **CMV**; MSM: gonococcal, chlamydial and herpes proctitis.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Antibiotics remove commensals, letting **C. difficile spores germinate**.",
+            "**Toxins A and B** break the cytoskeleton, causing **pseudomembranes**.",
+            "**Spores resist alcohol** and survive months on surfaces.",
+            "**E. histolytica** forms **flask-shaped ulcers** and reaches the liver via the portal vein.",
+            "**Shiga toxin** injures glomerular endothelium, causing **HUS**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**CDI**: 3 or more unformed stools a day, starting 5-10 days into antibiotics.",
+            "**Stopping diarrhoea with a swelling abdomen** in CDI means ileus or megacolon.",
+            "**Amoebic**: gradual bloody diarrhoea, little fever; **bacillary**: abrupt high fever, tenesmus.",
+            "**STEC**: bloody diarrhoea without fever; HUS 5-10 days later.",
+            "Check hydration, distension, peritonism, liver tenderness and urine output.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Test **unformed stool only**, no laxatives for 48 hours, never under 12 months.",
+            "**GDH plus toxin EIA**, or NAAT plus toxin; NAAT alone over-diagnoses carriage.",
+            "**No test of cure** in CDI.",
+            "Amoeba: microscopy cannot separate **E. dispar**; use stool antigen or PCR.",
+            "**PCR panels** detect colonisation; send culture for antibiotic sensitivity.",
+            "Bloods: CBC, creatinine, lactate, albumin; platelets and smear if HUS feared.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Non-severe CDI**: WBC 15,000 or less and creatinine under 1.5 mg/dL.",
+            "**Severe CDI**: WBC over 15,000 or creatinine over 1.5 mg/dL.",
+            "**Fulminant CDI**: hypotension, shock, ileus or megacolon.",
+            "**Recurrence**: symptoms return within 8 weeks after successful treatment.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**CDI**: fidaxomicin 200 mg BD 10 days, or vancomycin 125 mg orally QID 10 days.",
+            "**Metronidazole** for CDI only when neither drug is available.",
+            "**Amoebic**: metronidazole 500-750 mg TDS 7-10 days, then **paromomycin or diloxanide**.",
+            "**Shigella**: azithromycin 500 mg daily 3 days; avoid empirical ciprofloxacin in India.",
+            "**STEC**: no antibiotics and no loperamide.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "**Fulminant CDI**: vancomycin 500 mg QID by mouth or tube plus IV metronidazole 500 mg 8-hourly.",
+            "Add **rectal vancomycin** if ileus; call surgeons early.",
+            "**Colectomy** if shock, perforation, megacolon or lactate over 5 mmol/L.",
+            "Contact precautions, **soap and water**, chlorine cleaning until 48 hours symptom-free.",
+            "Severe shigellosis: **ceftriaxone 1-2 g IV daily** 3-5 days.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Toxic megacolon** over 6 cm, perforation and sepsis in CDI and amoebiasis.",
+            "**Recurrent CDI** in 20-25% after first episode, 40-60% after second.",
+            "**HUS** after STEC or S. dysenteriae type 1.",
+            "**Guillain-Barre** after Campylobacter; reactive arthritis after Shigella or Salmonella.",
+            "**Amoebic liver abscess**, amoeboma and stricture.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**IDSA/SHEA 2021**: fidaxomicin preferred; metronidazole demoted.",
+            "**ACG 2021** and **AGA 2024**: FMT after second recurrence and for refractory fulminant CDI.",
+            "Licensed **microbiome products** for recurrence approved 2022-2023.",
+            "**Bezlotoxumab** discontinued in 2025.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for infective colitis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Fidaxomicin", "200 mg oral BD", "10 days; extended-pulsed 25 days", "Costly; limited availability in India"],
+            ["Vancomycin (oral)", "125 mg oral QID; 500 mg QID if fulminant", "10 days; taper for recurrence", "IV route useless for CDI"],
+            ["Metronidazole", "500 mg oral TDS (CDI fallback) or IV 8-hourly", "10-14 days", "Disulfiram reaction, neuropathy"],
+            ["Tinidazole", "2 g oral once daily", "3 days", "Metallic taste; avoid first trimester"],
+            ["Paromomycin", "25-35 mg/kg/day oral in 3 doses", "7 days", "Mild GI upset; safe in pregnancy"],
+            ["Diloxanide furoate", "500 mg oral TDS", "10 days", "Flatulence"],
+            ["Azithromycin", "500 mg oral daily or 1 g single dose", "1-3 days", "QT prolongation"],
+            ["Ceftriaxone", "1-2 g IV daily", "3-5 days", "Biliary sludge; promotes CDI"],
+          ],
+        },
+        {
+          heading: "CDI severity and treatment",
+          columns: ["Category", "Criteria", "Treatment"],
+          rows: [
+            ["Non-severe", "WBC 15,000 or less, creatinine under 1.5", "Fidaxomicin or vancomycin 10 days"],
+            ["Severe", "WBC over 15,000 or creatinine over 1.5", "Fidaxomicin or vancomycin 10 days"],
+            ["Fulminant", "Shock, ileus, megacolon", "Vancomycin 500 mg QID + IV metronidazole + rectal vancomycin; surgery"],
+            ["Recurrent", "Within 8 weeks", "Fidaxomicin or vancomycin taper; FMT after second"],
+          ],
+        },
+        {
+          heading: "Organism clues",
+          columns: ["Organism", "Clue", "Avoid"],
+          rows: [
+            ["C. difficile", "Recent antibiotics, leucocytosis", "Loperamide, IV vancomycin"],
+            ["E. histolytica", "Gradual, afebrile, liver abscess", "Steroids"],
+            ["Shigella", "High fever, tenesmus, HUS", "Empirical ciprofloxacin"],
+            ["STEC", "Bloody, afebrile", "Antibiotics, loperamide"],
+            ["Campylobacter", "Pseudo-appendicitis, GBS", "Fluoroquinolones (resistance)"],
+          ],
+        },
+      ],
+      remember: [
+        "**Fidaxomicin or oral vancomycin** for CDI; metronidazole is the fallback.",
+        "**Soap beats sanitiser** for C. difficile spores.",
+        "**Tissue agent then luminal agent** for amoebiasis.",
+        "**No steroids before excluding amoeba and C. difficile.**",
+        "**STEC: no antibiotics, no loperamide.**",
+        "**No test of cure** for C. difficile.",
+        "Ulcers: **flask** amoeba, **transverse** TB, **longitudinal** Crohn, **pseudomembrane** C. difficile.",
+      ],
+    },
+  },
+
+  "gastro-hepatology-intestinal-ischaemia": {
+    checked: "2026-10",
+    updated: [
+      "WSES 2022 AMI update: immediate CT angiography regardless of creatinine; endovascular-first without peritonitis",
+      "ESVS 2017: lactate not diagnostic, normal D-dimer helps exclude; hybrid retrograde open mesenteric stenting",
+      "UEG 2020 European CMI guideline: single-vessel CMI recognised; stenting first line",
+      "ESVS 2021 venous thrombosis: anticoagulation 3-6 months for provoked MVT, long term if unprovoked",
+      "ESC 2024 AF: CHA2DS2-VA and DOAC preference to prevent embolic AMI",
+    ],
+    master: {
+      heading: "Master revision table - mesenteric ischaemia and ischaemic colitis",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Intestinal hypoperfusion: **acute (AMI)**, **chronic (CMI)** and **colon ischaemia** (commonest, usually mild)."],
+        ["AMI types", "**Embolism 40-50%** (AF), **thrombosis 20-35%** (ostial atherosclerosis), **NOMI 10-20%** (shock, vasopressors), **MVT 5-15%** (thrombophilia)."],
+        ["Pathophysiology", "Mucosa dies in 3-6 h, transmural by 6-12 h; **pain out of proportion** because peritoneum spared early; reperfusion injury and sepsis."],
+        ["Watershed", "**Griffiths point** (splenic flexure) and **Sudeck point** (rectosigmoid); rectum spared."],
+        ["AMI clinical", "Sudden periumbilical pain, **gut emptying, AF**, soft abdomen; late distension, peritonism, bloody stool, shock."],
+        ["Investigations", "**Biphasic CT angiography immediately**, even in CKD; lactate late and non-specific; normal D-dimer makes AMI unlikely."],
+        ["AMI treatment", "Resuscitate, **heparin 80 U/kg then 18 U/kg/h**, antibiotics; endovascular if no peritonitis; else laparotomy: **revascularise, resect, second look 24-48 h**."],
+        ["NOMI and MVT", "NOMI: treat cause, **intra-arterial papaverine**; MVT: **anticoagulation**, check **JAK2**, thrombolysis if worse."],
+        ["Ischaemic colitis", "Older patient, left cramps then **bloody stool within 24 h**; CT then **colonoscopy within 48 h**; single-stripe sign."],
+        ["Colitis severity", "ACG 2015 mild / moderate / severe; **IRCI**, pneumatosis, gangrene or peritonism mean severe; antibiotics for moderate-severe."],
+        ["CMI", "**Post-prandial pain, food fear, weight loss**; duplex (SMA PSV over 275) then CTA; **stent first**; antiplatelet and statin."],
+        ["Prognosis", "AMI mortality **50-70%**, MVT about 20%; short bowel syndrome; colitis 20% need surgery."],
+        ["Prevention", "Anticoagulate **AF**, vascular risk control, stop smoking, MVT anticoagulation 3-6 months or long term."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected acute mesenteric ischaemia",
+        caption: "Time is bowel: do not wait for lactate.",
+        steps: [
+          { label: "Pain out of proportion, AF or vascular risk", detail: "Soft abdomen early; gut emptying", tone: "decision" },
+          { label: "Resuscitate, heparin, antibiotics", detail: "UFH 80 U/kg then 18 U/kg/h; piperacillin-tazobactam" },
+          { label: "Biphasic CT angiography now", detail: "Do not delay for creatinine or lactate", tone: "warn" },
+          { label: "Peritonitis?", detail: "Signs of transmural infarction", tone: "decision" },
+          { label: "No - endovascular revascularisation", detail: "Aspiration embolectomy, stent, thrombolysis", tone: "good" },
+          { label: "Yes - laparotomy", detail: "Revascularise, resect dead bowel, second look 24-48 h", tone: "warn" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Four types of acute mesenteric ischaemia",
+        root: "Acute mesenteric ischaemia",
+        arms: [
+          { label: "Arterial embolism", tone: "warn", steps: ["AF, MI", "SMA 3-10 cm beyond origin", "Embolectomy"] },
+          { label: "Arterial thrombosis", steps: ["Ostial atherosclerosis", "Prior intestinal angina", "Stent or bypass"] },
+          { label: "NOMI", tone: "decision", steps: ["Shock, vasopressors", "Diffuse spasm", "Papaverine, treat cause"] },
+          { label: "Venous thrombosis", tone: "good", steps: ["Thrombophilia, JAK2, cirrhosis", "Subacute", "Anticoagulation"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "AMI vs ischaemic colitis vs chronic mesenteric ischaemia",
+        columns: ["Feature", "Acute mesenteric ischaemia", "Ischaemic colitis", "Chronic mesenteric ischaemia"],
+        rows: [
+          ["Onset", "Sudden, hours", "Sudden, mild", "Months"],
+          ["Pain", "Severe, out of proportion", "Mild left-sided cramps", "15-60 min after meals"],
+          ["Bleeding", "Late", "Early, within 24 h", "None"],
+          ["Key test", "CT angiography", "CT then colonoscopy within 48 h", "Duplex then CT angiography"],
+          ["Outcome", "Mortality 50-70%", "Most resolve in 1-2 weeks", "Stenting relieves symptoms"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Intestinal ischaemia** is acute mesenteric, chronic mesenteric or colonic hypoperfusion.",
+            "**Ischaemic colitis** is the commonest form and is usually mild.",
+            "**AMI** kills 50-70%, mainly through delayed diagnosis.",
+            "Revascularisation within **6-12 hours** greatly improves survival.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Embolism** from AF or recent MI is the commonest AMI cause.",
+            "**Thrombosis** on ostial atherosclerosis, often after months of intestinal angina.",
+            "**NOMI** in shock, on vasopressors, after cardiac surgery or dialysis.",
+            "**MVT** with thrombophilia, JAK2, cirrhosis, pancreatitis, OCP or malignancy.",
+            "Colitis triggers: dehydration, hypotension, aortic surgery, vasoactive drugs, constipation.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Mucosa dies first in **3-6 hours**; transmural infarction follows by 6-12 hours.",
+            "**Pain out of proportion**: visceral pain before peritoneal irritation.",
+            "Watershed: **Griffiths point** (splenic flexure) and **Sudeck point** (rectosigmoid).",
+            "Liver clears portal lactate, so **lactate rises late**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Embolic AMI**: sudden severe pain, vomiting or diarrhoea, AF, soft abdomen.",
+            "**Late AMI**: distension, peritonism, absent bowel sounds, bloody stool, shock.",
+            "**Ischaemic colitis**: left lower cramps then bloody stool within 24 hours.",
+            "**CMI**: post-prandial pain, food fear, weight loss, often a bruit.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Biphasic CT angiography** at once, even with raised creatinine.",
+            "**Normal lactate does not exclude AMI**; normal D-dimer makes it unlikely.",
+            "Late CT signs: **pneumatosis, portal venous gas**, non-enhancing bowel.",
+            "Colitis: CT then **colonoscopy within 48 hours**; single-stripe sign.",
+            "CMI: **duplex** (SMA PSV over 275 cm/s) then CT angiography.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Resuscitate**, nasogastric tube, broad-spectrum antibiotics.",
+            "**Heparin** 80 U/kg bolus then 18 U/kg/h for occlusive AMI and MVT.",
+            "**Endovascular** revascularisation if no peritonitis.",
+            "Mild colitis: fluids, bowel rest, stop offending drugs.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Peritonitis: **laparotomy**, revascularise first, resect only dead bowel.",
+            "**Second-look laparotomy** at 24-48 hours for doubtful bowel.",
+            "**NOMI**: treat cause, reduce vasopressors, intra-arterial papaverine.",
+            "**MVT**: anticoagulation; thrombolysis if worsening; surgery for infarction.",
+            "Severe colitis: antibiotics, surgery for gangrene or no improvement.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Short bowel syndrome** after massive resection; may need parenteral nutrition.",
+            "Sepsis and **multi-organ failure** from reperfusion and translocation.",
+            "**Isolated right colon ischaemia** signals SMA disease and higher mortality.",
+            "Colitis may leave a **stricture**; CMI can thrombose acutely.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Suspected AMI: **same-hour transfer** to a vascular and surgical centre.",
+            "MVT: anticoagulate **3-6 months if provoked**, long term if unprovoked.",
+            "After stenting: lifelong **aspirin and statin**, duplex surveillance.",
+            "Anticoagulate **AF** to prevent recurrent emboli.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**WSES 2022**: CT angiography immediately, endovascular-first without peritonitis.",
+            "**UEG 2020**: chronic ischaemia can occur with single-vessel disease.",
+            "**ESVS 2021**: splanchnic vein thrombosis anticoagulation durations.",
+            "**ESC 2024 AF**: CHA2DS2-VA and DOACs prevent embolic AMI.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in intestinal ischaemia",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Unfractionated heparin", "80 U/kg IV bolus, then 18 U/kg/h", "Until oral anticoagulant", "Bleeding, HIT; aPTT monitoring"],
+            ["Enoxaparin", "1 mg/kg SC 12-hourly", "Bridge; pregnancy", "Reduce if CrCl under 30"],
+            ["Apixaban", "5 mg oral BD (10 mg BD first 7 days for VTE)", "3-6 months or long term", "Avoid Child-Pugh C, APLA, pregnancy"],
+            ["Piperacillin-tazobactam", "4.5 g IV 6-8 hourly", "Until source controlled", "Allergy, C. difficile"],
+            ["Papaverine", "30-60 mg/h intra-arterial", "About 24 hours (NOMI)", "Hypotension"],
+            ["Aspirin", "75-150 mg oral daily", "Lifelong", "GI bleeding"],
+            ["Atorvastatin", "40-80 mg oral daily", "Lifelong", "Myalgia"],
+          ],
+        },
+        {
+          heading: "AMI types",
+          columns: ["Type", "Clue", "Treatment"],
+          rows: [
+            ["Embolism", "AF, sudden, proximal jejunum spared", "Embolectomy"],
+            ["Thrombosis", "Prior intestinal angina, ostial", "Stent or bypass"],
+            ["NOMI", "ICU, vasopressors", "Treat cause, papaverine"],
+            ["Venous", "Young, thrombophilia, subacute", "Anticoagulation"],
+          ],
+        },
+        {
+          heading: "ACG severity of colon ischaemia",
+          columns: ["Severity", "Features", "Action"],
+          rows: [
+            ["Mild", "Segmental, left-sided, no risk factors", "Supportive"],
+            ["Moderate", "Up to 3 risk factors (SBP under 90, HR over 100, Hb under 12, WBC over 15,000)", "Admit, antibiotics"],
+            ["Severe", "More than 3, or peritonism, pneumatosis, gangrene, IRCI", "ICU, surgery consult"],
+          ],
+        },
+      ],
+      remember: [
+        "**Pain out of proportion to signs** = mesenteric ischaemia.",
+        "**Lactate normal, ischaemia possible.**",
+        "**CTA first, creatinine later.**",
+        "**Griffiths and Sudeck** are the watershed points.",
+        "**Revascularise, resect, relook.**",
+        "**CMI triad**: post-prandial pain, food fear, weight loss.",
+        "**MVT**: check JAK2 even with normal counts.",
+      ],
+    },
+  },
+
+  "gastro-hepatology-diverticular-disease": {
+    checked: "2026-10",
+    updated: [
+      "AGA 2021: antibiotics selectively, not routinely, in immunocompetent uncomplicated diverticulitis; outpatient care",
+      "ASCRS 2020: elective colectomy individualised; two-attack rule abandoned",
+      "WSES 2020: CT stages 0-4; drain abscess over 4 cm; primary anastomosis plus stoma preferred in stable Hinchey III",
+      "DINAMO 2021: no-antibiotic outpatient care non-inferior",
+      "ACG 2023 LGIB: CTA first if unstable; no benefit from urgent colonoscopy; continue aspirin for secondary prevention",
+    ],
+    master: {
+      heading: "Master revision table - diverticular disease and diverticulitis",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "**False pulsion diverticula** at vasa recta entry; diverticulosis, SUDD, **diverticulitis**, **bleeding**, SCAD."],
+        ["Epidemiology", "Over 50% at 60 in the West; sigmoid over 90%; India lower, more **right-sided**; lifetime diverticulitis risk under 5%."],
+        ["Risk factors", "Low fibre, **obesity**, inactivity, smoking, red meat, **NSAIDs**, steroids, opioids; nuts and seeds safe."],
+        ["Pathophysiology", "High segmental pressure in narrow sigmoid; **micro-perforation** causes diverticulitis; vasa recta rupture causes **painless bleeding**."],
+        ["Classification", "**Modified Hinchey** 0, Ia phlegmon, Ib pericolic abscess, II distant abscess, III purulent, IV faecal; **WSES 0-4**."],
+        ["Clinical", "**LIF pain, fever**, change in habit; right-sided mimics appendicitis; **pneumaturia** in fistula; painless maroon bleed."],
+        ["Investigations", "CBC, **CRP** (over 150 complicated), urine, **hCG**; **CT with contrast**; ultrasound alternative; no colonoscopy in acute phase."],
+        ["Outpatient", "Uncomplicated, immunocompetent, tolerating fluids: **analgesia, clear fluids, selective antibiotics**; review at 48-72 h."],
+        ["Antibiotic triggers", "Immunocompromised, comorbid, **CRP over 140, WBC over 15,000**, collection on CT, symptoms over 5 days, vomiting."],
+        ["Inpatient", "**Ceftriaxone plus metronidazole**; abscess about 4 cm or more **drain**; Hinchey III resection plus anastomosis and stoma or Hartmann; IV **Hartmann**."],
+        ["Bleeding", "Resuscitate, restrictive transfusion; **CTA if unstable** then embolisation; colonoscopy with clips; Oakland 8 or less discharge."],
+        ["Follow-up", "**Colonoscopy 6-8 weeks** after complicated or no recent colonoscopy; elective colectomy individualised."],
+        ["Prevention", "**Fibre, exercise, weight loss, no smoking, avoid NSAIDs**; mesalamine, rifaximin, probiotics not recommended."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected acute diverticulitis",
+        caption: "CT stages the disease; stage sets the plan.",
+        steps: [
+          { label: "LIF pain, fever, tenderness", detail: "CBC, CRP, urinalysis, pregnancy test", tone: "decision" },
+          { label: "CT abdomen-pelvis with contrast", detail: "Ultrasound if pregnant or CT unavailable" },
+          { label: "Uncomplicated and well, immunocompetent", detail: "Outpatient, paracetamol, clear fluids, selective antibiotics", tone: "good" },
+          { label: "Any antibiotic trigger present?", detail: "Comorbid, CRP over 140, WBC over 15,000, collection, vomiting", tone: "decision" },
+          { label: "Complicated: admit", detail: "IV ceftriaxone plus metronidazole; drain abscess about 4 cm or more", tone: "warn" },
+          { label: "Colonoscopy 6-8 weeks later", detail: "If complicated or no recent quality colonoscopy" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Hinchey-based escalation",
+        caption: "Management rises with stage.",
+        steps: [
+          { label: "Stage 0-Ia: phlegmon", detail: "Outpatient, selective oral antibiotics" },
+          { label: "Stage Ib: small pericolic abscess", detail: "Admit, IV antibiotics" },
+          { label: "Stage II: abscess about 4 cm or more", detail: "Percutaneous drainage plus antibiotics" },
+          { label: "Stage III: purulent peritonitis", detail: "Resection with anastomosis and stoma, or Hartmann", tone: "warn" },
+          { label: "Stage IV: faecal peritonitis", detail: "Emergency Hartmann or damage control", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Diverticulitis vs diverticular bleeding",
+        columns: ["Feature", "Diverticulitis", "Diverticular bleeding"],
+        rows: [
+          ["Mechanism", "Micro-perforation and inflammation", "Vasa recta rupture"],
+          ["Pain", "Present, LIF", "Absent"],
+          ["Side", "Mostly sigmoid", "Right-sided bleed disproportionately"],
+          ["Key test", "CT with contrast", "CTA if unstable; colonoscopy if stable"],
+          ["Treatment", "Selective antibiotics, drainage, surgery", "Resuscitate, clips, embolisation"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Diverticula** are false pulsion pouches of mucosa and submucosa at vasa recta entry points.",
+            "**Diverticulitis** is inflammation from micro-perforation; **SUDD** is symptomatic without inflammation.",
+            "Over half of Westerners over 60 have diverticula; lifetime diverticulitis risk is under 5%.",
+            "**Diverticular bleeding** is the commonest cause of lower GI bleeding in adults.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Low fibre**, obesity, inactivity, smoking and red meat raise risk.",
+            "**NSAIDs** cause bleeding and perforation; steroids and opioids cause perforation.",
+            "**Nuts and seeds** are safe and need not be avoided.",
+            "Asians and Indians have relatively more **right-sided** diverticula.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Uncomplicated** vs **complicated** (abscess, perforation, fistula, obstruction, stricture).",
+            "**Hinchey I** pericolic abscess, **II** distant abscess, **III** purulent, **IV** faecal peritonitis.",
+            "**Modified Hinchey** adds 0 (mild) and Ia (phlegmon).",
+            "**WSES 2020** CT stages 0-4; abscess over 4 cm is stage 2A.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Left iliac fossa pain**, fever and change in bowel habit.",
+            "**Right-sided** disease mimics appendicitis.",
+            "**Pneumaturia and faecaluria** mean colovesical fistula.",
+            "**Painless maroon bleeding** in an elderly patient on aspirin suggests diverticular bleed.",
+            "Steroid users may perforate with few signs.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**CRP** over 50 supports diverticulitis; over 150 suggests complicated disease.",
+            "**CT with IV contrast** is the test of choice; ultrasound is the alternative.",
+            "Always do a **pregnancy test** in women of childbearing age.",
+            "**No colonoscopy during the attack**; do it 6-8 weeks later if indicated.",
+            "Unstable bleed: **CT angiography** first; stable bleed: prepared colonoscopy.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Mild uncomplicated, immunocompetent: **outpatient**, paracetamol, clear fluids.",
+            "**Antibiotics selectively**, not routinely, per AGA 2021.",
+            "Oral **amoxicillin-clavulanate** or **ciprofloxacin plus metronidazole** for 4-7 days when needed.",
+            "Avoid **NSAIDs**; review at 48-72 hours.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "IV **ceftriaxone plus metronidazole** for complicated disease.",
+            "**Drain** abscesses about 4 cm or larger percutaneously.",
+            "Hinchey III: resection with **primary anastomosis and stoma**, or Hartmann if unstable.",
+            "Hinchey IV: emergency **Hartmann procedure**.",
+            "Bleeding: restrictive transfusion, clips, **embolisation**; Oakland 8 or less can go home.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Immunocompromised**: always antibiotics, low threshold for CT and surgery.",
+            "**Pregnancy**: ultrasound or MRI; avoid fluoroquinolones.",
+            "After a bleed, **continue aspirin** for secondary prevention; stop NSAIDs.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**Elective colectomy** is individualised: fistula, stricture, persistent symptoms, immunosuppression.",
+            "The old **two-attack rule** is obsolete.",
+            "Prevent recurrence with **fibre, exercise, weight loss**, no smoking.",
+            "**Mesalamine, rifaximin and probiotics** do not prevent recurrence.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in diverticular disease",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Amoxicillin-clavulanate", "875/125 mg oral BD", "4-7 days", "Diarrhoea, C. difficile, cholestasis"],
+            ["Ciprofloxacin plus metronidazole", "500 mg oral BD plus 400-500 mg oral TDS", "4-7 days", "Tendinopathy, QT; disulfiram reaction"],
+            ["Ceftriaxone plus metronidazole", "1-2 g IV daily plus 500 mg IV 8-hourly", "4-7 days after source control", "Allergy, C. difficile"],
+            ["Piperacillin-tazobactam", "4.5 g IV 6-8 hourly", "Severe disease", "Allergy; renal dosing"],
+            ["Paracetamol", "1 g oral 4-6 hourly, max 4 g/day", "Acute attack", "Liver toxicity in overdose"],
+            ["Ispaghula husk", "3.5 g sachet 1-3 times daily", "Long term", "Bloating; take with water"],
+          ],
+        },
+        {
+          heading: "Hinchey staging and management",
+          columns: ["Stage", "Finding", "Management"],
+          rows: [
+            ["0 / Ia", "Mild inflammation or phlegmon", "Outpatient, selective antibiotics"],
+            ["Ib", "Pericolic abscess", "IV antibiotics; drain if large"],
+            ["II", "Pelvic or distant abscess", "Percutaneous drainage"],
+            ["III", "Purulent peritonitis", "Resection with stoma or Hartmann"],
+            ["IV", "Faecal peritonitis", "Emergency Hartmann"],
+          ],
+        },
+        {
+          heading: "Differential diagnosis of iliac fossa pain",
+          columns: ["Condition", "Clue", "Test"],
+          rows: [
+            ["Diverticulitis", "Older, LIF pain, fever, CRP high", "CT"],
+            ["Colorectal cancer", "Weight loss, anaemia", "Colonoscopy later"],
+            ["Appendicitis", "Migratory RIF pain, younger", "CT or ultrasound"],
+            ["Ectopic pregnancy", "Missed period", "hCG, pelvic ultrasound"],
+            ["Ischaemic colitis", "Pain then bloody stool", "CT, colonoscopy"],
+          ],
+        },
+      ],
+      remember: [
+        "**False diverticula at the vasa recta.**",
+        "**Itis hurts, bleeding does not.**",
+        "**Hinchey: abscess near, abscess far, pus, poo.**",
+        "**Antibiotics selectively**, not routinely.",
+        "**Drain at about 4 cm.**",
+        "**Scope at 6-8 weeks, never during the attack.**",
+        "**Nuts and seeds allowed; two-attack rule gone.**",
+        "**Pneumaturia = colovesical fistula.**",
+      ],
+    },
+  },
 };
 
 export default revision;

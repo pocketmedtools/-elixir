@@ -211,6 +211,612 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "gastro-hepatology-peptic-ulcer-complications": {
+    checked: "2026-10",
+    updated: [
+      "WSES 2020 perforated and bleeding peptic ulcer guideline: CT first, laparoscopic repair, selective non-operative care.",
+      "ACG 2021 upper GI and ulcer bleeding guideline: high-dose PPI for 3 days after endoscopic therapy; GBS 0-1 outpatient.",
+      "ESC 2023 ACS guideline: PPI recommended with antithrombotics in high GI bleeding risk.",
+      "ACG 2024 H. pylori guideline: 14-day bismuth quadruple preferred; eradicate after every complicated ulcer.",
+      "ENETS 2023: Ga-68 DOTATATE PET-CT for gastrinoma localisation.",
+    ],
+    master: {
+      heading: "Peptic ulcer complications - one-page answer",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Complications", "Bleeding (70%, commonest), perforation (20%, deadliest), GOO (under 5%), penetration"],
+        ["Risk factors", "H. pylori, NSAIDs, aspirin, DAPT, anticoagulants, steroids with NSAIDs, SSRIs, smoking, age over 65"],
+        ["Perforation - features", "Sudden pain, shoulder tip pain, board-like rigidity, absent liver dullness"],
+        ["Perforation - tests", "Erect CXR (free gas 75-80%), CT over 95%; Boey score"],
+        ["Perforation - treatment", "Resuscitate, NG, IV PPI, antibiotics; Graham omental patch within 12 hours; eradicate H. pylori"],
+        ["GOO - features", "Vomiting stale food, succussion splash, visible peristalsis, tetany"],
+        ["GOO - metabolic", "Hypochloraemic hypokalaemic metabolic alkalosis, paradoxical aciduria; saline plus KCl"],
+        ["GOO - definitive", "Endoscopy and biopsy; balloon dilatation; surgery or stent/EUS-GE if malignant"],
+        ["Bleeding", "Forrest Ia/Ib/IIa need endoscopic therapy; high-dose PPI 72 hours"],
+        ["NSAID prevention", "Match GI and CV risk: PPI co-therapy, COX-2 plus PPI, or avoid both"],
+        ["ZES", "Multiple, distal, refractory ulcers with diarrhoea; gastrin over 10x ULN with pH under 2; high-dose PPI"],
+        ["Follow-up", "Confirm eradication, re-scope gastric ulcer 8-12 weeks, review gastroprotection at each prescription"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected perforated peptic ulcer",
+        steps: [
+          { label: "Sudden epigastric pain, rigidity", detail: "Check ECG and lipase to exclude mimics" },
+          { label: "Resuscitate", detail: "IV fluids, NG tube, catheter, IV PPI, antibiotics", tone: "warn" },
+          { label: "Erect CXR, then CT if unclear", detail: "Free gas in 75-80% on CXR", tone: "decision" },
+          { label: "Sealed leak, young and stable?", detail: "Non-operative Taylor approach with close review", tone: "decision" },
+          { label: "Otherwise: omental patch repair", detail: "Laparoscopic or open within 12 hours; biopsy gastric ulcers" },
+          { label: "Eradicate H. pylori, PPI 8 weeks", detail: "Stop NSAIDs and smoking", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "NSAID gastroprotection by risk",
+        steps: [
+          { label: "Low GI risk: lowest-dose NSAID", detail: "Prefer paracetamol or topical NSAID" },
+          { label: "Moderate GI risk: NSAID plus PPI", detail: "Omeprazole 20 mg or pantoprazole 40 mg daily" },
+          { label: "High GI risk: COX-2 plus PPI", detail: "Celecoxib 100-200 mg twice daily with PPI" },
+          { label: "High CV risk on aspirin: naproxen plus PPI", detail: "Avoid COX-2 inhibitors" },
+          { label: "High GI and high CV risk: no NSAID", detail: "Non-drug and topical options", tone: "warn" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Complications of peptic ulcer",
+        root: "Peptic ulcer",
+        arms: [
+          { label: "Bleeding", tone: "warn", steps: ["Melaena, haematemesis", "Forrest grading", "Endotherapy and high-dose PPI"] },
+          { label: "Perforation", tone: "warn", steps: ["Free gas", "Boey score", "Omental patch"] },
+          { label: "Obstruction", steps: ["Succussion splash", "Metabolic alkalosis", "Saline, KCl, dilatation"] },
+          { label: "Penetration", steps: ["Constant back pain", "Pancreas, raised amylase", "PPI, eradication"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Bleeding** is the commonest complication; **perforation** is the deadliest.",
+            "Perforation mortality is about **10-25%**, higher in the elderly.",
+            "In India, duodenal perforation is common in young male smokers.",
+            "Malignancy now causes many adult cases of **gastric outlet obstruction**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**H. pylori and NSAIDs** are the main causes and act together.",
+            "NSAID risk: age over 65, prior ulcer, steroids, anticoagulants, aspirin, SSRIs.",
+            "**COX-2 inhibitors** halve GI risk but raise cardiovascular risk.",
+            "Suspect **ZES** in multiple, distal or refractory ulcers with diarrhoea.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Perforation: sudden pain, **board-like rigidity**, lost liver dullness.",
+            "The elderly and steroid users may have few signs.",
+            "GOO: vomiting of stale food, **succussion splash**, visible peristalsis.",
+            "Penetration: constant pain radiating to the back.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Erect chest X-ray** shows free gas in 75-80%.",
+            "**CT** is over 95% sensitive for perforation.",
+            "GOO bloods: low chloride, low potassium, high bicarbonate.",
+            "**ZES**: gastrin over 10 times normal with gastric pH under 2.",
+            "Biopsy every gastric ulcer and every outlet narrowing.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Perforation: fluids, NG tube, **IV PPI**, broad-spectrum antibiotics.",
+            "**Omental (Graham) patch** repair within 12 hours.",
+            "Non-operative care only for sealed leaks in stable young patients.",
+            "GOO: NG decompression, **0.9% saline with KCl**, IV PPI.",
+            "Bleeding: endotherapy for **Forrest Ia, Ib, IIa**, then high-dose PPI 72 hours.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Eradicate H. pylori after every complicated ulcer and confirm cure.",
+            "**PPI for 8 weeks** after repair or healing.",
+            "Moderate GI risk: **NSAID plus PPI**.",
+            "High GI risk: **COX-2 plus PPI**, or avoid.",
+            "High GI plus high CV risk: **avoid NSAIDs and COX-2 inhibitors**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Benign GOO: **balloon dilatation**, surgery if it fails.",
+            "Malignant GOO: duodenal stent, gastrojejunostomy or **EUS-guided gastroenterostomy**.",
+            "ZES: **omeprazole 60-120 mg/day**; resect sporadic gastrinoma.",
+            "Resume aspirin early after an ulcer bleed with PPI cover.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Misoprostol** is contraindicated in pregnancy.",
+            "Avoid NSAIDs in CKD and cirrhosis.",
+            "With clopidogrel, use **pantoprazole**.",
+            "Without CT, an erect chest X-ray and rigidity justify surgical referral.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Re-scope gastric ulcers at **8-12 weeks**.",
+            "Confirm H. pylori cure 4 weeks after treatment.",
+            "Review gastroprotection with every NSAID or antithrombotic prescription.",
+            "Watch for **dumping**, B12 and iron deficiency after gastric surgery.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**WSES 2020**: CT first, laparoscopic repair, selective non-operative care.",
+            "**ACG 2021**: high-dose PPI for 3 days after endoscopic therapy.",
+            "**ESC 2023**: PPI with antithrombotics in high GI bleeding risk.",
+            "**ENETS 2023**: DOTATATE PET-CT to localise gastrinoma.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in ulcer complications",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Pantoprazole IV", "80 mg bolus then 8 mg/h or 40 mg twice daily", "72 hours after endotherapy", "Headache; safe"],
+            ["Omeprazole oral", "20 mg daily before breakfast", "8 weeks; longer with NSAID", "B12, magnesium, C. difficile"],
+            ["Misoprostol", "200 microgram 2-4 times daily", "While on NSAID", "Diarrhoea; abortifacient"],
+            ["Celecoxib", "100-200 mg twice daily", "Shortest time", "CV events, renal harm"],
+            ["Omeprazole for ZES", "60-120 mg/day divided", "Long term", "Never stop abruptly"],
+          ],
+        },
+        {
+          heading: "Forrest classification",
+          columns: ["Class", "Finding", "Rebleed risk", "Endotherapy"],
+          rows: [
+            ["Ia", "Spurting", "About 55%+", "Yes"],
+            ["Ib", "Oozing", "About 55%", "Yes"],
+            ["IIa", "Visible vessel", "About 43%", "Yes"],
+            ["IIb", "Adherent clot", "About 22%", "Consider"],
+            ["IIc", "Flat pigmented spot", "About 10%", "No"],
+            ["III", "Clean base", "Under 5%", "No"],
+          ],
+        },
+        {
+          heading: "NSAID choice by risk",
+          columns: ["CV risk", "Low GI risk", "Moderate GI risk", "High GI risk"],
+          rows: [
+            ["Low", "NSAID alone", "NSAID plus PPI", "COX-2 plus PPI or avoid"],
+            ["High (aspirin)", "Naproxen plus PPI", "Naproxen plus PPI", "Avoid NSAIDs and COX-2"],
+          ],
+        },
+      ],
+      remember: [
+        "**Bleeding commonest, perforation deadliest**.",
+        "Boey: **Shock, Delay over 24 hours, Comorbidity**.",
+        "GOO: **low Cl, low K, alkalosis, acid urine**; give saline and KCl.",
+        "Forrest **Ia, Ib, IIa** get endotherapy.",
+        "**Graham patch plus eradication** for perforated duodenal ulcer.",
+        "High GI plus high CV risk: **no NSAID, no COX-2**.",
+        "ZES: **gastrin over 1000 with pH under 2**.",
+      ],
+    },
+  },
+  "gastro-hepatology-gastroparesis-vomiting": {
+    checked: "2026-10",
+    updated: [
+      "ACG gastroparesis guideline 2022: 4-hour scintigraphy or breath test; metoclopramide up to 12 weeks; G-POEM for selected refractory cases; no botulinum toxin.",
+      "AGA clinical practice update on cannabinoid hyperemesis 2024: haloperidol and topical capsaicin in attacks; cessation is cure.",
+      "Multisociety guidance 2024: continue GLP-1 agonists before procedures with 24-hour liquid diet in most patients.",
+      "RCOG hyperemesis guideline 2024 and MASCC/ESMO antiemetic guideline 2023 reflected in special groups.",
+      "FDA 2024: tradipitant not approved for gastroparesis.",
+    ],
+    master: {
+      heading: "Nausea, vomiting and gastroparesis - one-page answer",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definitions", "Nausea, vomiting, regurgitation, rumination; gastroparesis = symptomatic delayed emptying without obstruction"],
+        ["Vomiting centre inputs", "CTZ (D2, 5-HT3, NK1), gut vagal (5-HT3), vestibular (H1, M1), cortex"],
+        ["Causes", "GI, CNS, vestibular, metabolic, pregnancy, drugs (opioids, GLP-1 RA), cardiac, functional"],
+        ["Gastroparesis causes", "Idiopathic 35-50%, diabetic 25-30%, post-surgical, drugs, Parkinson, scleroderma"],
+        ["Clinical clues", "Timing, content (food hours later, bile, faeculent), headache, vertigo, cannabis"],
+        ["First tests", "Electrolytes, glucose, creatinine, calcium, LFT, lipase, pregnancy test, TSH, ECG"],
+        ["Diagnosis", "Endoscopy to exclude obstruction; 4-hour scintigraphy over 10% retention"],
+        ["Diet", "Small frequent low-fat low-fibre small-particle meals"],
+        ["Drugs", "Metoclopramide 5-10 mg tds (12 weeks), domperidone 10 mg tds with ECG, erythromycin short term"],
+        ["Refractory", "Nasojejunal feeding, gastric electrical stimulation, G-POEM; no botulinum toxin"],
+        ["CVS", "Stereotyped episodes, well between; ondansetron, sumatriptan, lorazepam; amitriptyline prophylaxis"],
+        ["CHS", "Cannabis plus hot bathing; haloperidol, capsaicin; cure is cessation"],
+        ["Ward care", "Saline with KCl, thiamine before dextrose, NG if obstructed, QTc monitoring"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Chronic vomiting work-up",
+        steps: [
+          { label: "Exclude emergencies", detail: "Obstruction, raised ICP, DKA, pregnancy, MI, haematemesis", tone: "warn" },
+          { label: "Bloods and drug review", detail: "Electrolytes, calcium, TSH, cortisol; opioids, GLP-1 RA, cannabis" },
+          { label: "Upper GI endoscopy", detail: "Exclude obstruction, ulcer, cancer", tone: "decision" },
+          { label: "4-hour gastric emptying scintigraphy", detail: "Over 10% at 4 hours; glucose under 275 mg/dL" },
+          { label: "Delayed: gastroparesis", detail: "Diet, glucose control, prokinetic", tone: "good" },
+          { label: "Normal: consider CNVS, CVS, CHS, rumination", detail: "Rome IV criteria" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Gastroparesis treatment ladder",
+        steps: [
+          { label: "Diet and glucose control", detail: "Small-particle low-fat meals; stop GLP-1 RA and opioids" },
+          { label: "Metoclopramide", detail: "5-10 mg tds before meals, up to 12 weeks" },
+          { label: "Domperidone", detail: "10 mg tds with ECG for QTc" },
+          { label: "Erythromycin short term", detail: "125-250 mg tds; tachyphylaxis by 4 weeks" },
+          { label: "Antiemetics", detail: "Ondansetron, prochlorperazine" },
+          { label: "Feeding and procedures", detail: "Nasojejunal feeding, gastric electrical stimulation, G-POEM", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Cyclic vomiting versus cannabinoid hyperemesis",
+        columns: ["Feature", "Cyclic vomiting syndrome", "Cannabinoid hyperemesis syndrome"],
+        rows: [
+          ["Pattern", "Stereotyped episodes, well between", "Same"],
+          ["Association", "Migraine", "Daily cannabis for months to years"],
+          ["Clue", "Triggers: stress, sleep loss, fasting", "Hot bathing relief"],
+          ["Acute treatment", "Ondansetron, sumatriptan, lorazepam", "Haloperidol, topical capsaicin"],
+          ["Prevention", "Amitriptyline, topiramate", "Cannabis cessation 6 months or more"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Gastroparesis** is symptomatic delayed gastric emptying without mechanical obstruction.",
+            "Diabetes, idiopathic and post-surgical are the main causes.",
+            "About **5% of type 1 diabetics** develop it over 10 years.",
+            "**Rumination** is effortless regurgitation without retching.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "The **chemoreceptor trigger zone** senses drugs via D2, 5-HT3 and NK1 receptors.",
+            "Gut vagal afferents act through **5-HT3**; vestibular input through **H1 and M1**.",
+            "Gastroparesis involves loss of **interstitial cells of Cajal** and nitric oxide neurons.",
+            "**Hyperglycaemia** itself slows gastric emptying.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Early-morning vomiting suggests **pregnancy, uraemia, alcohol or raised ICP**.",
+            "Vomiting food eaten hours earlier suggests **gastroparesis or outlet obstruction**.",
+            "Episodic attacks with wellness between suggest **CVS or CHS**.",
+            "Relief with hot showers points to **cannabinoid hyperemesis**.",
+            "Look for **succussion splash**, papilloedema and postural hypotension.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Check electrolytes, glucose, creatinine, calcium, TSH and **pregnancy test**.",
+            "**Endoscopy first** to exclude obstruction.",
+            "**4-hour scintigraphy**: over 10% retention means delayed emptying.",
+            "Test off opioids and GLP-1 agonists, with glucose under 275 mg/dL.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Small, frequent, **low-fat, low-fibre, small-particle** meals.",
+            "Optimise glucose; give bolus insulin after the meal.",
+            "**Metoclopramide 5-10 mg three times daily**, up to 12 weeks.",
+            "**Domperidone 10 mg three times daily** with an ECG.",
+            "Choose antiemetics by receptor; avoid opioids.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Erythromycin** short term; tachyphylaxis within about 4 weeks.",
+            "Nasojejunal feeding if weight loss over 10%.",
+            "Specialist options: **G-POEM** and gastric electrical stimulation.",
+            "**Botulinum toxin** to the pylorus is not recommended.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "IV **0.9% saline with potassium**; correct chloride.",
+            "Give **thiamine before dextrose** after prolonged vomiting.",
+            "CVS attack: dark room, dextrose fluids, ondansetron, lorazepam, sumatriptan.",
+            "CHS attack: **haloperidol** and topical capsaicin.",
+            "Watch for **Boerhaave**, Mallory-Weiss bleeding and QT prolongation.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: **doxylamine-pyridoxine** first, then promethazine, then ondansetron or metoclopramide.",
+            "Parkinson disease: use **domperidone**, avoid metoclopramide.",
+            "Chemotherapy: 5-HT3, NK1, dexamethasone and **olanzapine**.",
+            "Palliative: **haloperidol** for chemical causes, cyclizine for raised ICP.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ACG 2022**: metoclopramide first line; G-POEM for selected refractory cases.",
+            "**AGA 2024**: CHS treated with haloperidol, capsaicin and cannabis cessation.",
+            "**2024 multisociety**: most continue GLP-1 agonists before procedures with a liquid diet.",
+            "**RCOG 2024**: earlier step-up in hyperemesis, give thiamine.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Antiemetics and prokinetics",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Metoclopramide", "5-10 mg orally or IV three times daily", "Up to 12 weeks", "Tardive dyskinesia, dystonia"],
+            ["Domperidone", "10 mg orally three times daily", "Shortest course; ECG", "QT prolongation"],
+            ["Erythromycin", "125-250 mg orally three times daily", "Up to 4 weeks", "QT, tachyphylaxis"],
+            ["Ondansetron", "4-8 mg orally or IV 8-12 hourly", "As needed", "Constipation, QT"],
+            ["Haloperidol", "0.5-1.5 mg; 0.05-0.1 mg/kg IV in CHS", "As needed", "QT, extrapyramidal"],
+            ["Amitriptyline", "25 mg at night up to 75-100 mg", "3 months or more (CVS)", "Sedation, QT"],
+          ],
+        },
+        {
+          heading: "Rome IV vomiting disorders",
+          columns: ["Disorder", "Key criterion", "Treatment"],
+          rows: [
+            ["CNVS", "Nausea 1 day/week or vomiting weekly", "Neuromodulators, antiemetics"],
+            ["Cyclic vomiting", "Stereotyped attacks, well between", "Abort with triptan; amitriptyline"],
+            ["Cannabinoid hyperemesis", "Cannabis plus CVS-like attacks", "Cessation"],
+            ["Rumination", "Effortless regurgitation, no retching", "Diaphragmatic breathing"],
+          ],
+        },
+        {
+          heading: "Antiemetic by mechanism",
+          columns: ["Cause", "Receptor", "Drug"],
+          rows: [
+            ["Drugs, uraemia", "D2", "Haloperidol"],
+            ["Gastroenteritis, chemotherapy", "5-HT3", "Ondansetron"],
+            ["Gastric stasis", "D2, 5-HT4", "Metoclopramide, domperidone"],
+            ["Vestibular", "H1, M1", "Promethazine, cinnarizine"],
+            ["Raised ICP", "Brainstem", "Dexamethasone, cyclizine"],
+          ],
+        },
+      ],
+      remember: [
+        "Gastroparesis: **over 10% at 4 hours**, obstruction excluded.",
+        "**Domperidone stays out of the brain** - safe in Parkinson disease.",
+        "**Erythromycin fades fast** (tachyphylaxis).",
+        "**Hot shower = cannabis** hyperemesis.",
+        "**CVS**: well between attacks, migraine link.",
+        "**Thiamine before dextrose**.",
+        "Receptors: **D2 drugs, 5-HT3 gut, H1/M1 vestibular, NK1 chemo**.",
+      ],
+    },
+  },
+  "gastro-hepatology-gastric-cancer": {
+    checked: "2026-10",
+    updated: [
+      "ESMO gastric cancer guideline 2022 with 2024 living update: biomarker testing including Claudin 18.2; CPS-guided immunotherapy.",
+      "Zolbetuximab approved in 2024 for Claudin 18.2-positive HER2-negative advanced disease.",
+      "MATTERHORN 2025: perioperative durvalumab plus FLOT improved event-free survival.",
+      "ACG 2025 gastric premalignant conditions guideline aligned with MAPS II 3-yearly surveillance for high-risk intestinal metaplasia.",
+      "Maastricht VI 2022: eradicate in first-degree relatives and after endoscopic resection.",
+    ],
+    master: {
+      heading: "Gastric cancer and premalignant lesions - one-page answer",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition and burden", "Adenocarcinoma 90%; 5th commonest cancer worldwide (GLOBOCAN 2022); highest in north-east India; late presentation"],
+        ["Risk factors", "H. pylori, salt, smoked and pickled food, smoking, EBV, family history, CDH1, Lynch, pernicious anaemia"],
+        ["Pathogenesis", "Correa cascade; diffuse type via E-cadherin loss; HER2, MSI, PD-L1, Claudin 18.2"],
+        ["Classification", "Lauren intestinal versus diffuse; Borrmann I-IV; early gastric cancer = T1 regardless of nodes"],
+        ["Premalignant staging", "Sydney 5 biopsies; OLGA/OLGIM III-IV high risk"],
+        ["Surveillance", "Extensive IM every 3 years; with family history 1-2 years; dysplasia 6-12 months"],
+        ["Clinical", "Weight loss, pain, early satiety, dysphagia, vomiting, anaemia"],
+        ["Signs", "Virchow, Sister Mary Joseph, Irish node, Blumer shelf, Krukenberg; acanthosis nigricans"],
+        ["Staging", "Endoscopy and biopsy, CECT, EUS, staging laparoscopy, AJCC 8th TNM"],
+        ["Early cancer", "ESD for differentiated intramucosal lesions meeting criteria"],
+        ["Resectable", "FLOT 4 cycles, D2 gastrectomy, FLOT 4 cycles"],
+        ["Advanced", "Chemo plus nivolumab or pembrolizumab; trastuzumab if HER2+; zolbetuximab if Claudin 18.2+"],
+        ["MALT lymphoma", "Eradicate H. pylori; t(11;18) non-response; radiotherapy 24 Gy"],
+        ["Prevention", "H. pylori eradication, diet, smoking cessation, relatives test-and-treat"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Correa cascade and where to intervene",
+        steps: [
+          { label: "H. pylori chronic gastritis", detail: "Eradicate: greatest benefit at this stage", tone: "good" },
+          { label: "Atrophic gastritis", detail: "Sydney biopsies; OLGA staging" },
+          { label: "Intestinal metaplasia", detail: "Extensive or incomplete: endoscopy every 3 years", tone: "decision" },
+          { label: "Dysplasia", detail: "No visible lesion: repeat 6-12 months; visible: resect", tone: "warn" },
+          { label: "Early gastric cancer", detail: "ESD if criteria met" },
+          { label: "Advanced adenocarcinoma", detail: "FLOT plus D2 gastrectomy, or systemic therapy", tone: "warn" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Treatment by stage",
+        root: "Staged gastric adenocarcinoma",
+        arms: [
+          { label: "Early (cT1a, criteria met)", tone: "good", steps: ["Endoscopic submucosal dissection", "eCura assessment", "Eradicate H. pylori"] },
+          { label: "Resectable cT2+ or N+", steps: ["Staging laparoscopy", "FLOT 4 + D2 gastrectomy + FLOT 4", "Consider durvalumab (MATTERHORN)"] },
+          { label: "Metastatic", tone: "warn", steps: ["HER2, MSI, PD-L1 CPS, Claudin 18.2", "Chemo plus targeted or immunotherapy", "Palliation: stent, radiotherapy, nutrition"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Intestinal versus diffuse gastric cancer",
+        columns: ["Feature", "Intestinal", "Diffuse"],
+        rows: [
+          ["Histology", "Glands", "Signet-ring cells"],
+          ["Precursor", "Correa cascade", "E-cadherin loss"],
+          ["Patient", "Older men", "Younger women"],
+          ["Spread", "Liver", "Peritoneum, linitis plastica"],
+          ["Prognosis", "Better", "Worse"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Adenocarcinoma** forms about 90% of gastric cancers.",
+            "Fifth commonest cancer and cancer killer worldwide (**GLOBOCAN 2022**).",
+            "Highest Indian rates are in **Mizoram and the north-east**.",
+            "Most Indian patients present at **stage III-IV**.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**H. pylori** is a group 1 carcinogen causing most non-cardia cancer.",
+            "Salted, smoked and pickled food, smoking and EBV add risk.",
+            "**CDH1** mutation causes hereditary diffuse gastric cancer.",
+            "Pernicious anaemia and prior partial gastrectomy are precursors.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "**Correa cascade**: gastritis, atrophy, intestinal metaplasia, dysplasia, cancer.",
+            "**Incomplete** intestinal metaplasia carries higher risk.",
+            "Diffuse type follows **E-cadherin loss**, giving linitis plastica.",
+            "Key biomarkers: **HER2, MSI, PD-L1 CPS, Claudin 18.2**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Lauren**: intestinal versus diffuse.",
+            "**Early gastric cancer** is confined to mucosa or submucosa, regardless of nodes.",
+            "**OLGA/OLGIM III-IV** marks high-risk gastritis.",
+            "TNM: N3b means 16 or more positive nodes.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Weight loss** and epigastric pain are commonest.",
+            "Cardia tumours cause **dysphagia**; antral tumours cause vomiting.",
+            "Signs: **Virchow node**, Sister Mary Joseph nodule, Blumer shelf, Krukenberg tumour.",
+            "Paraneoplastic: **acanthosis nigricans**, Leser-Trelat sign, Trousseau syndrome.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Endoscopy with multiple biopsies** is diagnostic.",
+            "**Sydney protocol**: 5 biopsies in separate jars.",
+            "Stage with **CECT**, EUS and staging laparoscopy.",
+            "CEA and CA 19-9 are for follow-up, not diagnosis.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**ESD** for early differentiated intramucosal cancer.",
+            "**FLOT 4 + D2 gastrectomy + FLOT 4** for cT2+ or node-positive.",
+            "Asian alternative: adjuvant **CAPOX 6 months** or S-1 1 year.",
+            "**Eradicate H. pylori** in all premalignant lesions.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Advanced: chemotherapy with **nivolumab or pembrolizumab** by PD-L1 CPS.",
+            "HER2-positive: **trastuzumab**; Claudin 18.2-positive: **zolbetuximab**.",
+            "Second line: **ramucirumab plus paclitaxel**.",
+            "**MALT lymphoma**: eradicate first; radiotherapy 24 Gy if no response.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Extensive intestinal metaplasia: **endoscopy every 3 years**.",
+            "With family history: every **1-2 years**.",
+            "After ESD: endoscopy at 3-6 months, then yearly.",
+            "After gastrectomy: lifelong **B12 1 mg IM every 3 months**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ESMO 2024 update**: test Claudin 18.2 in advanced disease.",
+            "**Zolbetuximab** approved in 2024.",
+            "**MATTERHORN 2025**: durvalumab plus FLOT improves event-free survival.",
+            "**ACG 2025** premalignant guideline supports 3-yearly surveillance for high-risk IM.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Key regimens",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["FLOT", "Docetaxel 50, oxaliplatin 85, leucovorin 200 mg/m2, 5-FU 2600 mg/m2 IV over 24 h", "2-weekly, 4 before and 4 after surgery", "Neutropenia, diarrhoea, neuropathy"],
+            ["CAPOX", "Oxaliplatin 130 mg/m2 IV + capecitabine 1000 mg/m2 twice daily days 1-14", "3-weekly, 8 cycles adjuvant", "Hand-foot syndrome, neuropathy"],
+            ["Trastuzumab", "8 mg/kg IV then 6 mg/kg 3-weekly", "Until progression", "Cardiotoxicity; echo every 3 months"],
+            ["Nivolumab", "240 mg IV 2-weekly or 360 mg 3-weekly", "Up to 2 years", "Immune colitis, hepatitis, thyroiditis"],
+            ["Bismuth quadruple", "PPI, bismuth, tetracycline, metronidazole orally", "14 days", "Black stools; no tetracycline in pregnancy"],
+          ],
+        },
+        {
+          heading: "MAPS II surveillance",
+          columns: ["Finding", "Interval"],
+          rows: [
+            ["Antrum-only mild atrophy or IM", "None unless risk factors"],
+            ["Extensive atrophy or IM (OLGA/OLGIM III-IV)", "Every 3 years"],
+            ["Extensive IM plus family history", "Every 1-2 years"],
+            ["Low-grade dysplasia, no visible lesion", "Within 12 months"],
+            ["High-grade dysplasia, no visible lesion", "Within 6 months"],
+          ],
+        },
+        {
+          heading: "Gastric mass or ulcer: differential",
+          columns: ["Lesion", "Clue", "Confirmation"],
+          rows: [
+            ["Adenocarcinoma", "Irregular heaped edge", "Multiple biopsies"],
+            ["Benign ulcer", "Smooth edge, radiating folds", "Biopsy, re-scope 8-12 weeks"],
+            ["MALT lymphoma", "Thick folds, erosions", "Deep biopsy, t(11;18)"],
+            ["GIST", "Submucosal mass", "EUS-FNB, CD117, DOG1"],
+            ["Type 1 NET", "Small polyps in atrophic corpus", "Biopsy, high gastrin"],
+          ],
+        },
+      ],
+      remember: [
+        "**Correa**: gastritis, atrophy, metaplasia, dysplasia, cancer.",
+        "**Sydney = 5 biopsies**: 2 antrum, 1 incisura, 2 corpus.",
+        "**OLGIM III-IV = every 3 years**.",
+        "Early gastric cancer = **T1, nodes do not matter**.",
+        "**FLOT 4 + 4** around D2 gastrectomy.",
+        "**VIS-BK**: Virchow, Irish, Sister Mary Joseph, Blumer, Krukenberg.",
+        "MALT: **eradicate first**; t(11;18) resists.",
+      ],
+    },
+  },
 };
 
 export default revision;
