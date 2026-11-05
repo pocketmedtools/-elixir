@@ -207,6 +207,613 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "gastro-hepatology-chronic-pancreatitis": {
+    checked: "2026-10",
+    updated: [
+      "TIGAR-O version 2 (2019) aetiology checklist",
+      "AGA Clinical Practice Update on exocrine pancreatic insufficiency (2023): FE-1 first, weight-based PERT",
+      "ADA Standards of Care 2025: pancreatogenic (type 3c) diabetes, annual screening in CP",
+      "ESCAPE trial (2020): early surgery better than endoscopy-first for painful CP",
+      "ACG chronic pancreatitis guideline 2020: CT first line, antioxidants not routine",
+      "ESGE 2018 endotherapy: ESWL then ERCP for obstructing head stones",
+    ],
+    master: {
+      heading: "Chronic pancreatitis - whole topic in one table",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Progressive fibro-inflammatory disease with irreversible loss of exocrine and endocrine tissue"],
+        ["India", "Idiopathic/tropical about 60%, alcohol about 38%; South India prevalence 114-200 per 100,000"],
+        ["Aetiology", "TIGAR-O v2: toxic, idiopathic, genetic (SPINK1, PRSS1, CFTR, CTRC), autoimmune, recurrent AP, obstructive"],
+        ["Pathogenesis", "Trypsin activation, stellate cell fibrosis, calculi, ductal hypertension, neuropathic pain"],
+        ["Clinical triad", "Pain to back, steatorrhoea (lipase < 10%), diabetes (type 3c)"],
+        ["TCP", "Young non-drinker, large calculi, FCPD ketosis-resistant, SPINK1 N34S"],
+        ["Staging", "M-ANNHEIM 0-IV; Cambridge (imaging); Rosemont (EUS)"],
+        ["Investigations", "X-ray calcification, CECT first line, secretin MRCP, EUS; FE-1 < 200 mcg/g; HbA1c, vitamin D, DEXA"],
+        ["PERT", "40,000-50,000 U with meals, half with snacks; 500 U/kg/meal; add PPI if poor response"],
+        ["Pain ladder", "Abstinence, paracetamol, tramadol, pregabalin; ESWL + ERCP; Frey/Beger; TPIAT"],
+        ["Type 3c diabetes", "Alpha and beta cell loss, brittle, hypoglycaemia; metformin if mild, insulin usually"],
+        ["Complications", "Pseudocyst, CBD/duodenal stricture, splenic vein thrombosis, pseudoaneurysm, cancer, osteoporosis"],
+        ["Follow-up", "6-12 monthly weight, pain, HbA1c; annual vitamins; DEXA 2-yearly; cancer red flags"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected chronic pancreatitis - work-up",
+        steps: [
+          { label: "Pain to back, steatorrhoea or young diabetic", detail: "Ask alcohol, smoking, family history" },
+          { label: "Plain X-ray and ultrasound", detail: "Calcification at L1-L2 is diagnostic" },
+          { label: "CECT pancreatic protocol", detail: "First-line imaging", tone: "decision" },
+          { label: "Non-diagnostic: secretin MRCP, then EUS" },
+          { label: "Function: FE-1, HbA1c, vitamin D", detail: "FE-1 < 200 mcg/g = EPI" },
+          { label: "Focal mass or new jaundice: EUS-FNB", tone: "warn" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Pain ladder in chronic pancreatitis",
+        steps: [
+          { label: "Stop alcohol and smoking", tone: "good" },
+          { label: "Paracetamol or short NSAID", detail: "Paracetamol 1 g 6-hourly" },
+          { label: "Tramadol plus adjuvant", detail: "Tramadol 50-100 mg 6-8 h; pregabalin 75-300 mg BD" },
+          { label: "Endotherapy for duct obstruction", detail: "ESWL + ERCP stent for head stones > 5 mm", tone: "decision" },
+          { label: "Surgery: Frey, Beger, Puestow", detail: "Early surgery better (ESCAPE 2020)", tone: "warn" },
+          { label: "Last resort: TPIAT", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Tropical calcific vs alcoholic chronic pancreatitis",
+        columns: ["Feature", "Tropical calcific", "Alcoholic"],
+        rows: [
+          ["Age", "Under 30", "35-50"],
+          ["Alcohol", "None", "Heavy"],
+          ["Gene", "SPINK1 N34S", "Smoking co-factor"],
+          ["Calculi", "Large, ductal", "Small, speckled"],
+          ["Diabetes", "Early, ketosis-resistant", "Later"],
+          ["Pseudocyst", "Less", "More"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Chronic pancreatitis** is progressive fibrosis with permanent loss of pancreatic tissue.",
+            "Triad: **pain, steatorrhoea, diabetes**.",
+            "In India, **idiopathic/tropical** disease outnumbers alcohol.",
+            "**Tropical calcific pancreatitis** strikes young non-drinkers, mainly in South India.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**TIGAR-O**: toxic, idiopathic, genetic, autoimmune, recurrent, obstructive.",
+            "**Alcohol and smoking** act together; smoking alone is a cause.",
+            "**SPINK1 N34S** in about half of Indian tropical cases.",
+            "**PRSS1** gives autosomal dominant hereditary pancreatitis.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Repeated trypsin activation activates **stellate cells**, which lay down fibrosis.",
+            "Protein plugs calcify into **ductal stones** and raise duct pressure.",
+            "Steatorrhoea appears only after **90% loss** of lipase output.",
+            "**Type 3c diabetes** loses glucagon too, so hypoglycaemia is common.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Epigastric pain to the back, relieved by **leaning forward**.",
+            "Bulky, oily, floating **stools** and weight loss.",
+            "**Erythema ab igne** shows chronic pain treated with heat.",
+            "New jaundice or weight loss suggests **stricture or cancer**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**M-ANNHEIM** stages 0-IV by pain and insufficiency.",
+            "**Cambridge** grades duct changes on imaging.",
+            "**Rosemont** criteria grade EUS findings.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Plain X-ray** calcification at L1-L2 is diagnostic.",
+            "**CECT** is the first cross-sectional test; secretin MRCP next.",
+            "**Faecal elastase** under 200 mcg/g means exocrine insufficiency.",
+            "Check **HbA1c, vitamin D and DEXA** for complications.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Stop **alcohol and smoking** completely.",
+            "**PERT** 40,000-50,000 units with each meal, taken with the first bite.",
+            "Add a **PPI** if steatorrhoea persists.",
+            "Do not restrict fat; give normal fat **with enzymes**.",
+            "Pain: paracetamol, then **tramadol**, plus **pregabalin**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**ESWL then ERCP** for main duct head stones over 5 mm.",
+            "**Frey or Beger** surgery for refractory pain; early surgery wins in ESCAPE.",
+            "**EUS cystogastrostomy** for symptomatic pseudocyst.",
+            "**Splenectomy** for bleeding gastric varices from splenic vein thrombosis.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Pseudoaneurysm** bleed needs CT angiography and embolisation.",
+            "Pancreatic **cancer** risk about 13-16 times normal.",
+            "**Osteoporosis** and fat-soluble vitamin deficiency are common.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**AGA 2023**: PERT 500 units/kg per meal, judge response clinically.",
+            "**ADA 2025**: screen CP patients yearly for type 3c diabetes.",
+            "**TIGAR-O v2 2019** added newer genes like CTRC and CPA1.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in chronic pancreatitis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Pancreatin (PERT)", "40,000-50,000 U oral with meals; half with snacks", "Lifelong, titrate", "Bloating; take with food"],
+            ["Pantoprazole", "40 mg oral once daily", "While on PERT if needed", "Hypomagnesaemia, B12 deficiency"],
+            ["Tramadol", "50-100 mg oral 6-8 hourly, max 400 mg/day", "Shortest needed", "Seizures, dependence"],
+            ["Pregabalin", "75 mg BD up to 300 mg BD oral", "Long term if helpful", "Sedation, dizziness; reduce in CKD"],
+            ["Insulin", "Basal 0.1-0.2 U/kg/day start, then bolus", "Lifelong", "Hypoglycaemia"],
+            ["Cholecalciferol", "60,000 IU oral weekly for 8 weeks", "Then monthly", "Hypercalcaemia"],
+          ],
+        },
+        {
+          heading: "TIGAR-O version 2",
+          columns: ["Letter", "Cause", "Example"],
+          rows: [
+            ["T", "Toxic-metabolic", "Alcohol, smoking, hypercalcaemia, hypertriglyceridaemia"],
+            ["I", "Idiopathic", "Tropical calcific pancreatitis"],
+            ["G", "Genetic", "PRSS1, SPINK1, CFTR, CTRC"],
+            ["A", "Autoimmune", "IgG4 autoimmune pancreatitis"],
+            ["R", "Recurrent acute pancreatitis", "Sentinel attack model"],
+            ["O", "Obstructive", "Divisum, tumour, stricture"],
+          ],
+        },
+        {
+          heading: "Type 3c vs type 2 diabetes",
+          columns: ["Feature", "Type 3c", "Type 2"],
+          rows: [
+            ["Glucagon", "Low", "High"],
+            ["Hypoglycaemia", "Frequent", "Rare"],
+            ["Exocrine function", "Low FE-1", "Normal"],
+            ["Body habitus", "Thin", "Obese"],
+            ["Treatment", "Metformin if mild, insulin", "Metformin, others"],
+          ],
+        },
+      ],
+      remember: [
+        "**TIGAR-O** for causes; **M-ANNHEIM** for stages.",
+        "Triad: **pain, steatorrhoea, diabetes**.",
+        "**SPINK1 N34S** marks tropical pancreatitis.",
+        "Enzymes go **with the first bite**.",
+        "Failed PERT: check timing, raise dose, add **PPI**.",
+        "Isolated gastric varices with normal liver: **splenic vein thrombosis**.",
+        "**ESCAPE** 2020: operate early for painful dilated duct.",
+      ],
+    },
+  },
+  "gastro-hepatology-pancreatic-cancer-cystic": {
+    checked: "2026-10",
+    updated: [
+      "Kyoto 2023 IPMN guideline replacing Fukuoka 2017 (cytology, new diabetes, growth >= 2.5 mm/year)",
+      "NAPOLI-3 (2023): NALIRIFOX added as first-line metastatic regimen (NCCN 2025)",
+      "NCCN 2025: universal germline testing in all PDAC",
+      "ESMO 2023 pancreatic cancer guideline: adjuvant mFOLFIRINOX, neoadjuvant for borderline",
+      "CAPS 2020 consensus on screening high-risk individuals",
+    ],
+    master: {
+      heading: "Pancreatic cancer and cysts - whole topic in one table",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "PDAC is 90% of pancreatic cancers; 5-year survival about 13%; 80-85% unresectable at diagnosis"],
+        ["Risk factors", "Smoking, diabetes, obesity, chronic pancreatitis, BRCA2/PALB2, Lynch, Peutz-Jeghers, CDKN2A, IPMN"],
+        ["Molecular", "KRAS > 90%, CDKN2A, TP53, SMAD4; PanIN precursor"],
+        ["Clinical", "Painless jaundice, weight loss, back pain, new diabetes after 50, Courvoisier, Trousseau"],
+        ["CT", "Pancreatic protocol multiphasic before stenting; hypoattenuating mass, double duct sign"],
+        ["CA 19-9", "ULN 37; prognosis not screening; false high in cholestasis; > 500 suggests occult metastasis"],
+        ["Resectability", "Resectable no arterial contact; borderline SMA <= 180 degrees; locally advanced > 180 degrees"],
+        ["Resectable treatment", "Whipple or distal pancreatectomy, then mFOLFIRINOX for 6 months"],
+        ["Advanced treatment", "FOLFIRINOX, NALIRIFOX or gem-nab-paclitaxel; olaparib for BRCA"],
+        ["Palliation", "SEMS, duodenal stent, coeliac plexus neurolysis, PERT, LMWH, palliative care"],
+        ["Cyst types", "IPMN, MCN, serous cystadenoma, SPN, pseudocyst"],
+        ["Kyoto HRS", "Jaundice, nodule >= 5 mm, MPD >= 10 mm, positive cytology"],
+        ["Kyoto WF", "Pancreatitis, CA 19-9, new diabetes, cyst >= 30 mm, MPD 5-9 mm, growth >= 2.5 mm/year"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected pancreatic cancer - work-up",
+        steps: [
+          { label: "Painless jaundice, weight loss, new diabetes", detail: "Age over 50" },
+          { label: "Ultrasound: dilated ducts" },
+          { label: "Pancreatic-protocol CT before stent", detail: "Parenchymal and portal venous phases", tone: "warn" },
+          { label: "Classify resectability", detail: "Arterial and venous contact in degrees", tone: "decision" },
+          { label: "EUS-FNB if neoadjuvant or palliative chemo planned" },
+          { label: "Tumour board at high-volume centre", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Treatment by resectability",
+        root: "Pancreatic-protocol CT staging",
+        arms: [
+          { label: "Resectable", tone: "good", steps: ["Whipple or distal pancreatectomy", "Adjuvant mFOLFIRINOX 6 months"] },
+          { label: "Borderline", tone: "decision", steps: ["Neoadjuvant chemotherapy", "Re-stage, then surgery"] },
+          { label: "Locally advanced", tone: "neutral", steps: ["Chemotherapy ± chemoradiation", "Re-assess for conversion"] },
+          { label: "Metastatic", tone: "warn", steps: ["FOLFIRINOX, NALIRIFOX or gem-nab-paclitaxel", "Stents, pain control, palliative care"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Pancreatic cysts compared",
+        columns: ["Feature", "IPMN", "MCN", "Serous cystadenoma", "Pseudocyst"],
+        rows: [
+          ["Patient", "Elderly, both sexes", "Women 40-50", "Women 60s", "After pancreatitis"],
+          ["Duct communication", "Yes", "No", "No", "Sometimes"],
+          ["Look", "Grape-like or dilated MPD", "Body/tail, unilocular", "Honeycomb, central scar", "Unilocular, no septa"],
+          ["Cyst CEA", "High", "High", "Low", "Low (amylase high)"],
+          ["Action", "Kyoto criteria", "Resect if >= 4 cm", "Leave alone", "Drain if symptomatic"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**PDAC** is 90% of pancreatic cancers and has about **13%** 5-year survival.",
+            "About **80%** are unresectable when diagnosed.",
+            "**60-70%** arise in the head and present with jaundice.",
+            "Incidental **pancreatic cysts** appear in up to 15-20% of MRIs.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Smoking** doubles risk and is the main modifiable factor.",
+            "Diabetes, obesity and **chronic pancreatitis** raise risk.",
+            "Genes: **BRCA2, PALB2**, Lynch, Peutz-Jeghers, CDKN2A.",
+            "**KRAS** mutation in over 90% starts the cancer.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Painless progressive jaundice** with pruritus and weight loss.",
+            "Back pain means **perineural invasion** and often unresectable disease.",
+            "**New diabetes after 50 with weight loss** is an early clue.",
+            "**Courvoisier sign**, Trousseau sign and Virchow node are classic.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Pancreatic-protocol CT** before any stent.",
+            "**Double duct sign**: dilated CBD and pancreatic duct.",
+            "**EUS-FNB** for tissue before chemotherapy.",
+            "**CA 19-9** for prognosis and follow-up, never screening.",
+            "Germline testing for **every** patient.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Resectable**: no arterial contact.",
+            "**Borderline**: SMA contact 180 degrees or less, or reconstructible vein.",
+            "**Locally advanced**: SMA or coeliac encasement over 180 degrees.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Resectable head tumour: **Whipple**, then **mFOLFIRINOX** for 6 months.",
+            "Borderline: **neoadjuvant** chemotherapy, then surgery.",
+            "Metastatic fit patients: **FOLFIRINOX, NALIRIFOX** or gem-nab-paclitaxel.",
+            "**Olaparib** maintenance for germline BRCA.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Jaundice: **metal stent** at ERCP.",
+            "Duodenal block: **duodenal stent** or gastrojejunostomy.",
+            "Pain: **morphine** and coeliac plexus neurolysis.",
+            "Give **PERT**, LMWH for clots, and early palliative care.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Cysts**: serous cystadenoma is benign; leave it alone.",
+            "**Main-duct IPMN** has about 60% risk; resect if duct 10 mm or more.",
+            "**MCN** 4 cm or more and all **SPN** need resection.",
+            "High-risk families: **EUS or MRI** screening from about age 50.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**Kyoto 2023** added positive cytology as a high-risk stigma.",
+            "**Kyoto 2023** added new-onset diabetes as a worrisome feature.",
+            "Cyst growth cut-off now **2.5 mm per year**.",
+            "**NALIRIFOX** joined first-line options after NAPOLI-3.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in pancreatic cancer",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["mFOLFIRINOX", "Oxaliplatin 85, irinotecan 150, 5-FU 2,400 mg/m2 IV every 2 weeks", "12 cycles adjuvant", "Neutropenia, diarrhoea, neuropathy"],
+            ["Gemcitabine + nab-paclitaxel", "1,000 + 125 mg/m2 IV days 1, 8, 15 every 28 days", "Until progression", "Neuropathy, neutropenia"],
+            ["NALIRIFOX", "Liposomal irinotecan 50, oxaliplatin 60 mg/m2 + 5-FU IV every 2 weeks", "Until progression", "Diarrhoea, neutropenia"],
+            ["Olaparib", "300 mg oral twice daily", "Maintenance in BRCA", "Anaemia, nausea"],
+            ["Pancreatin", "40,000-50,000 U oral with meals", "Throughout", "Bloating"],
+            ["Enoxaparin", "1 mg/kg SC 12-hourly", "6 months or longer", "Bleeding"],
+          ],
+        },
+        {
+          heading: "NCCN resectability",
+          columns: ["Category", "Artery", "Vein"],
+          rows: [
+            ["Resectable", "No contact", "None or <= 180 degrees, smooth"],
+            ["Borderline", "SMA <= 180 degrees; CHA short segment", "Reconstructible involvement"],
+            ["Locally advanced", "SMA or coeliac > 180 degrees", "Unreconstructible"],
+          ],
+        },
+        {
+          heading: "Kyoto 2023 IPMN criteria",
+          columns: ["Category", "Items", "Action"],
+          rows: [
+            ["High-risk stigmata", "Jaundice, nodule >= 5 mm, MPD >= 10 mm, positive cytology", "Surgery if fit"],
+            ["Worrisome features", "Pancreatitis, CA 19-9, new diabetes, cyst >= 30 mm, MPD 5-9 mm, nodule < 5 mm, growth >= 2.5 mm/year", "EUS ± FNA"],
+            ["Neither", "Small stable cyst", "MRI surveillance"],
+          ],
+        },
+      ],
+      remember: [
+        "**CT before stent** - always.",
+        "CA 19-9: **false high** in cholestasis, **absent** in Lewis-negative.",
+        "**Double duct sign** points to a head mass.",
+        "Resectable means **no arterial contact**.",
+        "Kyoto HRS: **jaundice, nodule 5, duct 10, cytology**.",
+        "Serous = **grandmother**, benign; SPN = **daughter**.",
+        "New diabetes after 50 plus **weight loss** - image the pancreas.",
+      ],
+    },
+  },
+  "gastro-hepatology-liver-in-pregnancy": {
+    checked: "2026-10",
+    updated: [
+      "EASL Clinical Practice Guidelines on liver diseases in pregnancy (2023)",
+      "RCOG Green-top 43 (2022): ICP bile acids >= 19 non-fasting, delivery timing by peak level, UDCA not for perinatal benefit",
+      "RCOG Green-top 69 (2024): nausea, vomiting and hyperemesis gravidarum",
+      "WHO hepatitis B guidelines (2024): tenofovir for all HBsAg-positive pregnant women where DNA testing unavailable",
+      "SMFM 2021 ICP: fasting bile acids >= 10, delivery at 36 weeks if >= 100 (differs from RCOG)",
+    ],
+    master: {
+      heading: "Liver disease in pregnancy - whole topic in one table",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Abnormal LFT in 3-5% of pregnancies; pregnancy-specific or coincidental/pre-existing"],
+        ["Normal changes", "ALP up 2-4 times, albumin down; ALT, AST, bilirubin, bile acids normal"],
+        ["Trimester clue", "HG first; ICP second-third; HELLP, AFLP, rupture third"],
+        ["Hyperemesis", "PUQE >= 13 severe; fluids with K, thiamine before dextrose, doxylamine-pyridoxine, ondansetron"],
+        ["ICP", "Itch palms/soles at night; bile acids >= 19 (RCOG); UDCA for itch; deliver 35-36 weeks if >= 100"],
+        ["HELLP", "LDH >= 600, AST >= 70, platelets < 100,000; MgSO4, BP control, deliver >= 34 weeks"],
+        ["AFLP", "Swansea 6 of 14; hypoglycaemia, coagulopathy; fetal LCHAD; prompt delivery"],
+        ["Hepatitis E", "Mortality 15-25% third trimester; supportive ICU; no ribavirin; safe water"],
+        ["Hepatitis B", "Universal HBsAg; TDF 300 mg from 24-28 weeks if DNA >= 200,000; vaccine + HBIG within 12 h"],
+        ["Hepatitis C", "Treat after delivery; vertical transmission about 5%; breastfeeding allowed"],
+        ["Cirrhosis", "Screen varices second trimester; propranolol, banding; avoid terlipressin"],
+        ["Safe drugs", "Paracetamol, UDCA, TDF, azathioprine, prednisolone, tacrolimus, propranolol, lactulose"],
+        ["Unsafe drugs", "Ribavirin, mycophenolate, methotrexate, warfarin, NSAIDs after 20 weeks"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Abnormal liver tests in pregnancy - work-up",
+        steps: [
+          { label: "Raised ALT, AST, bilirubin or bile acids", detail: "ALP alone is placental" },
+          { label: "Which trimester?", detail: "First: HG; second-third: ICP; third: HELLP, AFLP", tone: "decision" },
+          { label: "BP, urine protein, CBC with smear, LDH" },
+          { label: "Glucose, INR, fibrinogen, urate, ammonia", detail: "Swansea criteria for AFLP" },
+          { label: "Viral serology A, B, E, HSV PCR; ultrasound" },
+          { label: "Confusion, INR > 1.5, hypoglycaemia: refer now", tone: "warn" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "Preventing HBV mother-to-child transmission",
+        steps: [
+          { label: "HBsAg at first antenatal visit", detail: "Universal under NVHCP" },
+          { label: "Positive: HBeAg, HBV DNA, ALT at 24-28 weeks", tone: "decision" },
+          { label: "DNA >= 200,000 IU/mL or HBeAg positive", detail: "TDF 300 mg daily from 24-28 weeks", tone: "warn" },
+          { label: "Birth: vaccine within 24 h + HBIG within 12 h", detail: "HBIG 0.5 mL (100 IU) IM", tone: "good" },
+          { label: "Breastfeed; mother ALT 3-monthly for 6 months" },
+          { label: "Infant HBsAg and anti-HBs at 9-12 months", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "AFLP vs HELLP",
+        columns: ["Feature", "AFLP", "HELLP"],
+        rows: [
+          ["Hypoglycaemia", "Common", "Rare"],
+          ["Coagulopathy", "Early, marked", "Only with DIC"],
+          ["Platelets", "Mildly low", "< 100,000"],
+          ["Haemolysis", "Mild", "Prominent"],
+          ["Hypertension", "In half", "Usual"],
+          ["Encephalopathy", "Common", "Rare"],
+          ["Treatment", "Prompt delivery, glucose, FFP", "MgSO4, BP control, deliver"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Abnormal liver tests occur in **3-5%** of pregnancies.",
+            "Normal pregnancy raises **ALP** and lowers **albumin**.",
+            "Raised **ALT, bilirubin or bile acids** is always abnormal.",
+            "**Spider naevi** and palmar erythema can be normal in pregnancy.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "First trimester: **hyperemesis gravidarum**.",
+            "Second-third trimester: **intrahepatic cholestasis of pregnancy**.",
+            "Third trimester: **HELLP, AFLP** and hepatic rupture.",
+            "Any time: **viral hepatitis**, drugs, gallstones, Budd-Chiari.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "ICP: hormones block the **bile salt export pump**; bile acids harm the fetal heart.",
+            "AFLP: fetal **LCHAD deficiency** causes microvesicular fat in the mother.",
+            "HELLP: placental **sFlt-1** injures endothelium, giving haemolysis and low platelets.",
+            "Hepatitis E is worse in pregnancy due to **hormonal and immune** changes.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "ICP: **itch of palms and soles**, worse at night, no rash.",
+            "AFLP: vomiting, **polydipsia**, jaundice, confusion.",
+            "HELLP: **RUQ pain** with hypertension.",
+            "Sudden pain with shock suggests **hepatic rupture**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "ICP: random bile acids **19 micromol/L or more** (RCOG).",
+            "HELLP: **LDH 600, AST 70, platelets under 100,000**.",
+            "AFLP: **Swansea criteria**, 6 or more of 14.",
+            "Check **IgM anti-HEV, anti-HAV, HBsAg** in every jaundiced woman.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Hyperemesis: **doxylamine-pyridoxine**, then ondansetron; give **thiamine**.",
+            "ICP: **UDCA** 10-15 mg/kg/day for itch.",
+            "ICP birth: **35-36 weeks** if bile acids 100 or more.",
+            "HBV: **tenofovir** from 24-28 weeks if DNA 200,000 IU/mL or more.",
+            "Newborn: **vaccine and HBIG** within 12 hours.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "AFLP: correct glucose and clotting, then **deliver promptly**.",
+            "HELLP: **magnesium sulphate**, labetalol, deliver at 34 weeks or more.",
+            "Platelets to **50,000** before caesarean.",
+            "Hepatitis E failure: ICU care; **no ribavirin**.",
+            "HSV hepatitis: **IV acyclovir** at once.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Cirrhosis: screen **varices** in the second trimester; propranolol is safe.",
+            "Wilson disease: **continue** zinc or reduced-dose chelator.",
+            "AIH: continue **azathioprine**; stop mycophenolate before conception.",
+            "HCV: treat **after delivery**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "ICP stillbirth risk rises at bile acids **100 or more**.",
+            "ICP recurs in **45-90%** of later pregnancies.",
+            "Test the AFLP baby for **LCHAD**.",
+            "Hepatitis E maternal mortality is **15-25%** in the third trimester.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**EASL 2023** issued its first pregnancy liver guideline.",
+            "**RCOG 2022**: UDCA does not improve perinatal outcome.",
+            "**WHO 2024**: tenofovir for all HBsAg-positive mothers if DNA testing unavailable.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for liver disease in pregnancy",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["UDCA", "10-15 mg/kg/day oral in 2-3 doses", "Until delivery", "Diarrhoea"],
+            ["Doxylamine-pyridoxine", "10/10 mg, 2 at bedtime, up to 4/day oral", "As needed", "Drowsiness"],
+            ["Ondansetron", "4-8 mg oral or IV 8-hourly", "Short courses", "QT, constipation, small cleft risk"],
+            ["Thiamine", "100 mg oral daily or IV before dextrose", "While vomiting", "Rare anaphylaxis"],
+            ["Tenofovir disoproxil", "300 mg oral daily", "24-28 weeks to delivery, up to 12 weeks post-partum", "Renal, bone; post-stop flare"],
+            ["HBIG", "0.5 mL (100 IU) IM to newborn", "Once within 12 hours", "Local pain"],
+            ["Magnesium sulphate", "4 g IV + 10 g IM, then 5 g IM 4-hourly", "24 hours after delivery", "Respiratory depression; check reflexes"],
+            ["Labetalol", "20 mg IV, escalate; 100-400 mg oral 8-12 hourly", "To target BP", "Avoid in asthma"],
+          ],
+        },
+        {
+          heading: "Pregnancy-specific liver disease by trimester",
+          columns: ["Disease", "Trimester", "Key lab", "Key action"],
+          rows: [
+            ["Hyperemesis", "First", "Ketones, hypokalaemia, ALT mildly up", "Fluids, thiamine, antiemetics"],
+            ["ICP", "Second-third", "Bile acids >= 19", "UDCA, timed delivery"],
+            ["HELLP", "Third", "LDH, AST, low platelets", "MgSO4, deliver"],
+            ["AFLP", "Third", "Hypoglycaemia, high INR", "Prompt delivery"],
+          ],
+        },
+        {
+          heading: "ICP delivery timing (RCOG 2022)",
+          columns: ["Peak bile acids (micromol/L)", "Stillbirth risk", "Planned birth"],
+          rows: [
+            ["19-39", "Not raised", "By 40 weeks"],
+            ["40-99", "Slightly raised", "Consider 38-39 weeks"],
+            ["100 or more", "About 3.4%", "Consider 35-36 weeks"],
+          ],
+        },
+      ],
+      remember: [
+        "**ALP up, albumin down**: normal pregnancy.",
+        "Trimester rule: **HG 1, ICP 2-3, HELLP and AFLP 3**.",
+        "AFLP = **sugar low, clotting long**; HELLP = **cells broken, platelets low**.",
+        "**Swansea**: 6 of 14 for AFLP.",
+        "Thiamine **before** dextrose.",
+        "HBV: **TDF at 200,000**, vaccine and HBIG within **12 hours**.",
+        "Hepatitis E in pregnancy: **no ribavirin**, give safe water.",
+      ],
+    },
+  },
 };
 
 export default revision;

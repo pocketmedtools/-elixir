@@ -95,6 +95,7 @@ topics.push({
         "**Unexplained iron-deficiency anaemia** in a man or post-menopausal woman needs **both upper endoscopy and colonoscopy** whatever the bowel symptoms. [BSG 2021 IDA]",
         "**Young-onset red flags**: any adult under 50 with **rectal bleeding, change in bowel habit, abdominal pain or IDA** must be investigated - age is not reassurance. [ACG 2021 CRC screening]",
         "Ask about **family history** (age at diagnosis of each relative, endometrial, ovarian, gastric, urinary tract cancers for Lynch), IBD, prior polyps and previous colonoscopy. [NCCN 2024]",
+        "**Urgent (2-week) colonoscopy referral**: **FIT 10 micrograms Hb/g or more**, rectal or abdominal mass, unexplained IDA, or rectal bleeding with change in bowel habit over 40-50. [NICE DG56 2023; NICE NG12 2015 updated 2023]",
       ],
     },
     {
@@ -148,6 +149,7 @@ topics.push({
         "**IBD (extensive or left-sided colitis, Crohn colitis over a third of colon)**: surveillance colonoscopy from **8 years** after symptom onset, every 1-5 years by risk; **annually from diagnosis if PSC**. [ACG 2025 UC; ECCO 2023]",
         "**Indian practical approach**: no national programme, so offer **FIT annually from 45-50** or colonoscopy where available, prioritise high-risk families, and **investigate every symptomatic young patient** rather than wait for screening age. [ICMR STW 2023; expert consensus]",
         "**Colonoscopy quality** determines protection: **adenoma detection rate at least 35%** (40% men, 30% women), withdrawal time **8 minutes or more**, caecal intubation **at least 95%**, adequate bowel prep **at least 90%**; each 1% rise in ADR lowers interval cancer risk by about 3%. [ASGE/ACG quality indicators 2024; Corley NEJM 2014]",
+        "**Counsel on screening choice**: \"the best test is the one that gets done\" - FIT is home-based and annual, colonoscopy is one-step but invasive; both reduce mortality. [USPSTF 2021; ACG 2021]",
       ],
     },
     {
@@ -175,6 +177,7 @@ topics.push({
         "**MSI-H/dMMR metastatic CRC**: first-line **pembrolizumab** (KEYNOTE-177) or **nivolumab plus ipilimumab** (CheckMate 8HW). [ESMO 2023 mCRC; NCCN 2025]",
         "**Malignant large-bowel obstruction**: resuscitate, CT, then resection (Hartmann procedure or primary anastomosis) or **self-expanding metal stent** as bridge to surgery or palliation in left-sided disease. [ESGE 2020 stenting; WSES 2018]",
         "**Monitor during chemotherapy**: CBC before each cycle, **oxaliplatin neuropathy** (cold-induced), hand-foot syndrome with capecitabine, diarrhoea and neutropenic fever (admit if temperature 38.3 C or more with ANC under 500). [NCCN 2024]",
+        "**Insurance link**: colonoscopy, surgery and chemotherapy are covered under **Ayushman Bharat PM-JAY** packages for eligible families; cancer care at **Tertiary Cancer Care Centres** and **State Cancer Institutes**. [NHA PM-JAY HBP 2022]",
       ],
     },
     {
@@ -200,6 +203,7 @@ topics.push({
         "**FAP**: germline **APC** mutation, **100 to thousands of adenomas**, near **100% cancer by age 40** without colectomy; flexible sigmoidoscopy or colonoscopy **annually from 10-12 years**; **prophylactic colectomy** (IPAA or IRA) in late teens to mid-20s. [NCCN 2024]",
         "**FAP extracolonic**: **duodenal/periampullary adenomas** (leading cause of death after colectomy; Spigelman staging guides upper endoscopy), **desmoid tumours**, thyroid cancer, CHRPE, osteomas (**Gardner**) and medulloblastoma (**Turcot**). [NCCN 2024]",
         "**Attenuated FAP** (10-99 adenomas, later onset) and **MUTYH-associated polyposis** (**autosomal recessive**, 10-100s of adenomas) - test patients with **10 or more cumulative adenomas** for a polyposis gene panel. [NCCN 2024; ACG 2015 hereditary]",
+        "**Genetics referral**: dMMR/MSI-H tumour without MLH1 methylation or BRAF mutation, Amsterdam criteria, **10 or more adenomas**, CRC under 50, or known familial mutation - **cascade testing of relatives**. [NCCN 2024]",
       ],
     },
     {
@@ -213,18 +217,7 @@ topics.push({
         "**After curative CRC resection**: colonoscopy at **1 year** (or 3-6 months if the colon was not cleared pre-operatively), then **3 years**, then every **5 years**. [USMSTF 2016 post-resection]",
         "**Stage II-III follow-up**: history, examination and **CEA every 3-6 months for 2 years, then 6-monthly to 5 years**; **CT chest-abdomen-pelvis every 6-12 months for up to 5 years**. [NCCN 2024; ASCO 2013]",
         "**Prognosis**: by stage, 5-year survival about **I over 90%, II 80%, III 60-70%, IV 10-15%**; adverse factors are T4, N2, obstruction/perforation, LVI, high CEA and BRAF V600E. [AJCC 8e; SEER 2024]",
-      ],
-    },
-    {
-      heading: "Referral, follow-up and prevention counselling",
-      points: [
-        "**Urgent (2-week) colonoscopy referral**: **FIT 10 micrograms Hb/g or more**, rectal or abdominal mass, unexplained IDA, or rectal bleeding with change in bowel habit over 40-50. [NICE DG56 2023; NICE NG12 2015 updated 2023]",
-        "**Genetics referral**: dMMR/MSI-H tumour without MLH1 methylation or BRAF mutation, Amsterdam criteria, **10 or more adenomas**, CRC under 50, or known familial mutation - **cascade testing of relatives**. [NCCN 2024]",
-        "**Family physician role**: draw a **three-generation pedigree**, classify risk (average, increased, hereditary), arrange the right test and **track that a positive FIT leads to colonoscopy**. [ACG 2021]",
         "**Survivorship care**: monitor CEA and imaging schedule, manage **oxaliplatin neuropathy**, bowel dysfunction after anterior resection (**LARS**), stoma care, sexual and urinary function, and psychological support. [ASCO 2019 survivorship]",
-        "**Insurance link**: colonoscopy, surgery and chemotherapy are covered under **Ayushman Bharat PM-JAY** packages for eligible families; cancer care at **Tertiary Cancer Care Centres** and **State Cancer Institutes**. [NHA PM-JAY HBP 2022]",
-        "**Counsel on screening choice**: \"the best test is the one that gets done\" - FIT is home-based and annual, colonoscopy is one-step but invasive; both reduce mortality. [USPSTF 2021; ACG 2021]",
-        "**Stop surveillance** in elderly patients with low-risk findings when **age is over 75-85** or life expectancy is limited; decide with the patient. [USMSTF 2020]",
       ],
     },
     {

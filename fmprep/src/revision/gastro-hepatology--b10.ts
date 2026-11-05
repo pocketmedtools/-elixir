@@ -218,6 +218,646 @@ const revision: RevisionSet = {
     },
   },
 
+  "gastro-hepatology-dili-herbal": {
+    checked: "2026-10",
+    updated: [
+      "ACG Idiosyncratic DILI guideline (2021): R ratio, HEV in work-up, NAC for adult non-paracetamol ALF, no routine steroids or rechallenge.",
+      "AASLD Practice Guidance on drug, herbal and dietary supplement liver injury (2023): HDS adulteration, indirect DILI, HLA risk alleles.",
+      "RECAM (2022) revised electronic causality assessment method.",
+      "CIOMS DILI consensus (2020): baseline-adjusted thresholds when LFTs are abnormal at start.",
+      "NTEP Technical Guidance (2021) with ATS sequential reintroduction R, then H, then Z.",
+      "Indian giloy (Tinospora) AIH-like injury reports (2021-2022).",
+    ],
+    master: {
+      heading: "Master revision table - Drug-induced liver injury",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Liver injury from drug or **HDS** after exclusion; **ALT 5 x ULN, ALP 2 x ULN, or ALT 3 x + bilirubin 2 x ULN**."],
+        ["Burden", "Global 14-19/100,000/year; India (INDILI): **ATT first, CAM second**; ATT DILI 2-28%."],
+        ["Mechanism", "Intrinsic (paracetamol), **idiosyncratic** (HLA, immune), indirect (checkpoint inhibitors, HBV reactivation)."],
+        ["Pattern", "**R = (ALT/ULN)/(ALP/ULN)**: 5 or more hepatocellular, 2 or less cholestatic, 2-5 mixed."],
+        ["Causality", "**RUCAM** 9+ highly probable, 6-8 probable, 3-5 possible; **RECAM 2022**."],
+        ["Severity", "**Hy's law** ALT over 3 x + bilirubin over 2 x ULN = 10% mortality; severe if INR 1.5 or more."],
+        ["Herbs", "**Giloy** AIH-like, **ashwagandha** cholestatic, green tea, turmeric, Garcinia, **pyrrolizidine SOS**, heavy metals."],
+        ["Work-up", "LFT, INR, eosinophils, **HAV, HBV, HEV, HCV**, ultrasound Doppler; ANA, IgG; biopsy if not settling."],
+        ["ATT stop rule", "**ALT over 3 x ULN with symptoms or over 5 x ULN without**; stop H, R, Z."],
+        ["Bridge", "Ethambutol + levofloxacin + streptomycin/amikacin in severe TB."],
+        ["Reintroduce", "ALT under 2 x ULN: **R + E, then H at 3-7 days, then Z** if mild; omit Z if severe (2HRE/7HR)."],
+        ["Treatment", "Stop culprit; NAC in adult ALF; steroids only DRESS/AIH-like; cholestyramine for itch; no UDCA proof."],
+        ["Refer/admit", "INR 1.5 or more, encephalopathy, rising bilirubin, cirrhosis, herbal ACLF."],
+        ["Prevention", "High-risk baseline LFT, counselling, avoid alcohol and CAM, report to **PvPI**, record in Ni-kshay."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected DILI: diagnostic pathway",
+        steps: [
+          { label: "Abnormal LFT on a drug or herb", detail: "Full drug and HDS history for 6 months" },
+          { label: "Meets DILI threshold?", detail: "ALT 5 x, ALP 2 x, or ALT 3 x + bilirubin 2 x ULN", tone: "decision" },
+          { label: "Calculate R ratio", detail: "5 or more hepatocellular; 2 or less cholestatic" },
+          { label: "Exclude other causes", detail: "HAV, HBV, HEV, HCV, AIH, alcohol, ultrasound Doppler" },
+          { label: "Causality score", detail: "RUCAM or RECAM; check LiverTox" },
+          { label: "Severity check", detail: "Hy's law, INR 1.5 or more, encephalopathy: admit", tone: "warn" },
+          { label: "Stop culprit, follow LFT weekly", detail: "Biopsy if ALT not halved by 60 days", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "ATT hepatotoxicity: stop, bridge, reintroduce",
+        caption: "ATS 2003/2006; NTEP 2021",
+        steps: [
+          { label: "Stop H, R, Z", detail: "ALT over 3 x ULN with symptoms or over 5 x ULN", tone: "warn" },
+          { label: "Bridge if TB severe", detail: "Ethambutol + levofloxacin + streptomycin/amikacin" },
+          { label: "Wait for recovery", detail: "ALT under 2 x ULN, bilirubin normal", tone: "decision" },
+          { label: "Rifampicin + ethambutol", detail: "Full dose; ALT at 3-7 days" },
+          { label: "Add isoniazid", detail: "ALT at 3-7 days" },
+          { label: "Add pyrazinamide if injury mild", detail: "Severe injury: omit, give 2HRE + 7HR", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "DILI phenotypes and examples",
+        root: "Drug-induced liver injury",
+        arms: [
+          { label: "Hepatocellular (R 5 or more)", tone: "warn", steps: ["Isoniazid, pyrazinamide", "Paracetamol, nimesulide", "Green tea extract", "Hy's law risk"] },
+          { label: "Cholestatic (R 2 or less)", steps: ["Amoxicillin-clavulanate", "Anabolic steroids", "Ashwagandha", "Slower recovery"] },
+          { label: "Mixed (R 2-5)", steps: ["Phenytoin, carbamazepine", "Sulfonamides", "Often with DRESS"] },
+          { label: "Special phenotypes", steps: ["AIH-like: giloy, nitrofurantoin", "SOS: pyrrolizidine herbs", "Steatosis: valproate"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**DILI** is liver injury from a drug or **herbal supplement** after excluding other causes.",
+            "Threshold: **ALT 5 x ULN**, ALP 2 x ULN, or ALT 3 x with bilirubin 2 x ULN.",
+            "In India **ATT** is the commonest cause, then **complementary medicines**.",
+            "ATT hepatotoxicity occurs in **2-28%** of treated patients.",
+            "**Hy's law** predicts about 10% death or transplant.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "ATT risk: **age, alcohol, malnutrition**, female sex, HBV/HCV/HIV, slow acetylators.",
+            "Herbs: **giloy, ashwagandha**, turmeric, green tea, Garcinia, pyrrolizidine plants.",
+            "Herbal products may hide **heavy metals, steroids or NSAIDs**.",
+            "Other culprits: amoxicillin-clavulanate, antiepileptics, nevirapine, methotrexate, NSAIDs.",
+            "Cirrhosis raises **mortality** from DILI and herbal ACLF.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "**Intrinsic** DILI is dose-related, like paracetamol producing NAPQI.",
+            "**Idiosyncratic** DILI is immune, HLA-linked, after 5-90 days.",
+            "Isoniazid forms toxic **hydrazine**, more in slow acetylators, boosted by rifampicin.",
+            "Rifampicin blocks bilirubin transport, causing **cholestatic jaundice**.",
+            "Giloy may cause **AIH-like** injury; pyrrolizidines block sinusoids.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**R ratio** = ALT multiple divided by ALP multiple.",
+            "R **5 or more hepatocellular**, 2 or less cholestatic, between mixed.",
+            "**RUCAM**: 9+ highly probable, 6-8 probable, 3-5 possible.",
+            "Severe DILI means jaundice with **INR 1.5 or more** or organ failure.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Often **asymptomatic**; else anorexia, nausea, jaundice, dark urine.",
+            "ATT hepatitis begins in the **first 2-8 weeks** with nausea and vomiting.",
+            "Fever, rash and eosinophilia suggest **DRESS**.",
+            "Ask about **kadha, giloy, ashwagandha**, gym and weight-loss supplements.",
+            "Asterixis or confusion means **acute liver failure**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "LFT, **INR**, eosinophils, creatinine and glucose.",
+            "Exclude **HAV, HBV, HEV, HCV**, AIH and biliary obstruction by ultrasound.",
+            "Keep the **herbal product** for testing.",
+            "**Biopsy** if ALT not halved by 60 days or AIH suspected.",
+            "High-risk ATT patients need **baseline and 2-4 weekly LFT**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Stop** the culprit drug and all herbs.",
+            "Stop ATT if ALT **over 3 x with symptoms or over 5 x without**.",
+            "Bridge severe TB with **ethambutol, levofloxacin and an aminoglycoside**.",
+            "Restart **rifampicin, then isoniazid, then pyrazinamide** when ALT under 2 x ULN.",
+            "Omit pyrazinamide after severe injury and give **2HRE + 7HR**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Admit for **INR 1.5 or more**, encephalopathy or Hy's law pattern.",
+            "**NAC** improves survival in adult non-paracetamol ALF with early coma.",
+            "Steroids only for **DRESS or AIH-like** injury.",
+            "Refer early to a **transplant centre** if INR or encephalopathy worsens.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Weekly LFT until improving; check again at **6 months** for chronic DILI.",
+            "Record the culprit and give a **drug-allergy note**.",
+            "Report to **PvPI** and AYUSH pharmacovigilance.",
+            "Counsel that **natural does not mean safe**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ACG 2021** DILI guideline and **AASLD 2023** HDS guidance.",
+            "**RECAM 2022** improves on RUCAM.",
+            "**CIOMS 2020** adjusts thresholds to baseline LFTs.",
+            "Indian **giloy** case series in 2021-2022.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "DILI and ATT drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["N-acetylcysteine", "150 mg/kg IV 1 h, 12.5 mg/kg/h 4 h, 6.25 mg/kg/h", "72 h", "Anaphylactoid; not in children for non-paracetamol ALF"],
+            ["Prednisolone", "0.5-1 mg/kg/day orally", "Taper 4-12 weeks", "Only DRESS, AIH-like DILI"],
+            ["Cholestyramine", "4 g orally up to QID", "Until itch settles", "Binds other drugs"],
+            ["Rifampicin", "10 mg/kg orally daily", "Restart first", "Cholestasis, interactions"],
+            ["Isoniazid", "5 mg/kg (300 mg) orally + pyridoxine", "Add second", "Hepatitis, neuropathy"],
+            ["Pyrazinamide", "25 mg/kg orally daily", "Add last or omit", "Severe hepatitis, gout"],
+            ["Levofloxacin (bridge)", "750-1000 mg orally daily", "Until LFT recovers", "Tendinopathy, QT"],
+          ],
+        },
+        {
+          heading: "Injury pattern by R ratio",
+          columns: ["Pattern", "R ratio", "Examples"],
+          rows: [
+            ["Hepatocellular", "5 or more", "Isoniazid, pyrazinamide, paracetamol, green tea"],
+            ["Cholestatic", "2 or less", "Amoxicillin-clavulanate, anabolic steroids, ashwagandha"],
+            ["Mixed", "2-5", "Phenytoin, carbamazepine, sulfonamides"],
+            ["AIH-like", "Usually hepatocellular", "Giloy, nitrofurantoin, minocycline"],
+          ],
+        },
+        {
+          heading: "DILI mimics",
+          columns: ["Mimic", "Clue", "Test"],
+          rows: [
+            ["Hepatitis E", "Endemic in India", "IgM anti-HEV"],
+            ["Autoimmune hepatitis", "Woman, autoimmunity", "ANA, ASMA, IgG"],
+            ["Alcohol hepatitis", "AST:ALT over 2", "History, GGT"],
+            ["Ischaemic hepatitis", "Recent shock", "Rapid ALT fall"],
+            ["Biliary obstruction", "Colic, dilated ducts", "Ultrasound"],
+          ],
+        },
+      ],
+      remember: [
+        "**Hy's law**: hepatocellular injury plus jaundice equals 10% mortality.",
+        "**R = ALT multiple / ALP multiple**; 5 hepatocellular, 2 cholestatic.",
+        "**ATT stop rule: 3 with symptoms, 5 without.**",
+        "**Restart R, then H, then Z.**",
+        "**Test for hepatitis E** before calling it DILI.",
+        "**Ask for the bottle** in every herbal history.",
+        "**NAC for adult ALF**, steroids only for DRESS or AIH-like DILI.",
+      ],
+    },
+  },
+
+  "gastro-hepatology-anorectal-medical": {
+    checked: "2026-10",
+    updated: [
+      "ACG Benign Anorectal Disorders guideline (2021): biofeedback strongly recommended for dyssynergia and refractory faecal incontinence.",
+      "ASCRS Anal Fissure guideline (2023): topical calcium-channel blockers first line; botulinum or sphincterotomy if refractory.",
+      "ASCRS Haemorrhoid guideline (2024): fibre for all, rubber band ligation preferred office procedure, excise thrombosed external piles within 72 h.",
+      "ASCRS Faecal Incontinence guideline (2023): stool normalisation, then biofeedback and sacral neuromodulation.",
+      "London classification (2020) for anorectal manometry reporting.",
+    ],
+    master: {
+      heading: "Master revision table - Benign anorectal disorders",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Anatomy key", "**Dentate line**: above visceral (painless), below somatic (painful)."],
+        ["Haemorrhoids", "Painless bright red bleeding; **Goligher I-IV**; 3, 7, 11 o'clock."],
+        ["Haemorrhoid treatment", "Fibre (cuts bleeding 50%), flavonoids, short topical; **RBL for I-III**; surgery III-IV; thrombosed external: excise within 72 h."],
+        ["Fissure", "Tearing pain on defaecation; **posterior midline 90%**; chronic over 6-8 weeks with sentinel tag."],
+        ["Fissure treatment", "Fibre, sitz baths; **diltiazem 2% or GTN 0.2-0.4% BD 6-8 weeks**; botulinum or LIS if refractory."],
+        ["Secondary fissure", "Lateral or multiple: **Crohn, TB, HIV, syphilis, cancer** - biopsy."],
+        ["Pruritus ani", "Mostly secondary; water-only hygiene, barrier cream, 1% hydrocortisone max 2 weeks; treat threadworm."],
+        ["Dyssynergia", "Paradoxical anal contraction on push; Rome IV 2 of 3 tests; **biofeedback first line**."],
+        ["Tests", "DRE with push, **balloon expulsion 50 mL in 1-2 min**, ARM, defaecography, endoanal ultrasound."],
+        ["Faecal incontinence", "8% of adults; passive (IAS) vs urge (EAS); St Mark's score."],
+        ["FI treatment", "Fibre, **loperamide up to 16 mg/day**, stop culprits; biofeedback; plugs, irrigation; SNS, sphincteroplasty."],
+        ["Anorectal pain", "Levator ani over 30 min with tenderness; **proctalgia fugax** seconds to 30 min, salbutamol."],
+        ["Red flags", "Age over 45 with bleeding, IDA, weight loss, mass, change in bowel habit - colonoscopy."],
+        ["Latest updates", "ACG 2021; ASCRS fissure 2023, FI 2023, haemorrhoids 2024; ESCP 2020."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Rectal bleeding in OPD",
+        steps: [
+          { label: "Bright red rectal bleeding", detail: "History, abdomen, inspection, DRE, anoscopy" },
+          { label: "Alarm features?", detail: "Age over 45, IDA, weight loss, bowel change, mass", tone: "decision" },
+          { label: "Yes: colonoscopy", detail: "Do not label as piles first", tone: "warn" },
+          { label: "No: treat local cause", detail: "Haemorrhoids or fissure on anoscopy/inspection" },
+          { label: "Review at 6-8 weeks", detail: "Persistent bleeding: sigmoidoscopy or colonoscopy", tone: "decision" },
+          { label: "Resolved", detail: "Fibre and toilet habits long term", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Chronic anal fissure ladder",
+        caption: "ASCRS 2023",
+        steps: [
+          { label: "Fibre, fluids, sitz baths, lidocaine", detail: "About half of acute fissures heal" },
+          { label: "Topical diltiazem 2% BD", detail: "6-8 weeks; or GTN 0.2-0.4% (headache 20-30%)" },
+          { label: "Botulinum toxin 20-100 units", detail: "Healing 60-80%; transient incontinence", tone: "decision" },
+          { label: "Lateral internal sphincterotomy", detail: "Over 90% healing; small incontinence risk", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Internal haemorrhoids versus anal fissure",
+        columns: ["Feature", "Internal haemorrhoids", "Anal fissure"],
+        rows: [
+          ["Site", "Above dentate line", "Below dentate line"],
+          ["Pain", "Painless", "Severe, during and after stool"],
+          ["Bleeding", "Dripping or on paper", "Small streak"],
+          ["Examination", "Anoscopy at 3, 7, 11 o'clock", "Posterior midline tear; avoid DRE"],
+          ["Mechanism", "Cushion slide and engorgement", "Sphincter spasm and ischaemia"],
+          ["Key treatment", "Fibre, rubber band ligation", "Diltiazem or GTN, botulinum, LIS"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Haemorrhoids** are normal cushions that become symptomatic by bleeding or prolapse.",
+            "**Anal fissure** is a tear below the dentate line; chronic after **6-8 weeks**.",
+            "**Dyssynergia** is failure of the anal sphincter to relax during pushing.",
+            "**Faecal incontinence** affects about **8%** of adults and is under-reported.",
+            "In India 'piles' means any anal complaint; always check for **cancer**.",
+          ],
+        },
+        {
+          title: "Causes and pathophysiology",
+          points: [
+            "Above the **dentate line** is painless; below is painful.",
+            "Straining, constipation, pregnancy and long toilet sitting cause **haemorrhoids**.",
+            "Fissures persist because **sphincter spasm** causes posterior ischaemia.",
+            "**Passive** leakage means internal sphincter; **urge** leakage means external sphincter.",
+            "Obstetric sphincter injury and **diarrhoea** are major incontinence causes.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Goligher**: I bleed, II reduce alone, III reduce by hand, IV irreducible.",
+            "Chronic fissure: **sentinel tag**, hypertrophied papilla, exposed sphincter fibres.",
+            "Rome IV dyssynergia needs **2 of 3 abnormal tests**.",
+            "Proctalgia fugax lasts **under 30 minutes**; levator ani syndrome longer.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Haemorrhoids: **painless bright red bleeding**, prolapse, itch.",
+            "Fissure: **tearing pain** on and after defaecation.",
+            "Dyssynergia: straining, incomplete evacuation, **digital assistance**.",
+            "Ask about incontinence directly; most patients **never volunteer** it.",
+            "Nocturnal anal itch in a child suggests **threadworm**.",
+          ],
+        },
+        {
+          title: "Examination and investigations",
+          points: [
+            "Left lateral, chaperone, inspection, **DRE**, then anoscopy.",
+            "Do **not** do DRE in an acutely painful fissure.",
+            "**Balloon expulsion**: fail if 50 mL not out in 1-2 minutes.",
+            "**Anorectal manometry** types dyssynergia; endoanal ultrasound finds sphincter tears.",
+            "Colonoscopy for **alarm features** or age over 45.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Fibre 25-30 g/day** and psyllium for haemorrhoids and fissure.",
+            "Haemorrhoids: flavonoids short term; **rubber band ligation** for grade I-III.",
+            "Fissure: **diltiazem 2%** or GTN twice daily for 6-8 weeks.",
+            "Pruritus ani: **water-only hygiene**, barrier cream, short hydrocortisone.",
+            "Incontinence: **loperamide** and fibre to firm the stool.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Biofeedback** for dyssynergia and refractory incontinence.",
+            "Refractory fissure: **botulinum toxin** or lateral internal sphincterotomy.",
+            "Grade III-IV haemorrhoids: **haemorrhoidectomy**.",
+            "Refractory incontinence: **sacral nerve stimulation**, plugs, irrigation.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: conservative care; avoid banding unless complicated.",
+            "**Elderly**: overflow from **impaction** is the commonest incontinence cause.",
+            "**Children**: fissure from constipation; treat with PEG.",
+            "**HIV**: biopsy atypical ulcers early.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Lateral fissure** suggests Crohn, TB, HIV or cancer.",
+            "Pain, fever, urinary retention after banding means **pelvic sepsis**.",
+            "Throbbing pain with fever means **perianal abscess**.",
+            "Never blame **anaemia** on piles without colonoscopy.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ACG 2021**: biofeedback strong recommendation.",
+            "**ASCRS 2023**: calcium-channel blocker gels first for fissure.",
+            "**ASCRS 2024**: banding preferred office procedure for haemorrhoids.",
+            "**ASCRS 2023**: incontinence ladder from stool bulking to neuromodulation.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Anorectal drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Psyllium", "3.5 g orally 1-3 times daily", "Long term", "Bloating"],
+            ["Flavonoids (MPFF)", "1000 mg orally TDS x 4 days, BD x 3 days", "Short course", "GI upset"],
+            ["Diltiazem 2% gel", "Topical twice daily", "6-8 weeks", "Perianal itch"],
+            ["GTN 0.2-0.4% ointment", "Topical twice daily", "6-8 weeks", "Headache; not with sildenafil"],
+            ["Botulinum toxin", "20-100 units into sphincter", "Single", "Transient incontinence"],
+            ["Loperamide", "2 mg orally before meals, up to 16 mg/day", "Long term", "Constipation"],
+            ["Albendazole", "400 mg orally, repeat in 2 weeks", "Two doses", "Avoid first trimester"],
+          ],
+        },
+        {
+          heading: "Goligher grading",
+          columns: ["Grade", "Feature", "Treatment"],
+          rows: [
+            ["I", "Bleeds, no prolapse", "Fibre, flavonoids, sclerotherapy"],
+            ["II", "Prolapse, reduces alone", "Rubber band ligation"],
+            ["III", "Needs manual reduction", "Banding or surgery"],
+            ["IV", "Irreducible", "Haemorrhoidectomy"],
+          ],
+        },
+        {
+          heading: "Types of faecal incontinence",
+          columns: ["Type", "Mechanism", "Mainstay"],
+          rows: [
+            ["Passive", "Internal sphincter", "Bulking, loperamide"],
+            ["Urge", "External sphincter, low capacity", "Biofeedback"],
+            ["Seepage", "Incomplete evacuation", "Evacuation retraining"],
+            ["Overflow", "Impaction", "Disimpaction, laxatives"],
+          ],
+        },
+      ],
+      remember: [
+        "**Above dentate painless, below painful.**",
+        "**3, 7, 11 o'clock** for haemorrhoids.",
+        "**Posterior fissure primary; lateral fissure secondary.**",
+        "**Diltiazem equals GTN** with fewer headaches.",
+        "**Dyssynergia: biofeedback, not more laxatives.**",
+        "**Balloon: 50 mL in 1-2 minutes.**",
+        "**Passive = IAS; urge = EAS.**",
+      ],
+    },
+  },
+
+  "gastro-hepatology-occult-gi-bleed-ida": {
+    checked: "2026-10",
+    updated: [
+      "BSG IDA guideline (2021): ferritin first, bidirectional endoscopy for men and postmenopausal women, coeliac serology and urinalysis for all, one tablet daily oral iron.",
+      "AGA GI evaluation of IDA guideline (2020): ferritin cut-off 45 ng/mL; H. pylori and coeliac testing.",
+      "AGA Clinical Practice Update on IDA management (2024): alternate-day oral iron, earlier IV iron, watch FCM hypophosphataemia.",
+      "WHO haemoglobin cut-off guideline (2024).",
+      "ESGE small bowel capsule and enteroscopy guideline update (2022): capsule within 48 h of overt bleeding.",
+      "ESC heart failure focused update (2023): IV iron in symptomatic HFrEF/HFmrEF with iron deficiency.",
+    ],
+    master: {
+      heading: "Master revision table - Occult GI bleeding and IDA",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Hb under **130 (men) / 120 (women) g/L** with **ferritin under 45 ug/L** (under 100 + TSAT under 20% in inflammation)."],
+        ["Burden", "**NFHS-5**: anaemia in 57% women, 25% men, 67% children; CRC in 5-10% of IDA in men/postmenopausal women."],
+        ["Small bowel bleeding", "Source between **ampulla and ileocaecal valve** after negative OGD and colonoscopy; obscure only after small bowel work-up."],
+        ["Causes", "NSAIDs, ulcer, **gastric and colorectal cancer**, Cameron lesion, GAVE, **angioectasia**, coeliac, H. pylori, **hookworm**, menses."],
+        ["Physiology", "Absorb 1-2 mg/day in duodenum; **hepcidin** blocks ferroportin, rises after each dose and in inflammation."],
+        ["Differential", "Thalassaemia trait (normal ferritin, **Mentzer under 13**), anaemia of inflammation, sideroblastic, lead."],
+        ["First-line tests", "CBC, ferritin, TSAT, **coeliac serology, urinalysis**, H. pylori test, stool ova; **no FOBT**."],
+        ["Endoscopy", "**Bidirectional endoscopy** for men and postmenopausal women; premenopausal if 50+, symptoms, family history or persistent."],
+        ["Small bowel work-up", "Second look if needed; **capsule** (patency test if stricture risk); enteroscopy for therapy; CTA if active."],
+        ["Oral iron", "**One tablet daily or alternate days** with vitamin C; 3 months after Hb normal; expect 20 g/L rise in 4 weeks."],
+        ["IV iron", "Oral failure, malabsorption, CKD, HF, late pregnancy; **FCM up to 1000 mg**; Ganzoni formula; hypophosphataemia."],
+        ["Inpatient", "Transfuse at **Hb under 70** (80 in CVD); APC or octreotide for angioectasias; valve replacement for **Heyde**."],
+        ["Follow-up", "Hb **3-monthly for 1 year**; re-investigate if recurrence."],
+        ["India", "**Anemia Mukt Bharat 6x6x6**, IFA, deworming, fortified rice; hookworm and intestinal TB."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Work-up of iron deficiency anaemia",
+        caption: "BSG 2021; AGA 2020",
+        steps: [
+          { label: "Confirm IDA", detail: "Hb low, ferritin under 45 (under 100 + TSAT under 20% if inflamed)" },
+          { label: "All adults", detail: "Coeliac serology, urinalysis, H. pylori test, stool ova if endemic" },
+          { label: "Man or postmenopausal woman?", detail: "Premenopausal: endoscopy if 50+, symptoms, family history, persistent", tone: "decision" },
+          { label: "Bidirectional endoscopy", detail: "OGD with duodenal biopsy plus colonoscopy, same sitting", tone: "warn" },
+          { label: "Cause found: treat", detail: "Plus iron replacement", tone: "good" },
+          { label: "Negative and responds to iron", detail: "Monitor Hb 3-monthly for 1 year" },
+          { label: "Negative and recurrent or refractory", detail: "Capsule endoscopy, then enteroscopy or CT enterography", tone: "decision" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Iron replacement ladder",
+        steps: [
+          { label: "Diet and treat cause", detail: "Stop NSAIDs, deworm, gluten-free diet, eradicate H. pylori" },
+          { label: "Oral iron once daily or alternate days", detail: "Ferrous sulphate 200 mg with vitamin C, no tea" },
+          { label: "Check Hb at 2-4 weeks", detail: "Expect about 20 g/L rise by 4 weeks", tone: "decision" },
+          { label: "IV iron if oral fails or unsuitable", detail: "FCM up to 1000 mg; iron sucrose 200 mg doses", tone: "warn" },
+          { label: "Transfuse only if Hb under 70", detail: "Under 80 with cardiovascular disease; one unit at a time" },
+          { label: "Continue 3 months after normal Hb", detail: "Refill stores; Hb 3-monthly for 1 year", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Suspected small bowel bleeding by age",
+        root: "Negative OGD and colonoscopy",
+        arms: [
+          { label: "Under 40 years", steps: ["Crohn disease", "Small bowel tumours", "Meckel diverticulum", "Dieulafoy lesion"] },
+          { label: "Over 40 years", tone: "warn", steps: ["Angioectasias", "NSAID enteropathy", "GIST, NET, lymphoma", "Heyde syndrome"] },
+          { label: "Indian setting", steps: ["Intestinal TB", "Hookworm", "Check patency before capsule"] },
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**IDA** is low Hb with low ferritin; under **45 ug/L** is the practical cut-off.",
+            "In inflammation use **ferritin under 100** with TSAT under 20%.",
+            "**Small bowel bleeding** lies between the ampulla and ileocaecal valve.",
+            "NFHS-5: **57% of Indian women** are anaemic.",
+            "Colorectal cancer is found in **5-10%** of IDA in men and postmenopausal women.",
+          ],
+        },
+        {
+          title: "Causes and pathophysiology",
+          points: [
+            "Loss: **NSAIDs**, ulcers, cancers, angioectasias, hookworm, menses.",
+            "Malabsorption: **coeliac**, atrophic gastritis, H. pylori, bariatric surgery.",
+            "Only **1-2 mg** iron is absorbed daily, in the duodenum.",
+            "**Hepcidin** rises after each iron dose and blocks the next one.",
+            "**Heyde syndrome**: aortic stenosis cleaves von Willebrand factor, angioectasias bleed.",
+          ],
+        },
+        {
+          title: "Clinical features and examination",
+          points: [
+            "Fatigue, breathlessness, **pica** (ice, mud), restless legs.",
+            "Koilonychia, angular cheilitis, glossitis, **pallor**.",
+            "Look for abdominal mass, **DRE**, telangiectasia, aortic murmur.",
+            "Ask about **NSAIDs**, anticoagulants, diet, barefoot farm work.",
+          ],
+        },
+        {
+          title: "Differential diagnosis",
+          points: [
+            "**Thalassaemia trait**: normal ferritin, Mentzer index under 13, raised HbA2.",
+            "**Anaemia of inflammation**: high ferritin, low TIBC, raised CRP.",
+            "Mixed deficiency can give a **normal MCV** with high RDW.",
+            "Iron deficiency and thalassaemia trait can **coexist** in India.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "All adults: **coeliac serology and urinalysis**.",
+            "Men and postmenopausal women: **OGD plus colonoscopy**.",
+            "**No FOBT**: a negative result does not exclude cancer.",
+            "Recurrent IDA after negative endoscopy: **capsule endoscopy**.",
+            "Suspected stricture (TB, Crohn): **patency capsule** or enterography first.",
+            "Active bleeding: **CT angiography**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**One iron tablet daily or alternate days** on an empty stomach.",
+            "Take with **vitamin C**; avoid tea, coffee, calcium near the dose.",
+            "Continue **3 months** after Hb normalises.",
+            "Treat the cause: deworm, stop NSAIDs, gluten-free diet, H. pylori.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**IV iron** for oral failure, malabsorption, CKD, heart failure, late pregnancy.",
+            "**Ferric carboxymaltose** up to 1000 mg per dose; watch phosphate.",
+            "Transfuse only at **Hb under 70** (80 with heart disease).",
+            "Angioectasias: **APC**, then octreotide if recurrent.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: IV iron only in second and third trimesters.",
+            "**Heart failure**: IV iron if ferritin under 100, or under 300 with low TSAT.",
+            "**Frail elderly**: CT colonography instead of colonoscopy.",
+            "**Young man with painless bleeding**: think Meckel diverticulum.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Urgent endoscopy for IDA in **men and postmenopausal women**.",
+            "Check Hb **3-monthly for a year**, then at 2 years.",
+            "Re-investigate if IDA **recurs**.",
+            "Haematology referral if no response to **IV iron**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**BSG 2021** and **AGA 2020** IDA guidelines.",
+            "**AGA 2024** update favours alternate-day oral iron and earlier IV iron.",
+            "**WHO 2024** revised haemoglobin cut-offs.",
+            "**ESGE 2022**: capsule within 48 hours of overt bleeding.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Iron and related drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Ferrous sulphate", "200 mg orally daily or alternate days", "3 months after Hb normal", "Constipation, nausea, black stools"],
+            ["IFA tablet", "60 mg iron + 500 mcg folic acid orally", "Per Anemia Mukt Bharat protocol", "GI upset"],
+            ["Ferric carboxymaltose", "Up to 1000 mg IV over 15 min", "1-2 doses by Ganzoni", "Hypophosphataemia; not first trimester"],
+            ["Iron sucrose", "200 mg IV up to 3 times weekly", "Until deficit replaced", "Hypotension, metallic taste"],
+            ["Albendazole", "400 mg orally once", "Repeat 6-monthly if endemic", "Avoid first trimester"],
+            ["Octreotide", "100 mcg SC BD or LAR 20 mg monthly", "Long term if recurrent", "Gallstones, hyperglycaemia"],
+          ],
+        },
+        {
+          heading: "Iron studies",
+          columns: ["Condition", "Ferritin", "TSAT", "TIBC"],
+          rows: [
+            ["Iron deficiency", "Low", "Low", "High"],
+            ["Anaemia of inflammation", "Normal or high", "Low", "Low"],
+            ["Thalassaemia trait", "Normal", "Normal", "Normal"],
+            ["Sideroblastic anaemia", "High", "High", "Normal"],
+          ],
+        },
+        {
+          heading: "Who gets which work-up",
+          columns: ["Group", "Investigation"],
+          rows: [
+            ["All adults", "Coeliac serology, urinalysis, H. pylori"],
+            ["Men, postmenopausal women", "OGD plus colonoscopy"],
+            ["Premenopausal women", "Endoscopy if 50+, symptoms, family history, persistent"],
+            ["Negative scopes, recurrent IDA", "Capsule endoscopy"],
+            ["Frail", "OGD plus CT colonography"],
+          ],
+        },
+      ],
+      remember: [
+        "**IDA in a man is GI cancer until proven otherwise.**",
+        "**Scope both ends**; oesophagitis does not explain IDA.",
+        "**No FOBT in IDA.**",
+        "**Coeliac serology and urine dip for all.**",
+        "**One tablet daily** - hepcidin limits more.",
+        "**20 g/L rise in 4 weeks** means the iron is working.",
+        "**Heyde**: aortic stenosis, angioectasias, acquired vWD.",
+      ],
+    },
+  },
+
 };
 
 export default revision;

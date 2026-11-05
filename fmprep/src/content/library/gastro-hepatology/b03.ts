@@ -487,6 +487,13 @@ topics.push({
           ],
         },
         {
+          heading: "Clinical features",
+          points: [
+            "Urgent watery diarrhoea, often early morning, after cholecystectomy or ileal disease.",
+            "No blood; normal colonoscopy; often mislabelled IBS-D.",
+          ],
+        },
+        {
           heading: "Diagnosis",
           points: [
             "SeHCAT 7-day retention below 15% (below 10% moderate, below 5% severe).",
@@ -971,19 +978,41 @@ topics.push({
       ],
       answer: [
         {
-          heading: "Points of difference",
+          heading: "Cause and epidemiology",
           points: [
-            "Cause: gluten with HLA-DQ2/DQ8 versus post-infective bacterial overgrowth.",
-            "Site: proximal (iron, folate) versus whole small bowel (B12 and folate).",
-            "Serology: tTG-IgA positive versus negative.",
-            "Histology: Marsh 3 with high IEL versus milder partial atrophy throughout.",
-            "Treatment: lifelong GFD versus folate plus tetracycline 3-6 months.",
-            "Associations: autoimmunity, DH, EATL versus none specific.",
+            "Coeliac: gluten in HLA-DQ2/DQ8 carriers; north India, wheat eaters, any age.",
+            "Tropical sprue: post-infective bacterial overgrowth in residents of or visitors to the tropics.",
+          ],
+        },
+        {
+          heading: "Site and deficiencies",
+          points: [
+            "Coeliac: proximal small bowel - iron, folate and calcium deficiency first.",
+            "Sprue: whole small bowel including ileum - B12 and folate deficiency, megaloblastic anaemia.",
+          ],
+        },
+        {
+          heading: "Serology and histology",
+          points: [
+            "Coeliac: tTG-IgA and EMA positive; Marsh 3 with IEL above 25 per 100.",
+            "Sprue: serology negative; milder partial villous atrophy along the whole small bowel.",
+          ],
+        },
+        {
+          heading: "Treatment and associations",
+          points: [
+            "Coeliac: lifelong gluten-free diet; associations autoimmunity, dermatitis herpetiformis, EATL.",
+            "Sprue: folic acid 5 mg plus tetracycline 3-6 months; no specific associations; cure expected.",
           ],
         },
       ],
       mustDraw: ["Two-column comparison table"],
-      markSplit: [{ part: "Six points of difference", marks: 5 }],
+      markSplit: [
+        { part: "Cause and epidemiology", marks: 1 },
+        { part: "Site and deficiencies", marks: 1 },
+        { part: "Serology and histology", marks: 1.5 },
+        { part: "Treatment and associations", marks: 1.5 },
+      ],
       keywords: ["tropical sprue", "tTG-IgA", "folate", "tetracycline", "villous atrophy"],
     },
   ],
@@ -1488,6 +1517,13 @@ topics.push({
             "Safe in pregnancy and breastfeeding; may reduce colorectal cancer risk.",
           ],
         },
+        {
+          heading: "Place in therapy",
+          points: [
+            "First line for mild-moderate UC induction and maintenance; escalate if no response in 2-4 weeks.",
+            "Not recommended in Crohn disease (ECCO 2024); no role in acute severe UC.",
+          ],
+        },
       ],
       mustDraw: ["Colon diagram showing reach of suppository (rectum), enema (to splenic flexure) and oral drug"],
       markSplit: [
@@ -1972,14 +2008,32 @@ topics.push({
       ],
       answer: [
         {
-          heading: "Steps of the flow chart",
+          heading: "Initial clinical evaluation",
           points: [
-            "Clinical: fever, night sweats, TB contact, perianal disease, EIMs; chest X-ray, HIV, IGRA.",
-            "Ileocolonoscopy with biopsies: histology, AFB, Xpert MTB/RIF, culture.",
-            "CT or MR enterography: necrotic nodes versus comb sign and fat wrapping.",
-            "Definite TB (caseation or microbiology): ATT 6 months.",
-            "Definite CD: CD treatment after latent TB screen.",
-            "Indeterminate: ATT trial; colonoscopy at 2-3 months - healing means ITB, no healing means CD.",
+            "History: fever, night sweats, TB contact, duration, perianal disease, extra-intestinal manifestations.",
+            "Chest X-ray, HIV test, IGRA, CRP, albumin.",
+          ],
+        },
+        {
+          heading: "Endoscopy and imaging",
+          points: [
+            "Ileocolonoscopy with biopsies: histology, AFB, Xpert MTB/RIF, MGIT culture.",
+            "CT or MR enterography: necrotic nodes and short segment versus comb sign, fat wrapping, skip lesions.",
+          ],
+        },
+        {
+          heading: "Decision branches",
+          points: [
+            "Definite TB (caseation, AFB, Xpert or culture positive): ATT for 6 months.",
+            "Definite CD (typical features, no TB evidence): CD treatment after latent TB screen.",
+          ],
+        },
+        {
+          heading: "Indeterminate: ATT trial",
+          points: [
+            "Start standard ATT under NTEP; check adherence.",
+            "Colonoscopy at 2-3 months: mucosal healing means ITB - complete 6 months.",
+            "No healing means CD - stop ATT and start CD therapy.",
           ],
         },
       ],

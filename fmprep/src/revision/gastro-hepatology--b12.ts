@@ -218,4 +218,643 @@ revision["gastro-hepatology-gi-emergencies-ipd"] = {
   },
 };
 
+revision["gastro-hepatology-parasitic-gi"] = {
+  checked: "2026-10",
+  updated: [
+    "WHO NTD road map 2021-2030: STH elimination target of under 2% moderate-to-heavy infections.",
+    "MoHFW National Deworming Day 2024 guidelines: albendazole 400 mg (200 mg for 1-2 years), ages 1-19, February and August.",
+    "CDC 2024: ivermectin 200 microgram/kg for 2 days for Strongyloides; empirical ivermectin before high-dose steroids.",
+    "ALIVE trial 2025: fixed-dose albendazole-ivermectin better than albendazole alone for Trichuris and hookworm.",
+    "WHO-IWGE 2010 consensus (reaffirmed in WHO 2024 fact sheet): stage-based hydatid treatment with PAIR for CE1 and CE3a.",
+  ],
+  master: {
+    heading: "Intestinal and hepatobiliary parasites in one table",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Burden", "1.5 billion with STH worldwide; India has the most children needing deworming"],
+      ["Programme", "NDD since 2015: albendazole 400 mg (200 mg at 1-2 years), ages 1-19, 10 Feb and 10 Aug"],
+      ["Ascaris", "Loeffler at 9-12 days, bolus obstruction, biliary ascariasis; albendazole 400 mg once"],
+      ["Hookworm", "Skin entry, jejunal blood loss, iron-deficiency anaemia; albendazole 400 mg once plus iron"],
+      ["Trichuris", "Rectal prolapse, dysentery; albendazole 400 mg for 3 days"],
+      ["Enterobius", "Nocturnal perianal itch, Scotch tape test; albendazole repeated at 2 weeks, treat household"],
+      ["Strongyloides", "Autoinfection, larva currens; ivermectin 200 microgram/kg x 2 days; hyperinfection on steroids"],
+      ["Tapeworms", "Praziquantel 5-10 mg/kg or niclosamide 2 g; niclosamide if NCC not excluded; H. nana 25 mg/kg"],
+      ["Giardia", "Greasy non-bloody diarrhoea; stool antigen; tinidazole 2 g once or nitazoxanide 3 days"],
+      ["Hydatid staging", "WHO-IWGE: CL, CE1-2 active, CE3a-b transitional, CE4-5 inactive"],
+      ["Hydatid treatment", "Under 5 cm albendazole; 5-10 cm PAIR; CE2/3b surgery; CE4-5 watch and wait"],
+      ["Liver flukes", "Clonorchis, Opisthorchis: praziquantel 25 mg/kg x3 for 2 days; cholangiocarcinoma risk; Fasciola: triclabendazole"],
+      ["Prevention", "WASH, footwear, cooked meat and fish, dog deworming, Anemia Mukt Bharat"],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Diagnostic flow: suspected intestinal parasite",
+      steps: [
+        { label: "History: soil, water, raw meat or fish, dogs, steroids", detail: "Ask about worm passage, itch, anaemia", tone: "decision" },
+        { label: "CBC, eosinophil count, ferritin", detail: "Eosinophilia means tissue-invasive helminth" },
+        { label: "Stool microscopy x3 with concentration", detail: "Kato-Katz for intensity" },
+        { label: "Targeted tests", detail: "Giardia antigen, Strongyloides serology or agar culture, Scotch tape" },
+        { label: "Ultrasound if biliary or liver symptoms", detail: "Worm in CBD, hydatid stage, dilated ducts" },
+        { label: "Treat by organism; iron if anaemic", detail: "Check Hb at 4-8 weeks", tone: "good" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Hydatid liver cyst: treatment by WHO-IWGE stage",
+      root: "Hydatid cyst staged on ultrasound",
+      arms: [
+        { label: "CE1 or CE3a", tone: "neutral", steps: ["Under 5 cm: albendazole alone", "5-10 cm: PAIR plus albendazole", "Over 10 cm: catheterisation or surgery"] },
+        { label: "CE2 or CE3b", tone: "decision", steps: ["Surgery or modified catheterisation", "Albendazole before and after"] },
+        { label: "CE4 or CE5", tone: "good", steps: ["Watch and wait", "Ultrasound yearly"] },
+        { label: "Complicated (rupture, biliary, infection)", tone: "warn", steps: ["Surgery; ERCP for intrabiliary rupture", "Adrenaline ready for anaphylaxis"] },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Strongyloides: chronic vs hyperinfection",
+      columns: ["Feature", "Chronic infection", "Hyperinfection or dissemination"],
+      rows: [
+        ["Host", "Immunocompetent", "Steroids, HTLV-1, transplant"],
+        ["Symptoms", "Mild diarrhoea, larva currens, urticaria", "Ileus, bleeding, ARDS, Gram-negative sepsis, meningitis"],
+        ["Eosinophilia", "Common", "Often absent on steroids"],
+        ["Diagnosis", "Serology, agar plate culture", "Larvae in stool, sputum, BAL"],
+        ["Treatment", "Ivermectin 200 microgram/kg x 2 days", "Daily ivermectin until negative 2 weeks plus antibiotics"],
+        ["Mortality", "Low", "60-85%"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "**Soil-transmitted helminths** are Ascaris, Trichuris and hookworm; Strongyloides is related.",
+          "India has the **largest childhood STH burden** in the world.",
+          "**National Deworming Day** runs on 10 February and 10 August for ages 1-19.",
+          "**Hydatid cyst** involves liver in about 70%, lung in 20%.",
+          "**Liver flukes** cause cholangitis and cholangiocarcinoma.",
+        ],
+      },
+      {
+        title: "Causes and risk factors",
+        points: [
+          "**Faeco-oral eggs**: Ascaris, Trichuris, Enterobius, Echinococcus, Giardia cysts.",
+          "**Skin penetration**: hookworm and Strongyloides, from barefoot walking.",
+          "**Raw meat or fish**: Taenia, Clonorchis, Opisthorchis, Diphyllobothrium.",
+          "**Dogs** are the definitive host of Echinococcus.",
+          "**Steroids and HTLV-1** trigger Strongyloides hyperinfection.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "Ascaris larvae pass through lungs, giving **Loeffler syndrome** at 9-12 days.",
+          "Adult Ascaris enter the **bile duct**, causing colic, cholangitis and pancreatitis.",
+          "Hookworm sucks blood in the jejunum, causing **iron-deficiency anaemia**.",
+          "Strongyloides **autoinfection** lets it persist for decades.",
+          "Giardia attaches by a **ventral disc**, causing malabsorption without blood.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "Most STH are silent; look for **anaemia and stunting** in children.",
+          "**Larva currens** is a fast-moving rash, typical of Strongyloides.",
+          "**Nocturnal perianal itch** means Enterobius.",
+          "**Greasy, foul, non-bloody diarrhoea** suggests Giardia.",
+          "Hydatid is often an **incidental cyst** on ultrasound.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "**Three stool samples** with concentration; Kato-Katz for egg count.",
+          "**Scotch tape test** for Enterobius, in the early morning.",
+          "**Strongyloides serology** or agar culture; one stool misses most cases.",
+          "**Giardia stool antigen or PCR** beats microscopy.",
+          "**Ultrasound stages hydatid**; serology supports but can be negative.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "**Albendazole 400 mg once** for Ascaris and hookworm.",
+          "**Albendazole 3 days** for Trichuris; repeat at 2 weeks for Enterobius.",
+          "**Ivermectin 200 microgram/kg for 2 days** for Strongyloides.",
+          "**Tinidazole 2 g once** for Giardia; nitazoxanide in children.",
+          "**Niclosamide 2 g** for T. solium if neurocysticercosis not excluded.",
+        ],
+      },
+      {
+        title: "Inpatient / emergency care",
+        points: [
+          "Worm bolus: **drip and suck** first; surgery if ischaemia.",
+          "Biliary ascariasis: conservative, then **ERCP** if worm stays beyond 3-7 days.",
+          "Hyperinfection: **daily ivermectin**, antibiotics, cut steroids.",
+          "**PAIR**: puncture, aspirate, inject 20% saline, re-aspirate after 15-20 minutes.",
+          "Give **albendazole** before and after PAIR or surgery.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Pregnancy**: albendazole only after the first trimester; no ivermectin.",
+          "Children **12-24 months** get albendazole 200 mg.",
+          "Give **ivermectin before steroids** to people from endemic areas.",
+          "Monitor **LFT and CBC** on long albendazole courses.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "Steroid patient with **Gram-negative sepsis** may have Strongyloides hyperinfection.",
+          "Hydatid **rupture** causes anaphylaxis and seeding.",
+          "Clonorchis and Opisthorchis cause **cholangiocarcinoma**.",
+          "T. solium eggs cause **neurocysticercosis** and seizures.",
+        ],
+      },
+      {
+        title: "Referral and latest updates",
+        points: [
+          "Refer complicated hydatid, **CE2 or CE3b**, and cysts over 10 cm.",
+          "Follow treated hydatid with **ultrasound for 5 years**.",
+          "**WHO 2030 road map** targets STH elimination as a public-health problem.",
+          "**Albendazole-ivermectin** combination improves Trichuris cure (ALIVE 2025).",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Anti-parasitic drugs",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Albendazole", "400 mg oral (200 mg at 1-2 years)", "Once; 3 days for Trichuris", "Avoid first trimester"],
+          ["Albendazole (hydatid)", "400 mg twice daily with fatty meal", "1 month after PAIR; 1-3 months after surgery", "Hepatitis, neutropenia; LFT and CBC monitoring"],
+          ["Ivermectin", "200 microgram/kg oral", "2 days; until clear in hyperinfection", "Not in pregnancy or under 15 kg"],
+          ["Praziquantel", "5-10 mg/kg (Taenia); 25 mg/kg (H. nana, flukes)", "Once; flukes 3 times daily for 2 days", "Seizures in occult NCC"],
+          ["Niclosamide", "2 g chewed", "Once", "Not absorbed; safe for T. solium"],
+          ["Tinidazole", "2 g oral (child 50 mg/kg)", "Once", "Metallic taste, alcohol reaction"],
+          ["Nitazoxanide", "500 mg twice daily (child 100-200 mg)", "3 days", "Abdominal pain"],
+        ],
+      },
+      {
+        heading: "WHO-IWGE hydatid classification",
+        columns: ["Stage", "Sign", "Plan"],
+        rows: [
+          ["CE1", "Double line, unilocular", "Albendazole or PAIR by size"],
+          ["CE2", "Daughter cysts, honeycomb", "Surgery or catheterisation"],
+          ["CE3a", "Water-lily sign", "Albendazole or PAIR by size"],
+          ["CE3b", "Daughter cysts in solid matrix", "Surgery or catheterisation"],
+          ["CE4", "Ball of wool", "Watch and wait"],
+          ["CE5", "Calcified wall", "Watch and wait"],
+        ],
+      },
+      {
+        heading: "Parasites by clinical clue",
+        columns: ["Clue", "Parasite", "Test"],
+        rows: [
+          ["Worm in CBD, pancreatitis", "Ascaris", "Ultrasound strip sign"],
+          ["Iron-deficiency anaemia, pica", "Hookworm", "Stool eggs"],
+          ["Rectal prolapse in child", "Trichuris", "Stool eggs"],
+          ["Sepsis on steroids", "Strongyloides", "Larvae in sputum"],
+          ["Perianal itch at night", "Enterobius", "Scotch tape"],
+          ["B12 deficiency, raw fish", "Diphyllobothrium", "Stool eggs"],
+        ],
+      },
+    ],
+    remember: [
+      "**NDD: 10 Feb and 10 Aug, ages 1-19, albendazole 400 mg.**",
+      "**Trichuris 3 days, Enterobius repeat at 2 weeks.**",
+      "**Ivermectin before steroids** for Strongyloides risk.",
+      "**PAIR = Puncture, Aspirate, Inject, Re-aspirate.**",
+      "**Double line CE1, water lily CE3a, ball of wool CE4.**",
+      "**Niclosamide for T. solium; triclabendazole for Fasciola.**",
+      "**Clonorchis = cholangiocarcinoma.**",
+    ],
+  },
+};
+
+revision["gastro-hepatology-liver-mass-approach"] = {
+  checked: "2026-10",
+  updated: [
+    "ACG 2024 focal liver lesion guideline (updating ACG 2014): MRI first for characterisation, biopsy only if indeterminate.",
+    "AASLD 2023 HCC guidance: LI-RADS LR-5 (10 mm or more, arterial hyperenhancement plus washout) diagnoses HCC without biopsy.",
+    "EASL 2025 HCC guideline: imaging diagnosis only in cirrhosis; abbreviated MRI as an evolving surveillance tool.",
+    "EASL 2022 cystic liver disease: no follow-up for simple cysts; somatostatin analogues for symptomatic polycystic liver.",
+    "EASL 2016 benign tumours (still current): adenoma resection at 5 cm or more after 6 months, any size in men.",
+  ],
+  master: {
+    heading: "Liver mass in one table",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "Solid or cystic lesion distinct from normal parenchyma; most incidental and benign in a normal liver"],
+      ["Two triage questions", "Is the liver cirrhotic (or HBV)? Is there a known cancer?"],
+      ["Cirrhosis rule", "Lesion 1 cm or more = HCC until proven otherwise; under 1 cm repeat US in 3-6 months"],
+      ["Commonest benign", "Simple cyst, haemangioma, then FNH; adenoma rare but risky"],
+      ["Commonest malignant", "Metastasis in normal liver; HBV-related HCC in India; gallbladder cancer in Gangetic belt"],
+      ["First test", "Ultrasound plus LFT, INR, platelets, HBsAg, anti-HCV, AFP"],
+      ["Best characterisation", "Contrast MRI with hepatobiliary agent, or CEUS, or multiphasic CT"],
+      ["Haemangioma", "Peripheral nodular fill-in, T2 light bulb; no follow-up"],
+      ["FNH", "Central scar, spoke-wheel, bright hepatobiliary phase; no follow-up"],
+      ["Adenoma", "OCP, steroids, obesity; stop OCP, MRI at 6 months, resect 5 cm or more, men, beta-catenin"],
+      ["Biopsy", "Only if indeterminate; never haemangioma, hydatid, typical resectable HCC"],
+      ["Indian infective SOLs", "Amoebic abscess, pyogenic abscess, hydatid - always in the differential"],
+      ["Emergencies", "Ruptured adenoma or HCC: resuscitate, embolise"],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Incidental liver lesion on ultrasound",
+      steps: [
+        { label: "Cirrhosis, chronic HBV or known cancer?", detail: "History, examination, HBsAg, anti-HCV, platelets", tone: "decision" },
+        { label: "Cirrhotic: lesion 1 cm or more", detail: "Multiphasic CT or MRI; LR-5 = HCC, refer", tone: "warn" },
+        { label: "Cirrhotic: lesion under 1 cm", detail: "Repeat ultrasound in 3-6 months" },
+        { label: "Normal liver: cystic or solid?", detail: "Simple cyst - discharge; complex cyst - MRI", tone: "decision" },
+        { label: "Solid: contrast MRI or CEUS", detail: "Typical haemangioma or FNH - discharge", tone: "good" },
+        { label: "Adenoma", detail: "Stop OCP, MRI at 6 months, resect if indicated" },
+        { label: "Indeterminate or suspected metastasis", detail: "Search for primary; biopsy", tone: "warn" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Haemangioma vs FNH vs adenoma",
+      columns: ["Feature", "Haemangioma", "FNH", "Adenoma"],
+      rows: [
+        ["Enhancement", "Peripheral nodular, centripetal fill-in", "Intense homogeneous arterial", "Arterial, no consistent washout"],
+        ["Key MRI sign", "T2 light bulb", "Central scar, bright hepatobiliary phase", "Fat drop-out or atoll, dark hepatobiliary phase"],
+        ["OCP", "Can continue", "Can continue", "Stop"],
+        ["Risk", "Kasabach-Merritt rarely", "None", "Bleeding 15-20%, malignancy about 5%"],
+        ["Follow-up", "None", "None", "MRI 6 months then yearly"],
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Classification of liver SOL",
+      root: "Focal liver lesion",
+      arms: [
+        { label: "Benign solid", tone: "good", steps: ["Haemangioma", "FNH", "Adenoma", "Focal fat"] },
+        { label: "Cystic", tone: "neutral", steps: ["Simple cyst", "Polycystic liver", "Mucinous cystic neoplasm", "Hydatid"] },
+        { label: "Infective", tone: "decision", steps: ["Amoebic abscess", "Pyogenic abscess"] },
+        { label: "Malignant", tone: "warn", steps: ["Metastasis", "HCC", "Cholangiocarcinoma", "Gallbladder cancer invasion"] },
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "A **focal liver lesion** is a mass distinct from normal liver on imaging.",
+          "Most incidental lesions in a **normal liver are benign**.",
+          "**Simple cyst and haemangioma** are the commonest benign lesions.",
+          "**Metastasis** is the commonest malignant lesion in a non-cirrhotic liver.",
+          "In India, think of **HBV-related HCC, abscess and hydatid**.",
+        ],
+      },
+      {
+        title: "Causes and risk factors",
+        points: [
+          "**Cirrhosis or chronic HBV** points to HCC.",
+          "**OCP, anabolic steroids, obesity** point to adenoma.",
+          "**Known cancer or weight loss** points to metastasis.",
+          "**Fever, dysentery, alcohol** point to abscess; **dogs and sheep** to hydatid.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "Tumours are fed by the **hepatic artery**, so they enhance in the arterial phase.",
+          "**HCC washes out** faster than liver in the portal phase.",
+          "**Haemangioma** fills slowly from the edge, matching the blood pool.",
+          "**FNH** has a central scar artery and keeps hepatobiliary contrast.",
+          "**Adenoma** lacks bile ducts, so it is dark in the hepatobiliary phase.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "Most lesions are **asymptomatic**; pain occurs in large ones.",
+          "**Sudden pain and shock** in a woman on OCP suggests ruptured adenoma.",
+          "**Stigmata of chronic liver disease** raise HCC probability.",
+          "**Hard nodular liver** suggests metastases; tender liver suggests abscess.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "**Ultrasound** first, with LFT, INR, platelets, HBsAg, anti-HCV, AFP.",
+          "**Contrast MRI with hepatobiliary agent** is the best characterising test.",
+          "**CEUS**: metastasis washes out early; HCC washes out late.",
+          "**Biopsy** only for indeterminate lesions.",
+          "Never biopsy **haemangioma or hydatid**.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "**Haemangioma and FNH**: reassure, no follow-up, OCP can continue.",
+          "**Adenoma**: stop OCP, lose weight, MRI at 6 months.",
+          "Resect adenoma **5 cm or more**, in any man, or beta-catenin type.",
+          "**Simple cyst**: nothing; deroof only if symptomatic.",
+          "**Polycystic liver**: somatostatin analogue if symptomatic.",
+        ],
+      },
+      {
+        title: "Inpatient / emergency care",
+        points: [
+          "**Ruptured adenoma**: resuscitate, CT, then embolise.",
+          "**Kasabach-Merritt**: correct coagulopathy, embolise or resect.",
+          "**Ruptured HCC**: embolisation first; high mortality.",
+          "**Hydatid rupture**: adrenaline 0.5 mg IM for anaphylaxis.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Pregnancy**: adenoma under 5 cm needs ultrasound each trimester.",
+          "Avoid **gadolinium** in pregnancy.",
+          "**Men with adenoma** need resection at any size.",
+          "Use **CEUS** in CKD to avoid nephrotoxic contrast.",
+        ],
+      },
+      {
+        title: "Referral and follow-up",
+        points: [
+          "Refer any **1 cm or more lesion in cirrhosis** urgently.",
+          "Discharge typical **haemangioma, FNH and simple cyst**.",
+          "Indeterminate lesion: **repeat MRI at 3-6 months**.",
+          "Malignant lesions go to a **tumour board**.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**ACG 2024**: MRI first; biopsy only if indeterminate.",
+          "**AASLD 2023**: LR-5 diagnoses HCC without biopsy.",
+          "**EASL 2022**: no follow-up for simple liver cysts.",
+          "**EASL 2025** HCC: imaging diagnosis only in cirrhosis.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs and procedures for liver lesions",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Octreotide LAR", "20-40 mg IM every 4 weeks", "6-12 months", "Gallstones, diarrhoea"],
+          ["Lanreotide", "90-120 mg deep SC every 4 weeks", "6-12 months", "Gallstones, injection-site pain"],
+          ["Ethanol sclerotherapy", "95-99% ethanol after cyst aspiration", "Single session", "Not if cyst communicates with bile ducts"],
+          ["Albendazole (hydatid)", "400 mg twice daily with fatty meal", "Around PAIR or surgery", "Hepatitis, neutropenia"],
+          ["Metronidazole (amoebic)", "750 mg three times daily", "7-10 days then luminal agent", "Metallic taste, alcohol reaction"],
+        ],
+      },
+      {
+        heading: "Imaging signs",
+        columns: ["Lesion", "Key sign", "Action"],
+        rows: [
+          ["Haemangioma", "Centripetal fill-in, T2 light bulb", "Discharge"],
+          ["FNH", "Central scar, spoke-wheel", "Discharge"],
+          ["Adenoma", "Fat drop-out, atoll sign", "Stop OCP, MRI at 6 months"],
+          ["HCC", "Arterial enhancement plus washout", "Refer, stage"],
+          ["Metastasis", "Target sign, rim enhancement", "Find primary, biopsy"],
+          ["Hydatid", "Water-lily, daughter cysts", "Stage-based treatment"],
+        ],
+      },
+      {
+        heading: "Cirrhotic vs non-cirrhotic liver lesion",
+        columns: ["Feature", "Cirrhotic liver", "Normal liver"],
+        rows: [
+          ["Most likely", "HCC", "Cyst, haemangioma, FNH"],
+          ["Threshold to act", "1 cm or more", "Characterise any solid lesion"],
+          ["Diagnosis", "Imaging LR-5, no biopsy", "MRI or CEUS; biopsy if indeterminate"],
+          ["Follow-up", "6-monthly surveillance", "None if typical benign"],
+        ],
+      },
+    ],
+    remember: [
+      "**Cirrhosis? Cancer?** Ask both first.",
+      "**1 cm in cirrhosis = HCC until proven otherwise.**",
+      "**Haemangioma fills from the edge; FNH lights from the centre.**",
+      "**FNH bright, adenoma dark** in the hepatobiliary phase.",
+      "**Adenoma: stop pill, 6 months, 5 cm, men always.**",
+      "**Never needle a haemangioma or hydatid.**",
+      "**Metastasis washes out early; HCC washes out late** on CEUS.",
+    ],
+  },
+};
+
+revision["gastro-hepatology-gi-elderly-palliative"] = {
+  checked: "2026-10",
+  updated: [
+    "AGS Beers Criteria 2023: metoclopramide, PPIs beyond 8 weeks without indication, oral mineral oil and anticholinergic antispasmodics are potentially inappropriate.",
+    "ESPEN 2024 dementia nutrition: no tube feeding in severe dementia; careful hand feeding.",
+    "ESPEN 2022 geriatrics: about 30 kcal/kg and 1 g protein/kg; texture modification for dysphagia.",
+    "ASCO 2023 cachexia update: low-dose olanzapine 2.5 mg daily for appetite in advanced cancer.",
+    "MASCC 2021 MBO: antisecretory drugs, haloperidol, 5-day dexamethasone trial, venting gastrostomy.",
+    "Supreme Court of India 2023: simplified advance directive procedure (Common Cause 2018).",
+  ],
+  master: {
+    heading: "Elderly and palliative GI care in one table",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Burden", "Over-60s 10.5% of India in 2022, about 20.8% by 2050 (UNFPA 2023); LASI shows high multimorbidity"],
+      ["Ageing physiology", "Presbyphagia, less saliva and acid, slow colon, low rectal sensation, reduced drug clearance, blunted signs"],
+      ["Oropharyngeal dysphagia", "Geriatric syndrome; screen (water swallow, EAT-10), VFSS or FEES, IDDSI texture, posture, oral care"],
+      ["Silent aspiration", "Normal cough does not mean a safe swallow"],
+      ["Constipation", "Drugs, immobility, hypercalcaemia, hypothyroid; PR exam for impaction with overflow"],
+      ["OIC", "Laxative with every opioid: senna plus PEG; PAMORA if two laxatives fail; not in obstruction"],
+      ["Avoid in elderly", "Liquid paraffin, phosphate enema in CKD, magnesium in CKD, bulk fibre if immobile, metoclopramide"],
+      ["MBO definition", "Obstruction beyond Treitz with incurable intra-abdominal or intraperitoneal cancer"],
+      ["MBO decisions", "Surgery if good PS, single site, survival over 2-3 months; stents; venting gastrostomy"],
+      ["MBO drugs", "Hyoscine butylbromide 60-120 mg/24 h or octreotide 300-600 microgram/24 h SC, haloperidol, dexamethasone 5 days, SC opioid"],
+      ["PEG", "Feeding over 4 weeks; MND before FVC under 50%; not in advanced dementia; cefazolin prophylaxis"],
+      ["Malignant ascites", "Paracentesis; diuretics if SAAG 1.1 or more; tunnelled catheter if frequent"],
+      ["Programmes and law", "NPHCE, NPPC under NP-NCD, NDPS Amendment 2014, Common Cause 2018 modified 2023"],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Older adult with swallowing difficulty",
+      steps: [
+        { label: "Oropharyngeal or oesophageal?", detail: "Coughing, nasal regurgitation vs food sticking", tone: "decision" },
+        { label: "Oesophageal: endoscopy", detail: "Barium first if Zenker suspected", tone: "warn" },
+        { label: "Oropharyngeal: bedside screen", detail: "Water swallow test, EAT-10 score 3 or more abnormal" },
+        { label: "SLT assessment with VFSS or FEES", detail: "Define safe texture and posture" },
+        { label: "IDDSI texture, upright, small bolus, oral care", detail: "Review sedating and anticholinergic drugs", tone: "good" },
+        { label: "Tube feeding decision", detail: "Over 4 weeks and gut works; not in advanced dementia", tone: "decision" },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "Opioid-induced constipation ladder",
+      steps: [
+        { label: "Prophylaxis with every opioid", detail: "Senna 7.5-15 mg at night plus PEG 3350 17 g daily" },
+        { label: "Titrate laxatives", detail: "Soft stool every 1-3 days; Bristol chart" },
+        { label: "Rectal measures if loaded", detail: "Glycerine or bisacodyl 10 mg suppository, micro-enema" },
+        { label: "PAMORA if two laxatives fail", detail: "Naloxegol 25 mg daily or methylnaltrexone SC alternate days", tone: "decision" },
+        { label: "Opioid switch", detail: "Fentanyl or tapentadol may constipate less" },
+        { label: "Never PAMORA in obstruction", detail: "Perforation risk", tone: "warn" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Malignant bowel obstruction: choosing the path",
+      root: "Inoperable or operable MBO?",
+      arms: [
+        { label: "Fit, single site, survival over 2-3 months", tone: "good", steps: ["Surgery: resection, bypass or stoma", "Colonic or duodenal stent"] },
+        { label: "Carcinomatosis, multiple levels, poor PS", tone: "decision", steps: ["SC opioid and hyoscine butylbromide", "Octreotide if vomiting persists", "Haloperidol; dexamethasone 5-day trial", "SC fluids, mouth care"] },
+        { label: "Persistent vomiting", tone: "warn", steps: ["Venting gastrostomy", "Avoid long-term NG tube"] },
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "Older Indians are **10.5%** of the population now and about **21% by 2050**.",
+          "**Oropharyngeal dysphagia** is a geriatric syndrome, common after stroke and in dementia.",
+          "**Opioid constipation** affects most long-term opioid users and has no tolerance.",
+          "**Malignant bowel obstruction** complicates up to half of advanced ovarian cancers.",
+          "**Palliative care** reaches only a small minority of Indians who need it.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "**Presbyphagia** is healthy swallowing ageing that decompensates with illness or sedatives.",
+          "Slow colon and low **rectal sensation** cause impaction with overflow.",
+          "Reduced **drug clearance** makes opioids and anticholinergics accumulate.",
+          "Opioids act on **gut mu-receptors**; PAMORAs block only these.",
+          "In MBO, **distension drives secretion**, which worsens distension.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "Coughing at meals, **wet voice** and chest infections suggest aspiration.",
+          "**Silent aspiration** is common; ask the carer.",
+          "**Zenker**: undigested food regurgitated hours later, with halitosis.",
+          "Elderly acute abdomen may show only **delirium or falls**.",
+          "MBO: colic, vomiting, distension, variable flatus.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "**Water swallow test** and EAT-10 at the bedside.",
+          "**VFSS or FEES** defines safe texture and posture.",
+          "**CT abdomen** shows level and number of obstruction sites.",
+          "Ascitic **SAAG and cytology** separate malignant from portal hypertensive ascites.",
+          "**MNA-SF** under 8 means malnourished.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "**IDDSI texture**, upright posture, small bolus and oral care.",
+          "**Laxative with every opioid**: senna plus PEG 3350.",
+          "**Naloxegol or methylnaltrexone** if two laxatives fail.",
+          "Avoid **liquid paraffin** and phosphate enemas in the elderly.",
+          "**Oral supplements** of 400 kcal and 30 g protein daily if at risk.",
+        ],
+      },
+      {
+        title: "Inpatient / emergency care",
+        points: [
+          "MBO: **hyoscine butylbromide** 60-120 mg/24 h SC for colic and secretion.",
+          "Add **octreotide** 300-600 microgram/24 h if vomiting persists.",
+          "**Haloperidol** is first antiemetic; no metoclopramide in complete obstruction.",
+          "**Dexamethasone** 6-16 mg/day for 5 days, stop if no effect.",
+          "**Venting gastrostomy** for persistent vomiting.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "**Advanced dementia**: careful hand feeding, not PEG.",
+          "**MND**: PEG before FVC falls below 50%.",
+          "**Parkinson**: avoid metoclopramide and haloperidol; use domperidone.",
+          "**CKD**: avoid magnesium and phosphate; use PEG 3350.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "**Aspiration pneumonia** is the main danger of dysphagia.",
+          "Constipation with back pain and weak legs means **cord compression**.",
+          "PEG risks infection, **buried bumper** and refeeding syndrome.",
+          "Fever with an indwelling catheter suggests **peritonitis**.",
+        ],
+      },
+      {
+        title: "Referral and follow-up",
+        points: [
+          "Refer to **palliative care early**, at diagnosis of advanced cancer.",
+          "**Tunnelled peritoneal catheter** if paracentesis is needed every 1-2 weeks.",
+          "Use **NPHCE** geriatric clinics and NPPC home care teams.",
+          "Plan **advance directives** before a crisis.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**Beers 2023**: avoid metoclopramide, mineral oil and long-term PPIs without reason.",
+          "**ESPEN 2024**: no tube feeding in severe dementia.",
+          "**ASCO 2023**: olanzapine 2.5 mg for cancer appetite.",
+          "**Supreme Court 2023** simplified advance directives.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs in palliative GI care",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["PEG 3350", "17 g orally once or twice daily", "Ongoing, titrate", "Bloating; safe in CKD"],
+          ["Senna", "7.5-15 mg orally at night", "With every opioid", "Colic; not in obstruction"],
+          ["Naloxegol", "25 mg orally daily (12.5 mg if CrCl under 60)", "While on opioids", "Not in obstruction"],
+          ["Methylnaltrexone", "8 or 12 mg SC by weight, alternate days", "As needed", "Colic, perforation risk"],
+          ["Hyoscine butylbromide", "60-120 mg/24 h SC infusion", "Days to weeks", "Dry mouth, tachycardia"],
+          ["Octreotide", "300-600 microgram/24 h SC infusion", "Review at 3-5 days", "Hyperglycaemia, cost"],
+          ["Haloperidol", "1.5-5 mg/24 h SC", "Ongoing", "Extrapyramidal effects"],
+          ["Dexamethasone", "6-16 mg/day SC or IV", "5-day trial in MBO", "Hyperglycaemia, insomnia"],
+        ],
+      },
+      {
+        heading: "MBO options",
+        columns: ["Situation", "Choice", "Avoid"],
+        rows: [
+          ["Fit, single site, prognosis over 2-3 months", "Surgery or stent", "Delay"],
+          ["Carcinomatosis, multiple levels", "Medical SC regimen", "Metoclopramide, PAMORA, stimulants"],
+          ["Persistent vomiting", "Venting gastrostomy", "Long-term NG tube"],
+          ["Partial obstruction, no colic", "Metoclopramide trial, softener", "Stimulant laxatives"],
+        ],
+      },
+      {
+        heading: "Oropharyngeal vs oesophageal dysphagia",
+        columns: ["Feature", "Oropharyngeal", "Oesophageal"],
+        rows: [
+          ["Complaint", "Cannot start swallow, coughing", "Food sticks behind sternum"],
+          ["Causes", "Stroke, Parkinson, dementia, MND", "Cancer, stricture, achalasia"],
+          ["First test", "Swallow screen, VFSS or FEES", "Endoscopy"],
+          ["Treatment", "Texture, posture, SLT", "Treat cause"],
+        ],
+      },
+    ],
+    remember: [
+      "**No opioid without a laxative.**",
+      "**PAMORA keeps analgesia but never in obstruction.**",
+      "**MBO: dry (hyoscine, octreotide), settle (haloperidol), shrink (dexamethasone 5 days).**",
+      "**No metoclopramide in complete obstruction.**",
+      "**Advanced dementia: hand feeding, not PEG.**",
+      "**MND: PEG before FVC 50%.**",
+      "**SAAG 1.1 or more: diuretics may help malignant ascites.**",
+    ],
+  },
+};
+
 export default revision;
