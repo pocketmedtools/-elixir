@@ -34,7 +34,7 @@ At the end run `cd /home/user/-elixir/fmprep && npx tsc -b && npm run -s verify 
 
 ## Topic content (`Topic` in the topic file)
 
-- `id` exactly as assigned (must start with `{{SUBJECT}}-`). `frequency` as assigned.
+- `id` exactly as assigned (must start with `{{SUBJECT}}-`). `frequency`: map assigned high→"core" or "common", moderate→"less-common" (valid values: core, common, less-common, uncommon).
 - `oneLiner`: the definition-level sentence an examiner wants (40+ chars, **bold** key terms).
 - `keywords`: 10-20 synonyms, abbreviations, drug names, eponyms.
 - `sections`: **12-16 sections**, each **5-10 points**. Cover, in this order where it applies:
