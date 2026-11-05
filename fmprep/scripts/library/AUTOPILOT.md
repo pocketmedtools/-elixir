@@ -1,6 +1,6 @@
 # Master library autopilot (user authorised 2026-10-30: keep going through limits, no need to ask, until ALL subjects done)
 
-Order: cardiovascular (DONE) -> respiratory (DONE) -> endocrine (DONE) -> gastro-hepatology (in progress) -> infectious-fever -> neurology -> renal-urology -> musculoskeletal -> psychiatry -> dermatology -> eye-ent -> emergency -> pediatrics -> obstetrics -> gynaecology -> surgery-office -> preventive -> geriatrics-ethics -> symptom-approach -> fm-principles
+Order: cardiovascular (DONE) -> respiratory (DONE) -> endocrine (DONE) -> gastro-hepatology (DONE when b09 finishes) -> infectious-fever (in progress) -> neurology -> renal-urology -> musculoskeletal -> psychiatry -> dermatology -> eye-ent -> emergency -> pediatrics -> obstetrics -> gynaecology -> surgery-office -> preventive -> geriatrics-ethics -> symptom-approach -> fm-principles
 
 Per subject: >= 5x existing topic count new topics (min 40), 12 batches of ~4.
 Setup: write $S/<sub>_batches.py like resp_batches.py (B dict + existing list), run with library_prompt.md;
