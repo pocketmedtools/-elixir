@@ -196,25 +196,18 @@ topics.push({
       ],
     },
     {
-      heading: "Referral, follow-up and monitoring",
+      heading: "Referral, follow-up and prevention",
       points: [
         "**Review every long-term PPI** at least **annually**: indication, dose, attempt step-down, magnesium and B12 when relevant. [AGA 2022]",
         "**Refer for endoscopy**: alarm features, symptoms persisting despite 8 weeks of correctly timed PPI, or uncertain indication before lifelong therapy. [ACG GERD 2022]",
         "**Refer to a gastroenterologist** for constipation refractory to two classes of laxatives, suspected dyssynergia (for manometry and biofeedback), or red flags. [AGA-ACG 2023]",
         "**Follow up a new laxative at 2-4 weeks**, titrating to a soft-formed stool (**Bristol 4**) without straining. [AGA-ACG 2023]",
         "**Re-check ECG** if domperidone or ondansetron is continued in high-risk patients; **stop metoclopramide** after 5 days and never exceed 12 weeks. [EMA 2013]",
-        "Document an **explicit stop date** on every antispasmodic or antiemetic prescription. [WHO Guide to Good Prescribing]",
-      ],
-    },
-    {
-      heading: "Prevention, counselling and programme links",
-      points: [
         "**Lifestyle for reflux** (weight loss, head-end elevation, no meal within 3 hours of lying down) reduces the need for long-term PPI - see the Acid peptic disease, GERD and H. pylori topic. [ACG GERD 2022]",
         "Counsel to **take the PPI 30-60 minutes before breakfast** - wrong timing is the commonest cause of apparent PPI failure. [ACG GERD 2022]",
         "**Avoid irrational FDCs** (PPI plus domperidone or levosulpiride for GERD; antispasmodic plus analgesic combinations) - India's CDSCO has banned several hundred irrational FDCs in **2016-2018 and 2023-2024**. [CDSCO 2023]",
         "**Antimicrobial stewardship** includes not adding a 'cover' PPI to antibiotics, since PPIs add to C. difficile risk. [ICMR AMSP 2023]",
         "Counsel opioid users that **constipation is expected and preventable** and that laxatives must continue as long as the opioid. [AGA OIC 2019]",
-        "**Pharmacist-led and electronic-prompt deprescribing** programmes at Ayushman Arogya Mandir and district-hospital pharmacies can implement PPI review at refill. [AGA 2022]",
       ],
     },
     {
@@ -725,25 +718,18 @@ topics.push({
       ],
     },
     {
-      heading: "Referral, follow-up and monitoring",
+      heading: "Referral, follow-up and prevention",
       points: [
         "**Refer urgently** to a hepatologist or transplant centre: INR 1.5 or more, encephalopathy, rising bilirubin after stopping, DILI in cirrhosis, or herbal ACLF. [AASLD ALF]",
         "**Refer** for suspected AIH-like DILI, DRESS, or failure of ALT to halve within 60 days of stopping. [EASL 2019]",
         "**ATT patients**: high-risk patients have LFTs **every 2-4 weeks** in the intensive phase and monthly thereafter; everyone is told to stop and report on nausea, vomiting or jaundice. [NTEP Technical Guidance 2021]",
         "After recovery, **document the culprit drug** prominently in the record and give the patient a written **drug-allergy note**. [ACG 2021]",
         "Check LFTs at **6 months** to identify chronic DILI. [EASL 2019]",
-        "**Methotrexate**: LFT every 4-12 weeks; **valproate**: LFTs in the first 6 months; **statins**: baseline only, repeat if symptomatic. [BNF 2025]",
-      ],
-    },
-    {
-      heading: "Prevention, counselling and programme links",
-      points: [
         "**NTEP / TB Mukt Bharat**: patient education card - stop ATT and attend if nausea, vomiting, abdominal pain or yellow eyes; **Ni-kshay Poshan Yojana** nutrition support lowers malnutrition-related risk. [NTEP 2024]",
         "**Avoid alcohol** and other hepatotoxic drugs (paracetamol over 2 g/day in high risk, NSAIDs, azoles) during ATT. [ATS 2006]",
         "Counsel patients that **'natural' does not mean safe**, and to **tell every doctor** about herbal products; avoid multi-ingredient weight-loss and bodybuilding supplements. [AASLD 2023]",
         "Advise people with chronic liver disease to **avoid all non-prescribed herbal medicines**, as CAM is a leading ACLF precipitant in India. [INASL]",
         "**Vaccinate** against hepatitis A and B in chronic liver disease to prevent superimposed injury. [ACIP]",
-        "**Report suspected ADRs** to PvPI and AYUSH pharmacovigilance - reporting is what drives label changes and product recalls. [PvPI, IPC]",
       ],
     },
     {
@@ -1237,25 +1223,18 @@ topics.push({
       ],
     },
     {
-      heading: "Referral, follow-up and monitoring",
+      heading: "Referral, follow-up and prevention",
       points: [
         "**Refer for colonoscopy**: bleeding with age over 45-50, change in bowel habit, IDA, weight loss, family history, or bleeding not settling with treatment. [BSG 2021]",
         "**Refer to surgeon**: grade III-IV or symptomatic refractory haemorrhoids, chronic fissure failing 8 weeks of topical therapy, abscess, fistula, prolapse, or atypical fissure. [ASCRS 2023]",
         "**Refer for anorectal physiology and biofeedback**: chronic constipation not responding to laxatives with features of an evacuation disorder, and FI not responding to stool normalisation. [ACG 2021]",
         "**Review fissure at 6-8 weeks** of topical therapy; **review FI with a bowel diary** at 4-6 weeks after stool modification. [ASCRS 2023]",
         "**Biopsy and dermatology referral** for pruritus ani not responding to 4-6 weeks of measures, or with atypical skin. [ACG 2021]",
-        "Facilities for **anorectal manometry and biofeedback** are available in tertiary centres (AIIMS, PGIMER, SGPGI and others); refer early rather than escalating laxatives indefinitely. [ISG]",
-      ],
-    },
-    {
-      heading: "Prevention, counselling and programme links",
-      points: [
         "**Dietary fibre 25-30 g/day** from whole grains, pulses, fruit and vegetables, with adequate water - the foundation for haemorrhoids, fissure and constipation. [ICMR-NIN Dietary Guidelines 2024]",
         "**Bowel habit counselling**: respond to the urge, avoid straining, **squatting or footstool posture**, no reading or phone on the toilet. [ACG 2021]",
         "**Obstetric prevention**: perineal protection and **recognition and repair of sphincter tears** reduce lifelong incontinence; pelvic floor exercises antenatally and postnatally. [RCOG Green-top 29]",
         "**Destigmatise incontinence** - ask routinely in elderly, diabetic and postpartum women at Ayushman Arogya Mandir and NP-NCD clinics; most will not volunteer it. [ACG 2021]",
         "Counsel against **untrained 'piles clinics'** that inject or apply caustic agents; **Ksharasutra (ayurvedic medicated seton)** has trial evidence for fistula-in-ano and should be given by trained practitioners. [ICMR multicentric trial]",
-        "**Colorectal cancer awareness**: educate that new rectal bleeding after age 45 needs examination, not just piles ointment. [BSG 2021]",
       ],
     },
     {
@@ -1727,25 +1706,18 @@ topics.push({
       ],
     },
     {
-      heading: "Referral, follow-up and monitoring",
+      heading: "Referral, follow-up and prevention",
       points: [
         "**Refer urgently (2-week pathway)** for bidirectional endoscopy: IDA in men and postmenopausal women, especially with Hb under 100 g/L, age over 60, or alarm features. [NICE NG12]",
         "**Monitor Hb and indices every 3 months for 1 year**, then at 2 years; give further iron if Hb or MCV falls. [BSG 2021]",
         "**Re-investigate** (capsule, repeat endoscopy) if IDA **recurs** despite correction of causes and adequate iron. [BSG 2021]",
         "**Refer to haematology** if iron studies are discordant, thalassaemia or myelodysplasia is suspected, or there is no response to IV iron. [BSG 2021]",
         "**Refer to cardiology** for a murmur suggesting aortic stenosis in a patient with angioectasias. [ESC 2021 valve guideline]",
-        "**Document** the endoscopic findings, coeliac result and planned surveillance in the discharge or referral letter. [BSG 2021]",
-      ],
-    },
-    {
-      heading: "Prevention, counselling and programme links",
-      points: [
         "**Anemia Mukt Bharat (2018)** - the **6x6x6 strategy**: six target groups, six interventions (prophylactic IFA, deworming, behaviour change, testing and treatment with digital Hb meters, fortified foods, addressing non-nutritional causes) and six institutional mechanisms. [Anemia Mukt Bharat 2018]",
         "**Prophylaxis**: **weekly IFA** for adolescents (WIFS), **daily IFA for 180 days** in pregnancy and lactation; **biannual albendazole** through **National Deworming Day**. [Anemia Mukt Bharat 2018]",
         "**Food fortification**: **fortified rice** distributed through PDS, ICDS and PM POSHAN, and **double-fortified salt**. [MoHFW]",
         "**Diet counselling**: green leafy vegetables, pulses, jaggery, meat if acceptable; **vitamin C with meals; tea and coffee 1 hour away** from meals. [ICMR-NIN Dietary Guidelines 2024]",
         "**Footwear and sanitation (Swachh Bharat)** reduce hookworm transmission. [WHO]",
-        "**Avoid unnecessary NSAIDs** and review long-term PPI (reduces iron absorption) - see the PPI prescribing topic. [AGA 2022]",
       ],
     },
     {

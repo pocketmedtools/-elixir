@@ -275,6 +275,7 @@ const LIBRARY_LOADERS: Record<string, () => Promise<{ default: Topic[] }>> = {
   respiratory: () => import("./library/respiratory"),
   endocrine: () => import("./library/endocrine"),
   "gastro-hepatology": () => import("./library/gastro-hepatology"),
+  "infectious-fever": () => import("./library/infectious-fever"),
 };
 
 /**
