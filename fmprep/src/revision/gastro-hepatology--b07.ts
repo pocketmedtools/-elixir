@@ -818,7 +818,7 @@ const revision: RevisionSet = {
       remember: [
         "Refer at **first decompensation or MELD 15**.",
         "MELD 3.0: **BINCAS** - bilirubin, INR, creatinine, albumin, sodium, sex.",
-        "Tacrolimus enemies: **CAT-D-R** - clarithromycin, azoles, tacrolimus-boosting ritonavir, diltiazem; rifampicin drops it.",
+        "Tacrolimus raisers: **macrolides, azoles, diltiazem, ritonavir**; rifampicin drops it.",
         "Safe trio: **azithromycin, amlodipine, paracetamol**.",
         "**No live vaccines** after transplant; contacts take IPV.",
         "**GRWR 0.8%** minimum for a living-donor graft.",
