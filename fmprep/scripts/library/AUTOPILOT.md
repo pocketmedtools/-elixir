@@ -15,3 +15,5 @@ Each check-in (hourly scheduled task "Library autopilot"):
 Paper ids: medicine subjects "I"; surgery-office/dermatology/eye-ent/emergency "II"; pediatrics/obstetrics/gynaecology "III"; fm-principles/preventive/geriatrics-ethics/symptom-approach "IV".
 Backup copy of these files: fmprep/scripts/library/ in the repo.
 Setup per subject: write spec-<sub>.json (like spec-endocrine.json) then python3 gen_batches.py spec.json library_prompt.md $S
+
+USER WANTS UPDATES: at every check-in post one short status line (subject, topics written/total, subjects done) instead of staying silent.
