@@ -3,7 +3,7 @@
 Pocket-Med is a free, offline clinical calculator app for doctors (paediatrics, OBG,
 medicine) built by a non-coder clinician. Health app: **accuracy first** — every
 calculation change needs tests in `web/scripts/verifyDatabases.ts` and
-`web/scripts/crosscheck.ts` (84,060 cases, must stay at 0 failures).
+`web/scripts/crosscheck.ts` (129,736 cases, must stay at 0 failures).
 
 - Website: https://pocketmedtools.github.io/-elixir/ (GitHub Pages, branch `gh-pages`)
 - APK: https://pocketmedtools.github.io/-elixir/Pocket-Med.apk (appId `com.pocketmed.app`)
@@ -33,7 +33,8 @@ No server: everything runs and is stored on the device (localStorage / IndexedDB
 
 ## Tools (src/components → src/lib maths)
 Paediatric dose, Growth (WHO/IAP), BP centiles, Newborn weight loss, HOL, Bilirubin (AAP
-2022), BMI, Creatinine clearance, Polypharmacy regimen analyser, Insulin, OB wheel (EDD =
+2022), BMI, ASCVD risk (2013 PCE as on MDCalc + PREVENT 2023 base model; coefficients
+generated from the preventr package into `lib/preventCoefficients.ts`), Creatinine clearance, Polypharmacy regimen analyser, Insulin, OB wheel (EDD =
 LMP+280+(cycle−28), Naegele also shown), ANC Scan (INTERGROWTH-21st biometry, Hadlock EFW,
 UA/MCA/UtA/DV Dopplers, Delphi FGR, scan schedule), Modified Bishop (NICE ≤6/>6),
 Timer/Stopwatch with sub-timers, Calculator (iPhone style), Calendar, Notes (text/photo/

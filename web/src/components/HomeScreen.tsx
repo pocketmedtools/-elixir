@@ -32,6 +32,7 @@ export const TOOL_SECTIONS: {
       { id: "insulin", title: "Insulin" },
       { id: "regimen", title: "Polypharm" },
       { id: "bmi", title: "BMI" },
+      { id: "ascvd", title: "ASCVD Risk (10-yr / PREVENT)" },
     ],
   },
   {
