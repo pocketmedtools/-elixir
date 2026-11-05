@@ -14,6 +14,7 @@ import HolCalculator from "./components/HolCalculator";
 import TimerTool from "./components/TimerTool";
 import AncScanTool from "./components/AncScanTool";
 import BishopScore from "./components/BishopScore";
+import AscvdTool from "./components/AscvdTool";
 import CalculatorTool from "./components/CalculatorTool";
 import CalendarTool from "./components/CalendarTool";
 import TimerFloat from "./components/TimerFloat";
@@ -259,6 +260,13 @@ export default function App() {
       active: "bg-emerald-900 text-white shadow-sm",
       idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
     },
+    {
+      id: "ascvd",
+      label: "ASCVD Risk",
+      shortLabel: "ASCVD",
+      active: "bg-orange-900 text-white shadow-sm",
+      idle: "bg-slate-100 text-slate-800 hover:bg-slate-200",
+    },
   ];
 
   setActiveTool(tab);
@@ -402,6 +410,7 @@ export default function App() {
         {tab === "ob" && <ObCalculator />}
         {tab === "ancScan" && <AncScanTool />}
         {tab === "bishop" && <BishopScore />}
+        {tab === "ascvd" && <AscvdTool />}
         {tab === "timer" && <TimerTool />}
         {tab === "calc" && <CalculatorTool />}
         {tab === "notes" && <NotesTool />}

@@ -14,7 +14,7 @@ import { APK_URL, isWebsite } from "../lib/platform";
 import ToolIcon, { TOOL_TEXT } from "./ToolIcon";
 
 export type MenuTarget =
-  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "hol" | "bili" | "bmi" | "crCl" | "regimen" | "insulin" | "ob" | "ancScan" | "bishop" | "calc" | "calendar" | "notes" | "timer" | "saved" | "report";
+  | "home" | "pedDose" | "growth" | "bp" | "nbWeight" | "hol" | "bili" | "bmi" | "crCl" | "ascvd" | "regimen" | "insulin" | "ob" | "ancScan" | "bishop" | "calc" | "calendar" | "notes" | "timer" | "saved" | "report";
 
 const LINK_GROUPS: {
   heading: string | null;
@@ -40,6 +40,7 @@ const LINK_GROUPS: {
       { id: "insulin", label: "Insulin" },
       { id: "regimen", label: "Polypharm" },
       { id: "bmi", label: "BMI" },
+      { id: "ascvd", label: "ASCVD Risk" },
     ],
   },
   { heading: "General", links: [{ id: "timer", label: "Timer / Stopwatch" }, { id: "calc", label: "Calculator" }, { id: "calendar", label: "Calendar" }, { id: "notes", label: "Notes" }] },

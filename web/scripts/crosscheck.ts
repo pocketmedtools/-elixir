@@ -39,6 +39,8 @@ import {
 import { IG_BIOMETRY_TABLES } from "./data/igBiometryTables";
 import { BISHOP_ITEMS, bishopTotal, bishopPlan } from "../src/lib/bishopMath";
 import { evaluate } from "../src/lib/calcMath";
+import { pceRisk, pceSum, pceOptimalRisk, preventRisk, riskBand, statinPlan, MMOL_TO_MGDL, type PceInput, type PreventInput } from "../src/lib/ascvdMath";
+import { PREVENT_10YR, PREVENT_30YR } from "../src/lib/preventCoefficients";
 import { isoFromParts } from "../src/components/DateDMY";
 import { cdAdd, cdPause, cdRemaining, cdStart, cdTick, newCountdown, newStopwatch, swElapsed, swLap, swPause, swStart,
   newRunClock, runElapsed, runStart, runStop, segStart, segStop, segDuration, openSegment, formatDuration, formatPosition } from "../src/lib/timerMath";
@@ -775,6 +777,115 @@ tool("Remembered entries + Last 5 history — 800 random values and calculations
     check(JSON.stringify(got) === JSON.stringify(oracle[toolId]), () => `history ${toolId} step ${i}`);
     if (i % 97 === 96) { clearHistory(toolId); oracle[toolId] = []; check(getHistory(toolId).length === 0, () => "history clear"); }
   }
+});
+
+// ---------- ASCVD: Pooled Cohort Equations + PREVENT ----------
+tool("ASCVD — PCE 2013 + PREVENT 2023 (published examples, independent oracle, limits, guideline logic)", (check) => {
+  // Published worked examples. Goff 2013 Table A: 55 y, TC 213, HDL 50, SBP 120 untreated, non-smoker, no DM.
+  const ex = { age: 55, tc: 213, hdl: 50, sbp: 120, bpTx: false, dm: false, smoker: false };
+  for (const [sex, race, sum, pct] of [["female", "white", -29.67, 2.1], ["female", "black", 86.16, 3.0], ["male", "white", 60.69, 5.3], ["male", "black", 18.97, 6.1]] as const) {
+    const i: PceInput = { ...ex, sex, race };
+    const r = pceRisk(i);
+    check(Math.abs(pceSum(i) - sum) <= 0.02, () => `PCE ${sex}/${race} sum ${pceSum(i).toFixed(3)} vs paper ${sum}`);
+    // Paper rounds its sum before converting; unrounded coefficients (MDCalc) differ by ≤0.1 point.
+    check(r.ok && Math.abs(r.risk * 100 - pct) <= 0.11, () => `PCE ${sex}/${race} ${r.ok ? (r.risk * 100).toFixed(2) : r.errors} vs paper ${pct}%`);
+  }
+  // "Other" race uses the White equations.
+  const o = pceRisk({ ...ex, sex: "male", race: "other" }), w = pceRisk({ ...ex, sex: "male", race: "white" });
+  check(o.ok && w.ok && o.risk === w.risk, () => "PCE other = white");
+  // AHA PREVENT example (Khan 2024 / preventr README): 50 y, SBP 160 treated, TC 200, HDL 45, DM, non-smoker, eGFR 90, BMI 35, no statin.
+  const pe = { age: 50, sbp: 160, bpTx: true, tc: 200, hdl: 45, statin: false, dm: true, smoker: false, egfr: 90, bmi: 35 };
+  const want = {
+    female: { 10: [0.147, 0.092, 0.081, 0.044, 0.054], 30: [0.53, 0.354, 0.39, 0.198, 0.221] },
+    male: { 10: [0.163, 0.102, 0.106, 0.056, 0.052], 30: [0.514, 0.349, 0.424, 0.216, 0.197] },
+  } as const;
+  for (const sex of ["female", "male"] as const) for (const yrs of [10, 30] as const) {
+    const r = preventRisk({ ...pe, sex }, yrs);
+    const got = r.ok ? (["totalCvd", "ascvd", "heartFailure", "chd", "stroke"] as const).map((k) => Math.round(r.risks[k] * 1000) / 1000) : [];
+    check(JSON.stringify(got) === JSON.stringify(want[sex][yrs]), () => `PREVENT ${sex} ${yrs}y ${JSON.stringify(got)} vs ${JSON.stringify(want[sex][yrs])}`);
+  }
+
+  // Independent oracle: coefficient TABLES for PCE (different layout from the app's code) and a
+  // term-by-term PREVENT logit written separately, compared on random patients.
+  const PCE_T: Record<string, number[]> = {
+    // lnAge, lnAge², lnTC, lnAge·lnTC, lnHDL, lnAge·lnHDL, lnTrSBP, lnAge·lnTrSBP, lnUnSBP, lnAge·lnUnSBP, smk, lnAge·smk, dm, S10, mean
+    wf: [-29.799, 4.884, 13.54, -3.114, -13.578, 3.149, 2.019, 0, 1.957, 0, 7.574, -1.665, 0.661, 0.9665, -29.18],
+    bf: [17.114, 0, 0.94, 0, -18.92, 4.475, 29.291, -6.432, 27.82, -6.087, 0.691, 0, 0.874, 0.9533, 86.61],
+    wm: [12.344, 0, 11.853, -2.664, -7.99, 1.769, 1.797, 0, 1.764, 0, 7.837, -1.795, 0.658, 0.9144, 61.18],
+    bm: [2.469, 0, 0.302, 0, -0.307, 0, 1.916, 0, 1.809, 0, 0.549, 0, 0.645, 0.8954, 19.54],
+  };
+  const oraclePce = (i: PceInput) => {
+    const c = PCE_T[(i.race === "black" ? "b" : "w") + (i.sex === "female" ? "f" : "m")];
+    const A = Math.log(i.age), T = Math.log(i.tc), H = Math.log(i.hdl), S = Math.log(i.sbp), sm = +i.smoker;
+    const x = c[0] * A + c[1] * A * A + c[2] * T + c[3] * A * T + c[4] * H + c[5] * A * H +
+      (i.bpTx ? c[6] * S + c[7] * A * S : c[8] * S + c[9] * A * S) + c[10] * sm + c[11] * A * sm + c[12] * +i.dm;
+    return 1 - Math.pow(c[13], Math.exp(x - c[14]));
+  };
+  const oraclePrevent = (i: PreventInput, yrs: 10 | 30, outcome: "totalCvd" | "ascvd" | "heartFailure") => {
+    const k = (yrs === 10 ? PREVENT_10YR : PREVENT_30YR)[i.sex][outcome];
+    const g = (n: string) => (k as Record<string, number | undefined>)[n] ?? 0;
+    const age = (i.age - 55) / 10, nh = (i.tc - i.hdl) * 0.02586 - 3.5, hd = (i.hdl * 0.02586 - 1.3) / 0.3;
+    const s2 = (Math.max(i.sbp, 110) - 130) / 20, b2 = (Math.max(i.bmi, 30) - 30) / 5, e1 = (Math.min(i.egfr, 60) - 60) / -15;
+    let x = g("constant") + g("age") * age + g("nonHdl") * nh + g("hdl") * hd + g("sbpLow") * (Math.min(i.sbp, 110) - 110) / 20 + g("sbpHigh") * s2;
+    x += g("dm") * +i.dm + g("smoker") * +i.smoker + g("bmiLow") * (Math.min(i.bmi, 30) - 25) / 5 + g("bmiHigh") * b2;
+    x += g("egfrLow") * e1 + g("egfrHigh") * (Math.max(i.egfr, 60) - 90) / -15 + g("bpTx") * +i.bpTx + g("statin") * +i.statin;
+    x += g("bpTxSbp") * +i.bpTx * s2 + g("statinNonHdl") * +i.statin * nh;
+    x += age * (g("ageNonHdl") * nh + g("ageHdl") * hd + g("ageSbp") * s2 + g("ageDm") * +i.dm + g("ageSmoker") * +i.smoker + g("ageBmi") * b2 + g("ageEgfr") * e1);
+    if (yrs === 30) x += g("age2") * age * age;
+    return 1 / (1 + Math.exp(-x));
+  };
+  for (let n = 0; n < 4000; n++) {
+    const sex = pick(["female", "male"] as const), race = pick(["white", "black", "other"] as const);
+    const base = { sex, tc: Math.round(uni(130, 320)), hdl: Math.round(uni(20, 100)), bpTx: rnd() < 0.4, dm: rnd() < 0.3, smoker: rnd() < 0.3 };
+    const pin: PceInput = { ...base, race, age: Math.round(uni(40, 79)), sbp: Math.round(uni(90, 200)) };
+    const r = pceRisk(pin);
+    check(r.ok && Math.abs(r.risk - oraclePce(pin)) < 1e-12, () => `PCE oracle ${JSON.stringify(pin)}`);
+    const vin: PreventInput = { ...base, age: Math.round(uni(30, 79)), sbp: Math.round(uni(90, 180)), statin: rnd() < 0.3,
+      egfr: Math.round(uni(15, 140)), bmi: Math.round(uni(185, 399)) / 10 };
+    for (const yrs of [10, 30] as const) {
+      const p = preventRisk(vin, yrs);
+      if (yrs === 30 && vin.age > 59) { check(!p.ok, () => `PREVENT 30y must refuse age ${vin.age}`); continue; }
+      for (const oc of ["totalCvd", "ascvd", "heartFailure"] as const)
+        check(p.ok && Math.abs(p.risks[oc] - oraclePrevent(vin, yrs, oc)) < 1e-12, () => `PREVENT oracle ${yrs}y ${oc} ${JSON.stringify(vin)}`);
+      // Total CVD includes ASCVD (separate equations; heart failure alone also uses BMI, so it is not compared).
+      check(p.ok && p.risks.totalCvd >= p.risks.ascvd, () => `PREVENT total ≥ ASCVD ${JSON.stringify(vin)}`);
+    }
+    // Clinical direction: smoking, diabetes and higher SBP never lower the PCE risk.
+    // (Published PCE quirk: in White/other men the age×smoking term cancels smoking at ≈78.7 y — MDCalc identical.)
+    for (const [k, v] of [["smoker", true], ["dm", true]] as const) {
+      if (k === "smoker" && pin.sex === "male" && pin.race !== "black" && pin.age >= 78) continue;
+      const lo = pceRisk({ ...pin, [k]: false }), hi = pceRisk({ ...pin, [k]: v });
+      check(lo.ok && hi.ok && hi.risk >= lo.risk, () => `PCE ${k} raises risk ${JSON.stringify(pin)}`);
+    }
+    if (pin.sbp < 200) { const a = pceRisk(pin), b = pceRisk({ ...pin, sbp: pin.sbp + 1 }); check(a.ok && b.ok && b.risk >= a.risk, () => `PCE SBP monotonic ${JSON.stringify(pin)}`); }
+  }
+  // Validated ranges: edges accepted, one step outside refused (never extrapolated).
+  const okP: PceInput = { age: 60, sex: "male", race: "white", tc: 200, hdl: 50, sbp: 130, bpTx: false, dm: false, smoker: false };
+  for (const [k, lo, hi] of [["age", 40, 79], ["tc", 130, 320], ["hdl", 20, 100], ["sbp", 90, 200]] as const) {
+    check(pceRisk({ ...okP, [k]: lo }).ok && pceRisk({ ...okP, [k]: hi }).ok, () => `PCE ${k} edges`);
+    check(!pceRisk({ ...okP, [k]: lo - 1 }).ok && !pceRisk({ ...okP, [k]: hi + 1 }).ok && !pceRisk({ ...okP, [k]: NaN }).ok, () => `PCE ${k} outside refused`);
+  }
+  const okV: PreventInput = { age: 50, sex: "female", tc: 200, hdl: 50, sbp: 130, bpTx: false, dm: false, smoker: false, statin: false, egfr: 90, bmi: 25 };
+  for (const [k, lo, hi, step] of [["age", 30, 79, 1], ["tc", 130, 320, 1], ["hdl", 20, 100, 1], ["sbp", 90, 180, 1], ["egfr", 15, 140, 1], ["bmi", 18.5, 39.9, 0.1]] as const) {
+    check(preventRisk({ ...okV, [k]: lo }, 10).ok && preventRisk({ ...okV, [k]: hi }, 10).ok, () => `PREVENT ${k} edges`);
+    check(!preventRisk({ ...okV, [k]: lo - step }, 10).ok && !preventRisk({ ...okV, [k]: hi + step }, 10).ok, () => `PREVENT ${k} outside refused`);
+  }
+  check(preventRisk({ ...okV, age: 59 }, 30).ok && !preventRisk({ ...okV, age: 60 }, 30).ok, () => "PREVENT 30y only to 59");
+  // Optimal risk = same person with TC 170, HDL 50, SBP 110 untreated, no smoking/diabetes.
+  const opt = pceOptimalRisk(60, "male", "white"), opt2 = pceRisk({ ...okP, tc: 170, hdl: 50, sbp: 110 });
+  check(opt.ok && opt2.ok && opt.risk === opt2.risk, () => "PCE optimal risk");
+  // Bands (2018): <5 low, 5–7.4 borderline, 7.5–19.9 intermediate, ≥20 high.
+  for (const [r, b] of [[0.0499, "low"], [0.05, "borderline"], [0.0749, "borderline"], [0.075, "intermediate"], [0.1999, "intermediate"], [0.2, "high"]] as const)
+    check(riskBand(r) === b, () => `band ${r}`);
+  check(Math.abs(5.18 * MMOL_TO_MGDL - 200.3) < 0.1, () => "mmol→mg/dL");
+  // Guideline decision rules.
+  const plan = (o: Partial<Parameters<typeof statinPlan>[0]>) => statinPlan({ age: 55, dm: false, ldl: 130, pce: 0.1, enhancers: 0, ascvd: false, ...o });
+  check(plan({ ascvd: true }).statin === "high", () => "secondary prevention high");
+  check(plan({ ldl: 190 }).statin === "high" && plan({ ldl: 189 }).statin === "moderate", () => "LDL 190 → high");
+  check(plan({ dm: true, pce: 0.1 }).statin === "moderate-or-high" && plan({ dm: true, pce: 0.25 }).statin === "high", () => "diabetes 40–75");
+  check(plan({ pce: 0.03 }).statin === "none" && plan({ pce: 0.06 }).statin === "none" && plan({ pce: 0.06, enhancers: 1 }).statin === "consider-moderate", () => "low/borderline");
+  check(plan({ pce: 0.1 }).statin === "moderate" && plan({ pce: 0.2 }).statin === "high", () => "intermediate/high");
+  check(plan({ ldl: 60 }).statin === "none" && plan({ age: 35 }).statin === "none", () => "LDL<70 / age<40");
 });
 
 // ---------- report ----------
