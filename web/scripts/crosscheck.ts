@@ -39,7 +39,7 @@ import {
 import { IG_BIOMETRY_TABLES } from "./data/igBiometryTables";
 import { BISHOP_ITEMS, bishopTotal, bishopPlan } from "../src/lib/bishopMath";
 import { evaluate } from "../src/lib/calcMath";
-import { pceRisk, pceSum, pceOptimalRisk, preventRisk, riskBand, statinPlan, MMOL_TO_MGDL, type PceInput, type PreventInput } from "../src/lib/ascvdMath";
+import { pceRisk, pceSum, pceOptimalRisk, preventRisk, riskBand, statinPlan, statinAdvice, MMOL_TO_MGDL, type PceInput, type PreventInput } from "../src/lib/ascvdMath";
 import { PREVENT_10YR, PREVENT_30YR } from "../src/lib/preventCoefficients";
 import { isoFromParts } from "../src/components/DateDMY";
 import { cdAdd, cdPause, cdRemaining, cdStart, cdTick, newCountdown, newStopwatch, swElapsed, swLap, swPause, swStart,
@@ -886,6 +886,22 @@ tool("ASCVD — PCE 2013 + PREVENT 2023 (published examples, independent oracle,
   check(plan({ pce: 0.03 }).statin === "none" && plan({ pce: 0.06 }).statin === "none" && plan({ pce: 0.06, enhancers: 1 }).statin === "consider-moderate", () => "low/borderline");
   check(plan({ pce: 0.1 }).statin === "moderate" && plan({ pce: 0.2 }).statin === "high", () => "intermediate/high");
   check(plan({ ldl: 60 }).statin === "none" && plan({ age: 35 }).statin === "none", () => "LDL<70 / age<40");
+  // One clear answer + starting dose for every plan.
+  const adv = (o: Partial<Parameters<typeof statinPlan>[0]>) => statinAdvice(plan(o));
+  check(adv({ pce: 0.28 }).decision === "start" && /^Atorvastatin 40 mg/.test(adv({ pce: 0.28 }).dose ?? ""), () => "high risk → start atorvastatin 40");
+  check(adv({ pce: 0.1 }).decision === "start" && /^Atorvastatin 20 mg/.test(adv({ pce: 0.1 }).dose ?? ""), () => "intermediate → start atorvastatin 20");
+  check(adv({ pce: 0.06 }).decision === "no" && adv({ pce: 0.06 }).dose === null, () => "borderline no enhancer → no");
+  check(adv({ pce: 0.06, enhancers: 2 }).decision === "consider" && !!adv({ pce: 0.06, enhancers: 2 }).dose, () => "borderline + enhancer → consider");
+  check(adv({ pce: 0.03 }).decision === "no", () => "low → no");
+  check(adv({ ascvd: true }).decision === "start" && /^Atorvastatin 40/.test(adv({ ascvd: true }).dose ?? ""), () => "secondary → atorvastatin 40");
+  check(adv({ dm: true, pce: 0.05 }).decision === "start", () => "diabetes → start");
+  check(adv({ ldl: 200 }).decision === "start" && /40 mg/.test(adv({ ldl: 200 }).dose ?? ""), () => "LDL ≥190 → high");
+  for (let n = 0; n < 3000; n++) {
+    const o = { age: Math.round(uni(20, 90)), dm: rnd() < 0.3, ldl: rnd() < 0.3 ? null : Math.round(uni(40, 260)), pce: rnd() < 0.1 ? null : rnd() * 0.5, enhancers: Math.floor(rnd() * 3), ascvd: rnd() < 0.1 };
+    const pl = statinPlan(o), a = statinAdvice(pl);
+    const want = pl.statin === "none" ? "no" : pl.statin === "consider-moderate" ? "consider" : "start";
+    check(a.decision === want && (a.decision === "no") === (a.dose === null) && a.answer.length > 0, () => `advice ${JSON.stringify(o)}`);
+  }
 });
 
 // ---------- report ----------

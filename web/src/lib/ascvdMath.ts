@@ -351,6 +351,60 @@ export function statinPlan(p: PlanInput): Plan {
   }
 }
 
+export interface StatinAdvice {
+  decision: "start" | "consider" | "no";
+  /** Short answer, e.g. "YES — start high-intensity statin". */
+  answer: string;
+  /** Starting dose, once daily. */
+  dose: string | null;
+  followUp: string;
+}
+
+/**
+ * One clear answer from the plan: start or not, and the starting dose
+ * (2018 AHA/ACC statin-intensity table; usual starting doses within it).
+ */
+export function statinAdvice(plan: Plan): StatinAdvice {
+  const recheck = "Recheck fasting lipids in 4–12 weeks, then every 3–12 months; check adherence and side effects.";
+  switch (plan.statin) {
+    case "high":
+      return {
+        decision: "start",
+        answer: "YES — start a HIGH-intensity statin",
+        dose: "Atorvastatin 40 mg once daily (or rosuvastatin 20 mg). Increase to atorvastatin 80 mg / rosuvastatin 40 mg if LDL-C has not fallen by ≥50%.",
+        followUp: recheck,
+      };
+    case "moderate-or-high":
+      return {
+        decision: "start",
+        answer: "YES — start a statin (moderate intensity at least)",
+        dose: "Atorvastatin 20 mg once daily (or rosuvastatin 10 mg). Use atorvastatin 40 mg / rosuvastatin 20 mg if multiple risk factors or age 50–75.",
+        followUp: recheck,
+      };
+    case "moderate":
+      return {
+        decision: "start",
+        answer: "YES — start a MODERATE-intensity statin",
+        dose: "Atorvastatin 20 mg once daily (or rosuvastatin 10 mg).",
+        followUp: recheck,
+      };
+    case "consider-moderate":
+      return {
+        decision: "consider",
+        answer: "CONSIDER — discuss with the patient; statin is reasonable",
+        dose: "If started: atorvastatin 10–20 mg once daily (or rosuvastatin 5–10 mg).",
+        followUp: "A CAC score can settle the decision if unsure. " + recheck,
+      };
+    case "none":
+      return {
+        decision: "no",
+        answer: "NO statin needed now",
+        dose: null,
+        followUp: "Lifestyle: diet, exercise, weight, BP, stop smoking. Reassess risk every 4–6 years.",
+      };
+  }
+}
+
 export const RISK_ENHANCERS: { id: string; label: string }[] = [
   { id: "fhx", label: "Family history of premature ASCVD (male <55 y, female <65 y)" },
   { id: "ldl160", label: "LDL-C persistently 160–189 mg/dL (or non-HDL-C 190–219)" },
