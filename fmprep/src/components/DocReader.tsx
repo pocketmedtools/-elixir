@@ -7,8 +7,10 @@
  * the file. Position is remembered per document.
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { docxToHtml, getDoc, htmlToText, wordCount, type StudyDoc } from "../lib/docs";
+import { getDoc, htmlToText, wordCount, type StudyDoc } from "../lib/docs";
 import PdfPages from "./PdfPages";
+import ZoomPane from "./ZoomPane";
+import OfficeView from "./OfficeView";
 import {
   docModeOf,
   docPagePosition,
@@ -50,6 +52,27 @@ if((cs.position==='fixed'||cs.position==='sticky')&&el.getBoundingClientRect().h
 function fit(){var ts=document.getElementsByTagName('table');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p)continue;if(!p.classList.contains('fm-scroll')){var w=document.createElement('div');w.className='fm-scroll';p.insertBefore(w,t);w.appendChild(t);p=w}var W=p.clientWidth,s=0.95;t.style.setProperty('font-size',s+'em','important');while(t.offsetWidth>W+1&&s>0.82){s-=0.03;t.style.setProperty('font-size',s.toFixed(2)+'em','important')}}}function paper(){var all=document.body?document.body.getElementsByTagName('*'):[];for(var i=0;i<all.length;i++){var el=all[i];var m=getComputedStyle(el).backgroundColor.match(/rgba?\\(([^)]+)\\)/);if(!m)continue;var c=m[1].split(',').map(parseFloat);if(c.length>3&&c[3]===0)continue;var lo=Math.min(c[0],c[1],c[2]),hi=Math.max(c[0],c[1],c[2]);if(lo>=238)el.style.setProperty('background-color','transparent','important');else if(lo>=215&&hi-lo<14)el.style.setProperty('background-color','rgba(120,80,30,.07)','important')}}function run(){strip();fit();paper()}document.addEventListener('DOMContentLoaded',run);addEventListener('load',function(){run();setTimeout(run,600);setTimeout(run,2000)});addEventListener('resize',fit)})();`;
 
 /**
+ * Pinch to zoom inside an HTML page, which runs in its own frame and so does
+ * not get the app's zoom. Two fingers scale the page with the point between
+ * them held still; on lifting, the page is laid out again at that size (CSS
+ * zoom) so text stays sharp. Double tap toggles 2x.
+ */
+const PINCH_JS = `(function(){var Z=1,s=null,k=1,last=0,tap={x:0,y:0},moved=false;
+function b(){return document.body}
+function d(t){return Math.hypot(t[0].clientX-t[1].clientX,t[0].clientY-t[1].clientY)}
+function cl(z){return Math.min(5,Math.max(0.5,z))}
+function set(z,mx,my,x,y){var r=z/Z;Z=z;b().style.zoom=Z===1?'':String(Z);var o=Z>1?'auto':'';document.documentElement.style.setProperty('overflow-x',o,o?'important':'');b().style.setProperty('overflow-x',o,o?'important':'');scrollTo(x*r-mx,y*r-my)}
+addEventListener('touchstart',function(e){if(e.touches.length===2){var mx=(e.touches[0].clientX+e.touches[1].clientX)/2,my=(e.touches[0].clientY+e.touches[1].clientY)/2;
+s={d:d(e.touches),mx:mx,my:my,x:scrollX+mx,y:scrollY+my};k=1;var B=b();B.style.transformOrigin=(s.x/Z)+'px '+(s.y/Z)+'px';}
+else if(e.touches.length===1){moved=false;tap={x:e.touches[0].clientX,y:e.touches[0].clientY}}},{passive:true});
+addEventListener('touchmove',function(e){if(s&&e.touches.length===2){e.preventDefault();k=cl(Z*d(e.touches)/s.d)/Z;b().style.transform='scale('+k+')'}
+else if(e.touches.length===1){var t=e.touches[0];if(Math.abs(t.clientX-tap.x)>10||Math.abs(t.clientY-tap.y)>10)moved=true}},{passive:false});
+function end(e){if(s&&e.touches.length<2){var q=s;s=null;b().style.transform='';if(Math.abs(k-1)>0.02)set(cl(Z*k),q.mx,q.my,q.x,q.y);last=0;return}
+if(e.touches.length===0&&e.changedTouches.length===1&&!moved){var n=Date.now(),t=e.changedTouches[0];
+if(n-last<300){set(Z>1.05?1:2,t.clientX,t.clientY,scrollX+t.clientX,scrollY+t.clientY);last=0}else last=n}}
+addEventListener('touchend',end,{passive:true});addEventListener('touchcancel',end,{passive:true})})();`;
+
+/**
  * Where the reader is inside the page. The page runs in a sandbox, so it
  * reports its own scroll to the app, and is told on load where to go back to:
  * the exact pixel when reopened in the same view, the same fraction of the
@@ -67,7 +90,7 @@ document.addEventListener('visibilitychange',function(){parent.postMessage({fmSc
 }
 
 function withPosition(html: string, y: number, f: number): string {
-  const inject = "<script>" + positionJs(y, f) + "</scr" + "ipt>";
+  const inject = "<script>" + positionJs(y, f) + "</scr" + "ipt><script>" + PINCH_JS + "</scr" + "ipt>";
   const head = html.match(/<head[^>]*>/i);
   if (head && head.index !== undefined) {
     const at = head.index + head[0].length;
@@ -136,9 +159,10 @@ export default function DocReader({
     }
   });
   const startPdfPage = useRef(pdfPage);
-  const [zoom, setZoom] = useState(1);
-  const fullScroll = useRef<HTMLDivElement | null>(null);
   const [fullScrollEl, setFullScrollEl] = useState<HTMLDivElement | null>(null);
+  const [pageScrollEl, setPageScrollEl] = useState<HTMLDivElement | null>(null);
+  /* Bumped when an Office file has been laid out, so the zoom fits it. */
+  const [officeReady, setOfficeReady] = useState(0);
   const notePage = useCallback(
     (n: number) => {
       setPdfPage(n);
@@ -213,7 +237,7 @@ export default function DocReader({
   // Reopened in full screen if that is how it was left.
   const autoFull = useRef(savedMode === "full" && !initialQuery);
   useEffect(() => {
-    const ready = pageHtml !== null || (doc?.kind === "pdf" && !!doc.blob);
+    const ready = pageHtml !== null || (!!doc?.blob && ["pdf", "docx", "pptx", "xlsx"].includes(doc.kind));
     if (ready && autoFull.current) {
       autoFull.current = false;
       openFull();
@@ -232,6 +256,50 @@ export default function DocReader({
   }, []);
   const sentinel = useRef<HTMLDivElement | null>(null);
   const { readerScale, readerSerif } = getState().settings;
+  /* Plain text reflows, so a pinch changes the text size (like a phone's
+     reader mode) instead of magnifying a fixed page. */
+  const textRef = useRef<HTMLElement | null>(null);
+  const scaleRef = useRef(readerScale);
+  scaleRef.current = readerScale;
+  useEffect(() => {
+    const el = textRef.current;
+    if (!el) return;
+    let d0 = 0;
+    let k = 1;
+    const dist = (t: TouchList) => Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+    const start = (e: TouchEvent) => {
+      if (e.touches.length === 2) {
+        d0 = dist(e.touches);
+        k = 1;
+        const r = el.getBoundingClientRect();
+        const my = (e.touches[0].clientY + e.touches[1].clientY) / 2 - r.top;
+        el.style.transformOrigin = `50% ${my}px`;
+      }
+    };
+    const move = (e: TouchEvent) => {
+      if (!d0 || e.touches.length !== 2) return;
+      e.preventDefault();
+      k = dist(e.touches) / d0;
+      el.style.transform = `scale(${Math.min(2.5, Math.max(0.6, k))})`;
+    };
+    const end = (e: TouchEvent) => {
+      if (!d0 || e.touches.length >= 2) return;
+      d0 = 0;
+      el.style.transform = "";
+      const next = Math.min(2.5, Math.max(0.8, Number((scaleRef.current * k).toFixed(2))));
+      if (Math.abs(next - scaleRef.current) > 0.02) updateSettings({ readerScale: next });
+    };
+    el.addEventListener("touchstart", start, { passive: true });
+    el.addEventListener("touchmove", move, { passive: false });
+    el.addEventListener("touchend", end, { passive: true });
+    el.addEventListener("touchcancel", end, { passive: true });
+    return () => {
+      el.removeEventListener("touchstart", start);
+      el.removeEventListener("touchmove", move);
+      el.removeEventListener("touchend", end);
+      el.removeEventListener("touchcancel", end);
+    };
+  });
 
   useEffect(() => {
     let alive = true;
@@ -244,11 +312,6 @@ export default function DocReader({
       setDoc(found);
       setBlocks(1);
       if (found.kind === "image" && found.blob) setImageUrl(URL.createObjectURL(found.blob));
-      // A Word file keeps its headings, tables and images: shown as a page.
-      if (found.kind === "docx" && found.blob)
-        void docxToHtml(found.blob, found.title)
-          .then((h) => alive && setPageHtml(h))
-          .catch(() => undefined);
       if (found.kind === "html" && found.blob)
         void found.blob.text().then((h) => {
           if (!alive) return;
@@ -370,7 +433,8 @@ export default function DocReader({
   }
 
   const isPdf = doc.kind === "pdf" && !!doc.blob;
-  const hasPage = pageHtml !== null || isPdf;
+  const office = (doc.kind === "docx" || doc.kind === "pptx" || doc.kind === "xlsx") && doc.blob ? doc.kind : null;
+  const hasPage = pageHtml !== null || isPdf || !!office;
 
   const download = () => {
     if (!doc.blob) return;
@@ -397,7 +461,7 @@ export default function DocReader({
             <button
               type="button"
               aria-label="Smaller text"
-              onClick={() => updateSettings({ readerScale: Math.max(0.9, Number((readerScale - 0.1).toFixed(2))) })}
+              onClick={() => updateSettings({ readerScale: Math.max(0.8, Number((readerScale - 0.1).toFixed(2))) })}
               className="rounded-lg border border-slate-300 bg-white px-2 py-1 text-xs font-bold text-slate-700"
             >
               A-
@@ -405,7 +469,7 @@ export default function DocReader({
             <button
               type="button"
               aria-label="Larger text"
-              onClick={() => updateSettings({ readerScale: Math.min(1.5, Number((readerScale + 0.1).toFixed(2))) })}
+              onClick={() => updateSettings({ readerScale: Math.min(2.5, Number((readerScale + 0.1).toFixed(2))) })}
               className="rounded-lg border border-slate-300 bg-white px-2 py-1 text-sm font-bold text-slate-700"
             >
               A+
@@ -482,20 +546,12 @@ export default function DocReader({
 
       {isPdf && full && doc.blob && (
         <div ref={fullRef} className="fixed inset-0 z-[300] flex flex-col" style={{ background: "#3a3530", paddingTop: "var(--sat)" }}>
-          <div
-            ref={(el) => {
-              fullScroll.current = el;
-              setFullScrollEl(el);
-            }}
-            className="flex-1 overflow-y-auto px-1 pb-10"
-          >
-            <PdfPages blob={doc.blob} zoom={zoom} startPage={pdfPage} onPage={notePage} scrollRoot={fullScrollEl} />
-          </div>
-          <div className="absolute right-2 flex gap-1.5" style={{ top: "calc(var(--sat) + 8px)" }}>
-            <button type="button" onClick={() => setZoom((z) => Math.max(1, +(z - 0.25).toFixed(2)))} className="h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)" }}>-</button>
-            <button type="button" onClick={() => setZoom((z) => Math.min(3, +(z + 0.25).toFixed(2)))} className="h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)" }}>+</button>
-            <button type="button" onClick={closeFull} aria-label="Close full screen" className="h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)" }}>✕</button>
-          </div>
+          <ZoomPane apply="none" className="flex-1 pb-10" onScrollEl={setFullScrollEl}>
+            {(z, w) => (
+              <PdfPages blob={doc.blob!} zoom={z} viewWidth={w} startPage={pdfPage} onPage={notePage} scrollRoot={fullScrollEl} />
+            )}
+          </ZoomPane>
+          <button type="button" onClick={closeFull} aria-label="Close full screen" className="absolute right-2 h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)", top: "calc(var(--sat) + 8px)" }}>✕</button>
         </div>
       )}
 
@@ -503,12 +559,41 @@ export default function DocReader({
         <>
           <div className="mt-3 flex items-center justify-between text-[13px] text-slate-600">
             <span>Page {pdfPage}{doc.pages ? ` of ${doc.pages}` : ""}</span>
-            <span className="flex gap-1.5">
-              <button type="button" onClick={() => setZoom((z) => Math.max(1, +(z - 0.25).toFixed(2)))} className="rounded-lg border border-slate-300 bg-white px-2.5 py-1 font-bold">Zoom -</button>
-              <button type="button" onClick={() => setZoom((z) => Math.min(3, +(z + 0.25).toFixed(2)))} className="rounded-lg border border-slate-300 bg-white px-2.5 py-1 font-bold">Zoom +</button>
-            </span>
+            <span>Pinch to zoom · double-tap</span>
           </div>
-          <PdfPages blob={doc.blob} zoom={zoom} startPage={startPdfPage.current} onPage={notePage} />
+          <ZoomPane
+            apply="none"
+            className="mt-2 rounded-xl border border-slate-200"
+            style={{ height: "calc(100dvh - 190px)", minHeight: 460, background: "#3a3530" }}
+            onScrollEl={setPageScrollEl}
+          >
+            {(z, w) => (
+              <PdfPages blob={doc.blob!} zoom={z} viewWidth={w} startPage={startPdfPage.current} onPage={notePage} scrollRoot={pageScrollEl} />
+            )}
+          </ZoomPane>
+        </>
+      )}
+
+      {office && full && doc.blob && (
+        <div ref={fullRef} className="fixed inset-0 z-[300] flex flex-col" style={{ background: "#e5e7eb", paddingTop: "var(--sat)" }}>
+          <ZoomPane fit className="flex-1" resetKey={officeReady}>
+            {() => <OfficeView kind={office} blob={doc.blob!} onReady={() => setOfficeReady((n) => n + 1)} />}
+          </ZoomPane>
+          <button type="button" onClick={closeFull} aria-label="Close full screen" className="absolute right-2 h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)", top: "calc(var(--sat) + 8px)" }}>✕</button>
+        </div>
+      )}
+
+      {office && asPage && !full && doc.blob && (
+        <>
+          <p className="mt-3 text-right text-[13px] text-slate-600">Pinch to zoom · double-tap</p>
+          <ZoomPane
+            fit
+            resetKey={officeReady}
+            className="mt-2 rounded-xl border border-slate-200"
+            style={{ height: "calc(100dvh - 190px)", minHeight: 460, background: "#e5e7eb" }}
+          >
+            {() => <OfficeView kind={office} blob={doc.blob!} onReady={() => setOfficeReady((n) => n + 1)} />}
+          </ZoomPane>
         </>
       )}
 
@@ -549,7 +634,9 @@ export default function DocReader({
       )}
 
       {imageUrl && (
-        <img src={imageUrl} alt={doc.title} className="mt-4 w-full rounded-xl border border-slate-200" />
+        <ZoomPane className="mt-4 rounded-xl border border-slate-200" style={{ maxHeight: "calc(100dvh - 160px)" }}>
+          {(_z, w) => <img src={imageUrl} alt={doc.title} style={{ width: w - 2, display: "block" }} />}
+        </ZoomPane>
       )}
 
       {doc.text && !(hasPage && asPage) && (
@@ -581,7 +668,7 @@ export default function DocReader({
             )}
           </div>
 
-          <article className="mt-4 leading-relaxed text-slate-900">
+          <article ref={textRef} className="mt-4 leading-relaxed text-slate-900" style={{ touchAction: "pan-x pan-y" }}>
             {paragraphs.map((para, i) => (
               <p key={i} className="mb-4 whitespace-pre-wrap break-words">
                 {query.trim().length >= 2 ? highlight(para, query.trim()) : para}

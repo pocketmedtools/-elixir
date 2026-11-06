@@ -205,9 +205,11 @@ await page.waitForTimeout(500);
   await page.waitForTimeout(600);
   await page.getByRole("button", { name: /fmprep-smoke-word/i }).first().click();
   await page.waitForTimeout(2500);
-  const h1 = await page.frameLocator("iframe").first().locator("h1").innerText().catch(() => "");
-  const cells = await page.frameLocator("iframe").first().locator("td").count().catch(() => 0);
-  check("Word file keeps headings and tables", /Smoke Word Heading/.test(h1) && cells === 2, h1);
+  // Laid out as real pages (docx-preview), not converted to a plain web page.
+  const word = page.locator(".docx-wrapper").first();
+  const h1 = await word.innerText().catch(() => "");
+  const cells = await word.locator("td").count().catch(() => 0);
+  check("Word file keeps headings and tables", /Smoke Word Heading/.test(h1) && cells === 2, h1.slice(0, 60));
   await page.getByRole("button", { name: /^←/ }).first().click();
   await page.waitForTimeout(500);
 }

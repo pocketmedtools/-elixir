@@ -5,9 +5,9 @@
  * The page in view is reported back so the reader reopens on it.
  */
 import { useCallback, useEffect, useRef, useState } from "react";
-import { loadPdfjs } from "../lib/docs";
+import { openPdf } from "../lib/docs";
 
-type Pdf = Awaited<ReturnType<Awaited<ReturnType<typeof loadPdfjs>>["getDocument"]>["promise"]>;
+type Pdf = Awaited<ReturnType<typeof openPdf>>;
 
 export default function PdfPages({
   blob,
@@ -15,6 +15,7 @@ export default function PdfPages({
   startPage,
   onPage,
   scrollRoot,
+  viewWidth,
 }: {
   blob: Blob;
   zoom: number;
@@ -22,6 +23,8 @@ export default function PdfPages({
   onPage: (page: number) => void;
   /** The element that scrolls (an overlay in full screen); the window otherwise. */
   scrollRoot?: HTMLElement | null;
+  /** Width of the visible area, when a zoom pane around the pages scrolls sideways. */
+  viewWidth?: number;
 }) {
   const [pdf, setPdf] = useState<Pdf | null>(null);
   const [ratios, setRatios] = useState<number[]>([]);
@@ -44,8 +47,7 @@ export default function PdfPages({
     let doc: Pdf | null = null;
     (async () => {
       try {
-        const pdfjs = await loadPdfjs();
-        doc = await pdfjs.getDocument({ data: new Uint8Array(await blob.arrayBuffer()) }).promise;
+        doc = await openPdf(new Uint8Array(await blob.arrayBuffer()));
         if (!live) return;
         // Page shapes first, so the scroll height is right before any drawing.
         const r: number[] = [];
@@ -86,9 +88,9 @@ export default function PdfPages({
   }, [pdf, startPage]);
 
   if (error) return <p className="mt-4 text-sm text-red-700">Could not show the pages: {error}. Use Text view.</p>;
-  const pageWidth = Math.round(width * zoom);
+  const pageWidth = Math.round((viewWidth ? viewWidth - 8 : width) * zoom);
   return (
-    <div ref={wrap} className="mt-3 w-full overflow-x-auto">
+    <div ref={wrap} className={viewWidth ? "py-1" : "mt-3 w-full overflow-x-auto"} style={viewWidth ? { width: pageWidth + 8 } : undefined}>
       {!pdf && <p className="py-6 text-center text-sm text-slate-500">Opening the PDF pages…</p>}
       <div style={{ width: pageWidth }} className="mx-auto flex flex-col gap-3">
         {pdf &&
@@ -142,7 +144,8 @@ function Page({
     (async () => {
       const page = await pdf.getPage(n);
       if (!live || !canvas.current) return;
-      const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+      // Sharp at any zoom, but never a canvas so large the phone runs out of memory.
+      const dpr = Math.min(window.devicePixelRatio || 1, 2.5, 4096 / Math.max(1, width));
       const base = page.getViewport({ scale: 1 });
       const viewport = page.getViewport({ scale: (width / base.width) * dpr });
       const c = canvas.current;

@@ -35,6 +35,8 @@ const KIND_LABEL: Record<StudyDoc["kind"], string> = {
   markdown: "Notes",
   pdf: "PDF",
   docx: "Word",
+  pptx: "PowerPoint",
+  xlsx: "Excel",
   html: "HTML",
   image: "Image",
   other: "File",
@@ -467,7 +469,7 @@ export default function MyDocuments({
         ref={fileRef}
         type="file"
         multiple
-        accept=".pdf,.docx,.txt,.md,.markdown,.csv,.json,.html,.htm,.rtf,.log,image/*"
+        accept=".pdf,.docx,.docm,.doc,.pptx,.ppsx,.ppt,.xlsx,.xlsm,.xls,.ods,.txt,.md,.markdown,.csv,.json,.html,.htm,.rtf,.log,image/*"
         onChange={(e) => {
           void importFiles(e.target.files);
           e.target.value = "";

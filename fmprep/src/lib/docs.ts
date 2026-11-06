@@ -11,7 +11,7 @@
  * folder of PDFs). Nothing is uploaded: there is no server in this app.
  */
 
-export type DocKind = "text" | "markdown" | "pdf" | "docx" | "html" | "image" | "other";
+export type DocKind = "text" | "markdown" | "pdf" | "docx" | "pptx" | "xlsx" | "html" | "image" | "other";
 
 export type StudyDoc = {
   id: string;
@@ -117,6 +117,7 @@ export async function load(): Promise<void> {
     loaded = true;
     emit();
     await repairHtmlText(all);
+    await repairOfficeKinds(all);
   } catch {
     if (!loaded) cache = [];
   }
@@ -187,11 +188,13 @@ export async function deleteFolder(name: string, deleteDocuments: boolean): Prom
 /* Text extraction                                                     */
 /* ------------------------------------------------------------------ */
 
-function kindFor(file: { name: string; type: string }): DocKind {
+export function kindFor(file: { name: string; type: string }): DocKind {
   const name = file.name.toLowerCase();
   const type = file.type.toLowerCase();
   if (name.endsWith(".pdf") || type === "application/pdf") return "pdf";
-  if (name.endsWith(".docx")) return "docx";
+  if (name.endsWith(".docx") || name.endsWith(".docm") || name.endsWith(".dotx")) return "docx";
+  if (name.endsWith(".pptx") || name.endsWith(".ppsx") || name.endsWith(".pptm") || name.endsWith(".potx")) return "pptx";
+  if (/\.(xlsx|xlsm|xls|ods)$/.test(name)) return "xlsx";
   if (name.endsWith(".md") || name.endsWith(".markdown")) return "markdown";
   if (name.endsWith(".html") || name.endsWith(".htm") || type === "text/html") return "html";
   if (type.startsWith("image/")) return "image";
@@ -207,22 +210,51 @@ function kindFor(file: { name: string; type: string }): DocKind {
   return "other";
 }
 
-let pdfjsReady: Promise<typeof import("pdfjs-dist")> | null = null;
-/** pdf.js with its worker, loaded once on demand. */
-export function loadPdfjs(): Promise<typeof import("pdfjs-dist")> {
+type Pdfjs = typeof import("pdfjs-dist");
+let pdfjsReady: Promise<Pdfjs> | null = null;
+/**
+ * pdf.js with its worker, loaded once on demand.
+ *
+ * The legacy build is used on purpose. The modern build (and its worker, which
+ * the app's own polyfills never reach) calls Map.getOrInsertComputed,
+ * Math.sumPrecise and Uint8Array.fromBase64, which most Android web views do
+ * not have: fonts then fail to load and pages draw blank or in the wrong
+ * typeface. The legacy build carries its own fallbacks.
+ */
+export function loadPdfjs(): Promise<Pdfjs> {
   if (!pdfjsReady) {
     pdfjsReady = (async () => {
-      // Loaded on demand so the reader's first paint never waits for the PDF engine.
-      const pdfjs = await import("pdfjs-dist");
+      const pdfjs = (await import("pdfjs-dist/legacy/build/pdf.min.mjs")) as unknown as Pdfjs;
       // The worker is an ES module, so it is handed over as a live port built by
       // the bundler rather than as a script URL, which would be loaded classically
       // and fail.
-      const PdfWorker = (await import("pdfjs-dist/build/pdf.worker.min.mjs?worker")).default;
+      const PdfWorker = (await import("pdfjs-dist/legacy/build/pdf.worker.min.mjs?worker")).default;
       pdfjs.GlobalWorkerOptions.workerPort = new PdfWorker();
       return pdfjs;
     })();
   }
   return pdfjsReady;
+}
+
+/**
+ * Open a PDF with everything pdf.js needs to draw it as printed: the character
+ * maps for Asian and symbol fonts, the 14 standard fonts for files that do not
+ * embed them, and the image decoders (JPEG 2000, JBIG2) used by scanned pages.
+ * These ship in the app (copied from pdfjs-dist at build time), so it works
+ * offline.
+ */
+export async function openPdf(data: Uint8Array) {
+  const pdfjs = await loadPdfjs();
+  const base = new URL("pdfjs/", document.baseURI).href;
+  return pdfjs.getDocument({
+    data,
+    cMapUrl: `${base}cmaps/`,
+    cMapPacked: true,
+    standardFontDataUrl: `${base}standard_fonts/`,
+    wasmUrl: `${base}wasm/`,
+    iccUrl: `${base}iccs/`,
+    useSystemFonts: false,
+  } as Parameters<Pdfjs["getDocument"]>[0]).promise;
 }
 
 /** A Word file as an HTML page, keeping headings, lists, tables, bold and images. */
@@ -238,9 +270,7 @@ td,th{border:1px solid #c9b38f;padding:6px 8px;vertical-align:top}th{background:
 }
 
 async function pdfToText(file: File): Promise<{ text: string; pages: number }> {
-  const pdfjs = await loadPdfjs();
-  const data = new Uint8Array(await file.arrayBuffer());
-  const doc = await pdfjs.getDocument({ data }).promise;
+  const doc = await openPdf(new Uint8Array(await file.arrayBuffer()));
   const chunks: string[] = [];
   for (let p = 1; p <= doc.numPages; p++) {
     const page = await doc.getPage(p);
@@ -291,6 +321,27 @@ export function htmlToText(html: string): string {
 /* HTML documents stored before htmlToText dropped <style>/<script> carry
    CSS as their text. Re-read once from the original file. */
 const HTML_TEXT_V = 2;
+/* PowerPoint and Excel files imported before the app could read them were
+   stored as "other" with no text. Read them once, from the original file. */
+async function repairOfficeKinds(all: DocRecord[]): Promise<void> {
+  let changed = false;
+  for (const r of all) {
+    if (r.kind !== "other" || !r.blob) continue;
+    const kind = kindFor({ name: r.fileName, type: r.mime });
+    if (kind === "other") continue;
+    try {
+      const { text, pages, note } = await extract(new File([r.blob], r.fileName, { type: r.mime }), kind);
+      const fixed: DocRecord = { ...r, kind, text, pages, extractNote: note };
+      await tx("readwrite", (store) => store.put(fixed));
+      cache = cache.map((d) => (d.id === r.id ? strip(fixed) : d));
+      changed = true;
+    } catch {
+      /* left as it was; tried again next launch */
+    }
+  }
+  if (changed) emit();
+}
+
 async function repairHtmlText(all: (DocRecord & { textV?: number })[]): Promise<void> {
   for (const r of all) {
     if (r.kind !== "html" || !r.blob || (r.textV ?? 0) >= HTML_TEXT_V) continue;
@@ -304,7 +355,7 @@ async function repairHtmlText(all: (DocRecord & { textV?: number })[]): Promise<
   }
 }
 
-async function extract(file: File, kind: DocKind): Promise<{ text: string; pages?: number; note?: string }> {
+export async function extract(file: File, kind: DocKind): Promise<{ text: string; pages?: number; note?: string }> {
   try {
     if (kind === "pdf") {
       const { text, pages } = await pdfToText(file);
@@ -317,13 +368,28 @@ async function extract(file: File, kind: DocKind): Promise<{ text: string; pages
       return { text, pages };
     }
     if (kind === "docx") return { text: await docxToText(file) };
+    if (kind === "pptx") {
+      const { pptxToText } = await import("./office");
+      const { text, slides } = await pptxToText(await file.arrayBuffer());
+      return { text, pages: slides };
+    }
+    if (kind === "xlsx") {
+      const { sheetToText } = await import("./office");
+      return { text: await sheetToText(await file.arrayBuffer()) };
+    }
     if (kind === "html") return { text: htmlToText(await file.text()) };
     if (kind === "text" || kind === "markdown") return { text: await file.text() };
     if (kind === "image")
       return { text: "", note: "An image is stored and shown as it is; there is no text to extract." };
+    const lower = file.name.toLowerCase();
+    if (lower.endsWith(".doc") || lower.endsWith(".ppt") || lower.endsWith(".pps"))
+      return {
+        text: "",
+        note: "This is the old Office format (.doc / .ppt, before 2007), which no phone app can lay out exactly without Microsoft Office. It is stored unchanged and can be exported. In Word or PowerPoint, use Save As .docx / .pptx (or PDF) and import that to read it here exactly as made.",
+      };
     return {
       text: "",
-      note: "This file type cannot be read as text. It is stored unchanged and can be exported. Save it as PDF, DOCX, TXT or MD to read it here.",
+      note: "This file type cannot be shown here. It is stored unchanged and can be exported. PDF, Word (.docx), PowerPoint (.pptx), Excel (.xlsx), HTML, images, TXT and MD files open in the app.",
     };
   } catch (e) {
     return {

@@ -12,3 +12,9 @@ declare module "mammoth/mammoth.browser" {
     messages: { type: string; message: string }[];
   }>;
 }
+
+/* pdf.js legacy build: same API as the modern one. */
+declare module "pdfjs-dist/legacy/build/pdf.min.mjs" {
+  const pdfjs: unknown;
+  export = pdfjs;
+}
