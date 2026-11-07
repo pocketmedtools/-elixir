@@ -3,7 +3,7 @@
 Pocket-Med is a free, offline clinical calculator app for doctors (paediatrics, OBG,
 medicine) built by a non-coder clinician. Health app: **accuracy first** — every
 calculation change needs tests in `web/scripts/verifyDatabases.ts` and
-`web/scripts/crosscheck.ts` (129,736 cases, must stay at 0 failures).
+`web/scripts/crosscheck.ts` (204,895 cases, must stay at 0 failures).
 
 - Website: https://pocketmedtools.github.io/-elixir/ (GitHub Pages, branch `gh-pages`)
 - APK: https://pocketmedtools.github.io/-elixir/Pocket-Med.apk (appId `com.pocketmed.app`)

@@ -1,7 +1,7 @@
 import { usePersist } from "../lib/lastState";
 import {
   BIOMETRY_RANGE, SCAN_SCHEDULE, lagLabel, mmFromGaEquivalent, SERIAL_NOTES, UA_RANGE, assessLiquor, biometryCentile, efwCentile,
-  gaLabel, hadlockEfw, mcaPsvMoM, scanPlan, scheduleStatus, uaCentile,
+  gaLabel, hadlockEfw, plausibleMm, plausibleEfw, BIOMETRY_LIMITS_MM, EFW_LIMITS_G, mcaPsvMoM, scanPlan, scheduleStatus, uaCentile,
   type BiometryParam, type Centile, type DvFlow, type Tone, type UaFlow,
 } from "../lib/ancScanMath";
 import SaveButton from "./SaveButton";
@@ -134,14 +134,22 @@ export default function AncScanTool() {
     const e = ageEntry[p];
     return e?.on ? mmFromGaEquivalent(p, e.w + e.d / 7) ?? undefined : toMm(typed);
   };
-  const vals: Record<BiometryParam, number | undefined> = {
+  const typedVals: Record<BiometryParam, number | undefined> = {
     bpd: fromAge("bpd", bpd), hc: fromAge("hc", hc), ac: fromAge("ac", ac), fl: fromAge("fl", fl),
+  };
+  // An impossible value (typing error) is flagged and left out of every calculation.
+  const badMm = (p: BiometryParam) => !plausibleMm(p, typedVals[p]);
+  const vals: Record<BiometryParam, number | undefined> = {
+    bpd: badMm("bpd") ? undefined : typedVals.bpd, hc: badMm("hc") ? undefined : typedVals.hc,
+    ac: badMm("ac") ? undefined : typedVals.ac, fl: badMm("fl") ? undefined : typedVals.fl,
   };
   const setters: Record<BiometryParam, [string, (v: string) => void]> = { bpd: [bpd, setBpd], hc: [hc, setHc], ac: [ac, setAc], fl: [fl, setFl] };
   const cent = (p: BiometryParam) => (vals[p] != null ? biometryCentile(p, ga, vals[p]!) : null);
 
   const calcEfw = hadlockEfw(vals);
-  const efwG = num(efwReport) ?? calcEfw?.grams ?? null;
+  const efwTyped = num(efwReport);
+  const efwBad = !plausibleEfw(efwTyped);
+  const efwG = (efwBad ? undefined : efwTyped) ?? calcEfw?.grams ?? null;
   const efwC = efwG != null ? efwCentile(ga, efwG) : null;
   const uaPiN = num(uaPi);
   const uaC = uaPiN != null ? uaCentile("pi", ga, uaPiN) : null;
@@ -281,8 +289,15 @@ export default function AncScanTool() {
                         </p>
                       </>
                     ) : (
-                      <input type="number" inputMode="decimal" aria-label={p.label} value={setters[p.id][0]}
-                        onChange={(ev) => setters[p.id][1](ev.target.value)} className={`mt-1 ${field}`} />
+                      <>
+                        <input type="number" inputMode="decimal" aria-label={p.label} value={setters[p.id][0]}
+                          onChange={(ev) => setters[p.id][1](ev.target.value)} className={`mt-1 ${field}`} />
+                        {badMm(p.id) && (
+                          <span className="mt-0.5 block text-[11px] font-bold text-red-700">
+                            Check value — expected {unit === "cm" ? `${BIOMETRY_LIMITS_MM[p.id][0] / 10}–${BIOMETRY_LIMITS_MM[p.id][1] / 10} cm` : `${BIOMETRY_LIMITS_MM[p.id][0]}–${BIOMETRY_LIMITS_MM[p.id][1]} mm`}. Not used.
+                          </span>
+                        )}
+                      </>
                     )}
                   </div>
                 );
@@ -291,6 +306,7 @@ export default function AncScanTool() {
                 EFW on report (g) — optional
                 <input type="number" inputMode="numeric" aria-label="EFW on report" value={efwReport} onChange={(e) => setEfwReport(e.target.value)}
                   placeholder={calcEfw ? String(calcEfw.grams) : ""} className={`mt-1 ${field}`} />
+                {efwBad && <span className="mt-0.5 block text-[11px] font-bold text-red-700">Check value — expected {EFW_LIMITS_G[0]}–{EFW_LIMITS_G[1]} g. Not used.</span>}
               </label>
               <label className={label}>
                 Previous AC/EFW centile — optional
@@ -446,7 +462,7 @@ export default function AncScanTool() {
                 <div className="divide-y divide-slate-200">
                   {efwG != null && (
                     <CentileBar name="EFW" value={`${efwG} g`} c={efwC}
-                      note={num(efwReport) != null ? "EFW from report" : calcEfw?.formula} />
+                      note={efwTyped != null && !efwBad ? "EFW from report" : calcEfw?.formula} />
                   )}
                   {PARAMS.map((p) => vals[p.id] != null && (
                     <CentileBar key={p.id} name={p.label} value={`${Math.round(vals[p.id]! * 10) / 10} mm`} c={cent(p.id)}

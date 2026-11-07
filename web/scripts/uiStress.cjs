@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
 });
 
 // Deterministic randomness so a failure can be replayed.
-let seed = 20261107;
+let seed = Number(process.env.SEED || 20261107);
 const rnd = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
 const pick = (a) => a[Math.floor(rnd() * a.length)];
 const VALUES = () => pick([

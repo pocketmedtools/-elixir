@@ -69,12 +69,17 @@ export function igBiometryMuSigma(param: BiometryParam, ga: number): { mu: numbe
   }
 }
 
+/** A centile is shown only when every number in it is real (never NaN/Infinity). */
+function finiteCentile(c: Centile): Centile | null {
+  return Number.isFinite(c.z) && Number.isFinite(c.centile) && Number.isFinite(c.median) ? c : null;
+}
+
 export function biometryCentile(param: BiometryParam, ga: number, mm: number): Centile | null {
-  if (!(mm > 0) || ga < BIOMETRY_RANGE.min || ga > BIOMETRY_RANGE.max + 6 / 7) return null;
+  if (!(Number.isFinite(mm) && mm > 0) || ga < BIOMETRY_RANGE.min || ga > BIOMETRY_RANGE.max + 6 / 7) return null;
   const g = Math.min(ga, BIOMETRY_RANGE.max);
   const { mu, sigma } = igBiometryMuSigma(param, g);
   const z = (mm - mu) / sigma;
-  return { z: round(z, 2), centile: round(zToPercentile(z), 1), median: round(mu, 1) };
+  return finiteCentile({ z: round(z, 2), centile: round(zToPercentile(z), 1), median: round(mu, 1) });
 }
 
 /**
@@ -104,7 +109,31 @@ export interface EfwResult {
 }
 
 /** Hadlock EFW from biometry in mm (uses the 4-parameter formula when possible). */
+/**
+ * Physically possible fetal measurements (mm) — far wider than any centile
+ * chart, only to catch typing errors (e.g. cm typed as mm ×10, extra zeros).
+ */
+export const BIOMETRY_LIMITS_MM: Record<BiometryParam, [number, number]> = {
+  bpd: [10, 120],
+  hc: [40, 450],
+  ac: [30, 500],
+  fl: [5, 100],
+};
+export const EFW_LIMITS_G: [number, number] = [100, 7000];
+
+export function plausibleMm(param: BiometryParam, mm: number | undefined): boolean {
+  if (mm == null) return true;
+  const [lo, hi] = BIOMETRY_LIMITS_MM[param];
+  return Number.isFinite(mm) && mm >= lo && mm <= hi;
+}
+
+export function plausibleEfw(g: number | undefined): boolean {
+  return g == null || (Number.isFinite(g) && g >= EFW_LIMITS_G[0] && g <= EFW_LIMITS_G[1]);
+}
+
 export function hadlockEfw(mm: { bpd?: number; hc?: number; ac?: number; fl?: number }): EfwResult | null {
+  // Never estimate from an impossible measurement.
+  for (const k of ["bpd", "hc", "ac", "fl"] as const) if (!plausibleMm(k, mm[k])) return null;
   const cm = (v?: number) => (v && v > 0 ? v / 10 : undefined);
   const bpd = cm(mm.bpd), hc = cm(mm.hc), ac = cm(mm.ac), fl = cm(mm.fl);
   if (!ac || !fl) return null;
@@ -123,7 +152,8 @@ export function hadlockEfw(mm: { bpd?: number; hc?: number; ac?: number; fl?: nu
     log10 = 1.304 + 0.05281 * ac + 0.1938 * fl - 0.004 * ac * fl;
     formula = "Hadlock (AC, FL)";
   }
-  return { grams: Math.round(10 ** log10), formula };
+  const grams = Math.round(10 ** log10);
+  return plausibleEfw(grams) ? { grams, formula } : null;
 }
 
 // INTERGROWTH-21st standard for Hadlock EFW (LMS on log EFW).
@@ -146,12 +176,12 @@ export function efwFromZ(ga: number, z: number): number {
 }
 
 export function efwCentile(ga: number, grams: number): Centile | null {
-  if (!(grams > 0) || ga < EFW_RANGE.min || ga > EFW_RANGE.max + 6 / 7) return null;
+  if (!(Number.isFinite(grams) && grams > 0) || ga < EFW_RANGE.min || ga > EFW_RANGE.max + 6 / 7) return null;
   const g = Math.min(ga, EFW_RANGE.max);
   const { l, m, s } = hadlockLms(g);
   const y = Math.log(grams);
   const z = Math.abs(l) < 1e-8 ? Math.log(y / m) / s : ((y / m) ** l - 1) / (s * l);
-  return { z: round(z, 2), centile: round(zToPercentile(z), 1), median: Math.round(efwFromZ(g, 0)) };
+  return finiteCentile({ z: round(z, 2), centile: round(zToPercentile(z), 1), median: Math.round(efwFromZ(g, 0)) });
 }
 
 // ---------- Umbilical artery Doppler (INTERGROWTH-21st) ----------
@@ -177,11 +207,11 @@ export function uaValueAtZ(index: UaIndex, ga: number, z: number): number {
 }
 
 export function uaCentile(index: UaIndex, ga: number, value: number): Centile | null {
-  if (!(value > 0) || ga < UA_RANGE.min || ga > UA_RANGE.max + 6 / 7) return null;
+  if (!(Number.isFinite(value) && value > 0) || ga < UA_RANGE.min || ga > UA_RANGE.max + 6 / 7) return null;
   const gw = Math.min(ga, UA_RANGE.max);
   const g = UA_G[index], m = UA_M[index](gw), s = UA_S[index](gw);
   const z = (Math.exp(((value - m) * g) / s) - 1) / g;
-  return { z: round(z, 2), centile: round(zToPercentile(z), 1), median: round(m, 2) };
+  return finiteCentile({ z: round(z, 2), centile: round(zToPercentile(z), 1), median: round(m, 2) });
 }
 
 // ---------- MCA peak systolic velocity (fetal anaemia) ----------
@@ -189,7 +219,7 @@ export function uaCentile(index: UaIndex, ga: number, value: number): Centile | 
 export const mcaPsvMedian = (ga: number) => Math.exp(2.31 + 0.046 * ga);
 
 export function mcaPsvMoM(ga: number, psv: number): number | null {
-  if (!(psv > 0) || ga < 16 || ga > 41) return null;
+  if (!(Number.isFinite(psv) && psv > 0) || ga < 16 || ga > 41) return null;
   return round(psv / mcaPsvMedian(ga), 2);
 }
 
