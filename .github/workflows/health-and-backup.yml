@@ -70,11 +70,21 @@ jobs:
             How to restore: see RESTORE.md in this repository (or inside pocket-med-source.zip).
           files: ${{ runner.temp }}/backup/*
 
+      # Screen-level stress test: every tool on a phone-sized screen with random
+      # entries and taps; fails on a crash, page error, NaN/Infinity/undefined.
+      # Runs after the backup so a failure never blocks the backup itself.
+      - name: Screen stress test (all tools)
+        working-directory: web
+        run: |
+          npm install --no-save playwright@1.63.0
+          npx playwright install --with-deps chromium
+          node scripts/uiStress.cjs 30
+
       # GitHub pauses scheduled workflows after 60 days without commits; a
       # tiny monthly heartbeat commit keeps this backup running for years.
       # "[skip ci]" stops it from triggering any other build.
       - name: Keep the schedule alive
-        if: github.event_name == 'schedule'
+        if: always() && github.event_name == 'schedule'
         run: |
           F=.github/backup-heartbeat.txt
           M=$(date -u +%Y-%m)

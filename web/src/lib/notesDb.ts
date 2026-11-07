@@ -69,7 +69,26 @@ export async function getNote(id: string): Promise<Note | undefined> {
   return run<Note>("notes", "readonly", (s) => s.get(id));
 }
 
+/**
+ * Ask the browser once to keep this app's storage permanently, so saved
+ * notes and photos are not cleared when the phone runs low on space.
+ * Silent where unsupported; never blocks saving.
+ */
+let persistAsked = false;
+function keepStorage(): void {
+  if (persistAsked) return;
+  persistAsked = true;
+  try {
+    const sm = navigator.storage;
+    if (!sm?.persist || !sm.persisted) return;
+    sm.persisted().then((done) => (done ? undefined : sm.persist())).catch(() => {});
+  } catch {
+    /* not available */
+  }
+}
+
 export async function saveNote(note: Note): Promise<void> {
+  keepStorage();
   await run("notes", "readwrite", (s) => s.put(note));
 }
 
