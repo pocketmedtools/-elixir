@@ -32,23 +32,26 @@ type Loaded = StudyDoc & { blob?: Blob };
 
 /**
  * Pinch to zoom inside an HTML page, which runs in its own frame and so does
- * not get the app's zoom. Two fingers scale the page with the point between
- * them held still; on lifting, the page is laid out again at that size (CSS
- * zoom) so text stays sharp. Double tap toggles 2x.
+ * not get the app's zoom. Two fingers magnify the page with the point between
+ * them held still, like a phone's photo viewer: the page is only scaled, never
+ * laid out again, so lines do not re-wrap and the reader stays exactly on what
+ * was zoomed. Double tap toggles 2.5x on that spot.
  */
-const PINCH_JS = `(function(){var Z=1,s=null,k=1,last=0,tap={x:0,y:0},moved=false;
+const PINCH_JS = `(function(){var Z=1,s=null,last=0,tap={x:0,y:0},moved=false,off=null;
 function b(){return document.body}
 function d(t){return Math.hypot(t[0].clientX-t[1].clientX,t[0].clientY-t[1].clientY)}
-function cl(z){return Math.min(5,Math.max(0.5,z))}
-function set(z,mx,my,x,y){var r=z/Z;Z=z;b().style.zoom=Z===1?'':String(Z);var o=Z>1?'auto':'';document.documentElement.style.setProperty('overflow-x',o,o?'important':'');b().style.setProperty('overflow-x',o,o?'important':'');scrollTo(x*r-mx,y*r-my)}
-addEventListener('touchstart',function(e){if(e.touches.length===2){var mx=(e.touches[0].clientX+e.touches[1].clientX)/2,my=(e.touches[0].clientY+e.touches[1].clientY)/2;
-s={d:d(e.touches),mx:mx,my:my,x:scrollX+mx,y:scrollY+my};k=1;var B=b();B.style.transformOrigin=(s.x/Z)+'px '+(s.y/Z)+'px';}
+function cl(z){return Math.min(5,Math.max(1,z))}
+function origin(){if(!off){var r=b().getBoundingClientRect();off={x:r.left+scrollX,y:r.top+scrollY}}return off}
+function apply(z,c,m){var o=origin();var B=b();B.style.transformOrigin='0 0';B.style.transform=z===1?'':'scale('+z+')';
+document.documentElement.style.overflow=z>1?'auto':'';scrollTo(o.x+c.x*z-m.x,o.y+c.y*z-m.y)}
+addEventListener('touchstart',function(e){if(e.touches.length===2){var o=origin();var mx=(e.touches[0].clientX+e.touches[1].clientX)/2,my=(e.touches[0].clientY+e.touches[1].clientY)/2;
+s={d:d(e.touches),z:Z,m:{x:mx,y:my},c:{x:(scrollX+mx-o.x)/Z,y:(scrollY+my-o.y)/Z}}}
 else if(e.touches.length===1){moved=false;tap={x:e.touches[0].clientX,y:e.touches[0].clientY}}},{passive:true});
-addEventListener('touchmove',function(e){if(s&&e.touches.length===2){e.preventDefault();k=cl(Z*d(e.touches)/s.d)/Z;b().style.transform='scale('+k+')'}
+addEventListener('touchmove',function(e){if(s&&e.touches.length===2){e.preventDefault();Z=cl(s.z*d(e.touches)/s.d);apply(Z,s.c,s.m)}
 else if(e.touches.length===1){var t=e.touches[0];if(Math.abs(t.clientX-tap.x)>10||Math.abs(t.clientY-tap.y)>10)moved=true}},{passive:false});
-function end(e){if(s&&e.touches.length<2){var q=s;s=null;b().style.transform='';if(Math.abs(k-1)>0.02)set(cl(Z*k),q.mx,q.my,q.x,q.y);last=0;return}
+function end(e){if(s&&e.touches.length<2){s=null;last=0;return}
 if(e.touches.length===0&&e.changedTouches.length===1&&!moved){var n=Date.now(),t=e.changedTouches[0];
-if(n-last<300){set(Z>1.05?1:2,t.clientX,t.clientY,scrollX+t.clientX,scrollY+t.clientY);last=0}else last=n}}
+if(n-last<300){var o=origin();var c={x:(scrollX+t.clientX-o.x)/Z,y:(scrollY+t.clientY-o.y)/Z};Z=Z>1.05?1:2.5;apply(Z,c,{x:t.clientX,y:t.clientY});last=0}else last=n}}
 addEventListener('touchend',end,{passive:true});addEventListener('touchcancel',end,{passive:true})})();`;
 
 /**
