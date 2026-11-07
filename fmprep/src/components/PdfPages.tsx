@@ -166,8 +166,8 @@ function Page({
     <div
       ref={box}
       id={`pdf-page-${n}`}
-      className="relative overflow-hidden rounded-md bg-white shadow"
-      style={{ width, height }}
+      className="relative overflow-hidden rounded-md shadow"
+      style={{ width, height, background: "#ffffff" }}
     >
       {near ? (
         <canvas ref={canvas} style={{ width, height, display: "block" }} />

@@ -6,6 +6,7 @@
  * takes the subject's colour from the vars set on the reader. Connectors are CSS
  * borders rather than SVG paths for the same reason: they wrap.
  */
+import ZoomableBlock from "./ZoomableBlock";
 import type { CSSProperties } from "react";
 import type { Diagram, DiagramStep, DiagramTone } from "../lib/types";
 import { RichText } from "./ui";
@@ -199,8 +200,9 @@ export default function DiagramBlock({ diagram, hideHeading }: { diagram: Diagra
   }
 
   return (
+    <ZoomableBlock label={diagram.heading} className="mt-5">
     <figure
-      className="mt-5 rounded-xl border bg-white p-4 shadow-sm"
+      className="rounded-xl border bg-white p-4 shadow-sm"
       style={{ borderColor: "var(--acc-rule)" }}
     >
       {!hideHeading && (
@@ -215,5 +217,6 @@ export default function DiagramBlock({ diagram, hideHeading }: { diagram: Diagra
       )}
       {body}
     </figure>
+    </ZoomableBlock>
   );
 }

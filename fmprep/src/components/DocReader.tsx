@@ -31,27 +31,6 @@ import { setImmersive } from "../lib/nativeShell";
 type Loaded = StudyDoc & { blob?: Blob };
 
 /**
- * Full screen is a reading mode, not just a bigger frame: the page's own
- * toolbars (anything pinned with position fixed or sticky) are hidden, and
- * tables, images and code are made to fit the phone's width so nothing runs
- * off the right-hand edge. The document's content itself is not changed.
- */
-const READING_CSS = `html,body{max-width:100%!important;overflow-x:hidden!important;background:#f7ead5!important}
-*,*::before,*::after{box-sizing:border-box}
-@media (max-width:700px){main,article,section,.container,.wrap,.wrapper,.page,.content{padding-left:12px!important;padding-right:12px!important;margin-left:0!important;margin-right:0!important;max-width:100%!important}}
-.fm-scroll{overflow-x:auto!important;-webkit-overflow-scrolling:touch;max-width:100%!important;margin:0 0 1em}
-table{width:auto!important;min-width:100%!important;max-width:none!important;table-layout:auto!important}
-th,td{overflow-wrap:normal!important;word-break:normal!important;hyphens:manual!important;padding:6px 8px!important}
-th{letter-spacing:0!important}
-img,svg,video,canvas,iframe{max-width:100%!important;height:auto}
-pre,code{white-space:pre-wrap!important;overflow-wrap:anywhere}`;
-
-const READING_JS = `(function(){if(!document.documentElement.lang)document.documentElement.lang='en';function strip(){var H=innerHeight;var all=document.body?document.body.getElementsByTagName('*'):[];
-for(var i=0;i<all.length;i++){var el=all[i];var cs=getComputedStyle(el);
-if((cs.position==='fixed'||cs.position==='sticky')&&el.getBoundingClientRect().height<H*0.5){el.style.setProperty('display','none','important')}}}
-function fit(){var ts=document.getElementsByTagName('table');for(var i=0;i<ts.length;i++){var t=ts[i],p=t.parentElement;if(!p)continue;if(!p.classList.contains('fm-scroll')){var w=document.createElement('div');w.className='fm-scroll';p.insertBefore(w,t);w.appendChild(t);p=w}var W=p.clientWidth,s=0.95;t.style.setProperty('font-size',s+'em','important');while(t.offsetWidth>W+1&&s>0.82){s-=0.03;t.style.setProperty('font-size',s.toFixed(2)+'em','important')}}}function paper(){var all=document.body?document.body.getElementsByTagName('*'):[];for(var i=0;i<all.length;i++){var el=all[i];var m=getComputedStyle(el).backgroundColor.match(/rgba?\\(([^)]+)\\)/);if(!m)continue;var c=m[1].split(',').map(parseFloat);if(c.length>3&&c[3]===0)continue;var lo=Math.min(c[0],c[1],c[2]),hi=Math.max(c[0],c[1],c[2]);if(lo>=238)el.style.setProperty('background-color','transparent','important');else if(lo>=215&&hi-lo<14)el.style.setProperty('background-color','rgba(120,80,30,.07)','important')}}function run(){strip();fit();paper()}document.addEventListener('DOMContentLoaded',run);addEventListener('load',function(){run();setTimeout(run,600);setTimeout(run,2000)});addEventListener('resize',fit)})();`;
-
-/**
  * Pinch to zoom inside an HTML page, which runs in its own frame and so does
  * not get the app's zoom. Two fingers scale the page with the point between
  * them held still; on lifting, the page is laid out again at that size (CSS
@@ -99,10 +78,14 @@ function withPosition(html: string, y: number, f: number): string {
   return inject + html;
 }
 
+/**
+ * Full screen shows the page exactly as it was made - its own colours,
+ * background, fonts and layout. Only a phone viewport is added (for pages
+ * saved without one), so it is not drawn at desktop width.
+ */
 function forReading(html: string): string {
-  const inject =
-    '<meta name="viewport" content="width=device-width, initial-scale=1">' +
-    "<style>" + READING_CSS + "</style><script>" + READING_JS + "</scr" + "ipt>";
+  if (/<meta[^>]+name=["']?viewport/i.test(html)) return html;
+  const inject = '<meta name="viewport" content="width=device-width, initial-scale=1">';
   const head = html.match(/<head[^>]*>/i);
   if (head && head.index !== undefined) {
     const at = head.index + head[0].length;
@@ -608,7 +591,8 @@ export default function DocReader({
             ref={fullFrame}
             srcDoc={readingHtml ?? pageHtml}
             sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
-            className="block w-full flex-1 border-0 bg-white"
+            className="block w-full flex-1 border-0"
+            style={{ background: "#ffffff", colorScheme: "light" }}
           />
           <button
             type="button"
@@ -628,8 +612,10 @@ export default function DocReader({
           title={doc.title}
           srcDoc={pageSrc ?? pageHtml}
           sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
-          className="mt-3 w-full rounded-xl border border-slate-200 bg-white"
-          style={{ height: "calc(100dvh - 170px)", minHeight: 480 }}
+          className="mt-3 w-full rounded-xl border border-slate-200"
+          /* A page with no background of its own is white, as in any browser -
+             not the app's cream. */
+          style={{ height: "calc(100dvh - 170px)", minHeight: 480, background: "#ffffff", colorScheme: "light" }}
         />
       )}
 

@@ -9,6 +9,7 @@
  * read: you look up one class, not across all of them.
  */
 import type { Figure } from "../lib/figure";
+import ZoomableBlock from "./ZoomableBlock";
 import { RichText } from "./ui";
 
 function Ladder({ groups }: Extract<Figure, { layout: "ladder" }>) {
@@ -61,5 +62,9 @@ function Panels({ panels }: Extract<Figure, { layout: "panels" }>) {
 }
 
 export default function FigureBlock({ figure }: { figure: Figure }) {
-  return figure.layout === "ladder" ? <Ladder {...figure} /> : <Panels {...figure} />;
+  return (
+    <ZoomableBlock label="figure">
+      {figure.layout === "ladder" ? <Ladder {...figure} /> : <Panels {...figure} />}
+    </ZoomableBlock>
+  );
 }
