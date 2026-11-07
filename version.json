@@ -1,0 +1,23 @@
+{
+  "build": 344,
+  "minNative": 226,
+  "nativeHash": "10a867517f2ef71f",
+  "webs": [
+    "https://codeload.github.com/pocketmedtools/-elixir/zip/28c5dff0f836bd4c4ccd21e5216581f91074b76e",
+    "https://github.com/pocketmedtools/-elixir/archive/28c5dff0f836bd4c4ccd21e5216581f91074b76e.zip",
+    "https://api.github.com/repos/pocketmedtools/-elixir/zipball/28c5dff0f836bd4c4ccd21e5216581f91074b76e",
+    "https://cdn.jsdelivr.net/gh/pocketmedtools/-elixir@c30bd12f5f99e0ebcd141cb46954ed9b4e7ec3d8/fmprep-web-344.zip",
+    "https://raw.githubusercontent.com/pocketmedtools/-elixir/c30bd12f5f99e0ebcd141cb46954ed9b4e7ec3d8/fmprep-web-344.zip"
+  ],
+  "sums": {
+    "https://codeload.github.com/pocketmedtools/-elixir/zip/28c5dff0f836bd4c4ccd21e5216581f91074b76e": "786e33e5de900c10be41d5bcaae23550b347b45ed75a737c11433745138b636d",
+    "https://github.com/pocketmedtools/-elixir/archive/28c5dff0f836bd4c4ccd21e5216581f91074b76e.zip": "786e33e5de900c10be41d5bcaae23550b347b45ed75a737c11433745138b636d",
+    "https://api.github.com/repos/pocketmedtools/-elixir/zipball/28c5dff0f836bd4c4ccd21e5216581f91074b76e": "89d43d563424d87f7df4886feb6859a0346f345c1e3f69cbb03f515065486c4a",
+    "https://cdn.jsdelivr.net/gh/pocketmedtools/-elixir@c30bd12f5f99e0ebcd141cb46954ed9b4e7ec3d8/fmprep-web-344.zip": "663161f1daa72b95f1f6122d0b12f51b05d610310a80390464b4c9ad4662e19d",
+    "https://raw.githubusercontent.com/pocketmedtools/-elixir/c30bd12f5f99e0ebcd141cb46954ed9b4e7ec3d8/fmprep-web-344.zip": "663161f1daa72b95f1f6122d0b12f51b05d610310a80390464b4c9ad4662e19d"
+  },
+  "web": "https://raw.githubusercontent.com/pocketmedtools/-elixir/c30bd12f5f99e0ebcd141cb46954ed9b4e7ec3d8/fmprep-web-344.zip",
+  "apk": "https://cdn.jsdelivr.net/gh/pocketmedtools/-elixir@c30bd12f5f99e0ebcd141cb46954ed9b4e7ec3d8/FM-Prep.apk",
+  "sha": "fd3790cf8774b87ec58632f55ed9543e3d8e6c53",
+  "date": "2026-11-07T14:59:54Z"
+}
