@@ -34,7 +34,7 @@ import { drugsDB, getDrugById, interactionsDB } from "../src/clinical/clinicalDa
 import { naegeleEdd, isValidCycle, scanGaDays, formatDMY } from "../src/lib/obMath";
 import {
   biometryCentile, igBiometryMuSigma, hadlockEfw, efwCentile, efwFromZ, uaCentile, uaValueAtZ,
-  mcaPsvMoM, assessLiquor, classifyGrowth, scanPlan, scheduleStatus, mmFromGaEquivalent,
+  mcaPsvMoM, assessLiquor, classifyGrowth, scanPlan, scheduleStatus, mmFromGaEquivalent, plausibleMm, BIOMETRY_LIMITS_MM,
 } from "../src/lib/ancScanMath";
 import { IG_BIOMETRY_TABLES } from "./data/igBiometryTables";
 import { BISHOP_ITEMS, bishopTotal, bishopPlan } from "../src/lib/bishopMath";
@@ -624,6 +624,34 @@ tool("ANC scan — INTERGROWTH biometry tables, EFW/UA round trips, Hadlock, liq
     const s = scheduleStatus(w);
     for (const c of s.current) check(w >= c.from && w < c.to, () => `schedule ${w} in ${c.id}`);
     check(s.next == null || s.next.from > w, () => `schedule next ${w}`);
+  }
+});
+
+// ---------- ANC scan: impossible / extreme entries never give Infinity or NaN ----------
+tool("ANC scan — extreme and impossible entries (typing errors) give no result, never Infinity/NaN", (check) => {
+  const EXTREME = [0, -1, -50, 1e-9, 0.0001, 0.5, 1, 5, 9.9, 10, 50, 120, 300, 450, 500, 501, 1000, 99999, 1e9, Infinity, NaN];
+  const finiteOrNull = (v: unknown) => v === null || v === undefined || (typeof v === "number" && Number.isFinite(v));
+  const centOk = (c: { z: number; centile: number; median: number } | null) => c === null || (Number.isFinite(c.z) && Number.isFinite(c.centile) && Number.isFinite(c.median) && c.centile >= 0 && c.centile <= 100);
+  for (let n = 0; n < 6000; n++) {
+    const ga = pick([10, 14, 20, 24, 30, 36, 40, 40.86, 42, Math.round(uni(14, 41) * 7) / 7]);
+    const mm = { bpd: pick(EXTREME), hc: pick(EXTREME), ac: pick(EXTREME), fl: pick(EXTREME) };
+    const e = hadlockEfw(mm);
+    const allOk = (["bpd", "hc", "ac", "fl"] as const).every((k) => plausibleMm(k, mm[k]));
+    check(e === null || (Number.isFinite(e.grams) && e.grams >= 100 && e.grams <= 7000), () => `EFW ${JSON.stringify(mm)} → ${e?.grams}`);
+    check(allOk || e === null, () => `EFW must refuse impossible input ${JSON.stringify(mm)}`);
+    for (const k of ["bpd", "hc", "ac", "fl"] as const) check(centOk(biometryCentile(k, ga, mm[k])), () => `${k} centile ${mm[k]} at ${ga}`);
+    const g = pick([...EXTREME, 2500, 4000]);
+    check(centOk(efwCentile(ga, g)), () => `EFW centile ${g} at ${ga}`);
+    for (const idx of ["pi", "ri", "sd"] as const) { const v = pick(EXTREME); check(centOk(uaCentile(idx, ga, v)), () => `UA ${idx} ${v} at ${ga}`); }
+    const psv = pick(EXTREME); check(finiteOrNull(mcaPsvMoM(ga, psv)), () => `MCA MoM ${psv}`);
+    const sdp = pick(EXTREME), afi = pick(EXTREME);
+    const l = assessLiquor(sdp, afi);
+    check(l === null || !/NaN|Infinity/.test(JSON.stringify(l, (_k, v) => (typeof v === "number" && !Number.isFinite(v) ? String(v) : v))), () => `liquor ${sdp}/${afi} → ${JSON.stringify(l)}`);
+  }
+  // Limits are exactly as documented.
+  for (const k of ["bpd", "hc", "ac", "fl"] as const) {
+    const [lo, hi] = BIOMETRY_LIMITS_MM[k];
+    check(plausibleMm(k, lo) && plausibleMm(k, hi) && !plausibleMm(k, lo - 0.1) && !plausibleMm(k, hi + 0.1) && plausibleMm(k, undefined), () => `${k} limits`);
   }
 });
 

@@ -3,7 +3,7 @@
 Pocket-Med is a free, offline clinical calculator app for doctors (paediatrics, OBG,
 medicine) built by a non-coder clinician. Health app: **accuracy first** — every
 calculation change needs tests in `web/scripts/verifyDatabases.ts` and
-`web/scripts/crosscheck.ts` (129,736 cases, must stay at 0 failures).
+`web/scripts/crosscheck.ts` (204,895 cases, must stay at 0 failures).
 
 - Website: https://pocketmedtools.github.io/-elixir/ (GitHub Pages, branch `gh-pages`)
 - APK: https://pocketmedtools.github.io/-elixir/Pocket-Med.apk (appId `com.pocketmed.app`)
@@ -43,7 +43,10 @@ video/voice, IndexedDB), Saved calculations, Report an issue.
 ## Release loop (what "ship it" means)
 1. Work on the session branch from `origin/main`.
 2. Bump `CACHE_VERSION` in `web/public/sw.js` for any web change.
-3. `cd web && npx tsc -b && npm test && npx vite build --base=./`, check screens with Playwright.
+3. `cd web && npx tsc -b && npm test && npx vite build --base=./`, check screens with Playwright;
+   `node scripts/uiStress.cjs` fires random entries/taps at every tool (also weekly in CI).
+   Build targets iOS 15 / Chrome 90 (vite.config.ts `build.target`); CSS `@layer` is
+   flattened after build so old browsers still get styles — keep both.
 4. Commit, push, open PR, squash-merge. `deploy-pages.yml` publishes the site;
    `android-apk.yml` builds and publishes the APK (and copies it to gh-pages).
 5. Installed apps pick up web changes by **live update** (`lib/liveUpdate.ts`,
