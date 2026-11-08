@@ -52,7 +52,8 @@ else if(e.touches.length===1){var t=e.touches[0];if(Math.abs(t.clientX-tap.x)>10
 function end(e){if(s&&e.touches.length<2){s=null;last=0;return}
 if(e.touches.length===0&&e.changedTouches.length===1&&!moved){var n=Date.now(),t=e.changedTouches[0];
 if(n-last<300){var o=origin();var c={x:(scrollX+t.clientX-o.x)/Z,y:(scrollY+t.clientY-o.y)/Z};Z=Z>1.05?1:2.5;apply(Z,c,{x:t.clientX,y:t.clientY});last=0}else last=n}}
-addEventListener('touchend',end,{passive:true});addEventListener('touchcancel',end,{passive:true})})();`;
+addEventListener('touchend',end,{passive:true});addEventListener('touchcancel',end,{passive:true});
+addEventListener('message',function(e){if(e.data&&e.data.fmTop){Z=1;b().style.transform='';document.documentElement.style.overflow='';scrollTo(0,0)}})})();`;
 
 /**
  * Where the reader is inside the page. The page runs in a sandbox, so it
@@ -422,6 +423,30 @@ export default function DocReader({
   const office = (doc.kind === "docx" || doc.kind === "pptx" || doc.kind === "xlsx") && doc.blob ? doc.kind : null;
   const hasPage = pageHtml !== null || isPdf || !!office;
 
+  /* Back to the first page, from anywhere in the document. */
+  const goStart = () => {
+    if (full) {
+      fullFrame.current?.contentWindow?.postMessage({ fmTop: 1 }, "*");
+      fullScrollEl?.scrollTo({ top: 0, left: 0 });
+      return;
+    }
+    pageFrame.current?.contentWindow?.postMessage({ fmTop: 1 }, "*");
+    if (asPage) pageScrollEl?.scrollTo({ top: 0, left: 0 });
+    window.scrollTo({ top: 0 });
+  };
+
+  const startButton = (
+    <button
+      type="button"
+      onClick={goStart}
+      aria-label="Go to the start of the document"
+      className="start-fab"
+      style={full ? { bottom: "calc(16px + env(safe-area-inset-bottom, 0px))" } : undefined}
+    >
+      ⇑ Start
+    </button>
+  );
+
   const download = () => {
     if (!doc.blob) return;
     const url = URL.createObjectURL(doc.blob);
@@ -538,6 +563,7 @@ export default function DocReader({
             )}
           </ZoomPane>
           <button type="button" onClick={closeFull} aria-label="Close full screen" className="absolute right-2 h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)", top: "calc(var(--sat) + 8px)" }}>✕</button>
+          {startButton}
         </div>
       )}
 
@@ -562,10 +588,11 @@ export default function DocReader({
 
       {office && full && doc.blob && (
         <div ref={fullRef} className="fixed inset-0 z-[300] flex flex-col" style={{ background: "#e5e7eb", paddingTop: "var(--sat)" }}>
-          <ZoomPane fit className="flex-1" resetKey={officeReady}>
+          <ZoomPane fit className="flex-1" resetKey={officeReady} onScrollEl={setFullScrollEl}>
             {() => <OfficeView kind={office} blob={doc.blob!} onReady={() => setOfficeReady((n) => n + 1)} />}
           </ZoomPane>
           <button type="button" onClick={closeFull} aria-label="Close full screen" className="absolute right-2 h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)", top: "calc(var(--sat) + 8px)" }}>✕</button>
+          {startButton}
         </div>
       )}
 
@@ -575,6 +602,7 @@ export default function DocReader({
           <ZoomPane
             fit
             resetKey={officeReady}
+            onScrollEl={setPageScrollEl}
             className="mt-2 rounded-xl border border-slate-200"
             style={{ height: "calc(100dvh - 190px)", minHeight: 460, background: "#e5e7eb" }}
           >
@@ -606,6 +634,7 @@ export default function DocReader({
           >
             ✕
           </button>
+          {startButton}
         </div>
       )}
 
@@ -621,6 +650,9 @@ export default function DocReader({
           style={{ height: "calc(100dvh - 170px)", minHeight: 480, background: "#ffffff", colorScheme: "light" }}
         />
       )}
+
+      {/* Back to the start, just above Home. Full screen has its own copy. */}
+      {!full && startButton}
 
       {imageUrl && (
         <ZoomPane className="mt-4 rounded-xl border border-slate-200" style={{ maxHeight: "calc(100dvh - 160px)" }}>
