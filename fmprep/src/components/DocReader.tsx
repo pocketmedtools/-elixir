@@ -447,8 +447,18 @@ export default function DocReader({
     </button>
   );
 
-  const download = () => {
+  const download = async () => {
     if (!doc.blob) return;
+    // In the app a web download goes nowhere: save into Documents › FM Prep.
+    const { hasNativeBackup, saveToDevice } = await import("../lib/backup");
+    if (hasNativeBackup()) {
+      try {
+        window.alert(`Saved to ${await saveToDevice(doc.fileName, doc.blob)}`);
+      } catch (e) {
+        window.alert(`Could not save the file: ${e instanceof Error ? e.message : String(e)}`);
+      }
+      return;
+    }
     const url = URL.createObjectURL(doc.blob);
     const a = document.createElement("a");
     a.href = url;
@@ -503,7 +513,7 @@ export default function DocReader({
           <Chip>{doc.fileName}</Chip>
           {doc.pages ? <Chip>{doc.pages} pages</Chip> : null}
           {doc.text ? <Chip>{wordCount(doc.text).toLocaleString("en-IN")} words</Chip> : null}
-          <button type="button" onClick={download} className="text-xs font-semibold text-slate-600 underline">
+          <button type="button" onClick={() => void download()} className="text-xs font-semibold text-slate-600 underline">
             Export the original file
           </button>
         </div>

@@ -29,6 +29,7 @@ import {
 } from "../lib/docs";
 import { getVersion as getStudyVersion, isDocRead, subscribe as subscribeStudy } from "../lib/store";
 import { BackBar, Chip, Empty, RowButton, inkAt } from "./ui";
+import BackupPanel from "./BackupPanel";
 
 const KIND_LABEL: Record<StudyDoc["kind"], string> = {
   text: "Text",
@@ -464,6 +465,7 @@ export default function MyDocuments({
 
       {searchBox}
       {words.length ? searchResults : folderName ? folderView : folderList}
+      {!words.length && !folderName && <BackupPanel />}
 
       <input
         ref={fileRef}

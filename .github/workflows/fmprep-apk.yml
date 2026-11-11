@@ -75,6 +75,12 @@ jobs:
           # tell which native build is installed (CapacitorUpdater.current()).
           sed -i -E 's/versionCode [0-9]+/versionCode ${{ github.run_number }}/; s/versionName "[^"]*"/versionName "${{ github.run_number }}"/' android/app/build.gradle
           grep -nE 'versionCode|versionName' android/app/build.gradle
+          # The document backup is written to the phone's public Documents
+          # folder so it survives an uninstall. Android 10 and older need the
+          # storage permission (and legacy storage) for that; 11+ needs none.
+          M=android/app/src/main/AndroidManifest.xml
+          grep -q WRITE_EXTERNAL_STORAGE "$M" || sed -i 's#<application#<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />\n    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />\n\n    <application android:requestLegacyExternalStorage="true"#' "$M"
+          grep -nE 'EXTERNAL_STORAGE|requestLegacy' "$M"
           # Always a light app. With the phone in dark mode, the DayNight theme
           # let the system dim the whole page grey (the "grey haze" reports);
           # a Light theme with force-dark switched off keeps the paper colour.
@@ -112,6 +118,12 @@ jobs:
             "https://github.com/${{ github.repository }}/releases/download/fmprep-signing-key/fmprep-release.keystore"; then
             echo "Reusing the existing FM Prep signing identity"
             echo "NEW_KEY=0" >> "$GITHUB_ENV"
+          elif curl -fsS -o /dev/null "https://api.github.com/repos/${{ github.repository }}/releases/tags/fmprep-signing-key"; then
+            # The key exists but did not download (network). A new key would make
+            # the APK refuse to install over the old one, and reinstalling wipes
+            # every document on the phone - so stop instead.
+            echo "::error::The FM Prep signing key exists but could not be downloaded; not building with a different key."
+            exit 1
           else
             keytool -genkeypair -keystore keystore/fmprep-release.keystore -alias fmprep \
               -keyalg RSA -keysize 2048 -validity 10950 -storepass fmprep -keypass fmprep \

@@ -540,6 +540,31 @@ export async function renameCollection(from: string, to: string): Promise<void> 
   }
 }
 
+/** Every stored record with its original file, for the backup. */
+export async function allRecords(): Promise<(StudyDoc & { blob?: Blob })[]> {
+  return tx<DocRecord[]>("readonly", (store) => store.getAll() as IDBRequest<DocRecord[]>);
+}
+
+/** Put back a record from a backup. An id already on this device is left as it is. */
+export async function restoreRecord(record: StudyDoc & { blob?: Blob }): Promise<boolean> {
+  const existing = await tx<DocRecord | undefined>("readonly", (store) => store.get(record.id) as IDBRequest<DocRecord | undefined>);
+  if (existing) return false;
+  await tx("readwrite", (store) => store.put(record));
+  cache = [strip(record), ...cache.filter((d) => d.id !== record.id)].sort((a, b) => b.addedAt - a.addedAt);
+  emit();
+  return true;
+}
+
+/** Folders as remembered (including empty ones), for the backup. */
+export function storedFolderList(): string[] {
+  return storedFolders();
+}
+
+export function restoreFolders(list: string[]): void {
+  saveFolders([...storedFolders(), ...list]);
+  emit();
+}
+
 /** The full record, including the original file, for reading or export. */
 export async function getDoc(id: string): Promise<DocRecord | undefined> {
   return tx<DocRecord | undefined>("readonly", (store) => store.get(id) as IDBRequest<DocRecord | undefined>);

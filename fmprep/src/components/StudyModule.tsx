@@ -130,6 +130,11 @@ export default function StudyModule() {
   // from their own chunk so the first paint does not carry their text.
   useEffect(() => {
     void loadDocs().then(async () => {
+      // Ask for storage the system will not clear on its own, and keep a copy
+      // of every document outside the app (Documents › FM Prep backup).
+      const { askPersistentStorage, startAutoBackup } = await import("../lib/backup");
+      void askPersistentStorage();
+      startAutoBackup();
       const { SOURCE_DOCUMENTS } = await import("../pyq/sourceText.generated");
       await seedDocuments(SOURCE_DOCUMENTS);
     });
