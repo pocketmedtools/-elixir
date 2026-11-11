@@ -49,24 +49,26 @@ export default function BackupPanel() {
     void backupMissingCount().then(setMissing);
   };
 
+  /* Restore straight from Documents › FM Prep backup. */
   const restore = async () => {
     setBusy(true);
     setMsg("");
     try {
-      if (native) {
-        try {
-          const r = await restoreFromFolder();
-          report(r);
-          if (r.restored > 0 || r.skipped > 0) return;
-        } catch {
-          /* the folder is from an earlier install: pick the files instead */
-        }
-        setMsg("Select every file in Documents › FM Prep backup (tap ⋮ › Select all), then tap Select.");
-      }
-      pick.current?.click();
+      const r = await restoreFromFolder();
+      report(r);
+    } catch {
+      setMsg(
+        "This install of the app cannot read that folder by itself (Android hides files an earlier install wrote). Tap “Choose backup files” and select every file in Documents › FM Prep backup.",
+      );
     } finally {
       setBusy(false);
     }
+  };
+
+  /* The file picker must open from the tap itself, or Android blocks it. */
+  const choose = () => {
+    setMsg("");
+    pick.current?.click();
   };
 
   const onPicked = async (files: FileList | null) => {
@@ -137,16 +139,32 @@ export default function BackupPanel() {
             Download backup (.zip)
           </button>
         )}
+        {native && (
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => void restore()}
+            className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-800"
+          >
+            {busy ? "Working…" : "Restore from backup folder"}
+          </button>
+        )}
         <button
           type="button"
           disabled={busy}
-          onClick={() => void restore()}
+          onClick={choose}
           className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-800"
         >
-          {busy ? "Working…" : "Restore from backup"}
+          {native ? "Choose backup files…" : "Restore from a backup .zip…"}
         </button>
       </div>
       {msg && <p className="mt-2 text-slate-800">{msg}</p>}
+      {native && (
+        <p className="mt-2 text-[12px] text-slate-500">
+          To restore on a new phone or after reinstalling: Choose backup files… › open Documents › FM Prep backup › select
+          all files (⋮ › Select all) › Select.
+        </p>
+      )}
       <input ref={pick} type="file" multiple className="hidden" onChange={(e) => { void onPicked(e.target.files); e.target.value = ""; }} />
     </section>
   );
