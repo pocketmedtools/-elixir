@@ -212,6 +212,216 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "infectious-fever-chikungunya-zika-arboviral": {
+    checked: "2026-10",
+    updated: [
+      "WHO 2025 arboviral clinical management guideline: paracetamol first, no NSAIDs until dengue excluded, no steroids in acute chikungunya.",
+      "FDA 2023-2025: Ixchiq (2023) and Vimkunya (2025) licensed; Ixchiq licence suspended August 2025 after serious events in older adults.",
+      "MoHFW 2024 Zika advisory: screen pregnant women in affected areas and monitor fetal growth.",
+      "WHO DON 2024: Chandipura encephalitis outbreak in Gujarat children.",
+      "ICMR 2024: new-generation KFD vaccine in development.",
+    ],
+    master: {
+      heading: "Master revision table - Chikungunya, Zika and other arboviral fevers",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "**Arthropod-borne viral fevers**: fever-arthralgia-rash (chikungunya, Zika), haemorrhagic (KFD, CCHF), encephalitic (West Nile, Chandipura); Nipah is bat-borne but in the same differential."],
+        ["Chikungunya", "**Alphavirus, Aedes aegypti and albopictus**; 2006 Indian epidemic (E1-A226V); abrupt fever with **symmetrical small-joint polyarthritis**, rash, chik sign."],
+        ["Chikungunya phases", "**Acute up to 3 weeks, post-acute 3 weeks-3 months, chronic beyond 3 months** (30-40%)."],
+        ["Chikungunya treatment", "**Paracetamol**; NSAID only after dengue excluded; **no steroids acutely**; post-acute prednisolone 10 mg taper; chronic **methotrexate weekly**, HCQ, sulfasalazine."],
+        ["Zika", "**Flavivirus, Aedes plus sexual and vertical**; 80% asymptomatic; pruritic rash, non-purulent conjunctivitis; **congenital Zika syndrome**, GBS."],
+        ["Zika diagnosis", "**RT-PCR serum 7 days, urine 14 days**; IgM cross-reacts with dengue - PRNT; serial ultrasound in pregnancy."],
+        ["KFD", "**Flavivirus, Haemaphysalis spinigera tick**; Western Ghats; monkey deaths herald; haemorrhagic then neurological phase; CFR 3-10%; inactivated vaccine."],
+        ["CCHF", "**Nairovirus, Hyalomma tick**, livestock, **nosocomial** (Gujarat 2011); ecchymoses, DIC; CFR 10-40%; isolation, PPE; ribavirin weak evidence."],
+        ["West Nile", "**Culex, birds**; Kerala; under 1% neuroinvasive - encephalitis, **flaccid paralysis with intact sensation**; CSF IgM."],
+        ["Nipah", "**Pteropus bats**, date-palm sap, person to person; Kerala outbreaks 2018-2025; encephalitis plus ARDS; CFR 40-75%; 21-day contact quarantine."],
+        ["Pregnancy", "Zika - microcephaly risk highest in first trimester; chikungunya - **intrapartum transmission to half of neonates**, caesarean does not prevent."],
+        ["Prevention", "Aedes source reduction, **weekly dry day**, repellents, nets; Zika condoms **3 months men, 2 months women**; KFD vaccine and DMP oil."],
+        ["Latest update", "**WHO 2025 arboviral guideline**; chikungunya vaccines licensed abroad, Ixchiq suspended by FDA 2025."],
+        ["Exam one-liner", "Paracetamol only till dengue excluded; Zika spreads sexually; monkey deaths mean KFD; CCHF and Nipah spread in hospitals."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Fever with arthralgia or rash: arboviral work-up",
+        steps: [
+          { label: "Fever with joint pain or rash in Aedes season", detail: "Day of illness, pregnancy, travel, cluster cases" },
+          { label: "Exclude dengue shock first", detail: "Pulse pressure, haematocrit, platelets, warning signs", tone: "warn" },
+          { label: "Days 1-5: NS1 and chikungunya/Zika RT-PCR", detail: "Plus malaria RDT or smear" },
+          { label: "Day 5 onwards: IgM ELISA", detail: "Zika IgM cross-reacts with dengue - PRNT", tone: "decision" },
+          { label: "Pregnant with possible Zika", detail: "Serum and urine RT-PCR; serial ultrasound every 3-4 weeks", tone: "warn" },
+          { label: "Notify on IHIP; vector control around the home", detail: "Bed net in the viraemic first week", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Chikungunya arthritis treatment ladder",
+        steps: [
+          { label: "Acute (under 3 weeks): paracetamol, rest, fluids", detail: "500-1000 mg 6-hourly, max 4 g/day; no steroids" },
+          { label: "Dengue excluded: add NSAID", detail: "Naproxen 250-500 mg BD for 1-2 weeks; avoid in CKD" },
+          { label: "Post-acute (3 weeks-3 months)", detail: "Prednisolone 10 mg OD x 5 days, taper over 10 days; physiotherapy", tone: "decision" },
+          { label: "Chronic inflammatory (over 3 months)", detail: "Methotrexate 7.5-25 mg weekly + folic acid; HCQ, sulfasalazine", tone: "warn" },
+          { label: "Refractory or erosive", detail: "Rheumatology referral; manage as RA", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Dengue versus chikungunya versus Zika",
+        columns: ["Feature", "Dengue", "Chikungunya", "Zika"],
+        rows: [
+          ["Joints", "Myalgia, mild arthralgia", "Severe polyarthritis", "Mild arthralgia"],
+          ["Rash and eyes", "Flush, retro-orbital pain", "Maculopapular, chik sign", "Pruritic rash, conjunctivitis"],
+          ["Blood", "Leucopenia, low platelets, rising haematocrit", "Lymphopenia", "Usually normal"],
+          ["Main danger", "Plasma leak, shock", "Chronic arthritis, neonatal disease", "Congenital Zika syndrome, GBS"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Arboviruses** are spread by mosquitoes, ticks or sandflies.",
+            "Syndromes: **fever-arthralgia-rash, haemorrhagic fever and encephalitis**.",
+            "**Chikungunya** returned to India in 2005-06 with about 1.4 million cases.",
+            "**Zika** outbreaks: Ahmedabad 2016-17, Jaipur 2018, Kerala 2021, Maharashtra and Karnataka 2023-24.",
+            "**KFD** in the Western Ghats, **CCHF** in Gujarat and Rajasthan, **West Nile** and **Nipah** in Kerala.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Chikungunya and Zika: **day-biting Aedes** breeding in stored clean water.",
+            "Zika also spreads **sexually, transplacentally and by transfusion**.",
+            "KFD: **Haemaphysalis tick**; forest workers; monkey deaths come first.",
+            "CCHF: **Hyalomma tick**, livestock slaughter and **hospital blood exposure**.",
+            "West Nile: **Culex mosquito and birds**; Nipah: **fruit bats** and date-palm sap.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Chikungunya infects **synovial macrophages and tendons**; persisting antigen drives chronic arthritis.",
+            "Zika kills **fetal neural progenitor cells**, causing microcephaly and calcifications.",
+            "KFD and CCHF injure endothelium and liver, causing **bleeding and DIC**.",
+            "West Nile infects **anterior horn cells**, causing flaccid paralysis.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Chikungunya: abrupt fever, **symmetrical small-joint polyarthritis**, rash, brown nasal pigmentation.",
+            "Zika: mild fever, **itchy rash, non-purulent conjunctivitis**; 80% have no symptoms.",
+            "KFD: fever, myalgia, bleeding, **palatal papulovesicles**; later neurological phase in 10-20%.",
+            "CCHF: fever then **large ecchymoses** and bleeding from day 3-5.",
+            "West Nile and Nipah: **encephalitis**; Nipah often with cough and breathlessness.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Always exclude **dengue and malaria** first.",
+            "Chikungunya: **RT-PCR days 1-7**, IgM ELISA from day 5-7.",
+            "Zika: **RT-PCR serum 7 days, urine 14 days**; IgM cross-reacts with dengue.",
+            "KFD, CCHF and Nipah samples go to **NIV Pune or a designated BSL-3 lab**.",
+            "West Nile neuroinvasive disease: **IgM in CSF**.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "No antiviral; care is **supportive**.",
+            "**Paracetamol only** until dengue is excluded.",
+            "**No steroids** in acute chikungunya; they cause rebound arthritis.",
+            "After dengue is excluded, an **NSAID** for 1-2 weeks.",
+            "Bed net and repellent in the **first viraemic week**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Post-acute chikungunya: **prednisolone 10 mg** for 5 days, then taper.",
+            "Chronic arthritis: **methotrexate weekly** with folic acid, plus HCQ or sulfasalazine.",
+            "CCHF: **isolation, PPE, blood products**; ribavirin has weak evidence.",
+            "Nipah: ICU care; **monoclonal antibody** only under ICMR protocol.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Zika in pregnancy: **serial ultrasound every 3-4 weeks**; highest risk in first trimester.",
+            "Chikungunya at delivery infects **about half of neonates**; observe the baby 7 days.",
+            "Caesarean section **does not prevent** neonatal chikungunya.",
+            "**Continue breastfeeding** in chikungunya and Zika.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Chronic arthritis** in 30-40% of chikungunya at 3 months.",
+            "Zika: **congenital Zika syndrome** and Guillain-Barre syndrome.",
+            "Fatality: KFD 3-10%, **CCHF 10-40%**, Nipah 40-75%.",
+            "Red flags: bleeding, shock, **altered sensorium**, flaccid weakness, febrile neonate.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**WHO 2025 arboviral guideline**: paracetamol first, no early NSAIDs, no acute steroids.",
+            "Chikungunya vaccines licensed abroad; **FDA suspended Ixchiq in August 2025**.",
+            "Zika sexual counselling: condoms **3 months for men, 2 months for women**.",
+            "Chandipura encephalitis outbreak hit **Gujarat children in 2024**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Arboviral fever drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Paracetamol", "500-1000 mg oral 6-hourly, max 4 g/day", "Acute phase", "Liver toxicity; first choice"],
+            ["Naproxen", "250-500 mg oral BD", "1-2 weeks, after dengue excluded", "GI bleed, AKI; avoid in CKD"],
+            ["Prednisolone", "10 mg oral OD", "5 days, taper over 10 days (post-acute only)", "Rebound if given acutely; hyperglycaemia"],
+            ["Methotrexate", "7.5-25 mg oral once weekly + folic acid", "3-6 months or more", "Liver, marrow toxicity; teratogenic"],
+            ["Hydroxychloroquine", "200-400 mg oral OD", "3-6 months or more", "Retinopathy; yearly eye check after 5 years"],
+            ["Ribavirin (CCHF)", "30 mg/kg load, 15 mg/kg 6-hourly x 4 days, 7.5 mg/kg 8-hourly x 6 days", "10 days", "Haemolysis, teratogenic; weak evidence"],
+          ],
+        },
+        {
+          heading: "Indian arboviral fevers at a glance",
+          columns: ["Virus", "Vector", "Where", "Hallmark"],
+          rows: [
+            ["Chikungunya", "Aedes", "Nationwide", "Disabling polyarthritis"],
+            ["Zika", "Aedes; sexual, vertical", "Gujarat, Rajasthan, Kerala, Maharashtra, Karnataka", "Congenital Zika syndrome"],
+            ["KFD", "Haemaphysalis tick", "Western Ghats", "Haemorrhage then neurological phase"],
+            ["CCHF", "Hyalomma tick; nosocomial", "Gujarat, Rajasthan", "Ecchymoses, DIC"],
+            ["West Nile", "Culex", "Kerala", "Encephalitis, flaccid paralysis"],
+            ["Nipah", "Fruit bats; person to person", "Kerala, West Bengal", "Encephalitis with ARDS"],
+          ],
+        },
+        {
+          heading: "Chikungunya phases",
+          columns: ["Phase", "Duration", "Treatment"],
+          rows: [
+            ["Acute", "Up to 3 weeks", "Paracetamol; NSAID after dengue excluded; no steroids"],
+            ["Post-acute", "3 weeks to 3 months", "NSAID; short prednisolone taper; physiotherapy"],
+            ["Chronic", "Over 3 months", "Methotrexate, HCQ, sulfasalazine; rheumatology"],
+          ],
+        },
+      ],
+      remember: [
+        "Chikungunya means **'that which bends up'** - stooped with joint pain.",
+        "**Chik sign**: brown nasal pigmentation.",
+        "**Paracetamol only** until dengue is excluded.",
+        "Phases: **3 weeks acute, 3 months post-acute**, then chronic.",
+        "**Zika spreads sexually** and causes microcephaly.",
+        "**Monkey deaths herald KFD**.",
+        "**CCHF and Nipah spread in hospitals** - PPE first.",
+      ],
+    },
+  },
 };
 
 export default revision;
