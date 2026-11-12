@@ -18,4 +18,15 @@ Setup per subject: write spec-<sub>.json (like spec-endocrine.json) then python3
 
 USER WANTS UPDATES: at every check-in post one short status line (subject, topics written/total, subjects done) instead of staying silent.
 
-PAUSED 2026-11-05 07:45 by user: do not resume writers or start next subject until user says so. Infectious-fever 12/48 written; resume its 12 agents (ids in agents.json) when told.
+(Pause lifted 2026-11-12 by user: continue.) Infectious-fever 12/48 written; resume its 12 agents (ids in agents.json) when told.
+
+
+## 2026-11-12 user: "10 times more" - NEW TARGET
+- Every subject's library = at least 10x its existing topic count (min 100). Part 1 (b01-b12, 48 topics) as before; then
+  part 2: write spec-<sub>-p2.json with batches b13..bNN (4 topics each) for the remaining topics, run gen_batches.py, create
+  stubs b13..bNN + revision stubs, and add their imports to src/content/library/<sub>/index.ts. Then launch writers (max ~12 at once).
+- Order: infectious-fever (finish part 1, then part 2 to 110) -> neurology -> renal-urology -> ... -> fm-principles.
+  After all subjects, top up the four finished ones (cardiovascular, respiratory, endocrine, gastro-hepatology) to 10x.
+- Every push builds a new APK and live update automatically; post a one-line status each check-in.
+- Scratchpad can be wiped by a container restart: restore with `cp fmprep/scripts/library/* $S/` and regenerate prompts.
+  Agent ids: agents.json (also mirrored in fmprep/scripts/library/agents.json).
