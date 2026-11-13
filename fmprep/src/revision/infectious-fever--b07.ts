@@ -225,6 +225,222 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "infectious-fever-measles-mumps-rubella-adult": {
+    checked: "2026-10",
+    updated: [
+      "WHO 2024-2025: mpox PHEIC over clade Ib declared 14 August 2024 and ended 5 September 2025; India's first clade Ib case in Kerala, September 2024.",
+      "WHO 2024: MVA-BN mpox vaccine prequalified (September 2024, adolescents added later in 2024); LC16m8 emergency use listing November 2024.",
+      "PALM007 and STOMP RCTs (2024-2025): tecovirimat did not speed lesion resolution; WHO 2025 advises against routine use.",
+      "MoHFW 2023-2024: measles-rubella elimination goal 2026 with 'fever and rash' case-based surveillance and intensified MR campaigns.",
+      "WHO/CDC 2024: 10.3 million measles cases in 2023; outbreak-response immunisation from 6 months of age.",
+    ],
+    master: {
+      heading: "Master revision table - Exanthematous fevers",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Systemic viral infections announced by a rash whose **timing, distribution and morphology** identify the virus; most are vaccine-preventable and notifiable on **IHIP**."],
+        ["Rash timeline", "**'Very Sick Person Must Take Double Tablets'** - varicella day 1, scarlet 2, pox 3, **measles 4**, typhus 5, dengue 6, typhoid 7."],
+        ["Measles", "Incubation 10-14 days; **3 Cs**, **Koplik spots**, rash day 4 behind ears spreading down; infectious 4 days either side; pneumonia kills; **immune amnesia**."],
+        ["Vitamin A", "Every measles case: **2 doses 24 h apart** - 50,000 IU under 6 months, 100,000 IU 6-11 months, 200,000 IU 12 months and over; third dose 2-6 weeks later if eye signs."],
+        ["Rubella and CRS", "Mild rash, **postauricular nodes**, adult arthralgia; first-trimester infection - CRS up to 90%; **Gregg triad** cataract, PDA, deafness; IgM plus **IgG avidity** in pregnancy."],
+        ["Mumps", "Incubation 16-18 days; parotitis lifting ear lobe; **orchitis 15-30%** of post-pubertal males; meningitis, pancreatitis, deafness; not in UIP (MR only)."],
+        ["HFMD", "CV-A16, **EV-A71** (brainstem encephalitis), CV-A6 (nail shedding); under 5; oral ulcers and palm-sole vesicles; red flags - jerks, vomiting, tachycardia, hypertension."],
+        ["Mpox", "Clade I (Ia, **Ib**) and II (IIb); prodrome with **lymphadenopathy**, monomorphic deep umbilicated lesions incl. palms, soles, anogenital; lesion swab PCR; isolate until crusts fall."],
+        ["Investigations", "Measles IgM + throat/urine RT-PCR within 7 days; rubella IgM with avidity; mumps buccal swab PCR within 3 days; mpox dry lesion swab PCR (NIV Pune); HIV and syphilis in mpox."],
+        ["Treatment", "Supportive for all; vitamin A in measles; antibiotics only for complications; acyclovir for adult varicella; **tecovirimat not routine** (PALM007, STOMP)."],
+        ["Isolation", "Measles/varicella **airborne** (N95); rubella/mumps droplet; mpox contact plus droplet; exclusion - measles 4 days after rash, rubella 7, mumps 5 after swelling, mpox until healed."],
+        ["Special groups", "Pregnancy: no MR vaccine, immunoglobulin within 6 days after measles exposure; rubella - avidity, counsel; HIV - giant-cell pneumonia, necrotising mpox."],
+        ["Prevention", "UIP **MR at 9-12 and 16-24 months**; IAP MMR 9 months, 15 months, 4-6 years; **MVA-BN** 2 doses for mpox high-risk; PEP MR within 72 h."],
+        ["Exam one-liners", "Koplik spots precede rash; vitamin A two doses; Gregg triad; mumps lifts ear lobe; mpox = nodes plus monomorphic; clade Ib PHEIC; India MR elimination 2026."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Fever with rash in the OPD",
+        steps: [
+          { label: "Is the rash non-blanching or the patient toxic?", detail: "Purpura, shock, altered sensorium", tone: "decision" },
+          { label: "Yes - meningococcaemia or severe sepsis until proven otherwise", detail: "Parenteral ceftriaxone, refer immediately", tone: "warn" },
+          { label: "Note day of fever when rash appeared and its pattern", detail: "Day 4 confluent - measles; day 1 crops - varicella" },
+          { label: "Look for the key sign", detail: "Koplik spots, postauricular nodes, parotid, palm-sole vesicles, lymphadenopathy" },
+          { label: "Ask pregnancy, vaccination, sexual and drug history", detail: "Pregnant contact - urgent serology" },
+          { label: "Sample and notify on IHIP", detail: "IgM plus RT-PCR; lesion PCR for mpox" },
+          { label: "Supportive care, vitamin A in measles, isolate", detail: "Exclusion periods by disease", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Measles management ladder",
+        steps: [
+          { label: "Home care: fluids, feeding, paracetamol, eye care", detail: "Isolate until 4 days after rash" },
+          { label: "Vitamin A two doses 24 h apart", detail: "50,000 / 100,000 / 200,000 IU by age" },
+          { label: "Treat bacterial complications", detail: "Amoxicillin for pneumonia or otitis (IMNCI)" },
+          { label: "Admit: pneumonia with hypoxia, croup, dehydration, SAM", detail: "Oxygen, IV antibiotics, F-75/F-100 for SAM", tone: "warn" },
+          { label: "ICU: encephalitis or respiratory failure", detail: "Seizure control, ventilation", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Measles, rubella and mumps side by side",
+        columns: ["Feature", "Measles", "Rubella", "Mumps"],
+        rows: [
+          ["Incubation", "10-14 days", "14-21 days", "16-18 days"],
+          ["Key sign", "Koplik spots, 3 Cs", "Postauricular nodes", "Parotitis"],
+          ["Rash", "Day 4, confluent", "Day 1-2, faint, 3 days", "None"],
+          ["Main danger", "Pneumonia, SSPE", "Congenital rubella syndrome", "Orchitis, meningitis"],
+          ["Infectious", "4 days either side of rash", "7 days either side of rash", "2 days before to 5 after swelling"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "An **exanthem** is a rash with a systemic viral infection; timing and pattern name the virus.",
+            "**Measles** has R0 of 12-18, so herd immunity needs **95%** two-dose coverage.",
+            "India aims to **eliminate measles and rubella by 2026**.",
+            "Mumps is not in the UIP, which gives **MR**, so mumps outbreaks continue.",
+            "**Clade Ib mpox** caused a WHO emergency from August 2024 to September 2025.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Measles enters via **SLAM (CD150)** and leaves the airway via nectin-4.",
+            "Measles wipes immune memory - **immune amnesia** - for 2-3 years.",
+            "Vitamin A falls in measles, causing **corneal damage** and higher mortality.",
+            "Rubella before 12 weeks damages fetal organs - **CRS** risk up to 90%.",
+            "Mumps orchitis causes pressure necrosis under the tunica, then **atrophy**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Measles: fever with **cough, coryza, conjunctivitis**, Koplik spots, rash on day 4.",
+            "The measles rash starts **behind the ears** and spreads to the feet over 3 days.",
+            "Rubella: faint pink rash for 3 days, **postauricular nodes**, arthralgia in women.",
+            "Mumps: parotid swelling **lifts the ear lobe**; orchitis 4-10 days later.",
+            "HFMD: oral ulcers with vesicles on **palms, soles and buttocks** in under-5s.",
+            "Mpox: fever and **lymphadenopathy**, then deep monomorphic lesions incl. palms and genitals.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Measles: **serum IgM** plus throat swab or urine RT-PCR within 7 days.",
+            "India uses a **'fever and rash'** case definition; sample every suspected case.",
+            "Rubella IgM in pregnancy needs **IgG avidity** before any decision.",
+            "Mumps: buccal swab over Stensen duct for **PCR within 3 days**.",
+            "Mpox: vigorous **dry lesion swab PCR**, plus HIV and syphilis tests.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "All are supportive: fluids, feeding, **paracetamol**, no aspirin.",
+            "Measles: **vitamin A two doses 24 hours apart**, dose by age.",
+            "Antibiotics only for complications such as **pneumonia or otitis**.",
+            "Mumps orchitis: rest, scrotal support, ice and **NSAIDs**.",
+            "Mild mpox: home isolation until **all crusts fall** and skin heals.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Admit measles with **hypoxia, croup, dehydration, encephalitis or severe malnutrition**.",
+            "Measles and varicella need **airborne isolation** with N95 respirators.",
+            "HFMD with jerks, vomiting, tachycardia or hypertension suggests **EV-A71 brainstem encephalitis**.",
+            "**Tecovirimat** is not routine in mpox after PALM007 and STOMP trials.",
+            "Severe mpox: treat eye disease, proctitis, sepsis; start **ART** in HIV.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnant woman exposed to measles: **immunoglobulin within 6 days**; no live vaccine.",
+            "**Gregg triad** of CRS: cataract, PDA, deafness.",
+            "Inadvertent MR vaccine in pregnancy is **not a reason to terminate**.",
+            "Measles in HIV may have no rash and cause **giant-cell pneumonia**.",
+            "Adults get worse varicella, more **orchitis** and more rubella arthritis.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Measles: diarrhoea, **pneumonia**, croup, blindness, encephalitis, SSPE.",
+            "**SSPE** appears 7-10 years after infant measles with myoclonus and EEG periodic complexes.",
+            "Mumps: meningitis, pancreatitis, **unilateral deafness**, oophoritis.",
+            "Any **non-blanching rash** with fever: treat as meningococcaemia.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Notify measles, rubella, CRS, mumps clusters and mpox on **IHIP**.",
+            "Monitor mpox contacts for **21 days** from last exposure.",
+            "Measles outbreak: vitamin A to cases and **ring MR vaccination** of contacts.",
+            "Follow CRS infants for hearing, eyes, heart and development.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**WHO 2024**: MVA-BN prequalified; LC16m8 emergency use listing.",
+            "**WHO 2025**: mpox PHEIC ended 5 September 2025.",
+            "**MoHFW**: MR elimination target 2026 with fever-and-rash surveillance.",
+            "**PALM007/STOMP**: tecovirimat did not shorten mpox lesions.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and prophylaxis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Vitamin A", "Oral 50,000 IU (under 6 m), 100,000 IU (6-11 m), 200,000 IU (12 m+)", "Two doses 24 h apart; third if eye signs", "Vomiting, bulging fontanelle"],
+            ["Paracetamol", "15 mg/kg oral 6-hourly; adult max 4 g/day", "While febrile", "Liver toxicity in overdose"],
+            ["Immunoglobulin (measles PEP)", "IM 0.5 mL/kg, max 15 mL; IV 400 mg/kg", "Once, within 6 days", "Delay MR vaccine 6-8 months"],
+            ["MR/MMR vaccine", "0.5 mL subcutaneous", "Within 72 h of exposure; UIP 2 doses", "Not in pregnancy or severe immunosuppression"],
+            ["Acyclovir (varicella)", "800 mg oral five times daily", "7 days, within 24 h", "Renal dosing"],
+            ["MVA-BN (mpox)", "0.5 mL subcutaneous", "2 doses 4 weeks apart", "Local reaction; non-replicating"],
+            ["Tecovirimat (mpox)", "600 mg oral 12-hourly", "14 days, trials or compassionate use", "No proven benefit in RCTs"],
+          ],
+        },
+        {
+          heading: "Rash timeline and key signs",
+          columns: ["Disease", "Incubation", "Rash", "Key sign"],
+          rows: [
+            ["Measles", "10-14 days", "Day 4, behind ears downwards", "Koplik spots"],
+            ["Rubella", "14-21 days", "Day 1-2, faint, 3 days", "Postauricular nodes"],
+            ["Varicella", "10-21 days", "Day 1, pleomorphic crops", "All stages together"],
+            ["HFMD", "3-6 days", "Palms, soles, buttocks", "Oral ulcers"],
+            ["Mpox", "3-21 days", "Monomorphic deep pustules", "Lymphadenopathy"],
+          ],
+        },
+        {
+          heading: "Fever with rash - differentials",
+          columns: ["Condition", "Clue", "Test"],
+          rows: [
+            ["Dengue", "Retro-orbital pain, low platelets", "NS1 or IgM"],
+            ["Meningococcaemia", "Non-blanching purpura, shock", "Blood culture; treat first"],
+            ["Kawasaki disease", "5 days fever, red lips, limbus-sparing eyes", "Clinical criteria, echo"],
+            ["Spotted fever", "Palms and soles, eschar", "IgM ELISA, PCR"],
+            ["Drug rash / DRESS", "New drug, eosinophilia", "Eosinophils, LFT"],
+          ],
+        },
+      ],
+      remember: [
+        "**Very Sick Person Must Take Double Tablets** - rash day 1 to 7.",
+        "**Koplik spots** come 1-2 days before the measles rash.",
+        "Vitamin A: **two doses, 24 hours apart**, every measles case.",
+        "**Gregg triad**: cataract, PDA, deafness.",
+        "Mumps **lifts the ear lobe**.",
+        "Mpox = **nodes plus monomorphic** lesions; varicella = pleomorphic.",
+        "India MR elimination target: **2026**.",
+      ],
+    },
+  },
 };
 
 export default revision;

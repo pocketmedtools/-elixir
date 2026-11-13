@@ -422,6 +422,421 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "infectious-fever-brucellosis-melioidosis": {
+    checked: "2026-10",
+    updated: [
+      "Laine et al 2023: global brucellosis incidence revised to about 1.6-2.1 million cases a year.",
+      "Darwin melioidosis guideline (2020 revision) remains current, adopted in ICMR antimicrobial guidelines 2022: meropenem in shock/CNS, cotrimoxazole eradication 3-6 months.",
+      "SSC 2026: antibiotics within 1 hour, balanced crystalloid and MAP 65 mmHg for septic melioidosis.",
+      "DAHD 2024: NADCP S19 brucellosis vaccination of female calves continues to expand.",
+    ],
+    master: {
+      heading: "Master revision table - Brucellosis, melioidosis and Q fever",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Brucellosis - definition", "Zoonosis by intracellular **Brucella** (melitensis - goats; abortus - cattle) from **raw milk, animal birth products, lab aerosol**."],
+        ["Brucellosis - clinical", "Undulant fever, **malodorous sweats**, arthralgia, **sacroiliitis, lumbar spondylitis (Pedro Pons)**, **epididymo-orchitis**, hepatosplenomegaly; endocarditis kills."],
+        ["Brucellosis - diagnosis", "Leucopenia, relative lymphocytosis; **blood culture 50-70%, marrow up to 90%**; Rose Bengal screen; **SAT 1:160 or more**; 2-ME for IgG; beware **prozone**."],
+        ["Brucellosis - treatment", "**Doxycycline 6 weeks + streptomycin 2-3 weeks or gentamicin 7 days**; or doxycycline + rifampicin 6 weeks (exclude TB); spondylitis 12 weeks."],
+        ["Brucellosis - special", "Pregnancy: rifampicin (+ cotrimoxazole); child under 8: cotrimoxazole + rifampicin; relapse 5-15% within 6 months."],
+        ["Melioidosis - definition", "**Burkholderia pseudomallei** from wet soil and water; India modelled largest burden; coastal Karnataka, Kerala, TN, Odisha."],
+        ["Melioidosis - risk", "**Diabetes (over half)**, alcohol, CKD, thalassaemia, steroids; paddy farmers; **monsoon**."],
+        ["Melioidosis - clinical", "Pneumonia (half), septic shock, **liver/spleen/prostate abscesses**, skin, bone, parotid, CNS; chronic form mimics TB."],
+        ["Melioidosis - lab", "Culture (Ashdown), **safety-pin** Gram-negative bacilli, **resistant to gentamicin and colistin, sensitive to amoxicillin-clavulanate**; MALDI-TOF; USG abdomen."],
+        ["Melioidosis - treatment", "**Ceftazidime 2 g 6-hourly or meropenem 1 g 8-hourly** at least 10-14 days, then **cotrimoxazole by weight + folic acid for 3 months** (6 for CNS/bone)."],
+        ["Q fever", "**Coxiella burnetii**, inhaled from animal birth products; acute flu/pneumonia/hepatitis - **doxycycline 14 days**; persistent endocarditis - **doxycycline + HCQ 18 months**."],
+        ["Prevention", "Pasteurise milk, gloves at animal births, **S19 calf vaccine (NADCP)**; boots in paddy, diabetes control; no human vaccines."],
+        ["Prognosis", "Brucellosis mortality under 2%; **melioidosis 10-40%, 50% with shock**; recurrence with poor eradication adherence."],
+        ["Exam one-liner", "Gentamicin-resistant 'Pseudomonas' in a septic diabetic = **melioidosis**; never monotherapy for Brucella."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Septic diabetic farmer in the monsoon: melioidosis pathway",
+        steps: [
+          { label: "Fever, pneumonia or shock in a diabetic from paddy area", detail: "Monsoon, alcohol, CKD raise suspicion", tone: "decision" },
+          { label: "Cultures before antibiotics", detail: "Blood, urine, sputum, throat swab, pus; alert the lab" },
+          { label: "Start meropenem (shock) or ceftazidime", detail: "Meropenem 1 g 8-hourly; ceftazidime 2 g 6-hourly", tone: "warn" },
+          { label: "Search for abscesses", detail: "USG liver, spleen, prostate; CT chest; MRI brain if neuro signs" },
+          { label: "Drain large abscesses; set IV duration by focus", detail: "2 weeks minimum; 4-8 weeks for deep, bone or CNS" },
+          { label: "Eradication cotrimoxazole + folic acid", detail: "3 months (6 for CNS or osteomyelitis); monthly adherence checks", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Brucellosis treatment by severity",
+        steps: [
+          { label: "Uncomplicated adult", detail: "Doxycycline 100 mg BD 6 weeks + streptomycin 1 g IM 2-3 weeks or gentamicin 5 mg/kg 7 days" },
+          { label: "Oral alternative", detail: "Doxycycline + rifampicin 600-900 mg OD, 6 weeks; exclude TB first", tone: "decision" },
+          { label: "Spondylitis or sacroiliitis", detail: "Doxycycline + rifampicin 12 weeks or more, aminoglycoside initially", tone: "warn" },
+          { label: "Neurobrucellosis", detail: "Add ceftriaxone; treat 3-6 months or longer", tone: "warn" },
+          { label: "Endocarditis", detail: "Triple therapy for months plus valve replacement", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Brucellosis versus melioidosis versus Q fever",
+        columns: ["Feature", "Brucellosis", "Melioidosis", "Q fever"],
+        rows: [
+          ["Source", "Raw milk, livestock", "Wet soil, water", "Animal birth-product dust"],
+          ["Host factor", "Occupation", "Diabetes", "Valve disease, pregnancy"],
+          ["Hallmark", "Sweats, sacroiliitis, orchitis", "Sepsis, abscesses", "Pneumonia, hepatitis, endocarditis"],
+          ["Key test", "Culture, SAT 1:160 or more", "Culture, MALDI-TOF", "Phase I/II IgG"],
+          ["Treatment", "Doxycycline + aminoglycoside or rifampicin, 6 weeks", "Ceftazidime/meropenem then cotrimoxazole", "Doxycycline (+ HCQ if persistent)"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Brucellosis** is the commonest bacterial zoonosis, about 1.6-2.1 million cases a year.",
+            "**Melioidosis** is Burkholderia pseudomallei infection; India may carry the largest burden.",
+            "**Q fever** is Coxiella burnetii infection from livestock.",
+            "All three present as **prolonged fever or culture-negative sepsis** in rural workers.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Brucella: **raw milk**, animal placenta and abortions, laboratory aerosols.",
+            "Melioidosis: wet soil and water; **diabetes in over half** of patients.",
+            "Other melioidosis risks: alcohol, CKD, thalassaemia, steroids, **monsoon storms**.",
+            "Q fever: inhaled dust from animal **birth products**; valve disease predisposes to endocarditis.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Brucella survives **inside macrophages**, so it needs long combination therapy.",
+            "B. pseudomallei forms **abscesses** and can stay latent for years.",
+            "It is **intrinsically resistant** to aminoglycosides and colistin.",
+            "Hydroxychloroquine **alkalinises the phagolysosome**, helping doxycycline kill Coxiella.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Brucellosis: fever, **drenching sweats**, back pain, **sacroiliitis**, orchitis, hepatosplenomegaly.",
+            "Brucella spondylitis is lumbar with **anterior-superior erosion (Pedro Pons sign)**.",
+            "Melioidosis: **pneumonia**, septic shock, liver, spleen and prostate abscesses.",
+            "Chronic melioidosis can **mimic tuberculosis**.",
+            "Q fever: flu-like illness, pneumonia, hepatitis; later **culture-negative endocarditis**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Brucella: **blood culture** (warn the lab), marrow culture most sensitive.",
+            "Brucella SAT **1:160 or more** in endemic areas; watch for **prozone**.",
+            "Melioidosis: **culture** of blood, urine, sputum, throat, pus; Ashdown medium.",
+            "Clue: Gram-negative bacillus **resistant to gentamicin and colistin**.",
+            "Ultrasound abdomen and **HbA1c** in every melioidosis patient.",
+            "Q fever: **phase I IgG 1:800 or more** suggests persistent infection.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Brucella: **doxycycline 6 weeks plus streptomycin** 2-3 weeks or gentamicin 7 days.",
+            "Alternative: **doxycycline plus rifampicin** for 6 weeks; exclude TB first.",
+            "Never treat brucellosis with **a single drug**.",
+            "Acute Q fever: **doxycycline 100 mg twice daily for 14 days**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Melioidosis: **ceftazidime 2 g 6-hourly or meropenem 1 g 8-hourly** for at least 2 weeks.",
+            "**Meropenem** for shock and CNS disease (2 g 8-hourly in CNS).",
+            "Then **cotrimoxazole by weight plus folic acid for 3 months** (6 for CNS or bone).",
+            "Drain large abscesses; control blood glucose tightly.",
+            "Persistent Q fever: **doxycycline plus hydroxychloroquine** for at least 18 months.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Brucella in pregnancy: **rifampicin**, with cotrimoxazole in mid-pregnancy.",
+            "Brucella in children under 8: **cotrimoxazole plus rifampicin** for 6 weeks.",
+            "Melioidosis eradication in pregnancy: **amoxicillin-clavulanate**, with higher relapse.",
+            "CKD: reduce ceftazidime, meropenem and cotrimoxazole; watch **potassium**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Brucella relapse **5-15% within 6 months**; endocarditis causes most deaths.",
+            "Melioidosis mortality **10-40%**, up to 50% with septic shock.",
+            "Red flags: shock, abscesses, new murmur, back pain with weakness, confusion.",
+            "Stopping cotrimoxazole early causes **relapse**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "Darwin 2020 guideline remains current and is used in **ICMR 2022** guidance.",
+            "Global brucellosis estimate raised to **1.6-2.1 million** a year (2023).",
+            "**NADCP** vaccinates female calves with S19 against brucellosis.",
+            "SSC 2026 sepsis bundle applies to **septic melioidosis**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Doxycycline (brucellosis)", "100 mg oral BD", "6 weeks (12 in spondylitis)", "Oesophagitis; avoid in pregnancy"],
+            ["Streptomycin", "1 g IM OD", "2-3 weeks", "Vestibular toxicity, nephrotoxicity"],
+            ["Gentamicin", "5 mg/kg IV/IM OD", "7 days", "Nephro- and ototoxicity"],
+            ["Rifampicin", "600-900 mg oral OD", "6 weeks", "Hepatitis, interactions; exclude TB"],
+            ["Ceftazidime", "2 g IV 6-hourly", "At least 10-14 days", "Adjust in renal failure"],
+            ["Meropenem", "1 g IV 8-hourly (2 g in CNS)", "At least 10-14 days; longer for deep foci", "Seizures at high dose"],
+            ["Cotrimoxazole (eradication)", "160/800 to 320/1600 mg oral BD by weight + folic acid", "3-6 months", "Rash, cytopenia, hyperkalaemia"],
+          ],
+        },
+        {
+          heading: "Brucella tests",
+          columns: ["Test", "Positive", "Pitfall"],
+          rows: [
+            ["Rose Bengal", "Agglutination - screen", "Confirm with SAT"],
+            ["SAT", "1:160 or more, or fourfold rise", "Prozone; Yersinia O:9 cross-reaction"],
+            ["2-ME test", "Persisting IgG titre", "Falls slowly after cure"],
+            ["Blood or marrow culture", "Growth confirms", "Biohazard - warn the lab"],
+          ],
+        },
+        {
+          heading: "Melioidosis IV duration by focus",
+          columns: ["Focus", "IV phase", "Eradication"],
+          rows: [
+            ["Skin or bacteraemia, no deep focus", "2 weeks", "3 months"],
+            ["Deep abscess or septic arthritis", "4 weeks", "3 months"],
+            ["Osteomyelitis", "6 weeks", "6 months"],
+            ["CNS infection", "8 weeks", "6 months"],
+          ],
+        },
+      ],
+      remember: [
+        "Brucella: **raw milk, sweats, sacroiliitis, orchitis**.",
+        "Brucellosis: **two drugs, six weeks**, never monotherapy.",
+        "**Exclude TB** before rifampicin.",
+        "Melioidosis: **diabetic, monsoon, paddy, abscesses**.",
+        "'Pseudomonas' resistant to gentamicin in a septic diabetic means **melioidosis**.",
+        "Melioidosis: **IV 2 weeks or more, then cotrimoxazole 3 months**.",
+        "Persistent Q fever: **doxycycline plus hydroxychloroquine, 18 months**.",
+      ],
+    },
+  },
+
+  "infectious-fever-typhus-spotted-fever-detail": {
+    checked: "2026-10",
+    updated: [
+      "INTREST trial (NEJM 2023): IV doxycycline plus azithromycin better than either alone in severe scrub typhus; used for severe undifferentiated rickettsial disease.",
+      "ICMR STW 2022-23: empirical doxycycline (azithromycin in pregnancy); ceftriaxone plus doxycycline for sepsis without focus.",
+      "AAP Red Book 2024-2027: doxycycline for rickettsial disease at any age.",
+      "CDC 2016/2022: doxycycline even in pregnancy for life-threatening spotted fever - differs from Indian azithromycin-first advice.",
+      "SSC 2026: sepsis bundle applies, with caution about fluid overload from capillary leak.",
+    ],
+    master: {
+      heading: "Master revision table - Rickettsial infections beyond scrub typhus",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Arthropod-borne infections of **vascular endothelium** by obligate intracellular **Rickettsia**, causing disseminated vasculitis."],
+        ["Classification", "**Spotted fever group** (R. conorii - ITT, R. rickettsii, R. felis, R. akari); **typhus group** (R. typhi murine, R. prowazekii epidemic); scrub (Orientia) separate."],
+        ["Vectors", "ITT - **brown dog tick (Rhipicephalus)**; murine - **rat flea faeces**; epidemic - **body louse faeces**; scrub - chigger mite."],
+        ["Pathophysiology", "Endothelial infection, **capillary leak**, oedema, ARDS, hyponatraemia, AKI, gangrene; doxycycline enters cells, beta-lactams do not."],
+        ["Rash", "**Spotted fever centripetal with palms and soles**, purpuric if severe; **typhus centrifugal sparing palms and soles**."],
+        ["Eschar hunting", "Undress; scalp, ears, axillae, under breasts, waistband, groin, genitals, perineum, gluteal cleft, popliteal fossa; **painless black crust with halo**."],
+        ["Eschar frequency", "Common in scrub; **uncommon in ITT**; absent in murine and epidemic typhus."],
+        ["Investigations", "Low platelets, low sodium, raised ALT; **IgM ELISA from day 5-7**; **IFA fourfold rise** reference; **PCR of eschar** best."],
+        ["Weil-Felix", "OX19 + OX2 = SFG, OX19 = typhus, OXK = scrub; **1:80 or more** or rising; insensitive, late, cross-reactive, cannot speciate."],
+        ["Treatment", "**Doxycycline 100 mg BD** (child **2.2 mg/kg BD any age**) for 7 days or 3 days after afebrile; severe IV, add azithromycin."],
+        ["Pregnancy", "India: **azithromycin 500 mg OD 5-7 days**; CDC: doxycycline if life-threatening; avoid chloramphenicol late pregnancy."],
+        ["Avoid", "**Cotrimoxazole** (worsens), ceftriaxone alone, fluoroquinolones, waiting for Weil-Felix."],
+        ["Complications", "ARDS, myocarditis, meningoencephalitis, AKI, **digital gangrene in children**, HLH; mortality rises if treatment starts after day 5."],
+        ["Exam one-liner", "Spotted spreads in, typhus spreads out; fever gone in 48 h on doxycycline confirms the suspicion."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Fever with rash or eschar: rickettsial work-up",
+        steps: [
+          { label: "Fever with rash, eschar or tick/flea exposure", detail: "Dogs, rats, grassland, hills; day of illness" },
+          { label: "Undress and hunt the eschar; map the rash", detail: "Centripetal with palms/soles - spotted; truncal sparing - typhus", tone: "decision" },
+          { label: "Purpura with shock or meningism", detail: "Blood culture, ceftriaxone plus doxycycline now", tone: "warn" },
+          { label: "Send labs, start doxycycline", detail: "CBC, Na, LFT, creatinine; AUF panel; do not wait for serology" },
+          { label: "Confirm", detail: "IgM ELISA day 5-7, eschar PCR, paired IFA; Weil-Felix only if nothing else" },
+          { label: "Afebrile in 48 h - complete 7 days", detail: "No response in 72 h: rethink diagnosis", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Rickettsial treatment ladder",
+        steps: [
+          { label: "Uncomplicated adult or child", detail: "Doxycycline 100 mg BD (2.2 mg/kg BD) x 7 days", tone: "good" },
+          { label: "Pregnancy or doxycycline intolerance", detail: "Azithromycin 500 mg OD x 5-7 days (child 10 mg/kg)" },
+          { label: "Complicated - admit", detail: "Doxycycline 100 mg IV 12-hourly (200 mg load)", tone: "decision" },
+          { label: "Severe, scrub not excluded", detail: "IV doxycycline + IV azithromycin (INTREST 2023)", tone: "warn" },
+          { label: "Doxycycline impossible", detail: "Chloramphenicol 50-75 mg/kg/day in 4 doses - less effective", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Spotted fever versus murine typhus versus scrub typhus",
+        columns: ["Feature", "Spotted fever (ITT)", "Murine typhus", "Scrub typhus"],
+        rows: [
+          ["Vector", "Brown dog tick", "Rat flea", "Chigger mite"],
+          ["Rash", "Centripetal, palms and soles", "Truncal, spares palms and soles", "Inconstant truncal"],
+          ["Eschar", "Uncommon", "Absent", "Common"],
+          ["Weil-Felix", "OX19 + OX2", "OX19", "OXK"],
+          ["Signature complication", "Gangrene in children", "Usually mild", "ARDS, myocarditis"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Rickettsioses** are endothelial infections by obligate intracellular bacteria spread by arthropods.",
+            "Two groups: **spotted fever** and **typhus**; scrub typhus (Orientia) is separate.",
+            "In India, **Indian tick typhus** is the commonest after scrub typhus, often in children.",
+            "Murine typhus is under-diagnosed as **viral fever** in rat-infested areas.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Indian tick typhus: **R. conorii**, spread by the **brown dog tick**.",
+            "Murine typhus: **R. typhi**, from **rat flea faeces**.",
+            "Epidemic typhus: **R. prowazekii**, from **body lice** in cold, crowded camps.",
+            "**Brill-Zinsser disease** is epidemic typhus relapsing years later.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Rickettsiae infect **endothelium**, causing vasculitis and capillary leak.",
+            "Leak explains **oedema, ARDS, hyponatraemia, AKI and gangrene**.",
+            "Doxycycline works **inside cells**; beta-lactams and aminoglycosides do not.",
+            "**Cotrimoxazole may worsen** rickettsial infection.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Incubation **3-14 days**; fever, severe headache, myalgia.",
+            "Rash appears around **day 3-5**.",
+            "Spotted fever rash is **centripetal and involves palms and soles**.",
+            "Typhus rash is **truncal, centrifugal and spares palms and soles**.",
+            "Children with ITT may have **oedema, purpura and digital gangrene**.",
+          ],
+        },
+        {
+          title: "Examination",
+          points: [
+            "**Undress completely** and search hidden folds for an eschar.",
+            "Sites: scalp, ears, axillae, under breasts, waistband, groin, genitals, perineum, popliteal fossa.",
+            "Eschar is a **painless black crust with a red halo**, with tender nodes.",
+            "Eschar is **common in scrub**, uncommon in ITT, absent in typhus.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Look for **low platelets, low sodium, raised ALT** and raised creatinine.",
+            "**IgM ELISA** from day 5-7; **IFA fourfold rise** is the reference.",
+            "**PCR of an eschar swab** gives the best early confirmation.",
+            "**Weil-Felix** is late, insensitive and cross-reactive; never wait for it.",
+            "Run malaria, dengue, leptospira and blood culture tests in parallel.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Doxycycline 100 mg twice daily** for 7 days, or 3 days after fever settles.",
+            "Children of any age: **2.2 mg/kg twice daily**; short courses do not stain teeth.",
+            "Pregnancy (India): **azithromycin 500 mg once daily** for 5-7 days.",
+            "Paracetamol only; **avoid cotrimoxazole** and NSAIDs.",
+            "Expect fever to settle **within 48 hours**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Admit for shock, hypoxia, drowsiness, oliguria, jaundice, purpura or gangrene.",
+            "**IV doxycycline 100 mg 12-hourly**; add azithromycin when severe (INTREST).",
+            "Add **ceftriaxone** if meningococcaemia or sepsis cannot be excluded.",
+            "Give fluids **cautiously**; capillary leak causes pulmonary oedema.",
+            "**Chloramphenicol** only if doxycycline cannot be used.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "ARDS, myocarditis, meningoencephalitis, AKI, DIC, **gangrene**, HLH.",
+            "Mortality rises when doxycycline starts **after day 5**.",
+            "No response in **72 hours** means rethink the diagnosis.",
+            "Notify rickettsial fevers on **IHIP**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**INTREST 2023**: IV doxycycline plus azithromycin is best in severe scrub typhus.",
+            "**AAP 2024**: doxycycline is safe at any age for short courses.",
+            "CDC allows **doxycycline in pregnancy** if life-threatening; India prefers azithromycin.",
+            "ICMR STW: **beta-lactams alone** are discouraged in undifferentiated fever.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Rickettsial drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Doxycycline", "100 mg oral BD; IV 100 mg 12-hourly if severe", "7 days or 3 days after afebrile", "Oesophagitis, photosensitivity"],
+            ["Doxycycline (child)", "2.2 mg/kg BD, max 100 mg", "5-7 days", "No staining with short courses"],
+            ["Azithromycin", "500 mg OD; child 10 mg/kg OD", "5-7 days", "QT prolongation; pregnancy choice in India"],
+            ["Chloramphenicol", "50-75 mg/kg/day in 4 doses", "7 days", "Marrow toxicity, grey baby syndrome"],
+          ],
+        },
+        {
+          heading: "Rash and eschar patterns",
+          columns: ["Disease", "Rash", "Eschar"],
+          rows: [
+            ["Indian tick typhus", "Centripetal, palms and soles, may be purpuric", "Uncommon"],
+            ["Murine typhus", "Truncal, centrifugal, spares palms and soles", "Absent"],
+            ["Epidemic typhus", "Truncal, spares face, palms and soles", "Absent"],
+            ["Scrub typhus", "Inconstant truncal", "Common"],
+          ],
+        },
+        {
+          heading: "Weil-Felix patterns",
+          columns: ["Disease", "OX19", "OX2", "OXK"],
+          rows: [
+            ["Spotted fever", "Positive", "Positive", "Negative"],
+            ["Typhus group", "Strongly positive", "Weak or negative", "Negative"],
+            ["Scrub typhus", "Negative", "Negative", "Positive"],
+          ],
+        },
+      ],
+      remember: [
+        "**Spotted spreads in, typhus spreads out**.",
+        "**Undress and hunt the eschar** in hidden folds.",
+        "Weil-Felix: **OX19+OX2 spotted, OX19 typhus, OXK scrub**.",
+        "**Doxycycline at every age**: 2.2 mg/kg twice daily in children.",
+        "Fever gone in **48 hours** on doxycycline supports the diagnosis.",
+        "**Cotrimoxazole worsens** rickettsial disease; ceftriaxone misses it.",
+        "Severe: **doxycycline plus azithromycin** IV.",
+      ],
+    },
+  },
 };
 
 export default revision;

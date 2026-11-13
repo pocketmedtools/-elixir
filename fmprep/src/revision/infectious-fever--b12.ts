@@ -220,6 +220,420 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "infectious-fever-hlh-macrophage-activation": {
+    checked: "2026-10",
+    updated: [
+      "2022 EULAR/ACR points to consider for MAS/HLH (published 2023): early ferritin screening, glucocorticoids plus anakinra, ciclosporin or emapalumab",
+      "US FDA 2025: emapalumab approved for MAS in Still disease",
+      "ASTCT 2023: IEC-HS defined as a CAR-T complication separate from cytokine release syndrome",
+      "Histiocyte Society adult HLH recommendations (2019) remain the reference for adult etoposide dosing",
+    ],
+    master: {
+      heading: "HLH and infection-triggered hyperinflammation - what to write",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Hyperinflammatory syndrome of uncontrolled cytotoxic T/NK-cell and macrophage activation"],
+        ["Types", "Primary (PRF1, UNC13D, STX11, STXBP2, XLP, Griscelli, Chediak-Higashi); secondary (infection, malignancy, MAS, iatrogenic)"],
+        ["Indian triggers", "TB, dengue, EBV, scrub typhus, kala-azar, enteric fever, malaria, HIV"],
+        ["Mechanism", "Failed perforin killing, persistent antigen, IFN-gamma, IL-1/6/18, TNF storm"],
+        ["Clinical", "Persistent fever, hepatosplenomegaly, cytopenias, bleeding, jaundice, CNS signs"],
+        ["HLH-2004", "5 of 8: fever, spleen, 2-lineage cytopenia, TG 265+/fibrinogen 150-, haemophagocytosis, NK low, ferritin 500+, sCD25 2400+"],
+        ["HScore", "9 variables; 169 or more = probable HLH (93% sensitive, 86% specific)"],
+        ["MAS (sJIA)", "Ferritin over 684 plus 2 of platelets 181,000 or less, AST over 48, TG over 156, fibrinogen 360 or less"],
+        ["Bedside clue", "High CRP, low ESR; ferritin over 10,000 ng/mL"],
+        ["Work-up", "Marrow, sCD25, EBV PCR, NS1, rK39, scrub IgM, CBNAAT, HIV, PET-CT, node biopsy"],
+        ["Treatment", "Treat trigger; dexamethasone 10 mg/m2 tapering over 8 weeks with etoposide (adults 50-100 mg/m2 weekly)"],
+        ["Specific", "EBV: early etoposide, rituximab; MAS: anakinra, ciclosporin; kala-azar: liposomal amphotericin B"],
+        ["Refractory", "Emapalumab, ruxolitinib, DEP regimen; allogeneic HSCT"],
+        ["Prognosis", "Adult mortality about 40%; worst with lymphoma"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspecting and confirming HLH",
+        steps: [
+          { label: "Persistent fever plus cytopenias plus organomegaly", detail: "Fever beyond 5-7 days of right treatment, or dengue beyond day 7", tone: "decision" },
+          { label: "Send ferritin, TG, fibrinogen, LFT, LDH", detail: "Ferritin over 3000 - evaluate; over 10,000 - highly suggestive" },
+          { label: "Calculate HScore and count HLH-2004", detail: "HScore 169+ or 5 of 8 criteria", tone: "decision" },
+          { label: "Refer same day to haematology and ICU", detail: "Do not wait for marrow haemophagocytosis", tone: "warn" },
+          { label: "Find the trigger", detail: "EBV PCR, NS1, rK39, scrub IgM, CBNAAT, HIV, PET-CT, node and marrow biopsy" },
+          { label: "Trigger-directed therapy plus immunosuppression", detail: "Ferritin fall over 50% by 2 weeks = good response", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "HLH treatment ladder",
+        steps: [
+          { label: "Treat trigger and support organs", detail: "Antimicrobials, ATT, antileishmanials; blood products; PJP prophylaxis" },
+          { label: "Corticosteroids with or without IVIG", detail: "Dexamethasone or methylprednisolone; IVIG 1-1.6 g/kg (dengue, mild infection HLH)" },
+          { label: "MAS: add anakinra and ciclosporin", detail: "Anakinra up to 2-10 mg/kg/day in severe MAS", tone: "decision" },
+          { label: "Severe or EBV-HLH: HLH-94", detail: "Dexamethasone 10 mg/m2 + etoposide (adults 50-100 mg/m2 weekly); rituximab for EBV", tone: "warn" },
+          { label: "Refractory: emapalumab, ruxolitinib, DEP", detail: "Bridge to allogeneic stem-cell transplant", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "HLH vs sepsis vs severe dengue",
+        columns: ["Feature", "HLH", "Sepsis with DIC", "Severe dengue"],
+        rows: [
+          ["Fever", "Persistent, unresponsive", "Responds to source control", "Settles by day 5-7"],
+          ["Ferritin", "Often over 10,000", "Usually under 3000", "Raised, falls in recovery"],
+          ["Spleen", "Enlarged", "Usually normal", "Mild or normal"],
+          ["Triglycerides", "High", "Normal or mild", "Mild rise"],
+          ["Counts", "2-3 lineages, worsening", "Low platelets", "Platelets recover by day 8-10"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**HLH** is uncontrolled activation of cytotoxic lymphocytes and macrophages causing a cytokine storm.",
+            "**Primary HLH** is familial, usually in infants; **secondary HLH** dominates in adults.",
+            "**MAS** is HLH in rheumatic disease, classically sJIA and adult-onset Still disease.",
+            "Adult triggers: **infection about half**, malignancy about a third, autoimmune about a tenth.",
+            "Adult mortality is about **40%**, worst with lymphoma.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Familial genes: **PRF1, UNC13D, STX11, STXBP2**; also XLP, Griscelli and Chediak-Higashi.",
+            "Indian infectious triggers: **TB, dengue, EBV, scrub typhus, kala-azar**, enteric fever.",
+            "Malignancy: **T/NK-cell lymphoma** most often; HLH can precede the diagnosis.",
+            "Iatrogenic: **CAR-T** (IEC-HS), checkpoint inhibitors and stem-cell transplant.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Failed perforin killing leaves **antigen persisting**, so stimulation never stops.",
+            "CD8 T cells pour out **interferon-gamma**, which activates macrophages.",
+            "Macrophages release **IL-1, IL-6, IL-18 and TNF** and secrete ferritin.",
+            "TNF blocks lipoprotein lipase, so **triglycerides rise**.",
+            "Plasminogen activator lowers **fibrinogen**, so ESR falls despite high CRP.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**HLH-2004**: molecular diagnosis or **5 of 8 criteria**.",
+            "The eight: fever, spleen, 2-lineage cytopenia, high TG or low fibrinogen, haemophagocytosis, low NK, ferritin, sCD25.",
+            "**Ferritin 500 ng/mL** and **sCD25 2400 U/mL** are the thresholds.",
+            "**HScore 169 or more** suggests reactive HLH in adults.",
+            "**MAS in sJIA**: ferritin over 684 plus 2 of platelets, AST, TG, fibrinogen.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Persistent fever** unresponsive to antibiotics, or returning after expected recovery.",
+            "**Hepatosplenomegaly**; massive spleen suggests kala-azar or lymphoma.",
+            "Bleeding, jaundice, oedema and **encephalopathy or seizures** in severe cases.",
+            "Mimics septic shock; often needs ICU.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Ferritin** is the best screen; over 10,000 ng/mL is highly suggestive.",
+            "Fasting **triglycerides** and **fibrinogen**, LFT, LDH and CBC.",
+            "**Marrow** for haemophagocytosis, lymphoma, granuloma and LD bodies.",
+            "Trigger screen: **EBV PCR**, NS1, rK39, scrub IgM, CBNAAT, HIV.",
+            "**PET-CT** and node biopsy to find lymphoma in adults.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Suspect early and **refer the same day**; HLH is not an OPD disease.",
+            "**Treat the trigger**: ATT, doxycycline, artesunate, liposomal amphotericin B.",
+            "Infection HLH often responds to **steroids with or without IVIG**.",
+            "**HLH-94**: dexamethasone 10 mg/m2 tapering over 8 weeks plus etoposide.",
+            "Adults get **etoposide 50-100 mg/m2 weekly**, reduced in renal failure.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**EBV-HLH**: etoposide within 4 weeks; rituximab for B-cell EBV.",
+            "**MAS**: methylprednisolone, **anakinra** and ciclosporin.",
+            "Refractory: **emapalumab**, ruxolitinib or DEP, then stem-cell transplant.",
+            "CNS HLH: intrathecal **methotrexate with hydrocortisone**.",
+            "Give **co-trimoxazole** and antifungal prophylaxis during therapy.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Good response: **ferritin falls over 50% by 2 weeks**.",
+            "Rising ferritin or sCD25 means relapse or a hidden lymphoma.",
+            "Monitor glucose, BP and infection on steroids.",
+            "Counsel **25% recurrence risk** per pregnancy in familial HLH.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**EULAR/ACR 2023**: glucocorticoids plus anakinra, ciclosporin or emapalumab for MAS.",
+            "**FDA 2025**: emapalumab approved for MAS in Still disease.",
+            "**ASTCT 2023**: IEC-HS defined after CAR-T therapy.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in HLH and MAS",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Dexamethasone", "10 mg/m2/day IV or oral", "Taper over 8 weeks", "Hyperglycaemia, infection; masks lymphoma"],
+            ["Etoposide", "150 mg/m2 IV (children); 50-100 mg/m2 weekly (adults)", "Up to 8 weeks", "Myelosuppression, secondary AML"],
+            ["IVIG", "1-1.6 g/kg total IV", "2-3 days", "Fluid overload, thrombosis"],
+            ["Anakinra", "100 mg SC up to 2-10 mg/kg/day", "Until remission", "Neutropenia, infection"],
+            ["Ciclosporin", "3-5 mg/kg/day orally", "Months, trough-guided", "Nephrotoxicity, hypertension, PRES"],
+            ["Emapalumab", "1 mg/kg IV twice weekly", "Until HSCT or remission", "Infection; screen latent TB"],
+          ],
+        },
+        {
+          heading: "HLH-2004 criteria",
+          columns: ["Criterion", "Threshold"],
+          rows: [
+            ["Fever", "38.5 C or more"],
+            ["Splenomegaly", "Present"],
+            ["Cytopenias", "2 of Hb under 9, platelets under 100,000, ANC under 1000"],
+            ["TG / fibrinogen", "TG 265 mg/dL or more and/or fibrinogen 150 mg/dL or less"],
+            ["Haemophagocytosis", "Marrow, spleen, node or liver"],
+            ["NK activity", "Low or absent"],
+            ["Ferritin", "500 ng/mL or more"],
+            ["sCD25", "2400 U/mL or more"],
+          ],
+        },
+        {
+          heading: "Triggers and what to give",
+          columns: ["Trigger", "Test", "Treatment"],
+          rows: [
+            ["EBV", "EBV PCR", "Early etoposide, rituximab"],
+            ["Dengue", "NS1, IgM", "Steroids with or without IVIG"],
+            ["TB", "CBNAAT, marrow", "ATT; more steroid with rifampicin"],
+            ["Kala-azar", "rK39, LD bodies", "Liposomal amphotericin B"],
+            ["Still disease", "Clinical, ferritin", "Steroids, anakinra"],
+          ],
+        },
+      ],
+      remember: [
+        "**5 of 8** for HLH-2004; **169** for HScore.",
+        "**High CRP, low ESR**: think HLH.",
+        "**Ferritin over 10,000** with cytopenias: HLH until proved otherwise.",
+        "**Haemophagocytosis is neither necessary nor sufficient.**",
+        "**Dengue febrile beyond day 7**: check ferritin.",
+        "**Adults: find the lymphoma.**",
+        "**EBV-HLH: etoposide early.**",
+      ],
+    },
+  },
+  "infectious-fever-national-programmes-infection": {
+    checked: "2026-10",
+    updated: [
+      "NCVBDC National Strategic Plan for Malaria Elimination 2023-2027: zero indigenous cases by 2027, elimination by 2030",
+      "WHO World Malaria Report 2024: India exited the High Burden High Impact group",
+      "NTEP 2024: BPaLM 6-month regimen for MDR/RR-TB; Ni-kshay Poshan Yojana raised to Rs 1000/month (November 2024)",
+      "NTEP 100-day TB Mukt Bharat Abhiyaan (December 2024, extended 2025): handheld X-ray and NAAT screening of vulnerable groups",
+      "WHO Global TB Report 2025: India incidence 187 per lakh in 2024, about 21% below 2015",
+      "NCVBDC 2024: kala-azar block-level elimination sustained; LF elimination target 2027 with IDA MDA",
+    ],
+    master: {
+      heading: "National communicable disease programmes - what to write",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Framework", "Centrally sponsored under NHM; free tests and drugs; case definitions, reporting, incentives"],
+        ["NCVBDC", "Malaria, dengue, chikungunya, JE/AES, LF, kala-azar"],
+        ["Malaria targets", "Zero indigenous by 2027; malaria-free by 2030; API and ABER (over 10%)"],
+        ["Malaria drugs", "Vivax: CQ 3 days + PQ 14 days; falciparum: ACT-SP (ACT-AL in North-East) + PQ single dose; severe: IV artesunate"],
+        ["LF and kala-azar", "LF elimination 2027 with IDA MDA; KA under 1/10,000 per block; single-dose L-AmB 10 mg/kg"],
+        ["NTEP", "Renamed 2020; NAAT for all; 2HRZE/4HRE daily FDC; BPaLM for MDR; TPT 6H/3HP/1HP"],
+        ["NTEP support", "Ni-kshay notification (mandatory since 2012); Poshan Yojana Rs 1000/month; Ni-kshay Mitra"],
+        ["NTEP incentives", "Private notification Rs 500 + outcome Rs 500; informant Rs 500; tribal Rs 750"],
+        ["NACP V", "2021-2026; 95-95-95; test and treat with TLD; viral load; EVTHS; HIV Act 2017"],
+        ["NVHCP", "Launched 28 July 2018; HCV elimination 2030; SOF + DCV/VEL 12 weeks; tenofovir for HBV; birth dose"],
+        ["IDSP", "2004; S-P-L forms weekly on IHIP; immediate cluster reporting; RRT"],
+        ["Clinician role", "Screen, test free, notify same day, link to care, use programme regimens, counsel on benefits"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "From OPD patient to programme",
+        steps: [
+          { label: "Match symptoms to a case definition", detail: "Cough 2 weeks+, fever in endemic area, jaundice, cluster", tone: "decision" },
+          { label: "Test free under the programme", detail: "Malaria RDT, NAAT for TB, HIV ICTC, HBsAg/anti-HCV" },
+          { label: "Notify the same day", detail: "TB on Ni-kshay; epidemic-prone fevers on IHIP (P form)" },
+          { label: "Start programme regimen", detail: "Weight-band FDC, ACT-SP or ACT-AL, CQ + PQ, TLD" },
+          { label: "Link benefits and support", detail: "Poshan Yojana Rs 1000/month, Ni-kshay Mitra, PM-JAY" },
+          { label: "Follow to outcome", detail: "Cured/completed; contacts screened and offered TPT", tone: "good" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "IDSP: from signal to response",
+        steps: [
+          { label: "Weekly S, P, L reports on IHIP", detail: "Health worker, doctor, laboratory" },
+          { label: "Unusual rise or cluster?", detail: "Or a single case of cholera, AES, measles, Nipah", tone: "decision" },
+          { label: "Verify within 24-48 hours", detail: "District Surveillance Unit" },
+          { label: "Rapid Response Team investigates", detail: "Epidemiologist, clinician, microbiologist, entomologist", tone: "warn" },
+          { label: "Control, samples, report, feedback", detail: "Weekly outbreak report", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Programmes compared",
+        columns: ["Programme", "Target", "First-line regimen", "Platform"],
+        rows: [
+          ["NCVBDC (malaria)", "Elimination 2030", "ACT-SP / ACT-AL; CQ + PQ", "Case-based surveillance"],
+          ["NTEP", "End TB ahead of 2030", "2HRZE/4HRE; BPaLM", "Ni-kshay"],
+          ["NACP V", "95-95-95", "TLD", "SOCH"],
+          ["NVHCP", "HCV elimination 2030", "SOF + DCV/VEL 12 weeks", "NVHCP MIS"],
+          ["IDSP", "Early outbreak detection", "Not applicable", "IHIP"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Programmes run under **NHM** with free tests, free drugs, case definitions and incentives.",
+            "**NCVBDC** covers six diseases: malaria, dengue, chikungunya, JE/AES, filariasis and kala-azar.",
+            "**NTEP** was renamed from RNTCP in 2020.",
+            "**NACP phase V** runs 2021-2026; **NVHCP** launched on 28 July 2018.",
+            "**IDSP** began in 2004; IHIP made it digital and case-based in 2021.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**API** is confirmed malaria cases per 1000 population per year.",
+            "**ABER** is tests per 100 population per year; target over 10%.",
+            "Malaria categories 0-3; **Category 2** is state API under 1 with some districts 1 or more.",
+            "**Kala-azar elimination**: under 1 case per 10,000 per block per year.",
+            "TB: microbiologically confirmed vs clinically diagnosed; DS, Hr, MDR, pre-XDR, XDR.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Presumptive TB**: cough or fever 2 weeks or more, weight loss, haemoptysis, night sweats.",
+            "In PLHIV and contacts, **cough of any duration** counts.",
+            "**Kala-azar**: fever over 2 weeks with splenomegaly in an endemic area.",
+            "**AES**: fever with altered mental status or new seizures.",
+            "**HIV**: three reactive tests (strategy III); DNA PCR in infants.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Malaria: **bivalent RDT** or smear before any treatment.",
+            "TB: **upfront NAAT** (CBNAAT or Truenat) for every presumptive case.",
+            "Dengue confirmed only by **ELISA or PCR** at sentinel hospitals.",
+            "Kala-azar: **rK39** RDT.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Vivax: **chloroquine 3 days plus primaquine 0.25 mg/kg for 14 days**.",
+            "Falciparum: **ACT-SP**, but **ACT-AL in the North-East**; add single-dose primaquine.",
+            "TB: **2HRZE + 4HRE** daily weight-band FDC.",
+            "MDR/RR-TB: **BPaLM for 6 months**.",
+            "HIV: **TLD** once daily; HCV: **sofosbuvir plus daclatasvir or velpatasvir** 12 weeks.",
+            "Kala-azar: **single-dose liposomal amphotericin B 10 mg/kg**.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "**Ni-kshay Poshan Yojana**: Rs 1000 per month from November 2024.",
+            "Private notification **Rs 500**, outcome **Rs 500**; informant Rs 500.",
+            "**Ni-kshay Mitra** adopts patients with food baskets.",
+            "**TPT** for contacts and PLHIV: 6H, 3HP or 1HP.",
+            "LF: **IDA mass drug administration** swallowed in front of the drug administrator.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Notify **TB on Ni-kshay** and epidemic-prone fevers on **IHIP** the same day.",
+            "Report **clusters immediately**, not at the weekly cycle.",
+            "Severe malaria: **IV artesunate** and report.",
+            "Rifampicin resistance: refer to the **nodal DR-TB centre**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: no primaquine; universal **HIV, syphilis and HBsAg** screening.",
+            "Newborn: **hepatitis B birth dose within 24 hours**; HBIG if mother HBsAg-positive.",
+            "PLHIV: **4-symptom TB screen** at every visit; TPT if negative.",
+            "TB patients: test for **diabetes and HIV** (bidirectional screening).",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "Malaria NSP 2023-2027; India **exited WHO HBHI** in 2024.",
+            "**BPaLM** and **Rs 1000 Poshan** in NTEP 2024.",
+            "100-day **TB Mukt Bharat Abhiyaan** from December 2024 with handheld X-ray.",
+            "TB incidence **187 per lakh in 2024**, about 21% below 2015.",
+            "Kala-azar elimination sustained; **LF target 2027**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Programme drug regimens",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["HRZE FDC", "Weight-band daily oral", "2 months HRZE + 4 months HRE", "Hepatitis, optic neuritis"],
+            ["BPaLM", "Bedaquiline, pretomanid, linezolid, moxifloxacin oral", "6 months", "QT, neuropathy, marrow suppression"],
+            ["ACT-SP", "Artesunate 4 mg/kg daily + SP day 1", "3 days", "Sulfa allergy; ACT-AL in North-East"],
+            ["CQ + primaquine", "CQ 10, 10, 5 mg/kg; PQ 0.25 mg/kg", "3 days; PQ 14 days", "PQ haemolysis in G6PD deficiency"],
+            ["Liposomal amphotericin B", "10 mg/kg IV", "Single dose", "Infusion reaction, hypokalaemia"],
+            ["TLD", "TDF 300 + 3TC 300 + DTG 50 mg oral", "Lifelong", "Weight gain; double DTG with rifampicin"],
+          ],
+        },
+        {
+          heading: "Programmes at a glance",
+          columns: ["Programme", "Diseases", "Target", "Platform"],
+          rows: [
+            ["NCVBDC", "Six vector-borne diseases", "Malaria 2030, LF 2027", "Case-based surveillance"],
+            ["NTEP", "TB", "80% fall in incidence from 2015", "Ni-kshay"],
+            ["NACP V", "HIV, STI", "95-95-95", "SOCH"],
+            ["NVHCP", "Hepatitis A, B, C, E", "HCV elimination 2030", "NVHCP MIS"],
+            ["IDSP", "Epidemic-prone diseases", "Early outbreak detection", "IHIP"],
+          ],
+        },
+        {
+          heading: "IDSP forms",
+          columns: ["Form", "Filled by", "Diagnosis level"],
+          rows: [
+            ["S", "ASHA, ANM, MPW", "Syndromic"],
+            ["P", "Doctors", "Presumptive (clinical)"],
+            ["L", "Laboratory", "Confirmed"],
+          ],
+        },
+      ],
+      remember: [
+        "NCVBDC six: **Mad Dogs Can Jump Fences Kindly**.",
+        "**TB notifiable since 2012**.",
+        "**Poshan Yojana Rs 1000** per month.",
+        "**ACT-AL in the North-East.**",
+        "IDSP forms: **S-P-L**.",
+        "Kala-azar: **under 1 per 10,000 per block**.",
+        "**NVHCP: 28 July 2018**; HCV elimination 2030.",
+      ],
+    },
+  },
 };
 
 export default revision;

@@ -221,6 +221,430 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "infectious-fever-fever-pregnancy-infections": {
+    checked: "2026-10",
+    updated: [
+      "WHO malaria guidelines 2024 (from the 2022 update): artemether-lumefantrine recommended in the first trimester; Indian NCVBDC quinine-clindamycin noted as older practice.",
+      "WHO HBV guidelines 2024: tenofovir from 28 weeks for HBV DNA 200,000 IU/mL or more, HBeAg-positive, or all HBsAg-positive women where testing is unavailable.",
+      "ECCI 2024 congenital CMV consensus: valaciclovir 8 g/day after periconception or first-trimester primary infection.",
+      "ACIP 2024: maternal RSV vaccine at 32-36 weeks; Tdap at 27-36 weeks.",
+      "WHO 2023 syphilis guidance and NACO 2023: dual HIV-syphilis point-of-care testing towards triple elimination.",
+      "ACOG 2023 clinical consensus on UTI in pregnancy: culture screening and 5-7-day treatment.",
+    ],
+    master: {
+      heading: "Master revision table - Infections in pregnancy",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Maternal infections made **more severe by pregnancy** (malaria, influenza, Listeria, HEV, pyelonephritis) or **transmitted vertically** (TORCH, syphilis, HIV, HBV)."],
+        ["Burden", "Sepsis about **11% of maternal deaths**; India MMR 93 (SRS 2019-21); CMV commonest congenital infection; ASB 2-10%; GBS carriage lower in India (2-12%)."],
+        ["Why worse", "Th1 shift - intracellular pathogens; **progesterone and uterine compression - hydroureter**; VAR2CSA binds placental CSA in falciparum."],
+        ["TORCH timing", "Rubella before 12 weeks up to 90%; CMV primary 30-40% transmission; **toxo transmission rises, severity falls**; varicella FVS 0.4-2% before 20 weeks."],
+        ["Screening", "**HIV, syphilis, HBsAg** at first ANC; urine culture 12-16 weeks; **no blanket TORCH IgM**; avidity and amniotic PCR when indicated."],
+        ["UTI", "ASB 10^5 CFU/mL - **nitrofurantoin, cephalexin or fosfomycin 5-7 days**, test of cure; pyelonephritis - **ceftriaxone IV**, 10-14 days, then suppression."],
+        ["Malaria", "Vivax - **chloroquine any trimester, no primaquine**; falciparum - ACT in 2nd/3rd, **AL in 1st (WHO)**; severe - **IV artesunate in all trimesters**."],
+        ["GBS", "India risk-based: **preterm, ROM 18 h or more, fever, GBS bacteriuria, previous GBS baby**; benzylpenicillin 5 MU then 2.5-3 MU 4-hourly, 4 h before birth."],
+        ["Listeria", "Flu-like fever after soft cheese or unpasteurised milk; **ampicillin 2 g 4-hourly** for 14 days; cephalosporins useless."],
+        ["Syphilis and HBV", "**Benzathine penicillin 2.4 MU IM** (x3 weekly if late); tenofovir from 28 weeks if high DNA; **HBIG + birth dose in 12-24 h**."],
+        ["Safe antibiotics", "**Penicillins, cephalosporins, azithromycin, clindamycin**; avoid doxycycline, fluoroquinolones, aminoglycoside long courses, chloramphenicol near term, primaquine."],
+        ["Prevention", "MR vaccine before pregnancy (avoid pregnancy 1 month); Td and influenza in pregnancy; CMV hygiene; food safety; LLINs in endemic areas."],
+        ["Exam traps", "Doxycycline for scrub in pregnancy; ceftriaxone for Listeria; TORCH IgM leading to termination; untreated ASB."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Fever in a pregnant woman: OPD work-up",
+        steps: [
+          { label: "Gestational age, MEOWS vitals, red flags", detail: "SBP under 90, RR over 25, SpO2 under 95%, confusion", tone: "decision" },
+          { label: "Sepsis features - admit, sepsis six within 1 hour", detail: "Cultures, broad antibiotics, fluids, lactate, fetal check", tone: "warn" },
+          { label: "Look for a focus", detail: "Loins, uterus, breasts, chest, rash, eschar, genital ulcer" },
+          { label: "Tests", detail: "CBC, smear + RDT, NS1/IgM, urine culture, LFT, blood cultures" },
+          { label: "Treat cause with pregnancy-safe drugs", detail: "Azithromycin not doxy; ampicillin for Listeria; chloroquine/ACT" },
+          { label: "Fetal assessment and follow-up", detail: "Fetal heart, growth scan, test of cure", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Urinary infection in pregnancy: escalation",
+        steps: [
+          { label: "Asymptomatic bacteriuria on screening culture", detail: "Nitrofurantoin 100 mg BD or cephalexin 500 mg 8-12-hourly, 5-7 days" },
+          { label: "Cystitis", detail: "Same drugs; fosfomycin 3 g single dose alternative" },
+          { label: "Pyelonephritis - admit", detail: "Ceftriaxone 1-2 g IV daily; oral to 10-14 days", tone: "warn" },
+          { label: "Sepsis or ARDS", detail: "Piperacillin-tazobactam, ICU, obstetric team", tone: "warn" },
+          { label: "Recurrence - suppression to delivery", detail: "Nitrofurantoin 50-100 mg or cephalexin 250-500 mg nightly", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "TORCH at a glance",
+        columns: ["Infection", "Danger window", "Signature defect", "Action"],
+        rows: [
+          ["Rubella", "Before 12 weeks", "Cataract, PDA, deafness", "MR vaccine pre-conception"],
+          ["CMV", "First-trimester primary", "Microcephaly, periventricular calcification, deafness", "Avidity; valaciclovir 8 g/day"],
+          ["Toxoplasma", "Early = severe", "Chorioretinitis, hydrocephalus, diffuse calcification", "Spiramycin"],
+          ["Varicella", "Before 20 weeks; peripartum", "Limb hypoplasia, scarring", "VZIG in 10 days; aciclovir"],
+          ["Parvovirus B19", "Before 20 weeks", "Hydrops from fetal anaemia", "MCA Doppler; transfusion"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Pregnancy makes **malaria, influenza, Listeria, hepatitis E and pyelonephritis** more severe.",
+            "**TORCH**: Toxoplasma, Others, Rubella, CMV, Herpes simplex.",
+            "Sepsis causes about **11% of maternal deaths** worldwide.",
+            "**CMV** is the commonest congenital infection and a leading cause of deafness.",
+            "Untreated **asymptomatic bacteriuria** leads to pyelonephritis in 20-30%.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "A shift away from **cell-mediated immunity** worsens intracellular infections.",
+            "**Progesterone and uterine pressure** dilate the ureters, causing stasis.",
+            "Falciparum binds placental **chondroitin sulphate A** via VAR2CSA, causing low birth weight.",
+            "Toxoplasma transmission **rises** with gestation but severity **falls**.",
+            "**Parvovirus B19** stops fetal red cell production, causing hydrops.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Rubella before 12 weeks**: up to 90% fetal damage; cataract, PDA, deafness.",
+            "**Primary CMV** transmits in 30-40%; recurrent in about 1%.",
+            "**Fetal varicella syndrome**: 0.4% before 13 weeks, 2% at 13-20 weeks.",
+            "**HBeAg-positive** mothers transmit HBV in 70-90% without prophylaxis.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Screen all for **HIV, syphilis and HBsAg** at the first visit.",
+            "**Urine culture** at 12-16 weeks; 10^5 CFU/mL of one organism is ASB.",
+            "**Avoid blanket TORCH IgM**; false positives lead to wrong terminations.",
+            "**Low IgG avidity** means recent primary infection; high avidity means old infection.",
+            "Amniotic PCR **after 18-21 weeks** confirms fetal CMV or toxoplasma.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "ASB or cystitis: **nitrofurantoin, cephalexin or fosfomycin** for 5-7 days.",
+            "Vivax: **chloroquine** in any trimester; **no primaquine** in pregnancy.",
+            "Falciparum: **ACT** in 2nd and 3rd trimesters; AL in first trimester per WHO.",
+            "Syphilis: **benzathine penicillin 2.4 MU IM**; desensitise if allergic.",
+            "Scrub typhus: **azithromycin 500 mg daily for 5 days**, not doxycycline.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Pyelonephritis: **ceftriaxone 1-2 g IV daily**, then oral to 10-14 days.",
+            "Severe malaria: **IV artesunate in all trimesters**; check glucose 4-hourly.",
+            "Listeria: **ampicillin 2 g IV 4-hourly** for 14 days.",
+            "Chorioamnionitis: **ampicillin plus gentamicin** and expedite delivery.",
+            "GBS prophylaxis: **benzylpenicillin** started at least 4 hours before birth.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "India uses **risk-based GBS prophylaxis**: preterm, ROM 18 h, fever, bacteriuria, previous baby.",
+            "HBV with high DNA: **tenofovir from 28 weeks**; baby gets HBIG and birth dose.",
+            "HIV: start **TLD** at once, lifelong, regardless of CD4.",
+            "Varicella exposure: **VZIG within 10 days**; aciclovir if rash within 24 hours.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Pyelonephritis can cause **ARDS**, septic shock and preterm labour.",
+            "Third-trimester **hepatitis E** can cause liver failure in 15-25%.",
+            "**Varicella pneumonia** occurs in up to 10% of pregnant women with chickenpox.",
+            "Untreated syphilis causes stillbirth or neonatal death in up to 40%.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer abnormal fetal scans or proven primary infection to **fetal medicine**.",
+            "Repeat **urine culture** after treatment and each trimester.",
+            "Check **RPR at 3 and 6 months** after syphilis treatment.",
+            "**MR vaccine** before pregnancy; Td and influenza vaccine during pregnancy.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**WHO 2024**: artemether-lumefantrine is allowed in the first trimester.",
+            "**WHO 2024 HBV**: tenofovir for all HBsAg-positive women where DNA testing is unavailable.",
+            "**ECCI 2024**: valaciclovir 8 g/day after first-trimester primary CMV.",
+            "**ACIP 2024**: maternal RSV vaccine at 32-36 weeks.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Pregnancy infection drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Nitrofurantoin MR", "100 mg orally 12-hourly", "5-7 days", "Avoid at term and in G6PD deficiency"],
+            ["Cephalexin", "500 mg orally 8-12-hourly", "5-7 days", "Allergy, diarrhoea"],
+            ["Ceftriaxone", "1-2 g IV daily", "10-14 days total (pyelonephritis)", "No Listeria cover"],
+            ["Benzathine penicillin G", "2.4 MU IM", "Once, or weekly x 3 if late", "Anaphylaxis; Jarisch-Herxheimer"],
+            ["Benzylpenicillin (GBS)", "5 MU IV, then 2.5-3 MU 4-hourly", "Until delivery", "Allergy - cefazolin or clindamycin"],
+            ["Ampicillin (Listeria)", "2 g IV 4-hourly", "14 days", "Rash"],
+            ["Chloroquine", "25 mg base/kg over 3 days", "3 days", "Itching; safe all trimesters"],
+            ["IV artesunate", "2.4 mg/kg at 0, 12, 24 h, then daily", "Until oral ACT possible", "Delayed haemolysis"],
+            ["Azithromycin (scrub)", "500 mg orally daily", "5 days", "QT prolongation"],
+          ],
+        },
+        {
+          heading: "Antibiotic safety",
+          columns: ["Group", "Drugs", "Reason"],
+          rows: [
+            ["Safe", "Penicillins, cephalosporins, azithromycin, clindamycin, metronidazole", "Long safety record"],
+            ["Timing caution", "Nitrofurantoin (term), cotrimoxazole (1st trimester and term)", "Haemolysis, folate antagonism, kernicterus"],
+            ["Avoid", "Doxycycline, fluoroquinolones, streptomycin, chloramphenicol", "Teeth and bone, cartilage, deafness, grey baby"],
+            ["Contraindicated", "Primaquine, tafenoquine", "Fetal haemolysis"],
+          ],
+        },
+        {
+          heading: "Antimalarials by trimester",
+          columns: ["Species", "First trimester", "Second and third trimesters"],
+          rows: [
+            ["Vivax", "Chloroquine", "Chloroquine; no primaquine"],
+            ["Falciparum", "AL (WHO) or quinine + clindamycin (older NCVBDC)", "ACT (AS + SP; AL in North-East)"],
+            ["Severe malaria", "IV artesunate", "IV artesunate"],
+          ],
+        },
+      ],
+      remember: [
+        "**TORCH IgM** without a reason does more harm than good.",
+        "Rubella: **cataract, PDA, deafness** - worst before 12 weeks.",
+        "Toxo: transmission **up**, severity **down** with gestation.",
+        "**No primaquine, no doxycycline** in pregnancy.",
+        "IV artesunate for severe malaria in **every trimester**.",
+        "Listeria needs **ampicillin**; cephalosporins miss it.",
+        "Treat ASB in pregnancy and do a **test of cure**.",
+      ],
+    },
+  },
+
+  "infectious-fever-fever-elderly-infections": {
+    checked: "2026-10",
+    updated: [
+      "AGS Beers Criteria 2023: avoid nitrofurantoin at creatinine clearance under 30 or for long-term use; fluoroquinolone and interaction cautions.",
+      "ACIP October 2024: pneumococcal conjugate vaccine from age 50; ACIP 2025: RSV vaccine for 75 or more and 50-74 at increased risk.",
+      "SSC 2026: NEWS2 screening, balanced crystalloids with reassessment, MAP 60-65 acceptable at 65 or older.",
+      "IDSA 2025 complicated UTI guideline: about 7 days when response is prompt, with oral step-down.",
+      "PM-JAY extended to all aged 70 or more regardless of income (October 2024).",
+      "IDSA/SHEA 2021 CDI update retained: fidaxomicin preferred; bezlotoxumab withdrawn in 2025.",
+    ],
+    master: {
+      heading: "Master revision table - Infections in older adults and long-term care",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Older adult 60 or more (India); LTCF = nursing or old-age home; infections present **atypically** with delirium, falls, anorexia."],
+        ["Burden", "India 149 million aged 60 or more (10.5%, 2022), about 20% by 2050; **ASB 25-50% of LTCF women** - main cause of needless antibiotics."],
+        ["Why atypical", "**Immunosenescence**, blunted fever, low cognitive reserve, silent aspiration, blunted WBC (look for **left shift**), hidden low GFR."],
+        ["Fever definition", "**Oral over 37.8 C once**, repeated over 37.2 C, rectal over 37.5 C, or **rise over 1.1 C** above baseline (IDSA 2008)."],
+        ["Criteria", "**Loeb minimum criteria** to start antibiotics; McGeer 2012 for surveillance; **CAM** for delirium; Clinical Frailty Scale 5 or more = frail."],
+        ["Examination", "**RR over 25**, SpO2 fall 3% or more, NEWS2 5 or more; sacrum, feet, joints, catheter, mouth; bladder and rectum for retention and impaction."],
+        ["Investigations", "CBC with differential, CRP, **creatinine clearance**, Na, glucose, cultures; **urine culture only with urinary signs**; CDI test only with 3 or more unformed stools."],
+        ["OPD treatment", "**No treatment of ASB**; cystitis nitrofurantoin (CrCl 30 or more) or fosfomycin; CAP amoxicillin 1 g TDS 5 days; zoster valaciclovir 1 g TDS 7 days."],
+        ["IPD treatment", "Ceftriaxone + azithromycin; pip-taz for MDR risk; fluids 30 mL/kg with reassessment; **MAP 60-65** acceptable."],
+        ["C. difficile", "**Fidaxomicin 200 mg BD 10 days** or vancomycin 125 mg QID; fulminant vancomycin 500 mg + IV metronidazole; soap and water."],
+        ["Drug safety", "Avoid fluoroquinolones first line; clarithromycin-statin, cotrimoxazole-ACEi/warfarin interactions; renal dosing."],
+        ["Prevention", "**Flu yearly, PCV at 50, RZV at 50, RSV at 75** (50-74 at risk); hand hygiene, oral care, minimise catheters."],
+        ["Programme", "**NPHCE** geriatric clinics; PM-JAY for all aged 70 or more; Ayushman Arogya Mandir home follow-up."],
+        ["Exam traps", "Treating a positive dipstick in delirium; alcohol rub for C. difficile; trusting a normal creatinine."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected infection in an older adult",
+        steps: [
+          { label: "Change from baseline reported by carer", detail: "Confusion, fall, poor intake, new incontinence", tone: "decision" },
+          { label: "Vitals with RR, SpO2, NEWS2; CAM for delirium", detail: "Fever = 37.8 C once or rise over 1.1 C" },
+          { label: "NEWS2 5 or more or sepsis - admit", detail: "Cultures, antibiotics in 1 h, cautious fluids", tone: "warn" },
+          { label: "Search hidden foci and non-infective causes", detail: "Drugs, retention, impaction, Na, glucose" },
+          { label: "Meets Loeb minimum criteria?", detail: "UTI needs urinary signs; ASB is not treated", tone: "decision" },
+          { label: "Treat with renal-adjusted, short course", detail: "Avoid fluoroquinolones; time-out at 48-72 h", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "C. difficile treatment ladder",
+        steps: [
+          { label: "Stop inciting antibiotic and PPI", detail: "Contact precautions; soap and water" },
+          { label: "Initial episode", detail: "Fidaxomicin 200 mg BD x 10 days or vancomycin 125 mg 6-hourly x 10 days" },
+          { label: "Fulminant", detail: "Vancomycin 500 mg 6-hourly oral/NG + IV metronidazole 500 mg 8-hourly", tone: "warn" },
+          { label: "First recurrence", detail: "Fidaxomicin or vancomycin taper-pulse" },
+          { label: "Second recurrence", detail: "Faecal microbiota transplantation", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Asymptomatic bacteriuria versus UTI in the elderly",
+        columns: ["Feature", "Asymptomatic bacteriuria", "UTI"],
+        rows: [
+          ["Urinary symptoms", "None (cloudy, smelly urine does not count)", "Dysuria, frequency, suprapubic or loin pain"],
+          ["Systemic signs", "None", "Fever, rigors, haemodynamic change"],
+          ["Delirium alone", "Look for other causes and observe", "Only with urinary or systemic signs"],
+          ["Treatment", "No antibiotic (except pregnancy, urological surgery)", "Antibiotic by Loeb criteria"],
+          ["Test of cure", "Not done", "Not done in non-pregnant adults"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Infections in older adults present **atypically**: delirium, falls, anorexia, functional decline.",
+            "Fever is **absent in 30-50%** of serious infections.",
+            "India had **149 million** people aged 60 or more in 2022.",
+            "**Asymptomatic bacteriuria** affects 25-50% of women in care homes.",
+            "Care homes harbour **resistant organisms** and C. difficile.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "**Immunosenescence** weakens T-cell and antibody responses.",
+            "A blunted **febrile response** lowers the useful fever threshold.",
+            "Cytokines on a brain with low reserve cause **delirium**.",
+            "WBC may stay normal; look for a **left shift**.",
+            "Low muscle mass hides poor GFR behind a **normal creatinine**.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "LTCF fever: **oral over 37.8 C once** or a rise over 1.1 C.",
+            "**Loeb criteria** set the minimum to start antibiotics.",
+            "**McGeer criteria** are for surveillance, not treatment.",
+            "**CAM**: acute onset, inattention, plus disorganised thinking or drowsiness.",
+            "**Clinical Frailty Scale** 5 or more means frail.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Ask the carer **what is different** from usual.",
+            "**RR over 25** is the best single sign of pneumonia.",
+            "Check sacrum, heels, feet, joints, mouth and catheter.",
+            "Exclude **urinary retention and faecal impaction** as causes of delirium.",
+            "Review drugs: sedatives and anticholinergics cause confusion.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "CBC with differential, CRP, Na, glucose and **creatinine clearance**.",
+            "Send **urine culture only** with urinary signs or unexplained sepsis.",
+            "Replace an old catheter before taking a urine sample.",
+            "Test for **C. difficile** only with 3 or more unformed stools in 24 hours.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Do not treat asymptomatic bacteriuria**, even with confusion or falls.",
+            "Cystitis: **nitrofurantoin** if CrCl 30 or more, or fosfomycin 3 g once.",
+            "CAP: **amoxicillin 1 g three times daily** for 5 days.",
+            "Zoster: **valaciclovir 1 g three times daily** for 7 days within 72 hours.",
+            "Avoid **fluoroquinolones** first line in older adults.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Admit with **NEWS2 5 or more**, hypoxia, CURB-65 2 or more, or no oral intake.",
+            "Give fluids in **small boluses** with reassessment; MAP 60-65 is acceptable.",
+            "C. difficile: **fidaxomicin** or oral vancomycin for 10 days.",
+            "Use **soap and water**, not alcohol rub, for C. difficile.",
+            "Influenza outbreak: **oseltamivir prophylaxis** for all residents for 2 weeks or more.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Delirium** predicts death, dementia progression and institutional care.",
+            "Up to a third **lose independence** during an infective admission.",
+            "C. difficile recurs in **20-25%** after a first episode.",
+            "Infection raises short-term risk of **MI and stroke**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Do an **antibiotic time-out** at 48-72 hours.",
+            "Monitor renal function, potassium, INR and delirium.",
+            "Do **not** repeat urine culture after treatment in non-pregnant adults.",
+            "Refer to **NPHCE geriatric clinic** for comprehensive assessment.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**Beers 2023**: avoid nitrofurantoin when CrCl is under 30.",
+            "**ACIP 2024**: pneumococcal vaccine from age 50.",
+            "**ACIP 2025**: RSV vaccine for 75 or more and 50-74 at risk.",
+            "**PM-JAY 2024**: cover for everyone aged 70 or more.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Elderly infection drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Nitrofurantoin MR", "100 mg orally 12-hourly", "5 days", "Avoid if CrCl under 30"],
+            ["Fosfomycin", "3 g orally once", "Single dose", "Diarrhoea"],
+            ["Amoxicillin", "1 g orally 8-hourly", "5 days", "Rash; renal dosing"],
+            ["Ceftriaxone + azithromycin", "1-2 g IV daily + 500 mg daily", "5-7 days", "QT with azithromycin"],
+            ["Fidaxomicin", "200 mg orally 12-hourly", "10 days", "Cost, availability"],
+            ["Vancomycin oral", "125 mg 6-hourly", "10 days", "IV form useless for CDI"],
+            ["Valaciclovir", "1 g orally 8-hourly", "7 days", "Neurotoxicity in CKD"],
+            ["Oseltamivir", "75 mg BD (treat) or OD (prophylaxis)", "5 days or 2 weeks or more", "Halve if CrCl 30-60"],
+          ],
+        },
+        {
+          heading: "Loeb minimum criteria for UTI",
+          columns: ["Setting", "Criteria to start antibiotics"],
+          rows: [
+            ["No catheter", "Acute dysuria alone, or fever plus urgency, frequency, suprapubic pain, haematuria, CVA tenderness or incontinence"],
+            ["With catheter", "Any one of fever, new CVA tenderness, rigors, new delirium"],
+          ],
+        },
+        {
+          heading: "Vaccines for older adults",
+          columns: ["Vaccine", "Who", "Schedule"],
+          rows: [
+            ["Influenza", "All 60 or more", "Every year"],
+            ["Pneumococcal", "All 50 or more", "PCV20/21 once, or PCV15 then PPSV23"],
+            ["Recombinant zoster", "50 or more", "2 doses, 2-6 months apart"],
+            ["RSV", "75 or more; 50-74 at risk", "Single dose"],
+          ],
+        },
+      ],
+      remember: [
+        "Elderly fever: **37.8 once or up 1.1** from baseline.",
+        "**RR over 25** - think pneumonia.",
+        "Smelly urine is **not** a UTI; do not treat ASB.",
+        "CAM: **acute, inattentive, and muddled or drowsy**.",
+        "C. difficile: **fidaxomicin**, soap and water.",
+        "Creatinine lies; **calculate clearance**.",
+        "Geriatric giants: **immobility, instability, incontinence, intellectual impairment**.",
+      ],
+    },
+  },
 };
 
 export default revision;

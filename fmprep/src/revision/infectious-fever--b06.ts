@@ -216,6 +216,412 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "infectious-fever-syphilis-detail": {
+    checked: "2026-10",
+    updated: [
+      "WHO 2024 syphilis treatment: BPG first line; procaine penicillin, ceftriaxone or doxycycline during shortages; early latent under 2 years.",
+      "CDC 2021: ocular and otic syphilis treated as neurosyphilis; azithromycin dropped as an alternative.",
+      "CDC 2024: BPG shortage guidance and doxy-PEP for high-risk MSM and transgender women.",
+      "WHO 2024 global progress report: rising adult and congenital syphilis; dual HIV/syphilis ANC testing.",
+    ],
+    master: {
+      heading: "Master revision table - Syphilis",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Chronic systemic infection by **Treponema pallidum**, sexual and vertical, staged primary-secondary-latent-tertiary; neurosyphilis at any stage."],
+        ["Burden", "About **8 million new adult cases in 2022** (WHO); high in key populations; India screens all ANC women (EVTHS)."],
+        ["Pathology", "**Obliterative endarteritis** with plasma cells; early dissemination; vasa vasorum aortitis; reagin against cardiolipin."],
+        ["Stages", "Primary 9-90 days (chancre); secondary 4-10 weeks later (palm-sole rash, condylomata lata); early latent under 1 y (CDC) / 2 y (WHO); late latent; tertiary (gumma, CVS, neuro)."],
+        ["Key signs", "Indurated painless chancre; epitrochlear nodes; **Argyll Robertson pupil**; tabes (Romberg, Charcot joint); AR murmur right sternal edge."],
+        ["Serology", "VDRL/RPR quantitative, **fourfold change significant**, falls with cure; TPHA/TPPA lifelong; prozone - dilute; BFP - SLE, APS, pregnancy, leprosy."],
+        ["CSF", "Indications: neuro/ocular/otic signs, tertiary, failure; WBC over 5, CSF-VDRL specific, CSF FTA-ABS sensitive."],
+        ["Treatment early", "**BPG 2.4 MU IM once**; allergy: doxycycline 100 mg BD 14 days."],
+        ["Treatment late", "**BPG 2.4 MU IM weekly x 3**; allergy: doxycycline 28 days."],
+        ["Neurosyphilis", "**Aqueous penicillin G 3-4 MU IV 4-hourly (18-24 MU/day) x 10-14 days**; alternative procaine + probenecid; ceftriaxone 2 g IV."],
+        ["J-H reaction", "Fever, rigors within 2-8 h, settles in 24 h; 90% of secondary; paracetamol; not allergy; watch for preterm labour."],
+        ["Pregnancy and congenital", "Penicillin only - **desensitise** if allergic; early congenital: snuffles, Wimberger, Parrot pseudoparalysis; late: **Hutchinson triad**; infant aqueous penicillin 50,000 U/kg x 10 days."],
+        ["Follow-up", "RPR 6 and 12 months (early), 6-12-24 months (latent); fourfold rise = failure/reinfection; HIV test; partners."],
+        ["Exam lines", "VDRL+ TPHA- = BFP; never BPG IV; BPG does not treat neurosyphilis; aortitis hits ascending aorta."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Serology work-up of suspected syphilis",
+        steps: [
+          { label: "Clinical suspicion or screening (ANC, STI clinic)", detail: "Chancre: dark-field or PCR first", tone: "neutral" },
+          { label: "Non-treponemal test (RPR/VDRL) with titre", detail: "Dilute serum if secondary or pregnant (prozone)", tone: "decision" },
+          { label: "Confirm with treponemal test (TPHA/TPPA)", detail: "Both reactive - syphilis; RPR+ TPHA- - false positive" },
+          { label: "Stage clinically", detail: "Early (under 1-2 y), late latent, tertiary" },
+          { label: "Neuro, ocular or otic signs?", detail: "Yes - lumbar puncture; CSF WBC over 5, CSF-VDRL", tone: "warn" },
+          { label: "Treat, test HIV, notify partners", detail: "Repeat RPR at 6 and 12 months", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Treatment by stage",
+        steps: [
+          { label: "Primary, secondary, early latent", detail: "BPG 2.4 MU IM single dose" },
+          { label: "Late latent, unknown duration, tertiary non-neuro", detail: "BPG 2.4 MU IM weekly x 3" },
+          { label: "Penicillin allergy, not pregnant", detail: "Doxycycline 100 mg BD 14 days (early) or 28 days (late)", tone: "decision" },
+          { label: "Neurosyphilis, ocular, otic", detail: "Aqueous penicillin G 18-24 MU/day IV x 10-14 days", tone: "warn" },
+          { label: "Pregnant and allergic", detail: "Desensitise, then BPG - no substitute", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Non-treponemal vs treponemal tests",
+        columns: ["Feature", "VDRL / RPR", "TPHA / TPPA / EIA"],
+        rows: [
+          ["Antigen", "Cardiolipin-lecithin-cholesterol", "T. pallidum antigens"],
+          ["Result", "Quantitative titre", "Qualitative"],
+          ["After cure", "Falls, may become negative", "Stays positive in about 85%"],
+          ["Use", "Activity, monitoring, reinfection", "Confirmation"],
+          ["Pitfalls", "Prozone, biological false positive", "Cannot tell past from active"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Syphilis** is a systemic infection by **Treponema pallidum**, spread sexually and to the fetus.",
+            "About **8 million** new adult cases occurred worldwide in 2022.",
+            "Penicillin resistance has **never** been seen in T. pallidum.",
+            "Syphilis raises **HIV** risk; every syphilis patient gets an HIV test.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Primary**: painless indurated chancre 9-90 days after exposure.",
+            "**Secondary**: palm-sole rash, condylomata lata, mucous patches, alopecia, nodes.",
+            "**Early latent** is under 1 year (CDC) or 2 years (WHO); later is late latent.",
+            "**Tertiary**: gumma, aortitis, general paresis, tabes dorsalis.",
+            "**Neurosyphilis**, ocular and otic disease can occur at any stage.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Basic lesion is **obliterative endarteritis** with plasma cells.",
+            "Spread through blood occurs within hours of infection.",
+            "Aortitis damages the **vasa vasorum** of the ascending aorta.",
+            "Reagin antibodies target **cardiolipin**, explaining false positives.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Secondary syphilis is the **great imitator**: rash, fever, sore throat, hair loss.",
+            "**Argyll Robertson pupil** accommodates but does not react to light.",
+            "**Tabes**: lightning pains, sensory ataxia, Romberg positive, Charcot joints.",
+            "General paresis is a **reversible dementia** worth testing for.",
+            "Aortitis gives aortic regurgitation and ostial angina decades later.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**VDRL/RPR**: quantitative, tracks activity; only a **fourfold change** matters.",
+            "**TPHA/TPPA**: confirms infection and stays positive for life.",
+            "**Prozone**: very high antibody gives false-negative VDRL; dilute the serum.",
+            "VDRL positive, TPHA negative means **biological false positive**.",
+            "CSF: WBC over 5, **CSF-VDRL** specific, CSF FTA-ABS sensitive.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Early syphilis: **benzathine penicillin 2.4 MU IM** once.",
+            "Late latent: **benzathine penicillin 2.4 MU IM weekly** for 3 weeks.",
+            "Allergy, not pregnant: **doxycycline 100 mg BD** for 14 or 28 days.",
+            "Observe 30 minutes with adrenaline ready; **never inject IV**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Neurosyphilis: **aqueous penicillin G 3-4 MU IV 4-hourly** for 10-14 days.",
+            "Alternative: procaine penicillin IM plus probenecid for 10-14 days.",
+            "**Jarisch-Herxheimer**: fever and rigors in hours; paracetamol; continue treatment.",
+            "J-H in late pregnancy may cause contractions; monitor but do not delay.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: **penicillin only**; desensitise if allergic.",
+            "Early congenital: snuffles, bullous rash, **Wimberger sign**, Parrot pseudoparalysis.",
+            "Late congenital: **Hutchinson triad** of teeth, keratitis and deafness.",
+            "Infant: aqueous penicillin **50,000 U/kg IV** for 10 days.",
+            "HIV: same drugs, closer serology follow-up, lower threshold for CSF.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Repeat RPR at **6 and 12 months** after early syphilis.",
+            "Latent syphilis: repeat at 6, 12 and 24 months.",
+            "A **fourfold rise** means failure or reinfection: HIV test, CSF, retreat.",
+            "**Serofast**: low stable titre after adequate treatment; do not keep retreating.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**WHO 2024**: alternatives during BPG shortage; save BPG for pregnancy.",
+            "**CDC 2021**: ocular and otic syphilis treated as neurosyphilis.",
+            "Azithromycin is no longer advised because of **macrolide resistance**.",
+            "**CDC 2024**: doxy-PEP lowers syphilis in high-risk MSM.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Syphilis drug table",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Benzathine penicillin G", "2.4 MU deep IM", "Once (early); weekly x 3 (late)", "Anaphylaxis, J-H reaction, never IV"],
+            ["Aqueous penicillin G", "3-4 MU IV 4-hourly", "10-14 days", "Neurosyphilis only; admission"],
+            ["Procaine penicillin + probenecid", "2.4 MU IM daily + 500 mg QID", "10-14 days", "Hoigne reaction"],
+            ["Doxycycline", "100 mg oral BD", "14 days early; 28 days late", "Not in pregnancy or under 8 years"],
+            ["Ceftriaxone", "1-2 g IM/IV daily", "10-14 days", "Alternative; less evidence"],
+          ],
+        },
+        {
+          heading: "Serology interpretation",
+          columns: ["VDRL/RPR", "TPHA", "Meaning"],
+          rows: [
+            ["Reactive", "Reactive", "Active or recently treated syphilis"],
+            ["Reactive (low titre)", "Non-reactive", "Biological false positive"],
+            ["Non-reactive", "Reactive", "Past treated, very early, late, or prozone"],
+            ["Non-reactive", "Non-reactive", "No syphilis or incubating"],
+          ],
+        },
+        {
+          heading: "Early vs late congenital syphilis",
+          columns: ["Feature", "Early (under 2 years)", "Late (over 2 years)"],
+          rows: [
+            ["Skin and mucosa", "Snuffles, bullous palm-sole rash", "Rhagades, saddle nose"],
+            ["Bone", "Osteochondritis, Wimberger sign, Parrot pseudoparalysis", "Sabre shins, frontal bossing"],
+            ["Teeth, eye, ear", "Not yet", "Hutchinson teeth, interstitial keratitis, VIII nerve deafness"],
+            ["Viscera", "Hepatosplenomegaly, jaundice, anaemia", "Clutton joints"],
+          ],
+        },
+      ],
+      remember: [
+        "Early **once**, late **thrice**, neuro **IV for 10-14 days**.",
+        "VDRL for **activity**; TPHA for **identity**.",
+        "Only a **fourfold** titre change is real.",
+        "Prozone: **dilute** the serum.",
+        "J-H reaction is **not allergy** - keep treating.",
+        "Hutchinson triad: **teeth, eyes, ears**.",
+        "Argyll Robertson: **accommodates, does not react**.",
+      ],
+    },
+  },
+  "infectious-fever-vaccine-preventable-adult": {
+    checked: "2026-10",
+    updated: [
+      "ACIP October 2024: pneumococcal vaccination from age 50; PCV21 added beside PCV20 and PCV15 plus PPSV23.",
+      "ACIP 2024-2025: single RSV dose at 75+, 60-74 at risk, extended in 2025 to 50-59 at risk.",
+      "WHO/ACIP 2024: switch to trivalent influenza vaccine (B/Yamagata removed).",
+      "WHO 2022 HPV position paper: single-dose option for 9-20 years; India national HPV roll-out announced 2024 (Cervavac).",
+      "ACIP 2022: universal hepatitis B for adults 19-59; RZV for immunocompromised adults 19+.",
+    ],
+    master: {
+      heading: "Master revision table - Adult vaccination",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Planned vaccination of people **19+** by age, risk condition, occupation, pregnancy and travel, complementing UIP."],
+        ["Burden", "Influenza 290,000-650,000 deaths/year; cervical cancer **1.24 lakh cases/year in India**; HBsAg 2-4%; zoster 1 in 3; adult coverage in India in single digits."],
+        ["Immunology", "Live vs inactivated; **polysaccharide = no memory**, conjugate = T-cell memory and herd effect; **AS01B** adjuvant beats immunosenescence."],
+        ["Td/Tdap", "Tdap once then Td every 10 years; 3-dose primary if unvaccinated; Tdap 27-36 weeks each pregnancy; UIP Td since 2018."],
+        ["Influenza", "Yearly; trivalent from 2024; pre-monsoon Southern Hemisphere vaccine in most of India; high-dose/adjuvanted at 65+."],
+        ["Pneumococcal", "From **50** (ACIP 2024): **PCV20 or PCV21 once**, or PCV15/PCV13 then PPSV23 after 1 year (8 weeks high risk)."],
+        ["Hepatitis B", "20 microgram IM deltoid **0, 1, 6 months**; dialysis 40 microgram 0, 1, 2, 6; anti-HBs **10 or more** = protected."],
+        ["Zoster", "**RZV 2 doses 2-6 months apart** at 50+ (19+ immunocompromised); give after past zoster."],
+        ["HPV", "9-14 y 1-2 doses; 15-26 y 3 doses; 27-45 shared decision; Cervavac in India."],
+        ["Live vaccines", "MMR, varicella, yellow fever, Ty21a, live hepatitis A - avoid in pregnancy and severe immunosuppression; two live vaccines same day or 4 weeks apart."],
+        ["Wound tetanus", "Clean: Td if last 10+ y; dirty: Td if last 5+ y; TIG 250 IU if under 3 doses/unknown with dirty wound."],
+        ["Special groups", "Pregnancy Td/Tdap + influenza; CKD double-dose HBV; asplenia MenACWY + MenB; immunosuppressed - live 4 weeks before."],
+        ["Safety", "Observe 15 min; egg allergy not a contraindication; report AEFI; deltoid not buttock."],
+        ["Latest", "ACIP 2024 pneumococcal at 50 and PCV21; RSV 50-59 at risk (2025); trivalent influenza; HPV single dose."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Adult vaccination assessment at every visit",
+        steps: [
+          { label: "Age, records, previous doses", detail: "UIP card, adult doses, past chickenpox/zoster", tone: "neutral" },
+          { label: "Risk conditions and pregnancy?", detail: "Diabetes, CKD, COPD, asplenia, HIV, steroids", tone: "decision" },
+          { label: "Severe immunosuppression or pregnancy", detail: "No live vaccines; inactivated are safe", tone: "warn" },
+          { label: "Core set", detail: "Td/Tdap, influenza, pneumococcal, hepatitis B, RZV, HPV by age" },
+          { label: "Occupation and travel", detail: "HCW: HBV + anti-HBs, MMR, varicella; travel clinic" },
+          { label: "Give, observe 15 min, record, book next dose", detail: "U-WIN record; AEFI reporting", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Pneumococcal vaccination in adults (ACIP 2024)",
+        root: "Adult 50+ or at-risk 19-49, no prior pneumococcal vaccine",
+        arms: [
+          { label: "PCV20 or PCV21 available", tone: "good", steps: ["Single dose", "Series complete"] },
+          { label: "PCV15 available", steps: ["PCV15 now", "PPSV23 after 1 year", "8 weeks if immunocompromised or CSF leak"] },
+          { label: "Only PCV13 and PPSV23 (Indian practice)", tone: "decision", steps: ["PCV13 first", "PPSV23 after 8 weeks (high risk) or 1 year"] },
+          { label: "Received PPSV23 only", tone: "warn", steps: ["Give PCV20/PCV21 at least 1 year later"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Polysaccharide vs conjugate vaccines",
+        columns: ["Feature", "Polysaccharide (PPSV23, ViPS)", "Conjugate (PCV, TCV)"],
+        rows: [
+          ["T-cell help", "No", "Yes"],
+          ["Memory and booster", "No; hyporesponsiveness", "Yes"],
+          ["Carriage and herd effect", "No", "Yes"],
+          ["Works under 2 years", "No", "Yes"],
+          ["Order in adults", "Second", "First"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Adult immunisation** protects people 19+ by age, illness, pregnancy, job and travel.",
+            "India has about **1.24 lakh cervical cancer cases** a year, almost all from HPV.",
+            "Hepatitis B carriage in India is about **2-4%**.",
+            "Adult vaccine coverage in India is very low; the doctor's advice drives uptake.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "**Live vaccines** give strong immunity but harm the fetus and immunosuppressed.",
+            "**Polysaccharide vaccines** give no memory and cause hyporesponsiveness.",
+            "**Conjugate vaccines** recruit T cells, giving memory and herd immunity.",
+            "The **AS01B adjuvant** makes RZV work in the elderly.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Live: **MMR, varicella, yellow fever, Ty21a, live hepatitis A**.",
+            "Inactivated or subunit: influenza, hepatitis B, HPV, RZV, rabies.",
+            "Two live vaccines: **same day or 4 weeks apart**.",
+            "Inactivated vaccines can be given at any interval.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Check **anti-HBs** 1-2 months after the series in HCWs and dialysis patients.",
+            "Anti-HBs **10 mIU/mL or more** means protected.",
+            "Non-responder: repeat a full series, then test HBsAg if still negative.",
+            "No serology is needed for influenza, pneumococcal, RZV or HPV.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Td/Tdap**: Tdap once, then a booster every 10 years.",
+            "**Influenza**: yearly, before the monsoon in most of India.",
+            "**Pneumococcal** from 50: PCV20 or PCV21 once, or PCV15 then PPSV23.",
+            "**Hepatitis B**: 20 microgram at 0, 1 and 6 months in the deltoid.",
+            "**RZV**: two doses 2-6 months apart from age 50.",
+            "**HPV**: catch-up to 26 years; 27-45 by shared decision.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: **Td/Tdap and inactivated influenza**; no live vaccines.",
+            "Dialysis: hepatitis B **40 microgram** at 0, 1, 2, 6 months.",
+            "Asplenia: pneumococcal, **MenACWY and MenB**, Hib, 2 weeks before splenectomy.",
+            "Immunosuppressed: live vaccines **4 weeks before** starting therapy.",
+            "HIV: MMR and varicella only if **CD4 200 or more**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Dirty wound: Td if last dose **5+ years** ago; TIG if under 3 doses.",
+            "Needle-stick in unvaccinated HCW: **HBIG plus vaccine** within 24 hours.",
+            "Anaphylaxis: **adrenaline 0.5 mg IM**; observe 15 minutes after every vaccine.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Local pain and fever after RZV are common and short-lived.",
+            "GBS after influenza vaccine is about **1-2 per million** doses.",
+            "**Egg allergy** is not a contraindication to influenza vaccine.",
+            "Report serious events as **AEFI**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ACIP 2024**: pneumococcal vaccination from 50; PCV21 added.",
+            "**ACIP 2025**: RSV vaccine for 50-59 at increased risk.",
+            "**2024**: influenza vaccines became trivalent.",
+            "**WHO 2022**: single-dose HPV option up to 20 years.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Adult vaccine drug table",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Td / Tdap", "0.5 mL IM", "Every 10 years; Tdap each pregnancy", "Local pain; Arthus if too frequent"],
+            ["Influenza (inactivated)", "0.5 mL IM", "Yearly", "Low fever; GBS precaution"],
+            ["PCV20 / PCV21", "0.5 mL IM", "Single dose", "Local pain"],
+            ["PPSV23", "0.5 mL IM", "Once, after conjugate", "Local reaction; never before PCV"],
+            ["Hepatitis B", "20 microgram IM deltoid", "0, 1, 6 months", "Never gluteal; yeast allergy"],
+            ["RZV (Shingrix)", "0.5 mL IM", "2 doses, 2-6 months apart", "Myalgia, fever for 1-3 days"],
+            ["HPV", "0.5 mL IM", "3 doses from age 15", "Syncope; avoid in pregnancy"],
+            ["MMR", "0.5 mL SC", "1-2 doses", "Live: not in pregnancy or low CD4"],
+          ],
+        },
+        {
+          heading: "Tetanus prophylaxis",
+          columns: ["Doses received", "Clean minor wound", "Dirty or major wound"],
+          rows: [
+            ["Under 3 or unknown", "Td (start series)", "Td plus TIG 250 IU"],
+            ["3+, last under 5 years", "Nothing", "Nothing"],
+            ["3+, last 5-10 years", "Nothing", "Td"],
+            ["3+, last 10+ years", "Td", "Td"],
+          ],
+        },
+        {
+          heading: "Vaccines by group",
+          columns: ["Group", "Give", "Avoid"],
+          rows: [
+            ["Pregnancy", "Td/Tdap, influenza", "Live vaccines, HPV"],
+            ["Elderly", "Influenza, pneumococcal, RZV, RSV 75+", "Yellow fever caution at 60+"],
+            ["Diabetes / CKD", "HBV, influenza, pneumococcal, RZV", "None"],
+            ["Asplenia", "Pneumococcal, MenACWY, MenB, Hib", "None"],
+            ["HCW", "HBV, influenza, MMR, varicella, Tdap", "None"],
+          ],
+        },
+      ],
+      remember: [
+        "**Conjugate first**, polysaccharide second.",
+        "Anti-HBs **10 or more** = protected.",
+        "Two live vaccines: **same day or 4 weeks** apart.",
+        "Deltoid, **never buttock**, for hepatitis B and rabies.",
+        "Live list: **MMR, VZV, YF, Ty21a, live hep A**.",
+        "**Egg allergy** does not stop influenza vaccine.",
+        "Dirty wound: booster if last dose **5+ years** ago.",
+      ],
+    },
+  },
 };
 
 export default revision;

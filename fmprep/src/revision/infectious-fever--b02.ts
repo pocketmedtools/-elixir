@@ -223,4 +223,436 @@ revision["infectious-fever-infective-endocarditis"] = {
   },
 };
 
+revision["infectious-fever-bloodstream-catheter-infections"] = {
+  checked: "2026-10",
+  updated: [
+    "SHEA/IDSA/APIC Compendium 2022: chlorhexidine bathing and chlorhexidine dressings as essential CLABSI prevention practices.",
+    "BALANCE trial 2025: 7 days non-inferior to 14 days for uncomplicated bloodstream infection.",
+    "SABATO trial 2024: early oral step-down acceptable in selected low-risk S. aureus bacteraemia.",
+    "ASHP/IDSA 2020: vancomycin dosed by AUC 400-600 rather than trough alone.",
+    "WHO Fungal Priority Pathogens List 2022: Candida auris in the critical group; echinocandin first line, contact precautions.",
+  ],
+  master: {
+    heading: "Bloodstream and catheter infections on one page",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definitions", "BSI = true pathogen in blood; CLABSI = surveillance (line over 2 days, no other source); CRBSI = line proved as source"],
+      ["Indian burden", "CLABSI about 9 per 1000 line-days (ICMR-AIIMS network); MRSA about 40% (AMRSN); Klebsiella, Acinetobacter, Candida tropicalis, C. auris"],
+      ["Pathogenesis", "Extraluminal spread early, intraluminal from hub later; biofilm explains need for removal"],
+      ["Contaminant or not", "S. aureus, Gram-negatives, Candida always true; CoNS in 1 of 2 sets usually contaminant"],
+      ["Cultures", "2-3 sets of 20 mL before antibiotics; paired catheter and peripheral sets; contamination under 3%"],
+      ["CRBSI proof", "DTP 2 hours or more; tip 15 CFU or more (roll plate) with same organism in blood"],
+      ["SAB bundle", "ID consult, repeat cultures, echo (TOE if high risk), source control, beta-lactam for MSSA, right duration"],
+      ["MSSA / MRSA", "MSSA cefazolin 2 g 8-hourly or cloxacillin 2 g 4-hourly; MRSA vancomycin AUC 400-600 or daptomycin 8-10 mg/kg"],
+      ["Duration", "Uncomplicated SAB 14 days; complicated 4-6 weeks; CoNS 5-7 days; GNB 7 days; candidaemia 14 days after clearance"],
+      ["Line removal", "Always for S. aureus, Pseudomonas, Candida, fungi, mycobacteria; tunnel infection, shock, persistent bacteraemia"],
+      ["Candidaemia", "Echinocandin, remove line, fundus exam, step down to fluconazole if susceptible; C. auris misidentified as C. haemulonii"],
+      ["Prevention", "Insertion bundle (hand hygiene, full barrier, CHG-alcohol, avoid femoral) and maintenance bundle (daily review, scrub hub, CHG bath)"],
+      ["Viva traps", "Never vancomycin for MSSA; never treat single CoNS bottle; quaternary ammonium fails against C. auris"],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "S. aureus bacteraemia bundle",
+      steps: [
+        { label: "S. aureus in any blood culture", detail: "Never a contaminant; admit", tone: "warn" },
+        { label: "Start vancomycin until susceptibility known", detail: "Loading 25-30 mg/kg", tone: "neutral" },
+        { label: "Repeat blood cultures every 24-48 hours", detail: "First negative culture starts the clock", tone: "neutral" },
+        { label: "Echo in all; TOE if high risk", detail: "Prosthesis, device, persistent bacteraemia, drug use, no source", tone: "decision" },
+        { label: "Source control within 72 hours", detail: "Remove lines, drain abscesses", tone: "neutral" },
+        { label: "MSSA: switch to cefazolin or cloxacillin", detail: "MRSA: vancomycin AUC 400-600 or daptomycin", tone: "good" },
+        { label: "Duration by category", detail: "Uncomplicated 14 days; complicated 4-6 weeks", tone: "good" },
+      ],
+    },
+    {
+      kind: "branch",
+      heading: "Suspected CRBSI: keep or remove the line",
+      root: "Fever with a central line and positive paired cultures (DTP 2 hours or more)",
+      arms: [
+        { label: "Remove the line", tone: "warn", steps: ["S. aureus, Pseudomonas, Candida, fungi, mycobacteria", "Septic shock, tunnel or pocket infection", "Endocarditis or thrombophlebitis", "Bacteraemia beyond 72 hours", "Any short-term catheter"] },
+        { label: "Salvage may be tried", tone: "decision", steps: ["Long-term tunnelled line or port", "CoNS, enterococci or non-Pseudomonas GNB", "Stable patient, cultures clearing", "Antibiotic lock plus systemic therapy 10-14 days"] },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Uncomplicated versus complicated SAB",
+      columns: ["Feature", "Uncomplicated", "Complicated"],
+      rows: [
+        ["Endocarditis", "Excluded", "Present or not excluded"],
+        ["Prosthesis", "None", "Present"],
+        ["Repeat cultures", "Negative by 2-4 days", "Positive after 72 hours"],
+        ["Fever", "Settles in 72 hours", "Persists"],
+        ["Metastatic focus", "None", "Spine, joint, abscess"],
+        ["Duration", "14 days IV", "4-6 weeks"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "**Bloodstream infection** is a true pathogen in blood with a compatible illness.",
+          "**CLABSI** is a surveillance label: line in place over 2 days, no other source.",
+          "**CRBSI** is the clinical diagnosis proving the catheter is the source.",
+          "SAB has a **30-day mortality of 20-30%**.",
+          "Indian ICUs report **CLABSI about 9 per 1000 line-days** and MRSA in about 40%.",
+        ],
+      },
+      {
+        title: "Causes and pathophysiology",
+        points: [
+          "Line organisms: **CoNS, S. aureus, Gram-negatives, enterococci and Candida**.",
+          "Early lines are colonised from **skin**; long-term lines from the **hub**.",
+          "**Biofilm** shields organisms, so most infected lines must come out.",
+          "**mecA** makes PBP2a, so MRSA resists almost all beta-lactams.",
+          "**C. auris** is fluconazole-resistant and spreads on skin and surfaces.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "**Rigors during line flushing or dialysis** suggest CRBSI.",
+          "Exit-site signs are **absent in most CRBSI**.",
+          "SAB may present as **back pain, septic joint or new murmur**.",
+          "Candidaemia can cause **endophthalmitis**; examine the fundus.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "Take **2-3 sets of 20 mL** before antibiotics.",
+          "**DTP of 2 hours or more** (catheter first) means CRBSI.",
+          "Tip culture of **15 CFU or more** with matching blood culture confirms CRBSI.",
+          "In SAB, **repeat cultures every 24-48 hours** until negative.",
+          "**Echo in every SAB**; TOE if prosthesis, device or persistent bacteraemia.",
+          "Report of **C. haemulonii** should prompt MALDI-TOF for C. auris.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "MSSA: **cefazolin 2 g IV 8-hourly** or **cloxacillin 2 g IV 4-hourly**.",
+          "MRSA: **vancomycin to AUC 400-600** or daptomycin 8-10 mg/kg daily.",
+          "Uncomplicated SAB: **at least 14 days** from first negative culture.",
+          "Complicated SAB: **4-6 weeks**.",
+          "Candidaemia: **echinocandin**, remove line, 14 days after clearance.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "**Remove the line** for S. aureus, Pseudomonas and Candida.",
+          "CoNS in a long-term line: **lock plus systemic therapy 10-14 days**.",
+          "Uncomplicated Gram-negative BSI: **7 days** is enough (BALANCE).",
+          "No benefit from **adding rifampicin** in SAB (ARREST).",
+          "Step down to **fluconazole** only for a susceptible, cleared isolate.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "Dialysis lines: **S. aureus, Pseudomonas and Candida** still need removal.",
+          "Neonatal candidaemia: do **lumbar puncture and eye examination**.",
+          "Prosthesis plus SAB is **complicated by definition**.",
+          "Elderly and diabetics: look daily for **spine and joint** seeding.",
+        ],
+      },
+      {
+        title: "Complications and red flags",
+        points: [
+          "SAB seeds **endocarditis in 10-15%** and metastatic foci in up to a third.",
+          "**Persistent bacteraemia** beyond 72 hours means IE, thrombophlebitis or undrained pus.",
+          "Back pain with SAB needs **urgent MRI** for epidural abscess.",
+          "Candidaemia mortality is **30-40%**.",
+        ],
+      },
+      {
+        title: "Referral and follow-up",
+        points: [
+          "Monitor **vancomycin AUC and creatinine** twice weekly.",
+          "Check **CPK weekly** on daptomycin.",
+          "Follow up SAB at **4 and 12 weeks** for relapse.",
+          "CLABSI bundle: **full barrier, chlorhexidine-alcohol, avoid femoral, daily review**.",
+          "C. auris: **contact precautions** and chlorine or peroxide cleaning.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**SHEA/IDSA/APIC 2022**: chlorhexidine bathing and dressings are essential CLABSI practices.",
+          "**BALANCE 2025**: 7 days non-inferior to 14 days for bloodstream infection.",
+          "**SABATO 2024**: early oral switch possible in low-risk SAB.",
+          "**AUC-guided vancomycin** replaced trough-only dosing (2020).",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs for bloodstream infections",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Cefazolin", "2 g IV 8-hourly", "14 days to 6 weeks", "Rash, C. difficile"],
+          ["Cloxacillin", "2 g IV 4-hourly", "14 days to 6 weeks", "Phlebitis, cholestasis, neutropenia"],
+          ["Vancomycin", "25-30 mg/kg load, then 15-20 mg/kg 8-12-hourly", "By AUC 400-600", "AKI, infusion reaction"],
+          ["Teicoplanin", "6-12 mg/kg 12-hourly x 3, then daily", "As vancomycin", "Rash, thrombocytopenia"],
+          ["Daptomycin", "8-10 mg/kg IV daily", "14 days to 6 weeks", "Myopathy; not for pneumonia"],
+          ["Caspofungin", "70 mg load, then 50 mg IV daily", "14 days after clearance", "Mild hepatotoxicity"],
+          ["Fluconazole", "800 mg load, then 400 mg daily", "Step-down only", "QT, hepatotoxicity; most C. auris resistant"],
+        ],
+      },
+      {
+        heading: "Diagnosing CRBSI",
+        columns: ["Test", "Positive result"],
+        rows: [
+          ["Differential time to positivity", "Catheter set positive 2 hours or more before peripheral"],
+          ["Roll-plate tip culture", "15 CFU or more plus same organism in blood"],
+          ["Quantitative tip culture", "More than 10^2 CFU"],
+          ["Paired quantitative cultures", "Catheter count 3 times peripheral or more"],
+        ],
+      },
+      {
+        heading: "Line management by organism",
+        columns: ["Organism", "Line", "Duration"],
+        rows: [
+          ["CoNS", "Remove, or salvage long-term line with lock", "5-7 days removed; 10-14 days retained"],
+          ["S. aureus", "Remove", "14 days to 6 weeks"],
+          ["Enterococcus / GNB", "Remove short-term; salvage possible long-term", "7-14 days"],
+          ["Pseudomonas", "Remove", "7-14 days"],
+          ["Candida", "Remove", "14 days after clearance"],
+        ],
+      },
+    ],
+    remember: [
+      "**S. aureus in blood is never a contaminant.**",
+      "**MSSA gets a beta-lactam, not vancomycin.**",
+      "**DTP 2 hours** and **15 CFU** are the CRBSI numbers.",
+      "Lines out for **SPC**: S. aureus, Pseudomonas, Candida.",
+      "Clock starts at the **first negative culture**.",
+      "**C. auris**: wrong ID, wrong azole, wrong disinfectant.",
+    ],
+  },
+};
+
+revision["infectious-fever-mdr-gram-negative"] = {
+  checked: "2026-10",
+  updated: [
+    "IDSA AMR Guidance 2024: sulbactam-durlobactam preferred for CRAB; combination therapy for moderate-severe CRAB.",
+    "IDSA AMR Guidance 2024: ceftazidime-avibactam plus aztreonam or cefiderocol for MBL (NDM) CRE; carbapenem for ESBL-E outside the urinary tract; cefepime for AmpC-E if MIC 2 or less.",
+    "WHO Bacterial Priority Pathogens List 2024: CRAB and CRE critical; carbapenem-resistant Pseudomonas moved to high.",
+    "WHO AWaRe 2023: ceftazidime-avibactam, cefiderocol and polymyxins classed as Reserve.",
+    "Aztreonam-avibactam approved in Europe (2024) and USA (2025).",
+    "BLING III 2024: supports prolonged beta-lactam infusion in critical illness.",
+  ],
+  master: {
+    heading: "MDR Gram-negative infections on one page",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definitions", "MDR = resistant to 3 or more classes; XDR = susceptible to 1-2 classes; PDR = none; DTR-Pseudomonas = all first-line beta-lactams and quinolones"],
+      ["Indian burden", "Over half of K. pneumoniae and 85-90% of A. baumannii carbapenem-resistant (ICMR AMRSN); NDM and OXA-48-like dominate"],
+      ["Mechanisms", "ESBL (CTX-M), inducible AmpC, carbapenemases A (KPC), B (NDM, VIM, IMP), D (OXA-48, OXA-23); porins, efflux, mcr"],
+      ["Risk factors", "Prior antibiotics, ICU, devices, long stay, transfers, colonisation"],
+      ["Lab", "mCIM/eCIM, lateral flow, Xpert Carba-R, synergy test, colistin by broth microdilution, rectal screening"],
+      ["ESBL-E", "Carbapenem for serious infection (MERINO); not pip-tazo; nitrofurantoin/fosfomycin/TMP-SMX for cystitis; no ertapenem in shock"],
+      ["AmpC-E", "Cefepime if MIC 2 or less; avoid ceftriaxone except cystitis"],
+      ["CRE", "KPC: ceftazidime-avibactam; NDM: ceftazidime-avibactam + aztreonam or cefiderocol; OXA-48: ceftazidime-avibactam"],
+      ["CRAB", "Sulbactam-durlobactam + imipenem, or high-dose sulbactam + second agent (polymyxin B, minocycline, tigecycline, cefiderocol)"],
+      ["DTR-Pseudomonas", "Ceftolozane-tazobactam, ceftazidime-avibactam, imipenem-relebactam; cefiderocol for MBL"],
+      ["Polymyxins", "Polymyxin B for blood, colistin for urine; loading doses; nephrotoxicity 30-60%"],
+      ["ICU principles", "Source control, loading doses, extended infusion, de-escalate at 48-72 hours, 7-day courses, reserve-drug authorisation"],
+      ["Infection control", "Hand hygiene, contact precautions, cohorting, active surveillance, environmental cleaning, stewardship"],
+      ["Viva traps", "Treating colonisation; tigecycline for bacteraemia; ceftazidime-avibactam alone for NDM"],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Carbapenem-resistant Enterobacterales: choosing the drug",
+      steps: [
+        { label: "CRE isolate from a sterile site", detail: "Confirm infection, not colonisation", tone: "neutral" },
+        { label: "Identify the carbapenemase", detail: "Lateral flow, Xpert Carba-R, or mCIM/eCIM", tone: "decision" },
+        { label: "KPC", detail: "Ceftazidime-avibactam, meropenem-vaborbactam or imipenem-relebactam", tone: "good" },
+        { label: "OXA-48-like", detail: "Ceftazidime-avibactam 2.5 g IV 8-hourly", tone: "good" },
+        { label: "NDM or other MBL (commonest in India)", detail: "Ceftazidime-avibactam + aztreonam 2 g together, or cefiderocol", tone: "warn" },
+        { label: "No newer agent available", detail: "Polymyxin B (blood) or colistin (urine) plus a second active drug", tone: "decision" },
+      ],
+    },
+    {
+      kind: "ladder",
+      heading: "Escalation ladder by resistance",
+      steps: [
+        { label: "Susceptible Enterobacterales", detail: "Ceftriaxone or narrow agent per susceptibility", tone: "good" },
+        { label: "AmpC-E", detail: "Cefepime 2 g 8-hourly if MIC 2 or less", tone: "neutral" },
+        { label: "ESBL-E", detail: "Meropenem 1 g 8-hourly or ertapenem 1 g daily", tone: "neutral" },
+        { label: "CRE (KPC / OXA-48)", detail: "Ceftazidime-avibactam", tone: "decision" },
+        { label: "CRE (NDM)", detail: "Ceftazidime-avibactam + aztreonam, or cefiderocol", tone: "warn" },
+        { label: "Pan-resistant", detail: "Polymyxin-based combination, ID input, synergy testing", tone: "warn" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Colistin versus polymyxin B",
+      columns: ["Feature", "Colistin", "Polymyxin B"],
+      rows: [
+        ["Form given", "Prodrug (colistimethate)", "Active drug"],
+        ["Clearance", "Renal", "Non-renal"],
+        ["Urine levels", "High", "Low"],
+        ["Renal dose change", "Yes", "No"],
+        ["Best use", "Lower UTI", "Bloodstream and systemic infection"],
+        ["Nephrotoxicity", "Higher", "Lower"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "**MDR** means resistance to 3 or more antibiotic classes.",
+          "**DTR-Pseudomonas** resists all first-line beta-lactams and fluoroquinolones.",
+          "WHO 2024 lists **CRAB and CRE as critical** priority pathogens.",
+          "In India, over half of **K. pneumoniae** and most **A. baumannii** are carbapenem-resistant.",
+          "**NDM and OXA-48-like** are the dominant Indian carbapenemases.",
+        ],
+      },
+      {
+        title: "Causes and risk factors",
+        points: [
+          "**Prior antibiotics** are the strongest risk factor.",
+          "ICU stay, **ventilation, lines and catheters** add risk.",
+          "Acinetobacter survives **weeks on dry surfaces**.",
+          "Community spread comes from **over-the-counter antibiotics** and sewage.",
+        ],
+      },
+      {
+        title: "Pathophysiology",
+        points: [
+          "**ESBLs** destroy cephalosporins but spare carbapenems.",
+          "**AmpC** is inducible in Enterobacter, K. aerogenes and Citrobacter.",
+          "**MBLs (NDM)** destroy all beta-lactams except aztreonam.",
+          "**Avibactam** protects aztreonam from co-produced ESBL and AmpC.",
+          "**Cefiderocol** enters through bacterial iron channels.",
+          "Genes spread on **plasmids** between species.",
+        ],
+      },
+      {
+        title: "Clinical features",
+        points: [
+          "MDR GNB cause **UTI, VAP, bloodstream and wound infection**.",
+          "Suspect them when **empirical therapy fails** at 48-72 hours.",
+          "**Colonisation is not infection**; do not treat tracheal or catheter growth alone.",
+          "Always search for an **undrained focus** first.",
+        ],
+      },
+      {
+        title: "Investigations",
+        points: [
+          "Send cultures with **MIC values** before changing drugs.",
+          "**mCIM** detects carbapenemase; **eCIM** identifies MBL.",
+          "**Lateral-flow tests** name KPC, OXA-48 or NDM within 15 minutes.",
+          "Test colistin by **broth microdilution** only.",
+          "**Rectal swabs** screen ICU patients for CRE carriage.",
+        ],
+      },
+      {
+        title: "Treatment - first line",
+        points: [
+          "ESBL bacteraemia: **meropenem**, not piperacillin-tazobactam (MERINO).",
+          "ESBL cystitis: **nitrofurantoin, fosfomycin or TMP-SMX**.",
+          "AmpC-E: **cefepime** if MIC 2 or less.",
+          "KPC or OXA-48 CRE: **ceftazidime-avibactam**.",
+          "NDM CRE: **ceftazidime-avibactam plus aztreonam**, or cefiderocol.",
+        ],
+      },
+      {
+        title: "Treatment - next steps",
+        points: [
+          "CRAB: **sulbactam-durlobactam**, or high-dose sulbactam plus a second drug.",
+          "DTR-Pseudomonas: **ceftolozane-tazobactam** or ceftazidime-avibactam.",
+          "**Polymyxin B for blood**, colistin for urine.",
+          "Give **loading doses** and extended beta-lactam infusions.",
+          "**De-escalate at 48-72 hours**; 7 days for most infections.",
+          "Never use **tigecycline alone** for bacteraemia or UTI.",
+        ],
+      },
+      {
+        title: "Special groups",
+        points: [
+          "Critically ill or low albumin: use **meropenem, not ertapenem**.",
+          "CKD: adjust colistin; **polymyxin B needs no renal change**.",
+          "Pregnancy: **meropenem** usable; avoid aminoglycosides where possible.",
+          "Neonates: MDR **Klebsiella and Acinetobacter** drive NICU sepsis.",
+        ],
+      },
+      {
+        title: "Complications and infection control",
+        points: [
+          "Polymyxin **nephrotoxicity** affects 30-60%.",
+          "MDR infection roughly **doubles mortality**.",
+          "**Contact precautions**, cohorting and hand hygiene stop spread.",
+          "Stewardship **pre-authorises Reserve** antibiotics.",
+          "Report clusters to the **infection control team** the same day.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**IDSA 2024**: sulbactam-durlobactam preferred for CRAB.",
+          "**IDSA 2024**: carbapenem for ESBL; cefepime for AmpC-E.",
+          "**WHO BPPL 2024** moved carbapenem-resistant Pseudomonas to high priority.",
+          "**Aztreonam-avibactam** approved in Europe 2024 and USA 2025.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs for MDR Gram-negative infections",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["Meropenem", "1 g IV 8-hourly; 2 g over 3 hours if severe", "7 days typical", "Seizures, C. difficile; lowers valproate"],
+          ["Ertapenem", "1 g IV daily", "Non-critical ESBL", "Not in shock or low albumin"],
+          ["Cefepime", "2 g IV 8-hourly", "AmpC-E", "Encephalopathy in renal failure"],
+          ["Ceftazidime-avibactam", "2.5 g IV 8-hourly over 2 hours", "KPC, OXA-48; with aztreonam for NDM", "Renal adjustment"],
+          ["Aztreonam", "2 g IV 8-hourly with ceftazidime-avibactam", "NDM CRE", "Never alone for NDM"],
+          ["Cefiderocol", "2 g IV 8-hourly over 3 hours", "MBL CRE, DTR-Pseudomonas", "Costly; renal adjustment"],
+          ["Polymyxin B", "2-2.5 mg/kg load, then 1.25-1.5 mg/kg 12-hourly", "Systemic infection", "Nephro- and neurotoxicity, pigmentation"],
+          ["Colistin", "9 MIU load, then 4.5 MIU 12-hourly", "Lower UTI", "Nephrotoxicity 30-60%"],
+        ],
+      },
+      {
+        heading: "Enzyme and drug of choice",
+        columns: ["Enzyme", "Organisms", "Drug of choice"],
+        rows: [
+          ["ESBL", "E. coli, K. pneumoniae", "Carbapenem"],
+          ["AmpC", "Enterobacter, K. aerogenes, Citrobacter", "Cefepime"],
+          ["KPC", "K. pneumoniae", "Ceftazidime-avibactam"],
+          ["NDM (MBL)", "K. pneumoniae, E. coli", "Ceftazidime-avibactam + aztreonam, or cefiderocol"],
+          ["OXA-48-like", "K. pneumoniae", "Ceftazidime-avibactam"],
+          ["OXA-23", "A. baumannii", "Sulbactam-durlobactam or sulbactam combination"],
+        ],
+      },
+      {
+        heading: "Colonisation versus infection",
+        columns: ["Sample", "Colonisation", "Infection"],
+        rows: [
+          ["Tracheal aspirate", "Growth only, stable patient", "New infiltrate, fever, worse oxygenation"],
+          ["Catheter urine", "No symptoms", "Fever or flank pain, no other source"],
+          ["Wound swab", "Clean wound", "Pus, cellulitis, breakdown"],
+          ["Rectal swab", "CRE carriage", "Never treated"],
+        ],
+      },
+    ],
+    remember: [
+      "**MERINO**: meropenem over piperacillin-tazobactam for ESBL bacteraemia.",
+      "**NDM: add aztreonam** - MBLs spare it, avibactam protects it.",
+      "**SPICE/HECK-Yes**: inducible AmpC, use cefepime.",
+      "**Colistin for urine, polymyxin B for blood.**",
+      "**Ertapenem not in shock**; no Pseudomonas cover.",
+      "**Tigecycline never alone** in bacteraemia.",
+      "Ambler: **A KPC, B NDM, C AmpC, D OXA**.",
+    ],
+  },
+};
+
 export default revision;

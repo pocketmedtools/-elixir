@@ -212,6 +212,421 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "infectious-fever-mucormycosis": {
+    checked: "2026-10",
+    updated: [
+      "ECMM/MSG ERC global mucormycosis guideline 2019 (current): liposomal amphotericin 5-10 mg/kg/day, early surgery, isavuconazole/posaconazole alternatives and step-down.",
+      "ICMR/MoHFW 2021 advisories on COVID-associated mucormycosis and steroid stewardship.",
+      "Honavar 2021 ROCM staging (stage 1-4 with sub-stages a-d) adopted.",
+      "EORTC/MSGERC 2020 definitions; WHO FPPL 2022 lists Mucorales as high priority.",
+    ],
+    master: {
+      heading: "Master revision table - Mucormycosis",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Acute **angioinvasive** infection by **Mucorales** (Rhizopus, Mucor, Lichtheimia, Apophysomyces) causing thrombosis and **black necrosis**."],
+        ["Indian burden", "About **14 per 100,000** - 70-80 times global; **CAM epidemic 2021** (over 45,000 cases); ROCM two-thirds; **Rhizopus arrhizus** commonest; isolated renal form unique to India."],
+        ["Risk factors", "**Uncontrolled diabetes/DKA (over 70%)**, steroids, COVID-19, neutropenia, transplant, deferoxamine, trauma/burns."],
+        ["Pathophysiology", "Acidosis frees iron; hyperglycaemia up-regulates **GRP78/CotH**; angioinvasion, infarction; spread nose - sinus - orbit - cavernous sinus - brain."],
+        ["Staging (Honavar 2021)", "**1 nasal, 2 sinus (2c palate), 3 orbit (3c vision loss), 4 CNS** - each a-d."],
+        ["Clinical features", "Unilateral facial pain/numbness, black nasal discharge, toothache, palatal eschar, periorbital swelling, diplopia, vision loss, altered sensorium."],
+        ["Investigations", "Tissue **KOH/calcofluor** - broad aseptate ribbons, right-angle branching; histology for angioinvasion; culture 50%; **contrast MRI - black turbinate**; CT chest reverse halo; GM/BDG negative."],
+        ["Antifungal", "**Liposomal amphotericin B 5 mg/kg/day (10 if CNS)**; alternatives isavuconazole or posaconazole; deoxycholate 1-1.5 mg/kg only if no lipid form."],
+        ["Surgery", "**Early, repeated debridement**; FESS, maxillectomy; exenteration for blind frozen orbit; TRAMB for selected stage 3a-3b."],
+        ["Risk reversal", "Insulin for DKA, glucose 140-180 mg/dL, taper steroids, stop deferoxamine, G-CSF in neutropenia."],
+        ["Step-down and duration", "**Posaconazole DR 300 mg daily** (trough over 1) or **isavuconazole 200 mg daily**; total 3-6 months till resolution and immune recovery."],
+        ["Monitoring", "Creatinine, K, Mg daily in week 1 then twice weekly; saline preload; MRI and endoscopy at 2-4 weeks."],
+        ["Prognosis", "Mortality ROCM 30-50%, pulmonary 50-70%, disseminated over 90%; delayed amphotericin doubles mortality."],
+        ["Prevention", "Glycaemic control during steroids, steroid stewardship (dexamethasone 6 mg only in hypoxic COVID), clean humidifier water, early referral."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected rhino-orbito-cerebral mucormycosis",
+        steps: [
+          { label: "Diabetic or post-steroid patient with facial or eye symptoms", detail: "Facial pain, black discharge, toothache, eyelid swelling, diplopia", tone: "decision" },
+          { label: "Check glucose and ketones; refer same day", detail: "Start insulin and fluids if DKA", tone: "warn" },
+          { label: "Nasal endoscopy and tissue biopsy", detail: "KOH/calcofluor, histology, culture - not a swab" },
+          { label: "Contrast MRI sinus, orbit and brain", detail: "Black turbinate sign; stage by Honavar 1-4" },
+          { label: "Start liposomal amphotericin on suspicion", detail: "5 mg/kg/day; 10 mg/kg/day if CNS", tone: "warn" },
+          { label: "Urgent surgical debridement", detail: "Repeat as needed; exenteration for blind frozen orbit" },
+          { label: "Stable and improving: oral step-down", detail: "Posaconazole 300 mg or isavuconazole 200 mg daily, 3-6 months", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "The three pillars of mucormycosis treatment",
+        root: "Mucormycosis confirmed or strongly suspected",
+        arms: [
+          { label: "Antifungal", tone: "warn", steps: ["Liposomal amphotericin 5-10 mg/kg/day", "Isavuconazole or posaconazole if amphotericin not possible", "Oral step-down for months"] },
+          { label: "Surgery", tone: "decision", steps: ["Early debridement of all necrosis", "Repeat endoscopic clearance", "Exenteration for blind, frozen orbit"] },
+          { label: "Reverse the risk", tone: "good", steps: ["Correct DKA, glucose 140-180", "Taper steroids, stop deferoxamine", "Recover neutrophils"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Mucor versus Aspergillus",
+        columns: ["Feature", "Mucormycosis", "Aspergillosis"],
+        rows: [
+          ["Host in India", "DKA, steroids, COVID", "Neutropenia, transplant, post-TB cavity"],
+          ["Hyphae", "Broad, aseptate, right-angle branching", "Narrow, septate, 45 degree branching"],
+          ["Galactomannan", "Negative", "Positive"],
+          ["CT chest", "Reverse halo", "Halo, air-crescent"],
+          ["Voriconazole", "Inactive", "First line"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Mucormycosis** is angioinvasive infection by Mucorales causing thrombosis and black necrosis.",
+            "India has about **70-80 times** the global rate, about 14 per 100,000.",
+            "The **2021 CAM epidemic** followed steroid use in COVID-19 among diabetics.",
+            "**Rhizopus arrhizus** is the commonest species; ROCM is two-thirds of cases.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Uncontrolled diabetes and DKA** cause over 70% of Indian cases.",
+            "**Steroids**, COVID-19, tocilizumab, neutropenia and transplant add risk.",
+            "**Deferoxamine** acts as a siderophore for Rhizopus.",
+            "Trauma and burns cause cutaneous disease, often Apophysomyces in healthy people.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Acidosis frees **iron** from transferrin, feeding the fungus.",
+            "Hyperglycaemia up-regulates endothelial **GRP78** and fungal CotH, aiding invasion.",
+            "Vessel thrombosis causes **infarction**, so drugs cannot reach dead tissue.",
+            "Spread runs nose, sinus, orbit, **cavernous sinus**, brain.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Forms: rhino-orbito-cerebral, pulmonary, cutaneous, GI, renal, disseminated.",
+            "**Honavar 2021**: stage 1 nose, 2 sinuses, 3 orbit, 4 CNS.",
+            "**2c** includes palate; **3c** means vision loss or orbital apex; **4b** cavernous sinus thrombosis.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Unilateral **facial pain or numbness** and black nasal discharge appear first.",
+            "**Palatal eschar** and loose teeth mean sinus and oral spread.",
+            "Proptosis, ptosis, ophthalmoplegia and **sudden blindness** mean orbital apex disease.",
+            "Drowsiness or hemiparesis means **brain or carotid** involvement.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "**Tissue KOH/calcofluor**: broad aseptate ribbon hyphae with right-angle branching.",
+            "**Histology** shows angioinvasion; culture is positive in only half.",
+            "**Contrast MRI**: black turbinate sign; stages orbit and brain.",
+            "**Galactomannan and beta-D-glucan are negative**.",
+            "Check glucose, ketones, ABG, creatinine, potassium and magnesium.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Liposomal amphotericin 5 mg/kg/day**, 10 mg/kg/day if brain involved.",
+            "**Early, repeated surgical debridement** of all dead tissue.",
+            "Correct **DKA**, keep glucose 140-180 mg/dL, taper steroids.",
+            "Never use **voriconazole**: Mucorales are resistant.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Step down to **posaconazole 300 mg daily** or **isavuconazole 200 mg daily** when stable.",
+            "Total course is usually **3-6 months**, until imaging and immunity recover.",
+            "Exenteration for a blind, frozen orbit; **TRAMB** for selected stage 3.",
+            "Monitor creatinine, **potassium and magnesium** on amphotericin.",
+            "**Deferasirox** is not recommended; it raised mortality.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: liposomal amphotericin; avoid posaconazole and isavuconazole.",
+            "Transplant: azoles raise **tacrolimus**; isavuconazole least nephrotoxic.",
+            "Neonates: GI mucormycosis mimics necrotising enterocolitis.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Mortality: ROCM **30-50%**, pulmonary 50-70%, disseminated over 90%.",
+            "Delay in amphotericin of about 6 days **doubles mortality**.",
+            "Sequelae: blindness, exenteration, maxillectomy defects, stroke, depression.",
+            "Prevent with **steroid stewardship** and glucose monitoring during steroid therapy.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for mucormycosis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Liposomal amphotericin B", "5 mg/kg/day IV; 10 mg/kg/day for CNS", "3-6 weeks IV, then oral", "Nephrotoxicity, low K and Mg; saline preload"],
+            ["Amphotericin deoxycholate", "1-1.5 mg/kg/day IV", "Only if lipid form unavailable", "Severe nephrotoxicity, rigors"],
+            ["Isavuconazole", "200 mg 8-hourly x6, then 200 mg daily", "Months, till resolution", "Shortens QT; CYP3A4 interactions"],
+            ["Posaconazole DR tablet", "300 mg 12-hourly day 1, then 300 mg daily", "Months; trough over 1 mg/L", "Hepatitis, QT prolongation, raises tacrolimus"],
+            ["Insulin", "IV infusion in DKA, then basal-bolus", "Throughout", "Hypoglycaemia, hypokalaemia"],
+          ],
+        },
+        {
+          heading: "Honavar staging",
+          columns: ["Stage", "Site", "Key sub-stage"],
+          rows: [
+            ["1", "Nasal mucosa", "1d bilateral"],
+            ["2", "Paranasal sinuses", "2c palate or oral cavity"],
+            ["3", "Orbit", "3c vision loss, orbital apex, CRAO"],
+            ["4", "CNS", "4b cavernous sinus thrombosis; 4c ICA occlusion"],
+          ],
+        },
+        {
+          heading: "Differential diagnosis",
+          columns: ["Condition", "Clue", "Discriminator"],
+          rows: [
+            ["Invasive aspergillosis", "Neutropenia, slower course", "Septate narrow hyphae, galactomannan positive"],
+            ["Bacterial orbital cellulitis", "Fever, red swollen orbit", "No necrosis, responds to antibiotics"],
+            ["Midline lymphoma or GPA", "Destructive nasal lesion", "Biopsy, ANCA, immunohistochemistry"],
+            ["Ecthyma gangrenosum", "Black skin lesion in neutropenia", "Pseudomonas culture"],
+          ],
+        },
+      ],
+      remember: [
+        "**Three pillars**: amphotericin, surgery, reverse the risk.",
+        "Mucor hyphae are **broad, aseptate, right-angled**.",
+        "**Voriconazole and echinocandins fail** against Mucorales.",
+        "**Black turbinate** on MRI; **reverse halo** on CT chest.",
+        "DKA: acid frees **iron**, glucose up-regulates **GRP78**.",
+        "Honavar: **nose, sinus, orbit, brain** - 1 to 4.",
+        "Galactomannan negative mould in a diabetic: **think mucor**.",
+      ],
+    },
+  },
+
+  "infectious-fever-opportunistic-infections-hiv": {
+    checked: "2026-10",
+    updated: [
+      "NACO National Guidelines for HIV Care and Treatment 2021: TLD first line, CPT at CD4 350 or less, AHD package, viral load monitoring.",
+      "WHO 2021 consolidated guidelines: rapid ART, ART within 2 weeks of TB treatment, advanced HIV disease package.",
+      "WHO 2022 cryptococcal guideline: CrAg screening at CD4 under 100; single high-dose L-AmB; ART at 4-6 weeks.",
+      "NTEP TPT guidelines 2021: 3HP and 1HP for PLHIV.",
+      "DHHS/NIH/IDSA OI guidelines (living, 2024): no routine MAC prophylaxis if ART started immediately.",
+    ],
+    master: {
+      heading: "Master revision table - Opportunistic infections in HIV",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Infection causing disease (or severe disease) because of **CD4 depletion**; AIDS-defining OIs = WHO stage 4."],
+        ["AHD", "**CD4 under 200 or WHO stage 3-4**, or any child under 5 - highest OI mortality."],
+        ["Indian burden", "About **25 lakh PLHIV**, adult prevalence 0.2%; **TB is the commonest OI** and top killer; one-third present with CD4 under 200."],
+        ["CD4 ladder", "Any - TB, zoster; **under 200 - PCP**, candida oesophagitis; **under 100 - toxo, crypto**, PML; **under 50 - CMV, MAC**, CNS lymphoma."],
+        ["Pathophysiology", "CD4 loss - no IFN-gamma macrophage activation - reactivation of latent TB, toxo, CMV, JC virus; IRIS = recovering immunity attacking antigen."],
+        ["Screening", "Baseline CD4, VL, CBC, LFT, HBsAg, HCV, VDRL, CXR; **CrAg (CD4 under 100)**, **TB-LAM**, toxo IgG, fundoscopy (CD4 under 100)."],
+        ["Prophylaxis", "**Cotrimoxazole 960 mg daily** at CD4 350 or less; **TPT 3HP/6H**; CrAg pre-emptive fluconazole; vaccines; no live vaccines under 200."],
+        ["PCP", "TMP 15-20 mg/kg/day x **21 days**; **prednisolone if PaO2 under 70** (40 BD x5, 40 OD x5, 20 OD x11)."],
+        ["Toxoplasmosis", "Pyrimethamine + sulfadiazine + folinic acid x 6 weeks, or **cotrimoxazole 5 mg/kg TMP BD**; response in 7-14 days, else biopsy."],
+        ["CMV and others", "**Valganciclovir 900 mg BD** x 14-21 days then OD + intravitreal ganciclovir; candida oesophagitis fluconazole 200-400 mg x 14-21 days; MAC clarithromycin + ethambutol."],
+        ["TB-HIV", "Standard ATT; **ART within 2 weeks** (TBM 4-8 weeks); **DTG 50 mg BD with rifampicin**."],
+        ["ART timing", "Most OIs within 2 weeks; **cryptococcal 4-6 weeks**; crypto/PML/Kaposi - ART is the treatment."],
+        ["IRIS", "Paradoxical or unmasking in first 3 months; continue ART; TB-IRIS prednisolone 1.5 then 0.75 mg/kg/day, 2 weeks each."],
+        ["Follow-up", "VL at 6 and 12 months then yearly; failure = VL over 1000 twice 3 months apart; refer to ART centre / CoE."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "New PLHIV: screening and prophylaxis",
+        steps: [
+          { label: "Confirm HIV; CD4 and WHO staging", detail: "AHD if CD4 under 200 or stage 3-4", tone: "decision" },
+          { label: "TB 4-symptom screen", detail: "Positive - CBNAAT/Truenat + TB-LAM; negative - TPT (3HP/6H)" },
+          { label: "CD4 under 100: serum CrAg", detail: "Positive - LP; CSF negative - pre-emptive fluconazole", tone: "warn" },
+          { label: "Cotrimoxazole 960 mg daily", detail: "If CD4 350 or less or WHO stage 3-4" },
+          { label: "Fundoscopy if CD4 under 100", detail: "Look for CMV retinitis" },
+          { label: "Start TLD rapidly", detail: "Same day to 7 days; delay only for crypto or TB meningitis", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "CD4 ladder of opportunistic infections",
+        caption: "Lower rungs need more prophylaxis and screening",
+        steps: [
+          { label: "Any CD4: TB, zoster, bacterial pneumonia", detail: "TPT after excluding active TB" },
+          { label: "Under 350: bacterial, malaria, Isospora", detail: "Cotrimoxazole 960 mg daily (NACO)" },
+          { label: "Under 200: PCP, candida oesophagitis", detail: "AHD package; TB-LAM" },
+          { label: "Under 100: toxoplasma, cryptococcus, PML", detail: "CrAg screen; toxo IgG", tone: "warn" },
+          { label: "Under 50: CMV, MAC, CNS lymphoma", detail: "Fundoscopy 3-monthly; urgent ART", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "When to start ART after an OI",
+        columns: ["OI", "Start ART", "Why"],
+        rows: [
+          ["TB (non-CNS)", "Within 2 weeks", "Lower mortality at low CD4"],
+          ["TB meningitis", "4-8 weeks", "Early ART caused more severe events"],
+          ["Cryptococcal meningitis", "4-6 weeks", "COAT trial excess deaths"],
+          ["PCP, toxoplasma, CMV", "Within 2 weeks", "ACTG A5164 benefit"],
+          ["Cryptosporidium, PML, Kaposi", "Immediately", "ART is the only cure"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "An **opportunistic infection** causes disease because HIV has depleted CD4 cells.",
+            "**Advanced HIV disease** is CD4 under 200 or WHO stage 3-4, or any child under 5.",
+            "India has about **25 lakh PLHIV**; adult prevalence about 0.2%.",
+            "**TB is the commonest OI** and the leading cause of death in PLHIV.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Any CD4: **TB**, zoster, bacterial pneumonia, oral candida.",
+            "Under 200: **PCP** and oesophageal candidiasis.",
+            "Under 100: **toxoplasmosis, cryptococcus**, cryptosporidium, PML.",
+            "Under 50: **CMV retinitis**, disseminated MAC, CNS lymphoma.",
+            "**IRIS** is paradoxical or unmasking, mostly in the first 3 months of ART.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**PCP**: weeks of exertional breathlessness, dry cough, desaturation on walking.",
+            "**Toxoplasmosis**: fever, headache, hemiparesis, seizures.",
+            "**CMV retinitis**: floaters and painless vision loss; pizza-pie fundus.",
+            "**Oesophageal candida**: painful swallowing with oral thrush.",
+            "TB 4-symptom screen: **cough, fever, weight loss, night sweats**.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Baseline **CD4 and viral load**; VL at 6 and 12 months, then yearly.",
+            "**Serum CrAg** at CD4 under 100 and **urine TB-LAM** in sick or low-CD4 patients.",
+            "PCP: induced sputum IF/PCR, **LDH over 500**, ABG for PaO2.",
+            "Brain lesions: **contrast MRI**, toxo IgG; negative IgG suggests lymphoma or TB.",
+            "Diarrhoea: stool **modified acid-fast stain** for Cryptosporidium and Cystoisospora.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "**Cotrimoxazole 960 mg daily** at CD4 350 or less prevents PCP, toxo, Isospora.",
+            "**TPT**: 3HP weekly for 12 weeks or isoniazid daily for 6 months.",
+            "PCP: **high-dose cotrimoxazole for 21 days**; steroids if PaO2 under 70.",
+            "Toxo: pyrimethamine-sulfadiazine-folinic acid, or **cotrimoxazole**, for 6 weeks.",
+            "CMV: **valganciclovir 900 mg twice daily**, intravitreal ganciclovir for zone 1.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Start ART **within 2 weeks** of most OIs, including TB.",
+            "Delay ART **4-6 weeks** in cryptococcal and 4-8 weeks in TB meningitis.",
+            "With rifampicin, give **dolutegravir 50 mg twice daily**.",
+            "Continue **secondary prophylaxis** until CD4 over 200 for 3-6 months.",
+            "**TB-IRIS**: continue ART and ATT, add prednisolone.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Admit with SpO2 under 94%, confusion, focal deficit, seizure or vision loss.",
+            "**Danger signs**: RR over 30, HR over 120, cannot walk, temperature 39 C or more.",
+            "Start **empirical ATT** in a seriously ill PLHIV when TB is likely and tests are negative.",
+            "Watch cotrimoxazole for rash, **hyperkalaemia** and cytopenias.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy**: continue cotrimoxazole; isoniazid TPT is safe.",
+            "**HIV-exposed infants**: cotrimoxazole from 6 weeks until HIV is excluded.",
+            "**HBV co-infection**: ART must contain tenofovir plus lamivudine.",
+            "No live vaccines at **CD4 under 200**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "PCP needing ventilation has **over 50% mortality**.",
+            "An OI after 6 months on ART suggests **treatment failure**; check viral load.",
+            "Failure is **VL over 1000 copies/mL** twice, 3 months apart, after adherence support.",
+            "Never **stop ART for IRIS** unless life-threatening.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**NACO 2021**: TLD first line, CPT at CD4 350 or less, AHD package.",
+            "**WHO 2021**: rapid ART and ART within 2 weeks of TB treatment.",
+            "**WHO 2022**: CrAg screening and single high-dose L-AmB for crypto.",
+            "**DHHS 2024**: no MAC prophylaxis if ART starts immediately.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "OI drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Cotrimoxazole prophylaxis", "960 mg PO once daily", "Until CD4 over 350 twice on ART", "Rash, SJS, cytopenias, hyperkalaemia"],
+            ["Cotrimoxazole for PCP", "TMP 15-20 mg/kg/day in 3-4 doses", "21 days", "As above; adjust in CKD"],
+            ["Prednisolone for PCP", "40 BD d1-5, 40 OD d6-10, 20 OD d11-21", "21 days", "Hyperglycaemia; unmasks TB"],
+            ["Pyrimethamine + sulfadiazine", "200 mg then 50-75 mg daily + 1-1.5 g 6-hourly + folinic acid", "6 weeks", "Marrow suppression, crystalluria"],
+            ["Valganciclovir", "900 mg BD then 900 mg OD", "14-21 days, then maintenance", "Neutropenia; renal dosing"],
+            ["3HP", "Isoniazid 900 mg + rifapentine 900 mg weekly", "12 weeks", "Flu-like reaction, hepatitis"],
+            ["Fluconazole", "200-400 mg daily", "14-21 days (oesophagitis)", "Hepatitis, interactions"],
+          ],
+        },
+        {
+          heading: "Ring-enhancing lesions",
+          columns: ["Feature", "Toxoplasmosis", "CNS lymphoma", "Tuberculoma"],
+          rows: [
+            ["CD4", "Under 100", "Under 50", "Any"],
+            ["Lesions", "Multiple, basal ganglia", "Single, periventricular", "Multiple, with meningitis"],
+            ["Test", "Toxo IgG positive", "CSF EBV PCR", "CBNAAT, chest TB"],
+            ["Trial therapy", "Response in 7-14 days", "No response; biopsy", "Slow response to ATT"],
+          ],
+        },
+        {
+          heading: "ART timing after OI",
+          columns: ["OI", "Start ART", "Note"],
+          rows: [
+            ["TB (non-CNS)", "Within 2 weeks", "DTG 50 mg BD with rifampicin"],
+            ["TB meningitis", "4-8 weeks", "Higher adverse events if early"],
+            ["Cryptococcal meningitis", "4-6 weeks", "COAT trial"],
+            ["PCP, toxo, CMV", "Within 2 weeks", "ACTG A5164"],
+          ],
+        },
+      ],
+      remember: [
+        "**CD4 ladder**: 200 PCP, 100 toxo and crypto, 50 CMV and MAC.",
+        "One tablet, five infections: **cotrimoxazole** covers PCP, toxo, Isospora, bacteria, malaria.",
+        "PCP steroids when **PaO2 under 70** or A-a gradient 35 or more.",
+        "**Rifampicin doubles dolutegravir**: 50 mg twice daily.",
+        "Crypto ART at **4-6 weeks**; everything else within 2 weeks (except TBM).",
+        "**Toxo IgG negative**: think lymphoma.",
+        "AHD package: **CrAg, LAM, CPT, TPT, rapid ART**.",
+      ],
+    },
+  },
 };
 
 export default revision;
