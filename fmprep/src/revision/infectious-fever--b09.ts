@@ -645,6 +645,220 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "infectious-fever-diabetic-infections": {
+    checked: "2026-10",
+    updated: [
+      "IWGDF/IDSA 2023 foot infection guideline: (O) modifier, deep-tissue or bone samples, MRI, 6 weeks for unresected osteomyelitis, about 3 weeks after minor amputation, no antibiotics for uninfected ulcers.",
+      "IWGDF/IDSA 2023: no topical antimicrobials, hyperbaric oxygen or G-CSF for treating foot infection.",
+      "ADA Standards of Care 2025: inpatient glucose 140-180 mg/dL; SGLT2 inhibitor sick-day rules.",
+      "ICMR-INDIAB 2023: 101 million Indians with diabetes, 136 million with prediabetes.",
+      "Darwin melioidosis guideline 2020 revision: ceftazidime/meropenem then weight-based cotrimoxazole for 3-6 months.",
+    ],
+    master: {
+      heading: "Master revision table - Infections in diabetes",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Infections **commoner, more severe or signature** in diabetes: foot, emphysematous, malignant otitis externa, melioidosis, mucor, Klebsiella liver abscess, Fournier."],
+        ["Burden", "**101 million Indians** with diabetes (ICMR-INDIAB 2023); foot ulcer lifetime 19-34%; EPN over 90% diabetic; melioidosis - diabetes in about half; TB risk tripled."],
+        ["Pathophysiology", "Glucose over 200-250 impairs **neutrophil chemotaxis, phagocytosis, burst**; neuropathy, PAD; glucose fermentation makes gas; DKA frees iron for Mucor."],
+        ["Foot classification", "**IWGDF/IDSA 2023**: 1 uninfected, 2 mild (erythema 0.5-2 cm), 3 moderate (over 2 cm or deep), 4 severe (SIRS), plus **(O)**; Wagner 0-5 for depth."],
+        ["Foot work-up", "Clinical signs, **probe-to-bone**, ESR over 70, X-ray then **MRI**, deep tissue or bone culture, ABI or toe pressure."],
+        ["Foot treatment", "Mild: cephalexin/amox-clav/clindamycin 1-2 weeks; moderate-severe: IV amox-clav or **pip-taz**; surgery, offloading, revascularisation."],
+        ["Osteomyelitis duration", "**6 weeks** unresected; **about 3 weeks** after minor amputation with residual bone; 2-5 days if all removed."],
+        ["Emphysematous pyelonephritis", "E. coli, Klebsiella; **CT, Huang-Tseng 1-4**; carbapenem, drainage; **nephrectomy with 2 or more risk factors** (platelets low, AKI, confusion, shock)."],
+        ["Malignant otitis externa", "Elderly diabetic, **Pseudomonas**, night pain, canal-floor granulation, **VII palsy**; CT/MRI; antipseudomonal **6-8 weeks**; ESR to follow."],
+        ["Melioidosis", "B. pseudomallei, monsoon soil; pneumonia, liver-spleen abscesses; gentamicin/colistin resistant; **ceftazidime or meropenem 10-14 days, then cotrimoxazole 3-6 months**."],
+        ["Glucose", "Insulin to **140-180 mg/dL** in hospital; hold SGLT2i and metformin in severe illness; check ketones."],
+        ["Prevention", "Annual foot exam, daily self-check, footwear; boots in paddy fields; vaccines; NP-NCD screening at 30; TB-DM bidirectional screening."],
+        ["Exam traps", "Treating swabs from uninfected ulcers; missing gas on CT; treating melioidosis as TB."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Diabetic foot ulcer: infected or not, and what next",
+        steps: [
+          { label: "Ulcer in a diabetic foot", detail: "Check 2 or more of swelling, erythema over 0.5 cm, pain, warmth, pus", tone: "decision" },
+          { label: "Uninfected - no antibiotic", detail: "Offload, wound care, glucose control", tone: "good" },
+          { label: "Grade by IWGDF/IDSA", detail: "Mild 0.5-2 cm; moderate over 2 cm or deep; severe with SIRS" },
+          { label: "Probe-to-bone, ESR, X-ray; MRI if doubt", detail: "Add (O) if osteomyelitis" },
+          { label: "Deep tissue culture after debridement", detail: "Not superficial swabs" },
+          { label: "Severe, gas, abscess or necrosis - surgery now", detail: "IV pip-taz; vascular assessment", tone: "warn" },
+          { label: "Antibiotic duration", detail: "Soft tissue 1-2 weeks; bone 6 weeks or about 3 after resection" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Emphysematous pyelonephritis by Huang-Tseng class",
+        steps: [
+          { label: "Class 1 - gas in collecting system", detail: "IV antibiotics, relieve obstruction" },
+          { label: "Class 2 - gas in parenchyma", detail: "Antibiotics + percutaneous drainage" },
+          { label: "Class 3A/3B - perinephric or pararenal", detail: "Drainage if fewer than 2 risk factors", tone: "decision" },
+          { label: "2 or more risk factors or failed drainage", detail: "Low platelets, AKI, confusion, shock: nephrectomy", tone: "warn" },
+          { label: "Class 4 - bilateral or solitary kidney", detail: "Drainage and antibiotics; spare the kidney" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Three diabetes-signature infections",
+        columns: ["Feature", "Emphysematous pyelonephritis", "Malignant otitis externa", "Melioidosis"],
+        rows: [
+          ["Organism", "E. coli, Klebsiella", "Pseudomonas aeruginosa", "Burkholderia pseudomallei"],
+          ["Clue", "Toxic pyelonephritis not settling", "Night ear pain, VII palsy", "Monsoon farmer, abscesses, pneumonia"],
+          ["Imaging", "CT abdomen", "CT temporal bone, MRI", "CXR, USG/CT abdomen"],
+          ["Drug", "Carbapenem or pip-taz", "Ceftazidime/cefepime or ciprofloxacin", "Ceftazidime/meropenem then cotrimoxazole"],
+          ["Duration", "10-14 days or more", "6-8 weeks", "Intensive 10-14 days, eradication 3-6 months"],
+          ["Surgery", "Drainage; nephrectomy if 2+ risk factors", "Debridement; rarely more", "Drain large abscesses"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "Diabetes makes infections **commoner and more severe**, and causes signature infections.",
+            "**FEMMM**: Foot, Emphysematous, Malignant otitis, Melioidosis, Mucormycosis.",
+            "India has **101 million** people with diabetes (ICMR-INDIAB 2023).",
+            "Over **90%** of emphysematous pyelonephritis and malignant otitis externa patients are diabetic.",
+            "Diabetes **triples TB risk**; screen both ways.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "High glucose weakens **neutrophil chemotaxis, phagocytosis and killing**.",
+            "**Neuropathy** hides injury; **arterial disease** starves the wound.",
+            "Bacteria **ferment tissue glucose** into gas in emphysematous infections.",
+            "Malignant otitis spreads to the **skull base**, hitting the facial nerve first.",
+            "B. pseudomallei survives **inside phagocytes**, causing abscesses and relapse.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**IWGDF/IDSA**: 1 uninfected, 2 mild, 3 moderate, 4 severe with SIRS.",
+            "Add **(O)** when osteomyelitis is present.",
+            "**Wagner 0-5** grades depth and gangrene.",
+            "**Huang-Tseng 1-4** grades gas spread on CT in emphysematous pyelonephritis.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**New pain** in a numb foot means deep infection.",
+            "A positive **probe-to-bone** test suggests osteomyelitis.",
+            "Elderly diabetic with **night ear pain** and canal granulation: malignant otitis.",
+            "Farmer with pneumonia and **liver-spleen abscesses** after monsoon: melioidosis.",
+            "Perineal pain on an **SGLT2 inhibitor**: think Fournier gangrene.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Culture **deep tissue or bone**, not swabs.",
+            "Foot: X-ray first, **MRI** if in doubt; ESR over 70 supports osteomyelitis.",
+            "Pyelonephritis not settling in 48-72 hours: **CT abdomen**.",
+            "Ear: **CT temporal bone and MRI**; biopsy to exclude cancer.",
+            "Melioidosis: culture on **Ashdown medium**; warn the laboratory.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Mild foot infection: **cephalexin, amox-clav or clindamycin** for 1-2 weeks.",
+            "**No antibiotics** for uninfected ulcers.",
+            "**Offloading** and wound care are as vital as antibiotics.",
+            "Early malignant otitis: **ciprofloxacin 750 mg twice daily** for 6-8 weeks.",
+            "Use **insulin** for persistent hyperglycaemia during infection.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Moderate-severe foot: **IV amox-clav or pip-taz**; urgent surgery for pus or gas.",
+            "Osteomyelitis: **6 weeks** if bone remains; about 3 weeks after minor amputation.",
+            "EPN: carbapenem, **drainage**, nephrectomy with 2 or more risk factors.",
+            "Melioidosis: **ceftazidime or meropenem**, then cotrimoxazole for 3-6 months.",
+            "Keep hospital glucose at **140-180 mg/dL**.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Foot infection precedes most **diabetic amputations**.",
+            "EPN mortality is **10-20%**, higher with shock or low platelets.",
+            "Malignant otitis can cause **cranial nerve palsies** and sinus thrombosis.",
+            "Melioidosis with septic shock kills **40-50%**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer moderate-severe foot, emphysematous infection, malignant otitis and melioidosis.",
+            "Use a **multidisciplinary foot team**; review every 1-3 months after healing.",
+            "Follow **ESR/CRP** in malignant otitis.",
+            "Complete melioidosis **eradication therapy**; watch potassium and counts.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**IWGDF/IDSA 2023**: (O) modifier, deep samples, MRI, shorter post-resection courses.",
+            "IWGDF/IDSA 2023: **no** topical antimicrobials or hyperbaric oxygen for infection.",
+            "**ADA 2025**: inpatient glucose 140-180 mg/dL; SGLT2 inhibitor sick-day rules.",
+            "**ICMR-INDIAB 2023**: 101 million with diabetes in India.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Diabetic infection drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Cephalexin", "500 mg orally 6-hourly", "1-2 weeks (mild foot)", "No Pseudomonas or anaerobe cover"],
+            ["Amoxicillin-clavulanate", "625 mg orally 8-hourly; 1.2 g IV 8-hourly", "1-2 weeks; 6 weeks for bone", "Diarrhoea, cholestasis"],
+            ["Piperacillin-tazobactam", "4.5 g IV 6-8-hourly", "Per source", "Low potassium, AKI"],
+            ["Meropenem", "1 g IV 8-hourly", "10-14 days or more", "Seizures; reserve for ESBL"],
+            ["Ceftazidime", "2 g IV 6-8-hourly", "Melioidosis 10-14 days; MOE 6-8 weeks", "Renal dosing"],
+            ["Ciprofloxacin", "750 mg orally 12-hourly", "6-8 weeks (MOE)", "Tendons, QT, glucose swings"],
+            ["Cotrimoxazole", "240/1200 to 320/1600 mg 12-hourly by weight, with folic acid", "3-6 months (melioidosis)", "High potassium, low counts"],
+          ],
+        },
+        {
+          heading: "IWGDF/IDSA foot infection grades",
+          columns: ["Grade", "Features", "Care"],
+          rows: [
+            ["1", "Uninfected", "No antibiotic"],
+            ["2 Mild", "Skin only, erythema 0.5-2 cm", "Oral, OPD"],
+            ["3 Moderate", "Erythema over 2 cm or deep tissue, no SIRS", "Often admit"],
+            ["4 Severe", "With 2 or more SIRS criteria", "Admit, IV, surgery"],
+            ["(O)", "Osteomyelitis", "MRI, bone biopsy, 6 weeks"],
+          ],
+        },
+        {
+          heading: "Huang-Tseng classes",
+          columns: ["Class", "Gas location", "Treatment"],
+          rows: [
+            ["1", "Collecting system", "Antibiotics, relieve obstruction"],
+            ["2", "Renal parenchyma", "Antibiotics + drainage"],
+            ["3A / 3B", "Perinephric / pararenal", "Drainage; nephrectomy if 2+ risk factors"],
+            ["4", "Bilateral or solitary kidney", "Drainage, kidney-sparing"],
+          ],
+        },
+      ],
+      remember: [
+        "**FEMMM**: Foot, Emphysematous, Malignant otitis, Melioidosis, Mucor.",
+        "Diabetic foot infection is **clinical**, not a swab result.",
+        "Grade **1-4 plus (O)**; probe-to-bone and ESR over 70 for bone.",
+        "Gas in the kidney: **CT, drain**, and cut with 2 risk factors.",
+        "Malignant otitis: **Pseudomonas, VII nerve, 6-8 weeks**.",
+        "Melioidosis: the **great mimicker** of TB; ceftazidime then cotrimoxazole.",
+        "Hospital glucose target **140-180 mg/dL**.",
+      ],
+    },
+  },
 };
 
 export default revision;

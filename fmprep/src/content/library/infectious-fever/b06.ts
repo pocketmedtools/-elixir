@@ -1786,7 +1786,7 @@ topics.push({
     "Atovaquone-proguanil stops **7 days** after return (causal prophylaxis); doxycycline and mefloquine continue **4 weeks**.",
     "YF certificate valid **for life**, from **10 days** after the dose.",
     "**Hajj = MenACWY** at least 10 days before arrival.",
-    "Incubation **under 10 days** essentially excludes falciparum malaria only if exposure dates are certain - never rely on it alone.",
+    "Fever beginning **under 7 days** after first entering a malarious area is unlikely to be malaria - but test anyway; exposure dates are often wrong.",
     "**VFR travellers** carry the highest risk of malaria and typhoid.",
     "Eosinophilia after African fresh-water exposure = **schistosomiasis** until proven otherwise.",
     "Azithromycin, not ciprofloxacin, for traveller's diarrhoea from South Asia.",

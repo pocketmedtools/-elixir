@@ -627,6 +627,197 @@ const revision: RevisionSet = {
       ],
     },
   },
+
+  "infectious-fever-hiv-special-situations": {
+    checked: "2026-10",
+    updated: [
+      "WHO PEP guideline 2024: TDF + 3TC/FTC + DTG preferred for 28 days; full course at first visit; HIV test at baseline and 3 months.",
+      "WHO 2022: long-acting cabotegravir PrEP every 2 months; WHO 2025: twice-yearly lenacapavir PrEP.",
+      "WHO 2023 viral load policy brief: undetectable = zero sexual transmission (U=U); under 1000 = almost zero.",
+      "NACO 2021: TLD for adults and pregnant women, paediatric DTG, VL at 6 and 12 months then yearly.",
+      "WHO 2021: DTG for all women including at conception; high-risk infant dual prophylaxis for 12 weeks if breastfed.",
+      "WHO triple elimination framework (HIV, syphilis, hepatitis B); dual HIV/syphilis RDT in Indian ANC.",
+    ],
+    master: {
+      heading: "Master revision table - HIV special situations",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definitions", "**PEP** - ART after exposure; **PrEP** - ART before exposure in HIV-negative people; **PPTCT/EMTCT** - package preventing vertical transmission."],
+        ["Burden", "About **25 lakh PLHIV**, about 66,000-68,000 new infections a year, about 20,000 pregnant women with HIV yearly; untreated MTCT **15-45%**, under 1% on suppressive ART."],
+        ["Transmission risk", "Needlestick **0.3%**, mucosal 0.09%, receptive anal 1.4%; HBV 6-30%, HCV 1.8%."],
+        ["PEP regimen", "Wash with soap and water, no squeezing; **TLD once daily x 28 days**, ideally within 2 hours, **not after 72 hours**; HBIG + vaccine if non-immune."],
+        ["Exposure grading (NACO)", "Mild, moderate, **severe (hollow-bore, visible blood, artery/vein needle)**; PEP if source positive or unknown."],
+        ["PrEP", "**TDF/FTC daily** (2-1-1 for cisgender men); **CAB-LA 600 mg IM every 8 weeks**; lenacapavir twice yearly; exclude acute HIV; HIV test every 3 months, eGFR 60 or more."],
+        ["PPTCT antenatal", "**Dual HIV/syphilis RDT** first visit; lifelong **TLD** irrespective of CD4; DTG safe; VL in late third trimester; benzathine penicillin for syphilis."],
+        ["Delivery", "Vaginal if suppressed; CS for obstetric reasons (consider if VL over 1000); avoid ARM, episiotomy, instrumental delivery."],
+        ["Infant prophylaxis", "Low-risk: **nevirapine 6 weeks** (10/15 mg); high-risk: **AZT + NVP**, 12 weeks if breastfed; cotrimoxazole from 6 weeks."],
+        ["Feeding", "**Exclusive breastfeeding 6 months** with maternal ART; continue to at least 12 months; no mixed feeding."],
+        ["EID", "**DBS DNA PCR at 6 weeks**, 6 and 12 months or 6 weeks after weaning; antibody at 18 months (maternal IgG till then)."],
+        ["Paediatric ART", "Treat all; **ABC + 3TC + DTG** (pDTG 10 mg from 4 weeks and 3 kg; 50 mg from 20 kg); neonates AZT + 3TC + RAL/NVP."],
+        ["HIV-2", "Western India, often dual; slow, low VL; **resistant to NNRTIs**; HIV-1 VL misses it; **TLD suitable**."],
+        ["Monitoring and U=U", "VL at 6, 12 months then yearly; failure 1000 or more twice; **undetectable = untransmittable**."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Occupational exposure: PEP pathway",
+        steps: [
+          { label: "First aid at once", detail: "Soap and water, let bleed; no squeezing, scrubbing or bleach", tone: "warn" },
+          { label: "Grade exposure and source status", detail: "Mild, moderate, severe; source positive, unknown or negative", tone: "decision" },
+          { label: "Baseline tests of exposed person", detail: "HIV, HBsAg, anti-HBs, anti-HCV, creatinine, pregnancy" },
+          { label: "Start TLD once daily x 28 days", detail: "Ideally within 2 hours; not after 72 hours", tone: "warn" },
+          { label: "Hepatitis B cover if non-immune", detail: "HBIG 0.06 mL/kg + vaccine 0, 1, 6 months" },
+          { label: "Follow-up HIV test at 3 months", detail: "Condoms and no blood donation until negative", tone: "good" },
+        ],
+      },
+      {
+        kind: "flow",
+        heading: "PPTCT from antenatal visit to 18 months",
+        steps: [
+          { label: "Dual HIV/syphilis RDT at first ANC", detail: "Plus HBsAg (triple elimination)", tone: "decision" },
+          { label: "HIV positive: lifelong TLD now", detail: "Irrespective of CD4; folic acid; DTG safe" },
+          { label: "Viral load late third trimester", detail: "Over 1000 or ART under 4 weeks = high-risk infant", tone: "decision" },
+          { label: "Infant prophylaxis by risk", detail: "Low: NVP 6 weeks; high: AZT + NVP, 12 weeks if breastfed", tone: "warn" },
+          { label: "Exclusive breastfeeding 6 months", detail: "Cotrimoxazole from 6 weeks" },
+          { label: "EID by DBS DNA PCR", detail: "6 weeks, 6 and 12 months; antibody at 18 months", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "HIV-1 versus HIV-2",
+        columns: ["Feature", "HIV-1", "HIV-2"],
+        rows: [
+          ["Where", "Worldwide, most of India", "West Africa, western India"],
+          ["Progression", "Faster", "Slower"],
+          ["Viral load test", "Standard HIV-1 assay", "Not detected by HIV-1 assay"],
+          ["Vertical transmission", "15-45% untreated", "About 0-4%"],
+          ["NNRTIs", "Active", "Intrinsically resistant"],
+          ["Preferred ART", "TLD", "TLD"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**PEP** is 28 days of ART after exposure; **PrEP** is ART before exposure.",
+            "Untreated **mother-to-child transmission** is 15-45%; with suppressive ART under 1%.",
+            "Needlestick risk from an HIV-positive source is about **0.3%**.",
+            "India has about **25 lakh PLHIV** and about 20,000 pregnant women with HIV yearly.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "NACO exposure: mild, moderate, **severe** (hollow-bore needle, visible blood, vessel needle).",
+            "**High-risk infant**: mother on ART under 4 weeks, VL over 1000, or new infection.",
+            "WHO VL: **undetectable**, under 1000 (suppressed), 1000 or more (unsuppressed).",
+            "HIV-2 is told apart by a **differentiating rapid test** or line immunoassay.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "PEP: wash the wound, then **TLD once daily for 28 days**, within 72 hours.",
+            "Give **HBIG plus vaccine** if non-immune and source HBsAg positive or unknown.",
+            "Sexual assault: PEP, **emergency contraception**, STI cover, counselling.",
+            "PrEP: **TDF/FTC daily**; 2-1-1 only for cisgender men.",
+            "Long-acting PrEP: **cabotegravir every 8 weeks**; lenacapavir twice yearly.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "PEP: baseline HIV, HBV, HCV, creatinine; **repeat HIV at 3 months**.",
+            "PrEP: exclude **acute HIV**; HIV test every 3 months; eGFR 60 or more.",
+            "Antenatal: **dual HIV/syphilis RDT** at the first visit.",
+            "Infant: **DNA PCR from 6 weeks**; antibody tests only at 18 months.",
+            "ART: viral load at **6 and 12 months**, then yearly.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Woman diagnosed in labour: start **TLD now**; treat the infant as high-risk.",
+            "Vaginal delivery if suppressed; **caesarean for obstetric reasons**.",
+            "Avoid artificial rupture, episiotomy and instrumental delivery where possible.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Low-risk infant: **nevirapine once daily for 6 weeks**.",
+            "High-risk infant: **AZT plus nevirapine**, 12 weeks if breastfed.",
+            "**Exclusive breastfeeding** for 6 months with maternal ART; no mixed feeding.",
+            "Children: **ABC + 3TC + DTG**; paediatric DTG from 4 weeks and 3 kg.",
+            "**HIV-2**: avoid efavirenz and nevirapine; TLD works.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Fever, rash, sore throat after exposure: suspect **acute HIV**.",
+            "PrEP during acute HIV causes **drug resistance**.",
+            "Stopping TDF/FTC in HBsAg-positive users can cause a **hepatitis flare**.",
+            "Untreated infant HIV kills about **half by 2 years**.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**WHO 2024 PEP**: DTG-based, full 28 days dispensed, test at 3 months.",
+            "**WHO 2025**: twice-yearly lenacapavir PrEP recommended.",
+            "**WHO 2023**: undetectable viral load means no sexual transmission (**U=U**).",
+            "**NACO 2021**: TLD for all adults and pregnant women.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "PEP, PrEP and PPTCT drugs",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["TLD", "1 tablet PO daily", "PEP 28 days; lifelong in PPTCT", "Nausea, insomnia; DTG BD with rifampicin"],
+            ["TDF/FTC PrEP", "1 tablet daily or 2-1-1", "While at risk", "Creatinine rise; HBV flare on stopping"],
+            ["Cabotegravir LA", "600 mg IM, 2 doses 4 weeks apart, then every 8 weeks", "While at risk", "Injection-site pain; resistance tail"],
+            ["Nevirapine (infant)", "10 mg (2-2.5 kg) or 15 mg (over 2.5 kg) daily", "6 weeks (12 if high-risk breastfed)", "Rash, hepatitis"],
+            ["Zidovudine (infant)", "4 mg/kg BD", "6-12 weeks if high-risk", "Anaemia, neutropenia"],
+            ["Benzathine penicillin", "2.4 million units IM", "Single or weekly x 3", "Anaphylaxis, Jarisch-Herxheimer"],
+          ],
+        },
+        {
+          heading: "NACO exposure grading",
+          columns: ["Grade", "Example", "PEP if source positive or unknown"],
+          rows: [
+            ["Mild", "Small splash, superficial scratch with solid needle", "Yes"],
+            ["Moderate", "Large splash, moderate solid-needle injury", "Yes"],
+            ["Severe", "Deep hollow-bore injury, visible blood", "Yes, urgently"],
+            ["Intact skin", "Blood on intact skin", "No"],
+          ],
+        },
+        {
+          heading: "Infant risk and prophylaxis",
+          columns: ["Risk", "Definition", "Prophylaxis"],
+          rows: [
+            ["Low", "Mother on ART over 4 weeks, VL suppressed", "Nevirapine 6 weeks"],
+            ["High", "ART under 4 weeks, VL over 1000, new infection", "AZT + NVP, 12 weeks if breastfed"],
+            ["Diagnosed while breastfeeding", "Mother found positive postpartum", "Maternal ART + infant dual 12 weeks"],
+          ],
+        },
+      ],
+      remember: [
+        "**PEP**: TLD x 28 days, 2 hours ideal, 72 hours maximum.",
+        "**Wash, don't squeeze**; no bleach.",
+        "Infant: **PCR not ELISA** before 18 months.",
+        "**Exclusive breastfeeding** with maternal ART; never mixed feeding.",
+        "**HIV-2 resists NNRTIs**; give dolutegravir.",
+        "**U=U**: undetectable equals untransmittable.",
+        "**2-1-1** event-driven PrEP is for cisgender men only.",
+      ],
+    },
+  },
 };
 
 export default revision;

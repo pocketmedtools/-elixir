@@ -441,6 +441,207 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "infectious-fever-emerging-infections": {
+    checked: "2026-10",
+    updated: [
+      "IHR amendments adopted by WHA77 (June 2024), in force 19 September 2025: 'pandemic emergency' level, National IHR Authority, Coordinating Financial Mechanism, equity provisions.",
+      "WHO Pandemic Agreement adopted by WHA78 (May 2025); PABS annex still under negotiation.",
+      "WHO mpox PHEIC for clade Ib, 14 August 2024 to 5 September 2025; MVA-BN prequalified 2024.",
+      "WHO R&D Blueprint 2024: pathogen-family approach with prototype pathogens and Pathogen X.",
+      "WHO/CDC 2024-2025: H5N1 clade 2.3.4.4b in dairy cattle - raw milk avoidance, farm-worker PPE, oseltamivir PEP twice daily.",
+      "NCDC/Kerala 2023-2024: Nipah protocol with point-of-care TrueNat, mobile BSL-3 labs, m102.4 stock, 21-day contact follow-up.",
+    ],
+    master: {
+      heading: "Master revision table - Emerging and epidemic infections",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "**Emerging**: newly appeared, or rapidly rising in incidence or range; **re-emerging**: known disease returning; about **75% of emerging infections are zoonotic**."],
+        ["Indian threats", "**Nipah** (Kerala since 2018, Siliguri 2001), **H5N1** (first death 2021), mpox clade Ib (Kerala 2024), Chandipura (Gujarat 2024), KFD, CCHF, Zika."],
+        ["Nipah", "Henipavirus; **Pteropus bat**; fruit/palm sap and human-to-human; incubation 4-14 days; encephalitis plus ARDS; **ephrin-B2/B3**; CFR 40-75%; no vaccine or proven drug."],
+        ["Avian influenza", "H5N1 binds **alpha-2,3 receptors** deep in lung - severe pneumonia, little human spread; CFR about 48% historically; **oseltamivir 75 mg BD regardless of timing**, 5-10 days."],
+        ["Case definitions", "**Suspected, probable, confirmed** with time, place, person; Nipah suspected = fever plus altered sensorium/seizure, severe headache or cough/breathlessness in affected area."],
+        ["First contact", "**Suspect - isolate - protect - sample - notify**: mask patient, single room, N95 PPE, safe samples (triple packaging to NIV Pune), IHIP P-form, safe transfer."],
+        ["IDSP/IHIP", "IDSP 2004 under **NCDC**; IHIP real-time since 2021; **S, P, L forms**; District RRT within 24-48 h; PM-ABHIM district public health labs."],
+        ["Outbreak steps", "Prepare, confirm outbreak, verify diagnosis, case definition, line-list, **epidemic curve/spot map**, hypotheses, test, control early, communicate, keep surveillance."],
+        ["Contact tracing", "Follow for maximum incubation: **Nipah 21, mpox 21, avian flu 10 days**; quarantine exposed well people; isolate the sick; declare over after **2 x incubation** (Nipah 42 days)."],
+        ["PPE", "Standard, contact, droplet, **airborne (N95)**; donning gown - N95 - eye - gloves; **doffing gloves first, respirator last outside room**."],
+        ["One Health", "People, animals, ecosystems; **Quadripartite Joint Plan of Action 2022-2026**; India - National One Health Mission, NIOH Nagpur, NIHSAD Bhopal; culling 1 km zone."],
+        ["IHR 2005", "National IHR Focal Point (NCDC); assess in 48 h, notify in 24 h; **Annex 2 always-notifiable: smallpox, wild polio, new influenza subtype, SARS**; others if 2 of 4 criteria."],
+        ["Latest", "**IHR 2024 amendments** ('pandemic emergency') in force September 2025; Pandemic Agreement May 2025; mpox PHEIC 2024-25; R&D Blueprint families."],
+        ["Exam one-liners", "Isolation = sick, quarantine = exposed; ephrin-B2 Nipah; alpha-2,3 H5N1; propagated curve = person-to-person; gloves off first, N95 last."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Suspected high-consequence infection at first contact",
+        steps: [
+          { label: "Fever plus exposure fits a case definition", detail: "Nipah area, sick birds, outbreak travel, cluster", tone: "decision" },
+          { label: "Mask the patient and isolate in a single room", detail: "1-2 m distance; minimise staff" },
+          { label: "Don PPE matched to route", detail: "N95, eye protection, gown, gloves", tone: "warn" },
+          { label: "Treat what cannot wait", detail: "Oseltamivir, doxycycline, acyclovir, artesunate if indicated" },
+          { label: "Notify DSO and IHIP the same day", detail: "P-form; district RRT activated" },
+          { label: "Safe sampling and transfer", detail: "Triple packaging to NIV/BSL-3; ambulance with PPE" },
+          { label: "List every contact", detail: "Follow for the maximum incubation period", tone: "good" },
+        ],
+      },
+      {
+        kind: "cycle",
+        heading: "Outbreak response cycle",
+        steps: [
+          { label: "Detect signal (IHIP alert, cluster)", detail: "Compare with baseline" },
+          { label: "Verify and define cases", detail: "Suspected, probable, confirmed" },
+          { label: "Find cases and line-list", detail: "Epidemic curve, spot map" },
+          { label: "Control measures", detail: "Isolation, quarantine, source control", tone: "warn" },
+          { label: "Communicate and evaluate", detail: "Declare over at 2 x incubation", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Nipah versus avian influenza H5N1",
+        columns: ["Feature", "Nipah", "Avian influenza H5N1"],
+        rows: [
+          ["Reservoir", "Pteropus fruit bat", "Wild birds, poultry, dairy cattle"],
+          ["Receptor", "Ephrin-B2/B3", "Alpha-2,3 sialic acid"],
+          ["Main illness", "Encephalitis plus ARDS", "Viral pneumonia, ARDS"],
+          ["Human-to-human", "Yes, caregivers and staff", "Very limited"],
+          ["Antiviral", "None proven; m102.4, remdesivir experimental", "Oseltamivir 75 mg BD"],
+          ["Contact follow-up", "21 days", "10 days"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Emerging infection**: new in a population, or rapidly increasing in incidence or range.",
+            "About **75%** of emerging infections come from animals.",
+            "India's key threats are **Nipah, avian influenza and mpox**.",
+            "Kerala has had **Nipah outbreaks almost every year** since 2018.",
+            "WHO has declared **eight PHEICs**, the latest for mpox clade Ib in 2024.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Nipah spreads from **fruit bats** via bitten fruit and raw palm sap, then person to person.",
+            "H5N1 comes from **sick or dead poultry**, wild birds and now dairy cattle.",
+            "**Unrecognised index patients** in hospitals amplify outbreaks.",
+            "Deforestation, livestock farming, climate change and travel drive emergence.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Nipah binds **ephrin-B2/B3** on endothelium and neurons, causing vasculitis and encephalitis.",
+            "Nipah can **relapse** as late encephalitis months later.",
+            "H5N1 binds **alpha-2,3 receptors** deep in the lung, so pneumonia is severe but spread is poor.",
+            "**Antigenic shift** by reassortment creates pandemic influenza strains.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Nipah: fever, headache, then **seizures, coma**, myoclonus; respiratory illness in about 60%.",
+            "H5N1: high fever, cough, **rapid viral pneumonia** and ARDS within days.",
+            "Mpox: **lymphadenopathy** with deep monomorphic pustules.",
+            "Always ask: **where have you been, what did you touch, who else is ill?**",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Nipah: **RT-PCR** of throat swab, blood, urine and CSF at NIV Pune or BSL-3 lab.",
+            "H5N1: nasopharyngeal and throat swab for **influenza A with H5 subtyping**.",
+            "Send samples in **triple packaging** and warn the lab first.",
+            "Always exclude **malaria, dengue, scrub typhus and HSV** in parallel.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "First contact: **suspect, isolate, protect, sample, notify**.",
+            "Give **oseltamivir 75 mg twice daily** in suspected H5N1, whatever the delay.",
+            "Nipah care is **supportive**; ribavirin benefit is uncertain.",
+            "Do not delay **treatable mimics** while awaiting exotic tests.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Isolate with dedicated staff; use an **airborne room** for aerosol procedures.",
+            "Nipah ICU care: airway, ventilation, seizures; **m102.4** under ICMR protocol.",
+            "H5N1 ARDS: lung-protective ventilation, prone position, **no routine steroids**.",
+            "Bury or cremate Nipah dead in sealed bags, **no washing**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Notify the **District Surveillance Officer and IHIP** the same day.",
+            "IHIP forms: **S** by health workers, **P** by clinicians, **L** by labs.",
+            "Follow contacts for the maximum incubation: **Nipah 21, avian flu 10 days**.",
+            "**Quarantine** is for exposed well people; **isolation** is for the sick.",
+            "Doff PPE: **gloves first, respirator last**, outside the room.",
+            "Declare an outbreak over after **twice the maximum incubation** period.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**IHR 2024 amendments** add a 'pandemic emergency' level; in force September 2025.",
+            "**WHO Pandemic Agreement** adopted May 2025.",
+            "**IHR Annex 2** always-notifiable: smallpox, wild polio, new flu subtype, SARS.",
+            "**One Health Joint Plan of Action 2022-2026** links human, animal and environment health.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs and prophylaxis",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Oseltamivir (treatment)", "75 mg oral BD; child by weight", "5 days; 10 days if severe", "Nausea; 30 mg BD at CrCl 30-60"],
+            ["Oseltamivir (H5N1 PEP)", "75 mg oral BD", "5-10 days after last exposure", "Safe in pregnancy"],
+            ["Ribavirin (Nipah)", "Oral or IV per protocol", "7-10 days", "Haemolysis, teratogenic; uncertain benefit"],
+            ["m102.4 antibody (Nipah)", "IV under ICMR protocol", "Two doses, early", "Experimental"],
+            ["MVA-BN (mpox)", "0.5 mL subcutaneous", "2 doses 4 weeks apart", "Local reaction"],
+          ],
+        },
+        {
+          heading: "Emerging infections in India",
+          columns: ["Infection", "Reservoir / vector", "Incubation", "Key feature"],
+          rows: [
+            ["Nipah", "Fruit bat", "4-14 days", "Encephalitis plus ARDS, CFR 40-75%"],
+            ["H5N1", "Birds, dairy cattle", "2-5 days", "Viral pneumonia"],
+            ["Mpox", "Rodents; human contact", "3-21 days", "Nodes, monomorphic rash"],
+            ["Chandipura", "Sandfly", "Days", "Rapid encephalitis in children"],
+            ["KFD", "Ticks, monkeys", "3-8 days", "Biphasic haemorrhagic fever"],
+          ],
+        },
+        {
+          heading: "Transmission-based precautions",
+          columns: ["Precaution", "Examples", "PPE"],
+          rows: [
+            ["Contact", "Mpox, MRSA", "Gown and gloves"],
+            ["Droplet", "Influenza, mumps", "Surgical mask within 1-2 m"],
+            ["Airborne", "TB, measles, varicella, aerosol procedures", "N95 respirator, negative-pressure room"],
+            ["High-consequence", "Nipah, Ebola, CCHF", "N95, eye shield, coverall, double gloves"],
+          ],
+        },
+      ],
+      remember: [
+        "**Suspect - isolate - protect - sample - notify.**",
+        "**Isolation = sick; quarantine = exposed but well.**",
+        "Nipah binds **ephrin-B2**; H5N1 binds **alpha-2,3** sialic acid.",
+        "Contacts: **Nipah 21, mpox 21, avian flu 10 days**.",
+        "Outbreak over after **2 x maximum incubation**.",
+        "Doffing: **gloves first, N95 last**.",
+        "IHR always-notifiable: **smallpox, wild polio, new flu subtype, SARS**.",
+      ],
+    },
+  },
 };
 
 export default revision;

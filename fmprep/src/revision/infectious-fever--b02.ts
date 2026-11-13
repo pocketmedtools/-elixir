@@ -655,4 +655,220 @@ revision["infectious-fever-mdr-gram-negative"] = {
   },
 };
 
+revision["infectious-fever-hospital-acquired-infection"] = {
+  checked: "2026-10",
+  updated: [
+    "SHEA/IDSA/APIC Compendium 2022: updated CLABSI, CAUTI, SSI and VAP bundles; chlorhexidine oral care dropped for VAP.",
+    "WHO Global Strategy on IPC 2023 and Action Plan 2024-2030; WHO Global IPC Report 2024.",
+    "NACO 2021: HIV PEP is tenofovir + lamivudine + dolutegravir (TLD) for 28 days.",
+    "BMW (Amendment) Rules 2018: chlorinated bags and gloves phased out, bar-coding, on-site pre-treatment of lab waste.",
+    "IDSA/SHEA 2021: fidaxomicin preferred for initial C. difficile infection.",
+    "NCDC National IPC Guidelines 2020 remain the Indian standard; Kayakalp continues as the facility award scheme.",
+  ],
+  master: {
+    heading: "Healthcare-associated infections and IPC on one page",
+    columns: ["Heading", "What to write"],
+    rows: [
+      ["Definition", "Not present or incubating at admission; appears from day 3 (48 hours or more), or within 30 days of surgery (90 with implant)"],
+      ["Burden", "WHO: 7% (high-income) and 15% (LMIC) of inpatients; ICU up to 30%; India CLABSI about 9 per 1000 line-days; 50-70% preventable"],
+      ["Types", "CLABSI, CAUTI, VAP, SSI, C. difficile, viral outbreaks"],
+      ["Chain of infection", "Agent, reservoir, portal of exit, transmission, portal of entry, susceptible host"],
+      ["Standard precautions", "Hand hygiene, PPE by risk, respiratory hygiene, safe injections, sharps safety, cleaning, linen, waste, reprocessing"],
+      ["Hand hygiene", "WHO 5 moments; rub 20-30 seconds; soap and water 40-60 seconds for soiling, C. difficile, norovirus"],
+      ["Isolation", "Contact (MDR, C. diff), droplet (influenza, meningococcus), airborne (TB, measles, varicella - N95, negative pressure)"],
+      ["CAUTI", "Avoid, aseptic insertion, closed drainage, bag below bladder, daily review; do not treat asymptomatic bacteriuria"],
+      ["SSI", "No shaving; cefazolin 2 g before incision; stop after surgery; CHG-alcohol prep; normothermia; glucose control"],
+      ["VAP", "Head up 30-45 degrees, sedation breaks, SBT, subglottic suction, early mobilisation"],
+      ["Needle-stick", "Wash, report, assess source; TLD 28 days within 72 hours; HBIG + vaccine if unvaccinated; HCV no PEP"],
+      ["BMW Rules", "Yellow burn, Red recycle plastic, White sharps, Blue glass/metal; treat within 48 hours; 2018 bar-coding"],
+      ["Programme", "NCDC IPC 2020: HICC, infection control team, surveillance; Kayakalp 2015; NQAS, NABH"],
+      ["Viva traps", "Shaving, prolonged prophylaxis, alcohol rub for C. difficile, treating catheter bacteriuria"],
+    ],
+  },
+  flows: [
+    {
+      kind: "flow",
+      heading: "Needle-stick injury: what to do",
+      steps: [
+        { label: "Wash with soap and running water", detail: "Do not squeeze, scrub or apply bleach; rinse splashes with water", tone: "warn" },
+        { label: "Report to the designated officer", detail: "Document exposure type and device", tone: "neutral" },
+        { label: "Assess source HIV, HBV, HCV status", detail: "Rapid tests with consent", tone: "decision" },
+        { label: "HIV risk: start TLD", detail: "Within 72 hours, ideally 2 hours; 28 days", tone: "good" },
+        { label: "HBV: check vaccination and anti-HBs", detail: "Unvaccinated: HBIG 0.06 mL/kg + vaccine", tone: "decision" },
+        { label: "HCV: no PEP, follow-up testing", detail: "HCV RNA at 3 weeks or later; anti-HCV at 6 months", tone: "neutral" },
+        { label: "Follow-up HIV tests", detail: "6 weeks, 3 months, 6 months", tone: "neutral" },
+      ],
+    },
+    {
+      kind: "cycle",
+      heading: "Chain of infection and where to break it",
+      steps: [
+        { label: "Infectious agent", detail: "Rational antibiotics, stewardship", tone: "neutral" },
+        { label: "Reservoir", detail: "Cleaning, disinfection, treating carriers", tone: "neutral" },
+        { label: "Portal of exit", detail: "Cough etiquette, dressings, waste segregation", tone: "neutral" },
+        { label: "Mode of transmission", detail: "Hand hygiene, PPE, isolation", tone: "warn" },
+        { label: "Portal of entry", detail: "Aseptic technique, device bundles", tone: "neutral" },
+        { label: "Susceptible host", detail: "Vaccination, nutrition, glucose control", tone: "good" },
+      ],
+    },
+    {
+      kind: "compare",
+      heading: "Contact, droplet and airborne precautions",
+      columns: ["Feature", "Contact", "Droplet", "Airborne"],
+      rows: [
+        ["Spread", "Touch, fomites", "Particles over 5 micrometres, 1-2 metres", "Nuclei 5 micrometres or less, long range"],
+        ["Examples", "MRSA, CRE, C. auris, C. difficile, scabies", "Influenza, meningococcus, pertussis, mumps", "TB, measles, varicella"],
+        ["Mask", "Not needed for contact alone", "Surgical mask", "N95 respirator"],
+        ["Room", "Single or cohort", "Single or spaced over 1 metre", "Negative pressure, 12 or more air changes per hour"],
+        ["Other", "Gown, gloves, dedicated equipment", "Mask the patient in transport", "Keep door closed"],
+      ],
+    },
+  ],
+  notes: {
+    sections: [
+      {
+        title: "Definition and key facts",
+        points: [
+          "**HAI** is an infection not present at admission, appearing from **day 3** onward.",
+          "Surgical infections count up to **30 days**, or **90 days** with an implant.",
+          "WHO: **7%** of inpatients in rich countries and **15%** in LMIC get an HAI.",
+          "Indian ICUs report **CLABSI about 9 per 1000** line-days.",
+          "At least **half of HAIs are preventable**.",
+        ],
+      },
+      {
+        title: "Causes and transmission",
+        points: [
+          "**Devices** are the biggest modifiable risk.",
+          "The **chain of infection** has six links; IPC breaks each one.",
+          "**Hands of staff** are the main vehicle in hospitals.",
+          "**Droplets** travel 1-2 metres; **droplet nuclei** stay airborne.",
+          "Unsafe injections spread **HBV, HCV and HIV**.",
+        ],
+      },
+      {
+        title: "Classification that matters",
+        points: [
+          "Big four: **CLABSI, CAUTI, VAP and SSI**.",
+          "SSI is **superficial, deep or organ/space**.",
+          "Wounds are **clean, clean-contaminated, contaminated or dirty**.",
+          "**Spaulding**: critical sterilise, semi-critical high-level disinfection, non-critical low-level.",
+        ],
+      },
+      {
+        title: "Standard precautions and hand hygiene",
+        points: [
+          "Standard precautions apply to **every patient**.",
+          "**WHO 5 moments**: before patient, before aseptic task, after fluids, after patient, after surroundings.",
+          "**Alcohol rub 20-30 seconds** is the default.",
+          "**Soap and water** for soiled hands, C. difficile and norovirus.",
+          "**Gloves never replace** hand hygiene.",
+          "One needle, one syringe, **one time**; never recap.",
+        ],
+      },
+      {
+        title: "Isolation",
+        points: [
+          "**Contact**: gown and gloves for MRSA, CRE, C. auris, C. difficile.",
+          "**Droplet**: surgical mask for influenza and meningococcus.",
+          "**Airborne**: N95 and negative pressure for TB, measles, varicella.",
+          "No negative-pressure room: **single room with open windows**.",
+          "Meningococcus isolation ends after **24 hours of therapy**.",
+        ],
+      },
+      {
+        title: "Device and surgical bundles",
+        points: [
+          "CAUTI: **avoid catheters**, closed drainage, bag below bladder, daily review.",
+          "Do not treat **asymptomatic catheter bacteriuria**.",
+          "SSI: **clip, never shave**; chlorhexidine-alcohol skin prep.",
+          "**Cefazolin 2 g before incision**; stop at the end of surgery.",
+          "VAP: **head up 30-45 degrees**, sedation breaks, early mobilisation.",
+        ],
+      },
+      {
+        title: "Needle-stick and staff health",
+        points: [
+          "**Wash with soap and water**; do not squeeze or use bleach.",
+          "HIV PEP: **TLD for 28 days**, within 72 hours, ideally 2 hours.",
+          "HBV: **HBIG plus vaccine** if unvaccinated; nothing if a known responder.",
+          "HCV: **no PEP**; test and treat early with DAAs.",
+          "All staff need **hepatitis B vaccination**.",
+        ],
+      },
+      {
+        title: "Biomedical waste",
+        points: [
+          "**Yellow**: anatomical and soiled waste, expired drugs; incinerate.",
+          "**Red**: tubing, catheters, gloves; autoclave, shred, recycle.",
+          "**White**: sharps in puncture-proof containers.",
+          "**Blue**: glassware and metallic implants.",
+          "Treat waste **within 48 hours**; keep records for **5 years**.",
+          "2018 amendment: **no chlorinated bags**, bar-coding.",
+        ],
+      },
+      {
+        title: "Referral and programme",
+        points: [
+          "**HICC** and an infection control team run IPC (NCDC 2020).",
+          "Track **device rates per 1000 device-days** and SSI rates.",
+          "**Kayakalp** (2015) rewards clean, safe public facilities.",
+          "Report any **cluster** to the infection control team the same day.",
+        ],
+      },
+      {
+        title: "Latest updates",
+        points: [
+          "**SHEA/IDSA/APIC 2022**: chlorhexidine oral care dropped for VAP.",
+          "**WHO IPC Strategy 2023** and Action Plan 2024-2030.",
+          "**NACO 2021**: dolutegravir-based PEP.",
+          "**IDSA/SHEA 2021**: fidaxomicin preferred for C. difficile.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        heading: "Drugs and biologicals in infection prevention",
+        columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+        rows: [
+          ["TLD (tenofovir + lamivudine + dolutegravir)", "One tablet orally daily", "28 days", "Nausea, headache; separate from antacids and iron"],
+          ["HBIG", "0.06 mL/kg IM", "Single dose within 24 hours (up to 7 days)", "Local pain; different site from vaccine"],
+          ["Hepatitis B vaccine", "20 micrograms IM deltoid", "0, 1, 6 months", "Check anti-HBs after course"],
+          ["Cefazolin (surgical prophylaxis)", "2 g IV (3 g if 120 kg or more)", "Before incision; redose after 4 hours; stop after surgery", "Allergy"],
+          ["Mupirocin + chlorhexidine", "Nasal twice daily + daily body wash", "5 days pre-operatively", "Mupirocin resistance with overuse"],
+          ["Sodium hypochlorite 1%", "Spill disinfection", "About 10 minutes contact", "Corrosive; make fresh daily"],
+        ],
+      },
+      {
+        heading: "BMW colour coding",
+        columns: ["Colour", "Examples", "Treatment"],
+        rows: [
+          ["Yellow", "Anatomical, soiled dressings, expired medicines, chemical waste", "Incineration, plasma pyrolysis, deep burial"],
+          ["Red", "Tubing, IV sets, catheters, urine bags, gloves", "Autoclave or microwave, shred, recycle"],
+          ["White", "Needles, scalpels, blades", "Autoclave, shred or encapsulate"],
+          ["Blue", "Glass vials, ampoules, metal implants", "Disinfect, recycle"],
+        ],
+      },
+      {
+        heading: "Spaulding classification",
+        columns: ["Category", "Examples", "Processing"],
+        rows: [
+          ["Critical", "Surgical instruments, implants, urinary catheters", "Sterilisation"],
+          ["Semi-critical", "Endoscopes, laryngoscope blades", "High-level disinfection (glutaraldehyde)"],
+          ["Non-critical", "BP cuffs, stethoscopes, bed rails", "Low-level disinfection"],
+        ],
+      },
+    ],
+    remember: [
+      "**WHO 5 moments**: 2 before, 3 after.",
+      "**Rub 20-30 seconds, wash 40-60 seconds.**",
+      "**Yellow burn, Red recycle, White sharps, Blue glass.**",
+      "Airborne: **Measles, Chickenpox, TB**.",
+      "**Clip, never shave**; prophylaxis stops at the end of surgery.",
+      "**No PEP for hepatitis C.**",
+      "**Kayakalp 2015**, NCDC IPC guidelines 2020, BMW Rules 2016/2018.",
+    ],
+  },
+};
+
 export default revision;

@@ -1137,7 +1137,7 @@ topics.push({
       heading: "Complications and prognosis",
       points: [
         "**Disability** is the main complication: anaesthetic hands and feet, **plantar ulcers**, clawing, foot drop, digit resorption, blindness from lagophthalmos or iridocyclitis. [Harrison 22e]",
-        "**Dapsone hypersensitivity syndrome**: fever, rash, hepatitis, lymphadenopathy 4-6 weeks after starting - linked to HLA-B*13:01; stop dapsone permanently, give steroids. [Zhang NEJM 2013]",
+        "**Dapsone hypersensitivity syndrome**: fever, rash, hepatitis, lymphadenopathy 4-6 weeks after starting - linked to HLA-B 13:01; stop dapsone permanently, give steroids. [Zhang NEJM 2013]",
         "**Dapsone**: haemolysis, **methaemoglobinaemia**, agranulocytosis; **clofazimine**: **reddish-brown to black skin pigmentation** (reversible over months), ichthyosis, and at high dose **crystal enteropathy**. [Harrison 22e]",
         "**Relapse** after MDT is rare (about 1% PB, under 1-2% MB over 10 years); distinguish from a late type 1 reaction (table). [WHO 2018]",
         "**Chronic ENL** may last years, with steroid dependence, amyloidosis and glomerulonephritis. [Harrison 22e]",
@@ -1196,7 +1196,7 @@ topics.push({
       rows: [
         ["Rifampicin", "600 mg oral once monthly supervised (child 10-14 y: 450 mg)", "PB 6 months; MB 12 months", "Orange urine, hepatitis, flu-like syndrome, interactions"],
         ["Clofazimine (MDT)", "300 mg monthly supervised + 50 mg daily (child: 150 mg monthly + 50 mg alternate days)", "PB 6 months; MB 12 months", "Red-brown skin pigmentation, ichthyosis, GI upset"],
-        ["Dapsone", "100 mg oral daily (child 50 mg or 2 mg/kg)", "PB 6 months; MB 12 months", "Haemolysis (G6PD), methaemoglobinaemia, DHS (HLA-B*13:01), agranulocytosis"],
+        ["Dapsone", "100 mg oral daily (child 50 mg or 2 mg/kg)", "PB 6 months; MB 12 months", "Haemolysis (G6PD), methaemoglobinaemia, DHS (HLA-B 13:01), agranulocytosis"],
         ["Prednisolone", "40 mg/day (up to 1 mg/kg) oral", "Taper over 12 weeks (longer for MB and nerve damage)", "Diabetes, TB reactivation, strongyloides hyperinfection, osteoporosis"],
         ["Clofazimine (ENL)", "100 mg three times daily", "Up to 12 weeks, then taper; max 12 months high dose", "Pigmentation, crystal enteropathy"],
         ["Thalidomide (ENL)", "100 mg four times daily, taper to 50-100 mg/day", "Weeks to months for chronic ENL", "Phocomelia - absolutely contraindicated in pregnancy; sedation, neuropathy, DVT"],
@@ -1518,7 +1518,7 @@ topics.push({
         "**Superantigens** (TSST-1, streptococcal pyrogenic exotoxins) bind MHC II and T-cell receptors outside the antigen groove, activating up to 20% of T cells - **cytokine storm** with erythroderma, shock and multi-organ failure. [Harrison 22e]",
         "**Dengue** rash is a capillary phenomenon: early **flushing**, and in recovery a confluent rash with **islands of white in a sea of red**; petechiae reflect thrombocytopenia and capillary fragility. [WHO 2025]",
         "**DRESS** is a T-cell-mediated (type IVb) reaction with **eosinophil activation** and **reactivation of HHV-6/EBV/CMV**; **SJS/TEN** is cytotoxic T-cell and granulysin-mediated keratinocyte apoptosis (type IVc). [Harrison 22e]",
-        "**HLA associations** explain population risk: **HLA-B*15:02** (carbamazepine SJS/TEN in South and East Asians), **HLA-B*58:01** (allopurinol SCAR), **HLA-B*13:01** (dapsone). [Harrison 22e]",
+        "**HLA associations** explain population risk: HLA-B 15:02 (carbamazepine SJS/TEN in South and East Asians), HLA-B 58:01 (allopurinol SCAR), HLA-B 13:01 (dapsone). [Harrison 22e]",
       ],
     },
     {
@@ -1616,7 +1616,7 @@ topics.push({
         "**Neonates and infants**: any fever with rash under 3 months is admitted; **SSSS** in neonates and young children; maternal varicella 5 days before to 2 days after delivery needs VZIG for the baby. [Harrison 22e]",
         "**Immunocompromised and HIV**: disseminated varicella or zoster, atypical measles without rash, disseminated fungal nodules (cryptococcus, histoplasma, talaromyces in North-East India) - biopsy early. [Harrison 22e]",
         "**Elderly**: drug eruptions dominate because of polypharmacy; **herpes zoster** and SCAR mortality are higher. [Harrison 22e]",
-        "**CKD**: allopurinol SCAR risk is higher - start low (50-100 mg) and consider **HLA-B*58:01** screening where available. [ACR 2020]",
+        "**CKD**: allopurinol SCAR risk is higher - start low (50-100 mg) and consider HLA-B 58:01 screening where available. [ACR 2020]",
       ],
     },
     {
@@ -1648,7 +1648,7 @@ topics.push({
         "**Varicella vaccine** (not in UIP; IAP recommends 2 doses) and **meningococcal vaccine** for Hajj pilgrims, asplenia, complement deficiency and outbreaks. [IAP 2023]",
         "**Meningococcal contacts**: chemoprophylaxis with **ciprofloxacin 500 mg once** (adult), **rifampicin 600 mg BD for 2 days**, or **ceftriaxone 250 mg IM once** (pregnancy) within 24 hours. [NICE NG240 2024]",
         "**Vector control**: Aedes source reduction, weekly dry day, repellents (dengue, chikungunya); avoiding scrub vegetation and ticks (rickettsia, KFD); KFD vaccine in endemic Karnataka districts. [NCVBDC 2024]",
-        "**Pharmacogenomic screening**: HLA-B*15:02 before carbamazepine and HLA-B*58:01 before allopurinol in high-risk groups where available. [CPIC 2018]",
+        "**Pharmacogenomic screening**: HLA-B 15:02 before carbamazepine and HLA-B 58:01 before allopurinol in high-risk groups where available. [CPIC 2018]",
         "**IDSP syndromic surveillance**: fever with rash is reported weekly (S, P, L forms) to detect measles, dengue and chikungunya outbreaks early. [IDSP 2024]",
       ],
     },
@@ -1922,7 +1922,7 @@ topics.push({
           heading: "Timing and drugs",
           points: [
             "DRESS: 2-8 weeks; anticonvulsants, allopurinol, dapsone, sulfonamides, vancomycin.",
-            "SJS/TEN: 4-28 days; carbamazepine (HLA-B*15:02), allopurinol, sulfonamides, nevirapine, lamotrigine, NSAIDs.",
+            "SJS/TEN: 4-28 days; carbamazepine (HLA-B 15:02), allopurinol, sulfonamides, nevirapine, lamotrigine, NSAIDs.",
           ],
         },
         {

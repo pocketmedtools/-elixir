@@ -1014,4 +1014,498 @@ topics.push({
   ],
 });
 
+topics.push({
+  id: "infectious-fever-emerging-infections",
+  title: "Emerging and epidemic infections: Nipah, avian influenza, mpox, outbreak response",
+  oneLiner:
+    "**Emerging infections** are those newly appearing in a population or rapidly increasing in incidence or range - **about 75% are zoonotic** - and in India the high-consequence ones are **Nipah** (fruit-bat henipavirus, encephalitis and ARDS, CFR 40-75%), **avian influenza A(H5N1)** and **mpox**; the family physician's job is to **suspect from a case definition, isolate, protect staff with the right PPE, sample safely, notify on IDSP-IHIP within 24 hours and support contact tracing**, within the **One Health** and **IHR (2005, amended 2024)** frameworks.",
+  frequency: "less-common",
+  keywords: [
+    "Nipah virus", "henipavirus", "Pteropus", "avian influenza", "H5N1", "bird flu", "H9N2", "mpox", "clade Ib",
+    "IDSP", "IHIP", "rapid response team", "case definition", "contact tracing", "PPE", "donning doffing",
+    "One Health", "IHR 2005", "PHEIC", "pandemic emergency", "Chandipura", "KFD", "CCHF", "outbreak investigation",
+  ],
+  sections: [
+    {
+      heading: "Definition and epidemiology",
+      points: [
+        "An **emerging infection** is one that has newly appeared in a population, or existed before but is rapidly increasing in incidence or geographic range; a **re-emerging infection** is a known disease returning after decline (for example dengue, cholera, diphtheria, measles). [WHO 2024]",
+        "About **60% of all human pathogens and 75% of emerging infections are zoonotic**, most originating in **wildlife**; drivers are land-use change, deforestation, intensive livestock farming, wildlife trade, climate change, urbanisation and travel. [Jones, Nature 2008]",
+        "**Nipah** outbreaks in India: **Siliguri 2001** (66 cases, 45 deaths), Nadia 2007, and Kerala - **Kozhikode 2018** (18 confirmed, 17 deaths), Kochi 2019, Kozhikode 2021 and **2023**, Malappuram **2024** and further spillovers in **2025**; Bangladesh reports cases almost every winter. [NCDC 2024]",
+        "**Avian influenza A(H5N1)**: since 2003 about **990 human cases with a CFR near 48%** have been reported to WHO; the **clade 2.3.4.4b** panzootic since 2020 has spread to wild birds, poultry, marine mammals and, since March 2024, **US dairy cattle**, with about 70 mostly mild US human cases and the first US death in January 2025. [WHO 2025]",
+        "India reported its **first human H5N1 death in 2021** (a boy from Haryana), sporadic paediatric cases since (including Andhra Pradesh 2025), and an **H9N2** case in West Bengal in 2024; poultry outbreaks recur in Kerala, Maharashtra, Jharkhand and Andhra Pradesh. [NCDC 2025]",
+        "Other emerging threats in India: **Chandipura virus** encephalitis in children (Gujarat 2024 - WHO reported **245 AES cases with 82 deaths** nationally in June-August 2024), **Kyasanur Forest disease** (Western Ghats), **CCHF** (Gujarat, Rajasthan), **Zika** (Kerala 2021, Maharashtra 2024), and imported risks such as Ebola, Marburg and MERS. [WHO DON 2024]",
+        "The WHO has declared **eight PHEICs**: H1N1 (2009), polio (2014, ongoing), Ebola (2014, 2019), Zika (2016), COVID-19 (2020), and mpox (**2022** clade IIb and **2024** clade Ib). [WHO 2025]",
+      ],
+    },
+    {
+      heading: "Aetiology and risk factors (drivers of emergence)",
+      points: [
+        "**Nipah reservoir**: **Pteropus fruit bats** (flying foxes); spillover via **raw date-palm sap** contaminated by bat saliva/urine (Bangladesh), **partly eaten fruit**, pigs as amplifying hosts (Malaysia 1998-99), and **human-to-human spread** through respiratory secretions to family caregivers and healthcare workers (India, Bangladesh). [WHO 2023]",
+        "**Avian influenza risk**: unprotected contact with **sick or dead poultry**, backyard slaughtering and defeathering, live-bird markets, wild birds, and now **raw milk and dairy cattle** (H5N1 2.3.4.4b); sustained human-to-human transmission has not occurred. [WHO 2025]",
+        "**Mpox risk**: close skin-to-skin and sexual contact (men who have sex with men in clade IIb; heterosexual networks, sex workers and households in clade Ib), bushmeat and rodent contact in Central Africa (clinical detail in the Exanthematous fevers topic). [WHO 2024]",
+        "**Healthcare amplification** is a recurring feature: Nipah in Siliguri 2001 (about 75% of cases hospital-acquired), SARS 2003, MERS in Korea 2015 and Ebola - **unrecognised index patients in emergency rooms** drive outbreaks. [Harrison 22e]",
+        "**Host factors for severe disease**: extremes of age, pregnancy, chronic lung, heart and kidney disease, diabetes, immunosuppression and uncontrolled HIV. [Harrison 22e]",
+        "**System factors** that let outbreaks grow: delayed recognition, weak laboratory networks, poor infection-prevention practice, mistrust and stigma that make people hide symptoms, and gaps between animal-health and human-health surveillance. [WHO 2024]",
+      ],
+    },
+    {
+      heading: "Pathophysiology",
+      points: [
+        "**Nipah** (Henipavirus, Paramyxoviridae) binds **ephrin-B2 and ephrin-B3**, which are abundant on **endothelium, neurons and respiratory epithelium** - producing a **systemic vasculitis with thrombosis and microinfarcts**, explaining encephalitis, ARDS and multi-organ failure. [Harrison 22e]",
+        "**Nipah persists in neurons**, which explains **relapsed or late-onset encephalitis** months to years after recovery or after asymptomatic infection (in about 10% of survivors). [Harrison 22e]",
+        "**H5N1 virus** binds **alpha-2,3-linked sialic acid receptors**, which are found deep in the human **lower respiratory tract** rather than the upper airway - explaining severe primary viral pneumonia but **poor human-to-human transmission**; adaptation to alpha-2,6 receptors (upper airway) is the pandemic warning sign. [Harrison 22e]",
+        "**Severe H5N1** produces a **cytokine storm** (very high IL-6, IP-10, MCP-1), lymphopenia, diffuse alveolar damage, haemophagocytosis and multi-organ failure; viral replication is prolonged, which is why longer and higher-dose oseltamivir is used. [Harrison 22e]",
+        "**Antigenic shift** - reassortment of avian and human influenza genes in a host co-infected with both (pigs, humans) - creates a novel subtype to which humans have no immunity, the mechanism of pandemics (1957, 1968, 2009). [Harrison 22e]",
+        "**Chandipura virus** (Vesiculovirus, Rhabdoviridae, spread by **sandflies**) causes a rapidly progressive encephalitis in children under 15 with death often within 24-48 hours of admission. [NIV 2024]",
+      ],
+    },
+    {
+      heading: "Classification: case definitions and alert levels",
+      points: [
+        "**Case definitions** for outbreaks follow three tiers - **suspected** (clinical criteria plus epidemiological link), **probable** (suspected plus strong epidemiological link or death before testing) and **confirmed** (laboratory proof) - and include **time, place and person** limits. [NCDC 2024]",
+        "**Nipah suspected case (NCDC)**: a person from an affected area with **fever plus altered sensorium or seizures**, or **fever with severe headache**, or **fever with cough or breathlessness**; **confirmed** by RT-PCR (throat swab, blood, urine, CSF), IgM/IgG ELISA or virus isolation at a BSL-3/4 laboratory. [NCDC Nipah 2023]",
+        "**Nipah probable case**: a suspected case who lived in the same ward or village as confirmed cases during the outbreak and **died before complete samples could be collected**. [NCDC Nipah 2023]",
+        "**Avian influenza suspected case**: fever with cough or breathlessness **plus exposure within 10 days** to sick or dead poultry/wild birds, an affected farm, a confirmed human case, or laboratory work with H5 samples. [WHO 2024]",
+        "**Contact categories**: **high-risk** - household members, caregivers, people who touched body fluids, and healthcare workers exposed without PPE; **low-risk** - same room or vehicle without direct contact; high-risk contacts are quarantined, low-risk contacts self-monitor. [NCDC Nipah 2023]",
+        "**WHO R&D Blueprint priority pathogens (2024 update)** now group threats by **viral family**, listing prototype and priority pathogens plus **'Pathogen X'** (an unknown pathogen); Nipah, H5 influenza, filoviruses, coronaviruses, CCHF and Lassa remain priority. [WHO 2024]",
+        "**IHR alert levels**: event notified - **PHEIC** - and, from the 2024 amendments, a new highest level, **'pandemic emergency'** (a PHEIC with wide geographic spread that exceeds health-system capacity and causes substantial disruption). [WHO IHR 2024]",
+      ],
+    },
+    {
+      heading: "Clinical features and examination",
+      points: [
+        "**Nipah**: incubation **4-14 days** (reported up to 45); fever, headache, myalgia, vomiting, then **drowsiness, confusion, seizures and coma** within days; **respiratory illness (cough, ARDS)** in about 60% in India and Bangladesh, which drives human-to-human spread. [WHO 2023]",
+        "**Nipah examination clues**: **segmental myoclonus**, areflexia, hypotonia, **hypertension and tachycardia** (brainstem involvement), abnormal doll's eye reflex, pinpoint pupils, and rapid deterioration to coma within 24-48 hours. [Harrison 22e]",
+        "**H5N1**: incubation **2-5 days (up to 10)**; high fever, cough, breathlessness and diarrhoea, progressing to **viral pneumonia and ARDS** in 4-6 days; clade 2.3.4.4b cases linked to dairy cattle in the US have been mostly **mild conjunctivitis** and influenza-like illness. [WHO 2025]",
+        "**Mpox**: prodrome with **lymphadenopathy**, then deep monomorphic pustules including palms, soles and anogenital area; full clinical detail is in the Exanthematous fevers topic. [WHO 2024]",
+        "**Viral haemorrhagic fevers** (CCHF, KFD, Ebola, Marburg): fever, myalgia, then bleeding from gums, injection sites and gut, shock; **KFD** adds a biphasic illness with meningoencephalitis in the second phase in Western Ghats forest workers. [Harrison 22e]",
+        "**Bedside triage**: record **SpO2, respiratory rate, GCS, BP and capillary refill**; look for bleeding, rash, eschar (to exclude scrub typhus), neck stiffness and focal deficits; ask exposure in the incubation window. [WHO 2024]",
+        "**The key history question** in every unusual fever is **'where have you been, what have you touched, and who else is ill?'** - travel, animal and bird contact, bat-bitten fruit or palm sap, hospital visits, and clusters among family or staff. [Harrison 22e]",
+      ],
+    },
+    {
+      heading: "Differential diagnosis",
+      points: [
+        "**Nipah encephalitis versus Japanese encephalitis/AES**: JE is mosquito-borne, rarely spreads person-to-person, causes extrapyramidal signs and thalamic lesions; Nipah has **clusters in families and staff**, myoclonus and respiratory involvement. [NCDC 2024]",
+        "**Nipah versus scrub typhus meningoencephalitis, cerebral malaria and HSV encephalitis**: look for an eschar, do a malaria smear/RDT, and start **empirical doxycycline/azithromycin and acyclovir** while Nipah PCR is pending. [ICMR 2022]",
+        "**Avian influenza versus seasonal influenza, COVID-19 and community-acquired pneumonia**: only the **exposure history** distinguishes them clinically; subtyping PCR (H5) is needed. [WHO 2024]",
+        "**Mpox versus varicella, secondary syphilis, HSV and molluscum**: lymphadenopathy, monomorphic deep lesions and sexual exposure favour mpox; co-infections are common. [WHO 2024]",
+        "**VHF versus severe dengue, leptospirosis, falciparum malaria and meningococcaemia**: these are far commoner in India and treatable - test for them first, while applying VHF precautions if exposure fits. [Harrison 22e]",
+        "**Chandipura versus Reye syndrome, toxic encephalopathy (litchi-associated hypoglycaemic encephalopathy in Muzaffarpur)** and acute bacterial meningitis in children - check glucose, CSF and season. [NCDC 2024]",
+      ],
+    },
+    {
+      heading: "Investigations and safe sampling",
+      points: [
+        "**Nipah samples**: **throat/nasal swab in VTM, blood (serum), urine and CSF** for **RT-PCR**; serum for IgM/IgG ELISA; packed in **triple packaging** with cold chain and sent to **ICMR-NIV Pune** (BSL-4) or approved BSL-3 labs (NIV Kerala Unit, Institute of Advanced Virology Thiruvananthapuram); point-of-care **TrueNat Nipah** testing was used in Kerala 2023. [ICMR 2023]",
+        "**Avian influenza**: **nasopharyngeal plus throat swab** (and lower respiratory sample if intubated; conjunctival swab if conjunctivitis) for **influenza A PCR with H5 subtyping**; an unsubtypable influenza A result in an exposed patient must be escalated to NIV or NCDC. [WHO 2024]",
+        "**Mpox**: vigorous **dry lesion swab from two sites** for MPXV PCR and clade typing. [ICMR 2024]",
+        "**Biosafety**: collect samples in a single room wearing **N95, eye protection, gown and gloves**; aerosol-generating procedures need an airborne-isolation room; label as high-risk and inform the lab before sending. [ICMR 2023]",
+        "**Supporting tests**: CBC (lymphopenia and thrombocytopenia in Nipah and H5N1), LFT, RFT, CRP, blood cultures, chest X-ray (multilobar consolidation in H5N1), MRI brain (multiple small **cortical and subcortical white-matter hyperintensities** in Nipah, unlike JE thalamic lesions), and exclusion tests for malaria, dengue and scrub typhus. [Harrison 22e]",
+        "**Genomic surveillance**: **INSACOG** (formed for SARS-CoV-2, now expanded) and NIV sequence outbreak isolates; Nipah from Kerala belongs to the **Indian genotype (NiV-I)**, close to the Bangladesh strain. [ICMR 2024]",
+      ],
+    },
+    {
+      heading: "Management at first contact / primary care",
+      points: [
+        "**Suspect** from a case definition plus exposure, and **separate the patient immediately** - mask the patient, move to a single well-ventilated room, and keep a 1-metre (preferably 2-metre) distance from others. [WHO 2024]",
+        "**Protect yourself before examining**: hand hygiene plus the PPE matching the route - **droplet and contact for Nipah and H5N1 with an N95 respirator** because of aerosol risk, contact plus droplet for mpox; minimise the number of staff in contact. [NCDC 2024]",
+        "**Notify the same day** - suspected Nipah, avian influenza, mpox, clusters of AES or unusual deaths go to the **District Surveillance Officer** and on **IHIP (P-form for presumptive cases)**; the district **Rapid Response Team** is activated. [IDSP 2024]",
+        "**Arrange safe transfer** in an ambulance with staff in PPE to the designated isolation facility, informing the receiving hospital in advance; do not send the patient by public transport. [NCDC 2024]",
+        "**Start empirical treatment that cannot wait**: oseltamivir for suspected avian influenza, doxycycline for possible scrub typhus, acyclovir for encephalitis, artesunate if malaria is positive - **do not delay treatable causes** while waiting for exotic tests. [ICMR 2022]",
+        "**Record all contacts** in the clinic - staff, other patients in the waiting area, accompanying relatives - for the contact-tracing team. [NCDC 2024]",
+      ],
+    },
+    {
+      heading: "Management in IPD / emergency",
+      points: [
+        "**Isolation ward**: single rooms or a cohort ward with dedicated staff, equipment and toilets; **airborne infection isolation room** for aerosol-generating procedures (intubation, suction, nebulisation, bronchoscopy). [WHO 2024]",
+        "**Nipah treatment is supportive**: airway protection, ventilation for ARDS, seizure control, raised ICP measures, fluids and nutrition; **ribavirin** (oral or IV) has been used with uncertain benefit; the **monoclonal antibody m102.4** (procured by ICMR) and **remdesivir** (protective in primates) are used under compassionate protocols. [NCDC Nipah 2023]",
+        "**H5N1**: **oseltamivir 75 mg twice daily** started as early as possible **regardless of the interval from symptom onset**, for at least 5 days and often **10 days in severe disease** (double dose has no proven extra benefit); add antibiotics for secondary bacterial pneumonia; **avoid routine corticosteroids**. [WHO 2024]",
+        "**H5N1 ventilation**: lung-protective ventilation (tidal volume 6 mL/kg predicted body weight, plateau pressure under 30 cmH2O), prone positioning and ECMO where available - as for other viral ARDS. [WHO 2024]",
+        "**Severe mpox**: supportive care, management of eye disease, proctitis, secondary infection and pain; tecovirimat only under trial or compassionate protocol. [WHO 2025]",
+        "**Safe management of the dead**: Nipah and VHF bodies are wrapped in leak-proof body bags by staff in full PPE, with **no washing or embalming**, minimal handling and burial or cremation under supervision, respecting family wishes. [NCDC Nipah 2023]",
+        "**Hospital outbreak control**: designate an infection-control nurse, keep a staff exposure register, monitor exposed staff daily for the incubation period, and restrict visitors. [NCDC 2024]",
+      ],
+    },
+    {
+      heading: "Outbreak investigation and response (IDSP/IHIP)",
+      points: [
+        "**IDSP** (launched **2004**, run by **NCDC**) does decentralised, laboratory-supported surveillance of epidemic-prone diseases through **District and State Surveillance Units** and a **Central Surveillance Unit**; it moved to the real-time **IHIP** platform nationwide in **2021**. [IDSP 2024]",
+        "**IHIP reporting forms**: **S (syndromic)** by health workers, **P (presumptive)** by clinicians, **L (laboratory-confirmed)** by labs - reported weekly and, for outbreak-prone diseases, **immediately**; automated alerts flag rising trends. [IDSP 2024]",
+        "**Steps of an outbreak investigation**: prepare (team, supplies) - **verify the diagnosis and confirm the outbreak** (cases above expected) - **define a case** - **find cases and line-list** - **descriptive epidemiology** (time: epidemic curve; place: spot map; person) - hypotheses - test with case-control or cohort study - **control measures** (start early, do not wait) - communicate and keep surveillance. [CDC Field Epidemiology 2019]",
+        "**The epidemic curve** tells the type: **point-source** (sharp peak within one incubation period - food-borne), **continuing common-source** (plateau - contaminated water), and **propagated** (successive peaks one incubation apart - person-to-person such as Nipah or measles). [Park 28e]",
+        "**Rapid Response Teams** (epidemiologist, clinician, microbiologist, entomologist/veterinarian as needed) reach the site within **24-48 hours**, set up a **control room**, collect samples, start active case search and give risk communication. [IDSP 2024]",
+        "**Nipah containment in Kerala**: **containment zones** with restricted movement, house-to-house fever surveillance, isolation of high-risk contacts for **21 days**, bat surveys with NIV, and an outbreak declared over after **42 days (twice the maximum incubation period)** with no new case. [Kerala Health 2023]",
+        "**Risk communication**: one official spokesperson, daily updates, clear messages (avoid fallen fruit and raw palm sap, report fever), and active **rumour and stigma management**, which keeps cases coming forward. [WHO 2024]",
+        "**PM-ABHIM (2021)** strengthens this system with **integrated public health laboratories in every district**, BSL-3 labs, new regional NIVs, the **National Institute for One Health (Nagpur)** and metropolitan surveillance units. [MoHFW 2024]",
+      ],
+    },
+    {
+      heading: "Contact tracing, quarantine and PPE",
+      points: [
+        "**Contact tracing** = identify, list, inform and follow up every contact daily for the **maximum incubation period** since last exposure: **Nipah 21 days**, **mpox 21 days**, **avian influenza 10 days**, Ebola 21 days. [NCDC 2024]",
+        "**Quarantine** separates and restricts movement of **well people who were exposed**; **isolation** separates **people who are ill or infected** - examiners expect the distinction. [Park 28e]",
+        "**PPE by transmission route**: **standard precautions** for all; **contact** (gown, gloves); **droplet** (surgical mask within 1-2 m); **airborne** (**N95 or higher respirator**, fit-checked, negative-pressure room); high-consequence pathogens add coverall, hood and boot covers. [CDC 2007]",
+        "**Donning sequence**: hand hygiene - gown - **N95 respirator (seal check)** - goggles or face shield - gloves (over gown cuffs). [CDC 2024]",
+        "**Doffing sequence** (most contamination happens here): gloves - goggles/face shield - gown - **respirator last, outside the room** - hand hygiene, with hand hygiene between steps; use a trained **buddy or observer**. [CDC 2024]",
+        "**Post-exposure chemoprophylaxis** exists for **avian influenza** (oseltamivir 75 mg twice daily for close contacts, continued for 5-10 days after last exposure) and **mpox vaccination within 4 days** of exposure (MVA-BN); there is **no licensed prophylaxis for Nipah**. [WHO 2024]",
+        "**Healthcare worker care**: daily temperature and symptom log for exposed staff, rest and psychological support, and **no blame** for reporting exposures - fear of blame hides exposures. [WHO 2024]",
+      ],
+    },
+    {
+      heading: "Special situations",
+      points: [
+        "**Pregnancy**: H5N1 and seasonal influenza are more severe - **oseltamivir is safe and should be started at once**; mpox raises miscarriage and stillbirth risk; Nipah carries very high maternal mortality - joint obstetric care in isolation. [WHO 2024]",
+        "**Children**: Chandipura and EV-A71 kill rapidly through encephalitis; oseltamivir dose is weight-based (**3 mg/kg twice daily** under 1 year; 30-75 mg twice daily by weight thereafter). [WHO 2024]",
+        "**Immunocompromised and HIV**: prolonged viral shedding, severe necrotising mpox, and longer antiviral courses; screen people with mpox for HIV. [WHO 2024]",
+        "**CKD**: reduce oseltamivir to **30 mg twice daily at CrCl 30-60** and 30 mg once daily at CrCl 10-30 mL/min. [Goodman and Gilman 14e]",
+        "**Resource-limited settings**: when no isolation room exists, use the **end of a ward with screens and 2 m spacing**, natural ventilation (open windows, fans blowing out), dedicated staff and surgical masks for patients. [WHO 2024]",
+        "**Mass gatherings and travel** (Hajj, Kumbh Mela): surveillance for MERS, meningococcal disease, influenza and diarrhoeal outbreaks; Hajj pilgrims need meningococcal vaccination. [WHO 2024]",
+      ],
+    },
+    {
+      heading: "Complications and prognosis",
+      points: [
+        "**Nipah CFR is 40-75% globally** and over **70% in most Kerala and Bangladesh outbreaks**; respiratory involvement and age over 45 predict death. [WHO 2023]",
+        "**Nipah survivors**: about **20% have long-term neurological sequelae** (seizures, personality change, cognitive deficits), and some develop **relapsed encephalitis** months to years later. [Harrison 22e]",
+        "**H5N1**: ARDS, multi-organ failure, haemophagocytosis, Reye syndrome (if aspirin is given to children), and secondary bacterial pneumonia; historical **CFR about 48%**, although clade 2.3.4.4b US cases were mostly mild. [WHO 2025]",
+        "**Mpox**: secondary infection, scarring, eye damage, proctitis and stricture, encephalitis, and mental-health effects of stigma (see Exanthematous fevers topic). [WHO 2024]",
+        "**Societal consequences**: lockdown of containment zones, school closures, poultry culling (loss of income), and stigma toward affected families and health workers. [WHO 2024]",
+      ],
+    },
+    {
+      heading: "Prevention: One Health and the International Health Regulations",
+      points: [
+        "**One Health** is an integrated approach that balances and optimises the health of **people, animals and ecosystems**; the **Quadripartite (FAO, UNEP, WHO, WOAH) One Health Joint Plan of Action 2022-2026** guides countries. [Quadripartite 2022]",
+        "**India's One Health actions**: the **National One Health Mission**, the National Institute for One Health in Nagpur, joint human-animal surveillance with the Department of Animal Husbandry and Dairying, and **NIHSAD Bhopal** for animal avian influenza testing. [MoHFW 2024]",
+        "**Nipah prevention**: do not eat **fallen or bat-bitten fruit**, do not drink **raw date-palm sap or toddy**, wash fruit, avoid bat roosts, and use PPE when caring for patients; **no licensed vaccine** - candidates (ChAdOx1 NipahB, mRNA-1215) are in early trials. [WHO 2024]",
+        "**Avian influenza prevention**: culling within **1 km** of an infected poultry site and surveillance up to 10 km, with compensation (**Action Plan for Prevention, Control and Containment of Avian Influenza, DAHD 2021**); PPE and oseltamivir prophylaxis for cullers; avoid raw milk; seasonal flu vaccination of poultry workers to reduce reassortment. [DAHD 2021]",
+        "**IHR (2005)** is a legally binding instrument for 196 States Parties; each country has a **National IHR Focal Point** (in India, at **NCDC**) and must **assess events within 48 hours and notify WHO within 24 hours** of assessment using the **Annex 2 decision instrument**. [WHO IHR 2005]",
+        "**Annex 2**: **smallpox, wild poliovirus, human influenza from a new subtype and SARS are always notifiable**; for other events notify if **any 2 of 4** apply - serious public health impact, unusual or unexpected, significant risk of international spread, significant risk of travel or trade restrictions. [WHO IHR 2005]",
+        "**Core capacities** under IHR include surveillance, laboratories, risk communication and **points of entry** (airports, seaports, ground crossings) with screening and isolation arrangements - assessed through the annual **SPAR** report and voluntary **Joint External Evaluation**. [WHO IHR 2005]",
+      ],
+    },
+    {
+      heading: "Latest guideline updates (2023-2026)",
+      points: [
+        "**IHR amendments adopted by WHA77 on 1 June 2024**, in force from **19 September 2025**: new alert level **'pandemic emergency'**, a **National IHR Authority** in each country, a **Coordinating Financial Mechanism**, a States Parties Committee, and commitments on **equitable access to health products**. [WHO IHR 2024]",
+        "**WHO Pandemic Agreement adopted by WHA78 on 20 May 2025**, with the **Pathogen Access and Benefit-Sharing (PABS)** annex still under negotiation before it opens for signature. [WHO 2025]",
+        "**WHO mpox PHEIC for clade Ib (14 August 2024 - 5 September 2025)**; MVA-BN prequalified September 2024 and LC16m8 given EUL November 2024. [WHO 2025]",
+        "**WHO R&D Blueprint 2024**: pathogen-family approach with prototype pathogens and Pathogen X, replacing the short list of named diseases. [WHO 2024]",
+        "**H5N1 clade 2.3.4.4b in dairy cattle (2024-25)** led WHO and CDC to update guidance on **raw milk avoidance, PPE for farm workers and oseltamivir PEP twice daily**; WHO risk to the general public remains low. [WHO 2025]",
+        "**India 2024-25**: Nipah protocol updated after Kerala 2023-24 outbreaks (TrueNat point-of-care testing, mobile BSL-3 labs, m102.4 stock), and **Chandipura AES** prompted sandfly control and paediatric ICU readiness in Gujarat. [NCDC 2024]",
+      ],
+    },
+    {
+      heading: "Exam and viva angle",
+      points: [
+        "**Classic questions**: 'Nipah virus infection - epidemiology, clinical features and control'; 'Steps of outbreak investigation'; 'IDSP/IHIP'; 'International Health Regulations'; 'One Health'; 'PPE donning and doffing'. [DNB pattern]",
+        "**Common mistake**: confusing **isolation (sick)** with **quarantine (exposed but well)**, or giving 14 days for Nipah contacts instead of **21 days**. [Park 28e]",
+        "**Common mistake**: delaying oseltamivir in suspected H5N1 because it is beyond 48 hours - in severe or novel influenza it is **given regardless of time since onset**. [WHO 2024]",
+        "**Common mistake**: removing the N95 inside the patient room or removing gloves last - **gloves first, respirator last, outside the room**. [CDC 2024]",
+        "**Viva**: Why does H5N1 rarely spread between humans? (**alpha-2,3 receptors deep in the lung**). What receptor does Nipah use? (**ephrin-B2/B3**). Which events are always notifiable under IHR? (**smallpox, wild polio, new influenza subtype, SARS**). [Harrison 22e]",
+        "**Viva**: Draw an epidemic curve for a point-source versus propagated outbreak and say which fits Nipah (**propagated, with healthcare clusters**). [Park 28e]",
+      ],
+    },
+  ],
+  tables: [
+    {
+      heading: "Drugs and prophylaxis for emerging infections",
+      columns: ["Drug", "Dose and route", "Duration/titration", "Key adverse effects / contraindications"],
+      rows: [
+        ["Oseltamivir (H5N1 treatment)", "75 mg oral BD; child by weight (3 mg/kg BD under 1 year)", "At least 5 days; 10 days in severe or immunocompromised", "Nausea, vomiting; reduce to 30 mg BD at CrCl 30-60"],
+        ["Oseltamivir (H5N1 post-exposure)", "75 mg oral BD (treatment dose for novel influenza)", "5-10 days after last exposure", "Same; safe in pregnancy"],
+        ["Baloxavir", "40 mg (40-80 kg) or 80 mg (over 80 kg) oral single dose", "Single dose; alternative for influenza", "Resistance emergence; limited data in severe and pregnancy"],
+        ["Ribavirin (Nipah, compassionate)", "Oral or IV loading then maintenance per protocol", "7-10 days", "Haemolytic anaemia, teratogenic; benefit uncertain"],
+        ["Monoclonal antibody m102.4 (Nipah)", "IV, under ICMR compassionate protocol", "Two doses early in illness", "Experimental; supply through ICMR only"],
+        ["Remdesivir (Nipah, experimental)", "200 mg IV day 1 then 100 mg daily", "Per protocol", "Raised transaminases; animal data only"],
+        ["MVA-BN vaccine (mpox)", "0.5 mL subcutaneous, 2 doses 4 weeks apart", "Pre-exposure or within 4 days (up to 14) of exposure", "Local reactions; non-replicating"],
+        ["Tecovirimat (mpox)", "600 mg oral BD with food", "14 days, trial or compassionate", "No benefit on lesion resolution in RCTs"],
+      ],
+    },
+    {
+      heading: "Key emerging infections in India",
+      columns: ["Infection", "Agent and reservoir", "Transmission", "Incubation", "Key feature / CFR"],
+      rows: [
+        ["Nipah", "Henipavirus; Pteropus fruit bat", "Bat-contaminated fruit or sap; human-to-human", "4-14 days (up to 45)", "Encephalitis and ARDS; CFR 40-75%"],
+        ["Avian influenza H5N1", "Influenza A; wild birds, poultry, dairy cattle", "Contact with sick birds or animals", "2-5 days (up to 10)", "Viral pneumonia, ARDS; CFR about 48% historically"],
+        ["Mpox", "Orthopoxvirus; rodents", "Skin, sexual, household contact", "3-21 days", "Lymphadenopathy, monomorphic rash; clade Ib PHEIC 2024"],
+        ["Chandipura", "Vesiculovirus; sandflies", "Sandfly bite", "Short (days)", "Rapid encephalitis in children; high CFR"],
+        ["Kyasanur Forest disease", "Flavivirus; monkeys, ticks", "Haemaphysalis tick bite", "3-8 days", "Biphasic haemorrhagic fever with encephalitis; vaccine exists"],
+        ["CCHF", "Nairovirus; livestock, Hyalomma ticks", "Tick bite, animal blood, nosocomial", "1-13 days", "Haemorrhagic fever; nosocomial spread; ribavirin used"],
+        ["Zika", "Flavivirus; Aedes mosquito", "Mosquito, sexual, vertical", "3-14 days", "Mild rash; microcephaly in pregnancy"],
+      ],
+    },
+    {
+      heading: "Differential diagnosis of a suspected high-consequence infection",
+      columns: ["Presentation", "Exotic possibility", "Commoner treatable mimic to exclude first", "Discriminator"],
+      rows: [
+        ["Fever with encephalitis cluster", "Nipah, Chandipura", "JE/AES, scrub typhus, HSV, cerebral malaria", "Eschar, smear/RDT, CSF PCR, family/staff clusters"],
+        ["Fever with severe pneumonia after bird contact", "H5N1", "Seasonal influenza, COVID-19, bacterial CAP", "Exposure history; H5 subtyping PCR"],
+        ["Fever with pustular rash", "Mpox", "Varicella, secondary syphilis, HSV", "Lymphadenopathy, monomorphic; lesion PCR"],
+        ["Fever with bleeding", "CCHF, KFD, Ebola", "Severe dengue, leptospirosis, falciparum, meningococcaemia", "Travel/tick/forest exposure; NS1, smear, MAT"],
+        ["Fever with paralysis in a child", "EV-A71, polio", "Guillain-Barre syndrome, cord compression", "Stool samples for AFP surveillance"],
+      ],
+    },
+    {
+      heading: "PPE and transmission-based precautions",
+      columns: ["Precaution", "Used for", "What to wear", "Room"],
+      rows: [
+        ["Standard", "All patients", "Hand hygiene; gloves, apron, mask, eye protection if splash risk", "Any"],
+        ["Contact", "Mpox, MRSA, C. difficile", "Gown and gloves on entry", "Single room or cohort"],
+        ["Droplet", "Influenza, mumps, rubella, meningococcus", "Surgical mask within 1-2 m", "Single room, 1-2 m spacing"],
+        ["Airborne", "TB, measles, varicella, aerosol procedures in H5N1/Nipah", "N95 or higher respirator, fit-checked", "Negative-pressure, 12 air changes/hour"],
+        ["High-consequence (Nipah, VHF)", "Nipah, Ebola, CCHF", "N95, goggles/face shield, coverall or gown, double gloves, boot covers", "Dedicated isolation unit; trained buddy for doffing"],
+      ],
+    },
+    {
+      heading: "Outbreak investigation steps",
+      columns: ["Step", "What it involves"],
+      rows: [
+        ["1. Prepare", "Team, approvals, supplies, sample kits, PPE"],
+        ["2. Confirm the outbreak", "Compare with expected numbers from IDSP baseline"],
+        ["3. Verify the diagnosis", "Clinical review and laboratory confirmation"],
+        ["4. Case definition", "Suspected, probable, confirmed; time, place, person"],
+        ["5. Find cases and line-list", "Active search, hospital records, house-to-house"],
+        ["6. Descriptive epidemiology", "Epidemic curve, spot map, attack rates by age/sex"],
+        ["7. Hypotheses and testing", "Case-control or cohort study; environmental samples"],
+        ["8. Control measures", "Isolation, quarantine, vector or source control - start early"],
+        ["9. Communicate", "Report to state and NCDC; public risk communication"],
+        ["10. Maintain surveillance", "Declare over after twice the maximum incubation period"],
+      ],
+    },
+  ],
+  redFlags: [
+    "Fever with altered sensorium or seizures in a person from a Nipah-affected area, or in a family/staff cluster",
+    "Severe pneumonia or ARDS with contact with sick or dead poultry, wild birds or dairy cattle in the last 10 days",
+    "Any cluster of unexplained deaths or severe illness in a village, ward or hospital staff",
+    "Fever with bleeding after tick bite, forest exposure, livestock slaughter or travel to an outbreak area",
+    "Pustular rash with lymphadenopathy in a pregnant woman, child or person with advanced HIV",
+    "Unsubtypable influenza A result in a patient with animal exposure",
+    "A healthcare worker developing fever after caring for a suspected high-consequence case",
+  ],
+  pearls: [
+    "**Suspect - isolate - protect - sample - notify**: the five-word first-contact rule for any emerging infection.",
+    "**Isolation is for the sick; quarantine is for the exposed but well.**",
+    "**Nipah uses ephrin-B2/B3** - endothelium and neurons, so vasculitis, encephalitis and late relapse.",
+    "**H5N1 binds alpha-2,3 sialic acid deep in the lung** - severe pneumonia, poor human spread.",
+    "**Follow contacts for the maximum incubation period**: Nipah 21, mpox 21, avian flu 10 days.",
+    "**Declare an outbreak over after twice the maximum incubation period** without a new case (42 days for Nipah).",
+    "**Doffing: gloves first, respirator last, outside the room.**",
+    "**IHR Annex 2 always-notifiable four**: smallpox, wild polio, new influenza subtype, SARS.",
+    "**IHR 2024 amendments** created the 'pandemic emergency' level; in force since 19 September 2025.",
+    "**IHIP forms**: S by health workers, P by clinicians, L by labs.",
+  ],
+  mcqs: [
+    {
+      id: "infectious-fever-emerging-infections-q1",
+      stem: "During a Nipah outbreak in Kozhikode, a 40-year-old nurse who cared for a confirmed case without an N95 respirator is well. What is the correct public health action?",
+      options: [
+        "Isolate her in hospital and start ribavirin",
+        "No action unless she develops symptoms",
+        "Quarantine as a high-risk contact with daily symptom monitoring for 21 days from last exposure",
+        "Give oseltamivir prophylaxis for 10 days",
+      ],
+      answer: 2,
+      explanation:
+        "An unprotected healthcare worker exposed to a confirmed Nipah patient is a high-risk contact; she is well, so she needs quarantine (not isolation) with daily monitoring for 21 days from last exposure, the follow-up period used in India. Ribavirin is not proven as prophylaxis and isolation is for symptomatic people, waiting for symptoms risks onward spread, and oseltamivir is the prophylaxis for avian influenza, not Nipah.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-emerging-infections-q2",
+      stem: "Why has avian influenza A(H5N1) caused severe pneumonia in humans but very limited human-to-human transmission?",
+      options: [
+        "It binds alpha-2,3-linked sialic acid receptors that are found mainly in the lower respiratory tract",
+        "It cannot replicate at human body temperature",
+        "Humans have pre-existing neutralising antibodies to H5",
+        "It is inactivated by gastric acid after inhalation",
+      ],
+      answer: 0,
+      explanation:
+        "Avian influenza viruses prefer alpha-2,3 sialic acid receptors, which in humans lie deep in the alveoli and bronchioles, so infection causes severe pneumonia but little shedding from the upper airway; adaptation to alpha-2,6 receptors would signal pandemic potential. H5N1 replicates well at human core temperature, humans are largely immunologically naive to H5, and gastric acid has nothing to do with respiratory transmission.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-emerging-infections-q3",
+      stem: "Under the International Health Regulations (2005), which event must always be notified to WHO regardless of the Annex 2 assessment?",
+      options: [
+        "A cluster of cholera cases in an endemic district",
+        "A single case of human influenza caused by a new subtype",
+        "A dengue outbreak during the monsoon",
+        "An increase in scrub typhus cases after floods",
+      ],
+      answer: 1,
+      explanation:
+        "Annex 2 lists four diseases that are always notifiable - smallpox, wild poliovirus, human influenza caused by a new subtype, and SARS - because a single case may signal international spread. Cholera, dengue and scrub typhus are assessed with the four Annex 2 questions and are notified only if at least two criteria (serious impact, unusual, international spread risk, travel or trade risk) are met.",
+      difficulty: "easy",
+    },
+    {
+      id: "infectious-fever-emerging-infections-q4",
+      stem: "An outbreak's epidemic curve shows successive peaks about 10-12 days apart, each larger than the last, with cases among family caregivers and hospital staff. What does this pattern indicate?",
+      options: [
+        "Point-source outbreak from a single meal",
+        "Continuing common-source outbreak from contaminated water",
+        "Seasonal vector-borne increase",
+        "Propagated (person-to-person) outbreak",
+      ],
+      answer: 3,
+      explanation:
+        "Successive, enlarging peaks separated by roughly one incubation period with caregiver and staff clusters indicate a propagated outbreak, as seen in Nipah. A point-source outbreak has a single sharp peak within one incubation period, a continuing common source produces a plateau, and vector-borne seasonal rises do not cluster in caregivers and healthcare workers.",
+      difficulty: "moderate",
+    },
+    {
+      id: "infectious-fever-emerging-infections-q5",
+      stem: "Which change was introduced by the amendments to the International Health Regulations adopted at the World Health Assembly in June 2024?",
+      options: [
+        "A new alert level called 'pandemic emergency' above a PHEIC",
+        "Abolition of the National IHR Focal Point",
+        "Mandatory travel bans during any PHEIC",
+        "Removal of SARS from the always-notifiable list",
+      ],
+      answer: 0,
+      explanation:
+        "The 2024 IHR amendments, in force since September 2025, created a 'pandemic emergency' level for PHEICs with wide spread exceeding health-system capacity, and added National IHR Authorities, a Coordinating Financial Mechanism and equity provisions. National Focal Points were retained, IHR continues to discourage unnecessary travel and trade restrictions, and SARS remains always notifiable.",
+      difficulty: "hard",
+    },
+  ],
+  theory: [
+    {
+      id: "infectious-fever-emerging-infections-t1",
+      paper: "I",
+      kind: "long",
+      marks: 10,
+      minutes: 18,
+      frequency: "less-common",
+      question:
+        "Describe the epidemiology, clinical features, diagnosis and management of Nipah virus infection. Outline the public health response to a Nipah outbreak in your district.",
+      openingLines: [
+        "Nipah virus is a zoonotic henipavirus (Paramyxoviridae) whose reservoir is the Pteropus fruit bat; it causes acute encephalitis and respiratory illness with a case fatality of 40-75% and spreads person-to-person to caregivers and health workers.",
+        "India has had outbreaks in West Bengal (2001, 2007) and repeatedly in Kerala since 2018; there is no licensed vaccine or proven antiviral, so control depends on early detection, isolation, contact tracing and infection prevention.",
+      ],
+      answer: [
+        {
+          heading: "Epidemiology",
+          points: [
+            "Reservoir Pteropus bats; spillover via bat-bitten fruit and raw date-palm sap; pigs amplified the 1998 Malaysian outbreak.",
+            "India: Siliguri 2001 (45 deaths), Nadia 2007, Kerala 2018, 2019, 2021, 2023, 2024, 2025.",
+            "Incubation 4-14 days (up to 45); human-to-human spread via respiratory secretions.",
+          ],
+        },
+        {
+          heading: "Pathogenesis and clinical features",
+          points: [
+            "Ephrin-B2/B3 receptor - vasculitis, thrombosis, neuronal infection.",
+            "Fever, headache, vomiting, then drowsiness, seizures, coma; segmental myoclonus, areflexia, hypertension.",
+            "Respiratory illness and ARDS in about 60%; late or relapsed encephalitis in survivors.",
+          ],
+        },
+        {
+          heading: "Diagnosis",
+          points: [
+            "NCDC case definitions: suspected, probable, confirmed.",
+            "Throat swab, blood, urine and CSF RT-PCR; ELISA; triple packaging to NIV Pune (BSL-4) or Kerala BSL-3 labs.",
+            "MRI: multiple small cortical and subcortical white-matter lesions; exclude scrub, malaria, JE, HSV.",
+          ],
+        },
+        {
+          heading: "Management",
+          points: [
+            "Isolation with droplet, contact and airborne precautions (N95).",
+            "Supportive ICU care: airway, ventilation, seizure control, ICP measures.",
+            "Ribavirin of uncertain benefit; m102.4 monoclonal antibody and remdesivir under compassionate protocols.",
+            "Safe dead-body management without washing.",
+          ],
+        },
+        {
+          heading: "Public health response",
+          points: [
+            "Notify immediately on IHIP; district RRT within 24-48 h; control room.",
+            "Containment zone, house-to-house fever survey, contact line-list; high-risk contacts quarantined 21 days.",
+            "Hospital IPC, staff monitoring, risk communication; bat surveys with NIV (One Health).",
+            "Declare over after 42 days without new cases.",
+          ],
+        },
+        {
+          heading: "Prevention",
+          points: [
+            "Avoid fallen fruit and raw palm sap, wash fruit, PPE for caregivers; vaccine candidates in trials.",
+          ],
+        },
+      ],
+      mustDraw: ["Transmission cycle: bat - fruit/sap or pig - human - human", "Flow chart of district outbreak response"],
+      markSplit: [
+        { part: "Epidemiology and transmission", marks: 2 },
+        { part: "Clinical features", marks: 2 },
+        { part: "Diagnosis", marks: 1.5 },
+        { part: "Management", marks: 2 },
+        { part: "Public health response and prevention", marks: 2.5 },
+      ],
+      keywords: ["Nipah", "Pteropus", "ephrin-B2", "21 days", "IHIP", "containment zone", "m102.4"],
+    },
+    {
+      id: "infectious-fever-emerging-infections-t2",
+      paper: "I",
+      kind: "short-note",
+      marks: 5,
+      minutes: 9,
+      frequency: "less-common",
+      question: "Write a short note on the International Health Regulations (2005) and the 2024 amendments.",
+      openingLines: [
+        "The International Health Regulations (2005) are a legally binding instrument adopted by 196 States Parties to prevent, detect and respond to the international spread of disease while avoiding unnecessary interference with travel and trade.",
+        "They were amended at the 77th World Health Assembly in June 2024, the amendments entering into force on 19 September 2025.",
+      ],
+      answer: [
+        {
+          heading: "Key provisions",
+          points: [
+            "National IHR Focal Point (NCDC in India); assess events within 48 h and notify WHO within 24 h of assessment.",
+            "Annex 2: smallpox, wild polio, new influenza subtype and SARS always notifiable; others if 2 of 4 criteria.",
+            "Core capacities: surveillance, labs, risk communication, points of entry; SPAR and JEE.",
+          ],
+        },
+        {
+          heading: "PHEIC",
+          points: [
+            "Declared by WHO Director-General on Emergency Committee advice; eight so far, latest mpox 2024.",
+          ],
+        },
+        {
+          heading: "2024 amendments",
+          points: [
+            "New 'pandemic emergency' alert level.",
+            "National IHR Authority; Coordinating Financial Mechanism; States Parties Committee.",
+            "Equitable access to health products and solidarity.",
+          ],
+        },
+        {
+          heading: "Relevance to India",
+          points: [
+            "IDSP-IHIP feeds the Focal Point; airport and port health organisations handle points of entry.",
+          ],
+        },
+      ],
+      mustDraw: ["Annex 2 decision instrument flow chart"],
+      markSplit: [
+        { part: "Definition and purpose", marks: 1 },
+        { part: "Key provisions and Annex 2", marks: 2 },
+        { part: "2024 amendments", marks: 1.5 },
+        { part: "Indian relevance", marks: 0.5 },
+      ],
+      keywords: ["IHR 2005", "Annex 2", "PHEIC", "pandemic emergency", "National IHR Focal Point", "points of entry"],
+    },
+  ],
+  references: [
+    "Harrison's Principles of Internal Medicine, 22nd edition, 2025 - zoonotic paramyxoviruses, influenza and emerging infections",
+    "WHO. International Health Regulations (2005), 3rd edition, and Amendments adopted by WHA77 (Resolution WHA77.17), June 2024",
+    "NCDC, MoHFW. Nipah Virus Disease: Guidelines for surveillance, diagnosis and management, updated 2023",
+    "WHO. Clinical practice guidelines for influenza, 2024; WHO avian influenza A(H5N1) risk assessments, 2025",
+    "NCDC. Integrated Disease Surveillance Programme and Integrated Health Information Platform operational guidelines, 2024",
+    "FAO, UNEP, WHO, WOAH. One Health Joint Plan of Action (2022-2026)",
+    "Department of Animal Husbandry and Dairying. Action Plan for Prevention, Control and Containment of Avian Influenza (revised 2021)",
+    "Park's Textbook of Preventive and Social Medicine, 28th edition, 2025",
+  ],
+});
+
 export default topics;

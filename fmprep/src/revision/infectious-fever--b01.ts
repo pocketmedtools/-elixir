@@ -646,6 +646,209 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "infectious-fever-antimicrobial-pharmacology": {
+    checked: "2026-10",
+    updated: [
+      "ASHP/IDSA/PIDS/SIDP 2020 vancomycin consensus (current): AUC24 400-600, loading 20-35 mg/kg, no trough-only targets.",
+      "BLING III and IPD meta-analysis (JAMA 2024): continuous beta-lactam infusion linked to lower mortality in sepsis.",
+      "AGS Beers 2023: avoid nitrofurantoin if CrCl under 30; caution with fluoroquinolones and cotrimoxazole plus ACEi/ARB.",
+      "MHRA January 2024: systemic fluoroquinolones only when other antibiotics are inappropriate.",
+      "KDIGO 2024 CKD: eGFR with cystatin C where accuracy matters for drug dosing.",
+    ],
+    master: {
+      heading: "Master revision table - Antimicrobial pharmacology",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definitions", "**PK**: absorption, Vd, clearance, half-life; **PD**: effect relative to **MIC**; breakpoints from PK/PD targets; under-dosing opens the mutant selection window."],
+        ["PK points", "Oral equals IV for **doxycycline, quinolones, linezolid, metronidazole, cotrimoxazole, fluconazole**; chelation with Ca/Mg/Fe; hydrophilic drugs' Vd expands in sepsis; hypoalbuminaemia; augmented renal clearance over 130."],
+        ["PD classes", "**Time** (beta-lactams: penicillins 50%, cephalosporins 60-70%, carbapenems 40% fT>MIC); **peak** (aminoglycosides Cmax/MIC 8-10); **AUC** (vancomycin 400-600, quinolones over 125); post-antibiotic effect."],
+        ["Loading doses", "Depend on **Vd, not kidneys**; vancomycin 20-35 mg/kg (max 3 g); amikacin 25-30 mg/kg in ICU; colistin 9 MIU load then 4.5 MIU 12-hourly; polymyxin B no renal change."],
+        ["Infusions", "Pip-taz 4.5 g over 3-4 h 8-hourly; meropenem over 3 h; once-daily gentamicin 5-7 mg/kg, amikacin 15-20 mg/kg."],
+        ["TDM", "Vancomycin **AUC 400-600** (trough 10-15 pragmatic); gentamicin Hartford nomogram, trough under 1; teicoplanin trough 15-20 or more; voriconazole 1-5.5; linezolid 2-7."],
+        ["Renal dosing", "Cockcroft-Gault; **no change**: ceftriaxone, doxycycline, azithromycin, linezolid, clindamycin, metronidazole, rifampicin, polymyxin B; adjust carbapenems, pip-taz, quinolones, vancomycin, aminoglycosides, cotrimoxazole, fluconazole, E and Z."],
+        ["Hepatic", "Child-Pugh; hepatotoxic: INH, rifampicin, PZA, amoxicillin-clavulanate, flucloxacillin, nitrofurantoin; stop ATT if ALT over 5x (or 3x with symptoms)."],
+        ["Interactions", "**Rifampicin** induces CYP3A4/P-gp (OCP, warfarin, DOACs, dolutegravir 50 mg BD); clarithromycin inhibits (statins, colchicine); linezolid plus SSRI; carbapenem lowers valproate; cotrimoxazole hyperkalaemia with ACEi."],
+        ["QT and class toxicity", "Macrolides, quinolones, azoles, bedaquiline, clofazimine, antimalarials; stop if QTc over 500; quinolone tendon and aortic risk; aminoglycoside ototoxicity; cefepime neurotoxicity in AKI."],
+        ["Pregnancy", "Safe: penicillins, cephalosporins, azithromycin, nitrofurantoin (not term), metronidazole, HRZE; avoid: tetracyclines, aminoglycosides, quinolones if possible, cotrimoxazole near term, chloramphenicol, high-dose fluconazole."],
+        ["Special groups", "Children: doxycycline up to 21 days OK; neonates no ceftriaxone with calcium, no chloramphenicol; elderly Beers 2023; critically ill high loads, prolonged infusion, TDM."],
+        ["Monitoring", "Creatinine every 2-3 days on vancomycin and aminoglycosides; weekly CBC on linezolid; daily creatinine on colistin; LFT on ATT in high-risk patients; ECG for QT drugs."],
+        ["Exam one-liners", "Beta-lactams time, aminoglycosides peak, vancomycin AUC; full first dose in AKI; rifampicin halves co-drugs; carbapenem plus valproate - seizures."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Dosing an antibiotic in a sick patient",
+        steps: [
+          { label: "Pick the drug for the syndrome", detail: "Access first if stable; see empirical antibiotics topic" },
+          { label: "Give the full loading dose", detail: "Based on Vd and weight, not renal function", tone: "warn" },
+          { label: "Estimate renal function", detail: "Cockcroft-Gault CrCl; watch for augmented clearance over 130", tone: "decision" },
+          { label: "Set maintenance by PD class", detail: "Beta-lactam prolonged infusion; aminoglycoside once daily; vancomycin by AUC" },
+          { label: "Check interactions, QT and pregnancy", detail: "Rifampicin, macrolides, azoles, linezolid, valproate" },
+          { label: "TDM and monitoring", detail: "Vancomycin AUC 400-600; gentamicin trough under 1; creatinine", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "PK/PD killing patterns",
+        root: "Antimicrobial killing pattern",
+        arms: [
+          { label: "Time-dependent (fT>MIC)", steps: ["Penicillins, cephalosporins, carbapenems", "Frequent doses or prolonged infusion"] },
+          { label: "Concentration-dependent (Cmax/MIC)", tone: "decision", steps: ["Aminoglycosides, daptomycin, metronidazole", "Large once-daily dose"] },
+          { label: "AUC-dependent (AUC/MIC)", tone: "good", steps: ["Vancomycin, quinolones, linezolid, azithromycin", "Optimise daily exposure; TDM for vancomycin"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Renal adjustment at a glance",
+        columns: ["No adjustment", "Adjust maintenance", "Avoid or use with care"],
+        rows: [
+          ["Ceftriaxone", "Meropenem, pip-taz", "Nitrofurantoin if CrCl under 30"],
+          ["Doxycycline, azithromycin", "Vancomycin, aminoglycosides", "Cefepime (neurotoxicity)"],
+          ["Linezolid, clindamycin", "Ciprofloxacin, levofloxacin", "Colistin (AKI common)"],
+          ["Metronidazole, rifampicin", "Cotrimoxazole, fluconazole, E and Z", "Tetracycline (not doxycycline)"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Pharmacokinetics** is what the body does to the drug.",
+            "**Pharmacodynamics** is what the drug does to the organism relative to the MIC.",
+            "**MIC** is the lowest concentration that inhibits visible growth.",
+            "Under-dosing places drug in the **mutant selection window** and breeds resistance.",
+            "Many critically ill patients **miss targets** on standard beta-lactam doses.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Sepsis and fluids **expand Vd** of hydrophilic drugs like beta-lactams and vancomycin.",
+            "**Augmented renal clearance** over 130 mL/min lowers levels in young septic patients.",
+            "**Low albumin** speeds clearance of ceftriaxone, ertapenem and teicoplanin.",
+            "Steady state takes **4-5 half-lives**; a loading dose gets there at once.",
+            "Quinolones and tetracyclines **chelate** calcium, iron and antacids.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Time-dependent**: beta-lactams; carbapenems need 40% of interval above MIC.",
+            "**Concentration-dependent**: aminoglycosides; target peak 8-10 times the MIC.",
+            "**AUC-dependent**: vancomycin 400-600; quinolones over 125 for Gram-negatives.",
+            "**Post-antibiotic effect** is long for aminoglycosides and quinolones.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Give a **full loading dose** even in AKI; it depends on Vd.",
+            "Vancomycin load **20-35 mg/kg**, maximum 3 g.",
+            "Give **gentamicin 5-7 mg/kg** once daily.",
+            "Give beta-lactams as **prolonged infusion** after the first bolus.",
+            "Switch to oral early for **highly bioavailable** drugs.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Vancomycin: target **AUC 400-600**; trough-only monitoring is no longer advised.",
+            "Gentamicin: level 6-14 hours after dose on the **Hartford nomogram**.",
+            "Gentamicin trough should be **under 1 mg/L**.",
+            "Voriconazole trough **1-5.5 mg/L**; linezolid trough 2-7 mg/L.",
+            "Draw troughs **just before** the next dose at steady state.",
+          ],
+        },
+        {
+          title: "Treatment - next steps",
+          points: [
+            "Estimate CrCl with **Cockcroft-Gault** for drug dosing.",
+            "No change: **ceftriaxone, doxycycline, azithromycin, linezolid, clindamycin**.",
+            "Meropenem: **1 g 12-hourly** at CrCl 26-50.",
+            "Ethambutol and pyrazinamide go **thrice weekly** below CrCl 30.",
+            "Dose dialysable drugs **after haemodialysis**.",
+            "Stop ATT if **ALT over 5 times** normal, or over 3 with symptoms.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Rifampicin** lowers OCP, warfarin, DOAC and dolutegravir levels.",
+            "**Clarithromycin** with simvastatin causes rhabdomyolysis.",
+            "**Linezolid** with SSRIs causes serotonin syndrome.",
+            "**Meropenem** crashes valproate levels and triggers seizures.",
+            "Stop QT drugs when **QTc exceeds 500 ms**; correct potassium and magnesium.",
+            "**Cefepime** in renal failure causes confusion and myoclonus.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "**Pregnancy safe**: penicillins, cephalosporins, azithromycin, nitrofurantoin before term.",
+            "**Avoid in pregnancy**: tetracyclines, aminoglycosides, chloramphenicol near term.",
+            "**Children**: doxycycline up to 21 days does not stain teeth.",
+            "**Elderly**: avoid nitrofurantoin if CrCl under 30 (Beers 2023).",
+            "**Critically ill**: high loads, prolonged infusions and TDM.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**ASHP/IDSA 2020**: AUC-guided vancomycin replaces trough targets.",
+            "**BLING III 2024**: continuous beta-lactam infusion favoured on pooled data.",
+            "**Beers 2023**: nitrofurantoin threshold now CrCl 30.",
+            "**MHRA 2024**: quinolones only when other antibiotics are unsuitable.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Pharmacology drugs at a glance",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Vancomycin", "Load 20-35 mg/kg, then 15-20 mg/kg 8-12-hourly", "AUC-guided", "AKI; infuse no faster than 1 g/h"],
+            ["Gentamicin", "5-7 mg/kg IV once daily", "5-7 days ideally", "Nephro- and ototoxicity"],
+            ["Amikacin", "15-20 mg/kg IV once daily", "Level-guided", "Cochlear ototoxicity"],
+            ["Piperacillin-tazobactam", "4.5 g over 3-4 h 8-hourly", "By culture", "AKI with vancomycin"],
+            ["Meropenem", "1 g 8-hourly; 12-hourly at CrCl 26-50", "By culture", "Lowers valproate"],
+            ["Colistin (CMS)", "9 MIU load, then 4.5 MIU 12-hourly", "By culture", "AKI, neurotoxicity"],
+            ["Rifampicin", "10 mg/kg oral daily", "By regimen", "Enzyme induction; hepatitis"],
+            ["Linezolid", "600 mg 12-hourly", "Check CBC weekly", "Platelets, SSRI interaction"],
+          ],
+        },
+        {
+          heading: "PK/PD classes",
+          columns: ["Class", "Target", "Drugs"],
+          rows: [
+            ["Time-dependent", "fT>MIC 40-70%", "Penicillins, cephalosporins, carbapenems"],
+            ["Concentration-dependent", "Cmax/MIC 8-10", "Aminoglycosides, daptomycin, metronidazole"],
+            ["AUC-dependent", "AUC/MIC 400-600 (vanco), over 125 (quinolone)", "Vancomycin, quinolones, linezolid"],
+          ],
+        },
+        {
+          heading: "Pregnancy safety",
+          columns: ["Safe", "Caution", "Avoid"],
+          rows: [
+            ["Penicillins, cephalosporins", "Nitrofurantoin near term", "Tetracyclines"],
+            ["Azithromycin", "Cotrimoxazole first trimester", "Aminoglycosides"],
+            ["Metronidazole, clindamycin", "Quinolones if no option", "Chloramphenicol near term"],
+            ["HRZE", "Single-dose fluconazole", "High-dose fluconazole, voriconazole"],
+          ],
+        },
+      ],
+      remember: [
+        "**Beta-lactams: time; aminoglycosides: peak; vancomycin: AUC**.",
+        "Loading dose follows **Vd, not kidneys**.",
+        "Vancomycin **AUC 400-600**, not trough 15-20.",
+        "No renal change: **ceftriaxone, doxy, azithro, linezolid, clinda, metro**.",
+        "Rifampicin: **double dolutegravir**, no DOACs, no pill.",
+        "**Carbapenem plus valproate** equals seizures.",
+        "Pregnancy: avoid **tetracyclines, aminoglycosides, chloramphenicol**.",
+      ],
+    },
+  },
 };
 
 export default revision;

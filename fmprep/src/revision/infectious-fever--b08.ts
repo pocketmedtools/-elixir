@@ -437,6 +437,216 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "infectious-fever-tetanus-diphtheria": {
+    checked: "2026-10",
+    updated: [
+      "WHO 2024 diphtheria guideline: antitoxin on clinical suspicion; macrolides preferred over penicillin; contact prophylaxis plus vaccination.",
+      "MoHFW 2018 onward: Td replaced TT for pregnancy, adolescents and wound care.",
+      "ACIP 2020: Td or Tdap interchangeable for 10-year boosters and wound management.",
+      "WHO 2017 position, 2024 surveillance standards: 6 tetanus-toxoid doses for lifelong protection; metronidazole preferred.",
+    ],
+    master: {
+      heading: "Master revision table - Tetanus and diphtheria",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definitions", "**Tetanus** - toxin disease with trismus, rigidity and spasms in a conscious patient; **diphtheria** - toxigenic C. diphtheriae with adherent pseudomembrane, myocarditis and neuropathy."],
+        ["Burden", "India validated for **MNTE 2015**, adult tetanus persists; India reports the **most diphtheria cases worldwide**, shifting to older children and adults."],
+        ["Organism", "C. tetani - anaerobic spore former in soil, drumstick spore; C. diphtheriae - tox gene from beta-phage, droplet spread, carriers."],
+        ["Toxin mechanism", "**Tetanospasmin** cleaves synaptobrevin, blocks GABA and glycine; **diphtheria toxin** ADP-ribosylates **EF-2**."],
+        ["Classification", "Tetanus generalised, localised, cephalic, neonatal; **Ablett I-IV**; diphtheria faucial, laryngeal, nasal, cutaneous; malignant with bull neck."],
+        ["Clinical", "Trismus first, risus sardonicus, opisthotonus, reflex spasms, autonomic storm; diphtheria grey membrane that bleeds, bull neck, nasal regurgitation."],
+        ["Investigations", "Tetanus clinical, **spatula test**; CK, Mg, ECG; diphtheria - swab under membrane, **Albert stain**, Loeffler culture, **Elek or tox PCR**, daily ECG."],
+        ["Wound prophylaxis", "Under 3 doses: Td all wounds + **HTIG 250 IU** if tetanus-prone; 3+ doses: Td if over 10 y (clean) or over 5 y (tetanus-prone)."],
+        ["Tetanus treatment", "Quiet ICU, early tracheostomy, **HTIG 3000-6000 IU IM**, **metronidazole 500 mg 6-8-hourly 7-10 days**, diazepam/midazolam, **magnesium 40 mg/kg then 2 g/h**."],
+        ["Diphtheria treatment", "**DAT 20 000-100 000 IU IV** on suspicion; azithromycin or erythromycin (WHO 2024) or penicillin 14 days; isolation till 2 negative cultures."],
+        ["Contacts", "Swab, **benzathine penicillin once** or macrolide 7-10 days, watch 7 days, booster if last dose over 5 years."],
+        ["Complications", "Tetanus - laryngospasm, VAP, autonomic death, rhabdomyolysis; diphtheria - **myocarditis week 1-2**, palate week 1-3, limbs week 3-8, airway block."],
+        ["Prevention", "UIP pentavalent 6-10-14 weeks, DPT 16-24 months and 5-6 years, **Td 10 and 16 years**, Td in pregnancy, clean delivery."],
+        ["Exam one-liners", "Antitoxin only neutralises unbound toxin; metronidazole over penicillin; no propranolol alone; disease gives no immunity."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Wound: tetanus prophylaxis decision",
+        steps: [
+          { label: "Clean wound, debride, remove foreign body", detail: "No routine antibiotics for prophylaxis" },
+          { label: "Tetanus-prone wound?", detail: "Soil, puncture, burn, crush, devitalised, over 6 h old", tone: "decision" },
+          { label: "Doses unknown or fewer than 3", detail: "Td now and complete series; HTIG 250 IU if tetanus-prone", tone: "warn" },
+          { label: "3 or more doses", detail: "Td if over 10 y (clean) or over 5 y (tetanus-prone)" },
+          { label: "Immunocompromised", detail: "HTIG for any tetanus-prone wound", tone: "warn" },
+          { label: "Record and schedule next Td", detail: "Booster every 10 years", tone: "good" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Severe tetanus: ICU ladder",
+        steps: [
+          { label: "Quiet dark room, airway check", detail: "Minimise handling; NG feeding" },
+          { label: "Neutralise and eradicate", detail: "HTIG 3000-6000 IU IM; metronidazole 500 mg 6-8-hourly 7-10 d; debride" },
+          { label: "Benzodiazepines", detail: "Diazepam or midazolam titrated to spasms" },
+          { label: "Magnesium sulphate", detail: "40 mg/kg over 30 min, then 2 g/h; Mg 2-4 mmol/L, keep reflexes" },
+          { label: "Tracheostomy, ventilation, paralysis", detail: "Ablett III-IV; non-depolarising blocker", tone: "warn" },
+          { label: "Autonomic storm", detail: "Morphine, esmolol or labetalol; never propranolol alone", tone: "warn" },
+          { label: "Recovery 4-6 weeks; start Td course", detail: "Disease gives no immunity", tone: "good" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Tetanus vs diphtheria",
+        columns: ["Feature", "Tetanus", "Diphtheria"],
+        rows: [
+          ["Spread", "Wound, not person to person", "Droplets, carriers"],
+          ["Toxin target", "Synaptobrevin, GABA and glycine", "EF-2, protein synthesis"],
+          ["Hallmark", "Trismus, spasms, conscious", "Adherent membrane, bull neck"],
+          ["Antitoxin", "HTIG", "Equine DAT"],
+          ["Antibiotic", "Metronidazole", "Macrolide or penicillin"],
+          ["Killer", "Autonomic storm, airway", "Myocarditis, airway"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Tetanus** is toxin-mediated trismus, rigidity and spasms in a **conscious** patient.",
+            "India was validated for **maternal and neonatal tetanus elimination in 2015**.",
+            "Adult tetanus persists because disease and old doses give **no lasting immunity**.",
+            "**Diphtheria** is toxigenic C. diphtheriae infection with an adherent grey membrane.",
+            "India reports the **most diphtheria cases** worldwide, now in older children and adults.",
+          ],
+        },
+        {
+          title: "Causes and pathophysiology",
+          points: [
+            "C. tetani spores live in **soil**; tetanus-prone wounds are puncture, dirty, burn or crush wounds.",
+            "**Tetanospasmin** cleaves synaptobrevin and blocks **GABA and glycine** release.",
+            "Sympathetic disinhibition causes the **autonomic storm**, the main ICU killer.",
+            "Diphtheria toxin **ADP-ribosylates EF-2** and stops protein synthesis.",
+            "Antitoxin neutralises **only unbound toxin**, so give it early.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "Tetanus forms: **generalised, localised, cephalic and neonatal**.",
+            "**Ablett I** mild, **II** moderate, **III** severe spasms and apnoea, **IV** autonomic storm.",
+            "Incubation **under 7 days** or onset period under 48 hours predicts severe disease.",
+            "Diphtheria sites: **faucial, laryngeal, nasal, cutaneous**; bull neck means malignant.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Trismus** is the first symptom in about three-quarters.",
+            "Look for **risus sardonicus, opisthotonus** and spasms triggered by touch or noise.",
+            "**Spatula test**: the patient bites the spatula instead of gagging.",
+            "Diphtheria membrane is grey, spreads to the palate and **bleeds when lifted**.",
+            "Nasal regurgitation means **palatal palsy**; slow pulse means myocarditis.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Tetanus is **clinical**; wound culture neither proves nor excludes it.",
+            "Check **CK, creatinine, magnesium** and ECG in tetanus.",
+            "Diphtheria: swab under the membrane; **Albert stain**, Loeffler culture, Elek or tox PCR.",
+            "Do a **daily ECG** for 2 weeks in diphtheria.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Wound prophylaxis by **doses received and wound type** (see table).",
+            "Tetanus: **HTIG 3000-6000 IU IM**, metronidazole 7-10 days, wound debridement.",
+            "Spasms: **diazepam or midazolam**, then magnesium 40 mg/kg and 2 g per hour.",
+            "Diphtheria: **antitoxin IV on suspicion**, plus azithromycin, erythromycin or penicillin.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Nurse tetanus in a **quiet, dark ICU room**; tracheostomy early in grade III-IV.",
+            "Treat autonomic surges with **magnesium, morphine, esmolol**; never propranolol alone.",
+            "Isolate diphtheria until **two negative cultures** 24 hours apart.",
+            "Pace for **heart block** in diphtheritic myocarditis.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Tetanus: **laryngospasm**, aspiration, VAP, rhabdomyolysis, fractures, sudden autonomic death.",
+            "Diphtheria: **myocarditis week 1-2**, palatal palsy week 1-3, limb neuropathy week 3-8.",
+            "Red flag: trismus or dysphagia after any wound.",
+            "Red flag: sore throat with **adherent membrane, bull neck or stridor**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Diphtheria contacts: swab, **benzathine penicillin once** or a macrolide, watch 7 days.",
+            "Contacts get a **booster** if the last dose was over 5 years ago.",
+            "**Vaccinate every survivor** with a full Td course.",
+            "Notify both diseases on **IDSP-IHIP** within 24 hours.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**WHO 2024**: diphtheria antitoxin promptly; macrolides preferred over penicillin.",
+            "**India since 2018**: Td replaced TT for pregnancy, adolescents and wounds.",
+            "**UIP boosters**: DPT 16-24 months and 5-6 years; **Td at 10 and 16 years**.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for tetanus and diphtheria",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["HTIG", "250 IU IM prophylaxis; 3000-6000 IU IM treatment", "Single dose", "Different site from Td"],
+            ["Metronidazole", "500 mg IV 6-8-hourly", "7-10 days", "Neuropathy, metallic taste"],
+            ["Magnesium sulphate", "40 mg/kg over 30 min, then 2 g/h", "Titrate; Mg 2-4 mmol/L", "Lost reflexes, apnoea; antidote calcium"],
+            ["Diazepam / midazolam", "Titrated IV doses or infusion", "Taper over 2-3 weeks", "Respiratory depression"],
+            ["Diphtheria antitoxin", "20 000-100 000 IU IV over 60 min", "Single dose", "Anaphylaxis, serum sickness"],
+            ["Azithromycin / erythromycin", "10-12 mg/kg daily / 500 mg 6-hourly", "Per WHO 2024; erythromycin 14 days", "QT prolongation, GI upset"],
+            ["Benzathine penicillin (contacts)", "600 000 U under 6 y; 1.2 MU IM", "Single dose", "Penicillin allergy"],
+          ],
+        },
+        {
+          heading: "Tetanus wound prophylaxis",
+          columns: ["History", "Clean minor wound", "Tetanus-prone wound"],
+          rows: [
+            ["Unknown or under 3 doses", "Td", "Td + HTIG 250 IU"],
+            ["3+ doses, last under 5 years", "Nothing", "Nothing"],
+            ["3+ doses, last 5-10 years", "Nothing", "Td"],
+            ["3+ doses, last over 10 years", "Td", "Td"],
+          ],
+        },
+        {
+          heading: "Ablett grading",
+          columns: ["Grade", "Features"],
+          rows: [
+            ["I Mild", "Mild trismus, spasticity, no spasms"],
+            ["II Moderate", "Moderate trismus, short spasms, RR over 30"],
+            ["III Severe", "Prolonged spasms, RR over 40, apnoea, pulse over 120"],
+            ["IV Very severe", "Grade III plus autonomic storm"],
+          ],
+        },
+      ],
+      remember: [
+        "Tetanus: jaw locked, mind clear.",
+        "Spatula test: bites, not gags.",
+        "Metronidazole, not penicillin, for tetanus.",
+        "Magnesium 40 then 2; keep the knee jerk.",
+        "No propranolol alone in tetanus.",
+        "Diphtheria membrane bleeds; strep exudate wipes.",
+        "Diphtheria clock: heart 1-2, palate 1-3, limbs 3-8 weeks.",
+        "Td not TT; disease gives no immunity.",
+      ],
+    },
+  },
 };
 
 export default revision;

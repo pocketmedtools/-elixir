@@ -644,6 +644,215 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "infectious-fever-protozoa-other": {
+    checked: "2026-10",
+    updated: [
+      "IDSA/ASTMH 2020 babesiosis: atovaquone + azithromycin preferred for mild and severe disease; exchange transfusion if parasitaemia over 10%.",
+      "NIH/CDC/HIVMA-IDSA adult OI guidelines 2024: co-trimoxazole an equal alternative to pyrimethamine-sulfadiazine for toxoplasma encephalitis.",
+      "NACO 2021: co-trimoxazole prophylaxis for CD4 under 350 or WHO stage 3-4; rapid ART after OIs.",
+      "Kerala 2024 PAM cluster: early CSF testing after freshwater exposure; miltefosine-containing regimens.",
+    ],
+    master: {
+      heading: "Master revision table - Toxoplasmosis, extra-intestinal amoebiasis, babesiosis",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Toxoplasma agent", "**T. gondii**; **cat definitive host**; meat cysts, soil oocysts, transplacental, transplant; one-third of humans seropositive."],
+        ["Toxo clinical forms", "Lymphadenopathy (healthy), **ocular** (headlight in the fog), **congenital** (Sabin tetrad), **encephalitis** in HIV CD4 under 100."],
+        ["Toxo in pregnancy", "Transmission rises with gestation, severity falls; **IgG avidity** dates infection; amniotic **PCR at 18 weeks or later**."],
+        ["Toxo pregnancy treatment", "**Spiramycin 1 g 8-hourly** before 18 weeks; **pyrimethamine-sulfadiazine-folinic acid** if fetal infection or after 18 weeks."],
+        ["Toxo encephalitis", "Multiple ring lesions in basal ganglia; IgG positive; **P-S-folinic acid or co-trimoxazole x 6 weeks**; no response at 2 weeks - biopsy."],
+        ["HIV prophylaxis", "**Co-trimoxazole 960 mg daily** (CD4 under 100 + IgG positive; India under 350); stop when CD4 over 200 for 3 months."],
+        ["Ocular toxo", "Treat lesions near macula/disc; **co-trimoxazole BD 4-6 weeks** + prednisolone after 48 h; never steroids alone."],
+        ["ALA", "Young man, alcohol, single right-lobe; **anchovy sauce**; serology over 90%; stool positive under a third."],
+        ["ALA treatment", "**Metronidazole 750 mg TDS x 7-10 d** or tinidazole 2 g x 3-5 d, **then paromomycin 7 d or diloxanide 10 d**."],
+        ["Drain ALA when", "No response at 3-5 days, **left lobe**, large or impending rupture, diagnostic doubt."],
+        ["Other extra-intestinal", "Pleuropulmonary, pericardial (left lobe), peritoneal, cerebral, cutaneous, **amoeboma**."],
+        ["Babesiosis", "Ixodes tick or transfusion; **asplenia**; ring forms + **Maltese cross**, no pigment, RDT negative."],
+        ["Babesia treatment", "**Atovaquone 750 mg BD + azithromycin** 7-10 d; exchange transfusion if parasitaemia over 10%."],
+        ["Prevention", "Cook meat, gloves, avoid cat litter; boiled water and sanitation; tick avoidance and donor screening."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Positive toxoplasma serology in pregnancy",
+        steps: [
+          { label: "IgG and IgM at first visit (symptoms or USG clue)", tone: "decision" },
+          { label: "IgG positive, IgM negative", detail: "Past infection - reassure", tone: "good" },
+          { label: "IgG and IgM positive - do IgG avidity", detail: "High avidity in first trimester excludes pregnancy infection", tone: "decision" },
+          { label: "Low avidity or seroconversion", detail: "Reference lab; start spiramycin 1 g 8-hourly", tone: "warn" },
+          { label: "Amniotic fluid PCR", detail: "18 weeks or later, 4 weeks after infection; fetal USG" },
+          { label: "PCR positive or abnormal USG", detail: "Pyrimethamine + sulfadiazine + folinic acid (not in first trimester)", tone: "warn" },
+          { label: "Newborn evaluation", detail: "Fundus, cranial USG; treat infected infant 12 months" },
+        ],
+      },
+      {
+        kind: "ladder",
+        heading: "Amoebic liver abscess management ladder",
+        steps: [
+          { label: "Metronidazole 750 mg TDS x 7-10 days", detail: "Or tinidazole 2 g OD x 3-5 days", tone: "good" },
+          { label: "Luminal agent always", detail: "Paromomycin 25-35 mg/kg/day x 7 d or diloxanide 500 mg TDS x 10 d" },
+          { label: "No response in 3-5 days", detail: "Ultrasound-guided aspiration; rethink pyogenic", tone: "decision" },
+          { label: "Left lobe, large, impending rupture", detail: "Percutaneous aspiration or catheter drainage", tone: "warn" },
+          { label: "Rupture: pleura, peritoneum, pericardium", detail: "IV metronidazole, drainage, pericardiocentesis", tone: "warn" },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Ring-enhancing lesions in HIV",
+        columns: ["Feature", "Toxoplasmosis", "CNS lymphoma"],
+        rows: [
+          ["CD4", "Under 100", "Under 50"],
+          ["Number", "Multiple", "Usually single"],
+          ["Site", "Basal ganglia, grey-white junction", "Periventricular"],
+          ["Test", "Toxoplasma IgG positive", "CSF EBV DNA"],
+          ["Thallium SPECT", "Cold", "Hot"],
+          ["Course", "Better in 10-14 days of treatment", "No response - biopsy"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Toxoplasma gondii** infects one-third of humans, usually silently.",
+            "It harms the **fetus, the eye and the immunocompromised**.",
+            "**Amoebic liver abscess** is the commonest extra-intestinal amoebiasis.",
+            "**Babesia** is a tick-borne red-cell parasite that mimics falciparum malaria.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "The **cat** is the definitive host; humans eat cysts in meat or oocysts in soil.",
+            "Toxo reactivates with **CD4 under 100**, transplant and high-dose steroids.",
+            "ALA affects **young men who drink alcohol**, 7-10 times more than women.",
+            "Severe babesiosis occurs with **asplenia**, age over 50 and rituximab.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Tachyzoites multiply in acute infection; **bradyzoite cysts** persist for life.",
+            "Low CD4 lets cysts reactivate, causing necrotising **encephalitis**.",
+            "Fetal transmission **rises** with gestation while severity **falls**.",
+            "Amoebae reach the liver via the **portal vein**, so ALA is right-lobe and single.",
+            "Metronidazole is absorbed, so gut cysts survive without a **luminal agent**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Acute toxo: painless **posterior cervical nodes**, fatigue, low fever.",
+            "Ocular toxo: floaters and blurred vision; **headlight in the fog** on fundus.",
+            "Congenital: **chorioretinitis, hydrocephalus, calcification, seizures**.",
+            "ALA: fever, **right upper quadrant pain**, intercostal tenderness; diarrhoea uncommon.",
+            "Babesiosis: fever, haemolysis and **dark urine** after a tick bite or transfusion.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Toxo **IgM persists**; use **IgG avidity** to date infection.",
+            "Amniotic fluid **PCR at 18 weeks or later** diagnoses fetal infection.",
+            "HIV: MRI shows **multiple ring lesions** in basal ganglia; IgG positive.",
+            "ALA: ultrasound plus **amoebic serology** (over 90% positive).",
+            "Babesia: smear shows **Maltese cross** tetrads, no pigment; RDT negative.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Healthy adult with toxo nodes needs **no treatment**.",
+            "Toxo encephalitis: **pyrimethamine, sulfadiazine, folinic acid** for 6 weeks.",
+            "**Co-trimoxazole** twice daily is an equal alternative in India.",
+            "ALA: **metronidazole 750 mg TDS for 7-10 days**, then paromomycin.",
+            "Babesiosis: **atovaquone plus azithromycin** for 7-10 days.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "No toxo response by **day 10-14** means biopsy for lymphoma.",
+            "Drain ALA if **left lobe**, large, impending rupture or no response.",
+            "Pericardial rupture needs **urgent pericardiocentesis**.",
+            "**Exchange transfusion** for Babesia parasitaemia over 10% or organ failure.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy before 18 weeks: **spiramycin** to reduce transmission.",
+            "Fetal infection: **pyrimethamine-sulfadiazine-folinic acid**, not in first trimester.",
+            "HIV: **co-trimoxazole prophylaxis**, stop when CD4 stays over 200.",
+            "Pregnant ALA: metronidazole is safe; **paromomycin** as luminal agent.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "Congenital toxo causes **blindness and intellectual disability**.",
+            "ALA ruptures into **pleura, peritoneum or pericardium**.",
+            "A residual liver cavity in a well patient is **not failure**.",
+            "Babesiosis kills up to **20%** of severe or immunocompromised cases.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "Refer every ocular toxo case to **ophthalmology**.",
+            "Check **CBC weekly** on pyrimethamine; keep fluids high on sulfadiazine.",
+            "Review ALA at **72-96 hours** for response.",
+            "Prevention: cook meat, wear gloves, **boil water**, avoid ticks.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs for these protozoa",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Pyrimethamine + sulfadiazine + folinic acid", "200 mg load then 50-75 mg/day; 1-1.5 g 6-hourly; 10-25 mg/day", "At least 6 weeks", "Marrow suppression, rash, crystalluria"],
+            ["Co-trimoxazole", "TMP 5 mg/kg twice daily (treatment); 960 mg daily (prophylaxis)", "6 weeks; prophylaxis until CD4 over 200", "Rash, hyperkalaemia, cytopenia"],
+            ["Spiramycin", "1 g (3 MIU) oral 8-hourly", "Until delivery or fetal PCR", "GI upset"],
+            ["Metronidazole", "750 mg oral 8-hourly", "7-10 days", "Metallic taste, disulfiram reaction, neuropathy"],
+            ["Paromomycin", "25-35 mg/kg/day in 3 doses", "7 days", "Diarrhoea; safe in pregnancy"],
+            ["Atovaquone + azithromycin", "750 mg BD + 500 mg then 250 mg daily", "7-10 days; 6 weeks if immunocompromised", "GI upset, QT prolongation"],
+          ],
+        },
+        {
+          heading: "Toxo serology in pregnancy",
+          columns: ["Result", "Meaning", "Action"],
+          rows: [
+            ["IgG negative, IgM negative", "Susceptible", "Prevention counselling"],
+            ["IgG positive, IgM negative", "Past infection", "Reassure"],
+            ["IgG and IgM positive, high avidity", "Infection over 3-4 months ago", "Reassure if first trimester"],
+            ["IgG and IgM positive, low avidity", "Possible recent infection", "Spiramycin, amniotic PCR"],
+          ],
+        },
+        {
+          heading: "Amoebic vs pyogenic liver abscess",
+          columns: ["Feature", "Amoebic", "Pyogenic"],
+          rows: [
+            ["Patient", "Young man, alcohol", "Older, diabetes, biliary disease"],
+            ["Number", "Single, right lobe", "Often multiple"],
+            ["Aspirate", "Anchovy sauce, sterile", "Foul pus, culture positive"],
+            ["Treatment", "Metronidazole, then luminal agent", "Drainage plus antibiotics 4-6 weeks"],
+          ],
+        },
+      ],
+      remember: [
+        "**Cat, meat, mother, marrow** - toxo routes and risks.",
+        "**IgM lingers; avidity decides.**",
+        "**Spiramycin prevents; pyrimethamine treats** the fetus.",
+        "**Folinic, not folic**, with pyrimethamine.",
+        "**Metronidazole then luminal** - always.",
+        "**Left lobe - drain it** (pericardial rupture).",
+        "**Maltese cross, no pigment, no spleen** - Babesia.",
+      ],
+    },
+  },
 };
 
 export default revision;

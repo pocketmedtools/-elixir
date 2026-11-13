@@ -1,0 +1,423 @@
+{
+"subject": "infectious-fever",
+"paper": "I",
+"existing": "   infectious-fever-acute-undifferentiated-fever | Acute undifferentiated fever\n   infectious-fever-dengue | Dengue\n   infectious-fever-malaria | Malaria\n   infectious-fever-enteric-fever | Enteric fever\n   infectious-fever-scrub-typhus | Scrub typhus and rickettsial fevers\n   infectious-fever-urinary-tract-infection | UTI\n   infectious-fever-skin-soft-tissue-infection | Skin and soft tissue infection\n   infectious-fever-rabies-animal-bite | Animal bite and rabies PEP\n   infectious-fever-hiv-art | HIV and ART\n   infectious-fever-antimicrobial-resistance | AMR and stewardship\n   infectious-fever-tropical-fevers-zoonoses | Leptospirosis, chikungunya, JE/AES, zoonoses\n   (elsewhere: respiratory has pneumonia, TB, influenza/COVID; gastro has viral hepatitis, diarrhoea, liver abscess, abdominal TB, parasites; neurology has meningitis; dermatology has leprosy, scabies, fungal skin; obstetrics/gynaecology have STI/RTI)\n   (also already written in this library, do NOT duplicate - cross-refer in one line:)\n   infectious-fever-pyrexia-unknown-origin | Pyrexia of unknown origin: classic, nosocomial, neutropenic and HIV-associated\n   infectious-fever-sepsis-septic-shock | Sepsis and septic shock: recognition and the first hour\n   infectious-fever-empirical-antibiotics-icmr | Empirical antibiotic therapy: ICMR Treatment Guidelines and the AWaRe classification\n   infectious-fever-antimicrobial-pharmacology | Antimicrobial pharmacology for clinicians: PK/PD, dosing in renal/hepatic failure and drug interactions\n   infectious-fever-infective-endocarditis | Infective endocarditis\n   infectious-fever-bloodstream-catheter-infections | Bloodstream infection, S. aureus bacteraemia and catheter-related infections\n   infectious-fever-mdr-gram-negative | Multidrug-resistant Gram-negative infections: ESBL, CRE, Acinetobacter, Pseudomonas\n   infectious-fever-hospital-acquired-infection | Healthcare-associated infections and infection prevention: hand hygiene, isolation, biomedical waste\n   infectious-fever-fungal-infections-systemic | Systemic fungal infections: candidiasis, aspergillosis, cryptococcosis, histoplasmosis\n   infectious-fever-mucormycosis | Mucormycosis\n   infectious-fever-opportunistic-infections-hiv | Opportunistic infections in HIV: prophylaxis and treatment\n   infectious-fever-hiv-special-situations | HIV special situations: PEP, PrEP, PPTCT, paediatric HIV and HIV-2\n   infectious-fever-leptospirosis-detail | Leptospirosis in depth: Weil disease, pulmonary haemorrhage and prophylaxis\n   infectious-fever-chikungunya-zika-arboviral | Chikungunya, Zika and other arboviral fevers\n   infectious-fever-brucellosis-melioidosis | Brucellosis, melioidosis and other neglected bacterial fevers\n   infectious-fever-typhus-spotted-fever-detail | Rickettsial infections beyond scrub typhus: Indian tick typhus, murine typhus, eschar hunting\n   infectious-fever-visceral-leishmaniasis | Visceral leishmaniasis (kala-azar) and PKDL\n   infectious-fever-filariasis | Lymphatic filariasis and the elimination programme\n   infectious-fever-helminths-tissue | Tissue helminths: neurocysticercosis, hydatid, toxocara, trichinella\n   infectious-fever-protozoa-other | Other protozoal infections: toxoplasmosis, amoebiasis extra-intestinal, babesiosis\n   infectious-fever-sti-syndromic | Sexually transmitted infections: syndromic management and aetiological diagnosis\n   infectious-fever-syphilis-detail | Syphilis: stages, serology interpretation and treatment\n   infectious-fever-vaccine-preventable-adult | Adult vaccination and vaccine-preventable infections\n   infectious-fever-travel-medicine | Travel medicine and fever in the returning traveller\n   infectious-fever-herpes-viruses | Herpes viruses: HSV, VZV, EBV and CMV\n   infectious-fever-measles-mumps-rubella-adult | Exanthematous fevers in adults and children: measles, rubella, mumps, varicella, HFMD, mpox\n   infectious-fever-emerging-infections | Emerging and epidemic infections: Nipah, avian influenza, mpox, outbreak response\n   infectious-fever-covid-long-postacute | Post-acute infection syndromes: long COVID and post-infectious fatigue\n   infectious-fever-bone-joint-infections | Bone and joint infections: septic arthritis, osteomyelitis, prosthetic joint infection\n   infectious-fever-cns-infections-other | Brain abscess, encephalitis and chronic meningitis\n   infectious-fever-tetanus-diphtheria | Tetanus and diphtheria\n   infectious-fever-anthrax-plague-zoonotic | Anthrax, plague, glanders and bioterrorism agents\n   infectious-fever-fever-immunocompromised | Fever in the immunocompromised: neutropenic fever, transplant, steroids and biologics\n   infectious-fever-fever-pregnancy-infections | Infections in pregnancy: TORCH, malaria, UTI, GBS, antibiotics safety\n   infectious-fever-fever-elderly-infections | Infections in older adults and long-term care\n   infectious-fever-diabetic-infections | Infections that matter in diabetes: foot, emphysematous, malignant otitis, melioidosis\n   infectious-fever-lab-microbiology | Microbiology for the clinician: cultures, serology, PCR and rapid diagnostic tests\n   infectious-fever-antibiotic-allergy | Antibiotic allergy: penicillin allergy delabelling and cross-reactivity\n   infectious-fever-opat-iv-to-oral | IV to oral switch, OPAT and duration of antibiotic therapy\n   infectious-fever-tb-extrapulmonary | Extrapulmonary tuberculosis: lymph node, pleural, pericardial, genitourinary, spinal\n   infectious-fever-drug-resistant-tb | Drug-resistant TB: MDR, pre-XDR and the BPaLM regimen\n   infectious-fever-tb-preventive-therapy | Latent TB infection and TB preventive treatment\n   infectious-fever-leprosy-reactions | Leprosy: classification, MDT and reactions (medicine view)\n   infectious-fever-fever-with-rash-approach | Approach to fever with rash\n   infectious-fever-fever-with-thrombocytopenia | Approach to fever with thrombocytopenia and fever with jaundice\n   infectious-fever-hlh-macrophage-activation | Haemophagocytic lymphohistiocytosis and infection-triggered hyperinflammation\n   infectious-fever-national-programmes-infection | National communicable disease programmes: NCVBDC, NTEP, NACP, NVHCP, IDSP\n   infectious-fever-one-health-zoonoses | One Health and zoonoses: rabies elimination, scrub, KFD, AMR in animals",
+"batches": {
+"b13": [
+[
+"bacterial-meningitis-adult",
+"Acute bacterial meningitis in adults",
+"high",
+"empirical ceftriaxone/vancomycin, dexamethasone, LP before CT rules, chemoprophylaxis, Indian aetiology"
+],
+[
+"pneumococcal-disease",
+"Invasive pneumococcal disease and pneumococcal vaccines",
+"moderate",
+"PCV13/15/20/PPSV23 schedules, asplenia, resistance"
+],
+[
+"meningococcal-disease",
+"Meningococcal disease and outbreaks",
+"moderate",
+"purpura fulminans, chemoprophylaxis, Hajj vaccine"
+],
+[
+"staphylococcal-infections",
+"Staphylococcus aureus infections: MSSA, MRSA, toxin syndromes",
+"high",
+"CA-MRSA, TSS, decolonisation, linezolid/vancomycin dosing"
+]
+],
+"b14": [
+[
+"streptococcal-infections",
+"Streptococcal infections: pharyngitis, invasive GAS, post-streptococcal sequelae",
+"high",
+"Centor/McIsaac, penicillin, ARF/RHD prophylaxis India"
+],
+[
+"enterococcal-vre",
+"Enterococcal infections and VRE",
+"moderate",
+"ampicillin, synergy, VRE daptomycin/linezolid"
+],
+[
+"pseudomonas-infections",
+"Pseudomonas aeruginosa infections",
+"moderate",
+"antipseudomonal choices, double coverage debate, cystic fibrosis"
+],
+[
+"klebsiella-ecoli",
+"Enterobacterales infections: Klebsiella, E. coli, hypervirulent Klebsiella liver abscess",
+"moderate",
+"ESBL, NDM in India"
+]
+],
+"b15": [
+[
+"anaerobic-infections",
+"Anaerobic infections and actinomycosis, nocardiosis",
+"moderate",
+"metronidazole, clindamycin resistance, cervicofacial actinomycosis"
+],
+[
+"cholera",
+"Cholera and outbreak management",
+"high",
+"ORS/IV ringer, single-dose doxycycline/azithro, OCV, WASH"
+],
+[
+"typhus-leptospira-compare",
+"Differentiating tropical fevers at the bedside",
+"core",
+"dengue vs malaria vs scrub vs lepto vs enteric discriminators table, empirical doxy+ceftriaxone"
+],
+[
+"hepatitis-viral-acute-id",
+"Acute viral hepatitis in fever clinic (ID view)",
+"moderate",
+"HAV/HEV outbreaks, ALF warning, linkage to gastro topic only briefly"
+]
+],
+"b16": [
+[
+"influenza-seasonal",
+"Seasonal and avian influenza: oseltamivir, vaccination, H1N1 in India",
+"high",
+"categories A/B/C MoHFW, high-risk groups"
+],
+[
+"covid-19-current",
+"COVID-19 in 2025-2026: treatment, vaccines and long-term care",
+"moderate",
+"nirmatrelvir, remdesivir, steroids for hypoxia, current variants"
+],
+[
+"rsv-adults",
+"RSV and other respiratory viruses in adults",
+"moderate",
+"RSV vaccines older adults 2023+, adenovirus, hMPV 2025 China surge"
+],
+[
+"measles-elimination",
+"Measles in depth: complications and elimination",
+"moderate",
+"SSPE, vitamin A, MR campaign"
+]
+],
+"b17": [
+[
+"mumps-rubella-crs",
+"Mumps, rubella and congenital rubella syndrome",
+"moderate",
+"orchitis, CRS surveillance"
+],
+[
+"varicella-zoster-detail",
+"Varicella and herpes zoster in depth",
+"high",
+"acyclovir timing, PHN, RZV vaccine, ophthalmicus"
+],
+[
+"ebv-cmv-mono",
+"Infectious mononucleosis syndromes: EBV, CMV, toxoplasma, acute HIV",
+"moderate",
+"heterophile, atypical lymphocytes, splenic rupture"
+],
+[
+"hpv-infection",
+"HPV infection, warts and vaccination",
+"moderate",
+"Cervavac India, 9vHPV, single dose WHO 2022"
+]
+],
+"b18": [
+[
+"hepatitis-b-vaccine-pep",
+"Hepatitis B vaccination and post-exposure protocols",
+"moderate",
+"HCW titres, non-responders, HBIG"
+],
+[
+"candida-mucosal",
+"Mucosal candidiasis: oral, oesophageal, vulvovaginal",
+"high",
+"fluconazole dosing, recurrent VVC, azole resistance"
+],
+[
+"dermatophytosis-epidemic",
+"Recalcitrant dermatophytosis in India (ID angle)",
+"high",
+"T. indotineae, itraconazole, terbinafine resistance, steroid misuse"
+],
+[
+"histoplasmosis-talaromyces",
+"Endemic mycoses: histoplasmosis, talaromycosis, sporotrichosis",
+"moderate",
+"India distribution, HIV, amphotericin then itraconazole"
+]
+],
+"b19": [
+[
+"pcp-pneumocystis",
+"Pneumocystis pneumonia",
+"moderate",
+"cotrimoxazole dosing, steroids PaO2<70, non-HIV PCP"
+],
+[
+"toxoplasma-detail",
+"Toxoplasmosis in depth",
+"moderate",
+"pyrimethamine availability India, cotrimoxazole alternative"
+],
+[
+"cryptococcal-meningitis",
+"Cryptococcal meningitis",
+"moderate",
+"WHO 2022 single high-dose L-AmB, ICP management, CrAg"
+],
+[
+"tb-hiv-coinfection",
+"TB-HIV coinfection",
+"high",
+"timing of ART, rifampicin interactions DTG twice daily, IPT, LAM"
+]
+],
+"b20": [
+[
+"ntm-infections",
+"Non-tuberculous mycobacterial infections",
+"moderate",
+"MAC, M. abscessus post-procedure clusters India"
+],
+[
+"leprosy-diagnosis-id",
+"Leprosy: early diagnosis and contact management",
+"moderate",
+"cross-ref; skin smear, SDR-PEP"
+],
+[
+"amoebiasis-giardia",
+"Amoebiasis and giardiasis",
+"high",
+"metronidazole/tinidazole + paromomycin/diloxanide, stool antigen"
+],
+[
+"helminth-soil",
+"Soil-transmitted helminths and National Deworming Day",
+"high",
+"albendazole 400 mg, anaemia, NDD"
+]
+],
+"b21": [
+[
+"strongyloides",
+"Strongyloidiasis and hyperinfection",
+"moderate",
+"ivermectin before steroids, screening"
+],
+[
+"cysticercosis-taeniasis",
+"Taeniasis and neurocysticercosis (ID view)",
+"moderate",
+"praziquantel/albendazole, steroids, epilepsy"
+],
+[
+"hydatid-disease",
+"Cystic echinococcosis",
+"moderate",
+"WHO-IWGE staging, PAIR, albendazole cover"
+],
+[
+"malaria-severe",
+"Severe malaria management",
+"high",
+"IV artesunate, NVBDCP 2023, complications, exchange transfusion not recommended"
+]
+],
+"b22": [
+[
+"malaria-pregnancy-children",
+"Malaria in pregnancy and children",
+"high",
+"ACT trimester rules, IPT not in India, primaquine contraindications, G6PD"
+],
+[
+"malaria-elimination",
+"Malaria elimination: India 2030 framework and vivax radical cure",
+"moderate",
+"primaquine 14 days, tafenoquine, G6PD testing, surveillance"
+],
+[
+"dengue-severe",
+"Severe dengue and expanded dengue syndrome",
+"high",
+"fluid charts WHO 2009/NCVBDC, shock, bleeding, myocarditis, vaccine status 2025"
+],
+[
+"chikungunya-chronic",
+"Chronic chikungunya arthritis",
+"moderate",
+"methotrexate, HCQ, vaccine 2023"
+]
+],
+"b23": [
+[
+"je-aes",
+"Japanese encephalitis and acute encephalitis syndrome",
+"high",
+"JE vaccine, AES in Muzaffarpur (litchi/hypoglycaemia), scrub AES"
+],
+[
+"kfd-tick-borne",
+"Kyasanur forest disease and other tick-borne infections",
+"moderate",
+"KFD vaccine, Karnataka/Kerala, CCHF"
+],
+[
+"nipah-virus",
+"Nipah virus infection",
+"moderate",
+"Kerala outbreaks, case definition, isolation, monoclonal"
+],
+[
+"zika-virus",
+"Zika virus",
+"moderate",
+"pregnancy, microcephaly, testing"
+]
+],
+"b24": [
+[
+"rabies-detail",
+"Rabies: clinical rabies and palliative care, PrEP",
+"moderate",
+"NAPRE, ID vs IM schedules, RIG/mAb"
+],
+[
+"snakebite-infection",
+"Bite wounds: dog, cat, human, monkey",
+"moderate",
+"amoxicillin-clavulanate, tetanus, B virus"
+],
+[
+"brucellosis-detail",
+"Brucellosis in depth",
+"moderate",
+"neurobrucellosis, endocarditis, relapse"
+],
+[
+"q-fever-bartonella",
+"Q fever, Bartonella, cat-scratch disease",
+"moderate",
+"doxycycline, culture-negative endocarditis"
+]
+],
+"b25": [
+[
+"plague-anthrax-india",
+"Zoonotic epidemics in India: plague, anthrax, glanders",
+"moderate",
+"1994 Surat plague, cutaneous anthrax tribal belt"
+],
+[
+"sti-gonorrhoea",
+"Gonorrhoea and chlamydia",
+"high",
+"ceftriaxone 500 mg/1 g, doxycycline, resistance, NAAT"
+],
+[
+"sti-genital-ulcer",
+"Genital ulcer disease: herpes, chancroid, LGV, donovanosis",
+"moderate",
+"syndromic GUD kit, acyclovir"
+],
+[
+"sti-trichomonas-bv",
+"Vaginal discharge: trichomonas, BV, candida (ID view)",
+"moderate",
+"metronidazole regimens, partner treatment"
+]
+],
+"b26": [
+[
+"hiv-testing-staging",
+"HIV testing strategies and staging",
+"high",
+"NACO 3-test algorithm, WHO staging, CD4, viral load"
+],
+[
+"hiv-art-regimens",
+"ART regimens and switching in India",
+"high",
+"TLD first line, second line, drug interactions, ADRs"
+],
+[
+"hiv-chronic-care",
+"Chronic HIV care: NCDs, ageing, mental health",
+"moderate",
+"CVD, bone, cancer screening, adherence"
+],
+[
+"osteomyelitis-diabetic-foot",
+"Diabetic foot infection (ID view)",
+"moderate",
+"IWGDF/IDSA 2023 classification, empirical regimens"
+]
+],
+"b27": [
+[
+"cellulitis-erysipelas",
+"Cellulitis, erysipelas and abscess: antibiotic choice",
+"core",
+"mimics, duration 5 days, recurrent prophylaxis"
+],
+[
+"necrotising-fasciitis",
+"Necrotising soft-tissue infection",
+"high",
+"LRINEC limits, surgery, clindamycin"
+],
+[
+"uti-complicated",
+"Complicated UTI, catheter UTI and prostatitis",
+"high",
+"duration, asymptomatic bacteriuria, fosfomycin, nitrofurantoin"
+],
+[
+"intra-abdominal-infection",
+"Intra-abdominal infections: peritonitis, cholangitis, abscess",
+"moderate",
+"source control, 4-day course STOP-IT"
+]
+],
+"b28": [
+[
+"febrile-neutropenia-opd",
+"Fever after chemotherapy in primary care",
+"moderate",
+"when to refer, oral step-down"
+],
+[
+"post-op-fever",
+"Postoperative and post-procedural fever",
+"moderate",
+"5 W, SSI, DVT, drug fever"
+],
+[
+"drug-fever",
+"Drug fever and fever without infection",
+"moderate",
+"beta-lactams, anticonvulsants, NMS, serotonin, malignant hyperthermia"
+],
+[
+"vaccination-special-groups",
+"Vaccination in special groups: pregnancy, elderly, immunocompromised, asplenia",
+"high",
+"Tdap, influenza, RSV maternal, live vaccine contraindications"
+]
+]
+}
+}

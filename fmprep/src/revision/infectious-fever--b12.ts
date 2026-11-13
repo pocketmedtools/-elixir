@@ -634,6 +634,219 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "infectious-fever-one-health-zoonoses": {
+    checked: "2026-10",
+    updated: [
+      "WHO Pandemic Agreement adopted at the World Health Assembly, May 2025, with a One Health article on spillover prevention",
+      "Amended International Health Regulations (adopted 2024, in force September 2025): new pandemic emergency level",
+      "UNGA political declaration on AMR, September 2024: 10% fall in AMR deaths by 2030, less antimicrobial use in agri-food",
+      "WHO Medically Important Antimicrobials list, 2024, replacing the CIA list",
+      "ICMR national survey (2025): about 5,700 human rabies deaths a year in India",
+      "ABC Rules 2023 replaced the 2001 Animal Birth Control rules; NAP-AMR 2.0 (2025-2029) extends the One Health approach",
+    ],
+    master: {
+      heading: "One Health and zoonoses - what to write",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Integrated approach to balance and optimise health of people, animals and ecosystems (OHHLEP 2021)"],
+        ["Quadripartite", "FAO, UNEP, WHO, WOAH; One Health Joint Plan of Action 2022-2026"],
+        ["Burden", "60% of human pathogens and 75% of emerging infections are zoonotic"],
+        ["Drivers", "Deforestation, intensive farming, climate, urban waste, wildlife trade, occupation, unsafe food"],
+        ["Mechanism", "Reservoir, release, environment, exposure, infection; amplifier hosts (pigs JE, monkeys KFD)"],
+        ["Classification", "Direct, cyclo-, meta-, saprozoonoses; anthropozoonoses, zooanthroponoses, amphixenoses"],
+        ["Rabies (NAPRE)", "Launched 28 September 2021; zero dog rabies deaths by 2030; free vaccine and RIG; 70% dog vaccination; ABC Rules 2023"],
+        ["Scrub typhus", "Orientia via chigger larvae on rodents; personal protection, vegetation clearing, doxycycline"],
+        ["KFD", "1957 Shimoga; Haemaphysalis ticks; monkey deaths sentinel; biphasic; supportive care; DMP oil, acaricide"],
+        ["AMR in animals", "Colistin banned in food animals July 2019; chloramphenicol and nitrofurans prohibited; FSSAI residue limits; WHO MIA 2024"],
+        ["Food safety", "WHO Five Keys; pasteurise milk (72 C for 15 s); avoid raw milk and undercooked meat"],
+        ["Institutions", "NOHM, National Institute of One Health Nagpur, NCDC zoonoses programme, NADCP, NAP-AMR"],
+        ["Family physician", "Animal and occupation history, early notification, joint investigation, stewardship"],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Fever with animal exposure in the OPD",
+        steps: [
+          { label: "Ask the One Health questions", detail: "Occupation, animals, bites, forest or field, raw milk, animal deaths", tone: "decision" },
+          { label: "Bite or bat contact?", detail: "Wash 15 min; categorise; vaccine plus RIG for category III", tone: "warn" },
+          { label: "Examine for eschar, suffusion, bleeding, encephalitis", detail: "Scrub, lepto, KFD, Nipah" },
+          { label: "Exclude common causes first", detail: "CBC, malaria RDT, dengue NS1, LFT, RFT" },
+          { label: "Send specific tests", detail: "Scrub/lepto IgM; KFD or Nipah RT-PCR at NIV or VRDL" },
+          { label: "Treat and notify jointly", detail: "Doxycycline if scrub or lepto; IHIP report; inform veterinary officer", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Classification of zoonoses by life cycle",
+        root: "Zoonoses",
+        arms: [
+          { label: "Direct", steps: ["One vertebrate host", "Rabies, brucellosis, anthrax"] },
+          { label: "Cyclozoonoses", steps: ["More than one vertebrate host", "Hydatid, taeniasis"] },
+          { label: "Metazoonoses", tone: "decision", steps: ["Vertebrate plus invertebrate vector", "JE, KFD, plague, scrub typhus"] },
+          { label: "Saprozoonoses", steps: ["Vertebrate plus soil or plant site", "Histoplasmosis, larva migrans"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "KFD vs scrub typhus vs dengue",
+        columns: ["Feature", "KFD", "Scrub typhus", "Dengue"],
+        rows: [
+          ["Vector", "Haemaphysalis tick", "Chigger mite", "Aedes mosquito"],
+          ["Season", "November to June", "Post-monsoon", "Monsoon, post-monsoon"],
+          ["Hallmark", "Monkey deaths, biphasic", "Eschar", "Leak at defervescence"],
+          ["Test", "RT-PCR, IgM (NIV)", "IgM ELISA, PCR", "NS1, IgM"],
+          ["Treatment", "Supportive", "Doxycycline", "Fluids, paracetamol"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**One Health** balances the health of people, animals and ecosystems together.",
+            "The **Quadripartite** is FAO, UNEP, WHO and WOAH.",
+            "About **60% of human pathogens** and **75% of emerging infections** are zoonotic.",
+            "India has the **largest livestock population** and frequent human-animal contact.",
+            "ICMR (2025) estimates about **5,700 human rabies deaths** a year in India.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "**Deforestation and land-use change** bring people close to wildlife reservoirs.",
+            "**Intensive farming** amplifies pathogens and drives antimicrobial use.",
+            "**Climate change** shifts ticks, mites, mosquitoes and rodents.",
+            "**Occupation**: farmers, dairy workers, butchers, vets, forest and sanitation workers.",
+            "**Raw milk and undercooked meat** spread brucellosis, salmonella and taeniasis.",
+          ],
+        },
+        {
+          title: "Pathophysiology",
+          points: [
+            "Spillover needs **reservoir, release, survival, exposure and infection**; break any link.",
+            "**Pigs amplify** JE; **monkeys amplify** KFD; **fruit bats** carry Nipah.",
+            "Most zoonoses are **dead-end** in humans; Nipah and plague can spread person to person.",
+            "Animal antimicrobial use spreads genes such as **mcr-1** to humans.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Direct** zoonoses: one vertebrate host, like rabies and brucellosis.",
+            "**Cyclozoonoses**: more than one vertebrate host, like hydatid.",
+            "**Metazoonoses**: vertebrate plus vector, like JE, KFD, plague and scrub typhus.",
+            "**Saprozoonoses**: vertebrate plus soil or plants, like histoplasmosis.",
+            "By direction: **anthropozoonoses, zooanthroponoses, amphixenoses**.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "**Eschar** means scrub typhus; **suffusion with flood exposure** means leptospirosis.",
+            "**KFD**: forest worker, dry season, bleeding, monkey deaths, second encephalitic phase.",
+            "**Rabies**: hydrophobia, aerophobia and agitation after a bite.",
+            "**Nipah**: encephalitis with respiratory illness after bat or patient contact.",
+            "**Animal deaths nearby** are a strong outbreak clue.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Exclude malaria and dengue first with **RDT and NS1**.",
+            "Scrub and lepto: **IgM ELISA** from day 5, or PCR early.",
+            "KFD and Nipah: **RT-PCR at NIV Pune** or VRDLs.",
+            "**Never delay rabies PEP** for any test.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Bite: **wash 15 minutes** with soap and water, then vaccine, plus RIG for category III.",
+            "Rabies **PrEP**: days 0 and 7 for vets and dog handlers.",
+            "Scrub or lepto: **doxycycline 100 mg twice daily for 7 days**.",
+            "KFD: **supportive care**, paracetamol, fluids; no NSAIDs.",
+            "H5N1: **oseltamivir 75 mg twice daily** for 5 days, early.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "**Nipah**: isolate with airborne, droplet and contact precautions; trace contacts for 21 days.",
+            "**CCHF**: strict barrier nursing; health-care workers are at risk.",
+            "**Clinical rabies**: palliative care in a quiet, dim room.",
+            "Severe scrub: **IV doxycycline plus azithromycin**.",
+          ],
+        },
+        {
+          title: "Referral and follow-up",
+          points: [
+            "**NAPRE** (28 September 2021): zero dog rabies deaths by 2030.",
+            "Dog vaccination coverage of **70% or more** breaks transmission.",
+            "**Colistin** banned in food animals since July 2019.",
+            "**NOHM** and the National Institute of One Health, Nagpur, coordinate sectors.",
+            "Notify on **IHIP** and inform the veterinary officer.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**WHO Pandemic Agreement** adopted May 2025 with a One Health article.",
+            "**Amended IHR** in force September 2025 add a pandemic emergency level.",
+            "**UNGA 2024**: cut AMR deaths by 10% by 2030.",
+            "**WHO MIA list 2024** guides veterinary antimicrobial use.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Drugs in common zoonoses",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Rabies vaccine (ID PEP)", "0.1 mL ID at 2 sites", "Days 0, 3, 7", "Local reaction; never withhold"],
+            ["Rabies vaccine (IM PEP)", "1 dose IM deltoid", "Days 0, 3, 7, 14, 28", "Never in gluteal region"],
+            ["RIG", "ERIG 40 IU/kg or HRIG 20 IU/kg into wound", "Once, day 0", "Serum sickness with ERIG (rare)"],
+            ["Doxycycline", "100 mg orally twice daily", "7 days", "Oesophagitis; avoid in pregnancy"],
+            ["Azithromycin", "500 mg orally once daily", "5 days", "QT prolongation"],
+            ["Oseltamivir", "75 mg orally twice daily", "5 days", "Nausea; adjust in renal failure"],
+          ],
+        },
+        {
+          heading: "Priority zoonoses in India",
+          columns: ["Zoonosis", "Reservoir / vector", "Clue", "Control"],
+          rows: [
+            ["Rabies", "Dogs", "Bite, hydrophobia", "PEP, dog vaccination 70%+"],
+            ["Scrub typhus", "Chiggers on rodents", "Eschar", "Protection, doxycycline"],
+            ["KFD", "Ticks; monkeys amplify", "Forest, bleeding, biphasic", "Acaricide, repellent, vaccine"],
+            ["Leptospirosis", "Rats, cattle", "Floods, AKI, jaundice", "Doxycycline prophylaxis"],
+            ["Nipah", "Fruit bats", "Encephalitis, contact", "Isolation, tracing"],
+            ["Brucellosis", "Cattle, goats; raw milk", "Undulant fever", "Pasteurise milk, calf vaccination"],
+          ],
+        },
+        {
+          heading: "NAPRE pillars",
+          columns: ["Sector", "Actions"],
+          rows: [
+            ["Human health", "Free vaccine and RIG, ID PEP, rabies notifiable"],
+            ["Animal health", "Mass dog vaccination, ABC Rules 2023"],
+            ["Community", "Bite prevention, wound washing, waste management"],
+            ["Governance", "State and district rabies committees"],
+          ],
+        },
+      ],
+      remember: [
+        "Quadripartite: **FAO, UNEP, WHO, WOAH**.",
+        "**60% / 75%** of pathogens and emerging infections are zoonotic.",
+        "**NAPRE: 28 September 2021**, zero by 2030.",
+        "**70% dog vaccination** stops rabies.",
+        "**KFD: 1957, Shimoga, monkeys die first.**",
+        "**Metazoonosis = vertebrate + vector.**",
+        "**Colistin banned in food animals, July 2019.**",
+        "**Never wait to observe the dog** before PEP.",
+      ],
+    },
+  },
 };
 
 export default revision;

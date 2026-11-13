@@ -622,6 +622,214 @@ const revision: RevisionSet = {
       ],
     },
   },
+  "infectious-fever-travel-medicine": {
+    checked: "2026-10",
+    updated: [
+      "IHR amendments adopted at WHA77 (June 2024), in force September 2025: new pandemic emergency category.",
+      "WMS 2024 altitude guideline: acetazolamide 125 mg BD for prevention; dexamethasone alternative.",
+      "CDC Yellow Book 2024: tafenoquine prophylaxis, 2-dose rabies PrEP, updated malaria maps.",
+      "WHO SAGE 2023: TAK-003 dengue vaccine for 6-16 years in high-transmission settings (not licensed in India).",
+      "Saudi MoH 2025 Hajj rules: MenACWY at least 10 days before arrival; influenza and COVID-19 recommended.",
+    ],
+    master: {
+      heading: "Master revision table - Travel medicine and the returning traveller",
+      columns: ["Heading", "What to write"],
+      rows: [
+        ["Definition", "Pre-travel risk assessment leading to vaccines, chemoprophylaxis and advice, plus the approach to post-travel illness; **fever after travel = malaria until proven otherwise**."],
+        ["Burden", "22-64% of travellers fall ill, 8% seek care; GeoSentinel: **malaria (Africa), dengue (SE Asia), enteric (South Asia)**; VFR travellers at highest risk; about 1.75 lakh Indian Hajj pilgrims."],
+        ["Risk assessment", "Destination, season, duration, activities (fresh water, trekking, animals, sex), host (pregnancy, immunosuppression, G6PD); consult 4-8 weeks before."],
+        ["Vaccines", "Routine (Td, MMR, influenza); **required** - yellow fever, MenACWY (Hajj), polio; recommended - hepatitis A, TCV, rabies PrEP (day 0, 7), JE, cholera."],
+        ["Yellow fever", "17D live single dose; **certificate valid for life from day 10**; India quarantines arrivals without it up to 6 days; contraindicated under 6 months, thymus disease, CD4 under 200; precaution 60+."],
+        ["Hajj", "**MenACWY at least 10 days before arrival** (conjugate valid 5 years); influenza; heat stroke and respiratory infection advice."],
+        ["Malaria prophylaxis", "**ABCD**; atovaquone-proguanil daily (7 days after); doxycycline 100 mg daily (4 weeks after); mefloquine 250 mg weekly (pregnancy, long stay); NCVBDC: doxycycline up to 6 weeks, mefloquine longer."],
+        ["Other advice", "Traveller's diarrhoea: ORS, loperamide, **azithromycin** for severe; altitude: acetazolamide 125 mg BD; DVT: walk, stockings; jet lag: melatonin."],
+        ["Returning traveller history", "Itinerary and dates, incubation: under 10 days (dengue, rickettsia), 10-21 (malaria, typhoid), over 21 (vivax, TB, hepatitis, schistosomiasis, VL); VHF risk within 21 days."],
+        ["Investigations", "**Smear + RDT x 3 over 12-24 h**; CBC (eosinophilia), blood cultures, LFT, RFT, NS1/IgM, HIV, CXR, ultrasound; VHF - NIV Pune."],
+        ["Management", "Severe malaria: IV artesunate 2.4 mg/kg; enteric: azithromycin or ceftriaxone (meropenem for XDR); doxycycline for rickettsia/lepto; paracetamol only; notify on IHIP."],
+        ["Special groups", "Pregnancy: avoid falciparum/Zika areas, mefloquine; children: doxycycline from 8; asplenia: strict prophylaxis; insulin across time zones."],
+        ["Red flags", "Severe malaria signs, VHF risk with bleeding, purpura after Hajj, HACE/HAPE, bloody diarrhoea, pregnancy."],
+        ["Latest", "IHR 2024 amendments (in force 2025); WMS 2024; Qdenga (SAGE 2023); chikungunya vaccine restrictions 2025."],
+      ],
+    },
+    flows: [
+      {
+        kind: "flow",
+        heading: "Fever in the returning traveller",
+        steps: [
+          { label: "VHF risk? Outbreak area within 21 days plus contact", detail: "Yes - isolate, full PPE, call infection control", tone: "warn" },
+          { label: "Sepsis screen and severity", detail: "Shock, confusion, jaundice, bleeding, AKI - admit", tone: "decision" },
+          { label: "Malaria smear and RDT now", detail: "Repeat every 12-24 h for 3 sets if negative" },
+          { label: "Incubation and region narrow the list", detail: "Under 10 days, 10-21 days, over 21 days" },
+          { label: "Targeted tests", detail: "Blood cultures, NS1/IgM, CBC eosinophils, LFT, HIV, CXR" },
+          { label: "Treat cause, notify on IHIP", detail: "Paracetamol only until dengue excluded", tone: "good" },
+        ],
+      },
+      {
+        kind: "branch",
+        heading: "Choosing malaria chemoprophylaxis",
+        root: "Traveller to a malarious area",
+        arms: [
+          { label: "Short trip, can afford", tone: "good", steps: ["Atovaquone-proguanil daily", "1-2 days before, 7 days after"] },
+          { label: "Cheap, stay up to 6 weeks (NCVBDC)", steps: ["Doxycycline 100 mg daily", "2 days before, 4 weeks after", "Not in pregnancy or under 8"] },
+          { label: "Pregnancy or stay over 6 weeks", tone: "decision", steps: ["Mefloquine 250 mg weekly", "2-3 weeks before, 4 weeks after", "Not with psychiatric illness or seizures"] },
+          { label: "G6PD normal, vivax areas", steps: ["Primaquine 30 mg base daily or tafenoquine", "Test G6PD first"] },
+        ],
+      },
+      {
+        kind: "compare",
+        heading: "Incubation periods after travel",
+        columns: ["Incubation", "Infections", "Clue"],
+        rows: [
+          ["Under 10 days", "Dengue, chikungunya, rickettsiae, influenza", "Rash, eschar, arthralgia"],
+          ["10-21 days", "Falciparum malaria, typhoid, leptospirosis, VHF", "Exclude malaria first"],
+          ["Over 21 days", "Vivax, TB, hepatitis, schistosomiasis, VL, liver abscess", "Eosinophilia, hepatomegaly"],
+        ],
+      },
+    ],
+    notes: {
+      sections: [
+        {
+          title: "Definition and key facts",
+          points: [
+            "**Travel medicine** covers pre-travel advice, vaccines, prophylaxis and post-travel illness.",
+            "**Malaria** is the commonest cause of fever after Africa; **dengue** after SE Asia.",
+            "**Enteric fever** is the leading cause after South Asia.",
+            "**VFR travellers** have the highest risk of malaria and typhoid.",
+            "Most traveller deaths are from **heart disease and injuries**, not infection.",
+          ],
+        },
+        {
+          title: "Causes and risk factors",
+          points: [
+            "Assess **destination, season, duration, activities** and host factors.",
+            "Fresh-water swimming risks **schistosomiasis** and leptospirosis.",
+            "Pregnancy, asplenia and immunosuppression raise the risk of severe malaria.",
+            "See the traveller **4-8 weeks** before departure when possible.",
+          ],
+        },
+        {
+          title: "Classification that matters",
+          points: [
+            "**Required** vaccines: yellow fever, MenACWY for Hajj, polio for affected countries.",
+            "**Recommended**: hepatitis A, typhoid conjugate, rabies PrEP, JE, cholera.",
+            "Yellow fever certificate is **valid for life** from 10 days after the dose.",
+            "India quarantines arrivals without a YF certificate for **up to 6 days**.",
+            "Hajj needs **MenACWY at least 10 days** before arrival.",
+          ],
+        },
+        {
+          title: "Treatment - first line",
+          points: [
+            "Malaria **ABCD**: awareness, bite avoidance, chemoprophylaxis, diagnosis.",
+            "**Atovaquone-proguanil** daily; stop 7 days after return.",
+            "**Doxycycline 100 mg** daily; stop 4 weeks after return.",
+            "**Mefloquine 250 mg** weekly for pregnancy or long stays.",
+            "Traveller's diarrhoea: ORS, loperamide, **azithromycin** if severe.",
+            "Altitude: **acetazolamide 125 mg BD** from the day before ascent.",
+          ],
+        },
+        {
+          title: "Clinical features",
+          points: [
+            "Get exact **dates and itinerary** to match incubation periods.",
+            "Under 10 days: dengue, chikungunya, rickettsia, influenza.",
+            "10-21 days: **falciparum malaria**, typhoid, leptospirosis, VHF.",
+            "Over 21 days: vivax, TB, hepatitis, schistosomiasis, kala-azar.",
+            "Look for rash, **eschar**, jaundice, splenomegaly and neck stiffness.",
+          ],
+        },
+        {
+          title: "Investigations",
+          points: [
+            "Malaria smear and RDT **three times over 12-24 hours** before excluding.",
+            "**Eosinophilia** points to helminths such as schistosomiasis.",
+            "Send blood cultures, LFT, RFT, dengue NS1 or IgM, and HIV test.",
+            "Suspected VHF: isolate first, essential tests only, samples to **NIV Pune**.",
+          ],
+        },
+        {
+          title: "Inpatient / emergency care",
+          points: [
+            "Severe malaria: **IV artesunate 2.4 mg/kg** at 0, 12, 24 hours, then daily.",
+            "Enteric fever: azithromycin or ceftriaxone; **meropenem** for XDR typhoid.",
+            "Give **doxycycline** if eschar or leptospirosis is suspected.",
+            "Use **paracetamol only** until dengue is excluded.",
+            "Notify IHR diseases on **IDSP-IHIP**.",
+          ],
+        },
+        {
+          title: "Special groups",
+          points: [
+            "Pregnancy: avoid malaria and Zika areas; **mefloquine** if travel is unavoidable.",
+            "Children: no doxycycline under 8; DEET safe over 2 months.",
+            "Yellow fever vaccine is a **precaution at 60+**.",
+            "Insulin users: adjust doses across time zones; carry insulin in hand luggage.",
+          ],
+        },
+        {
+          title: "Complications and red flags",
+          points: [
+            "**Missed falciparum malaria** is the main preventable traveller death.",
+            "HACE and HAPE need **immediate descent** and oxygen.",
+            "Purpura after Hajj suggests **meningococcaemia**.",
+            "Fever up to **1 year** after travel still needs a malaria test.",
+          ],
+        },
+        {
+          title: "Latest updates",
+          points: [
+            "**IHR 2024 amendments** added a pandemic emergency level; in force 2025.",
+            "**WMS 2024**: acetazolamide 125 mg BD is enough for prevention.",
+            "**Qdenga** dengue vaccine recommended by WHO SAGE 2023; not in India.",
+            "Live chikungunya vaccine faced **safety restrictions** in older adults in 2025.",
+          ],
+        },
+      ],
+      tables: [
+        {
+          heading: "Malaria chemoprophylaxis drug table",
+          columns: ["Drug", "Dose and route", "Duration", "Key side effects / cautions"],
+          rows: [
+            ["Atovaquone-proguanil", "250/100 mg oral daily", "1-2 days before to 7 days after", "GI upset; avoid if CrCl under 30"],
+            ["Doxycycline", "100 mg oral daily", "1-2 days before to 4 weeks after", "Not in pregnancy or under 8; photosensitivity"],
+            ["Mefloquine", "250 mg oral weekly", "2-3 weeks before to 4 weeks after", "Neuropsychiatric effects; safe in pregnancy"],
+            ["Chloroquine", "300 mg base oral weekly", "1-2 weeks before to 4 weeks after", "Only chloroquine-sensitive areas"],
+            ["Primaquine", "30 mg base oral daily", "1-2 days before to 7 days after", "G6PD deficiency, pregnancy"],
+          ],
+        },
+        {
+          heading: "Fever by travel region",
+          columns: ["Region", "Most likely", "Do not miss"],
+          rows: [
+            ["Sub-Saharan Africa", "Falciparum malaria", "VHF, meningococcaemia, schistosomiasis"],
+            ["South Asia", "Enteric fever, dengue", "Malaria, scrub typhus, leptospirosis"],
+            ["South-East Asia", "Dengue", "Malaria, melioidosis, JE"],
+            ["Latin America", "Dengue, chikungunya, Zika", "Malaria, yellow fever"],
+            ["Middle East (Hajj)", "Respiratory viruses", "Meningococcus, MERS-CoV, brucellosis"],
+          ],
+        },
+        {
+          heading: "Yellow fever vaccine: contraindications vs precautions",
+          columns: ["Contraindications", "Precautions"],
+          rows: [
+            ["Age under 6 months", "Age 6-8 months"],
+            ["Thymus disorder or thymectomy", "Age 60 and over"],
+            ["Severe immunosuppression (CD4 under 200)", "Pregnancy and breastfeeding"],
+            ["Anaphylaxis to egg or gelatin", "HIV with CD4 200-499"],
+          ],
+        },
+      ],
+      remember: [
+        "**Malaria first** - three smears over 12-24 hours.",
+        "**ABCD** of malaria prevention.",
+        "A-P stops after **7 days**; doxycycline and mefloquine after **4 weeks**.",
+        "YF certificate: **lifelong**, valid from **day 10**.",
+        "Hajj: **MenACWY** at least 10 days before.",
+        "India: no YF certificate means **6 days quarantine**.",
+        "Azithromycin, not ciprofloxacin, for South Asian travel diarrhoea.",
+      ],
+    },
+  },
 };
 
 export default revision;
