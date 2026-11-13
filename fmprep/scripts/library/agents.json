@@ -1,1 +1,50 @@
-{"subject":"infectious-fever","part":1,"agents":{"b01":"a17527b4c26fc9017","b02":"a0187cd0cdda6feb5","b03":"ab0dabecc4bda4896","b04":"a265c538287bc58f7","b05":"a62d6a532c2bea3d3","b06":"a5e52c72b254fd694","b07":"ae2487c615e662f5f","b08":"afe5a01ea1be3fe1d","b09":"ab3eddaec2feb1bf2","b10":"a45410550694899c6","b11":"a3f39454a9582133e","b12":"a2b1eba4c5b0a5bfb"},"completedSubjects":["cardiovascular(46)","respiratory(46)","endocrine(48)","gastro-hepatology(48)"]}
+{
+"subject": "infectious-fever",
+"part": 2,
+"agents": {
+"b01": "a17527b4c26fc9017",
+"b02": "a0187cd0cdda6feb5",
+"b03": "ab0dabecc4bda4896",
+"b04": "a265c538287bc58f7",
+"b05": "a62d6a532c2bea3d3",
+"b06": "a5e52c72b254fd694",
+"b07": "ae2487c615e662f5f",
+"b08": "afe5a01ea1be3fe1d",
+"b09": "ab3eddaec2feb1bf2",
+"b10": "a45410550694899c6",
+"b11": "a3f39454a9582133e",
+"b12": "a2b1eba4c5b0a5bfb",
+"b13": "ae017ed6a168bdecd",
+"b14": "ac96a49209cb91401",
+"b15": "a152262c06d043057",
+"b16": "af22820cbf87bfe92",
+"b17": "a3017ec152004b782",
+"b18": "a7ba0124b5be7251d",
+"b19": "ad77d1c68644ae13a",
+"b20": "a9bffae7934f2e8cf",
+"b21": "a835571d48c6c78fc",
+"b22": "a39c4c6d70b4572e6",
+"b23": "a935ab80ca55a06c9",
+"b24": "afb4bce6d2a084c74",
+"b25": "ae3794380d14fc5b3",
+"b26": "ac15e1cfa5de156af",
+"b27": "a48de51b49e06c92b",
+"b28": "a16efefa5fe32404f"
+},
+"completedSubjects": [
+"cardiovascular(46)",
+"respiratory(46)",
+"endocrine(48)",
+"gastro-hepatology(48)"
+],
+"done": [
+"b01",
+"b02",
+"b03",
+"b05",
+"b06",
+"b10",
+"b11",
+"b12"
+]
+}

@@ -173,18 +173,13 @@ topics.push({
       ],
     },
     {
-      heading: "Complications and prognosis",
+      heading: "Complications, prognosis and follow-up",
       points: [
         "**Women**: PID leads to **tubal infertility (about 10-20% after one episode)**, **ectopic pregnancy** and **chronic pelvic pain**; gonorrhoea and chlamydia cause Fitz-Hugh-Curtis **perihepatitis**. [Harrison 22e]",
         "**Men**: epididymo-orchitis, urethral stricture after repeated gonorrhoea, and **reactive arthritis** after chlamydia (HLA-B27). [Harrison 22e]",
         "**Neonates**: ophthalmia neonatorum (blindness), chlamydial pneumonia, congenital syphilis, neonatal herpes (high mortality when disseminated). [CDC 2021]",
         "**LGV and donovanosis**: genital elephantiasis (esthiomene), rectal stricture, fistulae; **HPV**: cervical, anal and penile cancer. [Harrison 22e]",
         "Treated bacterial STIs are cured in **over 95%**; the prognosis is limited by **reinfection**, rising **gonococcal resistance** and the lifelong nature of HSV and HIV. [WHO 2024]",
-      ],
-    },
-    {
-      heading: "Referral, follow-up and monitoring",
-      points: [
         "Refer to the **Suraksha Clinic / DSRC** for laboratory diagnosis, partner services and confidential counselling; link to the **ICTC** for HIV testing. [NACP-V 2021]",
         "Review urethral discharge at **7 days**: persistent symptoms mean **non-adherence, reinfection or resistant organisms** - test with culture/NAAT and treat **M. genitalium** (doxycycline 7 days then moxifloxacin 400 mg daily for 7 days) or trichomonas. [CDC 2021]",
         "Review genital ulcers at **7 days**: a non-healing ulcer needs **biopsy, dark-field, HSV PCR and HIV testing** and referral. [NACO 2014]",
@@ -1174,18 +1169,13 @@ topics.push({
       ],
     },
     {
-      heading: "Referral, follow-up and monitoring",
+      heading: "Follow-up, referral and programme link",
       points: [
         "Schedule the **next dose date** on the card: hepatitis B months 1 and 6; RZV at 2-6 months; HPV per schedule; PPSV23 after 1 year if PCV15/PCV13 was given. [ACIP 2024]",
         "Recall annually for **influenza** (before the monsoon in most of India). [API 2022]",
         "Check **anti-HBs** 1-2 months after the series in HCWs and dialysis patients, annually in dialysis. [ACIP 2018]",
         "Refer **post-transplant, chemotherapy and HIV with low CD4** to the specialist for timed vaccination (often restarting schedules after stem-cell transplant). [IDSA 2013]",
         "Refer suspected **serious AEFI** (anaphylaxis, GBS, encephalopathy) for investigation and reporting. [MoHFW 2023]",
-      ],
-    },
-    {
-      heading: "Prevention and programme link",
-      points: [
         "**UIP (2024)** gives adults only **Td in pregnancy and for injuries**; **adult BCG** vaccination of high-risk adults has been piloted in selected states under the TB elimination effort. [MoHFW 2024]",
         "**HPV vaccination** for girls 9-14 years was announced for national roll-out in the **Interim Budget 2024**, using the indigenous **Cervavac** vaccine. [MoHFW 2024]",
         "**Hepatitis B vaccination** of high-risk adults and HCWs is part of the **National Viral Hepatitis Control Programme (NVHCP)**. [NVHCP 2018]",
@@ -1549,18 +1539,12 @@ topics.push({
       ],
     },
     {
-      heading: "Classification - pre-travel vaccines",
+      heading: "Classification - pre-travel vaccines and the yellow fever certificate",
       points: [
         "**Routine** - bring up to date: Td/Tdap, MMR, influenza, varicella, hepatitis B, pneumococcal and COVID-19 as per age (see the Adult vaccination topic). [CDC Yellow Book 2024]",
         "**Required** (by International Health Regulations or the destination country): **yellow fever** (ICVP) for endemic countries or for entry from them; **MenACWY** for Hajj and Umrah (Saudi Arabia); **polio** for residents of or long-stay visitors to polio-affected countries. [WHO IHR 2005]",
         "**Recommended** by risk: **hepatitis A** (2 doses inactivated, or single live attenuated in India), **typhoid conjugate vaccine** (single dose), **rabies PrEP** (day 0 and 7), **Japanese encephalitis** (rural Asia, over 1 month in season), **cholera** (outbreak areas, aid workers), **dengue (Qdenga)** in some countries, and tick-borne encephalitis (Europe). [WHO 2024]",
         "**Rabies PrEP** (WHO 2018): **2 visits on day 0 and day 7**, IM 1 vial or ID 0.1 mL at 2 sites; after PrEP, a bite needs only **2 booster doses (day 0 and 3)** and **no RIG**. [WHO 2018]",
-        "**JE vaccine** in India: **live SA-14-14-2** (single dose) or **inactivated JENVAC** (2 doses 28 days apart); IXIARO internationally, 2 doses 28 days apart (7-day accelerated in adults). [WHO 2015]",
-      ],
-    },
-    {
-      heading: "Yellow fever and the vaccination certificate",
-      points: [
         "**Yellow fever vaccine (17D live attenuated)**: **0.5 mL SC/IM single dose**, gives **lifelong protection** - since **July 2016** the **International Certificate of Vaccination or Prophylaxis (ICVP)** is valid **for life**, starting **10 days after** vaccination. [WHO IHR 2016]",
         "**India** has no yellow fever but has *Aedes aegypti*, so it **requires a valid YF certificate** from travellers arriving within **6 days** of leaving or transiting a YF-risk country (Africa, South America); travellers without one are **quarantined for up to 6 days**. [MoHFW 2023]",
         "YF vaccine is given only at **designated Yellow Fever Vaccination Centres** (APHOs, PHOs and selected government hospitals and institutes), which issue the stamped ICVP. [MoHFW 2023]",
@@ -1673,18 +1657,13 @@ topics.push({
       ],
     },
     {
-      heading: "Complications and prognosis",
+      heading: "Complications, referral and follow-up",
       points: [
         "**Delayed diagnosis of falciparum malaria** is the main preventable cause of death in returning travellers - most deaths follow missed or late diagnosis in non-immune travellers. [UKHSA 2024]",
         "**Typhoid**: intestinal perforation and bleeding in week 3; **dengue**: shock and bleeding in the critical phase (day 3-7). [Harrison 22e]",
         "**Altitude**: untreated **HACE and HAPE** can kill within hours - **descend** at least 300-1,000 m, oxygen, dexamethasone 8 mg then 4 mg 6-hourly (HACE), nifedipine (HAPE). [WMS 2024]",
         "**Post-infectious IBS** follows travellers' diarrhoea in about 5-10%. [IDSA/ISTM 2017]",
         "**Imported outbreaks**: travellers can import measles, VHF, mpox, cholera and MDR bacteria (e.g. carbapenemase producers) into hospitals. [WHO 2024]",
-      ],
-    },
-    {
-      heading: "Referral, follow-up and monitoring",
-      points: [
         "Refer **suspected VHF** (isolate, use full PPE, inform the state surveillance unit), severe malaria, and complex eosinophilia to an infectious diseases centre. [UKHSA 2024]",
         "**Post-travel screening** of asymptomatic long-stay travellers: CBC for eosinophilia, schistosoma serology after fresh-water exposure in Africa, strongyloides serology, TB testing (IGRA) after over 3 months in high-incidence settings with exposure. [CDC Yellow Book 2024]",
         "Advise travellers that **any fever up to 1 year after return** from a malarious area needs a malaria test and that they must **mention their travel**. [UKHSA 2024]",
