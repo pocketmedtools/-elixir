@@ -30,3 +30,8 @@ USER WANTS UPDATES: at every check-in post one short status line (subject, topic
 - Every push builds a new APK and live update automatically; post a one-line status each check-in.
 - Scratchpad can be wiped by a container restart: restore with `cp fmprep/scripts/library/* $S/` and regenerate prompts.
   Agent ids: agents.json (also mirrored in fmprep/scripts/library/agents.json).
+
+PAUSED 2026-11-13 06:45 UTC by user ("Pause until further notice"). Do not resume writers or start anything until told.
+On resume: infectious-fever b08 (agent afe5a01ea1be3fe1d) was cut off mid-edit; its partial file is saved at
+fmprep/scripts/library/b08-partial.ts.txt (the committed b08.ts is the last good version) - tell the agent.
+All other writers stopped by the usage limit; resume each by id from agents.json.
