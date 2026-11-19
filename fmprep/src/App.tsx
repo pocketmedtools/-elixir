@@ -79,7 +79,7 @@ export default function App() {
 
       {/* Not sticky: each screen has its own sticky back bar, and two stacked
           sticky rows would cover it. */}
-      <header className="app-header border-b border-[var(--line)] bg-white">
+      <header className="app-chrome app-header border-b border-[var(--line)] bg-white">
         <div className="mx-auto flex max-w-4xl items-center gap-2.5 px-3 py-3 md:px-6">
           {/* The same mark the web page carries, so the two do not open on
               two different-looking products. */}
@@ -116,13 +116,15 @@ export default function App() {
         <div className="brand-ribbon" />
       </header>
 
-      <UpdateBanner native={isNative} />
+      <div className="app-chrome">
+        <UpdateBanner native={isNative} />
+      </div>
 
       <main className="study-stage flex-1">
         <StudyModule />
       </main>
 
-      <footer className="border-t border-[var(--line)] bg-white px-3 py-4 text-center text-xs leading-relaxed text-[var(--muted)] md:px-6">
+      <footer className="app-chrome border-t border-[var(--line)] bg-white px-3 py-4 text-center text-xs leading-relaxed text-[var(--muted)] md:px-6">
         Study material for examination preparation, written for licensed doctors and doctors in
         training. Verify every dose and every guideline against a current primary source before you
         act on it clinically. Examination logistics change: confirm papers, marks and dates against

@@ -616,3 +616,7 @@ h2.text-slate-500, h2.text-xs.uppercase { color: #7a1220 !important; }
    flex child refuses to shrink below it and the line runs off the phone. */
 li.flex > *, .flex > .min-w-0 { min-width: 0; }
 li.flex > span { overflow-wrap: anywhere; }
+
+/* Reading a document: the app's own bar, update banner and footer step
+   aside so the document has the whole screen (DocReader sets the class). */
+html.fm-reading .app-chrome { display: none !important; }

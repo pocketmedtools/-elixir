@@ -257,6 +257,11 @@ export default function DocReader({
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageHtml, doc]);
+  // While a document is open, the app's header and footer step aside.
+  useEffect(() => {
+    document.documentElement.classList.add("fm-reading");
+    return () => document.documentElement.classList.remove("fm-reading");
+  }, []);
   // Leaving the reader while in full screen must still bring the bar back.
   useEffect(() => () => void setImmersive(false), []);
   useEffect(() => {
