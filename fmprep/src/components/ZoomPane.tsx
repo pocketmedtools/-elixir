@@ -14,6 +14,7 @@
  * given the zoom and sizes itself (PDF pages are drawn at the new width).
  */
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import FastScroller from "./FastScroller";
 
 const MIN = 0.5;
 const MAX = 5;
@@ -27,6 +28,7 @@ export default function ZoomPane({
   style,
   onScrollEl,
   resetKey,
+  scrollLabel,
 }: {
   children: (zoom: number, viewWidth: number) => ReactNode;
   apply?: "css" | "none";
@@ -37,6 +39,8 @@ export default function ZoomPane({
   onScrollEl?: (el: HTMLDivElement | null) => void;
   /** Changing it re-measures the fit (content finished rendering). */
   resetKey?: unknown;
+  /** Bubble text for the right-edge drag handle, from the position 0..1. */
+  scrollLabel?: (frac: number) => string;
 }) {
   const outer = useRef<HTMLDivElement | null>(null);
   const mid = useRef<HTMLDivElement | null>(null);
@@ -44,7 +48,10 @@ export default function ZoomPane({
   const [user, setUser] = useState(1);
   const [base, setBase] = useState(1);
   const [viewWidth, setViewWidth] = useState(0);
+  const [scrollEl, setScrollEl] = useState<HTMLDivElement | null>(null);
   const zoom = base * user;
+  const userRef = useRef(user);
+  userRef.current = user;
   const zoomRef = useRef(zoom);
   zoomRef.current = zoom;
   /* Where to scroll after a zoom is laid out: keeps the pinched point still. */
@@ -53,6 +60,7 @@ export default function ZoomPane({
   const setOuter = useCallback(
     (el: HTMLDivElement | null) => {
       outer.current = el;
+      setScrollEl(el);
       onScrollEl?.(el);
     },
     [onScrollEl],
@@ -83,10 +91,23 @@ export default function ZoomPane({
     const t = window.setTimeout(measure, 60);
     const t2 = window.setTimeout(measure, 900);
     window.addEventListener("resize", measure);
+    // A Word file or slides lay out after a moment: keep fitting while the
+    // content grows, until the reader zooms by hand.
+    let raf = 0;
+    const ro = new ResizeObserver(() => {
+      if (userRef.current !== 1 || raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        measure();
+      });
+    });
+    if (inner.current) ro.observe(inner.current);
     return () => {
       window.clearTimeout(t);
       window.clearTimeout(t2);
       window.removeEventListener("resize", measure);
+      ro.disconnect();
+      if (raf) cancelAnimationFrame(raf);
     };
   }, [fit, apply, resetKey]);
 
@@ -179,21 +200,24 @@ export default function ZoomPane({
   }, [base, user]);
 
   return (
-    <div
-      ref={setOuter}
-      className={`relative overflow-auto ${className}`}
-      style={{ touchAction: "pan-x pan-y", WebkitOverflowScrolling: "touch", ...style }}
-    >
-      <div ref={mid} style={{ width: "max-content", minWidth: "100%" }}>
-        <div ref={inner} style={apply === "css" ? ({ zoom, width: "max-content" } as React.CSSProperties) : undefined}>
-          {viewWidth > 0 && children(zoom, viewWidth)}
+    <div className={`relative ${className}`} style={style}>
+      <div
+        ref={setOuter}
+        className="absolute inset-0 overflow-auto"
+        style={{ touchAction: "pan-x pan-y", WebkitOverflowScrolling: "touch", overscrollBehavior: "contain" }}
+      >
+        <div ref={mid} style={{ width: "max-content", minWidth: "100%" }}>
+          <div ref={inner} style={apply === "css" ? ({ zoom, width: "max-content" } as React.CSSProperties) : undefined}>
+            {viewWidth > 0 && children(zoom, viewWidth)}
+          </div>
         </div>
       </div>
+      <FastScroller target={{ kind: "element", el: scrollEl }} label={scrollLabel} top={48} bottom={64} />
       {Math.abs(user - 1) > 0.02 && (
         <button
           type="button"
           onClick={() => setUser(1)}
-          className="sticky bottom-3 left-3 z-10 rounded-full px-3 py-1.5 text-xs font-bold text-white"
+          className="absolute bottom-3 left-3 z-10 rounded-full px-3 py-1.5 text-xs font-bold text-white"
           style={{ background: "rgba(0,0,0,.55)" }}
         >
           {Math.round(zoom * 100)}% · Reset

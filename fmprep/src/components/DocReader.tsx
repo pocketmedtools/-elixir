@@ -10,6 +10,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getDoc, htmlToText, wordCount, type StudyDoc } from "../lib/docs";
 import PdfPages from "./PdfPages";
 import ZoomPane from "./ZoomPane";
+import FastScroller from "./FastScroller";
 import OfficeView from "./OfficeView";
 import {
   docModeOf,
@@ -53,7 +54,10 @@ function end(e){if(s&&e.touches.length<2){s=null;last=0;return}
 if(e.touches.length===0&&e.changedTouches.length===1&&!moved){var n=Date.now(),t=e.changedTouches[0];
 if(n-last<300){var o=origin();var c={x:(scrollX+t.clientX-o.x)/Z,y:(scrollY+t.clientY-o.y)/Z};Z=Z>1.05?1:2.5;apply(Z,c,{x:t.clientX,y:t.clientY});last=0}else last=n}}
 addEventListener('touchend',end,{passive:true});addEventListener('touchcancel',end,{passive:true});
-addEventListener('message',function(e){if(e.data&&e.data.fmTop){Z=1;b().style.transform='';document.documentElement.style.overflow='';scrollTo(0,0)}})})();`;
+addEventListener('message',function(e){if(!e.data)return;if(e.data.fmTop){Z=1;b().style.transform='';document.documentElement.style.overflow='';scrollTo(0,0)}
+if(typeof e.data.fmScrollTo==='number'){var M=Math.max(0,document.documentElement.scrollHeight-innerHeight);scrollTo(scrollX,e.data.fmScrollTo*M)}});
+var lr=0;addEventListener('scroll',function(){if(lr)return;lr=requestAnimationFrame(function(){lr=0;var M=Math.max(1,document.documentElement.scrollHeight-innerHeight);parent.postMessage({fmLive:scrollY/M},'*')})},{passive:true});
+addEventListener('load',function(){var M=Math.max(1,document.documentElement.scrollHeight-innerHeight);parent.postMessage({fmLive:scrollY/M},'*')})})();`;
 
 /**
  * Where the reader is inside the page. The page runs in a sandbox, so it
@@ -182,6 +186,8 @@ export default function DocReader({
   }, [pageHtml, full, asPage]);
   const pageFrame = useRef<HTMLIFrameElement | null>(null);
   const fullFrame = useRef<HTMLIFrameElement | null>(null);
+  const [pageFrameEl, setPageFrameEl] = useState<HTMLIFrameElement | null>(null);
+  const [fullFrameEl, setFullFrameEl] = useState<HTMLIFrameElement | null>(null);
   useEffect(() => {
     const onMessage = (e: MessageEvent) => {
       const d = e.data as { fmScroll?: number; fmFrac?: number } | null;
@@ -567,7 +573,7 @@ export default function DocReader({
 
       {isPdf && full && doc.blob && (
         <div ref={fullRef} className="fixed inset-0 z-[300] flex flex-col" style={{ background: "#3a3530", paddingTop: "var(--sat)" }}>
-          <ZoomPane apply="none" className="flex-1 pb-10" onScrollEl={setFullScrollEl}>
+          <ZoomPane apply="none" className="flex-1" onScrollEl={setFullScrollEl} scrollLabel={(f) => `Page ${Math.min(doc.pages ?? 1, Math.max(1, Math.round(f * ((doc.pages ?? 1) - 1)) + 1))} of ${doc.pages ?? "?"}`}>
             {(z, w) => (
               <PdfPages blob={doc.blob!} zoom={z} viewWidth={w} startPage={pdfPage} onPage={notePage} scrollRoot={fullScrollEl} />
             )}
@@ -585,6 +591,7 @@ export default function DocReader({
           </div>
           <ZoomPane
             apply="none"
+            scrollLabel={(f) => `Page ${Math.min(doc.pages ?? 1, Math.max(1, Math.round(f * ((doc.pages ?? 1) - 1)) + 1))} of ${doc.pages ?? "?"}`}
             className="mt-2 rounded-xl border border-slate-200"
             style={{ height: "calc(100dvh - 190px)", minHeight: 460, background: "#3a3530" }}
             onScrollEl={setPageScrollEl}
@@ -629,7 +636,10 @@ export default function DocReader({
         >
           <iframe
             title={doc.title}
-            ref={fullFrame}
+            ref={(el) => {
+              fullFrame.current = el;
+              setFullFrameEl(el);
+            }}
             srcDoc={readingHtml ?? pageHtml}
             sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
             className="block w-full flex-1 border-0"
@@ -644,28 +654,35 @@ export default function DocReader({
           >
             ✕
           </button>
+          <FastScroller target={{ kind: "frame", frame: fullFrameEl }} top={48} bottom={72} label={(f) => `${Math.round(f * 100)}%`} />
           {startButton}
         </div>
       )}
 
       {pageHtml !== null && asPage && !full && (
-        <iframe
-          ref={pageFrame}
-          title={doc.title}
-          srcDoc={pageSrc ?? pageHtml}
-          sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
-          className="mt-3 w-full rounded-xl border border-slate-200"
-          /* A page with no background of its own is white, as in any browser -
-             not the app's cream. */
-          style={{ height: "calc(100dvh - 170px)", minHeight: 480, background: "#ffffff", colorScheme: "light" }}
-        />
+        <div className="relative mt-3">
+          <iframe
+            ref={(el) => {
+              pageFrame.current = el;
+              setPageFrameEl(el);
+            }}
+            title={doc.title}
+            srcDoc={pageSrc ?? pageHtml}
+            sandbox="allow-scripts allow-popups allow-forms allow-modals allow-downloads"
+            className="block w-full rounded-xl border border-slate-200"
+            /* A page with no background of its own is white, as in any browser -
+               not the app's cream. */
+            style={{ height: "calc(100dvh - 170px)", minHeight: 480, background: "#ffffff", colorScheme: "light" }}
+          />
+          <FastScroller target={{ kind: "frame", frame: pageFrameEl }} top={8} bottom={8} label={(f) => `${Math.round(f * 100)}%`} />
+        </div>
       )}
 
       {/* Back to the start, just above Home. Full screen has its own copy. */}
       {!full && startButton}
 
       {imageUrl && (
-        <ZoomPane className="mt-4 rounded-xl border border-slate-200" style={{ maxHeight: "calc(100dvh - 160px)" }}>
+        <ZoomPane className="mt-4 rounded-xl border border-slate-200" style={{ height: "calc(100dvh - 160px)" }}>
           {(_z, w) => <img src={imageUrl} alt={doc.title} style={{ width: w - 2, display: "block" }} />}
         </ZoomPane>
       )}
@@ -699,6 +716,7 @@ export default function DocReader({
             )}
           </div>
 
+          <FastScroller target={{ kind: "window" }} fixed top={70} bottom={130} label={(f) => `${Math.round(f * 100)}%`} />
           <article ref={textRef} className="mt-4 leading-relaxed text-slate-900" style={{ touchAction: "pan-x pan-y" }}>
             {paragraphs.map((para, i) => (
               <p key={i} className="mb-4 whitespace-pre-wrap break-words">
