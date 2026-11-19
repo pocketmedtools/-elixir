@@ -11,6 +11,9 @@ import { getDoc, htmlToText, wordCount, type StudyDoc } from "../lib/docs";
 import PdfPages from "./PdfPages";
 import ZoomPane from "./ZoomPane";
 import FastScroller from "./FastScroller";
+import DocSearch, { SearchButton, focusMark, markAll, unmarkAll, type SearchAdapter } from "./DocSearch";
+import type { Pdf, PdfHit } from "./PdfPages";
+import { loadPdfjs } from "../lib/docs";
 import OfficeView from "./OfficeView";
 import {
   docModeOf,
@@ -76,8 +79,18 @@ var tm;addEventListener('scroll',function(){clearTimeout(tm);tm=setTimeout(funct
 document.addEventListener('visibilitychange',function(){parent.postMessage({fmScroll:Math.round(scrollY),fmFrac:scrollY/max()},'*')})})();`;
 }
 
+/* Find inside an HTML page (it runs in its own frame): mark every match,
+   report the count, bring match i to view on request. */
+const FIND_JS = `(function(){var M=[];function un(){for(var i=0;i<M.length;i++){var m=M[i],p=m.parentNode;if(!p)continue;while(m.firstChild)p.insertBefore(m.firstChild,m);p.removeChild(m);p.normalize()}M=[]}
+function find(q){un();q=q.toLowerCase();var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){var p=n.parentElement;if(!p||/^(SCRIPT|STYLE|NOSCRIPT|TEXTAREA)$/.test(p.tagName))return 2;return n.nodeValue.toLowerCase().indexOf(q)>=0?1:3}}),ns=[];while(w.nextNode())ns.push(w.currentNode);
+for(var i=0;i<ns.length&&M.length<2000;i++){var t=ns[i],k=t.nodeValue.toLowerCase().indexOf(q);while(k>=0&&M.length<2000){var h=t.splitText(k);t=h.splitText(q.length);var m=document.createElement('mark');m.style.cssText='background:#fde047;color:inherit;padding:0';h.parentNode.replaceChild(m,h);m.appendChild(h);M.push(m);k=t.nodeValue.toLowerCase().indexOf(q)}}return M.length}
+addEventListener('message',function(e){var d=e.data;if(!d)return;if(typeof d.fmFind==='string'){parent.postMessage({fmFindCount:find(d.fmFind)},'*')}
+if(typeof d.fmFindGo==='number'){for(var i=0;i<M.length;i++)M[i].style.background=i===d.fmFindGo?'#fb923c':'#fde047';var m=M[d.fmFindGo];if(m){var r=m.getBoundingClientRect();scrollTo(scrollX+r.left-innerWidth/2,scrollY+r.top-innerHeight/3)}}
+if(d.fmFindClear)un()})})();`;
+
 function withPosition(html: string, y: number, f: number): string {
-  const inject = "<script>" + positionJs(y, f) + "</scr" + "ipt><script>" + PINCH_JS + "</scr" + "ipt>";
+  const inject =
+    "<script>" + positionJs(y, f) + "</scr" + "ipt><script>" + PINCH_JS + "</scr" + "ipt><script>" + FIND_JS + "</scr" + "ipt>";
   const head = html.match(/<head[^>]*>/i);
   if (head && head.index !== undefined) {
     const at = head.index + head[0].length;
@@ -154,6 +167,13 @@ export default function DocReader({
   const [pageScrollEl, setPageScrollEl] = useState<HTMLDivElement | null>(null);
   /* Bumped when an Office file has been laid out, so the zoom fits it. */
   const [officeReady, setOfficeReady] = useState(0);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [pdfHit, setPdfHit] = useState<PdfHit | null>(null);
+  const pdfDocRef = useRef<Pdf | null>(null);
+  const pdfHits = useRef<{ q: string; hits: { page: number; occ: number }[] }>({ q: "", hits: [] });
+  const officeRoot = useRef<HTMLElement | null>(null);
+  const officeMarks = useRef<HTMLElement[]>([]);
+  const textMarks = useRef<HTMLElement[]>([]);
   const notePage = useCallback(
     (n: number) => {
       setPdfPage(n);
@@ -441,6 +461,95 @@ export default function DocReader({
     window.scrollTo({ top: 0 });
   };
 
+  /* ---- Find in this document ---- */
+  const searchAdapter: SearchAdapter = (() => {
+    const frame = full ? fullFrame.current : asPage ? pageFrame.current : null;
+    if (isPdf && (full || asPage)) {
+      return {
+        search: async (q) => {
+          const needle = q.toLowerCase();
+          const hits: { page: number; occ: number }[] = [];
+          const parts = doc.text.split(/\[Page (\d+)\]\n?/);
+          for (let k = 1; k < parts.length; k += 2) {
+            const page = Number(parts[k]);
+            const body = (parts[k + 1] ?? "").toLowerCase();
+            let from = 0;
+            let occ = 0;
+            while (hits.length < 5000) {
+              const at = body.indexOf(needle, from);
+              if (at < 0) break;
+              hits.push({ page, occ: occ++ });
+              from = at + needle.length;
+            }
+          }
+          pdfHits.current = { q: needle, hits };
+          return hits.length;
+        },
+        go: async (i) => {
+          const pdfDoc = pdfDocRef.current;
+          const h = pdfHits.current.hits[i];
+          if (!pdfDoc || !h) return;
+          const box = document.getElementById(`pdf-page-${h.page}`);
+          const scroller = full ? fullScrollEl : pageScrollEl;
+          box?.scrollIntoView({ block: "start" });
+          const rects = await pdfHitRects(pdfDoc, h.page, pdfHits.current.q, h.occ);
+          setPdfHit({ page: h.page, rects });
+          if (box && scroller && rects[0]) scroller.scrollTop += rects[0].t * box.clientHeight - scroller.clientHeight / 3;
+        },
+        clear: () => setPdfHit(null),
+      };
+    }
+    if (office && (full || asPage)) {
+      return {
+        search: async (q) => {
+          if (!officeRoot.current) return 0;
+          officeMarks.current = markAll(officeRoot.current, q);
+          return officeMarks.current.length;
+        },
+        go: (i) => focusMark(officeMarks.current, i),
+        clear: () => officeRoot.current && unmarkAll(officeRoot.current),
+      };
+    }
+    if (pageHtml !== null && frame) {
+      return {
+        search: (q) =>
+          new Promise<number>((resolve) => {
+            const on = (e: MessageEvent) => {
+              if (e.source !== frame.contentWindow || typeof (e.data as { fmFindCount?: number })?.fmFindCount !== "number") return;
+              window.removeEventListener("message", on);
+              resolve((e.data as { fmFindCount: number }).fmFindCount);
+            };
+            window.addEventListener("message", on);
+            frame.contentWindow?.postMessage({ fmFind: q }, "*");
+            window.setTimeout(() => {
+              window.removeEventListener("message", on);
+              resolve(0);
+            }, 4000);
+          }),
+        go: (i) => frame.contentWindow?.postMessage({ fmFindGo: i }, "*"),
+        clear: () => frame.contentWindow?.postMessage({ fmFindClear: 1 }, "*"),
+      };
+    }
+    // Plain text view: the reader's own highlighting, painted in full.
+    return {
+      search: async (q) => {
+        setQuery(q);
+        setBlocks(Math.max(1, Math.ceil(doc.text.length / BLOCK)));
+        await new Promise((r) => setTimeout(r, 120));
+        textMarks.current = Array.from(document.querySelectorAll<HTMLElement>("article mark"));
+        return textMarks.current.length;
+      },
+      go: (i) => focusMark(textMarks.current, i),
+      clear: () => setQuery(""),
+    };
+  })();
+  const searchButton = <SearchButton full={full} onClick={() => setSearchOpen(true)} />;
+  /* In full screen the document is the browser's top layer, so the bar must
+     live inside it to be seen. */
+  const searchBar = searchOpen ? (
+    <DocSearch key={`${full}-${asPage}`} adapter={searchAdapter} onClose={() => setSearchOpen(false)} />
+  ) : null;
+
   const startButton = (
     <button
       type="button"
@@ -575,11 +684,13 @@ export default function DocReader({
         <div ref={fullRef} className="fixed inset-0 z-[300] flex flex-col" style={{ background: "#3a3530", paddingTop: "var(--sat)" }}>
           <ZoomPane apply="none" className="flex-1" onScrollEl={setFullScrollEl} scrollLabel={(f) => `Page ${Math.min(doc.pages ?? 1, Math.max(1, Math.round(f * ((doc.pages ?? 1) - 1)) + 1))} of ${doc.pages ?? "?"}`}>
             {(z, w) => (
-              <PdfPages blob={doc.blob!} zoom={z} viewWidth={w} startPage={pdfPage} onPage={notePage} scrollRoot={fullScrollEl} />
+              <PdfPages blob={doc.blob!} zoom={z} viewWidth={w} startPage={pdfPage} onPage={notePage} scrollRoot={fullScrollEl} onDoc={(d) => (pdfDocRef.current = d)} hit={pdfHit} />
             )}
           </ZoomPane>
           <button type="button" onClick={closeFull} aria-label="Close full screen" className="absolute right-2 h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)", top: "calc(var(--sat) + 8px)" }}>✕</button>
           {startButton}
+          {searchButton}
+          {searchBar}
         </div>
       )}
 
@@ -597,7 +708,7 @@ export default function DocReader({
             onScrollEl={setPageScrollEl}
           >
             {(z, w) => (
-              <PdfPages blob={doc.blob!} zoom={z} viewWidth={w} startPage={startPdfPage.current} onPage={notePage} scrollRoot={pageScrollEl} />
+              <PdfPages blob={doc.blob!} zoom={z} viewWidth={w} startPage={startPdfPage.current} onPage={notePage} scrollRoot={pageScrollEl} onDoc={(d) => (pdfDocRef.current = d)} hit={pdfHit} />
             )}
           </ZoomPane>
         </>
@@ -606,10 +717,12 @@ export default function DocReader({
       {office && full && doc.blob && (
         <div ref={fullRef} className="fixed inset-0 z-[300] flex flex-col" style={{ background: "#e5e7eb", paddingTop: "var(--sat)" }}>
           <ZoomPane fit className="flex-1" resetKey={officeReady} onScrollEl={setFullScrollEl}>
-            {() => <OfficeView kind={office} blob={doc.blob!} onReady={() => setOfficeReady((n) => n + 1)} />}
+            {() => <OfficeView kind={office} blob={doc.blob!} onReady={() => setOfficeReady((n) => n + 1)} onRoot={(el) => (officeRoot.current = el)} />}
           </ZoomPane>
           <button type="button" onClick={closeFull} aria-label="Close full screen" className="absolute right-2 h-8 w-8 rounded-full text-sm font-bold text-white" style={{ background: "rgba(0,0,0,.45)", top: "calc(var(--sat) + 8px)" }}>✕</button>
           {startButton}
+          {searchButton}
+          {searchBar}
         </div>
       )}
 
@@ -623,7 +736,7 @@ export default function DocReader({
             className="mt-2 rounded-xl border border-slate-200"
             style={{ height: "calc(100dvh - 190px)", minHeight: 460, background: "#e5e7eb" }}
           >
-            {() => <OfficeView kind={office} blob={doc.blob!} onReady={() => setOfficeReady((n) => n + 1)} />}
+            {() => <OfficeView kind={office} blob={doc.blob!} onReady={() => setOfficeReady((n) => n + 1)} onRoot={(el) => (officeRoot.current = el)} />}
           </ZoomPane>
         </>
       )}
@@ -656,6 +769,8 @@ export default function DocReader({
           </button>
           <FastScroller target={{ kind: "frame", frame: fullFrameEl }} top={48} bottom={72} label={(f) => `${Math.round(f * 100)}%`} />
           {startButton}
+          {searchButton}
+          {searchBar}
         </div>
       )}
 
@@ -680,6 +795,8 @@ export default function DocReader({
 
       {/* Back to the start, just above Home. Full screen has its own copy. */}
       {!full && startButton}
+      {!full && (hasPage || doc.text) && searchButton}
+      {!full && searchBar}
 
       {imageUrl && (
         <ZoomPane className="mt-4 rounded-xl border border-slate-200" style={{ height: "calc(100dvh - 160px)" }}>
@@ -765,4 +882,46 @@ function highlight(text: string, query: string) {
       </mark>
     ),
   );
+}
+
+/** Boxes (fractions of the page) of the occ-th match of q on a PDF page. */
+async function pdfHitRects(pdf: Pdf, pageNo: number, q: string, occ: number) {
+  const pdfjs = await loadPdfjs();
+  const page = await pdf.getPage(pageNo);
+  const vp = page.getViewport({ scale: 1 });
+  const content = await page.getTextContent();
+  // The page's text built exactly as when it was imported, with each item's span.
+  let str = "";
+  const spans: { from: number; to: number; item: { str: string; transform: number[]; width: number } }[] = [];
+  for (const it of content.items) {
+    if (!("str" in it)) continue;
+    spans.push({ from: str.length, to: str.length + it.str.length, item: it });
+    str += it.str;
+    if (it.hasEOL) str += "\n";
+  }
+  const low = str.toLowerCase();
+  let at = -1;
+  for (let k = 0, from = 0; k <= occ; k++) {
+    at = low.indexOf(q, from);
+    if (at < 0) return [];
+    from = at + q.length;
+  }
+  const end = at + q.length;
+  const rects: { l: number; t: number; w: number; h: number }[] = [];
+  for (const sp of spans) {
+    if (sp.to <= at || sp.from >= end || !sp.item.str.length) continue;
+    const tx = pdfjs.Util.transform(vp.transform, sp.item.transform) as number[];
+    const fh = Math.hypot(tx[2], tx[3]);
+    const a = Math.max(0, at - sp.from);
+    const b = Math.min(sp.item.str.length, end - sp.from);
+    const len = sp.item.str.length;
+    const w = sp.item.width * vp.scale;
+    rects.push({
+      l: (tx[4] + (w * a) / len) / vp.width,
+      t: (tx[5] - fh) / vp.height,
+      w: ((w * (b - a)) / len) / vp.width,
+      h: (fh * 1.15) / vp.height,
+    });
+  }
+  return rects;
 }

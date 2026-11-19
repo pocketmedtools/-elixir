@@ -17,7 +17,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { openPdf } from "../lib/docs";
 
-type Pdf = Awaited<ReturnType<typeof openPdf>>;
+export type Pdf = Awaited<ReturnType<typeof openPdf>>;
+/** A search match: its page and boxes as fractions of the page (0..1). */
+export type PdfHit = { page: number; rects: { l: number; t: number; w: number; h: number }[] };
 
 /* One-at-a-time drawing queue, nearest page first. */
 type Job = { prio: () => number; run: () => Promise<void>; cancelled: boolean };
@@ -58,6 +60,8 @@ export default function PdfPages({
   onPage,
   scrollRoot,
   viewWidth,
+  onDoc,
+  hit,
 }: {
   blob: Blob;
   zoom: number;
@@ -67,7 +71,15 @@ export default function PdfPages({
   scrollRoot?: HTMLElement | null;
   /** Width of the visible area, when a zoom pane around the pages scrolls sideways. */
   viewWidth?: number;
+  /** The opened document, for searching. */
+  onDoc?: (pdf: Pdf | null) => void;
+  /** The current search match, drawn over its page. */
+  hit?: PdfHit | null;
 }) {
+  const docCb = useRef(onDoc);
+  useEffect(() => {
+    docCb.current = onDoc;
+  });
   const [pdf, setPdf] = useState<Pdf | null>(null);
   const [ratios, setRatios] = useState<number[]>([]);
   const [error, setError] = useState("");
@@ -103,6 +115,7 @@ export default function PdfPages({
         const r: number[] = new Array(doc.numPages).fill(v1.height / v1.width);
         setRatios([...r]);
         setPdf(doc);
+        docCb.current?.(doc);
         // True shape of every other page, quietly in the background.
         let changed = false;
         for (let i = 2; i <= doc.numPages && live; i++) {
@@ -169,6 +182,7 @@ export default function PdfPages({
               onVisible={seen}
               queue={queue}
               priority={priority}
+              hit={hit && hit.page === i + 1 ? hit : null}
             />
           ))}
       </div>
@@ -186,6 +200,7 @@ function Page({
   onVisible,
   queue,
   priority,
+  hit,
 }: {
   pdf: Pdf;
   n: number;
@@ -195,6 +210,7 @@ function Page({
   onVisible: (n: number, on: boolean) => void;
   queue: Queue;
   priority: (n: number) => number;
+  hit: PdfHit | null;
 }) {
   const box = useRef<HTMLDivElement | null>(null);
   const canvas = useRef<HTMLCanvasElement | null>(null);
@@ -289,6 +305,21 @@ function Page({
     >
       {/* Always mounted: the last picture stays (stretched) while a sharper one is drawn. */}
       <canvas ref={canvas} style={{ width, height, display: "block" }} />
+      {hit?.rects.map((r, k) => (
+        <span
+          key={k}
+          className="pdf-hit pointer-events-none absolute"
+          style={{
+            left: `${r.l * 100}%`,
+            top: `${r.t * 100}%`,
+            width: `${r.w * 100}%`,
+            height: `${r.h * 100}%`,
+            background: "rgba(251,146,60,.45)",
+            outline: "2px solid #ea580c",
+            borderRadius: 2,
+          }}
+        />
+      ))}
       <span className="absolute bottom-1 right-2 rounded bg-black/40 px-1.5 text-[11px] text-white">{n}</span>
     </div>
   );

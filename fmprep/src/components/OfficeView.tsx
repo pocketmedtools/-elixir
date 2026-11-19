@@ -29,9 +29,12 @@ export default function OfficeView({
   kind,
   blob,
   onReady,
+  onRoot,
 }: {
   kind: "docx" | "pptx" | "xlsx";
   blob: Blob;
+  /** The sealed element holding the document, for searching. */
+  onRoot?: (el: HTMLElement | null) => void;
   /** Called when the file has been laid out, so the zoom can fit it. */
   onReady?: () => void;
 }) {
@@ -57,6 +60,7 @@ export default function OfficeView({
     div.className = "fm-root";
     shadow.append(style, div);
     root.current = div;
+    onRoot?.(div);
   }, []);
 
   useEffect(() => {

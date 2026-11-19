@@ -1,5 +1,5 @@
 /**
- * A drag handle on the right edge for moving through a long document fast,
+ * A drag handle on the left edge for moving through a long document fast,
  * like the scroll thumb in a phone's PDF viewer: drag it and the document
  * follows; while dragging, a bubble shows where you are ("Page 12 of 80" or
  * a percentage). Tapping the track jumps there.
@@ -118,7 +118,7 @@ export default function FastScroller({
       className="z-[20] select-none"
       style={{
         position: fixed ? "fixed" : "absolute",
-        right: 0,
+        left: 0,
         top: fixed ? `calc(var(--sat, 0px) + ${top}px)` : top,
         bottom,
         width: 30,
@@ -152,7 +152,7 @@ export default function FastScroller({
       <div
         style={{
           position: "absolute",
-          right: 3,
+          left: 3,
           top: `calc(${frac} * (100% - ${THUMB}px))`,
           width: dragging ? 14 : 10,
           height: THUMB,
@@ -167,7 +167,7 @@ export default function FastScroller({
         <div
           style={{
             position: "absolute",
-            right: 26,
+            left: 26,
             top: `calc(${frac} * (100% - ${THUMB}px) + ${THUMB / 2 - 16}px)`,
             background: "rgba(0,0,0,.78)",
             color: "#fff",
