@@ -709,7 +709,7 @@ export default function DocReader({
             apply="none"
             scrollLabel={(f) => `Page ${Math.min(doc.pages ?? 1, Math.max(1, Math.round(f * ((doc.pages ?? 1) - 1)) + 1))} of ${doc.pages ?? "?"}`}
             className="mt-2 rounded-xl border border-slate-200"
-            style={{ height: "calc(100dvh - 190px)", minHeight: 460, background: "#3a3530" }}
+            style={{ position: "sticky", top: 58, height: "calc(100dvh - 66px)", minHeight: 420, background: "#3a3530" }}
             onScrollEl={setPageScrollEl}
           >
             {(z, w) => (
@@ -739,7 +739,7 @@ export default function DocReader({
             resetKey={officeReady}
             onScrollEl={setPageScrollEl}
             className="mt-2 rounded-xl border border-slate-200"
-            style={{ height: "calc(100dvh - 190px)", minHeight: 460, background: "#e5e7eb" }}
+            style={{ position: "sticky", top: 58, height: "calc(100dvh - 66px)", minHeight: 420, background: "#e5e7eb" }}
           >
             {() => <OfficeView kind={office} blob={doc.blob!} onReady={() => setOfficeReady((n) => n + 1)} onRoot={(el) => (officeRoot.current = el)} />}
           </ZoomPane>
@@ -780,7 +780,7 @@ export default function DocReader({
       )}
 
       {pageHtml !== null && asPage && !full && (
-        <div className="relative mt-3">
+        <div className="mt-3" style={{ position: "sticky", top: 58 }}>
           <iframe
             ref={(el) => {
               pageFrame.current = el;
@@ -792,7 +792,7 @@ export default function DocReader({
             className="block w-full rounded-xl border border-slate-200"
             /* A page with no background of its own is white, as in any browser -
                not the app's cream. */
-            style={{ height: "calc(100dvh - 170px)", minHeight: 480, background: "#ffffff", colorScheme: "light" }}
+            style={{ height: "calc(100dvh - 66px)", minHeight: 420, background: "#ffffff", colorScheme: "light" }}
           />
           <FastScroller target={{ kind: "frame", frame: pageFrameEl }} top={8} bottom={8} label={(f) => `${Math.round(f * 100)}%`} />
         </div>
