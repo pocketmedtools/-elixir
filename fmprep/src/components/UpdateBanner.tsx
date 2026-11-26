@@ -81,7 +81,8 @@ export default function UpdateBanner({ native }: { native: boolean }) {
             <button
               type="button"
               onClick={() => {
-                const url = (s.step === "needs-apk" && s.apk) || APK_URL;
+                // The release download has no size cap (the CDN refuses files over 20 MB).
+                const url = s.step === "needs-apk" && s.apk && !s.apk.includes("jsdelivr") ? s.apk : APK_URL;
                 const w = window.open(url, "_blank");
                 if (!w) window.location.href = url;
               }}

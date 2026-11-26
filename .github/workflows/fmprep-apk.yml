@@ -232,7 +232,7 @@ jobs:
             --arg sha "${{ github.sha }}" --arg date "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
             --arg web "https://raw.githubusercontent.com/$R/$FILES/$WEB" \
             --arg cdn "https://cdn.jsdelivr.net/gh/$R@$FILES/$WEB" \
-            --arg apk "https://cdn.jsdelivr.net/gh/$R@$FILES/FM-Prep.apk" \
+            --arg apk "https://github.com/$R/releases/download/fmprep-apk-latest/FM-Prep.apk" \
             --arg codeload "https://codeload.github.com/$R/zip/$WEBSHA" \
             --arg archive "https://github.com/$R/archive/$WEBSHA.zip" \
             --arg apizip "https://api.github.com/repos/$R/zipball/$WEBSHA" \
